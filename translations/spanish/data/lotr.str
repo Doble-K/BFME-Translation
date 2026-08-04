@@ -1581,135 +1581,142 @@ APT:ReplaySaveErrorMessageBox
 END
 
 GUI:Retry
-"PLAY AGAIN?"
+"¿JUGAR DE NUEVO?"
 END
 
 GUI:MainMenu
-"EXIT"
+"SALIR"
 END
 
 APT:MainMenu
-"MAIN MENU"
+"MENÚ PRINCIPAL"
 END
 
 GUI:RecentSave
-"Recent Save"
+"Guardado reciente"
 END
 
 GUI:GetUpdate
-"Get Update"
+"Obtener actualización"
 END
 
 APT:DirectConnect
-"Direct Connect"
+"Conexión directa"
 END
 
 	//
-"Direct Connect"
+"Conexión directa"
 END
 
 GUI:WorldBuilder
-"Middle-earth Builder"
+"Constructor de Tierra Media"
 END
 
 GUI:WorldBuilderLoadFailed
-"Middle-earth Builder failed to load."
+"Error al cargar el Constructor de Tierra Media."
 END
 
 GUI:DontUseAccount
-"Don't Use Account"
+"No usar cuenta"
 END
 
 GUI:UseAccount
-"Use Account"
+"Usar cuenta"
 END
 
 GUI:Score
-"Score"
+"Puntuación"
 END
 
 GUI:ScoreScreen
-"Score Screen"
+"Pantalla de puntuación"
 END
 
 GUI:Rehost
-"PLAY AGAIN?"
+"¿JUGAR DE NUEVO?"
 END
 
 GUI:UnitsBuilt
-"Units\nCreated"
+"Unidades
+Creadas"
 END
 
 GUI:UnitsLost
-"Units\nLost"
+"Unidades
+Perdidas"
 END
 
 GUI:UnitsKilled
-"Units\nDestroyed"
+"Unidades
+Destruidas"
 END
 
 GUI:BuildingsBuilt
-"Buildings\nConstructed"
+"Edificios
+Construidos"
 END
 
 GUI:BuildingsLost
-"Buildings\nLost"
+"Edificios
+Perdidos"
 END
 
 GUI:BuildingsKilled
-"Buildings\nDestroyed"
+"Edificios
+Destruidos"
 END
 
 GUI:ResourcesCollected
-"Supplies\nCollected"
+"Suministros
+Recolectados"
 END
 
 GUI:QuitPopupTitle
-"EXIT?"
+"¿SALIR?"
 END
 
 GUI:QuitPopupMessage
-"Are you sure you want to exit?"
+"¿Está seguro de que desea salir?"
 END
 
 GUI:MaxSelectionSize
-"You can only select %d units at one time."
+"Solo puede seleccionar %d unidades a la vez."
 END
 
 GUI:MessagesOn
-"Messages Enabled."
+"Mensajes habilitados."
 END
 
 GUI:MissionDescription
-"Mission Description"
+"Descripción de la misión"
 END
 
 GUI:MOTD
-"Message Of The Day"
+"Mensaje del día"
 END
 
 GUI:DesyncTitle
-"Out of Synch"
+"Fuera de sincronización"
 END
 
 GUI:LadderDetails
-"Ladder Info"
+"Información de liga"
 END
 
 GUI:Ladder
-"Ladder"
+"Liga"
 END
 
 GUI:SystemMaps
-"Official Maps"
+"Mapas oficiales"
 END
 
 GUI:UserMaps
-"Unofficial Maps"
+"Mapas no oficiales"
 END
 
 GUI:HTTPProxy
-"HTTP Proxy:"
+"Proxy HTTP:"
 END
 
  
@@ -1721,35 +1728,35 @@ END
 END
 
 GUI:NetgearDelay
-"Send Delay"
+"Retardo de envío"
 END
 
 GUI:WaitingForManglerResponse
-"Waiting for external Internet Provider response"
+"Esperando respuesta del proveedor de Internet externo"
 END
 
 GUI:WaitingForMangledPort
-"Waiting for port number"
+"Esperando número de puerto"
 END
 
 GUI:WaitingForResponse
-"Waiting for probe response"
+"Esperando respuesta de sondeo"
 END
 
 GUI:ReceivedPorts
-"Have received port numbers"
+"Puertos recibidos"
 END
 
 GUI:ConnectionDone
-"Connection is completed"
+"Conexión completada"
 END
 
 GUI:ConnectionFailed
-"Connection has failed"
+"La conexión ha fallado"
 END
 
 GUI:UnknownConnectionState
-"Status of NAT/Firewall is unknown"
+"Estado de NAT/Firewall desconocido"
 END
 
 GUI:Ok
@@ -1757,7 +1764,7 @@ GUI:Ok
 END
 
 GUI:Yes
-"YES"
+"SÍ"
 END
 
 GUI:No
@@ -1765,11 +1772,11 @@ GUI:No
 END
 
 GUI:Cancel
-"CANCEL"
+"CANCELAR"
 END
 
 GUI:Back
-"BACK"
+"ATRÁS"
 END
 
 APT:Back
