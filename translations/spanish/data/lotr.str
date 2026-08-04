@@ -1972,31 +1972,31 @@ GUI:ExitQuickMatch
 END
 
 GUI:Start
-"PLAY GAME"
+"JUGAR"
 END
 
 GUI:Stop
-"STOP"
+"DETENER"
 END
 
 GUI:Observer
-"Observer"
+"Observador"
 END
 
 GUI:Host
-"CREATE GAME"
+"CREAR JUEGO"
 END
 
 GUI:Join
-"JOIN GAME"
+"UNIRSE AL JUEGO"
 END
 
 GUI:Games
-"Games"
+"Juegos"
 END
 
 GUI:LocaleSelect
-"SELECT YOUR LOCALE"
+"SELECCIONAR IDIOMA"
 END
 
 GUI:Command&ConquerGenerals
@@ -2004,43 +2004,43 @@ GUI:Command&ConquerGenerals
 END
 
 GUI:FullGameName
-"The Lord of the Rings(tm), The Battle for Middle-earth(tm) II, The Rise of the Witch-king(tm)"
+"The Lord of the Rings™, The Battle for Middle-earth™ II, The Rise of the Witch-king™"
 END
 
 GUI:SinglePlayer
-"SOLO PLAY"
+"JUEGO EN SOLITARIO"
 END
 
 APT:Online
-"ONLINE"
+"EN LÍNEA"
 END
 
 APT:Network
-"NETWORK"
+"RED"
 END
 
 GUI:Online
-"ONLINE"
+"EN LÍNEA"
 END
 
 GUI:Network
-"NETWORK"
+"RED"
 END
 
 GUI:DebugMultihead
-"Multiheaded"
+"Multi-monitor"
 END
 
 GUI:SendDelay
-"Send Delay"
+"Retardo de envío"
 END
 
 GUI:FirewallRefresh
-"Refresh NAT"
+"Actualizar NAT"
 END
 
 GUI:Exit
-"EXIT GAME"
+"SALIR DEL JUEGO"
 END
 
 GUI:X
@@ -2048,15 +2048,15 @@ GUI:X
 END
 
 APT:Skirmish
-"SKIRMISH"
+"ESCARAMUZA"
 END
 
 GUI:Skirmish
-"SKIRMISH"
+"ESCARAMUZA"
 END
 
 GUI:Campaign
-"CAMPAIGN"
+"CAMPAÑA"
 END
 
 GUI:ClickToDisplayGameInfo
@@ -2064,87 +2064,88 @@ GUI:ClickToDisplayGameInfo
 END
 
 GUI:GameInfo
-"Game Info"
+"Información del juego"
 END
 
 GUI:StartGame
-"PLAY GAME"
+"JUGAR"
 END
 
 APT:Options
-"OPTIONS"
+"OPCIONES"
 END
 
 APT:Settings
-"SETTINGS"
+"CONFIGURACIÓN"
 END
 
 APT:AdvancedSettings
-"CUSTOM SETTINGS"
+"CONFIGURACIÓN PERSONALIZADA"
 END
 
 APT:AdvancedSettings_Shadow_Shader_Notice
-"Shadows set to High will only function with Terrain and Shaders set to High. The game has made the necessary adjustments."
+"Las sombras configuradas en Alto solo funcionarán con Terreno y Shaders en Alto. El juego ha realizado los ajustes necesarios."
 END
 
 GUI:OptionsDescription
-"Display Game Options Dialog"
+"Mostrar diálogo de opciones del juego"
 END
 
 GUI:MusicVolume
-"Music Volume"
+"Volumen de música"
 END
 
 GUI:AmbientVolume
-"Ambient Volume"
+"Volumen ambiental"
 END
 
 GUI:MovieVolume
-"Movie Volume"
+"Volumen de películas"
 END
 
 GUI:SFXVolume
-"Sound FX Volume"
+"Volumen de efectos de sonido"
 END
 
 GUI:VoiceVolume
-"Voice Volume"
+"Volumen de voz"
 END
 
 GUI:3DSound
-"3D Sound"
+"Sonido 3D"
 END
 
 GUI:ScrollSpeed
-"Scroll Speed"
+"Velocidad de desplazamiento"
 END
 
 APT:AlternateMouse
-"Alternate Mouse Setup"
+"Configuración de mouse alternativo"
 END
 
 APT:DoubleClickGuard
-"Double Click Guard"
+"Protección de doble clic"
 END
 
 APT:ShowUnitDecals
-"Show Unit Decals"
+"Mostrar calcomanías de unidades"
 END
 
 TOOLTIP:Options/tooltipShowUnitDecals
-"Toggle to display the icon \n for selected units in game"
+"Activar para mostrar el ícono 
+ de las unidades seleccionadas en el juego"
 END
 
 APT:EnableHealthBars
-"Show All Health Bars"
+"Mostrar todas las barras de vida"
 END
 
 TOOLTIP:Options/tooltipEnableHealthBars
-"Enable health bars for all units"
+"Activar barras de vida para todas las unidades"
 END
 
 GUI:Controls
-"Game Options"
+"Opciones del juego"
 END
 
 GUI:Chat
@@ -2152,15 +2153,15 @@ GUI:Chat
 END
 
 GUI:Strategic
-"WAR OF THE RING"
+"GUERRA DEL ANILLO"
 END
 
 GUI:Resolution
-"Resolution"
+"Resolución"
 END
 
 GUI:InGameDiplomacy
-"Diplomacy"
+"Diplomacia"
 END
 
 GUI:Resolution0
