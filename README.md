@@ -1,82 +1,82 @@
 # BFME-Translation
 
-Proyecto de traducción al español latinoamericano para **Battle for Middle-earth I** (BFME1).
+Spanish (Latin American) translation project for **Battle for Middle-earth I** (BFME1).
 
-## Descripción
+## Description
 
-Este repositorio contiene las traducciones de archivos de localización `.str` del juego BFME1, convertidos al formato compatible con el motor SAGE. El archivo de salida compilado es `releases/spanishpatch202.big`.
+This repository contains translations of BFME1 `.str` localization files, converted to the SAGE engine-compatible format. The compiled output package is `releases/spanishpatch202.big`.
 
-## Estructura del Proyecto
+## Project Structure
 
 ```
 BFME-Translation/
 ├── catalogs/
-│   └── spanish_work.json    # Catálogo principal de traducciones (11,069 entradas)
+│   └── spanish_work.json    # Main translation catalog (11,069 entries)
 ├── tools/
 │   └── localization/
-│       ├── validate.py           # Validación estructural del catálogo
-│       ├── validate_translation.py # Validación de traducciones
-│       ├── build.py              # Compila el catálogo al formato .str
-│       └── pack.py               # Empaqueta el .str en .big
+│       ├── validate.py           # Structural catalog validation
+│       ├── validate_translation.py # Translation validation
+│       ├── build.py              # Compiles catalog to .str format
+│       └── pack.py               # Packages .str into .big
 ├── translations/
 │   └── spanish/data/
-│       └── lotr.str             # Archivo de salida traducido
+│       └── lotr.str             # Translated output file
 ├── releases/
-│   └── spanishpatch202.big      # Paquete final compilado
-├── AGENTS.md                     # Instrucciones para agentes de traducción
-└── README.md                     # Este archivo
+│   └── spanishpatch202.big      # Final compiled package
+├── AGENTS.md                     # Agent translation instructions
+└── README.md                     # This file
 ```
 
-## Cómo Funciona
+## How It Works
 
-### Flujo de Trabajo de Traducción
+### Translation Workflow
 
-1. **Leer pendientes**: Se lee `catalogs/spanish_work.json` para encontrar entradas con `status: "pending"`.
-2. **Traducir**: Se traduce el campo `source` al español latinoamericano en el campo `translation`, se cambia el `status` a `"translated"`, y se registra metadato/historial.
-3. **Preservar**: Nunca se modifican IDs, tokens protegidos (`%d`, `%s`), caracteres de control (`\n`) ni tags de engine (`<COL>`).
-4. **Validar**: Se ejecutan ambos scripts de validación:
+1. **Read pending entries**: Load `catalogs/spanish_work.json` and find entries with `status: "pending"`.
+2. **Translate**: Translate the `source` text into Latin American Spanish in the `translation` field, set `status` to `"translated"`, and record metadata/history.
+3. **Preserve**: Never modify entry `id` fields, protected tokens (`%d`, `%s`), control characters (`\n`), or engine tags (`<COL>`).
+4. **Validate**: Run both validation scripts:
    - `python3 tools/localization/validate.py`
    - `python3 tools/localization/validate_translation.py`
-   Si hay errores, se revierte la modificación.
-5. **Commit**: Se hace `git add` solo de los archivos modificados y se commit con mensaje convencional (ej: `feat(localization): translate batch 10`).
-6. **Sync**: Se sincroniza con el repositorio remoto (`git pull --rebase`, push, pull).
+   If any return errors, fix them immediately before committing.
+5. **Commit**: Stage only the modified files (`git add <specific-paths>`, never `git add .`) and commit with a conventional message (e.g., `feat(localization): translate batch 10`).
+6. **Sync**: Pull, push, and pull again to ensure integrity.
 
-### Flujo de Build (Release)
+### Build Workflow (Release)
 
-Cuando se solicita compilar una release:
+When a release build is requested:
 1. `python3 tools/localization/build.py catalogs/spanish_work.json translations/spanish/data/lotr.str`
 2. `python3 tools/localization/pack.py`
-3. Verificar que `releases/spanishpatch202.big` se actualice correctamente.
+3. Verify that `releases/spanishpatch202.big` updates correctly.
 
-## Progreso Actual
+## Current Progress
 
-| Métrica            | Valor   |
+| Metric             | Value   |
 |--------------------|---------|
-| Total de entradas  | 11,069  |
-| Traducidas         | 245     |
-| Pendientes         | 10,824  |
-| **Progreso**       | **2.2%**|
+| Total entries      | 11,069  |
+| Translated         | 245     |
+| Pending            | 10,824  |
+| **Progress**        | **2.2%**|
 
-### Historial de Traducciones
+### Translation History
 
-| Commit   | Descripción                              |
+| Commit   | Description                              |
 |----------|------------------------------------------|
-| d9282b1  | Fix de 18 entradas no traducidas         |
-| 0e21e10  | Lote de 100 entradas traducidas          |
-| 9e8433a  | Lote de 10 entradas traducidas           |
+| d9282b1  | Fixed 18 untranslated entries         |
+| 0e21e10  | Batch of 100 entries translated        |
+| 9e8433a  | Batch of 10 entries translated         |
 
-## Reglas de Traducción
+## Translation Rules
 
-- **Español latinoamericano**: Usar terminología estándar de LATAM, no España.
-- **Preservar formato**: Los wildcards (`%d`, `%s`, `%ls`), saltos de línea (`\n`) y tags de engine (`<COL>`) deben mantenerse intactos.
-- **No traducir**: URLs, IDs de entrada, y tokens de formato.
-- **Metadatos**: Cada entrada incluye `translation_meta` (origen, modelo, fecha, confianza) y `review` (revisión AI y humana).
+- **Latin American Spanish**: Use standard LATAM terminology, not Spain Spanish.
+- **Preserve format**: Wildcards (`%d`, `%s`, `%ls`), newlines (`\n`), and engine tags (`<COL>`) must remain intact.
+- **Do not translate**: URLs, entry IDs, and format tokens.
+- **Metadata**: Each entry includes `translation_meta` (origin, model, date, confidence) and `review` (AI and human review status).
 
-## Validación
+## Validation
 
 ```bash
 python3 tools/localization/validate.py
 python3 tools/localization/validate_translation.py
 ```
 
-Ambos scripts deben retornar `Errors: 0` antes de hacer commit.
+Both scripts must return `Errors: 0` before committing.
