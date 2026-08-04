@@ -66,9 +66,9 @@ When a release build is requested:
 | Metric             | Value   |
 |--------------------|---------|
 | Total entries      | 11,069  |
-| Translated         | 765     |
-| Pending            | 10,304  |
-| **Progress**        | **6.9%**|
+| Translated         | 811     |
+| Pending            | 10,258  |
+| **Progress**        | **7.3%**|
 
 ### Translation History
 

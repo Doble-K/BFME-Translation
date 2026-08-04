@@ -3098,107 +3098,107 @@ GUI:CreateAccount
 END
 
 GUI:TryAgain
-"Try Again"
+"Intentar de nuevo"
 END
 
 GUI:QuickMatch
-"QUICKMATCH"
+"PARTIDA RÁPIDA"
 END
 
 GUI:DisplayOptions
-"DISPLAY OPTIONS"
+"OPCIONES DE PANTALLA"
 END
 
 GUI:AudioOptions
-"Audio Options"
+"Opciones de audio"
 END
 
 GUI:AudioHardware
-"Hardware Accelerated Audio"
+"Audio con aceleración por hardware"
 END
 
 GUI:AudioSurround
-"Surround Sound"
+"Sonido envolvente"
 END
 
 TOOLTIP:CheckAudioHardware
-"Check this box to enable hardware acceleration for Audio"
+"Marcar esta casilla para activar la aceleración por hardware para el audio"
 END
 
 TOOLTIP:AudioSurround
-"Check this box if you have surround sound speakers"
+"Marcar esta casilla si tiene altavoces de sonido envolvente"
 END
 
 GUI:NetworkOptions
-"Networking"
+"Red"
 END
 
 GUI:SocketError
-"Failed trying to communicate with the network, check your connection."
+"Error al comunicarse con la red, verifique su conexión."
 END
 
 GUI:NetworkError
-"NETWORK ERROR"
+"ERROR DE RED"
 END
 
 GUI:BrightnessSlider
-"Brightness"
+"Brillo"
 END
 
 GUI:SaveGame
-"SAVE GAME"
+"GUARDAR JUEGO"
 END
 
 GUI:LoadGame
-"LOAD GAME"
+"CARGAR JUEGO"
 END
 
 GUI:LoadSave
-"LOAD/SAVE"
+"CARGAR/GUARDAR"
 END
 
 APT:GoodCampaign
-"GOOD CAMPAIGN"
+"BUENA CAMPAÑA"
 END
 
 GUI:GoodCampaign
-"Good Campaign"
+"Buena Campaña"
 END
 
 APT:EvilCampaign
-"EVIL CAMPAIGN"
+"MALA CAMPAÑA"
 END
 
 GUI:EvilCampaign
-"Evil Campaign"
+"Malvada Campaña"
 END
 
 APT:ContinueCampaign
-"CONTINUE CAMPAIGN"
+"CONTINUAR CAMPAÑA"
 END
 
 APT:LoadCampaign
-"LOAD CAMPAIGN"
+"CARGAR CAMPAÑA"
 END
 
 CAMPAIGN:GOOD
-"Good Campaign"
+"Buena Campaña"
 END
 
 CAMPAIGN:EVIL
-"Evil Campaign"
+"Malvada Campaña"
 END
 
 APT:GameHost
-"GAME HOST"
+"ANFITRIÓN DEL JUEGO"
 END
 
 GUI:FirewallPopUpTitle
-"Firewall Detected"
+"Firewall detectado"
 END
 
 GUI:FirewallPopUpMessage
-"This computer has the Windows XP SP2 firewall enabled. An entry must be added to the firewall exemption list to play The Lord of the Rings, The Rise of the Witch-king. Do you want the game to automatically add this entry?"
+"Esta computadora tiene el firewall de Windows XP SP2 habilitado. Se debe agregar una entrada a la lista de excepciones del firewall para jugar The Lord of the Rings, The Rise of the Witch-king. ¿Desea que el juego agregue esta entrada automáticamente?"
 END
 
 GUI:FirewallNoAdminTitle
@@ -3206,79 +3206,80 @@ GUI:FirewallNoAdminTitle
 END
 
 GUI:ValidateDisplayModeTitle
-"Validate Display Mode"
+"Validar modo de pantalla"
 END
 
 GUI:ValidateDisplayModeMessage
-"Do you wish to keep the current display mode?\nThe display mode will automatically revert in 10 seconds"
+"¿Desea mantener el modo de pantalla actual?
+El modo de pantalla se revertirá automáticamente en 10 segundos"
 END
 
 GUI:SaveTime
-"Time"
+"Hora"
 END
 
 GUI:SaveDate
-"Date"
+"Fecha"
 END
 
 GUI:Help
-"Help"
+"Ayuda"
 END
 
 GUI:HelpDescription
-"Display help dialog"
+"Mostrar diálogo de ayuda"
 END
 
 GUI:ReturnToGame
-"RETURN TO GAME"
+"VOLVER AL JUEGO"
 END
 
 GUI:NewGame
-"New Game"
+"Nuevo juego"
 END
 
 GUI:RestartGame
-"RESTART GAME"
+"REINICIAR JUEGO"
 END
 
 GUI:Surrender
-"SURRENDER"
+"RENUNCIA"
 END
 
 GUI:MatchingProgress
-"Tournament Progress"
+"Progreso del torneo"
 END
 
 GUI:Player'sName
-"Opponent's Name"
+"Nombre del oponente"
 END
 
 GUI:LadderWins
-"Ladder Wins"
+"Victorias en liga"
 END
 
 GUI:LadderLosses
-"Ladder Losses"
+"Derrotas en liga"
 END
 
 GUI:LadderPoints
-"Ladder Points"
+"Puntos de liga"
 END
 
 GUI:Disconnects
-"Disconnects"
+"Desconexiones"
 END
 
 GUI:LadderRank
-"Ladder Rank"
+"Rango de liga"
 END
 
 GUI:AllTimeWins
-"All-Time Wins"
+"Victorias totales"
 END
 
 GUI:AllTimeLosses
-"All-Time Losses"
+"Derrotas totales"
 END
 
 GUI:AllTimePoints
