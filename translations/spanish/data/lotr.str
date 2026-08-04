@@ -2542,63 +2542,63 @@ TOOLTIP:GetUpdate
 END
 
 TOOLTIP:DownloadProgress
-"Download Progress"
+"Progreso de descarga"
 END
 
 TOOLTIP:GetMapPack
-"Download new map pack"
+"Descargar nuevo paquete de mapas"
 END
 
 TOOLTIP:Skirmish
-"Enter Skirmish setup menu"
+"Ingresar al menú de configuración de Escaramuza"
 END
 
 TOOLTIP:Online
-"Click to join The Lord of the Rings, The Rise of the Witch-king Online. Test your skills against opponents from around the world!"
+"Haga clic para unirse a The Lord of the Rings, The Rise of the Witch-king Online. ¡Ponga a prueba sus habilidades contra oponentes de todo el mundo!"
 END
 
 TOOLTIP:Network
-"Click to Join the Network Lobby. Test your mettle against your friends over a Local Area Network"
+"Haga clic para unirse al Lobby de Red. ¡Ponga a prueba su habilidad contra sus amigos en una Red de Área Local"
 END
 
 TOOLTIP:Options
-"Click to modify the game options. You may adjust your video, audio and game preferences"
+"Haga clic para modificar las opciones del juego. Puede ajustar sus preferencias de video, audio y juego"
 END
 
 TOOLTIP:Exit
-"Exit The Lord of the Rings, The Rise of the Witch-king"
+"Salir de The Lord of the Rings, The Rise of the Witch-king"
 END
 
 TOOLTIP:ExitGame
-"Exit The Lord of the Rings, The Rise of the Witch-king"
+"Salir de The Lord of the Rings, The Rise of the Witch-king"
 END
 
 TOOLTIP:LoadGame
-"Click to load the selected game"
+"Haga clic para cargar el juego seleccionado"
 END
 
 TOOLTIP:MapPreviewWindow
-"Map previews can give you a leg up on the battle to come. Make sure to look for your Supply Docks and Tech Buildings. You may also choose your starting point"
+"Las vistas previas del mapa pueden darle una ventaja en la batalla por venir. Asegúrese de buscar sus Docks de Suministro y Edificios Tecnológicos. También puede elegir su punto de partida"
 END
 
 TOOLTIP:SaveGame
-"Click to save your game in progress"
+"Haga clic para guardar su juego en progreso"
 END
 
 TOOLTIP:AcceptButton
-"Accept your current choice"
+"Aceptar su elección actual"
 END
 
 TOOLTIP:CopyReplayToDesktop
-"Copy selected Replay file to your Desktop"
+"Copiar el archivo de Reprisa seleccionado al escritorio"
 END
 
 TOOLTIP:ProviderType
-"Select your Audio Provider"
+"Seleccionar su Proveedor de Audio"
 END
 
 TOOLTIP:SpeakerType
-"Select your Speaker Configuration"
+"Seleccionar su Configuración de Altavoces"
 END
 
 TOOLTIP:LANPlayer
@@ -2606,35 +2606,35 @@ TOOLTIP:LANPlayer
 END
 
 TOOLTIP:Resolution
-"Pick a screen resolution for your game. The higher the resolution, the slower your game is likely to play"
+"Elija una resolución de pantalla para su juego. Cuanto mayor sea la resolución, más lento será su juego"
 END
 
 TOOLTIP:CommandCategory
-"Pick a category of keyboard command"
+"Elija una categoría de comando de teclado"
 END
 
 TOOLTIP:CommandDescription
-"The description of your selected command"
+"La descripción de su comando seleccionado"
 END
 
 TOOLTIP:StartPosition
-"Starting Position"
+"Posición inicial"
 END
 
 TOOLTIP:SelectMap
-"Select the battlefield you would like to use"
+"Seleccione el campo de batalla que desea usar"
 END
 
 TOOLTIP:NumberOfVotes
-"Votes cast to remove player"
+"Votos emitidos para eliminar jugador"
 END
 
 TOOLTIP:QuitMultiplayerGame
-"Exit to game menus"
+"Salir a los menús del juego"
 END
 
 TOOLTIP:RestartGame
-"Restart game with same preferences"
+"Reiniciar el juego con las mismas preferencias"
 END
 
 TOOLTIP:Help
@@ -2642,63 +2642,63 @@ TOOLTIP:Help
 END
 
 TOOLTIP:StartLocation
-"Starting position"
+"Posición de inicio"
 END
 
 TOOLTIP:ReturnToGame
-"RETURN TO GAME"
+"VOLVER AL JUEGO"
 END
 
 TOOLTIP:CommandList
-"Available commands for the current category"
+"Comandos disponibles para la categoría actual"
 END
 
 TOOLTIP:CurrentHotkey
-"Displays the current Hotkey for this command"
+"Muestra el Hotkey actual para este comando"
 END
 
 TOOLTIP:AssignHotkey
-"Enter your new command Hotkey here"
+"Ingrese su nuevo Hotkey de comando aquí"
 END
 
 TOOLTIP:AssignHotkeyCurrent
-"The command this Hotkey is currently assigned to"
+"El comando al que este Hotkey está actualmente asignado"
 END
 
 TOOLTIP:AssignButton
-"Assigns your chosen Hotkey command"
+"Asigna el Hotkey de comando elegido"
 END
 
 TOOLTIP:ResetAll
-"Resets all of your keyboard Hotkeys to default"
+"Restablece todos los Hotkeys de teclado a los valores predeterminados"
 END
 
 TOOLTIP:BackButton
-"Return to previous menu"
+"Volver al menú anterior"
 END
 
 TOOLTIP:ProviderSelect
-"Select the 3-D Audio Provider. The game has already chosen your optimal set up but you may manually change if you prefer"
+"Seleccionar el Proveedor de Audio 3D. El juego ya ha elegido su configuración óptima, pero puede cambiarla manualmente si lo prefiere"
 END
 
 TOOLTIP:SpeakerSelect
-"Select your speaker setup. The game has already chosen your optimal set up but you may manually change if you prefer"
+"Seleccionar su configuración de altavoces. El juego ya ha elegido su configuración óptima, pero puede cambiarla manualmente si lo prefiere"
 END
 
 TOOLTIP:DontUseAccount
-"Log in without using your The Lord of the Rings, The Rise of the Witch-king Online Account"
+"Iniciar sesión sin usar su cuenta de The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 TOOLTIP:CommunicatorButton
-"Contact your buddies"
+"Contactar a sus compañeros"
 END
 
 TOOLTIP:SortBuddies
-"Sort Buddies to the top of the game list"
+"Ordenar Compañeros en la parte superior de la lista de juegos"
 END
 
 TOOLTIP:PingButton
-"Sort by Ping"
+"Ordenar por Ping"
 END
 
 TOOLTIP:EmoteButton
@@ -2706,27 +2706,27 @@ TOOLTIP:EmoteButton
 END
 
 TOOLTIP:UseAccount
-"Join The Lord of the Rings, The Rise of the Witch-king Online"
+"Unirse a The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 TOOLTIP:Login
-"Join The Lord of the Rings, The Rise of the Witch-king Online"
+"Unirse a The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 TOOLTIP:CreateAccount
-"Create a new The Lord of the Rings, The Rise of the Witch-king Online account"
+"Crear una nueva cuenta de The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 TOOLTIP:TOS
-"View the Service Terms agreement"
+"Ver el acuerdo de Términos de Servicio"
 END
 
 TOOLTIP:RememberInfo
-"Remember login info. Not recommended for computers with multiple users"
+"Recordar información de inicio de sesión. No recomendado para computadores con múltiples usuarios"
 END
 
 TOOLTIP:Back
-"Return to previous screen"
+"Volver a la pantalla anterior"
 END
 
 TOOLTIP:ProgressToNextRank
