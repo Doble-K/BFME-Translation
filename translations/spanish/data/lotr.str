@@ -1389,59 +1389,59 @@ GUI:Buildings
 END
 
 GUI:DeleteFile
-"DELETE FILE?"
+"¿ELIMINAR ARCHIVO?"
 END
 
 GUI:AreYouSureDelete
-"Are you sure you would like to delete the selected file?"
+"¿Está seguro de que desea eliminar el archivo seleccionado?"
 END
 
 GUI:CopyFileToDesktop
-"COPY REPLAY TO DESKTOP?"
+"¿COPIAR REPRISA AL ESCRITORIO?"
 END
 
 GUI:AreYouSureCopy
-"Are you sure you want to copy this file to the Desktop? This will overwrite any file with the same name."
+"¿Está seguro de que desea copiar este archivo al escritorio? Esto sobrescribirá cualquier archivo con el mismo nombre."
 END
 
 GUI:ErrorCopyingFile
-"THERE WAS AN ERROR COPYING THE FILE."
+"ERROR AL COPIAR EL ARCHIVO."
 END
 
 GUI:SaveReplay
-"SAVE REPLAY"
+"GUARDAR REPRISA"
 END
 
 GUI:SaveAndContinue
-"CONTINUE"
+"CONTINUAR"
 END
 
 GUI:LoadReplay
-"LOAD REPLAY"
+"CARGAR REPRISA"
 END
 
 GUI:DeleteReplay
-"DELETE REPLAY"
+"ELIMINAR REPRISA"
 END
 
 GUI:CopyReplay
-"COPY REPLAY"
+"COPIAR REPRISA"
 END
 
 GUI:OverwriteReplayTitle
-"OVERWRITE REPLAY"
+"SOBRESCRIBIR REPRISA"
 END
 
 GUI:OverwriteReplay
-"Overwrite Replay?"
+"¿Sobrescribir la reprisa?"
 END
 
 GUI:ErrorDeletingFile
-"THERE WAS AN ERROR DELETING THE FILE."
+"ERROR AL ELIMINAR EL ARCHIVO."
 END
 
 GUI:ShortDescription
-"Short description of the game:"
+"Descripción corta del juego:"
 END
 
 GUI:LadderNameAndSize
@@ -1449,135 +1449,135 @@ GUI:LadderNameAndSize
 END
 
 GUI:InvalidLadderPassword
-"Invalid ladder password."
+"Contraseña de liga inválida."
 END
 
 GUI:EnterLadderPassword
-"Enter ladder password:"
+"Ingresar contraseña de liga:"
 END
 
 GUI:LadderName
-"Ladder Name:"
+"Nombre de liga:"
 END
 
 GUI:LadderPassword
-"Ladder Password"
+"Contraseña de liga"
 END
 
 GUI:LadderURL
-"Homepage: %hs"
+"Página principal: %hs"
 END
 
 GUI:LadderHasPassword
-"This Ladder is password protected."
+"Esta liga está protegida con contraseña."
 END
 
 GUI:LadderMinWins
-"Minimum wins required: %d"
+"Victorias mínimas requeridas: %d"
 END
 
 GUI:LadderMaxWins
-"Maximum wins allowed: %d"
+"Victorias máximas permitidas: %d"
 END
 
 GUI:LadderFactions
-"Allowed army factions:"
+"Facciones de ejército permitidas:"
 END
 
 GUI:LadderRandomFactions
-"Random army factions:"
+"Facciones de ejército aleatorias:"
 END
 
 GUI:LadderMaps
-"Allowed maps:"
+"Mapas permitidos:"
 END
 
 GUI:LadderRandomMaps
-"Random maps:"
+"Mapas aleatorios:"
 END
 
 GUI:AllowObservers
-"Allow Observers"
+"Permitir observadores"
 END
 
 GUI:CreateGame
-"CREATE GAME"
+"CREAR JUEGO"
 END
 
 GUI:EndCampaign
-"End Campaign"
+"Terminar campaña"
 END
 
 GUI:Continue
-"Continue"
+"Continuar"
 END
 
 GUI:Save
-"Save"
+"Guardar"
 END
 
 GUI:ConfirmDelete
-"Are you sure you want to delete this game?"
+"¿Está seguro de que desea eliminar este juego?"
 END
 
 APT:Delete
-"DELETE"
+"ELIMINAR"
 END
 
 APT:Select
-"SELECT"
+"SELECCIONAR"
 END
 
 APT:ChangeProfilePopHeader
-"Change Active Profile"
+"Cambiar perfil activo"
 END
 
 APT:ChangeProfileInstructions
-"Select existing profile from list and then press the Select button."
+"Seleccione un perfil existente de la lista y luego presione el botón Seleccionar."
 END
 
 APT:AddProfilePopHeader
-"Add New Profile"
+"Agregar nuevo perfil"
 END
 
 APT:AddProfileInstructions
-"Enter a new profile name. Statistics are kept for each profile."
+"Ingrese un nombre para el nuevo perfil. Las estadísticas se mantienen para cada perfil."
 END
 
 APT:DeleteProfilePopHeader
-"Delete Selected Profile"
+"Eliminar perfil seleccionado"
 END
 
 APT:DeleteProfileInstructions
-"Select profile from list and then press the Delete button to remove profile data. When you are finished, press Done."
+"Seleccione un perfil de la lista y luego presione el botón Eliminar para remover los datos del perfil. Cuando termine, presione Listo."
 END
 
 APT:ProfileName
-"Profile Name"
+"Nombre del perfil"
 END
 
 GUI:DeleteGame
-"Delete"
+"Eliminar"
 END
 
 GUI:GameSaveComplete
-"*** Game Saved ***"
+"*** Juego guardado ***"
 END
 
 GUI:ReplaySaveComplete
-"*** Replay Saved ***"
+"*** Reprisa guardada ***"
 END
 
 GUI:ReplaySaveError
-"*** ERROR With Saving Replay ***"
+"*** ERROR al guardar reprisa ***"
 END
 
 APT:ReplaySaveCompleteMessageBox
-"Replay saved successfully"
+"Reprisa guardada exitosamente"
 END
 
 APT:ReplaySaveErrorMessageBox
-"Error with saving replay"
+"Error al guardar la reprisa"
 END
 
 GUI:Retry
