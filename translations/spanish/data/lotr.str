@@ -2730,35 +2730,35 @@ TOOLTIP:Back
 END
 
 TOOLTIP:ProgressToNextRank
-"Progress until the next Level is acheived"
+"Progreso hasta el siguiente nivel"
 END
 
 TOOLTIP:SetLocale
-"Change your current Locale selection"
+"Cambiar su selección de idioma actual"
 END
 
 TOOLTIP:DeleteAccount
-"Delete your current account"
+"Eliminar su cuenta actual"
 END
 
 APT:ReplayMissionBttn
-"REPLAY MISSION"
+"REPRISAR MISIÓN"
 END
 
 APT:NextMissionBttn
-"NEXT MISSION"
+"PRÓXIMA MISIÓN"
 END
 
 APT:CampaignNextMission
-"Next Mission:"
+"Próxima misión:"
 END
 
 APT:CampaignFailedMission
-"Failed Mission:"
+"Misión fallida:"
 END
 
 GUI:RestartMission
-"Low Texture Detail"
+"Baja Detalle de Texturas"
 END
 
  
@@ -2774,143 +2774,143 @@ END
 END
 
 GUI:InsertCDPrompt
-"Missing CD"
+"CD faltante"
 END
 
 GUI:InsertCDMessage
-"Please insert the first game CD."
+"Por favor inserte el primer CD del juego."
 END
 
 GUI:Credits
-"CREDITS"
+"CRÉDITOS"
 END
 
 GUI:AreYouSureDeleteAccount
-"Are you sure you want to permanantly delete your account and all your saved statistics?"
+"¿Está seguro de que desea eliminar permanentemente su cuenta y todas sus estadísticas guardadas?"
 END
 
 GUI:NonAsianText
-"Non-Asian Text"
+"Texto no asiático"
 END
 
 GUI:AsianText
-"Asian Text"
+"Texto asiático"
 END
 
 GUI:DeleteAccount
-"DELETE ACCOUNT"
+"ELIMINAR CUENTA"
 END
 
 GUI:SetLocale
-"SET LOCALE"
+"CAMBIAR IDIOMA"
 END
 
 GUI:Side
-"Army"
+"Ejército"
 END
 
 GUI:WinLoss
-"Win/Loss"
+"Victorias/Derrotas"
 END
 
 GUI:FavSide
-"Favorite Army"
+"Ejército favorito"
 END
 
 GUI:Discons
-"Disconnects"
+"Desconexiones"
 END
 
 GUI:Progress
-"Progress"
+"Progreso"
 END
 
 GUI:Rank
-"Rank"
+"Rango"
 END
 
 GUI:GainRank
-"+%d Rank"
+"+%d Rango"
 END
 
 GUI:TotalBuddys
-"Total Buddys"
+"Total de compañeros"
 END
 
 GUI:PlayerStatistics
-"%hs, from %ls"
+"%hs, de %ls"
 END
 
 GUI:BuildingsKilledStat
-"Buildings Killed"
+"Edificios destruidos"
 END
 
 GUI:BuildingsBuiltStat
-"Buildings Built"
+"Edificios construidos"
 END
 
 GUI:BuildingsLostStat
-"Buildings Lost"
+"Edificios perdidos"
 END
 
 GUI:TotalBuilt
-"Total Built"
+"Total construido"
 END
 
 GUI:TotalDeaths
-"Total Deaths"
+"Muertes totales"
 END
 
 GUI:TotalKills
-"Total Kills"
+"Muertes totales"
 END
 
 GUI:FavoriteUnit
-"Favorite Unit"
+"Unidad favorita"
 END
 
 GUI:FavoriteSide
-"Favorite Army"
+"Ejército favorito"
 END
 
 GUI:CareerWins
-"Career Wins"
+"Victorias de carrera"
 END
 
 GUI:CareerLosses
-"Career Losses"
+"Derrotas de carrera"
 END
 
 GUI:CurrentWinStreak
-"Current Win Streak"
+"Racha actual de victorias"
 END
 
 GUI:CarrerWinPercent
-"Career Win Percentage"
+"Porcentaje de victorias de carrera"
 END
 
 GUI:Loses
-"Losses"
+"Derrotas"
 END
 
 GUI:Wins
-"Wins"
+"Victorias"
 END
 
 GUI:TotalDesyncs
-"Desyncs"
+"Desincronizaciones"
 END
 
 GUI:TotalDisconnects
-"Disconnects"
+"Desconexiones"
 END
 
 GUI:QMWinStreak
-"Tournament win streak"
+"Racha de victorias del torneo"
 END
 
 GUI:WinStreak
-"Win Streak"
+"Racha de victorias"
 END
 
 GUI:LossStreak
