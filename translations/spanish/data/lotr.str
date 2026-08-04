@@ -2353,71 +2353,71 @@ TOOLTIP:PlayerCreatedName
 END
 
 TOOLTIP:HTTPProxy
-"Set an HTTP Proxy to use for The Lord of the Rings, The Rise of the Witch-king Online"
+"Configurar un proxy HTTP para usar en The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 TOOLTIP:PlayerSetting
-"Choose to match with a 1 vs. 1 or Team Game"
+"Elige entre partida 1 vs. 1 o partida por equipos"
 END
 
 TOOLTIP:Ping
-"Choose your tolerance of the opponent connection speed"
+"Elige tu tolerancia a la velocidad de conexión del oponente"
 END
 
 TOOLTIP:Disconnect
-"Choose your tolerance of the total opponent disconnects"
+"Elige tu tolerancia a las desconexiones totales del oponente"
 END
 
 TOOLTIP:Ladder
-"Choose the ladder on which you'd like to play"
+"Elige la liga en la que deseas jugar"
 END
 
 TOOLTIP:QuickMatchStatus
-"Tournament will attempt to match you based on skill level, PC spec, etc"
+"El torneo intentará emparejarte según tu nivel de habilidad, especificaciones de PC, etc."
 END
 
 TOOLTIP:SendDelay
-"For Firewall Users Only. (Please Consult the Manual)"
+"Solo para usuarios de firewall. (Consulte el manual)"
 END
 
 TOOLTIP:RefreshNat
-"Click after changing firewall setup or ISP"
+"Haga clic después de cambiar la configuración del firewall o el ISP"
 END
 
 TOOLTIP:OnlineIP
-"IP Address used to connect to The Lord of the Rings, The Rise of the Witch-king Online"
+"Dirección IP usada para conectarse a The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 TOOLTIP:LanIP
-"IP Address used to connect with players in network games"
+"Dirección IP usada para conectarse con jugadores en juegos de red"
 END
 
 TOOLTIP:Vote
-"Click to vote player out of game in order for you to continue"
+"Haga clic para votar la expulsión de un jugador para poder continuar"
 END
 
 TOOLTIP:GamesBeingformed
-"Your connection speed to this game's players"
+"Tu velocidad de conexión a los jugadores de este juego"
 END
 
  TOOLTIP:NameButton
-"Sort by game name"
+"Ordenar por nombre del juego"
 END
 
 TOOLTIP:EmoteText
-"Left click to enter text"
+"Clic izquierdo para ingresar texto"
 END
 
 TOOLTIP:AsianText
-"Click to toggle Asian chat, etc."
+"Clic para alternar chat asiático, etc."
 END
 
 TOOLTIP:NonAsianText
-"Click to toggle Non Asian chat, etc."
+"Clic para alternar chat no asiático, etc."
 END
 
 TOOLTIP:ExperienceToLevel
-"Experience to next level"
+"Experiencia para el siguiente nivel"
 END
 
 KEYBOARD:Shift+
@@ -2433,111 +2433,112 @@ KEYBOARD:Ctrl+
 END
 
 TOOLTIP:Brightness
-"Adjust the brightness of the game"
+"Ajustar el brillo del juego"
 END
 
 TOOLTIP:ScrollSpeed
-"Adjust map scroll speed"
+"Ajustar la velocidad de desplazamiento del mapa"
 END
 
 TOOLTIP:OptionsAccept
-"Accept the changes made and exit the Options Menu"
+"Aceptar los cambios y salir del Menú de Opciones"
 END
 
 TOOLTIP:OptionsCancel
-"Exit the Options Menu without making your changes"
+"Salir del Menú de Opciones sin guardar los cambios"
 END
 
 TOOLTIP:OptionsDefaults
-"Reset the options to the default settings"
+"Restablecer las opciones a la configuración predeterminada"
 END
 
 TOOLTIP:ScienceCost
-"Cost: %d"
+"Costo: %d"
 END
 
 TOOLTIP:AbilityCost
-"Power acquired at Level: %d"
+"Poder adquirido al nivel: %d"
 END
 
 TOOLTIP:ScienceCostUnavailable
-"Cost: Unavailable"
+"Costo: No disponible"
 END
 
 TOOLTIP:ScienceDisabled
-"Power unavailable"
+"Poder no disponible"
 END
 
 TOOLTIP:BuildDisabled
-"Unavailable"
+"No disponible"
 END
 
 TOOLTIP:UnitCost
-"Unit Cost: %d"
+"Costo de unidad: %d"
 END
 
 TOOLTIP:Cost
-"Cost: %d"
+"Costo: %d"
 END
 
 TOOLTIP:CostFree
-"Cost: FREE"
+"Costo: GRATIS"
 END
 
 TOOLTIP:CommandPoints
-"Command Points: %d"
+"Puntos de Comando: %d"
 END
 
 TOOLTIP:Shortcut
-"Shortcut: %s"
+"Atajo: %s"
 END
 
 TOOLTIP:StructureVeterancy
-"Structure Level Required: %s"
+"Nivel de estructura requerido: %s"
 END
 
 TOOLTIP:Rank
-"Level: %d / Maximum Level: %d"
+"Nivel: %d / Nivel máximo: %d"
 END
 
 TOOLTIP:MaxHealth
-"Health: %d"
+"Vida: %d"
 END
 
 TOOLTIP:MeleeDamage
-"Melee Damage: %d"
+"Daño cuerpo a cuerpo: %d"
 END
 
 TOOLTIP:RangedDamage
-"Ranged Damage: %d"
+"Daño a distancia: %d"
 END
 
 TOOLTIP:BattlesFought
-"Battles Fought: %d"
+"Batallas libradas: %d"
 END
 
 TOOLTIP:AlreadyUpgradedDefault
-"This upgrade has already been purchased"
+"Esta mejora ya ha sido comprada"
 END
 
 TOOLTIP:HasConflictingUpgradeDefault
-"This unit cannot receive this upgrade"
+"Esta unidad no puede recibir esta mejora"
 END
 
 TOOLTIP:SupplyWarehouse
-"\n$%d remain"
+"
+$%d restantes"
 END
 
 TOOLTIP:LobbyPlayers
-"Players currently in the Game Lobby"
+"Jugadores actualmente en el Lobby del juego"
 END
 
 TOOLTIP:StartWorldBuilder
-"Start the World Builder editor"
+"Iniciar el editor World Builder"
 END
 
 TOOLTIP:GetUpdate
-"Download game update"
+"Descargar actualización del juego"
 END
 
 TOOLTIP:DownloadProgress
