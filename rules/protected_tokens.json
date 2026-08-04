@@ -1,0 +1,27 @@
+{
+  "description": "Tokens y patrones protegidos que no deben ser traducidos ni alterados en las cadenas del motor SAGE.",
+  "format_specifiers": [
+    "%d",
+    "%s",
+    "%u",
+    "%f",
+    "%%"
+  ],
+  "control_characters": [
+    "\\n",
+    "\\t",
+    "\\r"
+  ],
+  "sage_tags": [
+    "<COL",
+    "</COL>",
+    "<FONT",
+    "</FONT>",
+    "<IMAGE",
+    "</IMAGE>"
+  ],
+  "regex_patterns": [
+    "%\\d+\\$s",
+    "%\\d+\\$d"
+  ]
+}
