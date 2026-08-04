@@ -1780,39 +1780,39 @@ GUI:Back
 END
 
 APT:Back
-"BACK"
+"ATRÁS"
 END
 
 GUI:Logout
-"MAIN MENU"
+"MENÚ PRINCIPAL"
 END
 
 GUI:CancelMapSelect
-"CANCEL"
+"CANCELAR"
 END
 
 GUI:Accept
-"ACCEPT"
+"ACEPTAR"
 END
 
 GUI:Defaults
-"DEFAULTS"
+"VALORES POR DEFECTO"
 END
 
 GUI:Deny
-"Reject"
+"Rechazar"
 END
 
 GUI:Victory
-"Victory"
+"Victoria"
 END
 
 APT:EndVictorious
-"VICTORIOUS"
+"VICTORIOSO"
 END
 
 APT:EndDefeat
-"DEFEATED"
+"DERROTADO"
 END
 
 APT:EndGameOver
@@ -1820,19 +1820,19 @@ APT:EndGameOver
 END
 
 GUI:Add
-"Add"
+"Agregar"
 END
 
 GUI:Delete
-"Remove"
+"Eliminar"
 END
 
 GUI:RemoveIgnore
-"Remove Ignore"
+"Eliminar ignorar"
 END
 
 GUI:Play
-"Play Game"
+"Jugar"
 END
 
 GUI:Stats
@@ -1840,135 +1840,135 @@ GUI:Stats
 END
 
 GUI:GetMapPack
-"Download Map Pack"
+"Descargar paquete de mapas"
 END
 
 GUI:Defeat
-"Defeat"
+"Derrota"
 END
 
 GUI:YouAreVictorious
-"You are Victorious!"
+"¡Has sido victorioso!"
 END
 
 GUI:YouHaveBeenDefeated
-"You have been Defeated"
+"Has sido derrotado"
 END
 
 GUI:PlayerHasBeenDefeated
-"%ls has been Defeated"
+"%ls ha sido derrotado"
 END
 
 GUI:GameOver
-"Game Over"
+"Fin del juego"
 END
 
 GUI:PlayerAlive
-"Playing"
+"Jugando"
 END
 
 GUI:PlayerDead
-"Defeated"
+"Derrotado"
 END
 
 GUI:PlayerObserver
-"Observing"
+"Observando"
 END
 
 GUI:PlayerObservingAll
-"Observing all players"
+"Observando a todos los jugadores"
 END
 
 GUI:PlayerObservingSpecificHuman
-"Observing %s(%s)"
+"Observando %s(%s)"
 END
 
 GUI:PlayerObserverGone
-"AWOL"
+"DESCONECTADO"
 END
 
 GUI:PlayerGone
-"AWOL"
+"DESCONECTADO"
 END
 
 GUI:Loading
-"LOADING"
+"CARGANDO"
 END
 
 GUI:PlayerName
-"Player Name"
+"Nombre del jugador"
 END
 
 GUI:Info
-"Player Info"
+"Información del jugador"
 END
 
 GUI:Players
-"Players"
+"Jugadores"
 END
 
 GUI:Players:
-"Players:"
+"Jugadores:"
 END
 
 GUI:GameOptions
-"GAME OPTIONS"
+"OPCIONES DE JUEGO"
 END
 
 GUI:GameOptions:
-"Game Options:"
+"Opciones de juego:"
 END
 
 GUI:GameName:
-"Game:"
+"Juego:"
 END
 
 GUI:MapName:
-"Map:"
+"Mapa:"
 END
 
 GUI:Preview
-"Map Preview"
+"Vista previa del mapa"
 END
 
 GUI:SelectMap
-"SELECT MAP"
+"SELECCIONAR MAPA"
 END
 
 GUI:SelectAMap
-"SELECT MAP"
+"SELECCIONAR MAPA"
 END
 
 APT:SelectAGame
-"Select Game"
+"Seleccionar juego"
 END
 
 GUI:SelectAGame
-"SELECT GAME"
+"SELECCIONAR JUEGO"
 END
 
 GUI:MatchMe
-"MATCH ME"
+"ENCONTRAR PARTIDA"
 END
 
 GUI:PersonalInfo
-"Personal Info"
+"Información personal"
 END
 
 GUI:MultiplayerMaps
-"Multiplayer Maps"
+"Mapas multijugador"
 END
 
 GUI:BetterMatch
-"Better Match"
+"Mejor partida"
 END
 
 GUI:MoreGames
-"Faster Search"
+"Búsqueda rápida"
 END
 
 GUI:ExitQuickMatch
-"Exit"
+"Salir"
 END
 
 GUI:Start
