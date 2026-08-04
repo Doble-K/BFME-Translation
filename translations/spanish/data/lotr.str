@@ -3647,55 +3647,56 @@ GUI:JoinFailedGeneralError
 END
 
 GUI:JoinFailedDefault
-"FAILED TO JOIN ROOM"
+"ERROR AL UNIRSE A LA SALA"
 END
 
 GUI:NoGameSelected
-"Select a game to join first."
+"Seleccione un juego para unirse primero."
 END
 
 GUI:GSKicked
-"You were kicked from the room"
+"Ha sido expulsado de la sala"
 END
 
 GUI:GSKickedGameStarted
-"The game has started."
+"El juego ha comenzado."
 END
 
 GUI:GSKickedGameFull
-"The game is full."
+"El juego está lleno."
 END
 
 GUI:GSFailedToHost
-"Could not host the game"
+"No se pudo ser anfitrión del juego"
 END
 
 GUI:NATNegotiationFailed
-"The Lord of the Rings, The Rise of the Witch-king is unable to connect to other player(s). If the problem persists, and you have a NAT or Firewall device or software:\n Click on the Refresh NAT button in the options menu. If you have a DLink device, click the Send Delay button in the options menu. If you are still unable to connect, consider opening a port in your firewall. Consult the manual and readme for details."
+"The Lord of the Rings, The Rise of the Witch-king no puede conectarse con otros jugadores. Si el problema persiste y tiene un dispositivo NAT o firewall:
+ Haga clic en el botón Actualizar NAT en el menú de opciones. Si tiene un dispositivo DLink, haga clic en el botón Retardo de envío en el menú de opciones. Si aún no puede conectarse, considere abrir un puerto en su firewall. Consulte el manual y el readme para más detalles."
 END
 
 GUI:GPErrorTitle
-"BUDDY ERROR"
+"ERROR DE COMPAÑERO"
 END
 
 GUI:GPNoCommunicator
-"The Communicator is not available in the Multiplayer Playtest."
+"El comunicador no está disponible en la prueba multijugador."
 END
 
 GUI:GPDisconnected
-"You have been disconnected from the buddy server. Would you like to reconnect?"
+"Ha sido desconectado del servidor de compañeros. ¿Desea reconectarse?"
 END
 
 GUI:GPNoProfile
-"You did not log in using a Profile. No Buddy information is available."
+"No ha iniciado sesión con un perfil. No hay información de compañeros disponible."
 END
 
 GUI:PSErrorTitle
-"PERSISTENT STORAGE ERROR"
+"ERROR DE ALMACENAMIENTO PERMANENTE"
 END
 
 GUI:PSCannotConnect
-"Could not connect to the persistent storage server"
+"No se pudo conectar al servidor de almacenamiento permanente"
 END
 
 GUI:Error
@@ -3703,19 +3704,19 @@ GUI:Error
 END
 
 GUI:EREGError
-"The EA registration application could not be found in the install directory. Registration is required for online play."
+"No se encontró la aplicación de registro de EA en el directorio de instalación. El registro es necesario para jugar en línea."
 END
 
 GUI:RuleChangeWarning
-"The game host has changed the following rule:"
+"El anfitrión del juego ha cambiado la siguiente regla:"
 END
 
 GUI:RuleResetWarning
-"The game host has reset the rules to their defaults"
+"El anfitrión del juego ha restablecido las reglas a sus valores predeterminados"
 END
 
 Buddy:MatchingNotification
-"%hs is playing Tournament"
+"%hs está jugando Torneo"
 END
 
  
@@ -3731,55 +3732,56 @@ END
 END
 
 Buddy:Offline
-"Offline"
+"Desconectado"
 END
 
 Buddy:CantTalkToIngameBuddy
-"You cannot send messages to buddies in your game if you are observing."
+"No puede enviar mensajes a compañeros mientras observa."
 END
 
 Buddy:Online
-"Online"
+"En línea"
 END
 
 Buddy:Chatting
-"Chatting"
+"Chateando"
 END
 
 Buddy:Staging
-"Staging"
+"En preparación"
 END
 
 Buddy:Loading
-"Loading"
+"Cargando"
 END
 
 Buddy:Playing
-"Playing"
+"Jugando"
 END
 
 Buddy:Matching
-"Matching"
+"Emparejando"
 END
 
 Buddy:Disconnected
-"You have been disconnected\nfrom the buddy list."
+"Ha sido desconectado
+ de la lista de compañeros."
 END
 
 Buddy:MultipleOnlineNotification
-"You have buddies online"
+"Tiene compañeros en línea"
 END
 
 Buddy:OnlineNotification
-"Now online"
+"Ahora en línea"
 END
 
 Buddy:OfflineNotification
-"Now offline"
+"Ahora desconectado"
 END
 
 Buddy:AddNotification
-"%hs has requested to be put on your friends list."
+"%hs ha solicitado ser agregado a su lista de amigos."
 END
 
 Buddy:MessageNotification
@@ -3787,23 +3789,24 @@ Buddy:MessageNotification
 END
 
 Buddy:MessageDisconnected
-"You have been disconnected\nfrom the buddy list."
+"Ha sido desconectado
+ de la lista de compañeros."
 END
 
 Buddy:SelectBuddyToChat
-"Select Buddy to chat"
+"Seleccionar compañero para chatear"
 END
 
 Buddy:BuddyRequest
-"Buddy Request"
+"Solicitud de compañero"
 END
 
 Buddy:FriendRequestSent
-"%hs has been invited to join you buddy list."
+"%hs ha sido invitado a unirse a su lista de compañeros."
 END
 
 GUI:Close
-"Close"
+"Cerrar"
 END
 
 GUI:Com/Tac
@@ -3815,15 +3818,15 @@ GUI:MoneySymbol
 END
 
 GUI:CloseExpScreen
-"Done"
+"Listo"
 END
 
 TOOLTIP:CloseExpScreen
-"Return to Game"
+"Volver al juego"
 END
 
 GUI:OverchargeExhausted
-"Overcharge exhausted."
+"La sobrecarga se ha agotado."
 END
 
 GUI:NotEnoughMoneyToBuild
