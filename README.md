@@ -1,10 +1,12 @@
 # BFME-Translation
 
-Spanish (Latin American) translation project for **Battle for Middle-earth I** (BFME1).
+Spanish (Latin American) translation project for **Battle for Middle-earth II: Rise of the Witch-king** (BFME2 ROTWK) and other SAGE engine games.
 
 ## Description
 
-This repository contains translations of BFME1 `.str` localization files, converted to the SAGE engine-compatible format. The compiled output package is `releases/spanishpatch202.big`.
+This repository contains translations of SAGE engine game `.str` localization files, converted to a compatible format. The compiled output package is `releases/spanishpatch202.big`.
+
+Currently focused on BFME2 ROTWK, with the goal of supporting all three SAGE-based games (BFME1, BFME2, ROTWK) and potentially other games using the SAGE engine.
 
 ## Project Structure
 
@@ -24,6 +26,7 @@ BFME-Translation/
 ├── releases/
 │   └── spanishpatch202.big      # Final compiled package
 ├── AGENTS.md                     # Agent translation instructions
+├── LICENSE                       # GNU GPLv3
 └── README.md                     # This file
 ```
 
@@ -61,7 +64,10 @@ When a release build is requested:
 
 | Commit   | Description                              |
 |----------|------------------------------------------|
-| d9282b1  | Fixed 18 untranslated entries         |
+| e688e2e  | Added GNU GPLv3 license                |
+| 4c2dab3  | README rewritten in English            |
+| 424efd9  | Added project README with workflow and progress |
+| d9282b1  | Fixed 18 untranslated entries          |
 | 0e21e10  | Batch of 100 entries translated        |
 | 9e8433a  | Batch of 10 entries translated         |
 
@@ -80,3 +86,9 @@ python3 tools/localization/validate_translation.py
 ```
 
 Both scripts must return `Errors: 0` before committing.
+
+## TODO
+
+- [ ] Auto-build for `spanishpatch202.big` binary if manual build fails
+- [ ] Manual control of entries or reviews (user-driven override of translations)
+- [ ] Improve merge system to facilitate new languages or improvements to existing translations
