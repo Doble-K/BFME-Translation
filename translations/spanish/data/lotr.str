@@ -1192,111 +1192,112 @@ GUI:MinSpecFailedTitle
 END
 
 GUI:MinSpecFailedMessage
-"Your system does not meet the minimum hardware requirements. You may experience slower than normal frame rates in your multiplayer games."
+"Su sistema no cumple con los requisitos mínimos de hardware. Es posible que experimente tasas de fotogramas más lentas de lo normal en sus juegos multijugador."
 END
 
 GUI:QuitToDesktop
-"QUIT TO DESKTOP"
+"SALIR AL ESCRITORIO"
 END
 
 GUI:QuitToDesktopConf
-"Are you sure you want to quit back to the Desktop?"
+"¿Está seguro de que desea salir al escritorio?"
 END
 
 GUI:SurrenderConfirmation
-"Are you sure you want to Surrender?"
+"¿Está seguro de que desea rendirse?"
 END
 
 GUI:RestartConfirmation
-"Are you sure you want to restart?"
+"¿Está seguro de que desea reiniciar?"
 END
 
 GUI:ShowBehindBuildings
-"Heat signature behind buildings OFF"
+"Firma térmica detrás de edificios APAGADO"
 END
 
 GUI:HideBehindBuildings
-"Heat signature behind buildings ON"
+"Firma térmica detrás de edificios ENCENDIDO"
 END
 
 GUI:DetailsSetToLowest
-"Low graphics detail"
+"Detalle gráfico bajo"
 END
 
 GUI:ReturnGraphicsToPreviousSettings
-"Setting your graphic details to their previous settings"
+"Restaurando la configuración gráfica anterior"
 END
 
 APT:CannotChangeResolution
-"Can be changed only from the Main Menu Settings."
+"Solo se puede cambiar desde la Configuración del Menú Principal."
 END
 
 APT:CannotChangeGraphics
-"Cannot be changed while in a game."
+"No se puede cambiar mientras se está jugando."
 END
 
 GUI:BeaconLabel
-"Type message:"
+"Escribir mensaje:"
 END
 
 ERROR:D3DFailurePrompt
-"DirectX Error"
+"Error de DirectX"
 END
 
 ERROR:D3DFailureMessage
-"Please make sure you have DirectX 9.0 or higher installed. Also verify that your video card meets the minimum requirements, and that you do not have hardware acceleration disabled in the Display control panel."
+"Asegúrese de tener DirectX 9.0 o superior instalado. También verifique que su tarjeta de video cumple con los requisitos mínimos y que no tiene la aceleración por hardware desactivada en el panel de Control de Visualización."
 END
 
 ERROR:InitError
-"Init Error"
+"Error de Inicialización"
 END
 
 ERROR:BaseGameNotInstalled
-"Base Game not installed. Application will exit."
+"Juego base no instalado. La aplicación se cerrará."
 END
 
 ERROR:BaseGameFilesNotFound
-"Base Game files not found. Application will exit."
+"Archivos del juego base no encontrados. La aplicación se cerrará."
 END
 
 GUI:ErrorStartingGame
-"ERROR STARTING GAME"
+"ERROR AL INICIAR EL JUEGO"
 END
 
 GUI:TooManyPlayers
-"This map only supports %d players."
+"Este mapa solo admite %d jugadores."
 END
 
 GUI:SandboxWarning
-"Clicking Start again will start a sandbox game."
+"Hacer clic en Iniciar nuevamente comenzará un juego de sandbox."
 END
 
 GUI:CantFindMap
-"Cannot find the map. Is it corrupted?"
+"No se puede encontrar el mapa. ¿Está dañado?"
 END
 
 GUI:Beacon
-"Beacon"
+"Baliza"
 END
 
 GUI:EACopyright
-"© 2004 ELECTRONIC ARTS INC.  ALL RIGHTS RESERVED."
+"© 2004 ELECTRONIC ARTS INC.  TODOS LOS DERECHOS RESERVADOS."
 END
 
 GUI:DeleteBeacon
-"Delete\nBeacon"
+"Eliminar
+Baliza"
 END
 
 GUI:BeaconPlaced
-"A Beacon was placed by %ls."
+"Una Baliza fue colocada por %ls."
 END
 
 GUI:BeaconPlacementFailed
-"Cannot place Beacon here"
+"No se puede colocar la Baliza aquí"
 END
 
 GUI:TooManyBeacons
-"Cannot place any more Beacons"
+"No se pueden colocar más Balizas"
 END
 
 GUI:Blank
@@ -1304,11 +1305,11 @@ GUI:Blank
 END
 
 APT:Date
-"Date"
+"Fecha"
 END
 
 APT:Time
-"Time"
+"Hora"
 END
 
 GUI:EA
@@ -1316,51 +1317,51 @@ GUI:EA
 END
 
 GUI:Multiplayer
-"MULTIPLAYER"
+"MULTIJUGADOR"
 END
 
 GUI:TestBrowser
-"Test Browser"
+"Probar Navegador"
 END
 
 GUI:GameName
-"Game Name:"
+"Nombre del juego:"
 END
 
 APT:GameName
-"Game Name"
+"Nombre del juego"
 END
 
 APT:CreatePassword
-"Game Password (Optional)"
+"Contraseña del juego (Opcional)"
 END
 
 GUI:NoFileSelected
-"PLEASE SELECT A FILE"
+"POR FAVOR SELECCIONE UN ARCHIVO"
 END
 
 GUI:PleaseSelectAFile
-"Please select a file."
+"Por favor seleccione un archivo."
 END
 
 GUI:NewSaveGame
-"**NEW SAVE FILE**"
+"**NUEVO ARCHIVO DE GUARDADO**"
 END
 
 GUI:NewSaveReplayFile
-"** NEW REPLAY **"
+"** NUEVA REPRISA **"
 END
 
 GUI:AutoSaveName
-"Auto Save for %ls"
+"Guardado automático para %ls"
 END
 
 GUI:DefaultSaveFileName
-"Saved Game %d"
+"Partida guardada %d"
 END
 
 GUI:EnterSaveDesc
-"Enter game description"
+"Ingresar descripción del juego"
 END
 
 GUI:TimeAM
@@ -1372,19 +1373,19 @@ GUI:TimePM
 END
 
 GUI:OverwriteSaveConfirmation
-"Overwrite existing file?"
+"¿Sobrescribir el archivo existente?"
 END
 
 GUI:LoadGameConfirmation
-"Current game data will be lost. Load saved game?"
+"Los datos del juego actual se perderán. ¿Cargar partida guardada?"
 END
 
 GUI:MissionSave
-"Mission Start - %s %d"
+"Inicio de misión - %s %d"
 END
 
 GUI:Buildings
-"Buildings"
+"Edificios"
 END
 
 GUI:DeleteFile
