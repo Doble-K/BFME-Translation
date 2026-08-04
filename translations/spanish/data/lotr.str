@@ -3283,99 +3283,99 @@ GUI:AllTimeLosses
 END
 
 GUI:AllTimePoints
-"All-Time Rank Points"
+"Puntos de rango de todos los tiempos"
 END
 
 GUI:AllTimeDisconnects
-"All-Time Disconnects"
+"Desconexiones de todos los tiempos"
 END
 
 GUI:HighestRank
-"All-Time Highest Rank"
+"Rango más alto de todos los tiempos"
 END
 
 GUI:Honor
-"Battle Honors"
+"Honores de batalla"
 END
 
 GUI:LastUpdated
-"Player Profile Last Updated"
+"Perfil del jugador actualizado por última vez"
 END
 
 GUI:WOLIconKey
-"Icon Key"
+"Clave de iconos"
 END
 
 GUI:WOLWelcome
-"Welcome to The Lord of the Rings, The Rise of the Witch-king Online, %hs"
+"Bienvenido a The Lord of the Rings, The Rise of the Witch-king Online, %hs"
 END
 
 GUI:MyInfo
-"MY PERSONA"
+"MI PERSONA"
 END
 
 GUI:Buddies
-"COMMUNICATOR"
+"COMUNICADOR"
 END
 
 GUI:BuddiesTab
-"Buddies"
+"Compañeros"
 END
 
 GUI:Community
-"Community"
+"Comunidad"
 END
 
 GUI:SortAlpha
-"Name"
+"Nombre"
 END
 
 GUI:SortPing
-"Connection"
+"Conexión"
 END
 
 GUI:SortBuddies
-"Buddies"
+"Compañeros"
 END
 
 GUI:GSRank0
-"Level 0"
+"Nivel 0"
 END
 
 GUI:GSRank1
-"Level 1"
+"Nivel 1"
 END
 
 GUI:GSRank2
-"Level 2"
+"Nivel 2"
 END
 
 GUI:GSRank3
-"Level 3"
+"Nivel 3"
 END
 
 GUI:GSRank4
-"Level 4"
+"Nivel 4"
 END
 
 GUI:GSRank5
-"Level 5"
+"Nivel 5"
 END
 
 GUI:GSRank6
-"Level 6"
+"Nivel 6"
 END
 
 GUI:GSRank7
-"Level 7"
+"Nivel 7"
 END
 
 GUI:GSRank8
-"Level 8"
+"Nivel 8"
 END
 
 GUI:GSRank9
-"Level 9"
+"Nivel 9"
 END
 
 GUI:GSErrorTitle
@@ -3383,87 +3383,87 @@ GUI:GSErrorTitle
 END
 
 GUI:GSNoLoginInfoAll
-"Please enter your email, nickname, and password. Then, click on Login or Create Account."
+"Por favor ingrese su correo electrónico, apodo y contraseña. Luego, haga clic en Iniciar sesión o Crear cuenta."
 END
 
 GUI:GSNoLoginInfoEmailNickname
-"Please enter your email and nickname. Then, click on Login or Create Account."
+"Por favor ingrese su correo electrónico y apodo. Luego, haga clic en Iniciar sesión o Crear cuenta."
 END
 
 GUI:GSNoLoginInfoEmailPassword
-"Please enter your email and password. Then, click on Login or Create Account."
+"Por favor ingrese su correo electrónico y contraseña. Luego, haga clic en Iniciar sesión o Crear cuenta."
 END
 
 GUI:Any
-"Any"
+"Cualquiera"
 END
 
 GUI:GSNoLoginInfoNicknamePassword
-"Please enter your nickname and password. Then, click on Login."
+"Por favor ingrese su apodo y contraseña. Luego, haga clic en Iniciar sesión."
 END
 
 GUI:GSNoLoginInfoEmail
-"Please enter your email. Then, click on Login or Create Account."
+"Por favor ingrese su correo electrónico. Luego, haga clic en Iniciar sesión o Crear cuenta."
 END
 
 GUI:GSNoLoginInfoNickname
-"Please enter your nickname. Then, click on Login or Create Account."
+"Por favor ingrese su apodo. Luego, haga clic en Iniciar sesión o Crear cuenta."
 END
 
 GUI:GSNoLoginInfoPassword
-"Please enter your password. Then, click on login."
+"Por favor ingrese su contraseña. Luego, haga clic en Iniciar sesión."
 END
 
 GUI:GSDisconnected
-"You have been disconnected from the chat server."
+"Ha sido desconectado del servidor de chat."
 END
 
 GUI:GSDisconReason1
-"That nickname has already been taken. Please choose another"
+"Ese apodo ya está en uso. Por favor elija otro"
 END
 
 GUI:GSDisconReason2
-"That nickname is invalid. Please choose another"
+"Ese apodo es inválido. Por favor elija otro"
 END
 
 GUI:GSDisconReason3
-"Lost connection to The Lord of the Rings, The Battle for Middle-earth II, The Rise of the Witch-king Online."
+"Se perdió la conexión con The Lord of the Rings, The Battle for Middle-earth II, The Rise of the Witch-king Online."
 END
 
 GUI:GSDisconReason4
-"Could not connect to The Lord of the Rings, The Battle for Middle-earth II, The Rise of the Witch-king Online."
+"No se pudo conectar con The Lord of the Rings, The Battle for Middle-earth II, The Rise of the Witch-king Online."
 END
 
 GUI:GSDisconReason5
-"Login process has timed out. Please check your internet connection\""
+"El proceso de inicio de sesión ha expirado. Por favor verifique su conexión a Internet"
 END
 
 GUI:GSDisconReason6
-"That nickname/email combo does not exist. If you want to create an account, click on Create Account."
+"Esa combinación de apodo/correo electrónico no existe. Si desea crear una cuenta, haga clic en Crear cuenta."
 END
 
 GUI:GSDisconReason7
-"That email is invalid"
+"Ese correo electrónico es inválido"
 END
 
 GUI:GSDisconReason8
-"That password is incorrect. Please try again."
+"Esa contraseña es incorrecta. Por favor intente de nuevo."
 END
 
 GUI:GSDisconReason9
-"Bad profile."
+"Perfil incorrecto."
 END
 
 GUI:GSDisconReason10
-"Profile has been deleted."
+"Perfil ha sido eliminado."
 END
 
 GUI:GSDisconReason11
-"Buddy server connection was refused"
+"La conexión al servidor de compañeros fue rechazada"
 END
 
 GUI:GSDisconReason12
-"Buddy server authorization failed"
+"La autorización del servidor de compañeros falló"
 END
 
 GUI:GSDisconReason13
