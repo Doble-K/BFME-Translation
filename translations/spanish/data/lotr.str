@@ -3467,183 +3467,183 @@ GUI:GSDisconReason12
 END
 
 GUI:GSDisconReason13
-"Serial number is invalid. Please try another"
+"El número de serie es inválido. Por favor intente con otro"
 END
 
 GUI:GSDisconReason14
-"Registry is corrupt and has been altered"
+"El registro está corrupto y ha sido modificado"
 END
 
 GUI:GSDisconReason15
-"Serial number is banned."
+"El número de serie está baneado."
 END
 
 GUI:GSDisconReason16
-"A profile with that nickname already exists."
+"Ya existe un perfil con ese apodo."
 END
 
 GUI:GSDisconReason17
-"That password is incorrect. Please try again"
+"La contraseña es incorrecta. Por favor intente de nuevo"
 END
 
 GUI:GSDisconReason18
-"A profile with that nickname already exists."
+"Ya existe un perfil con ese apodo."
 END
 
 GUI:GSDisconReason19
-"Server error - cannot create account."
+"Error del servidor - no se puede crear la cuenta."
 END
 
 GUI:GSDisconReason20
-"The connection was closed. Please try again."
+"La conexión fue cerrada. Por favor intente de nuevo."
 END
 
 GUI:GSDisconReason21
-"Lost connection to The Lord of the Rings, The Rise of the Witch-king, due to duplicate account (same cd-key)."
+"Se perdió la conexión con The Lord of the Rings, The Rise of the Witch-king, debido a una cuenta duplicada (mismo cd-key)."
 END
 
 GUI:GSGroupRoomJoinFail
-"Failed to join chat room"
+"Error al unirse al chat - la sala está llena"
 END
 
 GUI:GSBuddyInviteFailedTitle
-"Buddy Invite Timed Out"
+"La invitación de compañero expiró"
 END
 
 GUI:GSBuddyInviteFailed
-"Unable to find game from Buddy Invite."
+"No se pudo encontrar el juego desde la invitación de compañero."
 END
 
 GUI:GSGPDisconReason0
-"Unknown connection error has occured. Please try again."
+"Ocurrió un error de conexión desconocido. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason1
-"A parsing error has occured. Please try again."
+"Ocurrió un error de análisis. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason2
-"You are currently not logged in. Please try again."
+"Actualmente no ha iniciado sesión. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason3
-"Bad session key. Please try again."
+"Clave de sesión incorrecta. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason4
-"There was a database error. Please try again."
+"Ocurrió un error de base de datos. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason5
-"There was a network error. Please try again."
+"Ocurrió un error de red. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason6
-"There was a forced disconnect. Please try again."
+"Hubo una desconexión forzada. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason7
-"The connection was closed. Please try again."
+"La conexión fue cerrada. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason256
-"Unknown login error."
+"Error de inicio de sesión desconocido."
 END
 
 GUI:GSGPDisconReason258
-"Bad nickname. This nickname is currently not associated with this email account."
+"Apodo incorrecto. Este apodo no está asociado con esta cuenta de correo electrónico."
 END
 
 GUI:GSGPDisconReason259
-"The EA account associated with this name does not exist."
+"La cuenta de EA asociada con este nombre no existe."
 END
 
 GUI:GSGPDisconReason260
-"Bad password. Please enter the correct password associated with this account."
+"Contraseña incorrecta. Por favor ingrese la contraseña correcta asociada a esta cuenta."
 END
 
 GUI:GSGPDisconReason261
-"Bad profile."
+"Perfil incorrecto."
 END
 
 GUI:GSGPDisconReason262
-"Login profile was deleted."
+"El perfil de inicio de sesión fue eliminado."
 END
 
 GUI:GSGPDisconReason263
-"Connection failed."
+"La conexión falló."
 END
 
 GUI:GSGPDisconReason264
-"Login server authentication failed."
+"La autenticación del servidor de inicio de sesión falló."
 END
 
 GUI:GSGPDisconReason265
-"Bad unique nickname. Doesn't exist for this account."
+"Apodo único incorrecto. No existe para esta cuenta."
 END
 
 GUI:GSGPDisconReason266
-"Bad pre-authentication."
+"Pre-autenticación incorrecta."
 END
 
 GUI:GSGPDisconReason512
-"Unknown new user error."
+"Error de nuevo usuario desconocido."
 END
 
 GUI:GSGPDisconReason513
-"New User Error: Invalid nickname. Try again."
+"Error de nuevo usuario: Apodo inválido. Intente de nuevo."
 END
 
 GUI:GSGPDisconReason514
-"New User Error: Invalid password. Try again."
+"Error de nuevo usuario: Contraseña inválida. Intente de nuevo."
 END
 
 GUI:GSGPDisconReason515
-"New User Error: Unique nickname is invalid. Try something else."
+"Error de nuevo usuario: El apodo único es inválido. Intente con algo diferente."
 END
 
 GUI:GSGPDisconReason516
-"New User Error: Unique nickname is already in use. Try something else."
+"Error de nuevo usuario: El apodo único ya está en uso. Intente con algo diferente."
 END
 
 GUI:JoinFailedRoomFull
-"Failed to join - the room is full."
+"Error al unirse - la sala está llena"
 END
 
 GUI:JoinFailedInviteOnly
-"Failed to join - the room is invitation only."
+"Error al unirse - la sala es solo por invitación"
 END
 
 GUI:JoinFailedBannedFromRoom
-"Failed to join - you have been banned from the room"
+"Error al unirse - ha sido baneado de la sala"
 END
 
 GUI:JoinFailedBadPassword
-"Failed to join - incorrect password"
+"Error al unirse - contraseña incorrecta"
 END
 
 GUI:JoinFailedAlreadyInRoom
-"Failed to join - you are already in a room"
+"Error al unirse - ya está en una sala"
 END
 
 GUI:JoinFailedNoConnection
-"Failed to join - no connection to chat server"
+"Error al unirse - sin conexión al servidor de chat"
 END
 
 GUI:JoinFailedCRCMismatch
-"Failed to join - the game is a different version"
+"Error al unirse - el juego es una versión diferente"
 END
 
 GUI:JoinFailedUnknownLadder
-"Failed to join - the game is using an unknown ladder"
+"Error al unirse - el juego usa una liga desconocida"
 END
 
 GUI:JoinFailedGameInPlay
-"Failed to join - the game is already in progress"
+"Error al unirse - el juego ya está en curso"
 END
 
 GUI:JoinFailedGeneralError
-"Failed to join"
+"Error al unirse"
 END
 
 GUI:JoinFailedDefault
