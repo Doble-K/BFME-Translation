@@ -19,8 +19,10 @@ def main():
     entries = data.get("entries", [])
     output_str_file.parent.mkdir(parents=True, exist_ok=True)
 
-    # El motor SAGE de BFME requiere estrictamente UTF-16 con BOM y saltos de línea CRLF (\r\n)
-    with open(output_str_file, "w", encoding="utf-16", newline="\r\n") as f:
+    # Escribir en UTF-8 con saltos de línea de Windows (CRLF), igual que el original
+    with open(output_str_file, "w", encoding="utf-8", newline="\r\n") as f:
+        f.write("// String file for Lord of the Rings\r\n\r\n")
+        
         for entry in entries:
             entry_id = entry.get("id")
             if not entry_id:
@@ -28,10 +30,9 @@ def main():
                 
             text = entry.get("translation") or entry.get("source") or entry.get("text", "")
             
-            # Escapar comillas dobles internas para que el parser no rompa la línea
+            # Escapar comillas dobles internas
             text_escaped = text.replace('"', '\\"')
             
-            # Estructura clásica exacta que espera el parser de los .str de EA
             f.write(f"{entry_id}\r\n")
             f.write(f'"{text_escaped}"\r\n')
             f.write("END\r\n\r\n")
