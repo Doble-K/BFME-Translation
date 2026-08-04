@@ -2914,11 +2914,11 @@ GUI:WinStreak
 END
 
 GUI:LossStreak
-"Loss Streak"
+"Racha de derrotas"
 END
 
 GUI:WinPercentLabel
-"Win Percent"
+"Porcentaje de victorias"
 END
 
  
@@ -2926,107 +2926,107 @@ END
 END
 
 GUI:LastLadder
-"Last Ladder"
+"Última liga"
 END
 
 GUI:GamesPlayed
-"Games Played"
+"Juegos jugados"
 END
 
 GUI:TOS
-"SERVICE TERMS"
+"TÉRMINOS DE SERVICIO"
 END
 
 GUI:RememberInfo
-"Remember my Info"
+"Recordar mi información"
 END
 
 GUI:HostWantsToStart
-"The Host wants to start. Press the Accept button."
+"El anfitrión quiere comenzar. Presione el botón Aceptar."
 END
 
 GUI:PlayerNoMap
-"%ls does not have the map %ls."
+"%ls no tiene el mapa %ls."
 END
 
 GUI:LocalPlayerNoMap
-"You do not have the map %ls."
+"Usted no tiene el mapa %ls."
 END
 
 GUI:PlayerNoMapWillTransfer
-"%ls does not have the map %ls. It will be transferred at game start."
+"%ls no tiene el mapa %ls. Se transferirá al inicio del juego."
 END
 
 GUI:LocalPlayerNoMapWillTransfer
-"You do not have the map %ls. It will be transferred to you at game start."
+"Usted no tiene el mapa %ls. Se le transferirá al inicio del juego."
 END
 
 GUI:CouldNotTransferMap
-"Unable to transfer the map. The game cannot start"
+"No se pudo transferir el mapa. El juego no puede comenzar"
 END
 
 GUI:CouldNotTransferHero
-"Unable to transfer the Hero data. The game cannot start."
+"No se pudieron transferir los datos del Héroe. El juego no puede comenzar."
 END
 
 GUI:Status
-"Status"
+"Estado"
 END
 
 APT:FileTransferLoadingTitle
-"Transferring Files"
+"Transfiriendo archivos"
 END
 
 MapTransfer:CurrentFile
-"Current file: %ls"
+"Archivo actual: %ls"
 END
 
 MapTransfer:Timeout
-"Abort in %d:%2.2d"
+"Abortar en %d:%2.2d"
 END
 
 MapTransfer:Preparing
-"Preparing..."
+"Preparando..."
 END
 
 MapTransfer:Sending
-"Sending..."
+"Enviando..."
 END
 
 MapTransfer:Recieving
-"Receiving..."
+"Recibiendo..."
 END
 
 MapTransfer:Done
-"Done"
+"Hecho"
 END
 
 GUI:NeedMorePlayers
-"You need more player(s) to start the game"
+"Necesita más jugador(es) para comenzar el juego"
 END
 
 GUI:NotifiedStartIntent
-"Host wants to start game but cannot because one or more others are not ready!"
+"El anfitrión quiere comenzar el juego pero no puede porque uno o más jugadores no están listos!"
 END
 
 GUI:HostLeftTitle
-"HOST HAS LEFT"
+"EL ANFITRIÓN HA SALIDO"
 END
 
 GUI:WidenSearch
-"WIDEN SEARCH"
+"AMPLIAR BÚSQUEDA"
 END
 
 GUI:QMAborted
-"Matching aborted"
+"Emparejamiento cancelado"
 END
 
 GUI:DrawScrollAnchor
-"Draw scroll anchor"
+"Dibujar ancla de desplazamiento"
 END
 
 GUI:MoveScrollAnchor
-"Move scroll anchor"
+"Mover ancla de desplazamiento"
 END
 
 GUI:GroupRoom1
@@ -3042,59 +3042,59 @@ GUI:GroupRoom3
 END
 
 GUI:LobbyJoined
-"You have joined %ls."
+"Se ha unido a %ls."
 END
 
 GUI:Email
-"Email"
+"Correo electrónico"
 END
 
 GUI:NoLadder
-"No Ladder"
+"Sin liga"
 END
 
 GUI:ChooseLadder
-"Choose A Ladder"
+"Elegir una liga"
 END
 
 GUI:UnknownLadder
-"Unknown Ladder"
+"Liga desconocida"
 END
 
 GUI:WOLLogin
-"THE LORD OF THE RINGS, THE RISE OF THE WITCH-KING ONLINE LOG IN"
+"INICIO DE SESIÓN DE THE LORD OF THE RINGS, THE RISE OF THE WITCH-KING ONLINE"
 END
 
 GUI:PleaseEnterWOLInfo
-"Please enter info"
+"Por favor ingrese su información"
 END
 
 GUI:Username
-"Nickname"
+"Apodo"
 END
 
 GUI:Password
-"Password"
+"Contraseña"
 END
 
 GUI:Server
-"Server"
+"Servidor"
 END
 
 GUI:AutoLogin
-"Auto Login in the Future"
+"Iniciar sesión automáticamente en el futuro"
 END
 
 GUI:RememberPassword
-"Remember My Password"
+"Recordar mi contraseña"
 END
 
 GUI:Login
-"LOGIN"
+"INICIAR SESIÓN"
 END
 
 GUI:CreateAccount
-"CREATE ACCOUNT"
+"CREAR CUENTA"
 END
 
 GUI:TryAgain
