@@ -5,106 +5,106 @@
     {
       "id": "LETTER:G",
       "source": "G",
-      "translation": "",
-      "status": "pending",
+      "translation": "G",
+      "status": "reviewed",
       "line": 4
     },
     {
       "id": "LETTER:L",
       "source": "L",
-      "translation": "",
-      "status": "pending",
+      "translation": "L",
+      "status": "reviewed",
       "line": 8
     },
     {
       "id": "LETTER:M",
       "source": "M",
-      "translation": "",
-      "status": "pending",
+      "translation": "M",
+      "status": "reviewed",
       "line": 12
     },
     {
       "id": "LETTER:S",
       "source": "S",
-      "translation": "",
-      "status": "pending",
+      "translation": "S",
+      "status": "reviewed",
       "line": 16
     },
     {
       "id": "LETTER:O",
       "source": "O",
-      "translation": "",
-      "status": "pending",
+      "translation": "O",
+      "status": "reviewed",
       "line": 20
     },
     {
       "id": "NUMBER:1",
       "source": "1",
-      "translation": "",
-      "status": "pending",
+      "translation": "1",
+      "status": "reviewed",
       "line": 24
     },
     {
       "id": "NUMBER:2",
       "source": "2",
-      "translation": "",
-      "status": "pending",
+      "translation": "2",
+      "status": "reviewed",
       "line": 28
     },
     {
       "id": "NUMBER:3",
       "source": "3",
-      "translation": "",
-      "status": "pending",
+      "translation": "3",
+      "status": "reviewed",
       "line": 32
     },
     {
       "id": "NUMBER:4",
       "source": "4",
-      "translation": "",
-      "status": "pending",
+      "translation": "4",
+      "status": "reviewed",
       "line": 36
     },
     {
       "id": "NUMBER:5",
       "source": "5",
-      "translation": "",
-      "status": "pending",
+      "translation": "5",
+      "status": "reviewed",
       "line": 40
     },
     {
       "id": "NUMBER:6",
       "source": "6",
-      "translation": "",
-      "status": "pending",
+      "translation": "6",
+      "status": "reviewed",
       "line": 44
     },
     {
       "id": "NUMBER:7",
       "source": "7",
-      "translation": "",
-      "status": "pending",
+      "translation": "7",
+      "status": "reviewed",
       "line": 48
     },
     {
       "id": "NUMBER:8",
       "source": "8",
-      "translation": "",
-      "status": "pending",
+      "translation": "8",
+      "status": "reviewed",
       "line": 52
     },
     {
       "id": "NUMBER:9",
       "source": "9",
-      "translation": "",
-      "status": "pending",
+      "translation": "9",
+      "status": "reviewed",
       "line": 56
     },
     {
       "id": "NUMBER:0",
       "source": "0",
-      "translation": "",
-      "status": "pending",
+      "translation": "0",
+      "status": "reviewed",
       "line": 60
     },
     {
