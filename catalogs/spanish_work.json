@@ -110,22 +110,22 @@
     {
       "id": "TIME:Days",
       "source": "%d Days",
-      "translation": "",
-      "status": "pending",
+      "translation": "%d días",
+      "status": "translated",
       "line": 67
     },
     {
       "id": "TIME:Day",
       "source": "1 Day",
-      "translation": "",
-      "status": "pending",
+      "translation": "Dia 1",
+      "status": "translated",
       "line": 71
     },
     {
       "id": "TIME:Hours",
       "source": "%d Hours",
-      "translation": "",
-      "status": "pending",
+      "translation": "%d horas",
+      "status": "translated",
       "line": 75
     },
     {
