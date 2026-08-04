@@ -27,7 +27,28 @@ def main():
             "source": entry["text"],
             "translation": "",
             "status": "pending",
-            "line": entry["line"]
+            "line": entry["line"],
+            "flags": [],
+            "notes": "",
+            "translation_meta": {
+                "origin": None,
+                "model": None,
+                "date": None,
+                "confidence": 0.0
+            },
+            "review": {
+                "ai": {
+                    "checked": False,
+                    "issues": [],
+                    "last_review": None
+                },
+                "human": {
+                    "checked": False,
+                    "user": None,
+                    "date": None
+                }
+            },
+            "history": []
         })
 
     with open(output_file, "w", encoding="utf-8") as f:
