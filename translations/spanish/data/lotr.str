@@ -3162,7 +3162,7 @@ APT:GoodCampaign
 END
 
 GUI:GoodCampaign
-"Buena Campaña"
+"Campaña del Bien"
 END
 
 APT:EvilCampaign
@@ -3170,7 +3170,7 @@ APT:EvilCampaign
 END
 
 GUI:EvilCampaign
-"Malvada Campaña"
+"Campaña del Mal"
 END
 
 APT:ContinueCampaign
@@ -3182,11 +3182,11 @@ APT:LoadCampaign
 END
 
 CAMPAIGN:GOOD
-"Buena Campaña"
+"Campaña del Bien"
 END
 
 CAMPAIGN:EVIL
-"Malvada Campaña"
+"Campaña del Mal"
 END
 
 APT:GameHost
