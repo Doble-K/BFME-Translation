@@ -2177,63 +2177,63 @@ GUI:Resolution2
 END
 
 GUI:Detail
-"Detail"
+"Detalle"
 END
 
 GUI:UltraHigh
-"Ultra High"
+"Ultra Alto"
 END
 
 GUI:High
-"High"
+"Alto"
 END
 
 GUI:Medium
-"Medium"
+"Medio"
 END
 
 GUI:Low
-"Low"
+"Bajo"
 END
 
 GUI:VeryLow
-"Very Low"
+"Muy bajo"
 END
 
 GUI:Easy
-"Easy"
+"Fácil"
 END
 
 GUI:MediumDifficulty
-"Medium"
+"Medio"
 END
 
 GUI:Hard
-"Hard"
+"Difícil"
 END
 
 GUI:SelectDifficulty
-"SELECT DIFFICULTY"
+"SELECCIONAR DIFICULTAD"
 END
 
 APT:EasyDifficulty
-"EASY"
+"FÁCIL"
 END
 
 APT:MediumDifficulty
-"MEDIUM"
+"MEDIO"
 END
 
 APT:HardDifficulty
-"HARD"
+"DIFÍCIL"
 END
 
 APT:DifficultyTitle
-"SELECT DIFFICULTY"
+"SELECCIONAR DIFICULTAD"
 END
 
 GUI:Random
-"Random"
+"Aleatorio"
 END
 
 GUI:???
@@ -2241,59 +2241,59 @@ GUI:???
 END
 
 GUI:None
-"None"
+"Ninguno"
 END
 
 GUI:Team
-"Team"
+"Equipo"
 END
 
 GUI:Faction
-"Army"
+"Facción"
 END
 
 GUI:AntiAliasing0
-"Off"
+"Desactivado"
 END
 
 GUI:AntiAliasing1
-"Low"
+"Bajo"
 END
 
 GUI:AntiAliasing2
-"High"
+"Alto"
 END
 
 GUI:IPAddresses
-"LAN IP:"
+"IP LAN:"
 END
 
 GUI:OnlineIPAddresses
-"Online IP:"
+"IP en línea:"
 END
 
 GUI:MinPointPercent
-"Min Win Percent Required:"
+"Porcentaje mínimo de victorias requerido:"
 END
 
 GUI:MaxPointPercent
-"Max Win Percent Allowed:"
+"Porcentaje máximo de victorias permitido:"
 END
 
 GUI:AllowableMaps
-"Allowable Maps"
+"Mapas permitidos"
 END
 
 GUI:QuickMatchTitle
-"Tournament"
+"Torneo"
 END
 
 GUI:ConnectionSpeed
-"Connection Speed"
+"Velocidad de conexión"
 END
 
 GUI:NumPlayers
-"Players:"
+"Jugadores:"
 END
 
 GUI:PlayersVersusPlayers
@@ -2305,51 +2305,51 @@ GUI:TimeInMilliseconds
 END
 
 GUI:MaxDisconnects
-"Max Disconnects Allowed:"
+"Desconexiones máximas permitidas:"
 END
 
 GUI:Confirm
-"Are you sure?"
+"¿Está seguro?"
 END
 
 GUI:MapPreview
-"Map Preview"
+"Vista previa del mapa"
 END
 
 GUI:NothingSelected
-"Nothing selected."
+"Nada seleccionado."
 END
 
 GUI:SelectedAcrossScreen
-"Selected across screen."
+"Seleccionado en toda la pantalla."
 END
 
 GUI:SelectedAcrossMap
-"Selected across map."
+"Seleccionado en todo el mapa."
 END
 
 GUI:Rank1Required
-"RANK REQUIRED - 1 Star General"
+"RANGO REQUERIDO - General de 1 estrella"
 END
 
 GUI:Rank3Required
-"RANK REQUIRED - 3 Star General"
+"RANGO REQUERIDO - General de 3 estrellas"
 END
 
 GUI:Rank8Required
-"RANK REQUIRED - 5 Star General"
+"RANGO REQUERIDO - General de 5 estrellas"
 END
 
 GUI:Experience
-"Experience"
+"Experiencia"
 END
 
 GUI:RemainingSkillPoints
-"Points"
+"Puntos"
 END
 
 TOOLTIP:PlayerCreatedName
-"Name of the player that created the game"
+"Nombre del jugador que creó el juego"
 END
 
 TOOLTIP:HTTPProxy
