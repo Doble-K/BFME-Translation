@@ -1,0 +1,8 @@
+{
+  "game": "RotWK",
+  "patch": "2.02",
+  "source_archive": "englishpatch202.big",
+  "source_files": [
+    "data/lotr.str"
+  ]
+}
