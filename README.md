@@ -2,11 +2,21 @@
 
 Spanish (Latin American) translation project for **Battle for Middle-earth II: Rise of the Witch-king** (BFME2 ROTWK) and other SAGE engine games.
 
+> *"One Token to rule them all, One Terminal at a time."*
+
 ## Description
 
 This repository contains translations of SAGE engine game `.str` localization files, converted to a compatible format. The compiled output package is `releases/spanishpatch202.big`.
 
 Currently focused on BFME2 ROTWK, with the goal of supporting all three SAGE-based games (BFME1, BFME2, ROTWK) and potentially other games using the SAGE engine.
+
+## Disclaimer
+
+This is an unofficial fan translation project. **Battle for Middle-earth II: Rise of the Witch-king** and the SAGE engine are trademarks of **Electronic Arts Inc.** The game and its assets are copyrighted by **EA Games / EA DICE** and/or their respective publishers.
+
+All Tolkien-related intellectual property (characters, places, lore, etc.) is the property of **The Tolkien Estate** and **Middle-earth Enterprises** (formerly Saul Zaentz Company).
+
+This translation project is not affiliated with, endorsed by, or sponsored by Tolkien, Middle-earth Enterprises, Electronic Arts, or any of their subsidiaries or licensees. All game assets remain the property of their respective owners.
 
 ## Project Structure
 
@@ -92,3 +102,5 @@ Both scripts must return `Errors: 0` before committing.
 - [ ] Auto-build for `spanishpatch202.big` binary if manual build fails
 - [ ] Manual control of entries or reviews (user-driven override of translations)
 - [ ] Improve merge system to facilitate new languages or improvements to existing translations
+- [ ] Add support for translating mods
+- [ ] Consider a more generic name for the project
