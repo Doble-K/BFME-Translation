@@ -131,141 +131,141 @@
     {
       "id": "TIME:Hour",
       "source": "1 Hour",
-      "translation": "",
-      "status": "pending",
+      "translation": "1 Hora",
+      "status": "translated",
       "line": 79
     },
     {
       "id": "TIME:Minutes",
       "source": "%d Minutes",
-      "translation": "",
-      "status": "pending",
+      "translation": "%d Minutos",
+      "status": "translated",
       "line": 83
     },
     {
       "id": "TIME:Minute",
       "source": "1 Minute",
-      "translation": "",
-      "status": "pending",
+      "translation": "1 Minuto",
+      "status": "translated",
       "line": 87
     },
     {
       "id": "TIME:Seconds",
       "source": "%d Seconds",
-      "translation": "",
-      "status": "pending",
+      "translation": "%d Segundos",
+      "status": "translated",
       "line": 91
     },
     {
       "id": "TIME:Second",
       "source": "Gold",
-      "translation": "",
-      "status": "pending",
+      "translation": "Oro",
+      "status": "translated",
       "line": 95
     },
     {
       "id": "Color:Red",
       "source": "Red",
-      "translation": "",
-      "status": "pending",
+      "translation": "Rojo",
+      "status": "translated",
       "line": 104
     },
     {
       "id": "Color:MordorRed",
       "source": "Mordor Red",
-      "translation": "",
-      "status": "pending",
+      "translation": "Mordor Rojo",
+      "status": "translated",
       "line": 108
     },
     {
       "id": "Color:Blue",
       "source": "Blue",
-      "translation": "",
-      "status": "pending",
+      "translation": "Azul",
+      "status": "translated",
       "line": 112
     },
     {
       "id": "Color:GondorBlue",
       "source": "Gondor Blue",
-      "translation": "",
-      "status": "pending",
+      "translation": "Gondor Azul",
+      "status": "translated",
       "line": 116
     },
     {
       "id": "Color:Green",
       "source": "Green",
-      "translation": "",
-      "status": "pending",
+      "translation": "Verde",
+      "status": "translated",
       "line": 120
     },
     {
       "id": "Color:RohanGreen",
       "source": "Elven Green",
-      "translation": "",
-      "status": "pending",
+      "translation": "Elfo Verde",
+      "status": "translated",
       "line": 124
     },
     {
       "id": "Color:Black",
       "source": "Sauron Black",
-      "translation": "",
-      "status": "pending",
+      "translation": "Sauron Negro",
+      "status": "translated",
       "line": 128
     },
     {
       "id": "Color:Orange",
       "source": "Orange",
-      "translation": "",
-      "status": "pending",
+      "translation": "Naranja",
+      "status": "translated",
       "line": 132
     },
     {
       "id": "Color:SkyBlue",
       "source": "Cyan",
-      "translation": "",
-      "status": "pending",
+      "translation": "Cian",
+      "status": "translated",
       "line": 136
     },
     {
       "id": "Color:Purple",
       "source": "Purple",
-      "translation": "",
-      "status": "pending",
+      "translation": "Violeta",
+      "status": "translated",
       "line": 140
     },
     {
       "id": "Color:Pink",
       "source": "Fairy Pink",
-      "translation": "",
-      "status": "pending",
+      "translation": "Rosa Hada",
+      "status": "translated",
       "line": 144
     },
     {
       "id": "Team:0",
       "source": "-",
-      "translation": "",
-      "status": "pending",
+      "translation": "-",
+      "status": "translated",
       "line": 149
     },
     {
       "id": "Team:1",
       "source": "1",
-      "translation": "",
-      "status": "pending",
+      "translation": "1",
+      "status": "translated",
       "line": 153
     },
     {
       "id": "Team:2",
       "source": "2",
-      "translation": "",
-      "status": "pending",
+      "translation": "2",
+      "status": "translated",
       "line": 157
     },
     {
       "id": "Team:3",
       "source": "3",
-      "translation": "",
-      "status": "pending",
+      "translation": "3",
+      "status": "translated",
       "line": 161
     },
     {
