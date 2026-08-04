@@ -1,179 +1,179 @@
 // String file for Lord of the Rings
 
 LETTER:G
-"[Traducido] G"
+"G"
 END
 
 LETTER:L
-"[Traducido] L"
+"L"
 END
 
 LETTER:M
-"[Traducido] M"
+"M"
 END
 
 LETTER:S
-"[Traducido] S"
+"S"
 END
 
 LETTER:O
-"[Traducido] O"
+"O"
 END
 
 NUMBER:1
-"[Traducido] 1"
+"1"
 END
 
 NUMBER:2
-"[Traducido] 2"
+"2"
 END
 
 NUMBER:3
-"[Traducido] 3"
+"3"
 END
 
 NUMBER:4
-"[Traducido] 4"
+"4"
 END
 
 NUMBER:5
-"[Traducido] 5"
+"5"
 END
 
 NUMBER:6
-"[Traducido] 6"
+"6"
 END
 
 NUMBER:7
-"[Traducido] 7"
+"7"
 END
 
 NUMBER:8
-"[Traducido] 8"
+"8"
 END
 
 NUMBER:9
-"[Traducido] 9"
+"9"
 END
 
 NUMBER:0
-"[Traducido] 0"
+"0"
 END
 
 TIME:Days
-"[Traducido] %d Days"
+"%d días"
 END
 
 TIME:Day
-"[Traducido] 1 Day"
+"1 día"
 END
 
 TIME:Hours
-"[Traducido] %d Hours"
+"%d horas"
 END
 
 TIME:Hour
-"[Traducido] 1 Hour"
+"1 hora"
 END
 
 TIME:Minutes
-"[Traducido] %d Minutes"
+"%d minutos"
 END
 
 TIME:Minute
-"[Traducido] 1 Minute"
+"1 minuto"
 END
 
 TIME:Seconds
-"[Traducido] %d Seconds"
+"%d segundos"
 END
 
 TIME:Second
-"[Traducido] Gold"
+"1 segundo"
 END
 
 Color:Red
-"[Traducido] Red"
+"Rojo"
 END
 
 Color:MordorRed
-"[Traducido] Mordor Red"
+"Rojo Mordor"
 END
 
 Color:Blue
-"[Traducido] Blue"
+"Azul"
 END
 
 Color:GondorBlue
-"[Traducido] Gondor Blue"
+"Azul Gondor"
 END
 
 Color:Green
-"[Traducido] Green"
+"Verde"
 END
 
 Color:RohanGreen
-"[Traducido] Elven Green"
+"Verde Rohirrim"
 END
 
 Color:Black
-"[Traducido] Sauron Black"
+"Negro"
 END
 
 Color:Orange
-"[Traducido] Orange"
+"Naranja"
 END
 
 Color:SkyBlue
-"[Traducido] Cyan"
+"Cian"
 END
 
 Color:Purple
-"[Traducido] Purple"
+"Púrpura"
 END
 
 Color:Pink
-"[Traducido] Fairy Pink"
+"Rosa"
 END
 
 Team:0
-"[Traducido] -"
+"-"
 END
 
 Team:1
-"[Traducido] 1"
+"1"
 END
 
 Team:2
-"[Traducido] 2"
+"2"
 END
 
 Team:3
-"[Traducido] 3"
+"3"
 END
 
 Team:4
-"[Traducido] 4"
+"4"
 END
 
 Team:AI
-"[Traducido] CPU"
+"CPU"
 END
 
 MSG:Testing
-"[Traducido] Mary had a little lamb, it's fleece as white as snow."
+"Mary tenía un corderito, su lana era blanca como la nieve."
 END
 
 MSG:Test2
-"[Traducido] And everywhere that Mary when, the lamb was sure to go."
+"Y por donde Mary iba, el corderito la seguía."
 END
 
 GUI:MustHaveAdminRights
-"[Traducido] You must have administrative rights to install a patch."
+"Debe tener derechos de administrador para instalar un parche."
 END
 
 GUI:Age
-"[Traducido] Age"
+"Edad"
 END
 
  
@@ -181,7 +181,7 @@ END
 END
 
 GUI:Day
-"[Traducido] Day (DD)"
+"Día (DD)"
 END
 
  
@@ -189,11 +189,11 @@ END
 END
 
 GUI:RandomSide
-"[Traducido] Random"
+"Aleatorio"
 END
 
 GUI:BuddyAddReq
-"[Traducido] The Lord of the Rings, The Rise of the Witch-king user wants to add a buddy"
+"El usuario de The Lord of the Rings, The Rise of the Witch-king quiere agregar un compañero"
 END
 
  
