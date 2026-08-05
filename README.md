@@ -108,6 +108,14 @@ The generated package is:
 releases/spanishpatch202.big
 ```
 
+After packaging, locate and verify the output with:
+
+```bash
+ls -lh releases/spanishpatch202.big
+realpath releases/spanishpatch202.big
+```
+
+That exact file is the package to copy and test manually in the game.
 Copy that generated `.big` into the appropriate game installation directory
 where the game loads language patch packages. The repository tools generate and
 verify the package but do not install it into the game automatically.
