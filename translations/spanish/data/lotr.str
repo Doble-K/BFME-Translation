@@ -281,9 +281,7 @@ APT:EnemiesThisBattle
 END
 
 APT:TotalEnemiesDefeated
-"Total
-Enemigos
-Derrotados"
+"Total\nEnemigos\nDerrotados"
 END
 
 APT:Bases&UnitsTitle
@@ -375,9 +373,7 @@ APT:ConfirmMultiplayerSave
 END
 
 APT:ConfirmMultiplayerSaveWithOverwrite
-"El otro jugador desea guardar la sesión.
-Esto sobrescribirá el archivo guardado anterior con el nombre '%s'.
-¿Estás de acuerdo?"
+"El otro jugador desea guardar la sesión.\nEsto sobrescribirá el archivo guardado anterior con el nombre '%s'.\n¿Estás de acuerdo?"
 END
 
 APT:MultiplayerSaveDenied
@@ -469,18 +465,15 @@ APT:MainMenuLoadGame
 END
 
 APT:MenuBasicTutorial
-"TUTORIAL
-BÁSICO"
+"TUTORIAL\nBÁSICO"
 END
 
 APT:MenuAdvancedTutorial
-"TUTORIAL
-AVANZADO"
+"TUTORIAL\nAVANZADO"
 END
 
 APT:MenuStrategicTutorial
-"GUERRA DEL ANILLO
-TUTORIAL"
+"GUERRA DEL ANILLO\nTUTORIAL"
 END
 
 APT:MenuTutorials
@@ -688,8 +681,7 @@ APT:Status
 END
 
 APT:PlayerName
-"Jugador
-Nombre"
+"Jugador\nNombre"
 END
 
 APT:ClassTitle
@@ -833,8 +825,7 @@ APT:Player
 END
 
 APT:MultiplayerGameSaved
-"El juego ha sido guardado.
-¿Quieres salir del juego por ahora? El otro jugador debe estar de acuerdo."
+"El juego ha sido guardado.\n¿Quieres salir del juego por ahora? El otro jugador debe estar de acuerdo."
 END
 
 APT:MultiplayerExitWaiting
@@ -898,8 +889,7 @@ END
 END
 
  
-"Bienvenido a The Lord of the Rings, The Rise of the Witch-king Online.
-Actualmente hay %d jugadores conectados."
+"Bienvenido a The Lord of the Rings, The Rise of the Witch-king Online.\nActualmente hay %d jugadores conectados."
 END
 
 GUI:Shadows2D
@@ -1175,8 +1165,7 @@ GUI:ESRB_Top
 END
 
 GUI:ESRB_Bottom
-"La experiencia del juego puede
-cambiar durante el juego en línea"
+"La experiencia del juego puede\ncambiar durante el juego en línea"
 END
 
 GUI:Objectives:
@@ -1284,8 +1273,7 @@ GUI:EACopyright
 END
 
 GUI:DeleteBeacon
-"Eliminar
-Baliza"
+"Eliminar\nBaliza"
 END
 
 GUI:BeaconPlaced
@@ -1637,38 +1625,31 @@ GUI:Rehost
 END
 
 GUI:UnitsBuilt
-"Unidades
-Creadas"
+"Unidades\nCreadas"
 END
 
 GUI:UnitsLost
-"Unidades
-Perdidas"
+"Unidades\nPerdidas"
 END
 
 GUI:UnitsKilled
-"Unidades
-Destruidas"
+"Unidades\nDestruidas"
 END
 
 GUI:BuildingsBuilt
-"Edificios
-Construidos"
+"Edificios\nConstruidos"
 END
 
 GUI:BuildingsLost
-"Edificios
-Perdidos"
+"Edificios\nPerdidos"
 END
 
 GUI:BuildingsKilled
-"Edificios
-Destruidos"
+"Edificios\nDestruidos"
 END
 
 GUI:ResourcesCollected
-"Suministros
-Recolectados"
+"Suministros\nRecolectados"
 END
 
 GUI:QuitPopupTitle
@@ -2132,8 +2113,7 @@ APT:ShowUnitDecals
 END
 
 TOOLTIP:Options/tooltipShowUnitDecals
-"Activar para mostrar el ícono 
- de las unidades seleccionadas en el juego"
+"Activar para mostrar el ícono \n de las unidades seleccionadas en el juego"
 END
 
 APT:EnableHealthBars
@@ -2525,8 +2505,7 @@ TOOLTIP:HasConflictingUpgradeDefault
 END
 
 TOOLTIP:SupplyWarehouse
-"
-$%d restantes"
+"\n$%d restantes"
 END
 
 TOOLTIP:LobbyPlayers
@@ -3210,8 +3189,7 @@ GUI:ValidateDisplayModeTitle
 END
 
 GUI:ValidateDisplayModeMessage
-"¿Desea mantener el modo de pantalla actual?
-El modo de pantalla se revertirá automáticamente en 10 segundos"
+"¿Desea mantener el modo de pantalla actual?\nEl modo de pantalla se revertirá automáticamente en 10 segundos"
 END
 
 GUI:SaveTime
@@ -3671,8 +3649,7 @@ GUI:GSFailedToHost
 END
 
 GUI:NATNegotiationFailed
-"The Lord of the Rings, The Rise of the Witch-king no puede conectarse con otros jugadores. Si el problema persiste y tiene un dispositivo NAT o firewall:
- Haga clic en el botón Actualizar NAT en el menú de opciones. Si tiene un dispositivo DLink, haga clic en el botón Retardo de envío en el menú de opciones. Si aún no puede conectarse, considere abrir un puerto en su firewall. Consulte el manual y el readme para más detalles."
+"The Lord of the Rings, The Rise of the Witch-king no puede conectarse con otros jugadores. Si el problema persiste y tiene un dispositivo NAT o firewall:\n Haga clic en el botón Actualizar NAT en el menú de opciones. Si tiene un dispositivo DLink, haga clic en el botón Retardo de envío en el menú de opciones. Si aún no puede conectarse, considere abrir un puerto en su firewall. Consulte el manual y el readme para más detalles."
 END
 
 GUI:GPErrorTitle
@@ -3764,8 +3741,7 @@ Buddy:Matching
 END
 
 Buddy:Disconnected
-"Ha sido desconectado
- de la lista de compañeros."
+"Ha sido desconectado\n de la lista de compañeros."
 END
 
 Buddy:MultipleOnlineNotification
@@ -3789,8 +3765,7 @@ Buddy:MessageNotification
 END
 
 Buddy:MessageDisconnected
-"Ha sido desconectado
- de la lista de compañeros."
+"Ha sido desconectado\n de la lista de compañeros."
 END
 
 Buddy:SelectBuddyToChat
@@ -4146,8 +4121,7 @@ GUI:CanPatchForOnline
 END
 
 GUI:CheckingForPatches
-"Buscando actualizaciones. Por favor espere...
-Presione OK para cancelar"
+"Buscando actualizaciones. Por favor espere...\nPresione OK para cancelar"
 END
 
 GUI:DownloadErrorTitle
@@ -4975,9 +4949,7 @@ TOOLTIP:onlineshell/onlinecustommatch/tooltipteam
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipConnectionSpeed
-"Los números menores representan conexiones más rápidas. 
-Selecciona esta opción para filtrar oponentes 
-con conexiones más lentas"
+"Los números menores representan conexiones más rápidas. \nSelecciona esta opción para filtrar oponentes \ncon conexiones más lentas"
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipColor
@@ -5013,9 +4985,7 @@ TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipNumberPlayers
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipPing
-"Elige la velocidad de conexión aceptable del oponente. 
-Un ícono rojo indica una velocidad más lenta,
-uno verde indica una velocidad más rápida"
+"Elige la velocidad de conexión aceptable del oponente. \nUn ícono rojo indica una velocidad más lenta,\nuno verde indica una velocidad más rápida"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Controls/buttonHost
@@ -5051,26 +5021,19 @@ TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/GameSetUp_02/tooltipOffic
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/GameSetUp_02/tooltipPlayerMadeMaps
-"Estos mapas no cuentan con la aprobación oficial de EA y fueron creados por jugadores.
- Cuando descargues un mapa nuevo, aparecerá en esta lista de mapas"
+"Estos mapas no cuentan con la aprobación oficial de EA y fueron creados por jugadores.\n Cuando descargues un mapa nuevo, aparecerá en esta lista de mapas"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/nav/tooltipPlayers
-"Jugadores disponibles actualmente para chatear 
-en esta sala"
+"Jugadores disponibles actualmente para chatear \nen esta sala"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/nav/tooltipFriends
-"Para crear un amigo, haz clic izquierdo en 
-un nombre de la lista de jugadores 
-y luego haz clic izquierdo en el recuadro Agregar amigo"
+"Para crear un amigo, haz clic izquierdo en \nun nombre de la lista de jugadores \ny luego haz clic izquierdo en el recuadro Agregar amigo"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/nav/tooltipIgnore
-"Para ignorar a un jugador, haz clic izquierdo en 
-un nombre y luego en el recuadro 
-Ignorar jugador. Los jugadores ignorados o 
-sus mensajes no serán visibles"
+"Para ignorar a un jugador, haz clic izquierdo en \nun nombre y luego en el recuadro \nIgnorar jugador. Los jugadores ignorados o \nsus mensajes no serán visibles"
 END
 
 TOOLTIP:OnlineShell/WebSite//tooltipOfficialWebsite
@@ -5102,8 +5065,7 @@ TOOLTIP:OnlineLobby/tooltipArmy
 END
 
 TOOLTIP:OnlineLobby/tooltipTeam
-"Equipos que se unen a la partida. 
-Los equipos con los mismos números de identificación son aliados"
+"Equipos que se unen a la partida. \nLos equipos con los mismos números de identificación son aliados"
 END
 
 TOOLTIP:OnlineLobby/tooltipColor
@@ -5123,8 +5085,7 @@ TOOLTIP:OnlineLobby/tooltipOfficialMaps
 END
 
 TOOLTIP:OnlineLobby/tooltipPlayerMadeMaps
-"Estos mapas no cuentan con la aprobación oficial de EA y fueron creados por jugadores.
- Cuando descargues un mapa nuevo, aparecerá en esta lista de mapas"
+"Estos mapas no cuentan con la aprobación oficial de EA y fueron creados por jugadores.\n Cuando descargues un mapa nuevo, aparecerá en esta lista de mapas"
 END
 
 TOOLTIP:OnlineJoin/tooltipName
@@ -5136,8 +5097,7 @@ TOOLTIP:OnlineJoin/tooltipArmy
 END
 
 TOOLTIP:OnlineJoin/tooltipTeam
-"Equipos que se unen a la partida. 
-Los equipos con los mismos números de identificación son aliados"
+"Equipos que se unen a la partida. \nLos equipos con los mismos números de identificación son aliados"
 END
 
 TOOLTIP:OnlineJoin/tooltipColor
