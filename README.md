@@ -49,6 +49,72 @@ BFME-Translation/
 
 ## How It Works
 
+### Manual Quick Start
+
+The repository can be used from any directory after cloning it. The current
+workflow targets BFME2 ROTWK with patch 2.02.
+
+```bash
+git clone <REPOSITORY_URL>
+cd BFME-Translation
+chmod +x tools/big4f/bin/linux/big4f
+```
+
+The original game or patch `.big` is not included in the repository. Keep it
+outside the repository and extract its `data/lotr.str` when creating a new
+catalog:
+
+```bash
+tools/big4f/bin/linux/big4f x /path/to/original.big /tmp/rotwk-source
+python3 tools/localization/extract.py \
+  /tmp/rotwk-source/data/lotr.str \
+  catalogs/english.json
+python3 tools/localization/init_translation.py \
+  catalogs/english.json \
+  catalogs/spanish_work.json
+```
+
+If the repository already contains a prepared work catalog, start directly
+with the CLI:
+
+```bash
+python3 tools/localization/translate.py \
+  catalogs/spanish_work.json \
+  --count 20 \
+  --edit
+```
+
+An agent can process pending entries in bulk using the same catalog. Manual and
+agent changes use the same token validation, metadata, and history rules.
+
+Before creating a package:
+
+```bash
+python3 tools/localization/validate.py
+python3 tools/localization/validate_translation.py
+python3 -m unittest discover -s tests -v
+```
+
+Create the Spanish package after all required translations are complete:
+
+```bash
+python3 tools/localization/build.py --project config/project.json
+python3 tools/localization/pack.py --project config/project.json
+```
+
+The generated package is:
+
+```text
+releases/spanishpatch202.big
+```
+
+Copy that generated `.big` into the appropriate game installation directory
+where the game loads language patch packages. The repository tools generate and
+verify the package but do not install it into the game automatically.
+
+For an intentionally partial test package, use `--allow-source-fallback`; do
+not use that flag for a release package.
+
 ### Translation Workflow
 
 1. **Read pending entries**: Load `catalogs/spanish_work.json` and find entries with `status: "pending"`.
