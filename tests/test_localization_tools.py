@@ -273,6 +273,38 @@ class LocalizationToolTests(unittest.TestCase):
         )
         self.assertEqual(configured.returncode, 0, configured.stdout + configured.stderr)
 
+    def test_normalize_uses_project_catalog(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            catalog.write_text(json.dumps({
+                "entries": [{
+                    "id": "TEST:Normalize",
+                    "source": "  Hello\r\n",
+                    "translation": "  Hola\r\n",
+                    "status": "translated",
+                }]
+            }), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "normalize-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "fr",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+
+            result = run_tool("normalize.py", "--project", project_file)
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            data = json.loads(catalog.read_text(encoding="utf-8"))
+            self.assertEqual(data["entries"][0]["source"], "Hello")
+            self.assertEqual(data["entries"][0]["translation"], "Hola")
+
     def test_compare_creates_generic_report(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)

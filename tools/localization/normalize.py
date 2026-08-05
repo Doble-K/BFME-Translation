@@ -2,7 +2,10 @@
 
 import json
 import sys
+import argparse
 from pathlib import Path
+
+from project import load_project, resolve_project_path
 
 
 def normalize_text(text):
@@ -14,10 +17,26 @@ def normalize_text(text):
 
 
 def main():
-    catalog_path = sys.argv[1] if len(sys.argv) > 1 else "catalogs/spanish_work.json"
+    parser = argparse.ArgumentParser(description="Normalize catalog source and translation text.")
+    parser.add_argument("catalog", nargs="?", help="Path to the localization catalog")
+    parser.add_argument("--project", help="Project configuration JSON")
+    args = parser.parse_args()
 
-    with open(catalog_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    try:
+        project = load_project(args.project) if args.project else None
+        if not args.catalog and not project:
+            parser.error("indique catalog o use --project")
+        catalog_path = Path(args.catalog) if args.catalog else resolve_project_path(project, "catalog")
+    except (OSError, json.JSONDecodeError, ValueError) as error:
+        print(f"Error: configuración de proyecto inválida: {error}", file=sys.stderr)
+        return 1
+
+    try:
+        with catalog_path.open(encoding="utf-8") as catalog_file:
+            data = json.load(catalog_file)
+    except (OSError, json.JSONDecodeError) as error:
+        print(f"Error: no se pudo leer el catálogo: {error}", file=sys.stderr)
+        return 1
 
     modified = 0
     for entry in data.get("entries", []):
@@ -35,11 +54,17 @@ def main():
                 entry["translation"] = new_trans
                 modified += 1
 
-    with open(catalog_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+    try:
+        with catalog_path.open("w", encoding="utf-8") as catalog_file:
+            json.dump(data, catalog_file, ensure_ascii=False, indent=2)
+            catalog_file.write("\n")
+    except OSError as error:
+        print(f"Error: no se pudo guardar el catálogo: {error}", file=sys.stderr)
+        return 1
 
     print(f"Normalización completada. Entradas ajustadas: {modified}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
