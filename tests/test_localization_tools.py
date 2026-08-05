@@ -261,6 +261,18 @@ class LocalizationToolTests(unittest.TestCase):
         configured = run_tool("validate.py", "--project", ROOT / "config" / "project.json")
         self.assertEqual(configured.returncode, 0, configured.stdout + configured.stderr)
 
+    def test_validate_translation_requires_catalog_or_project(self):
+        result = run_tool("validate_translation.py")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("indique catalog o use --project", result.stderr)
+
+        configured = run_tool(
+            "validate_translation.py",
+            "--project",
+            ROOT / "config" / "project.json",
+        )
+        self.assertEqual(configured.returncode, 0, configured.stdout + configured.stderr)
+
     def test_compare_creates_generic_report(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)

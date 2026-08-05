@@ -6,6 +6,8 @@ import re
 import sys
 from pathlib import Path
 
+from project import load_project, resolve_project_path
+
 
 DEFAULT_RULES = Path(__file__).resolve().parents[2] / "rules" / "protected_tokens.json"
 
@@ -38,9 +40,9 @@ def main():
     parser.add_argument(
         "catalog",
         nargs="?",
-        default="catalogs/spanish_work.json",
         help="Path to the localization catalog",
     )
+    parser.add_argument("--project", help="Project configuration JSON")
     parser.add_argument(
         "--rules",
         type=Path,
@@ -50,11 +52,15 @@ def main():
     args = parser.parse_args()
 
     try:
-        with open(args.catalog, encoding="utf-8") as catalog_file:
+        project = load_project(args.project) if args.project else None
+        if not args.catalog and not project:
+            parser.error("indique catalog o use --project")
+        catalog_path = Path(args.catalog) if args.catalog else resolve_project_path(project, "catalog")
+        with catalog_path.open(encoding="utf-8") as catalog_file:
             data = json.load(catalog_file)
         with args.rules.open(encoding="utf-8") as rules_file:
             rules = json.load(rules_file)
-    except (OSError, json.JSONDecodeError) as error:
+    except (OSError, json.JSONDecodeError, ValueError) as error:
         print(f"Error: no se pudo cargar la validación: {error}", file=sys.stderr)
         return 1
 
