@@ -24,6 +24,8 @@ This translation project is not affiliated with, endorsed by, or sponsored by To
 BFME-Translation/
 ├── catalogs/
 │   └── spanish_work.json    # Main translation catalog (11,069 entries)
+├── config/
+│   └── project.json         # ROTWK 2.02 project configuration
 ├── tools/
 │   └── localization/
 │       ├── validate.py           # Structural catalog validation
@@ -38,6 +40,8 @@ BFME-Translation/
 │       └── lotr.str             # Translated output file
 ├── releases/
 │   └── spanishpatch202.big      # Final compiled package
+├── tests/
+│   └── test_localization_tools.py # Pipeline regression tests
 ├── AGENTS.md                     # Agent translation instructions
 ├── LICENSE                       # GNU GPLv3
 └── README.md                     # This file
@@ -112,6 +116,17 @@ python3 tools/localization/update.py catalogs/new_source.json catalogs/spanish_w
 
 `extract.py` rejects undecodable files, incomplete blocks, and missing `END` markers. `update.py` invalidates stale translations when source text changes, resets review state, updates source lines, and writes atomically.
 
+Updates are idempotent. Duplicate non-whitespace IDs use the last occurrence and receive `duplicate_meta`; whitespace-only IDs receive `orphan_meta`. Entries absent from a new source move to `retired_entries` instead of being deleted, and are restored automatically if they reappear.
+
+The current project can also be selected explicitly:
+
+```bash
+python3 tools/localization/build.py --project config/project.json --allow-source-fallback
+python3 tools/localization/pack.py --project config/project.json
+```
+
+The project configuration currently targets ROTWK 2.02. Its source archive is external and is intentionally not stored in this repository.
+
 ## Current Progress
 
 | Metric             | Value   |
@@ -155,10 +170,19 @@ Both scripts must return `Errors: 0` before committing.
 
 The structural validator reports orphan IDs separately. Use `--strict-duplicates` to make real duplicate IDs blocking errors, or repeat `--ignore-id ID` only for documented temporary exceptions.
 
+Run the automated regression tests with:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+The tests cover protected tokens, CRLF parsing, malformed `.str` blocks, source retirement and restoration, idempotent duplicate handling, strict builds, project configuration, and packaging flags.
+
 ## TODO
 
-- [ ] Auto-build for `spanishpatch202.big` binary if manual build fails
-- [ ] Manual control of entries or reviews (user-driven override of translations)
-- [ ] Improve merge system to facilitate new languages or improvements to existing translations
-- [ ] Add support for translating mods
-- [ ] Consider a more generic name for the project
+- [ ] Validate package contents beyond the presence of `data/lotr.str`.
+- [ ] Support multiple configured `.str` files while preserving ROTWK behavior.
+- [ ] Add a source archive extraction workflow for external ROTWK inputs.
+- [ ] Add reproducible entry selection to the manual CLI.
+- [ ] Add a review UI or a richer CLI for human and AI proposals.
+- [ ] Improve merge support for new languages and mods.
