@@ -13729,7 +13729,7 @@ SCRIPT:Skirmish_Defeat_Enemy
 END
 
 APT:SoloPlay
-"SOLO PLAY"
+"Un jugador"
 END
 
 APT:Multiplayer

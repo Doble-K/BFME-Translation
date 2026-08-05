@@ -32,10 +32,9 @@ def main():
 
     if debug:
         for entry in data.get("entries", []):
-            if entry.get("id") == "GUI:SinglePlayer":
+            if entry.get("id") in {"GUI:SinglePlayer", "APT:SoloPlay"}:
                 entry["translation"] = "DEBUGING"
-                print("Modo debug: GUI:SinglePlayer = DEBUGING")
-                break
+                print(f"Modo debug: {entry['id']} = DEBUGING")
 
     entries = data.get("entries", [])
     output_str_file.parent.mkdir(parents=True, exist_ok=True)
