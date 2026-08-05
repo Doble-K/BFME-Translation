@@ -15,7 +15,7 @@ An explicit user request or assigned task lane overrides the generic queue. If a
 1. **Translate:** Select pending entries (`status: "pending"`), translate the `source` text to Latin American Spanish inside the `translation` field, update `status` to `"translated"`, and record metadata/history.
 2. **Strict Preservation:** Never modify entry `id` fields. Never translate, alter, or remove protected tokens, format wildcards (e.g., `%d`, `%s`), control characters (`\n`), or engine tags (`<COL>`).
 3. **Focused Verification:** Immediately run exact validation scripts:
-   - `python3 tools/localization/validate.py`
+   - `python3 tools/localization/validate.py --project config/project.json`
    - `python3 tools/localization/validate_translation.py`
    If any validation returns errors (`Errors > 0`), fix them immediately. Never commit unvalidated data.
 4. **Staging & Commit:** Stage only the specific files modified for this unit (`git add <specific-paths>`). Never use `git add .` or `git add -A`. Commit normally using conventional commit messages (e.g., `feat(localization): translate batch 01`).

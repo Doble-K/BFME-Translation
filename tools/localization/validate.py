@@ -5,15 +5,17 @@ import sys
 import argparse
 from pathlib import Path
 
+from project import load_project, resolve_project_path
+
 
 def main():
     parser = argparse.ArgumentParser(description="Validate a localization catalog.")
     parser.add_argument(
         "catalog",
         nargs="?",
-        default="catalogs/spanish_work.json",
         help="Path to the localization catalog",
     )
+    parser.add_argument("--project", help="Project configuration JSON")
     parser.add_argument(
         "--strict-duplicates",
         action="store_true",
@@ -26,23 +28,30 @@ def main():
         help="Ignore an exact ID when checking duplicates; may be repeated",
     )
     args = parser.parse_args()
-    catalog_path = args.catalog
+    try:
+        project = load_project(args.project) if args.project else None
+        if not args.catalog and not project:
+            parser.error("indique catalog o use --project")
+        catalog_path = Path(args.catalog) if args.catalog else resolve_project_path(project, "catalog")
+    except (OSError, json.JSONDecodeError, ValueError) as error:
+        print(f"Error: configuración de proyecto inválida: {error}", file=sys.stderr)
+        return 1
     
-    if not Path(catalog_path).exists():
+    if not catalog_path.exists():
         print(f"Error: El catálogo {catalog_path} no existe.")
-        sys.exit(1)
+        return 1
 
     try:
-        with open(catalog_path, encoding="utf-8") as f:
+        with catalog_path.open(encoding="utf-8") as f:
             data = json.load(f)
     except (OSError, json.JSONDecodeError) as error:
         print(f"Error: no se pudo leer el catálogo {catalog_path}: {error}")
-        sys.exit(1)
+        return 1
 
     entries = data.get("entries", [])
     if not isinstance(entries, list):
         print("[Error] El campo 'entries' debe ser una lista.")
-        sys.exit(1)
+        return 1
     errors = 0
     warnings = 0
     ids_seen = set()
@@ -105,10 +114,11 @@ def main():
     print(f"Advertencias: {warnings}")
 
     if errors > 0:
-        sys.exit(1)
+        return 1
     else:
         print("¡Validación estructural exitosa!")
+        return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

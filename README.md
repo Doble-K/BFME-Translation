@@ -215,7 +215,7 @@ updating a work catalog.
 Run both validators after every translation batch and before any commit:
 
 ```bash
-python3 tools/localization/validate.py
+python3 tools/localization/validate.py --project config/project.json
 python3 tools/localization/validate_translation.py
 python3 -m unittest discover -s tests -v
 ```
@@ -230,7 +230,7 @@ Do not build a release until the required translations have been completed and
 validated. The normal release workflow is:
 
 ```bash
-python3 tools/localization/validate.py
+python3 tools/localization/validate.py --project config/project.json
 python3 tools/localization/validate_translation.py
 python3 tools/localization/build.py --project config/project.json
 python3 tools/localization/pack.py --project config/project.json
