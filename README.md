@@ -1,61 +1,83 @@
 # BFME-Translation
 
-Spanish (Latin American) translation project for **Battle for Middle-earth II: Rise of the Witch-king** (BFME2 ROTWK) and other SAGE engine games.
+Spanish (Latin American) translation project for **The Lord of the Rings:
+The Battle for Middle-earth II: The Rise of the Witch-king** (BFME2 ROTWK),
+with a reusable toolset for other SAGE engine projects.
 
 > *"One Token to rule them all, One Terminal at a time."*
 
-## Description
+## Project Status
 
-This repository contains translations of SAGE engine game `.str` localization files, converted to a compatible format. The compiled output package is `releases/spanishpatch202.big`.
+The project is currently in the tooling, source analysis, and controlled
+translation stage. It does not yet provide a complete Spanish release.
 
-Currently focused on BFME2 ROTWK, with the goal of supporting all three SAGE-based games (BFME1, BFME2, ROTWK) and potentially other games using the SAGE engine.
+- Current scope: ROTWK 2.02.
+- English reference used for comparison: `englishpatch202.big`, version 9.7.7,
+  build 9770.
+- Spanish package used for pipeline tests and functionality checks: version
+  9.7.5.
+- French package used for pipeline tests and functionality checks: version
+  9.7.6.
+- Current Spanish work catalog: 11,069 entries, 1,273 translated and 9,796
+  pending (11.5%).
+- A final, fully translated and in-game-tested Spanish package has not been
+  released yet.
+
+The French and Spanish packages are test inputs for analysis and functionality
+checks. They are not language standards or guarantees that a package is
+complete or current.
 
 ## Disclaimer
 
-This is an unofficial fan translation project. **Battle for Middle-earth II: Rise of the Witch-king** and the SAGE engine are trademarks of **Electronic Arts Inc.** The game and its assets are copyrighted by **EA Games / EA DICE** and/or their respective publishers.
+This is an unofficial fan translation project. **The Lord of the Rings: The
+Battle for Middle-earth II: The Rise of the Witch-king** and the SAGE engine
+are trademarks of **Electronic Arts Inc.** The game and its assets are
+copyrighted by their respective owners.
 
-All Tolkien-related intellectual property (characters, places, lore, etc.) is the property of **The Tolkien Estate** and **Middle-earth Enterprises** (formerly Saul Zaentz Company).
+All Tolkien-related intellectual property is owned by the respective rights
+holders, including **The Tolkien Estate** and **Middle-earth Enterprises**.
 
-This translation project is not affiliated with, endorsed by, or sponsored by Tolkien, Middle-earth Enterprises, Electronic Arts, or any of their subsidiaries or licensees. All game assets remain the property of their respective owners.
+This project is not affiliated with, endorsed by, or sponsored by Tolkien,
+Middle-earth Enterprises, Electronic Arts, or any of their subsidiaries or
+licensees. Game assets remain the property of their respective owners.
 
-## Project Structure
+## Repository Structure
 
-```
+```text
 BFME-Translation/
-├── gandalf.py                    # Main project and source wizard
+├── gandalf.py                    # Interactive project and source wizard
 ├── catalogs/
-│   └── spanish_work.json    # Main translation catalog (11,069 entries)
+│   └── spanish_work.json         # Editable Spanish work catalog
 ├── config/
-│   └── project.json         # ROTWK 2.02 project configuration
+│   └── project.json              # ROTWK 2.02 project configuration
 ├── tools/
+│   ├── big4f/                    # Local .big listing, extraction, and packing tool
 │   └── localization/
-│       ├── validate.py           # Structural catalog validation
-│       ├── validate_translation.py # Translation validation
-│       ├── extract.py            # Extracts entries from .str files
-│       ├── update.py             # Updates the work catalog from a new source
-│       ├── translate.py          # Manual review and translation CLI
-│       ├── build.py              # Compiles catalog to .str format
-│       └── pack.py               # Packages .str into .big
-├── translations/
-│   └── spanish/data/
-│       └── lotr.str             # Local generated output (not versioned)
-├── sources/                      # Local input .big files (not versioned)
-├── source/                       # Local source .str files (not versioned)
-├── releases/
-│   └── spanishpatch202.big      # Local compiled package (not versioned)
-├── tests/
-│   └── test_localization_tools.py # Pipeline regression tests
-├── AGENTS.md                     # Agent translation instructions
+│       ├── validate.py            # Structural catalog validation
+│       ├── validate_translation.py# Protected-token validation
+│       ├── extract.py             # .str to JSON extraction
+│       ├── update.py              # Source-to-catalog synchronization
+│       ├── translate.py           # Manual translation and review CLI
+│       ├── build.py               # Catalog to .str generation
+│       └── pack.py                # .str and assets to .big packaging
+├── translations/                 # Generated .str files
+├── sources/                      # Input .big files
+├── source/                       # Extracted .str files
+├── backup/                       # Reference and test packages
+├── releases/                     # Generated .big files
+├── tests/                        # Pipeline regression tests
+├── AGENTS.md                     # Translation workflow instructions
 ├── LICENSE                       # GNU GPLv3
-└── README.md                     # This file
+└── README.md
 ```
 
-## How It Works
+## Requirements
 
-### Manual Quick Start
+- Linux or a compatible shell environment.
+- Python 3.
+- The `tools/big4f/bin/linux/big4f` binary, executable with `chmod +x`.
 
-The repository can be used from any directory after cloning it. The current
-workflow targets BFME2 ROTWK with patch 2.02.
+## Quick Start
 
 ```bash
 git clone https://github.com/Doble-K/BFME-Translation
@@ -63,39 +85,58 @@ cd BFME-Translation
 chmod +x tools/big4f/bin/linux/big4f
 ```
 
-The original game or patch `.big` may be available in the clone at
-`source/englishpatch202.big`. If it is not included, place the external file
-in the local `sources/` directory using this filename:
+Place the English ROTWK 2.02 source package in the `sources/` folder. The
+expected filename is:
 
 ```text
-sources/rotwk-2.02.big
+sources/englishpatch202.big
 ```
 
-The `sources/` directory is prepared in the repository, but `.big` files inside
-it are ignored by Git. Extract the available source package when creating a
-new catalog:
+The repository does not require or distribute this package. If a different
+source archive is used, pass its path to Gandalf or use the extraction commands
+below.
+
+### Initialize a Project with Gandalf
+
+Gandalf detects `.big` files in `source/` and `sources/`, lists their contents,
+selects a string file, and creates a work catalog and project configuration.
+It supports BFME1, BFME2, ROTWK 2.02, custom SAGE projects, and arbitrary
+source-to-target language pairs.
 
 ```bash
-SOURCE_BIG="source/englishpatch202.big"
-test -f "$SOURCE_BIG" || SOURCE_BIG="sources/rotwk-2.02.big"
-tools/big4f/bin/linux/big4f x "$SOURCE_BIG" /tmp/rotwk-source && \
+python3 gandalf.py
+```
+
+Gandalf refuses to overwrite an existing catalog without confirmation. Reuse
+an existing catalog to continue a translation session; replace it only when a
+new catalog is intentional.
+
+### Extract a Source Manually
+
+```bash
+tools/big4f/bin/linux/big4f x \
+  sources/englishpatch202.big \
+  /tmp/rotwk-source
+
 python3 tools/localization/extract.py \
   /tmp/rotwk-source/data/lotr.str \
   catalogs/english.json
-python3 gandalf.py \
-  catalogs/english.json \
-  catalogs/rotwk_work.json
 ```
 
-`gandalf.py` refuses to overwrite an existing catalog unless
-`--force` is supplied. If the clone already contains
-`catalogs/spanish_work.json`, skip extraction and initialization and start the
-translation CLI directly. The `.big` placed in `sources/` must be the original
-English ROTWK 2.02 source package, not the generated Spanish package from
-`releases/`.
+Do not use a generated Spanish package from `releases/` as the English source.
 
-If the repository already contains a prepared work catalog, start directly
-with the CLI:
+## Translation Workflow
+
+The JSON catalog is the editable source of truth. Generated `.str` and `.big`
+files are build artifacts.
+
+1. Select a limited batch of pending entries.
+2. Translate `source` into Latin American Spanish in `translation`.
+3. Set the entry status to `translated` and record metadata/history.
+4. Validate the catalog and protected tokens.
+5. Review the result before compiling a release.
+
+For manual work:
 
 ```bash
 python3 tools/localization/translate.py \
@@ -104,76 +145,11 @@ python3 tools/localization/translate.py \
   --edit
 ```
 
-An agent can process pending entries in bulk using the same catalog. Manual and
-agent changes use the same token validation, metadata, and history rules.
+The CLI supports review mode, batch previews, navigation, retries, and safe
+atomic writes. Same-language imports use review mode instead of pretending that
+existing text is a new translation.
 
-Before creating a package:
-
-```bash
-python3 tools/localization/validate.py
-python3 tools/localization/validate_translation.py
-python3 -m unittest discover -s tests -v
-```
-
-Create the Spanish package after all required translations are complete:
-
-```bash
-python3 tools/localization/build.py --project config/project.json
-python3 tools/localization/pack.py --project config/project.json
-```
-
-The generated package is written separately to:
-
-```text
-releases/spanishpatch202.big
-```
-
-After packaging, locate and verify the output with:
-
-```bash
-ls -lh releases/spanishpatch202.big
-realpath releases/spanishpatch202.big
-```
-
-That exact file is the package to copy and test manually in the game. The
-original input remains in `sources/`; the translated output is always in
-`releases/`.
-Copy that generated `.big` into the appropriate game installation directory
-where the game loads language patch packages. The repository tools generate and
-verify the package but do not install it into the game automatically.
-
-For an intentionally partial test package, use `--allow-source-fallback`; do
-not use that flag for a release package.
-
-### Translation Workflow
-
-1. **Read pending entries**: Load `catalogs/spanish_work.json` and find entries with `status: "pending"`.
-2. **Translate**: Translate the `source` text into Latin American Spanish in the `translation` field, set `status` to `"translated"`, and record metadata/history.
-3. **Preserve**: Never modify entry `id` fields, protected tokens (`%d`, `%s`), control characters (`\n`), or engine tags (`<COL>`).
-4. **Validate**: Run both validation scripts:
-   - `python3 tools/localization/validate.py`
-   - `python3 tools/localization/validate_translation.py`
-   If any return errors, fix them immediately before committing.
-5. **Commit**: Stage only the modified files (`git add <specific-paths>`, never `git add .`) and commit with a conventional message (e.g., `feat(localization): translate batch 10`).
-6. **Sync**: Pull, push, and pull again to ensure integrity.
-
-### Agent and Manual Review Rules
-
-- The catalog JSON is the source of truth; `.str` and `.big` files are generated artifacts.
-- Duplicate non-whitespace IDs use the last occurrence as the source of truth.
-- `update.py` records duplicate metadata in `duplicate_meta` and marks shadowed entries with `duplicate_shadowed`.
-- IDs made only of whitespace are preserved as orphan records and are not removed automatically.
-- Bulk agents should process only selected, non-empty entries. The manual CLI skips shadowed duplicates, orphan IDs, and empty source strings by default.
-- Use `--include-shadowed`, `--include-orphans`, or `--include-empty` only for explicit investigation.
-
-To review or edit pending entries manually:
-
-```bash
-python3 tools/localization/translate.py --count 10
-python3 tools/localization/translate.py --count 10 --edit
-```
-
-Manual edits are token-validated, saved atomically, and recorded in entry history and metadata.
+### Protected Tokens
 
 When a string contains variables such as `%d`, `%s`, or `%ls`, those variables
 are supplied by the game at runtime. Keep them exactly as shown and translate
@@ -184,9 +160,12 @@ Source:     %d Days
 Translation: %d Días
 ```
 
-Automatic control entries such as `LETTER:*` and `NUMBER:*` are preserved by
-the initializer and hidden from normal translation batches. Advanced users can
-inspect them explicitly:
+Never modify entry `id` fields, protected tokens, control characters such as
+`\n`, `\t`, and `\r`, or engine tags such as `<COL>`. Do not translate URLs,
+entry IDs, or format tokens.
+
+Automatic control entries such as `LETTER:*` and `NUMBER:*` are hidden from
+normal batches. Inspect them only for explicit investigation:
 
 ```bash
 python3 tools/localization/translate.py \
@@ -195,156 +174,108 @@ python3 tools/localization/translate.py \
   --count 20
 ```
 
-When Gandalf imports a package for same-language improvement, it seeds the
-current text as the existing translation and marks entries for review:
+Duplicate non-whitespace IDs use the last source occurrence. The discarded
+versions remain auditable in `duplicate_meta` and `duplicate_shadowed`.
+Whitespace-only IDs are preserved as orphan records and are not removed
+automatically.
+
+## Updating from a New Source
+
+Extract the new `.str` and update the existing work catalog:
 
 ```bash
-python3 tools/localization/translate.py \
-  catalogs/bfme2-rotwk-2.02_es-419_work.json \
-  --review \
-  --count 20 \
-  --edit
+python3 tools/localization/extract.py \
+  input.str \
+  catalogs/new_source.json
+
+python3 tools/localization/update.py \
+  catalogs/new_source.json \
+  catalogs/spanish_work.json
 ```
 
-To create a new work catalog interactively, use Gandalf. It detects `.big`
-files under `source/` and `sources/`, offers BFME1, BFME2, ROTWK 2.02, or a
-custom SAGE project, and asks for source language, target language, encoding,
-catalog output, and project configuration output:
+`extract.py` rejects undecodable files, incomplete blocks, and missing `END`
+markers. `update.py` writes atomically, invalidates translations whose source
+changed, resets review state, records duplicate metadata, and moves missing
+entries to `retired_entries` instead of deleting them.
 
-```bash
-python3 gandalf.py
-```
+Updates are designed to be idempotent. Always inspect the resulting report and
+catalog before translating new entries.
 
-Gandalf extracts the selected `.big` and the selected `.str` automatically and
-creates both the work catalog and a project configuration. It accepts any
-source-to-target language pair. The positional mode remains available for
-agents that already have an extracted JSON catalog.
+## Validation and Tests
 
-After initialization, Gandalf offers to start a manual batch, preview a batch
-without modifying files, or exit. Same-language projects automatically use
-review mode in that handoff.
-
-If the selected output catalog already exists, Gandalf offers to reuse it,
-replace it, or exit. Reusing it is the safe option for continuing a previous
-translation session.
-
-Before asking for languages, Gandalf runs `big4f l` to verify that the selected
-package contains string files. It detects common language hints from the
-filename, while `--source-language CODE` and `--target-language CODE` allow
-explicit overrides.
-
-For basic users, language menus provide `es`, `en`, `pr`, `fr`, and `ge`. Use
-`--advanced` (or the alias `--avanced`) to enter custom language codes and
-advanced settings manually.
-
-Gandalf asks for confirmation when source and target languages have the same
-base code. Use `--allow-same-language` to skip that confirmation for an
-intentional regional-language review.
-
-### Build Workflow (Release)
-
-When a release build is requested:
-1. `python3 tools/localization/validate.py`
-2. `python3 tools/localization/validate_translation.py`
-3. `python3 tools/localization/build.py catalogs/spanish_work.json translations/spanish/data/lotr.str --encoding cp1252`
-4. `python3 tools/localization/pack.py`
-5. `pack.py` verifies that the package exists, is non-empty, and contains `data/lotr.str`.
-
-The build defaults to Windows-1252/ANSI for SAGE compatibility. Use `--encoding` with another compatible code page for languages that require it.
-
-Release builds fail when a translation is empty. This prevents English source text from entering a release silently. The fallback is available only for an explicitly partial build:
-
-```bash
-python3 tools/localization/build.py catalogs/spanish_work.json /tmp/partial.str --allow-source-fallback
-```
-
-The command reports how many entries used source text as a fallback. Do not use this flag for a release build.
-
-For temporary debug packages, `pack.py` builds from a temporary directory. The catalog and normal `lotr.str` remain unchanged. `DEBUGING` identifies the package as experimental:
-
-```bash
-python3 tools/localization/pack.py --debug
-python3 tools/localization/pack.py --exclude-orphan-ids --dedupe-ids last --debug
-```
-
-`--exclude-orphan-ids` removes whitespace-only IDs only from the temporary debug build. `--dedupe-ids last` keeps the last non-whitespace duplicate for testing; it does not delete catalog history.
-
-### Updating From a New Source
-
-```bash
-python3 tools/localization/extract.py input.str catalogs/new_source.json
-python3 tools/localization/update.py catalogs/new_source.json catalogs/spanish_work.json
-```
-
-`extract.py` rejects undecodable files, incomplete blocks, and missing `END` markers. `update.py` invalidates stale translations when source text changes, resets review state, updates source lines, and writes atomically.
-
-Updates are idempotent. Duplicate non-whitespace IDs use the last occurrence and receive `duplicate_meta`; whitespace-only IDs receive `orphan_meta`. Entries absent from a new source move to `retired_entries` instead of being deleted, and are restored automatically if they reappear.
-
-The current project can also be selected explicitly:
-
-```bash
-python3 tools/localization/build.py --project config/project.json --allow-source-fallback
-python3 tools/localization/pack.py --project config/project.json
-```
-
-The project configuration currently targets ROTWK 2.02. Its source archive is external and is intentionally not stored in this repository.
-
-## Current Progress
-
-| Metric             | Value   |
-|--------------------|---------|
-| Total entries      | 11,069  |
-| Translated         | 1,273   |
-| Pending            | 9,796   |
-| **Progress**        | **11.5%**|
-
-### Translation History
-
-| Commit   | Description                              |
-|----------|------------------------------------------|
-| e688e2e  | Added GNU GPLv3 license                |
-| 4c2dab3  | README rewritten in English            |
-| 424efd9  | Added project README with workflow and progress |
-| d9282b1  | Fixed 18 untranslated entries          |
-| 0e21e10  | Batch of 100 entries translated        |
-| 9e8433a  | Batch of 10 entries translated         |
-| 33aaae9  | Block missing translations in release builds |
-| 29f1cbe  | Validate SAGE string extraction         |
-| 2a53ea3  | Record last-wins duplicate metadata     |
-| aec663d  | Make manual translation review safe     |
-
-## Translation Rules
-
-- **Latin American Spanish**: Use standard LATAM terminology, not Spain Spanish.
-- **Preserve format**: Wildcards (`%d`, `%s`, `%ls`), newlines (`\n`), and engine tags (`<COL>`) must remain intact.
-- **Do not translate**: URLs, entry IDs, and format tokens.
-- **Metadata**: Each entry includes `translation_meta` (origin, model, date, confidence) and `review` (AI and human review status).
-- **Duplicate policy**: Normal duplicate IDs use the last source occurrence; duplicate and orphan metadata remains auditable in the catalog.
-
-## Validation
+Run both validators after every translation batch and before any commit:
 
 ```bash
 python3 tools/localization/validate.py
 python3 tools/localization/validate_translation.py
-```
-
-Both scripts must return `Errors: 0` before committing.
-
-The structural validator reports orphan IDs separately. Use `--strict-duplicates` to make real duplicate IDs blocking errors, or repeat `--ignore-id ID` only for documented temporary exceptions.
-
-Run the automated regression tests with:
-
-```bash
 python3 -m unittest discover -s tests -v
 ```
 
-The tests cover protected tokens, CRLF parsing, malformed `.str` blocks, source retirement and restoration, idempotent duplicate handling, strict builds, project configuration, and packaging flags.
+Both localization validators must return `Errors: 0`. Structural warnings for
+historical duplicate or orphan records must be reviewed but do not necessarily
+block the current catalog.
 
-## TODO
+## Build a Spanish Package
 
-- [ ] Validate package contents beyond the presence of `data/lotr.str`.
-- [ ] Support multiple configured `.str` files while preserving ROTWK behavior.
-- [ ] Add a source archive extraction workflow for external ROTWK inputs.
-- [ ] Add reproducible entry selection to the manual CLI.
-- [ ] Add a review UI or a richer CLI for human and AI proposals.
-- [ ] Improve merge support for new languages and mods.
+Do not build a release until the required translations have been completed and
+validated. The normal release workflow is:
+
+```bash
+python3 tools/localization/validate.py
+python3 tools/localization/validate_translation.py
+python3 tools/localization/build.py --project config/project.json
+python3 tools/localization/pack.py --project config/project.json
+```
+
+The generated package is written to:
+
+```text
+releases/spanishpatch202.big
+```
+
+`pack.py` verifies that the package exists, is non-empty, and contains
+`data/lotr.str`. The output must still be tested manually in the game; the
+tools do not install it automatically.
+
+For an intentionally partial debug package only, source fallback is available:
+
+```bash
+python3 tools/localization/build.py \
+  catalogs/spanish_work.json \
+  /tmp/partial.str \
+  --allow-source-fallback
+```
+
+Never use source fallback for a release build. Debug packaging options such as
+`--debug`, `--exclude-orphan-ids`, and `--dedupe-ids last` operate on temporary
+build data and do not delete catalog history.
+
+## Project Configuration
+
+`config/project.json` describes the current ROTWK 2.02 project:
+
+- Source archive and string files.
+- Work catalog and generated `.str` path.
+- Generated package path.
+- Target language and encoding.
+
+The current target encoding is Windows-1252 (`cp1252`) for SAGE compatibility.
+The configuration is intended to become the main interface for future BFME1,
+BFME2, mods, maps, and additional `.str` files.
+
+## Current Priorities
+
+- Use the English ROTWK 2.02 build 9770 as the comparison reference.
+- Continue using the French and Spanish packages for tests, analysis, and
+  functionality checks.
+- Update the Spanish catalog against that source and classify differences.
+- Translate in small, auditable batches.
+- Resolve or document duplicate and orphan records.
+- Generate and test a complete Spanish package in the game.
+- Extend the toolset to additional SAGE projects without hard-coded language
+  assumptions.
+
+## License
+
+The project source code and tooling are distributed under the GNU General Public
+License v3. See `LICENSE`.
