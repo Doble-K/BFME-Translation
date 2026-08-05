@@ -25,7 +25,7 @@ An explicit user request or assigned task lane overrides the generic queue. If a
 
 When requested to compile a release:
 1. `python3 tools/localization/build.py catalogs/spanish_work.json translations/spanish/data/lotr.str`
-2. `python3 tools/localization/pack.py`
+2. `python3 tools/localization/pack.py --project config/project.json`
 3. Verify that the output package (`releases/spanishpatch202.big`) updates correctly.
 
 ## Integrity and Safety Policy

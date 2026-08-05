@@ -29,6 +29,7 @@ class LocalizationToolTests(unittest.TestCase):
         self.assertEqual(project["name"], "bfme2-rotwk-2.02")
         self.assertEqual(project["encoding"], "cp1252")
         self.assertEqual(project["string_header"], "// String file for Lord of the Rings")
+        self.assertEqual(project["debug_marker"], "DEBUGING")
         self.assertEqual(
             resolve_project_path(project, "output_package"),
             ROOT / "releases" / "spanishpatch202.big",
@@ -247,11 +248,92 @@ class LocalizationToolTests(unittest.TestCase):
         self.assertIn("--exclude-orphan-ids", result.stdout)
         self.assertIn("--dedupe-ids", result.stdout)
 
+    def test_pack_requires_project_configuration(self):
+        result = run_tool("pack.py")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("requiere --project", result.stderr)
+
+    def test_compare_creates_generic_report(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            reference = directory / "reference.json"
+            target = directory / "target.json"
+            report = directory / "reports" / "comparison.json"
+            reference.write_text(json.dumps({
+                "source": "reference.str",
+                "entries": [
+                    {"id": "TEST:Same", "text": "Same"},
+                    {"id": "TEST:Missing", "text": "Missing"},
+                    {"id": "TEST:Duplicate", "text": "First"},
+                    {"id": "TEST:Duplicate", "text": "Last"},
+                ],
+            }), encoding="utf-8")
+            target.write_text(json.dumps({
+                "source": "target.str",
+                "entries": [
+                    {"id": "TEST:Same", "text": "Same"},
+                    {"id": "TEST:Duplicate", "text": "Translated"},
+                    {"id": "TEST:Empty", "text": ""},
+                ],
+            }), encoding="utf-8")
+
+            result = run_tool(
+                "compare.py",
+                reference,
+                target,
+                "--output",
+                report,
+                "--reference-name",
+                "English",
+                "--target-name",
+                "French",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            data = json.loads(report.read_text(encoding="utf-8"))
+            self.assertEqual(data["reference"]["name"], "English")
+            self.assertEqual(data["target"]["name"], "French")
+            self.assertEqual(data["missing_in_target"], ["TEST:Missing"])
+            self.assertEqual(data["empty_in_target"], [])
+            self.assertEqual(data["reference"]["duplicate_ids"], ["TEST:Duplicate"])
+
     def test_translate_help_exposes_review_mode(self):
         result = run_tool("translate.py", "--help")
         self.assertEqual(result.returncode, 0)
         self.assertIn("--review", result.stdout)
         self.assertIn("--advanced", result.stdout)
+        self.assertIn("--project", result.stdout)
+
+    def test_translate_uses_project_language_and_catalog(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "french.json"
+            project_file = directory / "project.json"
+            catalog.write_text(json.dumps({
+                "entries": [{
+                    "id": "TEST:Bonjour",
+                    "source": "Hello",
+                    "translation": "",
+                    "status": "pending",
+                }]
+            }), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "french-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "french.big"),
+                "language": "fr",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+
+            result = run_tool("translate.py", "--project", project_file, "--count", "1")
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertIn("fr:", result.stdout)
+            self.assertIn("Hello", result.stdout)
 
     def test_translate_retries_after_token_error(self):
         with tempfile.TemporaryDirectory() as directory:

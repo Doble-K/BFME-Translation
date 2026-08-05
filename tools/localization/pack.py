@@ -14,7 +14,9 @@ from extract import extract_str
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def verify_embedded_files(big4f, package_path, package_dir, expected_files, debug):
+def verify_embedded_files(
+    big4f, package_path, package_dir, expected_files, debug, debug_ids, debug_marker
+):
     with tempfile.TemporaryDirectory(prefix="localization-pack-verify-") as verification_dir:
         verification_root = Path(verification_dir)
         subprocess.run(
@@ -43,17 +45,18 @@ def verify_embedded_files(big4f, package_path, package_dir, expected_files, debu
             if len(source_entries) != len(embedded_entries):
                 raise ValueError(f"La cantidad de entradas difiere en {relative_path}.")
 
-            markers = [
-                entry["text"]
-                for entry in embedded_entries
-                if entry["id"] in {"GUI:SinglePlayer", "APT:SoloPlay"}
-            ]
-            has_debug_marker = "DEBUGING" in markers
-            if debug != has_debug_marker:
-                expected = "DEBUGING" if debug else "la traduccion normal"
-                raise ValueError(
-                    f"Marcador inesperado en {relative_path}: se esperaba {expected}."
-                )
+            if debug_ids:
+                markers = [
+                    entry["text"]
+                    for entry in embedded_entries
+                    if entry["id"] in debug_ids
+                ]
+                has_debug_marker = debug_marker in markers
+                if debug != has_debug_marker:
+                    expected = debug_marker if debug else "la traduccion normal"
+                    raise ValueError(
+                        f"Marcador inesperado en {relative_path}: se esperaba {expected}."
+                    )
 
             print(
                 f"Contenido verificado: {relative_path} "
@@ -71,7 +74,7 @@ def main():
     parser.add_argument(
         "--debug",
         action="store_true",
-        help="Replace the single-player labels with the debug marker",
+        help="Replace configured debug IDs with the configured marker",
     )
     parser.add_argument(
         "--dedupe-ids",
@@ -82,12 +85,17 @@ def main():
     args = parser.parse_args()
 
     project = None
-    if args.project:
-        try:
-            project = load_project(args.project)
-        except (OSError, ValueError) as error:
-            print(f"Error: configuración de proyecto inválida: {error}", file=sys.stderr)
-            return 1
+    if not args.project:
+        print(
+            "Error: pack.py requiere --project para conocer las rutas y archivos del proyecto.",
+            file=sys.stderr,
+        )
+        return 2
+    try:
+        project = load_project(args.project)
+    except (OSError, ValueError) as error:
+        print(f"Error: configuración de proyecto inválida: {error}", file=sys.stderr)
+        return 1
 
     big4f = ROOT / "tools" / "big4f" / "bin"
     platform_name = sys.platform
@@ -104,24 +112,18 @@ def main():
         print(f"Error: No se encontró el binario de big4f para '{platform_name}' en {big4f}")
         return 1
 
-    source_dir = (
-        resolve_project_path(project, "string_directory")
-        if project
-        else ROOT / "translations" / "spanish"
-    )
-    output_release = (
-        resolve_project_path(project, "output_package")
-        if project
-        else ROOT / "releases" / "spanishpatch202.big"
-    )
-    expected_files = project["string_files"] if project else ["data/lotr.str"]
+    source_dir = resolve_project_path(project, "string_directory")
+    output_release = resolve_project_path(project, "output_package")
+    expected_files = project["string_files"]
+    debug_ids = set(project.get("debug_ids", []))
+    debug_marker = project.get("debug_marker", "DEBUGING")
     output_release.parent.mkdir(parents=True, exist_ok=True)
 
     debug_build = args.exclude_orphan_ids or args.debug or args.dedupe_ids
     with tempfile.TemporaryDirectory(prefix="localization-pack-") as temporary_dir:
         package_dir = source_dir
         if debug_build:
-            package_dir = Path(temporary_dir) / "spanish"
+            package_dir = Path(temporary_dir) / "project"
             shutil.copytree(source_dir, package_dir)
             if len(expected_files) != 1:
                 print(
@@ -133,7 +135,7 @@ def main():
             build_command = [
                 sys.executable,
                 str(ROOT / "tools" / "localization" / "build.py"),
-                str(resolve_project_path(project, "catalog") if project else ROOT / "catalogs" / "spanish_work.json"),
+                str(resolve_project_path(project, "catalog")),
                 str(debug_str),
                 "--allow-source-fallback",
             ]
@@ -205,6 +207,8 @@ def main():
                 package_dir,
                 expected_files,
                 args.debug,
+                debug_ids,
+                debug_marker,
             )
         except (OSError, ValueError, subprocess.CalledProcessError) as error:
             print(f"Error en la verificación profunda del paquete: {error}", file=sys.stderr)
@@ -213,7 +217,7 @@ def main():
         if args.exclude_orphan_ids:
             print("Modo debug: se excluyeron IDs compuestos solo por espacios.")
     if args.debug:
-        print("Modo debug: se aplicó el marcador DEBUGING.")
+        print(f"Modo debug: se aplicó el marcador {debug_marker}.")
     if args.dedupe_ids:
         print(f"Modo debug: se conservaron IDs duplicados con política '{args.dedupe_ids}'.")
     print(f"¡Empaquetado exitoso! Archivo generado en: {output_release}")

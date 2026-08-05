@@ -192,6 +192,24 @@ entries to `retired_entries` instead of deleting them.
 Updates are designed to be idempotent. Always inspect the resulting report and
 catalog before translating new entries.
 
+### Compare Languages or Versions
+
+Compare catalogs by effective IDs and text without modifying either catalog:
+
+```bash
+python3 tools/localization/compare.py \
+  catalogs/english.json \
+  catalogs/french.json \
+  --reference-name English \
+  --target-name French \
+  --output reports/generated/english-french.json
+```
+
+The report lists IDs missing from the target, extra target IDs, empty target
+entries, texts equal to the reference, and duplicate IDs in both catalogs.
+This makes version changes distinguishable from translation differences before
+updating a work catalog.
+
 ## Validation and Tests
 
 Run both validators after every translation batch and before any commit:

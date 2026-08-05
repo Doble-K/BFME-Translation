@@ -8,6 +8,7 @@ from datetime import datetime
 from pathlib import Path
 
 from validate_translation import DEFAULT_RULES, protected_tokens
+from project import load_project, resolve_project_path
 
 
 AUTO_ID_PREFIXES = ("LETTER:", "NUMBER:")
@@ -102,7 +103,12 @@ def record_translation(entry, value, today):
 
 def main():
     parser = argparse.ArgumentParser(description="Review or manually translate pending entries.")
-    parser.add_argument("catalog", nargs="?", default="catalogs/spanish_work.json")
+    parser.add_argument("catalog", nargs="?", help="Path to the work catalog")
+    parser.add_argument("--project", help="Project configuration JSON")
+    parser.add_argument(
+        "--language",
+        help="Target language label used by the interactive prompt",
+    )
     parser.add_argument("--count", type=int, default=10)
     parser.add_argument("--edit", action="store_true")
     parser.add_argument(
@@ -137,10 +143,15 @@ def main():
         parser.error("--count debe ser mayor que cero")
 
     try:
-        data = load_catalog(args.catalog)
+        project = load_project(args.project) if args.project else None
+        if not args.catalog and not project:
+            parser.error("indique catalog o use --project")
+        catalog_path = Path(args.catalog) if args.catalog else resolve_project_path(project, "catalog")
+        target_language = args.language or (project or {}).get("language", "TARGET")
+        data = load_catalog(catalog_path)
         with args.rules.open(encoding="utf-8") as rules_file:
             rules = json.load(rules_file)
-    except (OSError, json.JSONDecodeError) as error:
+    except (OSError, json.JSONDecodeError, ValueError) as error:
         print(f"Error: no se pudo cargar el catálogo o las reglas: {error}", file=sys.stderr)
         return 1
 
@@ -175,7 +186,7 @@ def main():
             print()
 
         if not args.edit:
-            print("ES:")
+            print(f"{target_language}:")
             print(entry.get("translation", ""))
             print()
             index += 1
@@ -183,7 +194,7 @@ def main():
 
         print("Comandos: :back volver, :skip saltar, :quit salir")
         while True:
-            value = input("ES: ").strip()
+            value = input(f"{target_language}: ").strip()
             if value == ":back":
                 index = max(0, index - 1)
                 break
@@ -200,7 +211,7 @@ def main():
                 continue
 
             record_translation(entry, value, datetime.now().strftime("%Y-%m-%d"))
-            save_catalog(args.catalog, data)
+            save_catalog(catalog_path, data)
             print("Saved")
             index += 1
             break

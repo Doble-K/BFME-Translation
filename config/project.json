@@ -10,5 +10,10 @@
   "output_package": "releases/spanishpatch202.big",
   "language": "es-419",
   "encoding": "cp1252",
-  "string_header": "// String file for Lord of the Rings"
+  "string_header": "// String file for Lord of the Rings",
+  "debug_ids": [
+    "GUI:SinglePlayer",
+    "APT:SoloPlay"
+  ],
+  "debug_marker": "DEBUGING"
 }

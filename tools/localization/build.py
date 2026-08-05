@@ -56,6 +56,8 @@ def main():
     output_str_file = Path(args.output) if args.output else resolve_project_path(project, "output_string_file")
     encoding = args.encoding or (project["encoding"] if project else "cp1252")
     string_header = (project or {}).get("string_header", "// String file")
+    debug_ids = set((project or {}).get("debug_ids", []))
+    debug_marker = (project or {}).get("debug_marker", "DEBUGING")
     debug = args.debug
 
     with open(catalog_file, "r", encoding="utf-8") as f:
@@ -67,9 +69,9 @@ def main():
 
     if debug:
         for entry in data.get("entries", []):
-            if entry.get("id") in {"GUI:SinglePlayer", "APT:SoloPlay"}:
-                entry["translation"] = "DEBUGING"
-                print(f"Modo debug: {entry['id']} = DEBUGING")
+            if entry.get("id") in debug_ids:
+                entry["translation"] = debug_marker
+                print(f"Modo debug: {entry['id']} = {debug_marker}")
 
     entries = data.get("entries", [])
     deduped_ids = []

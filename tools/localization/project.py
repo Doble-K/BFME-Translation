@@ -29,6 +29,13 @@ def load_project(path):
         raise ValueError("string_files debe ser una lista no vacía")
     if "string_header" in project and not isinstance(project["string_header"], str):
         raise ValueError("string_header debe ser una cadena")
+    if "debug_ids" in project and (
+        not isinstance(project["debug_ids"], list)
+        or not all(isinstance(entry_id, str) for entry_id in project["debug_ids"])
+    ):
+        raise ValueError("debug_ids debe ser una lista de cadenas")
+    if "debug_marker" in project and not isinstance(project["debug_marker"], str):
+        raise ValueError("debug_marker debe ser una cadena")
     return project
 
 
