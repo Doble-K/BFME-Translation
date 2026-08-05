@@ -23,6 +23,11 @@ def main():
         action="store_true",
         help="Replace the single-player labels with the debug marker",
     )
+    parser.add_argument(
+        "--dedupe-ids",
+        choices=("first", "last"),
+        help="Debug build keeping the first or last non-whitespace ID",
+    )
     args = parser.parse_args()
 
     big4f = ROOT / "tools" / "big4f" / "bin"
@@ -44,7 +49,7 @@ def main():
     output_release = ROOT / "releases" / "spanishpatch202.big"
     output_release.parent.mkdir(parents=True, exist_ok=True)
 
-    debug_build = args.exclude_orphan_ids or args.debug
+    debug_build = args.exclude_orphan_ids or args.debug or args.dedupe_ids
     with tempfile.TemporaryDirectory(prefix="spanishpack-") as temporary_dir:
         package_dir = source_dir
         if debug_build:
@@ -61,6 +66,8 @@ def main():
                 build_command.append("--exclude-whitespace-ids")
             if args.debug:
                 build_command.append("--debug")
+            if args.dedupe_ids:
+                build_command.extend(("--dedupe-ids", args.dedupe_ids))
             try:
                 subprocess.run(build_command, cwd=ROOT, check=True)
             except subprocess.CalledProcessError as error:
@@ -82,6 +89,8 @@ def main():
         print("Modo debug: se excluyeron IDs compuestos solo por espacios.")
     if args.debug:
         print("Modo debug: se aplicó el marcador DEBUGING.")
+    if args.dedupe_ids:
+        print(f"Modo debug: se conservaron IDs duplicados con política '{args.dedupe_ids}'.")
     print(f"¡Empaquetado exitoso! Archivo generado en: {output_release}")
     return 0
 

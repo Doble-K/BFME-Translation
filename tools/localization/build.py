@@ -25,6 +25,11 @@ def main():
         action="store_true",
         help="Debug-only filter for IDs containing no non-whitespace characters",
     )
+    parser.add_argument(
+        "--dedupe-ids",
+        choices=("first", "last"),
+        help="Debug-only duplicate policy for non-whitespace IDs",
+    )
     args = parser.parse_args()
 
     catalog_file = Path(args.catalog)
@@ -46,6 +51,21 @@ def main():
                 print(f"Modo debug: {entry['id']} = DEBUGING")
 
     entries = data.get("entries", [])
+    deduped_ids = []
+    if args.dedupe_ids:
+        selected = {}
+        source_entries = entries if args.dedupe_ids == "first" else reversed(entries)
+        for entry in source_entries:
+            entry_id = entry.get("id")
+            if entry_id and entry_id.strip() and entry_id not in selected:
+                selected[entry_id] = entry
+            elif entry_id and entry_id.strip():
+                deduped_ids.append(entry_id)
+        entries = (
+            [entry for entry in entries if selected.get(entry.get("id")) is entry]
+            if args.dedupe_ids == "first"
+            else list(reversed(list(selected.values())))
+        )
     excluded_ids = set(args.exclude_id)
     excluded_count = 0
     compiled_count = 0
@@ -93,6 +113,10 @@ def main():
     print(f"Total de entradas compiladas: {compiled_count}")
     if excluded_count:
         print(f"Entradas excluidas de esta build: {excluded_count}")
+    if deduped_ids:
+        print(f"IDs duplicados deduplicados ({args.dedupe_ids}): {len(deduped_ids)}")
+        for entry_id in sorted(set(deduped_ids)):
+            print(f"  - {entry_id}")
 
 
 if __name__ == "__main__":
