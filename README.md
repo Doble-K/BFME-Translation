@@ -60,18 +60,22 @@ cd BFME-Translation
 chmod +x tools/big4f/bin/linux/big4f
 ```
 
-The original game or patch `.big` is not included in the repository. Place it
+The original game or patch `.big` may be available in the clone at
+`source/englishpatch202.big`. If it is not included, place the external file
 in the local `sources/` directory using this filename:
 
 ```text
 sources/rotwk-2.02.big
 ```
 
-That directory is prepared in the repository, but `.big` files inside it are
-ignored by Git. Extract its `data/lotr.str` when creating a new catalog:
+The `sources/` directory is prepared in the repository, but `.big` files inside
+it are ignored by Git. Extract the available source package when creating a
+new catalog:
 
 ```bash
-tools/big4f/bin/linux/big4f x sources/rotwk-2.02.big /tmp/rotwk-source
+SOURCE_BIG="source/englishpatch202.big"
+test -f "$SOURCE_BIG" || SOURCE_BIG="sources/rotwk-2.02.big"
+tools/big4f/bin/linux/big4f x "$SOURCE_BIG" /tmp/rotwk-source && \
 python3 tools/localization/extract.py \
   /tmp/rotwk-source/data/lotr.str \
   catalogs/english.json
