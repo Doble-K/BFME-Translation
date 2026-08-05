@@ -4563,27 +4563,27 @@ WOL:BuddyNotInChanOtherServer
 END
 
 WOL:BuddyInGameOtherServer
-"%ls is playing a game on %ls"
+"%ls está jugando una partida en %ls"
 END
 
 WOL:BuddyInChatOtherServer
-"%ls is chatting in %ls on %ls"
+"%ls está chateando en %ls en %ls"
 END
 
 WOL:BuddyGameSetupOtherServer
-"%ls is in %ls on %ls"
+"%ls está en %ls en %ls"
 END
 
 WOL:BuddyHiding
-"%ls is hiding"
+"%ls está oculto"
 END
 
 WOL:Locale00
-"Unknown"
+"Desconocido"
 END
 
 WOL:Locale01
-"Other Location"
+"Otra ubicación"
 END
 
 WOL:Locale02
@@ -4599,15 +4599,15 @@ WOL:Locale04
 END
 
 WOL:Locale05
-"Belgium"
+"Bélgica"
 END
 
 WOL:Locale06
-"Brazil"
+"Brasil"
 END
 
 WOL:Locale07
-"Canada"
+"Canadá"
 END
 
 WOL:Locale08
@@ -4615,27 +4615,27 @@ WOL:Locale08
 END
 
 WOL:Locale09
-"Denmark"
+"Dinamarca"
 END
 
 WOL:Locale10
-"Finland"
+"Finlandia"
 END
 
 WOL:Locale11
-"France"
+"Francia"
 END
 
 WOL:Locale12
-"Germany"
+"Alemania"
 END
 
 WOL:Locale13
-"Greece"
+"Grecia"
 END
 
 WOL:Locale14
-"Ireland"
+"Irlanda"
 END
 
 WOL:Locale15
@@ -4643,43 +4643,43 @@ WOL:Locale15
 END
 
 WOL:Locale16
-"Italy"
+"Italia"
 END
 
 WOL:Locale17
-"Japan"
+"Japón"
 END
 
 WOL:Locale18
-"Korea"
+"Corea"
 END
 
 WOL:Locale19
-"Malaysia"
+"Malasia"
 END
 
 WOL:Locale20
-"Mexico"
+"México"
 END
 
 WOL:Locale21
-"Netherlands"
+"Países Bajos"
 END
 
 WOL:Locale22
-"New Zealand"
+"Nueva Zelanda"
 END
 
 WOL:Locale23
-"Norway"
+"Noruega"
 END
 
 WOL:Locale24
-"Philippines"
+"Filipinas"
 END
 
 WOL:Locale25
-"Poland"
+"Polonia"
 END
 
 WOL:Locale26
@@ -4687,55 +4687,55 @@ WOL:Locale26
 END
 
 WOL:Locale27
-"Russia"
+"Rusia"
 END
 
 WOL:Locale28
-"Singapore"
+"Singapur"
 END
 
 WOL:Locale29
-"South Africa"
+"Sudáfrica"
 END
 
 WOL:Locale30
-"Spain"
+"España"
 END
 
 WOL:Locale31
-"Sweden"
+"Suecia"
 END
 
 WOL:Locale32
-"Switzerland"
+"Suiza"
 END
 
 WOL:Locale33
-"Taiwan"
+"Taiwán"
 END
 
 WOL:Locale34
-"Thailand"
+"Tailandia"
 END
 
 WOL:Locale35
-"Turkey"
+"Turquía"
 END
 
 WOL:Locale36
-"United Kingdom"
+"Reino Unido"
 END
 
 WOL:Locale37
-"United States"
+"Estados Unidos"
 END
 
 Chat:Everyone
-"Everyone Views"
+"Todos pueden ver"
 END
 
 Chat:Allies
-"Only Allies View"
+"Solo los aliados pueden ver"
 END
 
 Chat:Observers
