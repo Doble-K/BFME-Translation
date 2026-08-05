@@ -54,7 +54,17 @@ def select_entries(data, mode, count):
             if entry.get("status") == "translated"
             and "needs_review" in entry.get("flags", [])
         )
-    return list(eligible)[:count]
+    selected = []
+    seen_ids = set()
+    for entry in reversed(list(eligible)):
+        entry_id = entry.get("id")
+        if entry_id in seen_ids:
+            continue
+        seen_ids.add(entry_id)
+        selected.append(entry)
+        if len(selected) >= count:
+            break
+    return list(reversed(selected))
 
 
 def choose_model(entry, routing, small_model, large_model, long_chars, rules):
