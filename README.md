@@ -82,7 +82,7 @@ When a release build is requested:
 2. `python3 tools/localization/validate_translation.py`
 3. `python3 tools/localization/build.py catalogs/spanish_work.json translations/spanish/data/lotr.str --encoding cp1252`
 4. `python3 tools/localization/pack.py`
-5. Verify that `releases/spanishpatch202.big` updates correctly.
+5. `pack.py` verifies that the package exists, is non-empty, and contains `data/lotr.str`.
 
 The build defaults to Windows-1252/ANSI for SAGE compatibility. Use `--encoding` with another compatible code page for languages that require it.
 

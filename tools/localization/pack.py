@@ -75,6 +75,11 @@ def main():
                 print(f"Error durante la build debug: {error}")
                 return error.returncode or 1
 
+        source_str = package_dir / "data" / "lotr.str"
+        if not source_str.is_file() or source_str.stat().st_size == 0:
+            print(f"Error: no se encontró un lotr.str válido en {source_str}.", file=sys.stderr)
+            return 1
+
         print(f"Empaquetando {package_dir} usando {big4f}...")
         try:
             subprocess.run(
@@ -86,8 +91,30 @@ def main():
             print(f"Error durante el empaquetado con big4f: {error}")
             return error.returncode or 1
 
-    if args.exclude_orphan_ids:
-        print("Modo debug: se excluyeron IDs compuestos solo por espacios.")
+        if not output_release.is_file() or output_release.stat().st_size == 0:
+            print("Error: big4f no generó un paquete válido.", file=sys.stderr)
+            return 1
+
+        try:
+            listing = subprocess.run(
+                [str(big4f.resolve()), "l", str(output_release.resolve())],
+                cwd=ROOT,
+                check=True,
+                capture_output=True,
+                text=True,
+            ).stdout
+        except subprocess.CalledProcessError as error:
+            print(f"Error verificando el contenido del paquete: {error}", file=sys.stderr)
+            return error.returncode or 1
+
+        normalized_listing = listing.replace("\\", "/").lower()
+        if "data/lotr.str" not in normalized_listing:
+            print("Error: el paquete no contiene data/lotr.str.", file=sys.stderr)
+            return 1
+        print("Verificación del paquete: data/lotr.str encontrada.")
+
+        if args.exclude_orphan_ids:
+            print("Modo debug: se excluyeron IDs compuestos solo por espacios.")
     if args.debug:
         print("Modo debug: se aplicó el marcador DEBUGING.")
     if args.dedupe_ids:
