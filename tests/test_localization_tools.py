@@ -192,6 +192,7 @@ class LocalizationToolTests(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0)
         self.assertIn("--wizard", result.stdout)
+        self.assertIn("--avanced", result.stdout)
 
     def test_pack_help_exposes_debug_controls(self):
         result = run_tool("pack.py", "--help")

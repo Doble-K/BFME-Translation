@@ -25,6 +25,23 @@ def ask(prompt, default=None):
     return value or default
 
 
+def choose_language(label, default):
+    languages = {
+        "1": ("es", "Español"),
+        "2": ("en", "English"),
+        "3": ("pr", "Português"),
+        "4": ("fr", "Français"),
+        "5": ("ge", "Deutsch"),
+    }
+    print(f"Idioma {label}:")
+    for number, (_, name) in languages.items():
+        print(f"  {number}. {name}")
+    choice = ask("Selecciona una opcion", "1" if default == "es" else "2")
+    if choice in languages:
+        return languages[choice][0]
+    raise ValueError("Idioma no disponible en modo basico; usa --advanced para un codigo personalizado")
+
+
 def choose_project():
     print("Tipo de proyecto:")
     print("  1. BFME1")
@@ -195,12 +212,16 @@ def create_project_config(config_path, settings, string_file):
         config_file.write("\n")
 
 
-def wizard(force=False, allow_same_language=False):
+def wizard(force=False, allow_same_language=False, advanced=False):
     greet()
     project = choose_project()
     big_file = choose_big_file(project)
-    source_language = ask("Idioma de origen", "en-US")
-    target_language = ask("Idioma de destino", "es-419")
+    if advanced:
+        source_language = ask("Idioma de origen", "en-US")
+        target_language = ask("Idioma de destino", "es-419")
+    else:
+        source_language = choose_language("de origen", "en")
+        target_language = choose_language("de destino", "es")
     if (
         not allow_same_language
         and source_language.split("-")[0].lower()
@@ -287,10 +308,17 @@ def main():
         action="store_true",
         help="Allow source and target languages with the same base code",
     )
+    parser.add_argument(
+        "--advanced",
+        "--avanced",
+        dest="advanced",
+        action="store_true",
+        help="Allow custom language codes and advanced project options",
+    )
     args = parser.parse_args()
     try:
         if args.wizard or not args.input:
-            wizard(args.force, args.allow_same_language)
+            wizard(args.force, args.allow_same_language, args.advanced)
         else:
             print(f"Catalogo creado: {args.output}")
             print(f"Entradas: {non_interactive(args)}")
