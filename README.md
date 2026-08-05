@@ -28,6 +28,9 @@ BFME-Translation/
 │   └── localization/
 │       ├── validate.py           # Structural catalog validation
 │       ├── validate_translation.py # Translation validation
+│       ├── extract.py            # Extracts entries from .str files
+│       ├── update.py             # Updates the work catalog from a new source
+│       ├── translate.py          # Manual review and translation CLI
 │       ├── build.py              # Compiles catalog to .str format
 │       └── pack.py               # Packages .str into .big
 ├── translations/
@@ -54,29 +57,68 @@ BFME-Translation/
 5. **Commit**: Stage only the modified files (`git add <specific-paths>`, never `git add .`) and commit with a conventional message (e.g., `feat(localization): translate batch 10`).
 6. **Sync**: Pull, push, and pull again to ensure integrity.
 
+### Agent and Manual Review Rules
+
+- The catalog JSON is the source of truth; `.str` and `.big` files are generated artifacts.
+- Duplicate non-whitespace IDs use the last occurrence as the source of truth.
+- `update.py` records duplicate metadata in `duplicate_meta` and marks shadowed entries with `duplicate_shadowed`.
+- IDs made only of whitespace are preserved as orphan records and are not removed automatically.
+- Bulk agents should process only selected, non-empty entries. The manual CLI skips shadowed duplicates, orphan IDs, and empty source strings by default.
+- Use `--include-shadowed`, `--include-orphans`, or `--include-empty` only for explicit investigation.
+
+To review or edit pending entries manually:
+
+```bash
+python3 tools/localization/translate.py --count 10
+python3 tools/localization/translate.py --count 10 --edit
+```
+
+Manual edits are token-validated, saved atomically, and recorded in entry history and metadata.
+
 ### Build Workflow (Release)
 
 When a release build is requested:
-1. `python3 tools/localization/build.py catalogs/spanish_work.json translations/spanish/data/lotr.str --encoding cp1252`
-2. `python3 tools/localization/pack.py`
-3. Verify that `releases/spanishpatch202.big` updates correctly.
+1. `python3 tools/localization/validate.py`
+2. `python3 tools/localization/validate_translation.py`
+3. `python3 tools/localization/build.py catalogs/spanish_work.json translations/spanish/data/lotr.str --encoding cp1252`
+4. `python3 tools/localization/pack.py`
+5. Verify that `releases/spanishpatch202.big` updates correctly.
 
 The build defaults to Windows-1252/ANSI for SAGE compatibility. Use `--encoding` with another compatible code page for languages that require it.
 
-For a temporary debug package, add `--debug` to the build command. This changes `GUI:SinglePlayer` to `DEBUGING` only in the generated output; the catalog remains unchanged.
+Release builds fail when a translation is empty. This prevents English source text from entering a release silently. The fallback is available only for an explicitly partial build:
 
 ```bash
-python3 tools/localization/build.py catalogs/spanish_work.json translations/spanish/data/lotr.str --encoding cp1252 --debug
-python3 tools/localization/pack.py
+python3 tools/localization/build.py catalogs/spanish_work.json /tmp/partial.str --allow-source-fallback
 ```
+
+The command reports how many entries used source text as a fallback. Do not use this flag for a release build.
+
+For temporary debug packages, `pack.py` builds from a temporary directory. The catalog and normal `lotr.str` remain unchanged. `DEBUGING` identifies the package as experimental:
+
+```bash
+python3 tools/localization/pack.py --debug
+python3 tools/localization/pack.py --exclude-orphan-ids --dedupe-ids last --debug
+```
+
+`--exclude-orphan-ids` removes whitespace-only IDs only from the temporary debug build. `--dedupe-ids last` keeps the last non-whitespace duplicate for testing; it does not delete catalog history.
+
+### Updating From a New Source
+
+```bash
+python3 tools/localization/extract.py input.str catalogs/new_source.json
+python3 tools/localization/update.py catalogs/new_source.json catalogs/spanish_work.json
+```
+
+`extract.py` rejects undecodable files, incomplete blocks, and missing `END` markers. `update.py` invalidates stale translations when source text changes, resets review state, updates source lines, and writes atomically.
 
 ## Current Progress
 
 | Metric             | Value   |
 |--------------------|---------|
 | Total entries      | 11,069  |
-| Translated         | 1,272   |
-| Pending            | 9,797   |
+| Translated         | 1,273   |
+| Pending            | 9,796   |
 | **Progress**        | **11.5%**|
 
 ### Translation History
@@ -89,6 +131,10 @@ python3 tools/localization/pack.py
 | d9282b1  | Fixed 18 untranslated entries          |
 | 0e21e10  | Batch of 100 entries translated        |
 | 9e8433a  | Batch of 10 entries translated         |
+| 33aaae9  | Block missing translations in release builds |
+| 29f1cbe  | Validate SAGE string extraction         |
+| 2a53ea3  | Record last-wins duplicate metadata     |
+| aec663d  | Make manual translation review safe     |
 
 ## Translation Rules
 
@@ -96,6 +142,7 @@ python3 tools/localization/pack.py
 - **Preserve format**: Wildcards (`%d`, `%s`, `%ls`), newlines (`\n`), and engine tags (`<COL>`) must remain intact.
 - **Do not translate**: URLs, entry IDs, and format tokens.
 - **Metadata**: Each entry includes `translation_meta` (origin, model, date, confidence) and `review` (AI and human review status).
+- **Duplicate policy**: Normal duplicate IDs use the last source occurrence; duplicate and orphan metadata remains auditable in the catalog.
 
 ## Validation
 
@@ -105,6 +152,8 @@ python3 tools/localization/validate_translation.py
 ```
 
 Both scripts must return `Errors: 0` before committing.
+
+The structural validator reports orphan IDs separately. Use `--strict-duplicates` to make real duplicate IDs blocking errors, or repeat `--ignore-id ID` only for documented temporary exceptions.
 
 ## TODO
 
