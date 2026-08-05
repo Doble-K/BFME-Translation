@@ -1,1 +1,3 @@
 .pipeline-toolset-guide.md
+__pycache__/
+*.pyc
