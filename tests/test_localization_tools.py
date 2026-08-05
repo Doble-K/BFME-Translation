@@ -304,6 +304,111 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertNotIn("needs_review", entry["flags"])
             self.assertEqual(entry["history"][0]["action"], "reviewed")
 
+    def test_ai_translate_fixture_dry_run_and_write(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            fixture = directory / "fixture.json"
+            glossary = directory / "GLOSSARY.md"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Bulk",
+                "source": "%d Days",
+                "translation": "",
+                "status": "pending",
+            }]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "bulk-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+            fixture.write_text(json.dumps({
+                "translations": {"TEST:Bulk": "%d Días"}
+            }), encoding="utf-8")
+            glossary.write_text("Glossary", encoding="utf-8")
+
+            dry_run = run_tool(
+                "ai_translate.py",
+                "--project", project_file,
+                "--mode", "translate",
+                "--fixture", fixture,
+                "--glossary", glossary,
+            )
+            self.assertEqual(dry_run.returncode, 0, dry_run.stdout + dry_run.stderr)
+            self.assertEqual(
+                json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]["status"],
+                "pending",
+            )
+
+            written = run_tool(
+                "ai_translate.py",
+                "--project", project_file,
+                "--mode", "translate",
+                "--fixture", fixture,
+                "--glossary", glossary,
+                "--write",
+            )
+            self.assertEqual(written.returncode, 0, written.stdout + written.stderr)
+            entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
+            self.assertEqual(entry["status"], "translated")
+            self.assertIn("needs_review", entry["flags"])
+            self.assertEqual(entry["translation_meta"]["origin"], "ai")
+
+    def test_ai_review_fixture_writes_review_context_only(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            fixture = directory / "fixture.json"
+            glossary = directory / "GLOSSARY.md"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:ReviewAI",
+                "source": "Build the fortress",
+                "translation": "Construir la fortaleza",
+                "status": "translated",
+                "flags": ["needs_review"],
+            }]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "review-ai-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+            fixture.write_text(json.dumps({
+                "reviews": {"TEST:ReviewAI": {
+                    "issues": ["Check terminology"],
+                    "suggestion": "Construir la fortaleza",
+                    "confidence": 0.9,
+                }}
+            }), encoding="utf-8")
+            glossary.write_text("Glossary", encoding="utf-8")
+
+            result = run_tool(
+                "ai_translate.py",
+                "--project", project_file,
+                "--mode", "review",
+                "--fixture", fixture,
+                "--glossary", glossary,
+                "--write",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
+            self.assertEqual(entry["translation"], "Construir la fortaleza")
+            self.assertEqual(entry["review"]["ai"]["issues"], ["Check terminology"])
+            self.assertIn("needs_review", entry["flags"])
+
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)
