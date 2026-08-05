@@ -111,7 +111,7 @@ def parse_model_json(content):
     return result
 
 
-def ollama_response(url, model, mode, entries, glossary, language, timeout, feedback=None):
+def ollama_response(url, model, mode, entries, glossary, language, timeout, feedback=None, rules=None):
     if mode == "translate":
         output_schema = '{"translations":[{"key":"...","translation":"..."}]}'
         task = "Translate every source string into the target language."
@@ -123,15 +123,18 @@ def ollama_response(url, model, mode, entries, glossary, language, timeout, feed
             "key": f"item_{index}",
             "source": entry.get("source", ""),
             "translation": entry.get("translation", ""),
+            "protected_tokens": protected_tokens(entry.get("source", ""), rules or {}),
         }
         for index, entry in enumerate(entries)
     ]
     system = (
         "You are a localization assistant. Return JSON only, with no markdown. "
         "Keys are opaque and must be copied character-for-character; never invent or translate them. "
-        "Do not output engine IDs. Preserve every protected token exactly. "
+        "Do not output engine IDs. Preserve every protected token exactly; every token listed for an entry "
+        "must appear in its translation exactly once. "
         f"Target language: {language}. Output schema: {output_schema}. "
-        "Example translation: input key item_0 with source '1 Second' returns key item_0 and translation '1 segundo'."
+        "Examples: source '1 Second' returns '1 segundo'; source '%d Days' with token ['%d'] "
+        "returns '%d Días'."
     )
     prompt = json.dumps({
         "task": task,
@@ -271,6 +274,7 @@ def main():
                         project["language"],
                         request_timeout,
                         feedback=str(last_error) if last_error else None,
+                        rules=rules,
                     )
                     if args.provider == "ollama"
                     else fixture
