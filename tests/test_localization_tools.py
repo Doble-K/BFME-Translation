@@ -350,6 +350,42 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertIn("system_preserved", entry["flags"])
             self.assertEqual(entry["history"][0]["action"], "auto_preserved")
 
+    def test_normalize_escapes_uses_project_catalog(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            catalog.write_text(json.dumps({
+                "entries": [{
+                    "id": "TEST:Escapes",
+                    "source": "Line 1\\nLine 2",
+                    "translation": "Línea 1\nLínea 2",
+                    "status": "preserved",
+                }]
+            }), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "escapes-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "fr",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+
+            result = run_tool(
+                "normalize_escapes.py",
+                "--project",
+                project_file,
+                "--write",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            data = json.loads(catalog.read_text(encoding="utf-8"))
+            self.assertEqual(data["entries"][0]["translation"], r"Línea 1\nLínea 2")
+
     def test_migrate_uses_project_catalog_and_schema(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)

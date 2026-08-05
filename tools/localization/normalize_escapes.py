@@ -3,7 +3,10 @@
 import argparse
 import json
 import os
+import sys
 from pathlib import Path
+
+from project import load_project, resolve_project_path
 
 
 ESCAPES = {
@@ -40,7 +43,8 @@ def main():
     parser = argparse.ArgumentParser(
         description="Normalize real control characters to SAGE escape sequences."
     )
-    parser.add_argument("catalog", help="Path to the localization catalog")
+    parser.add_argument("catalog", nargs="?", help="Path to the localization catalog")
+    parser.add_argument("--project", help="Project configuration JSON")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument(
         "--check",
@@ -54,9 +58,16 @@ def main():
     )
     args = parser.parse_args()
 
-    path = Path(args.catalog)
-    with path.open(encoding="utf-8") as handle:
-        data = json.load(handle)
+    try:
+        project = load_project(args.project) if args.project else None
+        if not args.catalog and not project:
+            parser.error("indique catalog o use --project")
+        path = Path(args.catalog) if args.catalog else resolve_project_path(project, "catalog")
+        with path.open(encoding="utf-8") as handle:
+            data = json.load(handle)
+    except (OSError, json.JSONDecodeError, ValueError) as error:
+        print(f"Error: no se pudo cargar el catálogo: {error}", file=sys.stderr)
+        return 1
 
     changed = normalize_data(data)
     print(f"Escape sequences needing normalization: {changed}")
@@ -72,6 +83,8 @@ def main():
     if changed and not args.write:
         raise SystemExit(1)
 
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
