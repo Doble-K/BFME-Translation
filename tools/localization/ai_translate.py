@@ -56,6 +56,21 @@ def select_entries(data, mode, count):
     return list(eligible)[:count]
 
 
+def choose_model(entry, routing, small_model, large_model, long_chars, rules):
+    if routing == "single":
+        return small_model
+    source = entry.get("source", "")
+    complex_id = any(
+        marker in entry.get("id", "")
+        for marker in ("Description", "Desc", "Ability", "Power", "ToolTip")
+    )
+    has_many_lines = source.count(r"\n") >= 2 or source.count("\n") >= 2
+    has_many_tokens = len(protected_tokens(source, rules)) >= 3
+    if len(source) > long_chars or has_many_lines or has_many_tokens or complex_id:
+        return large_model
+    return small_model
+
+
 def fixture_translation(fixture, entry_id):
     translations = fixture.get("translations", {})
     if not isinstance(translations, dict) or entry_id not in translations:
@@ -163,6 +178,10 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Do not write catalog changes")
     parser.add_argument("--write", action="store_true", help="Write results to the catalog")
     parser.add_argument("--model", default="fixture", help="Model/provider label in metadata")
+    parser.add_argument("--routing", choices=("single", "auto"), default="single")
+    parser.add_argument("--small-model", default="llama3.2:3b")
+    parser.add_argument("--large-model", default="qwen2.5:7b")
+    parser.add_argument("--long-chars", type=int, default=180)
     parser.add_argument("--actor", default="ai", help="Actor recorded in metadata")
     parser.add_argument("--ollama-url", default="http://127.0.0.1:11434")
     parser.add_argument("--timeout", type=int, default=300)
@@ -201,15 +220,29 @@ def main():
     today = datetime.now().strftime("%Y-%m-%d")
     results = []
     skipped = []
+    model_counts = {}
     for entry in entries:
         entry_id = entry["id"]
+        model = (
+            choose_model(
+                entry,
+                args.routing,
+                args.small_model,
+                args.large_model,
+                args.long_chars,
+                rules,
+            )
+            if args.provider == "ollama"
+            else args.model
+        )
+        model_counts[model] = model_counts.get(model, 0) + 1
         last_error = None
         for attempt in range(1, args.retries + 1):
             try:
                 provider_result = (
                     ollama_response(
                         args.ollama_url,
-                        args.model,
+                        model,
                         args.mode,
                         [entry],
                         glossary,
@@ -242,7 +275,7 @@ def main():
                         raise ValueError(
                             f"TOKEN ERROR {entry_id}: expected {expected}, received {actual}"
                         )
-                    results.append((entry, translation))
+                    results.append((entry, translation, model))
                 else:
                     if args.provider == "ollama":
                         provider_items = provider_result.get("reviews", [])
@@ -268,7 +301,7 @@ def main():
                             raise ValueError(
                                 f"TOKEN ERROR {entry_id}: review suggestion has invalid tokens"
                             )
-                    results.append((entry, review))
+                    results.append((entry, review, model))
                 last_error = None
                 break
             except (ValueError, KeyError, TypeError) as error:
@@ -282,12 +315,13 @@ def main():
     print(f"Entradas seleccionadas: {len(entries)}")
     print(f"Entradas exitosas: {len(results)}")
     print(f"Entradas omitidas: {len(skipped)}")
+    print(f"Modelos seleccionados: {model_counts}")
     print(f"Glosario cargado: {len(glossary)} caracteres")
     if not args.write:
         print("Dry-run: no se modificó el catálogo.")
         return 0
 
-    for entry, result in results:
+    for entry, result, model in results:
         entry.setdefault("flags", [])
         entry.setdefault("translation_meta", {})
         if args.mode == "translate":
@@ -297,7 +331,7 @@ def main():
                 entry["flags"].append("needs_review")
             entry["translation_meta"].update({
                 "origin": "ai",
-                "model": args.model,
+                "model": model,
                 "date": today,
                 "confidence": 0.0,
             })
@@ -309,7 +343,7 @@ def main():
                 "suggestion": result["suggestion"],
                 "confidence": result["confidence"],
                 "last_review": today,
-                "model": args.model,
+                "model": model,
                 "actor": args.actor,
             })
 

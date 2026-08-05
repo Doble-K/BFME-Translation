@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TOOLS = ROOT / "tools" / "localization"
 sys.path.insert(0, str(TOOLS))
 from project import load_project, resolve_project_path
+from ai_translate import choose_model
 
 
 def run_tool(name, *args):
@@ -450,6 +451,22 @@ class LocalizationToolTests(unittest.TestCase):
             entries = json.loads(catalog.read_text(encoding="utf-8"))["entries"]
             self.assertEqual(entries[0]["status"], "pending")
             self.assertEqual(entries[1]["translation"], "Dos")
+
+    def test_ai_auto_routing_uses_large_model_for_complex_entries(self):
+        rules = {"format_specifiers": [], "control_characters": [], "sage_tags": [], "regex_patterns": []}
+        short = {"id": "TIME:Second", "source": "1 Second"}
+        long = {
+            "id": "OBJECT:RohanFarmDescription",
+            "source": "Reduces the Cost of Cavalry \\n 2 Farms: 10%\\n 3 Farms: 15%\\n 4 Farms: 20%",
+        }
+        self.assertEqual(
+            choose_model(long, "auto", "llama3.2:3b", "qwen2.5:7b", 180, rules),
+            "qwen2.5:7b",
+        )
+        self.assertEqual(
+            choose_model(short, "auto", "llama3.2:3b", "qwen2.5:7b", 180, rules),
+            "llama3.2:3b",
+        )
 
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:
