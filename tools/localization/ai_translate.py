@@ -93,6 +93,22 @@ def order_entries_by_model(entries, routing, small_model, large_model, long_char
     )
 
 
+def mask_protected_tokens(source, rules):
+    masked = source
+    replacements = []
+    for index, token in enumerate(protected_tokens(source, rules)):
+        placeholder = f"__SAGE_TOKEN_{index}__"
+        masked = masked.replace(token, placeholder, 1)
+        replacements.append((placeholder, token))
+    return masked, replacements
+
+
+def restore_protected_tokens(value, replacements):
+    for placeholder, token in replacements:
+        value = value.replace(placeholder, token)
+    return value
+
+
 def fixture_translation(fixture, entry_id):
     translations = fixture.get("translations", {})
     if not isinstance(translations, dict) or entry_id not in translations:
@@ -139,20 +155,24 @@ def ollama_response(url, model, mode, entries, glossary, language, timeout, feed
     else:
         output_schema = '{"reviews":[{"key":"...","issues":[],"suggestion":null,"confidence":0.0}]}'
         task = "Review every current translation for meaning, terminology, and context."
-    input_entries = [
-        {
+    token_replacements = []
+    input_entries = []
+    for index, entry in enumerate(entries):
+        source, replacements = mask_protected_tokens(entry.get("source", ""), rules or {})
+        token_replacements.append(replacements)
+        input_entries.append({
             "key": f"item_{index}",
-            "source": entry.get("source", ""),
+            "source": source,
             "translation": entry.get("translation", ""),
             "protected_tokens": protected_tokens(entry.get("source", ""), rules or {}),
-        }
-        for index, entry in enumerate(entries)
-    ]
+            "protected_placeholders": [placeholder for placeholder, _ in replacements],
+        })
     system = (
         "You are a localization assistant. Return JSON only, with no markdown. "
         "Keys are opaque and must be copied character-for-character; never invent or translate them. "
-        "Do not output engine IDs. Preserve every protected token exactly; every token listed for an entry "
-        "must appear in its translation exactly once. "
+        "Do not output engine IDs. Preserve every protected token exactly; every protected placeholder "
+        "listed for an entry must appear in its translation exactly once. Do not replace placeholders with "
+        "newlines or other text. "
         f"Target language: {language}. Output schema: {output_schema}. "
         "Examples: source '1 Second' returns '1 segundo'; source '%d Days' with token ['%d'] "
         "returns '%d Días'."
@@ -185,7 +205,22 @@ def ollama_response(url, model, mode, entries, glossary, language, timeout, feed
     except (OSError, urllib.error.URLError, json.JSONDecodeError) as error:
         raise ValueError(f"No se pudo consultar Ollama: {error}") from error
     try:
-        return parse_model_json(body["message"]["content"])
+        result = parse_model_json(body["message"]["content"])
+        if mode == "translate":
+            for index, item in enumerate(result.get("translations", [])):
+                if index < len(token_replacements) and isinstance(item, dict):
+                    item["translation"] = restore_protected_tokens(
+                        item.get("translation", ""), token_replacements[index]
+                    )
+        else:
+            for index, item in enumerate(result.get("reviews", [])):
+                if index < len(token_replacements) and isinstance(item, dict):
+                    suggestion = item.get("suggestion")
+                    if isinstance(suggestion, str):
+                        item["suggestion"] = restore_protected_tokens(
+                            suggestion, token_replacements[index]
+                        )
+        return result
     except (KeyError, TypeError, json.JSONDecodeError) as error:
         raise ValueError(f"Respuesta JSON inválida de Ollama: {error}") from error
 

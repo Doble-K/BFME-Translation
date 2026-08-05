@@ -12,7 +12,13 @@ ROOT = Path(__file__).resolve().parents[1]
 TOOLS = ROOT / "tools" / "localization"
 sys.path.insert(0, str(TOOLS))
 from project import load_project, resolve_project_path
-from ai_translate import choose_model, order_entries_by_model, select_entries
+from ai_translate import (
+    choose_model,
+    mask_protected_tokens,
+    order_entries_by_model,
+    restore_protected_tokens,
+    select_entries,
+)
 
 
 def run_tool(name, *args):
@@ -488,6 +494,14 @@ class LocalizationToolTests(unittest.TestCase):
             entries, "auto", "llama3.2:3b", "qwen2.5:7b", 180, rules
         )
         self.assertEqual([entry["id"] for entry in ordered], ["TIME:Second", "OBJECT:LongDescription"])
+
+    def test_ai_protected_tokens_are_masked_and_restored(self):
+        rules = {"format_specifiers": [], "control_characters": [r"\n"], "sage_tags": [], "regex_patterns": []}
+        masked, replacements = mask_protected_tokens(r"Damage \n\n", rules)
+        self.assertEqual(masked, "Damage __SAGE_TOKEN_0____SAGE_TOKEN_1__")
+        self.assertEqual(
+            restore_protected_tokens(masked, replacements), r"Damage \n\n"
+        )
 
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:
