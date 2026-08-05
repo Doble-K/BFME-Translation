@@ -61,13 +61,9 @@ def extract_str(path, encoding="cp1252"):
                     continue
 
                 if line.strip().upper() == "END":
-                    if current_text is None:
-                        raise StringFileError(
-                            f"Línea {line_number}: falta el texto para {current_id}"
-                        )
                     entries.append({
                         "id": current_id,
-                        "text": current_text,
+                        "text": current_text or "",
                         "line": start_line,
                     })
                     current_id = None
