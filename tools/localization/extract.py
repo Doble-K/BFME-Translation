@@ -1,72 +1,108 @@
 #!/usr/bin/env python3
 
+import argparse
 import json
 import sys
 from pathlib import Path
 
 
-def extract_str(path):
-    entries = []
+class StringFileError(ValueError):
+    """Raised when a SAGE string file contains an invalid block."""
 
+
+def parse_text(line, line_number):
+    if not line.startswith('"') or not line.endswith('"'):
+        raise StringFileError(f"Línea {line_number}: texto sin comillas completas")
+
+    value = line[1:-1]
+    result = []
+    index = 0
+    while index < len(value):
+        if value[index] == "\\" and index + 1 < len(value) and value[index + 1] == '"':
+            result.append('"')
+            index += 2
+            continue
+        result.append(value[index])
+        index += 1
+    return "".join(result)
+
+
+def extract_str(path, encoding="cp1252"):
+    entries = []
     current_id = None
     current_text = None
     start_line = None
 
-    with open(path, "r", encoding="utf-8", errors="ignore") as f:
-        for line_number, line in enumerate(f, 1):
-            line = line.rstrip("\n")
+    try:
+        with open(path, "r", encoding=encoding, newline=None) as string_file:
+            for line_number, raw_line in enumerate(string_file, 1):
+                line = raw_line.rstrip("\r\n")
 
-            if not line or line.startswith("//"):
-                continue
-
-            if current_id is None:
-                if not line.startswith('"'):
+                if current_id is None:
+                    if not line or line.startswith("//"):
+                        continue
+                    if line == "END":
+                        raise StringFileError(f"Línea {line_number}: END sin entrada")
                     current_id = line
                     start_line = line_number
-            else:
-                if line.startswith('"'):
-                    current_text = line[1:-1]
+                    continue
 
-                elif line == "END":
+                if line == "END":
+                    if current_text is None:
+                        raise StringFileError(
+                            f"Línea {line_number}: falta el texto para {current_id}"
+                        )
                     entries.append({
                         "id": current_id,
-                        "text": current_text or "",
-                        "line": start_line
+                        "text": current_text,
+                        "line": start_line,
                     })
-
                     current_id = None
                     current_text = None
                     start_line = None
+                    continue
+
+                if current_text is not None:
+                    raise StringFileError(
+                        f"Línea {line_number}: contenido inesperado en {current_id}"
+                    )
+                current_text = parse_text(line, line_number)
+    except UnicodeDecodeError as error:
+        raise StringFileError(f"No se pudo decodificar {path} con {encoding}: {error}") from error
+
+    if current_id is not None:
+        raise StringFileError(f"Entrada incompleta para {current_id}, falta END")
 
     return entries
 
 
 def main():
-    if len(sys.argv) != 3:
-        print("usage: extract.py input.str output.json")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Extract entries from a SAGE .str file.")
+    parser.add_argument("input", help="Input .str file")
+    parser.add_argument("output", help="Output JSON catalog")
+    parser.add_argument("--encoding", default="cp1252", help="Input encoding")
+    args = parser.parse_args()
 
-    source = Path(sys.argv[1])
-    output = Path(sys.argv[2])
-
-    entries = extract_str(source)
-
-    output.parent.mkdir(parents=True, exist_ok=True)
-
-    with open(output, "w", encoding="utf-8") as f:
-        json.dump(
-            {
-                "source": str(source),
-                "entries": entries
-            },
-            f,
-            indent=2,
-            ensure_ascii=False
-        )
+    try:
+        entries = extract_str(args.input, args.encoding)
+        output = Path(args.output)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        with output.open("w", encoding="utf-8", newline="\n") as output_file:
+            json.dump(
+                {"source": str(args.input), "entries": entries},
+                output_file,
+                indent=2,
+                ensure_ascii=False,
+            )
+            output_file.write("\n")
+    except (OSError, StringFileError, LookupError) as error:
+        print(f"Error: {error}", file=sys.stderr)
+        return 1
 
     print(f"Extracted {len(entries)} entries")
-    print(f"Written: {output}")
+    print(f"Written: {args.output}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
