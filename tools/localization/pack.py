@@ -66,6 +66,7 @@ def main():
         if project
         else ROOT / "releases" / "spanishpatch202.big"
     )
+    expected_files = project["string_files"] if project else ["data/lotr.str"]
     output_release.parent.mkdir(parents=True, exist_ok=True)
 
     debug_build = args.exclude_orphan_ids or args.debug or args.dedupe_ids
@@ -74,7 +75,13 @@ def main():
         if debug_build:
             package_dir = Path(temporary_dir) / "spanish"
             shutil.copytree(source_dir, package_dir)
-            debug_str = package_dir / "data" / "lotr.str"
+            if len(expected_files) != 1:
+                print(
+                    "Error: las builds debug actuales requieren un único archivo string.",
+                    file=sys.stderr,
+                )
+                return 1
+            debug_str = package_dir / expected_files[0]
             build_command = [
                 sys.executable,
                 str(ROOT / "tools" / "localization" / "build.py"),
@@ -94,10 +101,14 @@ def main():
                 print(f"Error durante la build debug: {error}")
                 return error.returncode or 1
 
-        source_str = package_dir / "data" / "lotr.str"
-        if not source_str.is_file() or source_str.stat().st_size == 0:
-            print(f"Error: no se encontró un lotr.str válido en {source_str}.", file=sys.stderr)
-            return 1
+        for relative_path in expected_files:
+            source_str = package_dir / relative_path
+            if not source_str.is_file() or source_str.stat().st_size == 0:
+                print(
+                    f"Error: no se encontró un archivo string válido en {source_str}.",
+                    file=sys.stderr,
+                )
+                return 1
 
         print(f"Empaquetando {package_dir} usando {big4f}...")
         try:
@@ -127,10 +138,15 @@ def main():
             return error.returncode or 1
 
         normalized_listing = listing.replace("\\", "/").lower()
-        if "data/lotr.str" not in normalized_listing:
-            print("Error: el paquete no contiene data/lotr.str.", file=sys.stderr)
-            return 1
-        print("Verificación del paquete: data/lotr.str encontrada.")
+        for relative_path in expected_files:
+            expected_path = relative_path.replace("\\", "/").lower()
+            if expected_path not in normalized_listing:
+                print(
+                    f"Error: el paquete no contiene {relative_path}.",
+                    file=sys.stderr,
+                )
+                return 1
+            print(f"Verificación del paquete: {relative_path} encontrada.")
 
         if args.exclude_orphan_ids:
             print("Modo debug: se excluyeron IDs compuestos solo por espacios.")
