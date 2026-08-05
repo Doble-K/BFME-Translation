@@ -136,6 +136,7 @@ BFME-Translation/
 ├── releases/                     # Generated .big files
 ├── tests/                        # Pipeline regression tests
 ├── AGENTS.md                     # Translation workflow instructions
+├── GLOSSARY.md                   # Shared terminology and style decisions
 ├── LICENSE                       # GNU GPLv3
 └── README.md
 ```
