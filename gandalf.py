@@ -267,6 +267,39 @@ def create_project_config(config_path, settings, string_file):
         config_file.write("\n")
 
 
+def handoff_to_translation(output_path, settings, advanced):
+    print("\nSiguiente paso:")
+    print("  1. Iniciar batch manual")
+    print("  2. Ver batch sin modificar")
+    print("  3. Salir")
+    choice = ask("Selecciona una opcion", "1")
+    if choice == "3":
+        return
+
+    count_value = ask("Cantidad de entradas", "20")
+    try:
+        count = int(count_value)
+        if count < 1:
+            raise ValueError
+    except ValueError as error:
+        raise ValueError("La cantidad debe ser un entero mayor que cero") from error
+
+    command = [
+        sys.executable,
+        str(ROOT / "tools/localization/translate.py"),
+        str(output_path),
+        "--count",
+        str(count),
+    ]
+    if choice == "1":
+        command.append("--edit")
+    if settings.get("same_language_review"):
+        command.append("--review")
+    if advanced:
+        command.append("--advanced")
+    subprocess.run(command, cwd=ROOT, check=True)
+
+
 def wizard(
     force=False,
     allow_same_language=False,
@@ -354,6 +387,7 @@ def wizard(
     print(f"Proyecto: {project['name']}")
     print(f"Idioma: {source_language} -> {target_language}")
     print(f"Configuracion: {config_path}")
+    handoff_to_translation(output_path, settings, advanced)
 
 
 def non_interactive(args):

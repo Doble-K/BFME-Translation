@@ -211,6 +211,10 @@ creates both the work catalog and a project configuration. It accepts any
 source-to-target language pair. The positional mode remains available for
 agents that already have an extracted JSON catalog.
 
+After initialization, Gandalf offers to start a manual batch, preview a batch
+without modifying files, or exit. Same-language projects automatically use
+review mode in that handoff.
+
 Before asking for languages, Gandalf runs `big4f l` to verify that the selected
 package contains string files. It detects common language hints from the
 filename, while `--source-language CODE` and `--target-language CODE` allow
