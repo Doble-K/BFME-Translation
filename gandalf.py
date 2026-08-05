@@ -198,26 +198,34 @@ def create_catalog(data, output_path, settings):
         "source_archive": settings["source_archive"],
         "entries": [],
     }
+    review_mode = settings.get("same_language_review", False)
     for entry in data["entries"]:
+        current_text = entry["text"] if review_mode else ""
         result["entries"].append({
             "id": entry["id"],
             "source": entry["text"],
-            "translation": "",
-            "status": "pending",
+            "translation": current_text,
+            "status": "translated" if review_mode else "pending",
             "line": entry["line"],
-            "flags": [],
+            "flags": ["needs_review"] if review_mode else [],
             "notes": "",
             "translation_meta": {
-                "origin": None,
+                "origin": "system" if review_mode else None,
                 "model": None,
                 "date": None,
-                "confidence": 0.0,
+                "confidence": 1.0 if review_mode else 0.0,
             },
             "review": {
                 "ai": {"checked": False, "issues": [], "last_review": None},
                 "human": {"checked": False, "user": None, "date": None},
             },
-            "history": [],
+            "history": ([{
+                "date": None,
+                "action": "imported_for_review",
+                "from": "",
+                "to": current_text,
+                "by": "system",
+            }] if review_mode else []),
         })
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8", newline="\n") as output_file:
@@ -324,6 +332,8 @@ def wizard(
             "output_catalog": str(output_path),
             "encoding": encoding,
             "force": force,
+            "same_language_review": source_language.split("-")[0].lower()
+            == target_language.split("-")[0].lower(),
         }
         count = create_catalog(source_data, output_path, settings)
         create_project_config(config_path, settings, relative_string_file)

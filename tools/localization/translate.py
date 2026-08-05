@@ -29,11 +29,24 @@ def save_catalog(path, data):
         raise
 
 
-def pending_entries(data, include_shadowed=False, include_orphans=False, include_empty=False):
+def pending_entries(
+    data,
+    include_shadowed=False,
+    include_orphans=False,
+    include_empty=False,
+    review=False,
+):
     return [
         entry
         for entry in data.get("entries", [])
-        if entry.get("status") == "pending"
+        if (
+            entry.get("status") == "pending"
+            or (
+                review
+                and entry.get("status") in {"translated", "reviewed"}
+                and "needs_review" in entry.get("flags", [])
+            )
+        )
         and (
             include_shadowed
             or entry.get("duplicate_meta", {}).get("selected", True)
@@ -96,6 +109,11 @@ def main():
         action="store_true",
         help="Include entries with an empty source string",
     )
+    parser.add_argument(
+        "--review",
+        action="store_true",
+        help="Review existing translations marked needs_review",
+    )
     parser.add_argument("--rules", type=Path, default=DEFAULT_RULES)
     args = parser.parse_args()
 
@@ -115,6 +133,7 @@ def main():
         args.include_shadowed,
         args.include_orphans,
         args.include_empty,
+        args.review,
     )
     print(f"Pending: {len(entries)}")
 

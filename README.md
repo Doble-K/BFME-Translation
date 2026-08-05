@@ -175,6 +175,17 @@ python3 tools/localization/translate.py --count 10 --edit
 
 Manual edits are token-validated, saved atomically, and recorded in entry history and metadata.
 
+When Gandalf imports a package for same-language improvement, it seeds the
+current text as the existing translation and marks entries for review:
+
+```bash
+python3 tools/localization/translate.py \
+  catalogs/bfme2-rotwk-2.02_es-419_work.json \
+  --review \
+  --count 20 \
+  --edit
+```
+
 To create a new work catalog interactively, use Gandalf. It detects `.big`
 files under `source/` and `sources/`, offers BFME1, BFME2, ROTWK 2.02, or a
 custom SAGE project, and asks for source language, target language, encoding,

@@ -200,6 +200,11 @@ class LocalizationToolTests(unittest.TestCase):
         self.assertIn("--exclude-orphan-ids", result.stdout)
         self.assertIn("--dedupe-ids", result.stdout)
 
+    def test_translate_help_exposes_review_mode(self):
+        result = run_tool("translate.py", "--help")
+        self.assertEqual(result.returncode, 0)
+        self.assertIn("--review", result.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()
