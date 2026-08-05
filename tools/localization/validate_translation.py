@@ -92,7 +92,12 @@ def main():
             print(f"ERROR {entry_id}: source y translation deben ser texto")
             errors += 1
             continue
-        if not translation and entry.get("status") != "rejected":
+        empty_system_entry = (
+            entry.get("status") == "preserved"
+            and source == ""
+            and entry.get("system_preserved") is True
+        )
+        if not translation and entry.get("status") != "rejected" and not empty_system_entry:
             print(f"ERROR {entry_id}: la traducción está vacía")
             errors += 1
             continue

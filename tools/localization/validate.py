@@ -112,7 +112,16 @@ def main():
             errors += 1
 
         # 3. Verificar texto de traducción en estados finalizados
-        if entry.get("status") in ["suggested", "translated", "reviewed", "preserved"] and not entry.get("translation"):
+        empty_system_entry = (
+            entry.get("status") == "preserved"
+            and entry.get("source") == ""
+            and entry.get("system_preserved") is True
+        )
+        if (
+            entry.get("status") in ["suggested", "translated", "reviewed", "preserved"]
+            and not entry.get("translation")
+            and not empty_system_entry
+        ):
             print(f"[Error] [{entry_id}] Estado '{entry.get('status')}' pero el texto de traducción está vacío.")
             errors += 1
 
