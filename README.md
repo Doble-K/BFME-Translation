@@ -224,6 +224,10 @@ After initialization, Gandalf offers to start a manual batch, preview a batch
 without modifying files, or exit. Same-language projects automatically use
 review mode in that handoff.
 
+If the selected output catalog already exists, Gandalf offers to reuse it,
+replace it, or exit. Reusing it is the safe option for continuing a previous
+translation session.
+
 Before asking for languages, Gandalf runs `big4f l` to verify that the selected
 package contains string files. It detects common language hints from the
 filename, while `--source-language CODE` and `--target-language CODE` allow

@@ -352,32 +352,45 @@ def wizard(
         "Configuracion de proyecto de salida",
         f"config/{slug}_{target_language}.json",
     ))
+    source_archive = str(big_file)
+    try:
+        source_archive = str(big_file.resolve().relative_to(ROOT))
+    except ValueError:
+        pass
+    settings = {
+        "project": project,
+        "source_language": source_language,
+        "target_language": target_language,
+        "source_archive": source_archive,
+        "output_catalog": str(output_path),
+        "encoding": encoding,
+        "force": force,
+        "same_language_review": source_language.split("-")[0].lower()
+        == target_language.split("-")[0].lower(),
+    }
     if not force and (output_path.exists() or config_path.exists()):
-        print("El catalogo o la configuracion de salida ya existen.")
-        confirmation = ask("¿Deseas reemplazarlos? (s/N)", "n")
-        if confirmation.lower() not in {"s", "si", "sí", "y", "yes"}:
-            raise ValueError("Operacion cancelada: archivos de salida conservados")
+        if output_path.exists():
+            print("El catalogo de salida ya existe.")
+            print("  1. Usar el catalogo existente")
+            print("  2. Reemplazar catalogo y configuracion")
+            print("  3. Salir")
+            choice = ask("Selecciona una opcion", "1")
+            if choice == "1":
+                print(f"Usando catalogo existente: {output_path}")
+                handoff_to_translation(output_path, settings, advanced)
+                return
+            if choice != "2":
+                raise ValueError("Operacion cancelada: archivos de salida conservados")
+        else:
+            confirmation = ask("¿Deseas reemplazar la configuracion existente? (s/N)", "n")
+            if confirmation.lower() not in {"s", "si", "sí", "y", "yes"}:
+                raise ValueError("Operacion cancelada: archivos de salida conservados")
         force = True
+        settings["force"] = True
     temporary_directory, string_file, entries = extract_source(big_file)
     try:
         relative_string_file = string_file.relative_to(Path(temporary_directory.name)).as_posix()
         source_data = {"source": relative_string_file, "entries": entries}
-        source_archive = str(big_file)
-        try:
-            source_archive = str(big_file.resolve().relative_to(ROOT))
-        except ValueError:
-            pass
-        settings = {
-            "project": project,
-            "source_language": source_language,
-            "target_language": target_language,
-            "source_archive": source_archive,
-            "output_catalog": str(output_path),
-            "encoding": encoding,
-            "force": force,
-            "same_language_review": source_language.split("-")[0].lower()
-            == target_language.split("-")[0].lower(),
-        }
         count = create_catalog(source_data, output_path, settings)
         create_project_config(config_path, settings, relative_string_file)
     finally:
