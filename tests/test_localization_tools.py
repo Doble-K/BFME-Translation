@@ -409,6 +409,48 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertEqual(entry["review"]["ai"]["issues"], ["Check terminology"])
             self.assertIn("needs_review", entry["flags"])
 
+    def test_ai_bulk_skips_failed_entry_and_keeps_following_entries(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            fixture = directory / "fixture.json"
+            glossary = directory / "GLOSSARY.md"
+            catalog.write_text(json.dumps({"entries": [
+                {"id": "TEST:Missing", "source": "One", "translation": "", "status": "pending"},
+                {"id": "TEST:Good", "source": "Two", "translation": "", "status": "pending"},
+            ]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "bulk-skip-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+            fixture.write_text(json.dumps({
+                "translations": {"TEST:Good": "Dos"}
+            }), encoding="utf-8")
+            glossary.write_text("Glossary", encoding="utf-8")
+
+            result = run_tool(
+                "ai_translate.py",
+                "--project", project_file,
+                "--mode", "translate",
+                "--fixture", fixture,
+                "--glossary", glossary,
+                "--retries", "2",
+                "--write",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            entries = json.loads(catalog.read_text(encoding="utf-8"))["entries"]
+            self.assertEqual(entries[0]["status"], "pending")
+            self.assertEqual(entries[1]["translation"], "Dos")
+
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)

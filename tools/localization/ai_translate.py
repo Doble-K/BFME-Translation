@@ -95,7 +95,7 @@ def parse_model_json(content):
     return result
 
 
-def ollama_response(url, model, mode, entries, glossary, language, timeout):
+def ollama_response(url, model, mode, entries, glossary, language, timeout, feedback=None):
     if mode == "translate":
         output_schema = '{"translations":[{"id":"...","translation":"..."}]}'
         task = "Translate every source string into the target language."
@@ -119,6 +119,7 @@ def ollama_response(url, model, mode, entries, glossary, language, timeout):
         "task": task,
         "entries": input_entries,
         "glossary": glossary,
+        "previous_error": feedback,
     }, ensure_ascii=False)
     payload = json.dumps({
         "model": model,
@@ -156,6 +157,7 @@ def main():
     parser.add_argument("--provider", choices=("fixture", "ollama"), default="fixture")
     parser.add_argument("--fixture", help="Fixture JSON provider response")
     parser.add_argument("--count", type=int, default=50)
+    parser.add_argument("--retries", type=int, choices=range(1, 6), default=3)
     parser.add_argument("--dry-run", action="store_true", help="Do not write catalog changes")
     parser.add_argument("--write", action="store_true", help="Write results to the catalog")
     parser.add_argument("--model", default="fixture", help="Model/provider label in metadata")
@@ -196,64 +198,72 @@ def main():
 
     today = datetime.now().strftime("%Y-%m-%d")
     results = []
-    try:
-        if args.provider == "ollama":
-            provider_result = ollama_response(
-                args.ollama_url,
-                args.model,
-                args.mode,
-                entries,
-                glossary,
-                project["language"],
-                args.timeout,
-            )
-        else:
-            provider_result = fixture
-        if args.mode == "translate":
-            provider_items = provider_result.get("translations", [])
-            if args.provider == "fixture":
-                provider_translations = provider_items if isinstance(provider_items, dict) else {}
-            else:
-                if not isinstance(provider_items, list):
-                    raise ValueError("La respuesta no contiene una lista translations")
-                provider_translations = {
-                    item.get("id"): item.get("translation")
-                    for item in provider_items
-                    if isinstance(item, dict)
-                }
-        for entry in entries:
-            entry_id = entry["id"]
-            if args.mode == "translate":
-                translation = (
-                    fixture_translation(provider_result, entry_id)
-                    if args.provider == "fixture"
-                    else provider_translations.get(entry_id)
-                )
-                if not isinstance(translation, str) or not translation:
-                    raise ValueError(f"La respuesta del proveedor no contiene {entry_id}")
-                expected = protected_tokens(entry["source"], rules)
-                actual = protected_tokens(translation, rules)
-                if expected != actual:
-                    raise ValueError(
-                        f"TOKEN ERROR {entry_id}: expected {expected}, received {actual}"
+    skipped = []
+    for entry in entries:
+        entry_id = entry["id"]
+        last_error = None
+        for attempt in range(1, args.retries + 1):
+            try:
+                provider_result = (
+                    ollama_response(
+                        args.ollama_url,
+                        args.model,
+                        args.mode,
+                        [entry],
+                        glossary,
+                        project["language"],
+                        args.timeout,
+                        feedback=str(last_error) if last_error else None,
                     )
-                results.append((entry, translation))
-            else:
-                review = fixture_review(provider_result, entry_id)
-                if review["suggestion"]:
+                    if args.provider == "ollama"
+                    else fixture
+                )
+                if args.mode == "translate":
+                    if args.provider == "fixture":
+                        translation = fixture_translation(provider_result, entry_id)
+                    else:
+                        provider_items = provider_result.get("translations", [])
+                        if not isinstance(provider_items, list):
+                            raise ValueError("La respuesta no contiene una lista translations")
+                        matches = [
+                            item for item in provider_items
+                            if isinstance(item, dict) and item.get("id") == entry_id
+                        ]
+                        if len(matches) != 1:
+                            raise ValueError(f"La respuesta del proveedor no contiene {entry_id}")
+                        translation = matches[0].get("translation")
+                    if not isinstance(translation, str) or not translation:
+                        raise ValueError(f"La traducción es inválida para {entry_id}")
                     expected = protected_tokens(entry["source"], rules)
-                    actual = protected_tokens(review["suggestion"], rules)
+                    actual = protected_tokens(translation, rules)
                     if expected != actual:
                         raise ValueError(
-                            f"TOKEN ERROR {entry_id}: review suggestion has invalid tokens"
+                            f"TOKEN ERROR {entry_id}: expected {expected}, received {actual}"
                         )
-                results.append((entry, review))
-    except ValueError as error:
-        print(f"Error: lote rechazado sin modificar el catálogo: {error}", file=sys.stderr)
-        return 1
+                    results.append((entry, translation))
+                else:
+                    review = fixture_review(provider_result, entry_id)
+                    if review["suggestion"]:
+                        expected = protected_tokens(entry["source"], rules)
+                        actual = protected_tokens(review["suggestion"], rules)
+                        if expected != actual:
+                            raise ValueError(
+                                f"TOKEN ERROR {entry_id}: review suggestion has invalid tokens"
+                            )
+                    results.append((entry, review))
+                last_error = None
+                break
+            except (ValueError, KeyError, TypeError) as error:
+                last_error = error
+                print(f"{entry_id}: intento {attempt}/{args.retries} fallido: {error}")
+        if last_error:
+            skipped.append(entry_id)
+            print(f"{entry_id}: omitida sin modificar el catálogo.")
 
     print(f"Modo: {args.mode}")
     print(f"Entradas seleccionadas: {len(entries)}")
+    print(f"Entradas exitosas: {len(results)}")
+    print(f"Entradas omitidas: {len(skipped)}")
     print(f"Glosario cargado: {len(glossary)} caracteres")
     if not args.write:
         print("Dry-run: no se modificó el catálogo.")
