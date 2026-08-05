@@ -15,10 +15,11 @@ def main():
     catalog_file = Path(sys.argv[1])
     output_str_file = Path(sys.argv[2])
     encoding = "cp1252"
+    debug = "--debug" in sys.argv[3:]
     if "--encoding" in sys.argv[3:]:
         encoding_index = sys.argv.index("--encoding") + 1
         if encoding_index >= len(sys.argv):
-            print("Usage: build.py <catalog.json> <output.str> [--encoding ENCODING]")
+            print("Usage: build.py <catalog.json> <output.str> [--encoding ENCODING] [--debug]")
             sys.exit(1)
         encoding = sys.argv[encoding_index]
 
@@ -28,6 +29,13 @@ def main():
     normalized_count = normalize_data(data)
     if normalized_count:
         print(f"Secuencias de escape normalizadas durante el build: {normalized_count}")
+
+    if debug:
+        for entry in data.get("entries", []):
+            if entry.get("id") == "GUI:SinglePlayer":
+                entry["translation"] = "DEBUGING"
+                print("Modo debug: GUI:SinglePlayer = DEBUGING")
+                break
 
     entries = data.get("entries", [])
     output_str_file.parent.mkdir(parents=True, exist_ok=True)

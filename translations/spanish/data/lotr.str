@@ -1989,7 +1989,7 @@ GUI:FullGameName
 END
 
 GUI:SinglePlayer
-"JUEGO EN SOLITARIO"
+"Un jugador"
 END
 
 APT:Online
