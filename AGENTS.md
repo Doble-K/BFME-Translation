@@ -14,6 +14,7 @@ An explicit user request or assigned task lane overrides the generic queue. If a
 
 1. **Translate:** Select pending entries (`status: "pending"`), translate the `source` text to Latin American Spanish inside the `translation` field, update `status` to `"translated"`, and record metadata/history.
 2. **Strict Preservation:** Never modify entry `id` fields. Never translate, alter, or remove protected tokens, format wildcards (e.g., `%d`, `%s`), control characters (`\n`), or engine tags (`<COL>`).
+   Proposals use `suggested`, rejected proposals use `rejected`, and system-preserved entries use `preserved` with `system_preserved`.
 3. **Focused Verification:** Immediately run exact validation scripts:
    - `python3 tools/localization/validate.py --project config/project.json`
    - `python3 tools/localization/validate_translation.py --project config/project.json`

@@ -9,6 +9,9 @@ from normalize_escapes import normalize_data
 from project import load_project, resolve_project_path
 
 
+BUILDABLE_STATUSES = {"translated", "reviewed", "preserved"}
+
+
 def main():
     parser = argparse.ArgumentParser(description="Build a configured SAGE localization string file.")
     parser.add_argument("catalog", nargs="?", help="Path to the localization catalog")
@@ -94,10 +97,29 @@ def main():
     compiled_count = 0
     fallback_count = 0
 
+    unapproved_entries = [
+        entry.get("id", f"<índice {index}>")
+        for index, entry in enumerate(entries)
+        if entry.get("id") and entry.get("status") not in BUILDABLE_STATUSES
+    ]
+    if unapproved_entries and not args.allow_source_fallback:
+        print(
+            "Error: hay entradas pendientes de aprobación; use --allow-source-fallback solo para builds parciales.",
+            file=sys.stderr,
+        )
+        print(f"Entradas no aprobadas: {len(unapproved_entries)}", file=sys.stderr)
+        for entry_id in unapproved_entries[:20]:
+            print(f"  - {entry_id}", file=sys.stderr)
+        if len(unapproved_entries) > 20:
+            print(f"  ... y {len(unapproved_entries) - 20} más", file=sys.stderr)
+        sys.exit(1)
+
     missing_translations = [
         entry.get("id", f"<índice {index}>")
         for index, entry in enumerate(entries)
-        if entry.get("id") and not entry.get("translation")
+        if entry.get("id")
+        and entry.get("status") in BUILDABLE_STATUSES
+        and not entry.get("translation")
     ]
     if missing_translations and not args.allow_source_fallback:
         print(
@@ -133,7 +155,7 @@ def main():
                 excluded_count += 1
                 continue
                 
-            text = entry.get("translation")
+            text = entry.get("translation") if entry.get("status") in BUILDABLE_STATUSES else ""
             if not text:
                 text = entry.get("source") or entry.get("text", "")
                 fallback_count += 1

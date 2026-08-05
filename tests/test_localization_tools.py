@@ -216,6 +216,26 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertEqual(partial.returncode, 0, partial.stdout + partial.stderr)
             self.assertIn("English", output.read_text(encoding="cp1252"))
 
+    def test_build_blocks_unapproved_suggestions(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            output = directory / "output.str"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Suggested",
+                "source": "English",
+                "translation": "Propuesta",
+                "status": "suggested",
+            }]}), encoding="utf-8")
+
+            strict = run_tool("build.py", catalog, output)
+            self.assertNotEqual(strict.returncode, 0)
+            self.assertIn("no aprobadas", strict.stderr)
+
+            partial = run_tool("build.py", catalog, output, "--allow-source-fallback")
+            self.assertEqual(partial.returncode, 0, partial.stdout + partial.stderr)
+            self.assertIn('"English"', output.read_text(encoding="cp1252"))
+
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)

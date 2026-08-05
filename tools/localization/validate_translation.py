@@ -66,7 +66,7 @@ def main():
 
     errors = 0
     for index, entry in enumerate(data.get("entries", [])):
-        if entry.get("status") not in {"translated", "reviewed", "preserved"}:
+        if entry.get("status") not in {"suggested", "translated", "reviewed", "preserved", "rejected"}:
             continue
 
         source = entry.get("source")
@@ -76,7 +76,7 @@ def main():
             print(f"ERROR {entry_id}: source y translation deben ser texto")
             errors += 1
             continue
-        if not translation:
+        if not translation and entry.get("status") != "rejected":
             print(f"ERROR {entry_id}: la traducción está vacía")
             errors += 1
             continue

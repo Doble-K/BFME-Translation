@@ -132,6 +132,10 @@ They retain the source text intentionally, are validated and compiled normally,
 but are not treated as human translations or included in normal translation
 batches.
 
+Proposals use status `suggested`; rejected proposals use `rejected`. Neither
+status is accepted by a normal release build until an explicit approval
+operation changes the state to `translated` or `reviewed`.
+
 For manual work:
 
 ```bash
