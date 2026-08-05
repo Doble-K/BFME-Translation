@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 TOOLS = ROOT / "tools" / "localization"
 sys.path.insert(0, str(TOOLS))
 from project import load_project, resolve_project_path
-from ai_translate import choose_model, select_entries
+from ai_translate import choose_model, order_entries_by_model, select_entries
 
 
 def run_tool(name, *args):
@@ -477,6 +477,17 @@ class LocalizationToolTests(unittest.TestCase):
         selected = select_entries({"entries": entries}, "translate", 10)
         self.assertEqual([entry["id"] for entry in selected], ["TEST:Other", "TEST:Duplicate"])
         self.assertEqual(selected[-1]["source"], "Last")
+
+    def test_ai_auto_routing_groups_small_model_before_large_model(self):
+        rules = {"format_specifiers": [], "control_characters": [], "sage_tags": [], "regex_patterns": []}
+        entries = [
+            {"id": "OBJECT:LongDescription", "source": "x" * 200},
+            {"id": "TIME:Second", "source": "1 Second"},
+        ]
+        ordered = order_entries_by_model(
+            entries, "auto", "llama3.2:3b", "qwen2.5:7b", 180, rules
+        )
+        self.assertEqual([entry["id"] for entry in ordered], ["TIME:Second", "OBJECT:LongDescription"])
 
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:

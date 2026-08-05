@@ -82,6 +82,17 @@ def choose_model(entry, routing, small_model, large_model, long_chars, rules):
     return small_model
 
 
+def order_entries_by_model(entries, routing, small_model, large_model, long_chars, rules):
+    if routing == "single":
+        return entries
+    return sorted(
+        entries,
+        key=lambda entry: choose_model(
+            entry, routing, small_model, large_model, long_chars, rules
+        ) != small_model,
+    )
+
+
 def fixture_translation(fixture, entry_id):
     translations = fixture.get("translations", {})
     if not isinstance(translations, dict) or entry_id not in translations:
@@ -235,6 +246,14 @@ def main():
 
     data = json.loads(catalog_path.read_text(encoding="utf-8"))
     entries = select_entries(data, args.mode, args.count)
+    entries = order_entries_by_model(
+        entries,
+        args.routing,
+        args.small_model,
+        args.large_model,
+        args.long_chars,
+        rules,
+    )
     if not entries:
         print("No hay entradas elegibles para este lote.")
         return 0
