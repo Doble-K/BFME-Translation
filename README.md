@@ -60,12 +60,18 @@ cd BFME-Translation
 chmod +x tools/big4f/bin/linux/big4f
 ```
 
-The original game or patch `.big` is not included in the repository. Keep it
-outside the repository and extract its `data/lotr.str` when creating a new
-catalog:
+The original game or patch `.big` is not included in the repository. Place it
+in the local `sources/` directory using this filename:
+
+```text
+sources/rotwk-2.02.big
+```
+
+That directory is prepared in the repository, but `.big` files inside it are
+ignored by Git. Extract its `data/lotr.str` when creating a new catalog:
 
 ```bash
-tools/big4f/bin/linux/big4f x /path/to/original.big /tmp/rotwk-source
+tools/big4f/bin/linux/big4f x sources/rotwk-2.02.big /tmp/rotwk-source
 python3 tools/localization/extract.py \
   /tmp/rotwk-source/data/lotr.str \
   catalogs/english.json
@@ -102,7 +108,7 @@ python3 tools/localization/build.py --project config/project.json
 python3 tools/localization/pack.py --project config/project.json
 ```
 
-The generated package is:
+The generated package is written separately to:
 
 ```text
 releases/spanishpatch202.big
@@ -115,7 +121,9 @@ ls -lh releases/spanishpatch202.big
 realpath releases/spanishpatch202.big
 ```
 
-That exact file is the package to copy and test manually in the game.
+That exact file is the package to copy and test manually in the game. The
+original input remains in `sources/`; the translated output is always in
+`releases/`.
 Copy that generated `.big` into the appropriate game installation directory
 where the game loads language patch packages. The repository tools generate and
 verify the package but do not install it into the game automatically.

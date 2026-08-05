@@ -1,6 +1,6 @@
 {
   "name": "bfme2-rotwk-2.02",
-  "source_archive": null,
+  "source_archive": "sources/rotwk-2.02.big",
   "string_directory": "translations/spanish",
   "string_files": [
     "data/lotr.str"
