@@ -1,0 +1,20 @@
+{
+  "provider": "ollama",
+  "ollama_url": "http://127.0.0.1:11434",
+  "small_model": "llama3.2:3b",
+  "large_model": "qwen2.5:7b",
+  "timeout": 300,
+  "last": {
+    "project": "BFME2 ROTWK 2.02",
+    "source": "sources/englishpatch202.big",
+    "source_language": "English",
+    "target_language": "Español",
+    "encoding": "cp1252",
+    "catalog": "catalogs/bfme2-rotwk-2.02_es_work.json",
+    "config": "config/bfme2-rotwk-2.02_es.json",
+    "mode": "IA Ollama",
+    "count": "20",
+    "max_seconds": "300",
+    "write": false
+  }
+}

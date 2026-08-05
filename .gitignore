@@ -12,4 +12,5 @@ GOAL.md
 output_test.str
 catalogs/bfme2-rotwk-2.02_es_work.json
 config/bfme2-rotwk-2.02_es.json
+config/gandalf.local.json
 reports/generated/english-*.json
