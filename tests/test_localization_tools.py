@@ -161,6 +161,27 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertNotEqual(result.returncode, 0)
             self.assertEqual(output.read_text(encoding="utf-8"), "keep")
 
+    def test_init_wizard_records_project_and_languages(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            source = directory / "source.json"
+            output = directory / "catalog.json"
+            source.write_text(json.dumps({"source": "test", "entries": []}), encoding="utf-8")
+            answers = "3\nCustom Mod\nSAGE mod\nsource/custom.big\nen-US\nfr-FR\n"
+            answers += f"{source}\n{output}\n"
+            result = subprocess.run(
+                [sys.executable, str(TOOLS / "init_translation.py"), "--wizard"],
+                cwd=ROOT,
+                input=answers,
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            data = json.loads(output.read_text(encoding="utf-8"))
+            self.assertEqual(data["project"]["name"], "Custom Mod")
+            self.assertEqual(data["source_language"], "en-US")
+            self.assertEqual(data["target_language"], "fr-FR")
+
     def test_pack_help_exposes_debug_controls(self):
         result = run_tool("pack.py", "--help")
         self.assertEqual(result.returncode, 0)

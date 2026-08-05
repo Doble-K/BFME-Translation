@@ -172,6 +172,18 @@ python3 tools/localization/translate.py --count 10 --edit
 
 Manual edits are token-validated, saved atomically, and recorded in entry history and metadata.
 
+To create a new work catalog interactively, use the initializer wizard. It
+asks whether the project is ROTWK 2.02, Age of the Ring, or another SAGE mod,
+then asks for the source archive reference, source language, target language,
+source catalog, and output catalog:
+
+```bash
+python3 tools/localization/init_translation.py --wizard
+```
+
+The wizard accepts any source-to-target language pair. The source `.big` or
+`.str` must still be extracted to a JSON catalog with `extract.py` first.
+
 ### Build Workflow (Release)
 
 When a release build is requested:
