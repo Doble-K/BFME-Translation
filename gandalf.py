@@ -75,7 +75,7 @@ def find_big_files():
     return sorted(set(candidates))
 
 
-def choose_big_file():
+def choose_big_file(project):
     candidates = find_big_files()
     if candidates:
         print("Archivos .big detectados:")
@@ -84,8 +84,20 @@ def choose_big_file():
         choice = ask("Selecciona un archivo o escribe una ruta", "1")
         if choice.isdigit() and 1 <= int(choice) <= len(candidates):
             return candidates[int(choice) - 1]
-        return Path(choice)
-    return Path(ask("Ruta del archivo .big de origen"))
+        selected = Path(choice).expanduser()
+        return selected if selected.is_absolute() else ROOT / selected
+
+    defaults = {
+        "bfme1": "sources/bfme1.big",
+        "bfme2": "sources/bfme2.big",
+        "bfme2-rotwk-2.02": "sources/rotwk-2.02.big",
+    }
+    default = defaults.get(project["slug"], "sources/custom-sage.big")
+    print("No se detecto ningun archivo .big en source/ ni sources/.")
+    print("Coloca alli el .big original o escribe una ruta externa.")
+    print(f"Ruta sugerida: {default}")
+    selected = Path(ask("Ruta del archivo .big de origen", default)).expanduser()
+    return selected if selected.is_absolute() else ROOT / selected
 
 
 def big4f_path():
@@ -204,7 +216,7 @@ def create_project_config(config_path, settings, string_file):
 def wizard(force=False):
     greet()
     project = choose_project()
-    big_file = choose_big_file()
+    big_file = choose_big_file(project)
     source_language = ask("Idioma de origen", "en-US")
     target_language = ask("Idioma de destino", "es-419")
     encoding = ask("Encoding SAGE", "cp1252")
