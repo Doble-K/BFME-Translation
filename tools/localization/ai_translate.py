@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime
@@ -185,6 +186,12 @@ def main():
     parser.add_argument("--actor", default="ai", help="Actor recorded in metadata")
     parser.add_argument("--ollama-url", default="http://127.0.0.1:11434")
     parser.add_argument("--timeout", type=int, default=300)
+    parser.add_argument(
+        "--max-seconds",
+        type=float,
+        default=0,
+        help="Stop the batch after this many seconds; 0 means no total limit",
+    )
     parser.add_argument("--rules", type=Path, default=DEFAULT_RULES)
     parser.add_argument(
         "--glossary",
@@ -200,6 +207,8 @@ def main():
         parser.error("--fixture es obligatorio con --provider fixture")
     if args.write and args.dry_run:
         parser.error("--write y --dry-run son incompatibles")
+    if args.max_seconds < 0:
+        parser.error("--max-seconds no puede ser negativo")
 
     try:
         project = load_project(args.project)
@@ -221,7 +230,13 @@ def main():
     results = []
     skipped = []
     model_counts = {}
+    deadline = time.monotonic() + args.max_seconds if args.max_seconds else None
+    timed_out = False
     for entry in entries:
+        if deadline and time.monotonic() >= deadline:
+            timed_out = True
+            print("Tiempo máximo alcanzado; se detiene el lote.")
+            break
         entry_id = entry["id"]
         model = (
             choose_model(
@@ -239,6 +254,13 @@ def main():
         last_error = None
         for attempt in range(1, args.retries + 1):
             try:
+                request_timeout = args.timeout
+                if deadline:
+                    remaining = deadline - time.monotonic()
+                    if remaining <= 0:
+                        timed_out = True
+                        break
+                    request_timeout = min(request_timeout, max(1, int(remaining)))
                 provider_result = (
                     ollama_response(
                         args.ollama_url,
@@ -247,7 +269,7 @@ def main():
                         [entry],
                         glossary,
                         project["language"],
-                        args.timeout,
+                        request_timeout,
                         feedback=str(last_error) if last_error else None,
                     )
                     if args.provider == "ollama"
@@ -310,12 +332,16 @@ def main():
         if last_error:
             skipped.append(entry_id)
             print(f"{entry_id}: omitida sin modificar el catálogo.")
+        if timed_out:
+            break
 
     print(f"Modo: {args.mode}")
     print(f"Entradas seleccionadas: {len(entries)}")
     print(f"Entradas exitosas: {len(results)}")
     print(f"Entradas omitidas: {len(skipped)}")
     print(f"Modelos seleccionados: {model_counts}")
+    if timed_out:
+        print("Lote detenido por límite de tiempo.")
     print(f"Glosario cargado: {len(glossary)} caracteres")
     if not args.write:
         print("Dry-run: no se modificó el catálogo.")

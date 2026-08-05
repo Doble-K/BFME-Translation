@@ -301,6 +301,13 @@ def handoff_to_translation(output_path, config_path, settings, advanced):
             "--count",
             str(count),
         ]
+        max_seconds = ask("Tiempo máximo en segundos (0 sin límite)", "300")
+        try:
+            if float(max_seconds) < 0:
+                raise ValueError
+        except ValueError as error:
+            raise ValueError("El tiempo máximo debe ser un número no negativo") from error
+        command.extend(("--max-seconds", max_seconds))
         if write.lower() in {"s", "si", "sí", "y", "yes"}:
             command.append("--write")
         else:
