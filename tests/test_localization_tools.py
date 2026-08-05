@@ -335,7 +335,14 @@ class LocalizationToolTests(unittest.TestCase):
                 }]
             }), encoding="utf-8")
 
-            result = run_tool("preprocess.py", catalog)
+            preview = run_tool("preprocess.py", catalog)
+            self.assertNotEqual(preview.returncode, 0)
+            self.assertEqual(
+                json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]["status"],
+                "pending",
+            )
+
+            result = run_tool("preprocess.py", catalog, "--write")
 
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
