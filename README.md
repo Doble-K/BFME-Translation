@@ -55,7 +55,7 @@ The repository can be used from any directory after cloning it. The current
 workflow targets BFME2 ROTWK with patch 2.02.
 
 ```bash
-git clone <REPOSITORY_URL>
+git clone https://github.com/Doble-K/BFME-Translation
 cd BFME-Translation
 chmod +x tools/big4f/bin/linux/big4f
 ```
