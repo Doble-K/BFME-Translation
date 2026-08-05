@@ -77,14 +77,36 @@ other languages and SAGE projects are supported by the same workflow.
   9.7.5.
 - French package used for pipeline tests and functionality checks: version
   9.7.6.
-- Current Spanish work catalog: 11,069 entries, 1,273 translated and 9,796
-  pending (11.5%).
+- Current Spanish work catalog: 13,533 entries, 1,222 translated and 12,311
+  pending (9.0%).
 - A final, fully translated and in-game-tested Spanish package has not been
   released yet.
 
 The French and Spanish packages are test inputs for analysis and functionality
 checks. They are not language standards or guarantees that a package is
 complete or current.
+
+## V1 Scope
+
+The active v1 workflow is intentionally small:
+
+```text
+pending -> translated
+              |
+              +-- needs_review when an error is reported
+
+preserved
+```
+
+- `pending`: needs translation.
+- `translated`: accepted for compilation, but it may still contain errors.
+- `preserved`: source text intentionally retained for engine/system entries.
+- `needs_review`: flag for a human correction; it is not a separate status.
+
+V1 is focused on a stable multilingual catalog pipeline, manual translation,
+safe bulk preparation, validation, build, and packaging. A real AI provider can
+write `translated` entries with `needs_review`; the legacy `ai_translate.py`
+simulation is not part of the active workflow.
 
 ## Repository Structure
 
@@ -102,7 +124,9 @@ BFME-Translation/
 │       ├── validate_translation.py# Protected-token validation
 │       ├── extract.py             # .str to JSON extraction
 │       ├── update.py              # Source-to-catalog synchronization
-│       ├── translate.py           # Manual translation and review CLI
+│       ├── translate.py           # Manual translation and correction CLI
+│       ├── review.py              # V2 proposal/review operations
+│       ├── compare.py             # Language/version comparison reports
 │       ├── build.py               # Catalog to .str generation
 │       └── pack.py                # .str and assets to .big packaging
 ├── translations/                 # Generated .str files
@@ -132,9 +156,9 @@ They retain the source text intentionally, are validated and compiled normally,
 but are not treated as human translations or included in normal translation
 batches.
 
-Proposals use status `suggested`; rejected proposals use `rejected`. Neither
-status is accepted by a normal release build until an explicit approval
-operation changes the state to `translated` or `reviewed`.
+The proposal workflow is reserved for v2. The code contains experimental
+support for `suggested`, `rejected`, and `reviewed`, but v1 does not require
+those states or `review.py`.
 
 For manual work:
 
@@ -282,13 +306,27 @@ The current target encoding is Windows-1252 (`cp1252`) for SAGE compatibility.
 The configuration is intended to become the main interface for future BFME1,
 BFME2, mods, maps, and additional `.str` files.
 
+## V2 Roadmap
+
+V2 may add a separate proposal workflow without changing the simple v1 path:
+
+```text
+pending -> suggested -> translated -> reviewed
+                    -> rejected
+```
+
+Possible v2 features include real AI providers, explicit approval/rejection,
+bounded review context, multiple proposals, and richer collaboration. These
+features are not required for v1 and should not block manual translation or
+bulk preparation.
+
 ## Current Priorities
 
 - Use the English ROTWK 2.02 build 9770 as the comparison reference.
 - Continue using the French and Spanish packages for tests, analysis, and
   functionality checks.
-- Update the Spanish catalog against that source and classify differences.
-- Translate in small, auditable batches.
+- Translate in small, auditable batches and mark uncertain work with
+  `needs_review`.
 - Resolve or document duplicate and orphan records.
 - Generate and test a complete Spanish package in the game.
 - Extend the toolset to additional SAGE projects without hard-coded language
