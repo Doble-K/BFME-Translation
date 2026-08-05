@@ -206,6 +206,28 @@ class LocalizationToolTests(unittest.TestCase):
         self.assertIn("--review", result.stdout)
         self.assertIn("--advanced", result.stdout)
 
+    def test_translate_retries_after_token_error(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog = Path(directory) / "catalog.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Percent",
+                "source": "%d Days",
+                "translation": "",
+                "status": "pending",
+                "flags": [],
+                "history": [],
+            }]}), encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, str(TOOLS / "translate.py"), catalog, "--count", "1", "--edit"],
+                cwd=ROOT,
+                input="Dias\n%d dias\n",
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            data = json.loads(catalog.read_text(encoding="utf-8"))
+            self.assertEqual(data["entries"][0]["translation"], "%d dias")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -172,18 +172,21 @@ def main():
             print()
             continue
 
-        value = input("ES: ").strip()
-        if not value:
-            continue
-        if not valid_translation(entry, value, rules):
-            expected = protected_tokens(entry.get("source", ""), rules)
-            actual = protected_tokens(value, rules)
-            print(f"TOKEN ERROR: se esperaba {expected}, se recibió {actual}")
-            continue
+        while True:
+            value = input("ES: ").strip()
+            if not value:
+                break
+            if not valid_translation(entry, value, rules):
+                expected = protected_tokens(entry.get("source", ""), rules)
+                actual = protected_tokens(value, rules)
+                print(f"TOKEN ERROR: se esperaba {expected}, se recibió {actual}")
+                print("Corrige los tokens protegidos o deja vacío para saltar esta entrada.")
+                continue
 
-        record_translation(entry, value, datetime.now().strftime("%Y-%m-%d"))
-        save_catalog(args.catalog, data)
-        print("Saved")
+            record_translation(entry, value, datetime.now().strftime("%Y-%m-%d"))
+            save_catalog(args.catalog, data)
+            print("Saved")
+            break
 
     return 0
 
