@@ -305,6 +305,40 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertEqual(data["entries"][0]["source"], "Hello")
             self.assertEqual(data["entries"][0]["translation"], "Hola")
 
+    def test_migrate_uses_project_catalog_and_schema(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            catalog.write_text(json.dumps({
+                "entries": [{
+                    "id": "TEST:Migrate",
+                    "source": "Hello",
+                    "translation": "Bonjour",
+                    "status": "translated",
+                }]
+            }), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "migrate-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "fr",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+
+            result = run_tool("migrate_catalog.py", "--project", project_file)
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            data = json.loads(catalog.read_text(encoding="utf-8"))
+            entry = data["entries"][0]
+            self.assertEqual(entry["translation_meta"]["origin"], "ai")
+            self.assertIn("review", entry)
+            self.assertEqual(entry["history"][0]["action"], "translated")
+
     def test_compare_creates_generic_report(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)
