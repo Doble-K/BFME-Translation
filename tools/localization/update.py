@@ -47,10 +47,38 @@ def main():
     existing_entries = defaultdict(list)
     for entry in catalog_entries:
         existing_entries[entry.get("id")].append(entry)
+    retired_entries = catalog_data.get("retired_entries", [])
+    retired_by_id = defaultdict(list)
+    for entry in retired_entries:
+        retired_by_id[entry.get("id")].append(entry)
+    new_id_set = set(new_ids)
+    today = datetime.now().strftime("%Y-%m-%d")
+
+    active_entries_to_retire = [
+        entry for entry in catalog_entries if entry.get("id") not in new_id_set
+    ]
+    for entry in active_entries_to_retire:
+        retired_entry = copy.deepcopy(entry)
+        add_flag(retired_entry, "source_removed")
+        retired_entry["retired_meta"] = {
+            "date": today,
+            "reason": "source_removed",
+            "active": False,
+        }
+        retired_entry.setdefault("history", []).append({
+            "date": today,
+            "action": "source_removed",
+            "from": entry.get("source", ""),
+            "to": "",
+            "by": "system",
+        })
+        retired_entries.append(retired_entry)
+
     updated_entries = []
     added_count = 0
     modified_count = 0
-    today = datetime.now().strftime("%Y-%m-%d")
+    restored_count = 0
+    restored_ids = set()
 
     occurrences = defaultdict(int)
     for new_entry in new_entries:
@@ -73,6 +101,10 @@ def main():
             )
         else:
             previous = previous_entries[-1] if previous_entries else None
+        restored = False
+        if previous is None and retired_by_id.get(entry_id):
+            previous = retired_by_id[entry_id][-1]
+            restored = True
 
         if previous is not None:
             entry = copy.deepcopy(previous)
@@ -82,6 +114,23 @@ def main():
             old_translation = entry.get("translation", "")
             entry["id"] = entry_id
             entry["line"] = new_entry.get("line", entry.get("line", 0))
+
+            if restored:
+                entry.setdefault("flags", [])
+                entry["flags"] = [
+                    flag for flag in entry["flags"] if flag != "source_removed"
+                ]
+                add_flag(entry, "source_restored")
+                entry.pop("retired_meta", None)
+                entry.setdefault("history", []).append({
+                    "date": today,
+                    "action": "source_restored",
+                    "from": "",
+                    "to": entry.get("source", ""),
+                    "by": "system",
+                })
+                restored_count += 1
+                restored_ids.add(entry_id)
 
             if duplicate:
                 entry["duplicate_meta"] = {
@@ -181,6 +230,9 @@ def main():
         added_count += 1
 
     catalog_data["entries"] = updated_entries
+    catalog_data["retired_entries"] = [
+        entry for entry in retired_entries if entry.get("id") not in restored_ids
+    ]
     catalog_path = Path(args.catalog)
     temporary_path = catalog_path.with_name(f".{catalog_path.name}.tmp")
     try:
@@ -197,6 +249,8 @@ def main():
     print("Actualización completada:")
     print(f" - Líneas nuevas agregadas: {added_count}")
     print(f" - Entradas invalidadas por cambio de fuente: {modified_count}")
+    print(f" - Entradas retiradas conservadas: {len(active_entries_to_retire)}")
+    print(f" - Entradas retiradas restauradas: {restored_count}")
     print(f" - Total de entradas en catálogo: {len(updated_entries)}")
     return 0
 
