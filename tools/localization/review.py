@@ -30,21 +30,26 @@ def main():
 
     approve_parser = subparsers.add_parser("approve", help="Approve suggestions for compilation")
     reject_parser = subparsers.add_parser("reject", help="Reject suggestions without deleting them")
-    for operation_parser in (approve_parser, reject_parser):
+    human_review_parser = subparsers.add_parser("review", help="Complete human review of translations")
+    for operation_parser in (approve_parser, reject_parser, human_review_parser):
         operation_parser.add_argument("catalog", nargs="?", help="Path to the work catalog")
         operation_parser.add_argument("--project", help="Project configuration JSON")
         operation_parser.add_argument("--id", action="append", dest="entry_ids", help="Exact ID to review")
         operation_parser.add_argument(
             "--all-suggested",
+            "--all-translated",
+            "--all",
+            dest="all_entries",
             action="store_true",
-            help="Review every suggested entry",
+            help="Review every eligible entry",
         )
         operation_parser.add_argument("--actor", default="human", help="Actor recorded in history")
     approve_parser.add_argument("--rules", type=Path, default=DEFAULT_RULES)
+    human_review_parser.add_argument("--rules", type=Path, default=DEFAULT_RULES)
     reject_parser.add_argument("--reason", required=True, help="Reason for rejecting the suggestions")
     args = parser.parse_args()
 
-    if not args.entry_ids and not args.all_suggested:
+    if not args.entry_ids and not args.all_entries:
         parser.error("indique al menos --id ID o --all-suggested")
 
     try:
@@ -55,7 +60,7 @@ def main():
         with catalog_path.open(encoding="utf-8") as catalog_file:
             data = json.load(catalog_file)
         rules = None
-        if args.operation == "approve":
+        if args.operation in {"approve", "review"}:
             with args.rules.open(encoding="utf-8") as rules_file:
                 rules = json.load(rules_file)
     except (OSError, json.JSONDecodeError, ValueError) as error:
@@ -65,9 +70,10 @@ def main():
     selected_ids = set(args.entry_ids or [])
     selected = []
     for entry in data.get("entries", []):
-        if entry.get("status") != "suggested":
+        expected_status = "translated" if args.operation == "review" else "suggested"
+        if entry.get("status") != expected_status:
             continue
-        if args.all_suggested or entry.get("id") in selected_ids:
+        if args.all_entries or entry.get("id") in selected_ids:
             selected.append(entry)
 
     if args.entry_ids:
@@ -81,7 +87,7 @@ def main():
         print("No hay entradas suggested para revisar.", file=sys.stderr)
         return 1
 
-    if args.operation == "approve":
+    if args.operation in {"approve", "review"}:
         for entry in selected:
             expected = protected_tokens(entry.get("source", ""), rules)
             actual = protected_tokens(entry.get("translation", ""), rules)
@@ -93,10 +99,16 @@ def main():
 
     today = datetime.now().strftime("%Y-%m-%d")
     for entry in selected:
-        new_status = "translated" if args.operation == "approve" else "rejected"
+        new_status = {
+            "approve": "translated",
+            "reject": "rejected",
+            "review": "reviewed",
+        }[args.operation]
         entry["status"] = new_status
         entry.setdefault("translation_meta", {})
         action = "approved" if args.operation == "approve" else "rejected"
+        if args.operation == "review":
+            action = "reviewed"
         entry["translation_meta"][f"{action}_by"] = args.actor
         entry["translation_meta"][f"{action}_date"] = today
         if args.operation == "reject":
@@ -104,10 +116,13 @@ def main():
             entry.setdefault("flags", [])
             if "rejected" not in entry["flags"]:
                 entry["flags"].append("rejected")
+        elif args.operation == "review":
+            entry.setdefault("flags", [])
+            entry["flags"] = [flag for flag in entry["flags"] if flag != "needs_review"]
         entry.setdefault("history", []).append({
             "date": today,
             "action": action,
-            "from": "suggested",
+            "from": "translated" if args.operation == "review" else "suggested",
             "to": new_status,
             "by": args.actor,
             **({"reason": args.reason} if args.operation == "reject" else {}),

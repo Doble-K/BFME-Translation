@@ -284,6 +284,26 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertEqual(entry["translation_meta"]["rejection_reason"], "Needs context")
             self.assertEqual(entry["history"][0]["action"], "rejected")
 
+    def test_review_marks_translation_as_human_reviewed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog = Path(directory) / "catalog.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Reviewed",
+                "source": "%d Days",
+                "translation": "%d Días",
+                "status": "translated",
+                "flags": ["needs_review"],
+                "history": [],
+            }]}), encoding="utf-8")
+
+            result = run_tool("review.py", "review", catalog, "--id", "TEST:Reviewed")
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
+            self.assertEqual(entry["status"], "reviewed")
+            self.assertNotIn("needs_review", entry["flags"])
+            self.assertEqual(entry["history"][0]["action"], "reviewed")
+
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)
