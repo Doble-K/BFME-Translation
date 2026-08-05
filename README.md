@@ -189,6 +189,10 @@ creates both the work catalog and a project configuration. It accepts any
 source-to-target language pair. The positional mode remains available for
 agents that already have an extracted JSON catalog.
 
+Gandalf rejects source and target languages with the same base code to prevent
+accidentally translating an already localized package back into itself. Use
+`--allow-same-language` only for an intentional regional-language review.
+
 ### Build Workflow (Release)
 
 When a release build is requested:

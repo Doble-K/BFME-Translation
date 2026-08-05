@@ -195,12 +195,21 @@ def create_project_config(config_path, settings, string_file):
         config_file.write("\n")
 
 
-def wizard(force=False):
+def wizard(force=False, allow_same_language=False):
     greet()
     project = choose_project()
     big_file = choose_big_file(project)
     source_language = ask("Idioma de origen", "en-US")
     target_language = ask("Idioma de destino", "es-419")
+    if (
+        not allow_same_language
+        and source_language.split("-")[0].lower()
+        == target_language.split("-")[0].lower()
+    ):
+        raise ValueError(
+            f"El idioma de origen y destino parecen iguales ({source_language} -> {target_language}). "
+            "Use otros idiomas o --allow-same-language si es intencional."
+        )
     encoding = ask("Encoding SAGE", "cp1252")
     slug = project["slug"]
     output_path = Path(ask(
@@ -273,10 +282,15 @@ def main():
     parser.add_argument("output", nargs="?", help="Work catalog output for non-interactive mode")
     parser.add_argument("--force", action="store_true", help="Allow replacing an existing catalog")
     parser.add_argument("--wizard", action="store_true", help="Explicitly start the interactive wizard")
+    parser.add_argument(
+        "--allow-same-language",
+        action="store_true",
+        help="Allow source and target languages with the same base code",
+    )
     args = parser.parse_args()
     try:
         if args.wizard or not args.input:
-            wizard(args.force)
+            wizard(args.force, args.allow_same_language)
         else:
             print(f"Catalogo creado: {args.output}")
             print(f"Entradas: {non_interactive(args)}")
