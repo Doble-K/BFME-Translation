@@ -175,6 +175,17 @@ python3 tools/localization/translate.py --count 10 --edit
 
 Manual edits are token-validated, saved atomically, and recorded in entry history and metadata.
 
+Automatic control entries such as `LETTER:*` and `NUMBER:*` are preserved by
+the initializer and hidden from normal translation batches. Advanced users can
+inspect them explicitly:
+
+```bash
+python3 tools/localization/translate.py \
+  catalogs/spanish_work.json \
+  --advanced \
+  --count 20
+```
+
 When Gandalf imports a package for same-language improvement, it seeds the
 current text as the existing translation and marks entries for review:
 

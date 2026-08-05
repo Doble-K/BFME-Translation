@@ -10,6 +10,9 @@ from pathlib import Path
 from validate_translation import DEFAULT_RULES, protected_tokens
 
 
+AUTO_ID_PREFIXES = ("LETTER:", "NUMBER:")
+
+
 def load_catalog(path):
     with open(path, encoding="utf-8") as catalog_file:
         return json.load(catalog_file)
@@ -35,6 +38,7 @@ def pending_entries(
     include_orphans=False,
     include_empty=False,
     review=False,
+    advanced=False,
 ):
     return [
         entry
@@ -50,6 +54,13 @@ def pending_entries(
         and (
             include_shadowed
             or entry.get("duplicate_meta", {}).get("selected", True)
+        )
+        and (
+            advanced
+            or not (
+                isinstance(entry.get("id"), str)
+                and entry["id"].startswith(AUTO_ID_PREFIXES)
+            )
         )
         and (
             include_orphans
@@ -114,6 +125,11 @@ def main():
         action="store_true",
         help="Review existing translations marked needs_review",
     )
+    parser.add_argument(
+        "--advanced",
+        action="store_true",
+        help="Include automatic IDs such as LETTER:* and NUMBER:*",
+    )
     parser.add_argument("--rules", type=Path, default=DEFAULT_RULES)
     args = parser.parse_args()
 
@@ -134,6 +150,7 @@ def main():
         args.include_orphans,
         args.include_empty,
         args.review,
+        args.advanced,
     )
     print(f"Pending: {len(entries)}")
 

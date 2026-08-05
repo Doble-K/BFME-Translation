@@ -12,6 +12,7 @@ from tools.localization.extract import extract_str
 
 
 ROOT = Path(__file__).resolve().parent
+AUTO_ID_PREFIXES = ("LETTER:", "NUMBER:")
 
 
 def greet():
@@ -201,19 +202,22 @@ def create_catalog(data, output_path, settings):
     review_mode = settings.get("same_language_review", False)
     for entry in data["entries"]:
         current_text = entry["text"] if review_mode else ""
+        automatic_id = entry["id"].startswith(AUTO_ID_PREFIXES)
+        if automatic_id:
+            current_text = entry["text"]
         result["entries"].append({
             "id": entry["id"],
             "source": entry["text"],
             "translation": current_text,
-            "status": "translated" if review_mode else "pending",
+            "status": "reviewed" if automatic_id else ("translated" if review_mode else "pending"),
             "line": entry["line"],
-            "flags": ["needs_review"] if review_mode else [],
+            "flags": (["auto_id"] if automatic_id else (["needs_review"] if review_mode else [])),
             "notes": "",
             "translation_meta": {
-                "origin": "system" if review_mode else None,
+                "origin": "system" if (review_mode or automatic_id) else None,
                 "model": None,
                 "date": None,
-                "confidence": 1.0 if review_mode else 0.0,
+                "confidence": 1.0 if (review_mode or automatic_id) else 0.0,
             },
             "review": {
                 "ai": {"checked": False, "issues": [], "last_review": None},
@@ -221,11 +225,11 @@ def create_catalog(data, output_path, settings):
             },
             "history": ([{
                 "date": None,
-                "action": "imported_for_review",
+                "action": "auto_preserved" if automatic_id else "imported_for_review",
                 "from": "",
                 "to": current_text,
                 "by": "system",
-            }] if review_mode else []),
+            }] if (review_mode or automatic_id) else []),
         })
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8", newline="\n") as output_file:

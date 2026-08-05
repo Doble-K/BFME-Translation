@@ -204,6 +204,7 @@ class LocalizationToolTests(unittest.TestCase):
         result = run_tool("translate.py", "--help")
         self.assertEqual(result.returncode, 0)
         self.assertIn("--review", result.stdout)
+        self.assertIn("--advanced", result.stdout)
 
 
 if __name__ == "__main__":
