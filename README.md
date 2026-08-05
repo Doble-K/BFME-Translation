@@ -102,8 +102,8 @@ other languages and SAGE projects are supported by the same workflow.
   9.7.5.
 - French package used for pipeline tests and functionality checks: version
   9.7.6.
-- Current Spanish work catalog: 13,533 entries, 1,272 translated/preserved and
-  12,261 pending (9.4%).
+- Current Spanish work catalog: 13,533 entries, 1,322 translated/preserved and
+  12,211 pending (9.8%).
 - A final, fully translated and in-game-tested Spanish package has not been
   released yet.
 
