@@ -63,6 +63,13 @@ When a release build is requested:
 
 The build defaults to Windows-1252/ANSI for SAGE compatibility. Use `--encoding` with another compatible code page for languages that require it.
 
+For a temporary debug package, add `--debug` to the build command. This changes `GUI:SinglePlayer` to `DEBUGING` only in the generated output; the catalog remains unchanged.
+
+```bash
+python3 tools/localization/build.py catalogs/spanish_work.json translations/spanish/data/lotr.str --encoding cp1252 --debug
+python3 tools/localization/pack.py
+```
+
 ## Current Progress
 
 | Metric             | Value   |
