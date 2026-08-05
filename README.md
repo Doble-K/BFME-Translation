@@ -31,7 +31,6 @@ BFME-Translation/
 │       ├── validate.py           # Structural catalog validation
 │       ├── validate_translation.py # Translation validation
 │       ├── extract.py            # Extracts entries from .str files
-│       ├── gandalf.py            # Interactive project and source wizard
 │       ├── update.py             # Updates the work catalog from a new source
 │       ├── translate.py          # Manual review and translation CLI
 │       ├── build.py              # Compiles catalog to .str format
@@ -82,7 +81,7 @@ tools/big4f/bin/linux/big4f x "$SOURCE_BIG" /tmp/rotwk-source && \
 python3 tools/localization/extract.py \
   /tmp/rotwk-source/data/lotr.str \
   catalogs/english.json
-python3 tools/localization/gandalf.py \
+python3 gandalf.py \
   catalogs/english.json \
   catalogs/rotwk_work.json
 ```
@@ -181,7 +180,7 @@ custom SAGE project, and asks for source language, target language, encoding,
 catalog output, and project configuration output:
 
 ```bash
-python3 tools/localization/gandalf.py
+python3 gandalf.py
 ```
 
 Gandalf extracts the selected `.big` and the selected `.str` automatically and

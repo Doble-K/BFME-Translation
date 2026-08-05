@@ -157,7 +157,12 @@ class LocalizationToolTests(unittest.TestCase):
             output = directory / "catalog.json"
             source.write_text(json.dumps({"source": "test", "entries": []}), encoding="utf-8")
             output.write_text("keep", encoding="utf-8")
-            result = run_tool("gandalf.py", source, output)
+            result = subprocess.run(
+                [sys.executable, str(ROOT / "gandalf.py"), source, output],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+            )
             self.assertNotEqual(result.returncode, 0)
             self.assertEqual(output.read_text(encoding="utf-8"), "keep")
 
@@ -168,7 +173,7 @@ class LocalizationToolTests(unittest.TestCase):
             output = directory / "catalog.json"
             source.write_text(json.dumps({"source": "test", "entries": []}), encoding="utf-8")
             result = subprocess.run(
-                [sys.executable, str(TOOLS / "gandalf.py"), source, output],
+                [sys.executable, str(ROOT / "gandalf.py"), source, output],
                 cwd=ROOT,
                 capture_output=True,
                 text=True,
@@ -179,7 +184,12 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertEqual(data["language"], "Spanish")
 
     def test_gandalf_help_exposes_wizard_mode(self):
-        result = run_tool("gandalf.py", "--help")
+        result = subprocess.run(
+            [sys.executable, str(ROOT / "gandalf.py"), "--help"],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
         self.assertEqual(result.returncode, 0)
         self.assertIn("--wizard", result.stdout)
 
