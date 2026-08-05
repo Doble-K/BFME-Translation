@@ -44,6 +44,11 @@ def extract_str(path, encoding="cp1252"):
                         continue
                     if line.strip().upper() == "END":
                         raise StringFileError(f"Línea {line_number}: END sin entrada")
+                    if line.startswith('"'):
+                        current_id = ""
+                        start_line = line_number
+                        current_text = parse_text(line, line_number)
+                        continue
                     current_id = line
                     start_line = line_number
                     continue

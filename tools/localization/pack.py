@@ -8,9 +8,57 @@ import tempfile
 from pathlib import Path
 
 from project import load_project, resolve_project_path
+from extract import extract_str
 
 
 ROOT = Path(__file__).resolve().parents[2]
+
+
+def verify_embedded_files(big4f, package_path, package_dir, expected_files, debug):
+    with tempfile.TemporaryDirectory(prefix="spanishpack-verify-") as verification_dir:
+        verification_root = Path(verification_dir)
+        subprocess.run(
+            [str(big4f.resolve()), "x", str(package_path.resolve()), str(verification_root)],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        for relative_path in expected_files:
+            source_file = package_dir / relative_path
+            embedded_file = verification_root / relative_path
+            if not embedded_file.is_file():
+                raise ValueError(f"El paquete no contiene {relative_path}.")
+            if source_file.read_bytes() != embedded_file.read_bytes():
+                raise ValueError(f"El contenido empaquetado difiere en {relative_path}.")
+
+            if source_file.suffix.lower() != ".str":
+                continue
+            source_entries = extract_str(source_file)
+            embedded_entries = extract_str(embedded_file)
+            source_ids = [entry["id"] for entry in source_entries]
+            embedded_ids = [entry["id"] for entry in embedded_entries]
+            if source_ids != embedded_ids:
+                raise ValueError(f"Los IDs empaquetados difieren en {relative_path}.")
+            if len(source_entries) != len(embedded_entries):
+                raise ValueError(f"La cantidad de entradas difiere en {relative_path}.")
+
+            markers = [
+                entry["text"]
+                for entry in embedded_entries
+                if entry["id"] in {"GUI:SinglePlayer", "APT:SoloPlay"}
+            ]
+            has_debug_marker = "DEBUGING" in markers
+            if debug != has_debug_marker:
+                expected = "DEBUGING" if debug else "la traduccion normal"
+                raise ValueError(
+                    f"Marcador inesperado en {relative_path}: se esperaba {expected}."
+                )
+
+            print(
+                f"Contenido verificado: {relative_path} "
+                f"({len(embedded_entries)} entradas, IDs y bytes coinciden)."
+            )
 
 
 def main():
@@ -147,6 +195,18 @@ def main():
                 )
                 return 1
             print(f"Verificación del paquete: {relative_path} encontrada.")
+
+        try:
+            verify_embedded_files(
+                big4f,
+                output_release,
+                package_dir,
+                expected_files,
+                args.debug,
+            )
+        except (OSError, ValueError, subprocess.CalledProcessError) as error:
+            print(f"Error en la verificación profunda del paquete: {error}", file=sys.stderr)
+            return 1
 
         if args.exclude_orphan_ids:
             print("Modo debug: se excluyeron IDs compuestos solo por espacios.")
