@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
 import argparse
+import copy
 import json
 import os
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
 
@@ -42,36 +43,64 @@ def main():
     new_entries = new_data.get("entries", [])
     catalog_entries = catalog_data.get("entries", [])
     new_ids = [entry.get("id") for entry in new_entries]
-    catalog_ids = [entry.get("id") for entry in catalog_entries]
-    duplicate_new_ids = {entry_id for entry_id, count in Counter(new_ids).items() if count > 1}
-    duplicate_catalog_ids = {
-        entry_id for entry_id, count in Counter(catalog_ids).items() if count > 1
-    }
-    if duplicate_new_ids or duplicate_catalog_ids:
-        print("Error: no se puede actualizar un catálogo con IDs duplicados.", file=sys.stderr)
-        if duplicate_new_ids:
-            print(f"  En la nueva fuente: {sorted(duplicate_new_ids)}", file=sys.stderr)
-        if duplicate_catalog_ids:
-            print(f"  En el catálogo actual: {sorted(duplicate_catalog_ids)}", file=sys.stderr)
-        return 1
-
-    existing_entries = {entry["id"]: entry for entry in catalog_entries}
+    new_id_counts = Counter(new_ids)
+    existing_entries = defaultdict(list)
+    for entry in catalog_entries:
+        existing_entries[entry.get("id")].append(entry)
     updated_entries = []
     added_count = 0
     modified_count = 0
     today = datetime.now().strftime("%Y-%m-%d")
 
+    occurrences = defaultdict(int)
     for new_entry in new_entries:
         entry_id = new_entry["id"]
         new_text = new_entry["text"]
+        occurrences[entry_id] += 1
+        occurrence = occurrences[entry_id]
+        duplicate = (
+            isinstance(entry_id, str)
+            and bool(entry_id.strip())
+            and new_id_counts[entry_id] > 1
+        )
+        selected = not duplicate or occurrence == new_id_counts[entry_id]
+        previous_entries = existing_entries.get(entry_id, [])
+        if not isinstance(entry_id, str) or not entry_id.strip():
+            previous = (
+                previous_entries[occurrence - 1]
+                if occurrence <= len(previous_entries)
+                else None
+            )
+        else:
+            previous = previous_entries[-1] if previous_entries else None
 
-        if entry_id in existing_entries:
-            entry = existing_entries[entry_id]
+        if previous is not None:
+            entry = copy.deepcopy(previous)
             entry.setdefault("flags", [])
             entry.setdefault("history", [])
             old_source = entry.get("source", "")
             old_translation = entry.get("translation", "")
+            entry["id"] = entry_id
             entry["line"] = new_entry.get("line", entry.get("line", 0))
+
+            if duplicate:
+                entry["duplicate_meta"] = {
+                    "policy": "last",
+                    "occurrence": occurrence,
+                    "total": new_id_counts[entry_id],
+                    "selected": selected,
+                }
+                add_flag(entry, "duplicate_id")
+                if not selected:
+                    entry["translation"] = ""
+                    entry["status"] = "pending"
+                    add_flag(entry, "duplicate_shadowed")
+            elif isinstance(entry_id, str) and not entry_id.strip():
+                entry["orphan_meta"] = {
+                    "occurrence": occurrence,
+                    "total": new_id_counts[entry_id],
+                }
+                add_flag(entry, "orphan_id")
 
             if old_source != new_text:
                 entry["source"] = new_text
@@ -106,7 +135,7 @@ def main():
             updated_entries.append(entry)
             continue
 
-        updated_entries.append({
+        entry = {
             "id": entry_id,
             "source": new_text,
             "translation": "",
@@ -131,7 +160,24 @@ def main():
                 "to": "",
                 "by": "system",
             }],
-        })
+        }
+        if duplicate:
+            entry["duplicate_meta"] = {
+                "policy": "last",
+                "occurrence": occurrence,
+                "total": new_id_counts[entry_id],
+                "selected": selected,
+            }
+            entry["flags"].append("duplicate_id")
+            if not selected:
+                entry["flags"].append("duplicate_shadowed")
+        elif isinstance(entry_id, str) and not entry_id.strip():
+            entry["orphan_meta"] = {
+                "occurrence": occurrence,
+                "total": new_id_counts[entry_id],
+            }
+            entry["flags"].append("orphan_id")
+        updated_entries.append(entry)
         added_count += 1
 
     catalog_data["entries"] = updated_entries
