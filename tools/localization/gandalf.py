@@ -176,33 +176,78 @@ def create_catalog(data, output_path, settings):
     return len(result["entries"])
 
 
-def wizard():
+def create_project_config(config_path, settings, string_file):
+    if config_path.exists() and not settings.get("force"):
+        raise FileExistsError(
+            f"La configuracion ya existe: {config_path}. Use otro nombre o --force."
+        )
+    target = settings["target_language"]
+    project = settings["project"]
+    config = {
+        "name": project["slug"],
+        "project": project,
+        "source_archive": settings["source_archive"],
+        "string_directory": f"translations/{target}",
+        "string_files": [string_file],
+        "catalog": settings["output_catalog"],
+        "output_string_file": f"translations/{target}/{string_file}",
+        "output_package": f"releases/{project['slug']}-{target}.big",
+        "language": target,
+        "encoding": settings["encoding"],
+    }
+    config_path.parent.mkdir(parents=True, exist_ok=True)
+    with config_path.open("w", encoding="utf-8", newline="\n") as config_file:
+        json.dump(config, config_file, ensure_ascii=False, indent=2)
+        config_file.write("\n")
+
+
+def wizard(force=False):
     greet()
     project = choose_project()
     big_file = choose_big_file()
     source_language = ask("Idioma de origen", "en-US")
     target_language = ask("Idioma de destino", "es-419")
+    encoding = ask("Encoding SAGE", "cp1252")
     slug = project["slug"]
     output_path = Path(ask(
         "Catalogo de trabajo de salida",
         f"catalogs/{slug}_{target_language}_work.json",
     ))
+    config_path = Path(ask(
+        "Configuracion de proyecto de salida",
+        f"config/{slug}_{target_language}.json",
+    ))
+    if not force and (output_path.exists() or config_path.exists()):
+        raise FileExistsError(
+            "El catalogo o la configuracion de salida ya existen. Use --force o cambie las rutas."
+        )
     temporary_directory, string_file, entries = extract_source(big_file)
     try:
-        source_data = {"source": str(string_file), "entries": entries}
+        relative_string_file = string_file.relative_to(Path(temporary_directory.name)).as_posix()
+        source_data = {"source": relative_string_file, "entries": entries}
+        source_archive = str(big_file)
+        try:
+            source_archive = str(big_file.resolve().relative_to(ROOT))
+        except ValueError:
+            pass
         settings = {
             "project": project,
             "source_language": source_language,
             "target_language": target_language,
-            "source_archive": str(big_file),
+            "source_archive": source_archive,
+            "output_catalog": str(output_path),
+            "encoding": encoding,
+            "force": force,
         }
         count = create_catalog(source_data, output_path, settings)
+        create_project_config(config_path, settings, relative_string_file)
     finally:
         temporary_directory.cleanup()
     print(f"Catalogo creado: {output_path}")
     print(f"Entradas: {count}")
     print(f"Proyecto: {project['name']}")
     print(f"Idioma: {source_language} -> {target_language}")
+    print(f"Configuracion: {config_path}")
 
 
 def non_interactive(args):
@@ -221,6 +266,8 @@ def non_interactive(args):
         "source_language": "unknown",
         "target_language": "Spanish",
         "source_archive": None,
+        "output_catalog": str(output_path),
+        "encoding": "cp1252",
         "force": args.force,
     }
     return create_catalog(data, output_path, settings)
@@ -235,7 +282,7 @@ def main():
     args = parser.parse_args()
     try:
         if args.wizard or not args.input:
-            wizard()
+            wizard(args.force)
         else:
             print(f"Catalogo creado: {args.output}")
             print(f"Entradas: {non_interactive(args)}")

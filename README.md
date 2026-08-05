@@ -177,16 +177,17 @@ Manual edits are token-validated, saved atomically, and recorded in entry histor
 
 To create a new work catalog interactively, use Gandalf. It detects `.big`
 files under `source/` and `sources/`, offers BFME1, BFME2, ROTWK 2.02, or a
-custom SAGE project, and asks for source language, target language, and output
-catalog:
+custom SAGE project, and asks for source language, target language, encoding,
+catalog output, and project configuration output:
 
 ```bash
 python3 tools/localization/gandalf.py
 ```
 
-Gandalf extracts the selected `.big` and the selected `.str` automatically. It
-accepts any source-to-target language pair. The positional mode remains
-available for agents that already have an extracted JSON catalog.
+Gandalf extracts the selected `.big` and the selected `.str` automatically and
+creates both the work catalog and a project configuration. It accepts any
+source-to-target language pair. The positional mode remains available for
+agents that already have an extracted JSON catalog.
 
 ### Build Workflow (Release)
 
