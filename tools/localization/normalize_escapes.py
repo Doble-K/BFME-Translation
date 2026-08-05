@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import os
 from pathlib import Path
 
 
@@ -40,20 +41,18 @@ def main():
         description="Normalize real control characters to SAGE escape sequences."
     )
     parser.add_argument("catalog", help="Path to the localization catalog")
-    parser.add_argument(
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument(
         "--check",
         action="store_true",
         help="Check for required normalization without modifying the catalog",
     )
-    parser.add_argument(
+    mode.add_argument(
         "--write",
         action="store_true",
         help="Write normalized data back to the catalog",
     )
     args = parser.parse_args()
-
-    if args.check and args.write:
-        parser.error("--check and --write cannot be used together")
 
     path = Path(args.catalog)
     with path.open(encoding="utf-8") as handle:
@@ -63,8 +62,11 @@ def main():
     print(f"Escape sequences needing normalization: {changed}")
 
     if args.write and changed:
-        with path.open("w", encoding="utf-8") as handle:
+        temporary_path = path.with_name(f".{path.name}.tmp")
+        with temporary_path.open("w", encoding="utf-8", newline="\n") as handle:
             json.dump(data, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
+        os.replace(temporary_path, path)
         print(f"Normalized catalog: {path}")
 
     if changed and not args.write:
