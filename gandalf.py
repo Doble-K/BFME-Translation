@@ -34,8 +34,8 @@ def choose_language(label, default):
         "5": ("ge", "Deutsch"),
     }
     print(f"Idioma {label}:")
-    for number, (_, name) in languages.items():
-        print(f"  {number}. {name}")
+    for number, (code, name) in languages.items():
+        print(f"  {number}. {code} - {name}")
     choice = ask("Selecciona una opcion", "1" if default == "es" else "2")
     if choice in languages:
         return languages[choice][0]
