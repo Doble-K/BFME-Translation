@@ -189,13 +189,18 @@ creates both the work catalog and a project configuration. It accepts any
 source-to-target language pair. The positional mode remains available for
 agents that already have an extracted JSON catalog.
 
+Before asking for languages, Gandalf runs `big4f l` to verify that the selected
+package contains string files. It detects common language hints from the
+filename, while `--source-language CODE` and `--target-language CODE` allow
+explicit overrides.
+
 For basic users, language menus provide `es`, `en`, `pr`, `fr`, and `ge`. Use
 `--advanced` (or the alias `--avanced`) to enter custom language codes and
 advanced settings manually.
 
-Gandalf rejects source and target languages with the same base code to prevent
-accidentally translating an already localized package back into itself. Use
-`--allow-same-language` only for an intentional regional-language review.
+Gandalf asks for confirmation when source and target languages have the same
+base code. Use `--allow-same-language` to skip that confirmation for an
+intentional regional-language review.
 
 ### Build Workflow (Release)
 

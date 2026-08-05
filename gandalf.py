@@ -99,6 +99,45 @@ def choose_big_file(project):
     return selected if selected.is_absolute() else ROOT / selected
 
 
+def inspect_big_file(big_file):
+    binary = big4f_path()
+    if not binary.exists():
+        raise FileNotFoundError(f"No se encontro big4f en {binary}")
+    if not big_file.exists():
+        raise FileNotFoundError(f"No se encontro el archivo fuente {big_file}")
+    result = subprocess.run(
+        [str(binary), "l", str(big_file)],
+        check=True,
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    string_files = [
+        line.strip()
+        for line in result.stdout.splitlines()
+        if line.strip().lower().endswith(".str")
+    ]
+    if not string_files:
+        raise ValueError(f"El archivo {big_file} no contiene archivos .str")
+    print(f"big4f verifico el archivo. String files: {len(string_files)}")
+    return string_files
+
+
+def detect_language(big_file):
+    name = big_file.name.lower()
+    hints = (
+        (("spanish", "espanol", "español"), "es"),
+        (("english", "ingles", "inglés"), "en"),
+        (("portuguese", "portugues", "português"), "pr"),
+        (("french", "frances", "français"), "fr"),
+        (("german", "german", "deutsch"), "ge"),
+    )
+    for names, language in hints:
+        if any(name_part in name for name_part in names):
+            return language
+    return None
+
+
 def big4f_path():
     system = platform.system().lower()
     if "linux" in system:
@@ -212,25 +251,48 @@ def create_project_config(config_path, settings, string_file):
         config_file.write("\n")
 
 
-def wizard(force=False, allow_same_language=False, advanced=False):
+def wizard(
+    force=False,
+    allow_same_language=False,
+    advanced=False,
+    source_language_override=None,
+    target_language_override=None,
+):
     greet()
     project = choose_project()
     big_file = choose_big_file(project)
-    if advanced:
-        source_language = ask("Idioma de origen", "en-US")
+    inspect_big_file(big_file)
+    detected_language = detect_language(big_file)
+    if detected_language:
+        print(f"Idioma detectado por el nombre del archivo: {detected_language}")
+    else:
+        print("No se pudo detectar el idioma del archivo; selecciona uno manualmente.")
+
+    if source_language_override:
+        source_language = source_language_override
+    elif advanced:
+        source_language = ask("Idioma de origen", detected_language or "en-US")
+    else:
+        source_language = choose_language("de origen", detected_language or "en")
+
+    if target_language_override:
+        target_language = target_language_override
+    elif advanced:
         target_language = ask("Idioma de destino", "es-419")
     else:
-        source_language = choose_language("de origen", "en")
         target_language = choose_language("de destino", "es")
     if (
         not allow_same_language
         and source_language.split("-")[0].lower()
         == target_language.split("-")[0].lower()
     ):
-        raise ValueError(
-            f"El idioma de origen y destino parecen iguales ({source_language} -> {target_language}). "
-            "Use otros idiomas o --allow-same-language si es intencional."
+        confirmation = ask(
+            f"Origen y destino parecen iguales ({source_language} -> {target_language}). "
+            "¿Es una revision intencional? (s/N)",
+            "n",
         )
+        if confirmation.lower() not in {"s", "si", "sí", "y", "yes"}:
+            raise ValueError("Operacion cancelada: idiomas iguales sin confirmacion")
     encoding = ask("Encoding SAGE", "cp1252")
     slug = project["slug"]
     output_path = Path(ask(
@@ -315,10 +377,18 @@ def main():
         action="store_true",
         help="Allow custom language codes and advanced project options",
     )
+    parser.add_argument("--source-language", help="Override detected source language")
+    parser.add_argument("--target-language", help="Override target language")
     args = parser.parse_args()
     try:
         if args.wizard or not args.input:
-            wizard(args.force, args.allow_same_language, args.advanced)
+            wizard(
+                args.force,
+                args.allow_same_language,
+                args.advanced,
+                args.source_language,
+                args.target_language,
+            )
         else:
             print(f"Catalogo creado: {args.output}")
             print(f"Entradas: {non_interactive(args)}")
