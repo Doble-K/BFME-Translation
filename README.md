@@ -175,6 +175,15 @@ python3 tools/localization/translate.py --count 10 --edit
 
 Manual edits are token-validated, saved atomically, and recorded in entry history and metadata.
 
+When a string contains variables such as `%d`, `%s`, or `%ls`, those variables
+are supplied by the game at runtime. Keep them exactly as shown and translate
+only the surrounding words. For example:
+
+```text
+Source:     %d Days
+Translation: %d Días
+```
+
 Automatic control entries such as `LETTER:*` and `NUMBER:*` are preserved by
 the initializer and hidden from normal translation batches. Advanced users can
 inspect them explicitly:

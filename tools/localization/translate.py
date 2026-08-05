@@ -165,6 +165,11 @@ def main():
         print("EN:")
         print(entry.get("source", ""))
         print()
+        protected = protected_tokens(entry.get("source", ""), rules)
+        if protected:
+            print(f"Variables protegidas: {protected}")
+            print("Conserva estas variables exactamente; modifica solo el texto que las rodea.")
+            print()
 
         if not args.edit:
             print("ES:")
