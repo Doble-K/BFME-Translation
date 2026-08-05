@@ -3,6 +3,7 @@
 import argparse
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -11,10 +12,15 @@ from datetime import datetime
 from pathlib import Path
 
 from project import load_project, resolve_project_path
-from validate_translation import DEFAULT_RULES, protected_tokens
+from validate_translation import DEFAULT_RULES, protected_tokens, protected_tokens_match
+from normalize_hotkeys import hotkey_letter, normalize_hotkey_text
 
 
 ROOT = Path(__file__).resolve().parents[2]
+SYSTEM_ID_PREFIXES = ("LETTER:", "NUMBER:", "Version:")
+URL_PATTERN = re.compile(r"https?://\S+", re.IGNORECASE)
+HOTKEY_TOKEN_PATTERN = re.compile(r"\[&([^\s])\]|&([^\s])")
+SAGE_ESCAPES = (("\n", r"\n"), ("\t", r"\t"), ("\r", r"\r"))
 
 
 def save_catalog(path, data):
@@ -45,6 +51,7 @@ def select_entries(data, mode, count):
             if entry.get("status") == "pending"
             and isinstance(entry.get("source"), str)
             and bool(entry["source"])
+            and not entry.get("id", "").startswith(SYSTEM_ID_PREFIXES)
             and entry.get("duplicate_meta", {}).get("selected", True)
             and "orphan_meta" not in entry
         )
@@ -109,6 +116,71 @@ def restore_protected_tokens(value, replacements):
     return value
 
 
+def remove_hotkeys(source):
+    hotkeys = []
+
+    def strip_hotkey(match):
+        hotkeys.append(match.group(0))
+        return "" if match.group(0).startswith("[") else (match.group(1) or match.group(2))
+
+    pieces = []
+    cursor = 0
+    for url_match in URL_PATTERN.finditer(source):
+        segment = source[cursor:url_match.start()]
+        pieces.append(HOTKEY_TOKEN_PATTERN.sub(strip_hotkey, segment))
+        pieces.append(url_match.group(0))
+        cursor = url_match.end()
+    pieces.append(HOTKEY_TOKEN_PATTERN.sub(strip_hotkey, source[cursor:]))
+    return "".join(pieces), hotkeys
+
+
+def restore_hotkeys(value, hotkeys):
+    for hotkey in hotkeys:
+        if hotkey not in value:
+            value = f"{value.rstrip()} {hotkey}"
+    return value
+
+
+def normalize_sage_escapes(source, value):
+    for actual, escaped in SAGE_ESCAPES:
+        if escaped in source:
+            value = value.replace(actual, escaped)
+    return value
+
+
+def normalize_ai_translation(source, value):
+    value = normalize_sage_escapes(source, value)
+    letter = hotkey_letter(source) or hotkey_letter(value)
+    return normalize_hotkey_text(value, letter) if letter else value
+
+
+def apply_ai_result(entry, result, model, mode, today, actor):
+    entry.setdefault("flags", [])
+    entry.setdefault("translation_meta", {})
+    if mode == "translate":
+        entry["translation"] = result
+        entry["status"] = "translated"
+        if "needs_review" not in entry["flags"]:
+            entry["flags"].append("needs_review")
+        entry["translation_meta"].update({
+            "origin": "ai",
+            "model": model,
+            "date": today,
+            "confidence": 0.0,
+        })
+    else:
+        entry.setdefault("review", {}).setdefault("ai", {})
+        entry["review"]["ai"].update({
+            "checked": True,
+            "issues": result["issues"],
+            "suggestion": result["suggestion"],
+            "confidence": result["confidence"],
+            "last_review": today,
+            "model": model,
+            "actor": actor,
+        })
+
+
 def fixture_translation(fixture, entry_id):
     translations = fixture.get("translations", {})
     if not isinstance(translations, dict) or entry_id not in translations:
@@ -158,21 +230,24 @@ def ollama_response(url, model, mode, entries, glossary, language, timeout, feed
     token_replacements = []
     input_entries = []
     for index, entry in enumerate(entries):
-        source, replacements = mask_protected_tokens(entry.get("source", ""), rules or {})
-        token_replacements.append(replacements)
+        source_without_hotkeys, hotkeys = remove_hotkeys(entry.get("source", ""))
+        source, replacements = mask_protected_tokens(source_without_hotkeys, rules or {})
+        token_replacements.append((replacements, hotkeys))
         input_entries.append({
             "key": f"item_{index}",
             "source": source,
             "translation": entry.get("translation", ""),
             "protected_tokens": protected_tokens(entry.get("source", ""), rules or {}),
             "protected_placeholders": [placeholder for placeholder, _ in replacements],
+            "hotkeys_restored_automatically": hotkeys,
         })
     system = (
         "You are a localization assistant. Return JSON only, with no markdown. "
         "Keys are opaque and must be copied character-for-character; never invent or translate them. "
         "Do not output engine IDs. Preserve every protected token exactly; every protected placeholder "
-        "listed for an entry must appear in its translation exactly once. Do not replace placeholders with "
-        "newlines or other text. "
+        "listed for an entry must appear in its translation exactly once. Hotkeys are restored automatically "
+        "at the end; do not invent, move, or translate them. Do not replace placeholders with newlines or "
+        "other text. "
         f"Target language: {language}. Output schema: {output_schema}. "
         "Examples: source '1 Second' returns '1 segundo'; source '%d Days' with token ['%d'] "
         "returns '%d Días'."
@@ -209,17 +284,25 @@ def ollama_response(url, model, mode, entries, glossary, language, timeout, feed
         if mode == "translate":
             for index, item in enumerate(result.get("translations", [])):
                 if index < len(token_replacements) and isinstance(item, dict):
-                    item["translation"] = restore_protected_tokens(
-                        item.get("translation", ""), token_replacements[index]
+                    item["translation"] = normalize_sage_escapes(
+                        entries[index].get("source", ""),
+                        restore_protected_tokens(
+                        item.get("translation", ""), token_replacements[index][0]
+                        ),
                     )
+                    item["translation"] = restore_hotkeys(item["translation"], token_replacements[index][1])
         else:
             for index, item in enumerate(result.get("reviews", [])):
                 if index < len(token_replacements) and isinstance(item, dict):
                     suggestion = item.get("suggestion")
                     if isinstance(suggestion, str):
-                        item["suggestion"] = restore_protected_tokens(
-                            suggestion, token_replacements[index]
+                        item["suggestion"] = normalize_sage_escapes(
+                            entries[index].get("source", ""),
+                            restore_protected_tokens(
+                            suggestion, token_replacements[index][0]
+                            ),
                         )
+                        item["suggestion"] = restore_hotkeys(item["suggestion"], token_replacements[index][1])
         return result
     except (KeyError, TypeError, json.JSONDecodeError) as error:
         raise ValueError(f"Respuesta JSON inválida de Ollama: {error}") from error
@@ -237,6 +320,11 @@ def main():
     parser.add_argument("--retries", type=int, choices=range(1, 6), default=3)
     parser.add_argument("--dry-run", action="store_true", help="Do not write catalog changes")
     parser.add_argument("--write", action="store_true", help="Write results to the catalog")
+    parser.add_argument(
+        "--checkpoint",
+        action="store_true",
+        help="Save each successful result immediately; requires --write",
+    )
     parser.add_argument("--model", default="fixture", help="Model/provider label in metadata")
     parser.add_argument("--routing", choices=("single", "auto"), default="single")
     parser.add_argument("--small-model", default="llama3.2:3b")
@@ -266,6 +354,8 @@ def main():
         parser.error("--fixture es obligatorio con --provider fixture")
     if args.write and args.dry_run:
         parser.error("--write y --dry-run son incompatibles")
+    if args.checkpoint and not args.write:
+        parser.error("--checkpoint requiere --write")
     if args.max_seconds < 0:
         parser.error("--max-seconds no puede ser negativo")
 
@@ -292,14 +382,16 @@ def main():
     if not entries:
         print("No hay entradas elegibles para este lote.")
         return 0
+    print(f"BATCH {len(entries)}", flush=True)
 
     today = datetime.now().strftime("%Y-%m-%d")
     results = []
     skipped = []
+    checkpointed = set()
     model_counts = {}
     deadline = time.monotonic() + args.max_seconds if args.max_seconds else None
     timed_out = False
-    for entry in entries:
+    for entry_index, entry in enumerate(entries, 1):
         if deadline and time.monotonic() >= deadline:
             timed_out = True
             print("Tiempo máximo alcanzado; se detiene el lote.")
@@ -318,6 +410,16 @@ def main():
             else args.model
         )
         model_counts[model] = model_counts.get(model, 0) + 1
+        print(
+            "ENTRY " + json.dumps({
+                "current": entry_index,
+                "total": len(entries),
+                "id": entry_id,
+                "model": model,
+                "source": entry.get("source", ""),
+            }, ensure_ascii=False),
+            flush=True,
+        )
         last_error = None
         for attempt in range(1, args.retries + 1):
             try:
@@ -361,11 +463,33 @@ def main():
                         raise ValueError(f"La traducción es inválida para {entry_id}")
                     expected = protected_tokens(entry["source"], rules)
                     actual = protected_tokens(translation, rules)
-                    if expected != actual:
+                    if not protected_tokens_match(entry["source"], translation, rules):
                         raise ValueError(
                             f"TOKEN ERROR {entry_id}: expected {expected}, received {actual}"
                         )
+                    translation = normalize_hotkey_text(
+                        translation, hotkey_letter(entry.get("source", "")) or hotkey_letter(translation)
+                    )
                     results.append((entry, translation, model))
+                    if args.checkpoint:
+                        apply_ai_result(entry, translation, model, args.mode, today, args.actor)
+                        try:
+                            save_catalog(catalog_path, data)
+                        except OSError as error:
+                            raise ValueError(f"No se pudo guardar el checkpoint: {error}") from error
+                        checkpointed.add(entry_id)
+                    print(
+                        "RESULT " + json.dumps({
+                            "current": entry_index,
+                            "total": len(entries),
+                            "id": entry_id,
+                            "model": model,
+                            "source": entry.get("source", ""),
+                            "translation": translation,
+                        }, ensure_ascii=False),
+                        flush=True,
+                    )
+                    print(f"PROGRESS {entry_index}/{len(entries)} OK {entry_id} model={model}", flush=True)
                 else:
                     if args.provider == "ollama":
                         provider_items = provider_result.get("reviews", [])
@@ -387,11 +511,34 @@ def main():
                     if review["suggestion"]:
                         expected = protected_tokens(entry["source"], rules)
                         actual = protected_tokens(review["suggestion"], rules)
-                        if expected != actual:
+                        if not protected_tokens_match(entry["source"], review["suggestion"], rules):
                             raise ValueError(
                                 f"TOKEN ERROR {entry_id}: review suggestion has invalid tokens"
                             )
+                        review["suggestion"] = normalize_hotkey_text(
+                            review["suggestion"],
+                            hotkey_letter(entry.get("source", "")) or hotkey_letter(review["suggestion"]),
+                        )
                     results.append((entry, review, model))
+                    if args.checkpoint:
+                        apply_ai_result(entry, review, model, args.mode, today, args.actor)
+                        try:
+                            save_catalog(catalog_path, data)
+                        except OSError as error:
+                            raise ValueError(f"No se pudo guardar el checkpoint: {error}") from error
+                        checkpointed.add(entry_id)
+                    print(
+                        "RESULT " + json.dumps({
+                            "current": entry_index,
+                            "total": len(entries),
+                            "id": entry_id,
+                            "model": model,
+                            "source": entry.get("source", ""),
+                            "translation": review.get("suggestion") or "(sin sugerencia)",
+                        }, ensure_ascii=False),
+                        flush=True,
+                    )
+                    print(f"PROGRESS {entry_index}/{len(entries)} OK {entry_id} model={model}", flush=True)
                 last_error = None
                 break
             except (ValueError, KeyError, TypeError) as error:
@@ -400,6 +547,7 @@ def main():
         if last_error:
             skipped.append(entry_id)
             print(f"{entry_id}: omitida sin modificar el catálogo.")
+            print(f"PROGRESS {entry_index}/{len(entries)} SKIP {entry_id}", flush=True)
         if timed_out:
             break
 
@@ -416,30 +564,8 @@ def main():
         return 0
 
     for entry, result, model in results:
-        entry.setdefault("flags", [])
-        entry.setdefault("translation_meta", {})
-        if args.mode == "translate":
-            entry["translation"] = result
-            entry["status"] = "translated"
-            if "needs_review" not in entry["flags"]:
-                entry["flags"].append("needs_review")
-            entry["translation_meta"].update({
-                "origin": "ai",
-                "model": model,
-                "date": today,
-                "confidence": 0.0,
-            })
-        else:
-            entry.setdefault("review", {}).setdefault("ai", {})
-            entry["review"]["ai"].update({
-                "checked": True,
-                "issues": result["issues"],
-                "suggestion": result["suggestion"],
-                "confidence": result["confidence"],
-                "last_review": today,
-                "model": model,
-                "actor": args.actor,
-            })
+        if entry["id"] not in checkpointed:
+            apply_ai_result(entry, result, model, args.mode, today, args.actor)
 
     try:
         save_catalog(catalog_path, data)

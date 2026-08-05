@@ -16,6 +16,8 @@ from ai_translate import (
     choose_model,
     mask_protected_tokens,
     order_entries_by_model,
+    remove_hotkeys,
+    restore_hotkeys,
     restore_protected_tokens,
     select_entries,
 )
@@ -107,6 +109,25 @@ class LocalizationToolTests(unittest.TestCase):
             invalid = run_tool("validate_translation.py", catalog)
             self.assertNotEqual(invalid.returncode, 0)
 
+    def test_extended_format_tokens_and_hotkeys_are_enforced(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog = Path(directory) / "catalog.json"
+            catalog.write_text(json.dumps({
+                "entries": [{
+                    "id": "CONTROLBAR:Hotkey",
+                    "source": "Use &Aragorn Coger arma [&Y] Ataca [&é] %ls %hs %S %g",
+                    "translation": "Usar [&A]ragorn Coger arma [&Y] Ataca [&é] %ls %hs %S %g",
+                    "status": "translated",
+                }]
+            }), encoding="utf-8")
+            valid = run_tool("validate_translation.py", catalog)
+            self.assertEqual(valid.returncode, 0, valid.stdout + valid.stderr)
+            data = json.loads(catalog.read_text(encoding="utf-8"))
+            data["entries"][0]["translation"] = "Usar &Aragorn Coger arma &Y Ataca [&é] %ls %hs %S %d"
+            catalog.write_text(json.dumps(data), encoding="utf-8")
+            invalid = run_tool("validate_translation.py", catalog)
+            self.assertNotEqual(invalid.returncode, 0)
+
     def test_preserved_entries_are_validated_as_system_text(self):
         with tempfile.TemporaryDirectory() as directory:
             catalog = Path(directory) / "catalog.json"
@@ -124,6 +145,36 @@ class LocalizationToolTests(unittest.TestCase):
 
             self.assertEqual(structural.returncode, 0, structural.stdout + structural.stderr)
             self.assertEqual(tokens.returncode, 0, tokens.stdout + tokens.stderr)
+
+    def test_normalize_hotkeys_moves_marker_to_trailing_brackets(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            catalog.write_text(json.dumps({
+                "entries": [{
+                    "id": "CONTROLBAR:Hotkey",
+                    "source": "Build &Farm",
+                    "translation": "Construir Granja",
+                    "status": "translated",
+                    "flags": [],
+                }, {
+                    "id": "CONTROLBAR:Existing",
+                    "source": "Grab [&Y]",
+                    "translation": "Coger arma [&Y]",
+                    "status": "translated",
+                    "flags": [],
+                }]
+            }), encoding="utf-8")
+            preview = run_tool("normalize_hotkeys.py", catalog)
+            self.assertEqual(preview.returncode, 0, preview.stdout + preview.stderr)
+            before = json.loads(catalog.read_text(encoding="utf-8"))
+            self.assertEqual(before["entries"][0]["translation"], "Construir Granja")
+            result = run_tool("normalize_hotkeys.py", catalog, "--write")
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            entries = json.loads(catalog.read_text(encoding="utf-8"))["entries"]
+            self.assertEqual(entries[0]["translation"], "Construir Granja [&F]")
+            self.assertEqual(entries[1]["translation"], "Coger arma [&Y]")
+            self.assertEqual(entries[0]["history"][0]["action"], "hotkey_normalized")
 
     def test_extract_handles_crlf_and_rejects_incomplete_blocks(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -360,6 +411,7 @@ class LocalizationToolTests(unittest.TestCase):
                 "--fixture", fixture,
                 "--glossary", glossary,
                 "--write",
+                "--checkpoint",
             )
             self.assertEqual(written.returncode, 0, written.stdout + written.stderr)
             entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
@@ -484,6 +536,14 @@ class LocalizationToolTests(unittest.TestCase):
         self.assertEqual([entry["id"] for entry in selected], ["TEST:Other", "TEST:Duplicate"])
         self.assertEqual(selected[-1]["source"], "Last")
 
+    def test_ai_selection_excludes_system_version_entries(self):
+        data = {"entries": [
+            {"id": "Version:BuildMachine", "source": "Build machine: %ls", "status": "pending"},
+            {"id": "TEST:Normal", "source": "Hello", "status": "pending"},
+        ]}
+        selected = select_entries(data, "translate", 10)
+        self.assertEqual([entry["id"] for entry in selected], ["TEST:Normal"])
+
     def test_ai_auto_routing_groups_small_model_before_large_model(self):
         rules = {"format_specifiers": [], "control_characters": [], "sage_tags": [], "regex_patterns": []}
         entries = [
@@ -502,6 +562,12 @@ class LocalizationToolTests(unittest.TestCase):
         self.assertEqual(
             restore_protected_tokens(masked, replacements), r"Damage \n\n"
         )
+
+    def test_ai_hotkeys_are_removed_for_model_and_restored_at_end(self):
+        source, hotkeys = remove_hotkeys("Al&ternate Weapon")
+        self.assertEqual(source, "Alternate Weapon")
+        self.assertEqual(hotkeys, ["&t"])
+        self.assertEqual(restore_hotkeys("Arma alternativa", hotkeys), "Arma alternativa &t")
 
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -545,6 +611,8 @@ class LocalizationToolTests(unittest.TestCase):
         )
         self.assertEqual(result.returncode, 0)
         self.assertIn("--wizard", result.stdout)
+        self.assertIn("--gui", result.stdout)
+        self.assertIn("--cli", result.stdout)
         self.assertIn("--avanced", result.stdout)
 
     def test_pack_help_exposes_debug_controls(self):

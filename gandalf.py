@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 
 import argparse
+import contextlib
+import io
 import json
 import platform
+import re
+import shutil
 import subprocess
 import sys
 import tempfile
+import threading
 from pathlib import Path
 
 from tools.localization.extract import extract_str
@@ -459,12 +464,620 @@ def non_interactive(args):
     return create_catalog(data, output_path, settings)
 
 
+def launch_gui():
+    try:
+        import tkinter as tk
+        from tkinter import filedialog, messagebox, ttk
+    except ImportError as error:
+        raise RuntimeError("La GUI requiere tkinter instalado en Python") from error
+
+    try:
+        root = tk.Tk()
+    except tk.TclError as error:
+        raise RuntimeError("No se pudo iniciar la GUI; comprueba que haya un display disponible") from error
+    root.title("Gandalf - SAGE Localization")
+    root.geometry("760x620")
+    root.minsize(680, 520)
+
+    project_presets = {
+        "BFME1": {"slug": "bfme1", "name": "BFME1", "engine": "SAGE", "version": None},
+        "BFME2": {"slug": "bfme2", "name": "BFME2", "engine": "SAGE", "version": None},
+        "BFME2 ROTWK 2.02": {
+            "slug": "bfme2-rotwk-2.02",
+            "name": "BFME2 ROTWK 2.02",
+            "engine": "SAGE",
+            "version": "2.02",
+        },
+        "Otro mod SAGE": {
+            "slug": "custom-sage-project",
+            "name": "Otro mod o juego SAGE",
+            "engine": "SAGE",
+            "version": None,
+        },
+    }
+    languages = {"Español": "es", "English": "en", "Português": "pr", "Français": "fr", "Deutsch": "ge"}
+    candidates = find_big_files()
+
+    project_var = tk.StringVar(value="BFME2 ROTWK 2.02")
+    source_var = tk.StringVar(value=str(candidates[0] if candidates else ROOT / "sources/englishpatch202.big"))
+    source_language_var = tk.StringVar(value="English")
+    target_language_var = tk.StringVar(value="Español")
+    encoding_var = tk.StringVar(value="cp1252")
+    catalog_var = tk.StringVar(value="catalogs/bfme2-rotwk-2.02_es_work.json")
+    config_var = tk.StringVar(value="config/bfme2-rotwk-2.02_es.json")
+    force_var = tk.BooleanVar(value=False)
+    dark_mode_var = tk.BooleanVar(value=False)
+    run_mode_var = tk.StringVar(value="IA Ollama")
+    run_count_var = tk.StringVar(value="20")
+    run_max_seconds_var = tk.StringVar(value="300")
+    run_write_var = tk.BooleanVar(value=False)
+    status_var = tk.StringVar(value="Listo para preparar un proyecto.")
+    process_handle = None
+    worker_thread = None
+    process_paused = False
+    close_when_done = False
+
+    style = ttk.Style(root)
+    style.theme_use("clam")
+    frame = ttk.Frame(root, padding=20)
+    frame.pack(fill="both", expand=True)
+
+    topbar = ttk.Frame(frame)
+    topbar.pack(fill="x")
+    ttk.Label(topbar, text="Gandalf", font=("TkDefaultFont", 22, "bold")).pack(side="left")
+    ttk.Checkbutton(topbar, text="Modo oscuro", variable=dark_mode_var).pack(side="right")
+    ttk.Label(
+        frame,
+        text="Prepara un proyecto de localización SAGE sin salir de la Tierra Media.",
+    ).pack(anchor="w", pady=(0, 16))
+
+    form = ttk.Frame(frame)
+    form.pack(fill="x")
+    input_widgets = []
+
+    def add_row(label, variable, values=None, browse=False):
+        row = ttk.Frame(form)
+        row.pack(fill="x", pady=4)
+        ttk.Label(row, text=label, width=22).pack(side="left")
+        if values is None:
+            widget = ttk.Entry(row, textvariable=variable)
+            widget.pack(side="left", fill="x", expand=True)
+        else:
+            widget = ttk.Combobox(row, textvariable=variable, values=values, state="readonly")
+            widget.pack(side="left", fill="x", expand=True)
+        input_widgets.append(widget)
+        if browse:
+            ttk.Button(row, text="Examinar", command=lambda: browse_source()).pack(side="left", padx=(8, 0))
+        return widget
+
+    add_row("Proyecto", project_var, list(project_presets))
+    add_row("Archivo .big", source_var, browse=True)
+    add_row("Idioma de origen", source_language_var, list(languages))
+    add_row("Idioma de destino", target_language_var, list(languages))
+    add_row("Encoding SAGE", encoding_var)
+    add_row("Catálogo de salida", catalog_var)
+    add_row("Configuración de salida", config_var)
+    ttk.Checkbutton(form, text="Reemplazar archivos existentes", variable=force_var).pack(anchor="w", pady=8)
+
+    run_frame = ttk.LabelFrame(frame, text="Ejecutar traducción")
+    run_frame.pack(fill="x", pady=(8, 0))
+    run_controls = ttk.Frame(run_frame)
+    run_controls.pack(fill="x", padx=8, pady=8)
+    ttk.Label(run_controls, text="Modo").pack(side="left")
+    ttk.Combobox(
+        run_controls,
+        textvariable=run_mode_var,
+        values=("IA Ollama", "Manual (terminal)"),
+        state="readonly",
+        width=18,
+    ).pack(side="left", padx=(6, 12))
+    ttk.Label(run_controls, text="Entradas").pack(side="left")
+    ttk.Entry(run_controls, textvariable=run_count_var, width=7).pack(side="left", padx=(6, 12))
+    ttk.Label(run_controls, text="Máx. segundos").pack(side="left")
+    ttk.Entry(run_controls, textvariable=run_max_seconds_var, width=7).pack(side="left", padx=(6, 12))
+    ttk.Checkbutton(run_controls, text="Guardar IA", variable=run_write_var).pack(side="left")
+
+    progress_frame = ttk.LabelFrame(frame, text="Progreso del lote")
+    progress_frame.pack(fill="both", expand=True)
+    progress_bar = ttk.Progressbar(progress_frame, mode="determinate", maximum=1, value=0)
+    progress_bar.pack(fill="x", padx=8, pady=(8, 4))
+    completed_controls = ttk.Frame(progress_frame)
+    completed_controls.pack(fill="x", padx=8, pady=(0, 4))
+    ttk.Label(completed_controls, text="Resultados completados:").pack(side="left")
+    completed_var = tk.StringVar()
+    completed_selector = ttk.Combobox(
+        completed_controls,
+        textvariable=completed_var,
+        state="readonly",
+        width=58,
+    )
+    completed_selector.pack(side="left", fill="x", expand=True, padx=(8, 0))
+    language_frame = ttk.Frame(progress_frame)
+    language_frame.pack(fill="both", expand=True, padx=8, pady=(4, 8))
+    source_frame = ttk.LabelFrame(language_frame, text="Idioma A - origen")
+    source_frame.pack(side="left", fill="both", expand=True, padx=(0, 4))
+    target_frame = ttk.LabelFrame(language_frame, text="Idioma B - traducción")
+    target_frame.pack(side="left", fill="both", expand=True, padx=(4, 0))
+    source_view = tk.Text(source_frame, height=8, state="disabled", wrap="word")
+    source_view.pack(fill="both", expand=True, padx=6, pady=6)
+    target_view = tk.Text(target_frame, height=8, state="disabled", wrap="word")
+    target_view.pack(fill="both", expand=True, padx=6, pady=6)
+    debug_lines = []
+    debug_window = None
+    debug_view = None
+    completed_ids = []
+    completed_records = {}
+
+    def apply_theme(*_):
+        dark = dark_mode_var.get()
+        colors = {
+            "background": "#0D0208" if dark else "#f3f4f6",
+            "surface": "#003B00" if dark else "#ffffff",
+            "foreground": "#00FF41" if dark else "#20242b",
+            "muted": "#008F11" if dark else "#4b5563",
+            "accent": "#00FF41" if dark else "#7b5b2e",
+        }
+        root.configure(bg=colors["background"])
+        style.configure("TFrame", background=colors["background"])
+        style.configure("TLabel", background=colors["background"], foreground=colors["foreground"])
+        style.configure("TCheckbutton", background=colors["background"], foreground=colors["foreground"])
+        style.configure("TLabelframe", background=colors["background"], foreground=colors["foreground"])
+        style.configure("TLabelframe.Label", background=colors["background"], foreground=colors["foreground"])
+        style.map("TCheckbutton", background=[("active", colors["background"])])
+        style.configure(
+            "TButton",
+            background=colors["surface"],
+            foreground=colors["foreground"],
+            bordercolor=colors["accent"],
+            lightcolor=colors["surface"],
+            darkcolor=colors["surface"],
+        )
+        style.map("TButton", background=[("active", colors["accent"])])
+        style.configure(
+            "TEntry",
+            fieldbackground=colors["surface"],
+            foreground=colors["foreground"],
+            insertcolor=colors["foreground"],
+        )
+        style.configure(
+            "TCombobox",
+            fieldbackground=colors["surface"],
+            background=colors["surface"],
+            foreground=colors["foreground"],
+            arrowcolor=colors["accent"],
+        )
+        style.map("TCombobox", fieldbackground=[("readonly", colors["surface"])])
+        for text_widget in (source_view, target_view, debug_view):
+            if text_widget is not None:
+                text_widget.configure(
+                    background=colors["surface"],
+                    foreground=colors["foreground"],
+                    insertbackground=colors["foreground"],
+                    selectbackground=colors["accent"],
+                )
+
+    dark_mode_var.trace_add("write", apply_theme)
+    apply_theme()
+
+    def write_output(text):
+        debug_lines.append(text)
+        if debug_view is not None and debug_view.winfo_exists():
+            debug_view.configure(state="normal")
+            debug_view.insert("end", text)
+            debug_view.see("end")
+            debug_view.configure(state="disabled")
+
+    def write_progress(text):
+        status_var.set(text.rstrip().split("\n")[-1])
+
+    def set_text(widget, text):
+        widget.configure(state="normal")
+        widget.delete("1.0", "end")
+        widget.insert("end", text)
+        widget.configure(state="disabled")
+
+    def show_completed(*_):
+        record = completed_records.get(completed_var.get())
+        if record:
+            set_text(source_view, record["source"])
+            set_text(target_view, record["translation"])
+            status_var.set(f"Revisión: {record['id']} ({record['model']})")
+
+    completed_selector.bind("<<ComboboxSelected>>", show_completed)
+
+    def open_debug_window():
+        nonlocal debug_window, debug_view
+        if debug_window is not None and debug_window.winfo_exists():
+            debug_window.deiconify()
+            debug_window.lift()
+            return
+        debug_window = tk.Toplevel(root)
+        debug_window.title("Gandalf - Debug")
+        debug_window.geometry("900x520")
+        debug_view = tk.Text(debug_window, state="disabled", wrap="none")
+        debug_view.pack(fill="both", expand=True, padx=8, pady=8)
+        if debug_lines:
+            debug_view.configure(state="normal")
+            debug_view.insert("end", "".join(debug_lines))
+            debug_view.configure(state="disabled")
+        apply_theme()
+
+        def close_debug():
+            nonlocal debug_window, debug_view
+            debug_window.destroy()
+            debug_window = None
+            debug_view = None
+
+        debug_window.protocol("WM_DELETE_WINDOW", close_debug)
+
+    def handle_process_line(text):
+        write_output(text if text.endswith("\n") else f"{text}\n")
+        entry_match = re.match(r"ENTRY (\{.*\})$", text)
+        if entry_match:
+            try:
+                entry = json.loads(entry_match.group(1))
+                source = entry.get("source", "")
+                if not completed_records:
+                    set_text(source_view, source)
+                    set_text(target_view, "Procesando...")
+                status_var.set(f"{entry['current']}/{entry['total']}  {entry['id']}  ({entry['model']})")
+            except (json.JSONDecodeError, KeyError, TypeError):
+                write_progress("No se pudo interpretar el evento de entrada; revisa Debug.")
+        result_match = re.match(r"RESULT (\{.*\})$", text)
+        if result_match:
+            try:
+                result = json.loads(result_match.group(1))
+                result_id = result["id"]
+                if result_id not in completed_records:
+                    completed_ids.append(result_id)
+                completed_records[result_id] = result
+                completed_selector.configure(values=completed_ids)
+                completed_var.set(result_id)
+                set_text(source_view, result["source"])
+                set_text(target_view, result["translation"])
+                status_var.set(f"{result['current']}/{result['total']}  OK  {result_id}")
+            except (json.JSONDecodeError, KeyError, TypeError):
+                write_progress("No se pudo interpretar el resultado; revisa Debug.")
+        batch_match = re.search(r"\bBATCH\s+(\d+)", text)
+        if batch_match:
+            progress_bar.configure(maximum=int(batch_match.group(1)), value=0)
+            status_var.set(f"Lote iniciado: {batch_match.group(1)} entradas")
+        progress_match = re.search(r"\bPROGRESS\s+(\d+)/(\d+)\s+(OK|SKIP)\s+(.+)", text)
+        if progress_match:
+            current, total, result, details = progress_match.groups()
+            progress_bar.configure(maximum=int(total), value=int(current))
+            status_var.set(f"Resultado: {result}  {details}")
+
+    def log_line(text):
+        root.after(0, lambda: handle_process_line(text.rstrip("\n")))
+
+    def browse_source():
+        selected = filedialog.askopenfilename(
+            title="Selecciona el archivo .big de origen",
+            filetypes=[("SAGE BIG", "*.big"), ("Todos los archivos", "*")],
+        )
+        if selected:
+            source_var.set(selected)
+
+    def update_defaults(*_):
+        project = project_presets[project_var.get()]
+        target = languages[target_language_var.get()]
+        catalog_var.set(f"catalogs/{project['slug']}_{target}_work.json")
+        config_var.set(f"config/{project['slug']}_{target}.json")
+
+    project_var.trace_add("write", update_defaults)
+    target_language_var.trace_add("write", update_defaults)
+
+    def create_project():
+        project = project_presets[project_var.get()].copy()
+        source_path = Path(source_var.get()).expanduser()
+        output_path = Path(catalog_var.get()).expanduser()
+        config_path = Path(config_var.get()).expanduser()
+        source_language = languages[source_language_var.get()]
+        target_language = languages[target_language_var.get()]
+        settings = {
+            "project": project,
+            "source_language": source_language,
+            "target_language": target_language,
+            "source_archive": str(source_path),
+            "output_catalog": str(output_path),
+            "encoding": encoding_var.get().strip() or "cp1252",
+            "force": force_var.get(),
+            "same_language_review": source_language == target_language,
+        }
+
+        def worker():
+            try:
+                if not settings["force"] and (output_path.exists() or config_path.exists()):
+                    raise FileExistsError("Ya existe el catálogo o la configuración; activa reemplazo para continuar.")
+                captured = io.StringIO()
+                with contextlib.redirect_stdout(captured):
+                    temporary_directory, string_file, entries = extract_source(source_path)
+                    try:
+                        relative_string_file = string_file.relative_to(Path(temporary_directory.name)).as_posix()
+                        count = create_catalog(
+                            {"source": relative_string_file, "entries": entries}, output_path, settings
+                        )
+                        create_project_config(config_path, settings, relative_string_file)
+                    finally:
+                        temporary_directory.cleanup()
+                message = (
+                    f"Proyecto creado correctamente.\nCatálogo: {output_path}\n"
+                    f"Configuración: {config_path}\nEntradas: {count}\n\n{captured.getvalue()}"
+                )
+                root.after(0, finish, message, True)
+            except (OSError, ValueError, subprocess.CalledProcessError) as error:
+                message = f"Error: {error}\n"
+                root.after(0, finish, message, False)
+
+        status_var.set("Extrayendo y preparando el catálogo...")
+        create_button.configure(state="disabled")
+        run_button.configure(state="disabled")
+        build_button.configure(state="disabled")
+        for widget in input_widgets:
+            widget.configure(state="disabled")
+        threading.Thread(target=worker, daemon=True).start()
+
+    def finish(message, success):
+        write_output(message)
+        status_var.set("Proyecto listo." if success else "La operación terminó con errores.")
+        create_button.configure(state="normal")
+        run_button.configure(state="normal")
+        build_button.configure(state="normal")
+        for widget in input_widgets:
+            widget.configure(state="readonly" if isinstance(widget, ttk.Combobox) else "normal")
+        if success:
+            messagebox.showinfo("Gandalf", "El catálogo y la configuración fueron creados.")
+
+    def open_manual_terminal(catalog_path, config_path, count):
+        command = [
+            sys.executable,
+            str(ROOT / "tools/localization/translate.py"),
+            "--project",
+            str(config_path),
+            "--count",
+            str(count),
+            "--edit",
+        ]
+        terminals = [
+            ("x-terminal-emulator", ["-e"]),
+            ("konsole", ["-e"]),
+            ("gnome-terminal", ["--"]),
+            ("kitty", []),
+            ("alacritty", ["-e"]),
+        ]
+        for terminal, prefix in terminals:
+            if shutil.which(terminal):
+                subprocess.Popen([terminal, *prefix, *command], cwd=ROOT)
+                write_output("Editor manual abierto en una terminal.\n")
+                return
+        raise RuntimeError("No se encontró una terminal gráfica compatible para el modo manual.")
+
+    def run_translation():
+        nonlocal process_handle, worker_thread
+        try:
+            count = int(run_count_var.get())
+            max_seconds = float(run_max_seconds_var.get())
+            if count < 1 or max_seconds < 0:
+                raise ValueError
+        except ValueError as error:
+            messagebox.showerror("Valores inválidos", "Entradas debe ser mayor que cero y el tiempo no negativo.")
+            return
+
+        config_path = Path(config_var.get()).expanduser()
+        if not config_path.exists():
+            messagebox.showerror("Proyecto no encontrado", "Prepara el proyecto o indica una configuración existente.")
+            return
+        if run_mode_var.get() == "Manual (terminal)":
+            try:
+                open_manual_terminal(Path(catalog_var.get()), config_path, count)
+            except (OSError, RuntimeError) as error:
+                write_output(f"Error: {error}\n")
+            return
+
+        command = [
+            sys.executable,
+            str(ROOT / "tools/localization/ai_translate.py"),
+            "--project",
+            str(config_path),
+            "--provider",
+            "ollama",
+            "--mode",
+            "translate",
+            "--routing",
+            "auto",
+            "--count",
+            str(count),
+            "--max-seconds",
+            str(max_seconds),
+            "--write" if run_write_var.get() else "--dry-run",
+        ]
+        if run_write_var.get():
+            command.append("--checkpoint")
+        write_output(f"$ {' '.join(command)}\n")
+        progress_bar.configure(maximum=count, value=0)
+        completed_ids.clear()
+        completed_records.clear()
+        completed_selector.configure(values=())
+        completed_var.set("")
+        set_text(source_view, "")
+        set_text(target_view, "Esperando resultado...")
+        run_button.configure(state="disabled")
+        create_button.configure(state="disabled")
+        build_button.configure(state="disabled")
+        pause_button.configure(state="normal")
+        for widget in input_widgets:
+            widget.configure(state="disabled")
+        status_var.set("Ejecutando Ollama...")
+
+        def worker():
+            nonlocal process_handle
+            try:
+                process = subprocess.Popen(
+                    command,
+                    cwd=ROOT,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    text=True,
+                    bufsize=1,
+                )
+                process_handle = process
+                for line in process.stdout:
+                    log_line(line)
+                return_code = process.wait()
+                root.after(0, run_finished, return_code)
+            except OSError as error:
+                log_line(f"Error: {error}")
+                root.after(0, run_finished, 1)
+
+        worker_thread = threading.Thread(target=worker, name="gandalf-ollama", daemon=False)
+        worker_thread.start()
+
+    def run_finished(return_code):
+        nonlocal process_handle, worker_thread, process_paused, close_when_done
+        process_handle = None
+        worker_thread = None
+        process_paused = False
+        run_button.configure(state="normal")
+        create_button.configure(state="normal")
+        for widget in input_widgets:
+            widget.configure(state="readonly" if isinstance(widget, ttk.Combobox) else "normal")
+        status_var.set("Ejecución terminada." if return_code == 0 else "Ejecución terminada con errores.")
+        pause_button.configure(state="disabled")
+        if close_when_done:
+            root.after(250, root.destroy)
+
+    def build_test_package():
+        nonlocal process_handle, worker_thread
+        config_path = Path(config_var.get()).expanduser()
+        if not config_path.exists():
+            messagebox.showerror("Proyecto no encontrado", "Prepara el proyecto antes de construir.")
+            return
+        commands = [
+            [
+                sys.executable,
+                str(ROOT / "tools/localization/build.py"),
+                "--project",
+                str(config_path),
+                "--allow-source-fallback",
+            ],
+            [
+                sys.executable,
+                str(ROOT / "tools/localization/pack.py"),
+                "--project",
+                str(config_path),
+            ],
+        ]
+        write_output("$ build --allow-source-fallback && pack\n")
+        build_button.configure(state="disabled")
+        run_button.configure(state="disabled")
+        create_button.configure(state="disabled")
+        status_var.set("Construyendo paquete de prueba...")
+
+        def worker():
+            nonlocal process_handle
+            try:
+                return_code = 0
+                for command in commands:
+                    write_output(f"$ {' '.join(command)}\n")
+                    process = subprocess.Popen(
+                        command,
+                        cwd=ROOT,
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.STDOUT,
+                        text=True,
+                        bufsize=1,
+                    )
+                    process_handle = process
+                    for line in process.stdout:
+                        log_line(line)
+                    return_code = process.wait()
+                    if return_code:
+                        break
+                root.after(0, run_finished, return_code)
+            except OSError as error:
+                log_line(f"Error: {error}")
+                root.after(0, run_finished, 1)
+
+        worker_thread = threading.Thread(target=worker, name="gandalf-build", daemon=False)
+        worker_thread.start()
+
+    def pause_run():
+        nonlocal process_paused
+        if process_handle is None:
+            return
+        if platform.system() == "Windows":
+            write_output("Pausa no disponible en Windows; usa el límite de tiempo.\n")
+            return
+        import signal
+        try:
+            if process_paused:
+                process_handle.send_signal(signal.SIGCONT)
+                process_paused = False
+                pause_button.configure(text="Pausar")
+                status_var.set("Ejecución reanudada.")
+            else:
+                process_handle.send_signal(signal.SIGSTOP)
+                process_paused = True
+                pause_button.configure(text="Reanudar")
+                status_var.set("Ejecución pausada.")
+        except OSError as error:
+            write_output(f"Error al cambiar la pausa: {error}\n")
+
+    def save_and_exit():
+        nonlocal close_when_done
+        if process_handle is None:
+            root.destroy()
+            return
+        if not run_write_var.get():
+            messagebox.showwarning(
+                "Dry-run activo",
+                "El lote no está configurado para guardar. Marca 'Guardar IA' antes de salir.",
+            )
+            return
+        if process_paused:
+            pause_run()
+        close_when_done = True
+        status_var.set("Guardando checkpoints y cerrando...")
+        write_progress("Salida solicitada: se conservan las entradas ya completadas.")
+        process_handle.terminate()
+
+    def request_close():
+        if process_handle is not None:
+            messagebox.showinfo(
+                "Lote en ejecución",
+                "Gandalf esperará a que termine Ollama antes de cerrar. Usa un límite de tiempo si tarda demasiado.",
+            )
+            return
+        root.destroy()
+
+    buttons = ttk.Frame(frame)
+    buttons.pack(fill="x", pady=(8, 0))
+    create_button = ttk.Button(buttons, text="Preparar proyecto", command=create_project)
+    create_button.pack(side="left")
+    run_button = ttk.Button(buttons, text="Run", command=run_translation)
+    run_button.pack(side="left", padx=(8, 0))
+    build_button = ttk.Button(buttons, text="Construir prueba", command=build_test_package)
+    build_button.pack(side="left", padx=(8, 0))
+    pause_button = ttk.Button(buttons, text="Pausar", command=pause_run, state="disabled")
+    pause_button.pack(side="left", padx=(8, 0))
+    ttk.Button(buttons, text="Guardar y salir", command=save_and_exit).pack(side="left", padx=(8, 0))
+    ttk.Button(buttons, text="Abrir Debug", command=open_debug_window).pack(side="left", padx=(8, 0))
+    ttk.Button(buttons, text="Cerrar", command=request_close).pack(side="right")
+    ttk.Label(frame, textvariable=status_var).pack(anchor="w", pady=(8, 0))
+    root.protocol("WM_DELETE_WINDOW", request_close)
+
+    root.mainloop()
+
+
 def main():
     parser = argparse.ArgumentParser(description="Gandalf project initialization wizard.")
     parser.add_argument("input", nargs="?", help="Extracted source JSON for non-interactive mode")
     parser.add_argument("output", nargs="?", help="Work catalog output for non-interactive mode")
     parser.add_argument("--force", action="store_true", help="Allow replacing an existing catalog")
     parser.add_argument("--wizard", action="store_true", help="Explicitly start the interactive wizard")
+    parser.add_argument("--gui", action="store_true", help="Open the graphical project setup")
+    parser.add_argument("--cli", action="store_true", help="Force the terminal wizard instead of the GUI")
     parser.add_argument(
         "--allow-same-language",
         action="store_true",
@@ -481,6 +1094,15 @@ def main():
     parser.add_argument("--target-language", help="Override target language")
     args = parser.parse_args()
     try:
+        if args.gui:
+            launch_gui()
+            return 0
+        if not args.input and not args.wizard and not args.cli:
+            try:
+                launch_gui()
+                return 0
+            except RuntimeError as error:
+                print(f"Aviso: {error}. Se inicia el wizard de terminal.", file=sys.stderr)
         if args.wizard or not args.input:
             wizard(
                 args.force,
@@ -493,7 +1115,7 @@ def main():
             print(f"Catalogo creado: {args.output}")
             print(f"Entradas: {non_interactive(args)}")
         return 0
-    except (OSError, ValueError, json.JSONDecodeError, subprocess.CalledProcessError) as error:
+    except (OSError, RuntimeError, ValueError, json.JSONDecodeError, subprocess.CalledProcessError) as error:
         print(f"Error: {error}", file=sys.stderr)
         return 1
 

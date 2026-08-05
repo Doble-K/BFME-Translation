@@ -112,6 +112,10 @@ Do not:
 - reorder them;
 - duplicate them.
 
+SAGE hotkeys use an ampersand followed by the shortcut letter. The v1 standard
+is to place that token at the end, for example `&Aragorn` becomes
+`Aragorn [&A]`. The letter must remain unchanged.
+
 ---
 
 # Engine Tags

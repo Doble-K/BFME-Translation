@@ -13,6 +13,7 @@ from project import load_project, resolve_project_path
 AUTO_IDS = (
     "LETTER:",
     "NUMBER:",
+    "Version:",
 )
 
 

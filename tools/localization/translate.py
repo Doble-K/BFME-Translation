@@ -7,11 +7,12 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from validate_translation import DEFAULT_RULES, protected_tokens
+from validate_translation import DEFAULT_RULES, protected_tokens, protected_tokens_match
 from project import load_project, resolve_project_path
 
 
 AUTO_ID_PREFIXES = ("LETTER:", "NUMBER:")
+SYSTEM_ID_PREFIXES = ("LETTER:", "NUMBER:", "Version:")
 
 
 def load_catalog(path):
@@ -63,6 +64,10 @@ def pending_entries(
                 and entry["id"].startswith(AUTO_ID_PREFIXES)
             )
         )
+        and not (
+            isinstance(entry.get("id"), str)
+            and entry["id"].startswith(("Version:",))
+        )
         and (
             include_orphans
             or (
@@ -76,7 +81,7 @@ def pending_entries(
 
 
 def valid_translation(entry, value, rules):
-    return protected_tokens(entry.get("source", ""), rules) == protected_tokens(value, rules)
+    return protected_tokens_match(entry.get("source", ""), value, rules)
 
 
 def record_translation(entry, value, today, review=False):

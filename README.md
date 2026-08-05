@@ -12,6 +12,7 @@ Requirements:
 
 - Linux or a compatible shell environment.
 - Python 3.
+- `python3-tk` for the optional `--gui` mode.
 - The `tools/big4f/bin/linux/big4f` binary, executable with `chmod +x`.
 
 Clone the repository and prepare the SAGE archive tool:
@@ -35,6 +36,30 @@ localization project:
 ```bash
 python3 gandalf.py
 ```
+
+With no arguments Gandalf opens the graphical project setup when Tkinter is
+available. To force the terminal wizard, use:
+
+```bash
+python3 gandalf.py --cli
+```
+
+For a simple graphical project setup explicitly, use:
+
+```bash
+python3 gandalf.py --gui
+```
+
+The GUI creates the catalog and project configuration, includes a light/dark
+mode toggle, and leaves translation batches on the existing CLI tools.
+
+After selecting an existing project, the `Run` controls can start an Ollama
+bulk batch or open the manual editor in a terminal. Ollama starts in dry-run
+mode unless `Guardar IA` is selected, and its output is shown in the lower log
+panel. The progress panel separately shows the current `n/total`, entry ID,
+model, result, and a determinate progress bar. The GUI also provides
+`Construir prueba`, which runs build with source fallback and then packages a
+partial test `.big`; it is not a release build.
 
 Gandalf detects `.big` files, lists their contents, selects a string file,
 creates a work catalog and project configuration, and supports arbitrary
@@ -149,8 +174,16 @@ files are build artifacts.
 1. Select a limited batch of pending entries.
 2. Translate `source` into Latin American Spanish in `translation`.
 3. Set the entry status to `translated` and record metadata/history.
-4. Validate the catalog and protected tokens.
-5. Review the result before compiling a release.
+4. Normalize hotkeys before validation:
+
+```bash
+python3 tools/localization/normalize_hotkeys.py \
+  catalogs/spanish_work.json \
+  --write
+```
+
+5. Validate the catalog and protected tokens.
+6. Review the result before compiling a release.
 
 System-preserved entries use status `preserved` and the `system_preserved` flag.
 They retain the source text intentionally, are validated and compiled normally,

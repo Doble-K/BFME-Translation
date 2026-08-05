@@ -10,6 +10,7 @@ from project import load_project, resolve_project_path
 
 
 DEFAULT_RULES = Path(__file__).resolve().parents[2] / "rules" / "protected_tokens.json"
+HOTKEY_TOKEN_PATTERN = re.compile(r"^(?:\[&([^\s])\]|&([^\s]))$")
 
 
 def protected_tokens(text, rules):
@@ -33,6 +34,21 @@ def protected_tokens(text, rules):
             matches.append((match.start(), match.group()))
 
     return [token for _, token in sorted(matches)]
+
+
+def canonical_protected_tokens(text, rules):
+    canonical = []
+    for token in protected_tokens(text, rules):
+        match = HOTKEY_TOKEN_PATTERN.fullmatch(token)
+        if match:
+            canonical.append(("hotkey", (match.group(1) or match.group(2)).casefold()))
+        else:
+            canonical.append(("literal", token))
+    return canonical
+
+
+def protected_tokens_match(source, translation, rules):
+    return canonical_protected_tokens(source, rules) == canonical_protected_tokens(translation, rules)
 
 
 def main():
@@ -83,7 +99,7 @@ def main():
 
         expected = protected_tokens(source, rules)
         actual = protected_tokens(translation, rules)
-        if expected != actual:
+        if not protected_tokens_match(source, translation, rules):
             print(f"TOKEN ERROR: {entry_id}")
             print(f"SOURCE: {source}")
             print(f"TRANSLATION: {translation}")

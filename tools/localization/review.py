@@ -8,7 +8,7 @@ from datetime import datetime
 from pathlib import Path
 
 from project import load_project, resolve_project_path
-from validate_translation import DEFAULT_RULES, protected_tokens
+from validate_translation import DEFAULT_RULES, protected_tokens, protected_tokens_match
 
 
 def save_catalog(path, data):
@@ -91,7 +91,7 @@ def main():
         for entry in selected:
             expected = protected_tokens(entry.get("source", ""), rules)
             actual = protected_tokens(entry.get("translation", ""), rules)
-            if expected != actual:
+            if not protected_tokens_match(entry.get("source", ""), entry.get("translation", ""), rules):
                 print(f"TOKEN ERROR: {entry.get('id')}", file=sys.stderr)
                 print(f"EXPECTED: {expected}", file=sys.stderr)
                 print(f"ACTUAL:   {actual}", file=sys.stderr)
