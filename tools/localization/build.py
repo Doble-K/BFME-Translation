@@ -2,26 +2,35 @@
 
 import json
 import sys
+import argparse
 from pathlib import Path
 
 from normalize_escapes import normalize_data
 
 
 def main():
-    if len(sys.argv) < 3:
-        print("Usage: build.py <catalog.json> <output.str>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Build an SAGE localization string file.")
+    parser.add_argument("catalog", help="Path to the localization catalog")
+    parser.add_argument("output", help="Path to the output .str file")
+    parser.add_argument("--encoding", default="cp1252", help="Output encoding")
+    parser.add_argument("--debug", action="store_true", help="Use debug marker translations")
+    parser.add_argument(
+        "--exclude-id",
+        action="append",
+        default=[],
+        help="Exclude an exact ID from this build; may be repeated",
+    )
+    parser.add_argument(
+        "--exclude-whitespace-ids",
+        action="store_true",
+        help="Debug-only filter for IDs containing no non-whitespace characters",
+    )
+    args = parser.parse_args()
 
-    catalog_file = Path(sys.argv[1])
-    output_str_file = Path(sys.argv[2])
-    encoding = "cp1252"
-    debug = "--debug" in sys.argv[3:]
-    if "--encoding" in sys.argv[3:]:
-        encoding_index = sys.argv.index("--encoding") + 1
-        if encoding_index >= len(sys.argv):
-            print("Usage: build.py <catalog.json> <output.str> [--encoding ENCODING] [--debug]")
-            sys.exit(1)
-        encoding = sys.argv[encoding_index]
+    catalog_file = Path(args.catalog)
+    output_str_file = Path(args.output)
+    encoding = args.encoding
+    debug = args.debug
 
     with open(catalog_file, "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -37,11 +46,15 @@ def main():
                 print(f"Modo debug: {entry['id']} = DEBUGING")
 
     entries = data.get("entries", [])
+    excluded_ids = set(args.exclude_id)
+    excluded_count = 0
+    compiled_count = 0
     output_str_file.parent.mkdir(parents=True, exist_ok=True)
 
     # SAGE expects ANSI/Windows-1252 bytes for Western-language string values.
     try:
-        f = open(output_str_file, "w", encoding=encoding, newline="\r\n")
+        # Newlines are written explicitly below; disable implicit translation.
+        f = open(output_str_file, "w", encoding=encoding, newline="")
     except LookupError:
         print(f"Codificación no válida: {encoding}")
         sys.exit(1)
@@ -52,6 +65,11 @@ def main():
         for entry in entries:
             entry_id = entry.get("id")
             if not entry_id:
+                continue
+            if entry_id in excluded_ids or (
+                args.exclude_whitespace_ids and not entry_id.strip()
+            ):
+                excluded_count += 1
                 continue
                 
             text = entry.get("translation") or entry.get("source") or entry.get("text", "")
@@ -69,9 +87,12 @@ def main():
                 )
                 sys.exit(1)
             f.write("END\r\n\r\n")
+            compiled_count += 1
 
     print(f"Build completado: {output_str_file}")
-    print(f"Total de entradas compiladas: {len(entries)}")
+    print(f"Total de entradas compiladas: {compiled_count}")
+    if excluded_count:
+        print(f"Entradas excluidas de esta build: {excluded_count}")
 
 
 if __name__ == "__main__":
