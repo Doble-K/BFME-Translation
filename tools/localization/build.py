@@ -15,6 +15,11 @@ def main():
     parser.add_argument("--encoding", default="cp1252", help="Output encoding")
     parser.add_argument("--debug", action="store_true", help="Use debug marker translations")
     parser.add_argument(
+        "--allow-source-fallback",
+        action="store_true",
+        help="Use source text when a translation is empty",
+    )
+    parser.add_argument(
         "--exclude-id",
         action="append",
         default=[],
@@ -69,6 +74,24 @@ def main():
     excluded_ids = set(args.exclude_id)
     excluded_count = 0
     compiled_count = 0
+    fallback_count = 0
+
+    missing_translations = [
+        entry.get("id", f"<índice {index}>")
+        for index, entry in enumerate(entries)
+        if entry.get("id") and not entry.get("translation")
+    ]
+    if missing_translations and not args.allow_source_fallback:
+        print(
+            "Error: faltan traducciones; use --allow-source-fallback solo para builds parciales.",
+            file=sys.stderr,
+        )
+        print(f"Entradas sin traducción: {len(missing_translations)}", file=sys.stderr)
+        for entry_id in missing_translations[:20]:
+            print(f"  - {entry_id}", file=sys.stderr)
+        if len(missing_translations) > 20:
+            print(f"  ... y {len(missing_translations) - 20} más", file=sys.stderr)
+        sys.exit(1)
     output_str_file.parent.mkdir(parents=True, exist_ok=True)
 
     # SAGE expects ANSI/Windows-1252 bytes for Western-language string values.
@@ -92,7 +115,10 @@ def main():
                 excluded_count += 1
                 continue
                 
-            text = entry.get("translation") or entry.get("source") or entry.get("text", "")
+            text = entry.get("translation")
+            if not text:
+                text = entry.get("source") or entry.get("text", "")
+                fallback_count += 1
             
             # Escapar comillas dobles internas
             text_escaped = text.replace('"', '\\"')
@@ -113,6 +139,8 @@ def main():
     print(f"Total de entradas compiladas: {compiled_count}")
     if excluded_count:
         print(f"Entradas excluidas de esta build: {excluded_count}")
+    if fallback_count:
+        print(f"Entradas compiladas con texto fuente: {fallback_count}")
     if deduped_ids:
         print(f"IDs duplicados deduplicados ({args.dedupe_ids}): {len(deduped_ids)}")
         for entry_id in sorted(set(deduped_ids)):

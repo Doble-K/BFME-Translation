@@ -61,6 +61,7 @@ def main():
                 str(ROOT / "tools" / "localization" / "build.py"),
                 str(ROOT / "catalogs" / "spanish_work.json"),
                 str(debug_str),
+                "--allow-source-fallback",
             ]
             if args.exclude_orphan_ids:
                 build_command.append("--exclude-whitespace-ids")
