@@ -1,17 +1,76 @@
 # BFME-Translation
 
-Spanish (Latin American) translation project for **The Lord of the Rings:
-The Battle for Middle-earth II: The Rise of the Witch-king** (BFME2 ROTWK),
-with a reusable toolset for other SAGE engine projects.
+Multilingual localization toolkit for games built on the SAGE engine, currently
+focused on **The Lord of the Rings: The Battle for Middle-earth II: The Rise of
+the Witch-king** (BFME2 ROTWK) 2.02.
 
 > *"One Token to rule them all, One Terminal at a time."*
 
+## Quick Start
+
+Requirements:
+
+- Linux or a compatible shell environment.
+- Python 3.
+- The `tools/big4f/bin/linux/big4f` binary, executable with `chmod +x`.
+
+Clone the repository and prepare the SAGE archive tool:
+
+```bash
+git clone https://github.com/Doble-K/BFME-Translation
+cd BFME-Translation
+chmod +x tools/big4f/bin/linux/big4f
+```
+
+Place a source `.big` package in `sources/`. For the current ROTWK project,
+the English reference package is:
+
+```text
+sources/englishpatch202.big
+```
+
+Start with Gandalf. It is the main entry point for creating or opening a
+localization project:
+
+```bash
+python3 gandalf.py
+```
+
+Gandalf detects `.big` files, lists their contents, selects a string file,
+creates a work catalog and project configuration, and supports arbitrary
+source-to-target language pairs. It supports BFME1, BFME2, ROTWK 2.02, and
+custom SAGE projects.
+
+If a work catalog already exists, continue with the translation CLI:
+
+```bash
+python3 tools/localization/translate.py \
+  catalogs/spanish_work.json \
+  --count 20 \
+  --edit
+```
+
+For direct source extraction instead of Gandalf:
+
+```bash
+tools/big4f/bin/linux/big4f x \
+  sources/englishpatch202.big \
+  /tmp/rotwk-source
+
+python3 tools/localization/extract.py \
+  /tmp/rotwk-source/data/lotr.str \
+  catalogs/english.json
+```
+
+Do not use a generated localization package as the source reference.
+
 ## Project Status
 
-The project is currently in the tooling, source analysis, and controlled
-translation stage. It does not yet provide a complete Spanish release.
+The project is mature enough to be treated as a multilingual toolkit. The
+first production use case is Latin American Spanish for ROTWK 2.02, while
+other languages and SAGE projects are supported by the same workflow.
 
-- Current scope: ROTWK 2.02.
+- Current project: ROTWK 2.02.
 - English reference used for comparison: `englishpatch202.big`, version 9.7.7,
   build 9770.
 - Spanish package used for pipeline tests and functionality checks: version
@@ -26,20 +85,6 @@ translation stage. It does not yet provide a complete Spanish release.
 The French and Spanish packages are test inputs for analysis and functionality
 checks. They are not language standards or guarantees that a package is
 complete or current.
-
-## Disclaimer
-
-This is an unofficial fan translation project. **The Lord of the Rings: The
-Battle for Middle-earth II: The Rise of the Witch-king** and the SAGE engine
-are trademarks of **Electronic Arts Inc.** The game and its assets are
-copyrighted by their respective owners.
-
-All Tolkien-related intellectual property is owned by the respective rights
-holders, including **The Tolkien Estate** and **Middle-earth Enterprises**.
-
-This project is not affiliated with, endorsed by, or sponsored by Tolkien,
-Middle-earth Enterprises, Electronic Arts, or any of their subsidiaries or
-licensees. Game assets remain the property of their respective owners.
 
 ## Repository Structure
 
@@ -70,60 +115,6 @@ BFME-Translation/
 ├── LICENSE                       # GNU GPLv3
 └── README.md
 ```
-
-## Requirements
-
-- Linux or a compatible shell environment.
-- Python 3.
-- The `tools/big4f/bin/linux/big4f` binary, executable with `chmod +x`.
-
-## Quick Start
-
-```bash
-git clone https://github.com/Doble-K/BFME-Translation
-cd BFME-Translation
-chmod +x tools/big4f/bin/linux/big4f
-```
-
-Place the English ROTWK 2.02 source package in the `sources/` folder. The
-expected filename is:
-
-```text
-sources/englishpatch202.big
-```
-
-The repository does not require or distribute this package. If a different
-source archive is used, pass its path to Gandalf or use the extraction commands
-below.
-
-### Initialize a Project with Gandalf
-
-Gandalf detects `.big` files in `source/` and `sources/`, lists their contents,
-selects a string file, and creates a work catalog and project configuration.
-It supports BFME1, BFME2, ROTWK 2.02, custom SAGE projects, and arbitrary
-source-to-target language pairs.
-
-```bash
-python3 gandalf.py
-```
-
-Gandalf refuses to overwrite an existing catalog without confirmation. Reuse
-an existing catalog to continue a translation session; replace it only when a
-new catalog is intentional.
-
-### Extract a Source Manually
-
-```bash
-tools/big4f/bin/linux/big4f x \
-  sources/englishpatch202.big \
-  /tmp/rotwk-source
-
-python3 tools/localization/extract.py \
-  /tmp/rotwk-source/data/lotr.str \
-  catalogs/english.json
-```
-
-Do not use a generated Spanish package from `releases/` as the English source.
 
 ## Translation Workflow
 
@@ -215,7 +206,7 @@ Both localization validators must return `Errors: 0`. Structural warnings for
 historical duplicate or orphan records must be reviewed but do not necessarily
 block the current catalog.
 
-## Build a Spanish Package
+## Build a Localization Package
 
 Do not build a release until the required translations have been completed and
 validated. The normal release workflow is:
@@ -258,6 +249,7 @@ build data and do not delete catalog history.
 - Work catalog and generated `.str` path.
 - Generated package path.
 - Target language and encoding.
+- Output string-file header.
 
 The current target encoding is Windows-1252 (`cp1252`) for SAGE compatibility.
 The configuration is intended to become the main interface for future BFME1,
@@ -274,6 +266,20 @@ BFME2, mods, maps, and additional `.str` files.
 - Generate and test a complete Spanish package in the game.
 - Extend the toolset to additional SAGE projects without hard-coded language
   assumptions.
+
+## Disclaimer
+
+This is an unofficial fan translation and localization toolkit. **The Lord of
+the Rings: The Battle for Middle-earth II: The Rise of the Witch-king** and the
+SAGE engine are trademarks of **Electronic Arts Inc.** The game and its assets
+are copyrighted by their respective owners.
+
+All Tolkien-related intellectual property is owned by the respective rights
+holders, including **The Tolkien Estate** and **Middle-earth Enterprises**.
+
+This project is not affiliated with, endorsed by, or sponsored by Tolkien,
+Middle-earth Enterprises, Electronic Arts, or any of their subsidiaries or
+licensees. Game assets remain the property of their respective owners.
 
 ## License
 

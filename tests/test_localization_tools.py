@@ -28,10 +28,53 @@ class LocalizationToolTests(unittest.TestCase):
         project = load_project(ROOT / "config" / "project.json")
         self.assertEqual(project["name"], "bfme2-rotwk-2.02")
         self.assertEqual(project["encoding"], "cp1252")
+        self.assertEqual(project["string_header"], "// String file for Lord of the Rings")
         self.assertEqual(
             resolve_project_path(project, "output_package"),
             ROOT / "releases" / "spanishpatch202.big",
         )
+
+    def test_build_uses_generic_project_paths_and_header(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "french.json"
+            output = directory / "translations" / "french" / "data" / "strings.str"
+            project_file = directory / "project.json"
+            catalog.write_text(
+                json.dumps({
+                    "entries": [{
+                        "id": "TEST:Bonjour",
+                        "source": "Hello",
+                        "translation": "Bonjour",
+                        "status": "translated",
+                    }]
+                }),
+                encoding="utf-8",
+            )
+            project_file.write_text(
+                json.dumps({
+                    "name": "custom-french-test",
+                    "source_archive": str(directory / "source.big"),
+                    "string_directory": str(output.parent),
+                    "string_files": ["data/strings.str"],
+                    "catalog": str(catalog),
+                    "output_string_file": str(output),
+                    "output_package": str(directory / "french.big"),
+                    "language": "fr",
+                    "encoding": "cp1252",
+                    "string_header": "// French test string file",
+                }),
+                encoding="utf-8",
+            )
+
+            result = run_tool("build.py", "--project", project_file)
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertEqual(
+                output.read_bytes().decode("cp1252"),
+                '// French test string file\r\n\r\n'
+                'TEST:Bonjour\r\n"Bonjour"\r\nEND\r\n\r\n',
+            )
 
     def test_translation_tokens_are_enforced(self):
         with tempfile.TemporaryDirectory() as directory:

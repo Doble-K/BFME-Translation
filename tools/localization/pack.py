@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def verify_embedded_files(big4f, package_path, package_dir, expected_files, debug):
-    with tempfile.TemporaryDirectory(prefix="spanishpack-verify-") as verification_dir:
+    with tempfile.TemporaryDirectory(prefix="localization-pack-verify-") as verification_dir:
         verification_root = Path(verification_dir)
         subprocess.run(
             [str(big4f.resolve()), "x", str(package_path.resolve()), str(verification_root)],
@@ -62,7 +62,7 @@ def verify_embedded_files(big4f, package_path, package_dir, expected_files, debu
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Pack the Spanish localization release.")
+    parser = argparse.ArgumentParser(description="Pack a configured SAGE localization release.")
     parser.add_argument(
         "--exclude-orphan-ids",
         action="store_true",
@@ -118,7 +118,7 @@ def main():
     output_release.parent.mkdir(parents=True, exist_ok=True)
 
     debug_build = args.exclude_orphan_ids or args.debug or args.dedupe_ids
-    with tempfile.TemporaryDirectory(prefix="spanishpack-") as temporary_dir:
+    with tempfile.TemporaryDirectory(prefix="localization-pack-") as temporary_dir:
         package_dir = source_dir
         if debug_build:
             package_dir = Path(temporary_dir) / "spanish"
@@ -137,6 +137,8 @@ def main():
                 str(debug_str),
                 "--allow-source-fallback",
             ]
+            if args.project:
+                build_command.extend(("--project", args.project))
             if args.exclude_orphan_ids:
                 build_command.append("--exclude-whitespace-ids")
             if args.debug:

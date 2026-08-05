@@ -27,6 +27,8 @@ def load_project(path):
         raise ValueError(f"Faltan campos del proyecto: {', '.join(missing)}")
     if not isinstance(project["string_files"], list) or not project["string_files"]:
         raise ValueError("string_files debe ser una lista no vacía")
+    if "string_header" in project and not isinstance(project["string_header"], str):
+        raise ValueError("string_header debe ser una cadena")
     return project
 
 

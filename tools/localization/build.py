@@ -10,7 +10,7 @@ from project import load_project, resolve_project_path
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Build an SAGE localization string file.")
+    parser = argparse.ArgumentParser(description="Build a configured SAGE localization string file.")
     parser.add_argument("catalog", nargs="?", help="Path to the localization catalog")
     parser.add_argument("output", nargs="?", help="Path to the output .str file")
     parser.add_argument("--project", help="Project configuration JSON")
@@ -55,6 +55,7 @@ def main():
     catalog_file = Path(args.catalog) if args.catalog else resolve_project_path(project, "catalog")
     output_str_file = Path(args.output) if args.output else resolve_project_path(project, "output_string_file")
     encoding = args.encoding or (project["encoding"] if project else "cp1252")
+    string_header = (project or {}).get("string_header", "// String file")
     debug = args.debug
 
     with open(catalog_file, "r", encoding="utf-8") as f:
@@ -118,7 +119,7 @@ def main():
         sys.exit(1)
 
     with f:
-        f.write("// String file for Lord of the Rings\r\n\r\n")
+        f.write(f"{string_header}\r\n\r\n")
         
         for entry in entries:
             entry_id = entry.get("id")
