@@ -228,6 +228,25 @@ class LocalizationToolTests(unittest.TestCase):
             data = json.loads(catalog.read_text(encoding="utf-8"))
             self.assertEqual(data["entries"][0]["translation"], "%d dias")
 
+    def test_translate_can_go_back_in_a_batch(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog = Path(directory) / "catalog.json"
+            catalog.write_text(json.dumps({"entries": [
+                {"id": "TEST:One", "source": "One", "translation": "", "status": "pending"},
+                {"id": "TEST:Two", "source": "Two", "translation": "", "status": "pending"},
+            ]}), encoding="utf-8")
+            result = subprocess.run(
+                [sys.executable, str(TOOLS / "translate.py"), catalog, "--count", "2", "--edit"],
+                cwd=ROOT,
+                input="Uno\n:back\nUno corregido\nDos\n",
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            data = json.loads(catalog.read_text(encoding="utf-8"))
+            self.assertEqual(data["entries"][0]["translation"], "Uno corregido")
+            self.assertEqual(data["entries"][1]["translation"], "Dos")
+
 
 if __name__ == "__main__":
     unittest.main()

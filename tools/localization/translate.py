@@ -157,7 +157,10 @@ def main():
         print("AVISO: las entradas LETTER:* y NUMBER:* pueden ser hotkeys o controles automaticos.")
         print("Modificalas solo si deseas cambiar intencionalmente los controles del juego.")
 
-    for index, entry in enumerate(entries[:args.count]):
+    batch = entries[:args.count]
+    index = 0
+    while index < len(batch):
+        entry = batch[index]
         print("=" * 60)
         print("INDEX:", index)
         print("ID:", entry.get("id"))
@@ -175,11 +178,19 @@ def main():
             print("ES:")
             print(entry.get("translation", ""))
             print()
+            index += 1
             continue
 
+        print("Comandos: :back volver, :skip saltar, :quit salir")
         while True:
             value = input("ES: ").strip()
-            if not value:
+            if value == ":back":
+                index = max(0, index - 1)
+                break
+            if value == ":quit":
+                return 0
+            if value in {"", ":skip"}:
+                index += 1
                 break
             if not valid_translation(entry, value, rules):
                 expected = protected_tokens(entry.get("source", ""), rules)
@@ -191,6 +202,7 @@ def main():
             record_translation(entry, value, datetime.now().strftime("%Y-%m-%d"))
             save_catalog(args.catalog, data)
             print("Saved")
+            index += 1
             break
 
     return 0
