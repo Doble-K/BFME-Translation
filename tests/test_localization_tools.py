@@ -63,11 +63,13 @@ class LocalizationToolTests(unittest.TestCase):
             output = directory / "source.json"
             source.write_bytes(
                 b"// header\r\nTEST:One\r\n\"A \\n line\"\r\nEND \r\n"
+                b"TEST:Two\r\n\"Name with \"quote\" inside\" // context\r\nEnd\r\n"
             )
             result = run_tool("extract.py", source, output)
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             extracted = json.loads(output.read_text(encoding="utf-8"))
             self.assertEqual(extracted["entries"][0]["text"], "A \\n line")
+            self.assertEqual(extracted["entries"][1]["text"], 'Name with "quote" inside')
 
             source.write_text("TEST:Broken\n\"missing end\"\n", encoding="utf-8")
             broken = run_tool("extract.py", source, output)

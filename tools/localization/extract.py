@@ -12,10 +12,17 @@ class StringFileError(ValueError):
 
 def parse_text(line, line_number):
     normalized_line = line.rstrip()
-    if not normalized_line.startswith('"') or not normalized_line.endswith('"'):
+    if not normalized_line.startswith('"'):
         raise StringFileError(f"Línea {line_number}: texto sin comillas completas")
 
-    value = normalized_line[1:-1]
+    closing_quote = normalized_line.rfind('"')
+    if closing_quote <= 0:
+        raise StringFileError(f"Línea {line_number}: texto sin comillas completas")
+    trailing = normalized_line[closing_quote + 1:].strip()
+    if trailing and not trailing.startswith("//"):
+        raise StringFileError(f"Línea {line_number}: contenido después del texto")
+
+    value = normalized_line[1:closing_quote]
     result = []
     index = 0
     while index < len(value):
