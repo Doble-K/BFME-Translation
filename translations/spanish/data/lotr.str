@@ -61,11 +61,11 @@ NUMBER:0
 END
 
 TIME:Days
-"%d d√≠as"
+"%d dÌas"
 END
 
 TIME:Day
-"1 d√≠a"
+"1 dÌa"
 END
 
 TIME:Hours
@@ -129,7 +129,7 @@ Color:SkyBlue
 END
 
 Color:Purple
-"P√∫rpura"
+"P˙rpura"
 END
 
 Color:Pink
@@ -161,11 +161,11 @@ Team:AI
 END
 
 MSG:Testing
-"Mary ten√≠a un corderito, su lana era blanca como la nieve."
+"Mary tenÌa un corderito, su lana era blanca como la nieve."
 END
 
 MSG:Test2
-"Y por donde Mary iba, el corderito la segu√≠a."
+"Y por donde Mary iba, el corderito la seguÌa."
 END
 
 GUI:MustHaveAdminRights
@@ -181,7 +181,7 @@ END
 END
 
 GUI:Day
-"D√≠a (DD)"
+"DÌa (DD)"
 END
 
  
@@ -193,7 +193,7 @@ GUI:RandomSide
 END
 
 GUI:BuddyAddReq
-"El usuario de The Lord of the Rings, The Rise of the Witch-king quiere agregar un compa√±ero"
+"El usuario de The Lord of the Rings, The Rise of the Witch-king quiere agregar un compaÒero"
 END
 
  
@@ -201,27 +201,27 @@ END
 END
 
 APT:Otherplayerisready
-"El otro jugador est√° listo"
+"El otro jugador est· listo"
 END
 
 APT:ExitWithoutSaving
-"¬øEst√°s seguro de que quieres salir sin guardar?"
+"øEst·s seguro de que quieres salir sin guardar?"
 END
 
 APT:AreYouSureYouWantToRestart
-"¬øEst√°s seguro de que quieres reiniciar?"
+"øEst·s seguro de que quieres reiniciar?"
 END
 
 APT:AreYouSureYouWantToRestartMessage
-"¬øEst√°s seguro de que quieres reiniciar?"
+"øEst·s seguro de que quieres reiniciar?"
 END
 
 APT:AreYouSureYouWantToSurrenderMessage
-"¬øEst√°s seguro de que quieres rendirte?"
+"øEst·s seguro de que quieres rendirte?"
 END
 
 APT:AreYouSureYouWantToForfeitMessage
-"¬øEst√°s seguro de que quieres rendirte?"
+"øEst·s seguro de que quieres rendirte?"
 END
 
 APT:WorldMapTutorial
@@ -229,11 +229,11 @@ APT:WorldMapTutorial
 END
 
 APT:ArmiesTutorial
-"EJ√âRCITOS"
+"EJ…RCITOS"
 END
 
 APT:HeroesTutorial
-"H√âROES"
+"H…ROES"
 END
 
 APT:CastlesTutorial
@@ -297,11 +297,11 @@ APT:WorldMapTitle
 END
 
 APT:ArmiesTitle
-"Ej√©rcitos"
+"EjÈrcitos"
 END
 
 APT:HeroesTitle
-"H√©roes"
+"HÈroes"
 END
 
 APT:CastlesTitle
@@ -333,7 +333,7 @@ END
 END
 
 APT:HeaderLoadSavedReplay
-"CARGAR REPETICI√ìN GUARDADA"
+"CARGAR REPETICI”N GUARDADA"
 END
 
 APT:HeaderSaveGame
@@ -341,7 +341,7 @@ APT:HeaderSaveGame
 END
 
 APT:HeaderSaveReplay
-"GUARDAR REPETICI√ìN"
+"GUARDAR REPETICI”N"
 END
 
 APT:BattleSchool
@@ -369,15 +369,15 @@ APT:SaveGameMultiplayerConfirmationTitle
 END
 
 APT:ConfirmMultiplayerSave
-"El otro jugador desea guardar la sesi√≥n. ¬øEst√°s de acuerdo?"
+"El otro jugador desea guardar la sesiÛn. øEst·s de acuerdo?"
 END
 
 APT:ConfirmMultiplayerSaveWithOverwrite
-"El otro jugador desea guardar la sesi√≥n.\nEsto sobrescribir√° el archivo guardado anterior con el nombre '%s'.\n¬øEst√°s de acuerdo?"
+"El otro jugador desea guardar la sesiÛn.\nEsto sobrescribir· el archivo guardado anterior con el nombre '%s'.\nøEst·s de acuerdo?"
 END
 
 APT:MultiplayerSaveDenied
-"El otro jugador rechaz√≥ tu solicitud de guardado."
+"El otro jugador rechazÛ tu solicitud de guardado."
 END
 
 APT:MultiplayerSaveDeniedAutoDenied
@@ -389,7 +389,7 @@ APT:GameSelectorTab
 END
 
 APT:ReplaySelectorTab
-"REPETICI√ìN"
+"REPETICI”N"
 END
 
 APT:Replays
@@ -397,7 +397,7 @@ APT:Replays
 END
 
 APT:CampaignSelectorTab
-"CAMPA√ëA"
+"CAMPA—A"
 END
 
 APT:SkirmishSelectorTab
@@ -409,7 +409,7 @@ APT:HeaderSavedFiles
 END
 
 APT:HeaderAutoSave
-"Guardado Autom√°tico"
+"Guardado Autom·tico"
 END
 
 APT:NameFile
@@ -417,11 +417,11 @@ APT:NameFile
 END
 
 APT:Mission
-"Misi√≥n"
+"MisiÛn"
 END
 
 APT:OverwriteSaveConfirmation
-"¬øSobrescribir archivo existente?"
+"øSobrescribir archivo existente?"
 END
 
 APT:SavingWait
@@ -433,23 +433,23 @@ APT:SavingWaitOnMultiplayer
 END
 
 APT:ConnectionSettings
-"Configuraci√≥n de Conexi√≥n"
+"ConfiguraciÛn de ConexiÛn"
 END
 
 APT:MaxPing
-"Ping M√°ximo"
+"Ping M·ximo"
 END
 
 APT:DisconnectMenu
-"Desconexiones M√°ximas"
+"Desconexiones M·ximas"
 END
 
 APT:LoadGameConfirmation
-"Los datos del juego actual se perder√°n. ¬øCargar archivo guardado?"
+"Los datos del juego actual se perder·n. øCargar archivo guardado?"
 END
 
 APT:DeleteGameConfirmation
-"¬øEst√°s seguro de que deseas eliminar el archivo seleccionado?"
+"øEst·s seguro de que deseas eliminar el archivo seleccionado?"
 END
 
 APT:ConfirmationOk
@@ -465,7 +465,7 @@ APT:MainMenuLoadGame
 END
 
 APT:MenuBasicTutorial
-"TUTORIAL\nB√ÅSICO"
+"TUTORIAL\nB¡SICO"
 END
 
 APT:MenuAdvancedTutorial
@@ -485,7 +485,7 @@ END
 END
 
  
-"CARGAR REPETICI√ìN"
+"CARGAR REPETICI”N"
 END
 
 APT:MultiplayerMaps
@@ -501,7 +501,7 @@ APT:MapType
 END
 
 APT:MapTitle
-"T√çTULO DEL MAPA"
+"TÕTULO DEL MAPA"
 END
 
 APT:Color
@@ -513,7 +513,7 @@ APT:ColorCAPS
 END
 
 APT:ConnectionSpeed
-"Velocidad de Conexi√≥n"
+"Velocidad de ConexiÛn"
 END
 
 APT:LadderHeader
@@ -525,7 +525,7 @@ APT:FindGames
 END
 
 APT:Side
-"Ej√©rcito"
+"EjÈrcito"
 END
 
 APT:PlayGame
@@ -553,11 +553,11 @@ APT:HeaderPlayerName
 END
 
 APT:HeaderFaction
-"Ej√©rcito"
+"EjÈrcito"
 END
 
 APT:HeaderFactionCaps
-"EJ√âRCITO"
+"EJ…RCITO"
 END
 
 APT:HeaderTeam
@@ -573,7 +573,7 @@ APT:HeaderResources
 END
 
 APT:HeaderTributeInstructions
-"Distribuye recursos para enviar a tus compa√±eros."
+"Distribuye recursos para enviar a tus compaÒeros."
 END
 
 APT:CustomGameLobby
@@ -581,7 +581,7 @@ APT:CustomGameLobby
 END
 
 APT:CommandPointLimit
-"L√≠mite de Puntos de Comando"
+"LÌmite de Puntos de Comando"
 END
 
 APT:CurrentMapName
@@ -597,11 +597,11 @@ APT:InitialBuildings
 END
 
 APT:InitialNumberOfPeons
-"N√∫mero Inicial de Peones"
+"N˙mero Inicial de Peones"
 END
 
 APT:InitialNumberOfUnits
-"N√∫mero Inicial de Unidades"
+"N˙mero Inicial de Unidades"
 END
 
 APT:InitialResources
@@ -657,7 +657,7 @@ APT:Clan
 END
 
 APT:NoCreatedHeroes
-"No hay h√©roes creados"
+"No hay hÈroes creados"
 END
 
 APT:Ping
@@ -673,7 +673,7 @@ APT:Rules
 END
 
 APT:ShroudSettings
-"Configuraci√≥n de Bruma"
+"ConfiguraciÛn de Bruma"
 END
 
 APT:Status
@@ -693,7 +693,7 @@ APT:TypeTitle
 END
 
 APT:GameSetup
-"CONFIGURACI√ìN DEL JUEGO"
+"CONFIGURACI”N DEL JUEGO"
 END
 
 APT:GameSpeed
@@ -825,27 +825,27 @@ APT:Player
 END
 
 APT:MultiplayerGameSaved
-"El juego ha sido guardado.\n¬øQuieres salir del juego por ahora? El otro jugador debe estar de acuerdo."
+"El juego ha sido guardado.\nøQuieres salir del juego por ahora? El otro jugador debe estar de acuerdo."
 END
 
 APT:MultiplayerExitWaiting
-"Esperando la decisi√≥n del otro jugador sobre salir del juego..."
+"Esperando la decisiÛn del otro jugador sobre salir del juego..."
 END
 
 APT:MultiplayerExitOverruled
-"El otro jugador se neg√≥ a salir del juego ahora"
+"El otro jugador se negÛ a salir del juego ahora"
 END
 
 APT:RefreshNATFailed
-"La detecci√≥n de firewall fall√≥. Puedes intentarlo de nuevo m√°s tarde. Si esto ocurre frecuentemente, puede que quieras configurar tu firewall para usar la funci√≥n de reenv√≠o de puertos."
+"La detecciÛn de firewall fallÛ. Puedes intentarlo de nuevo m·s tarde. Si esto ocurre frecuentemente, puede que quieras configurar tu firewall para usar la funciÛn de reenvÌo de puertos."
 END
 
 APT:RefreshNATSucceeded
-"La detecci√≥n de firewall fue exitosa."
+"La detecciÛn de firewall fue exitosa."
 END
 
 APT:WaitForRefreshNATcomplete
-"Por favor espera a que se complete la actualizaci√≥n de NAT."
+"Por favor espera a que se complete la actualizaciÛn de NAT."
 END
 
 GUI:GameSaved
@@ -917,11 +917,11 @@ END
 END
 
 GUI:GroundLighting
-"Iluminaci√≥n Extra del Terreno"
+"IluminaciÛn Extra del Terreno"
 END
 
  
-"Alternar iluminaci√≥n detallada en el terreno. Desactivar para mejor rendimiento"
+"Alternar iluminaciÛn detallada en el terreno. Desactivar para mejor rendimiento"
 END
 
 GUI:SmoothWater
@@ -937,19 +937,19 @@ GUI:ExtraAnimations
 END
 
  
-"Alternar animaciones opcionales como balanceo de √°rboles. Desactivar para mejor rendimiento"
+"Alternar animaciones opcionales como balanceo de ·rboles. Desactivar para mejor rendimiento"
 END
 
 GUI:NoDynamicLOD
-"Desactivar LOD Din√°mico"
+"Desactivar LOD Din·mico"
 END
 
  
-"Desactivar ajuste autom√°tico de detalle. Desactivar para mejor rendimiento"
+"Desactivar ajuste autom·tico de detalle. Desactivar para mejor rendimiento"
 END
 
 GUI:UnlockMaxFPS
-"FPS Sin L√≠mite"
+"FPS Sin LÌmite"
 END
 
  
@@ -957,19 +957,19 @@ END
 END
 
 GUI:TreeSway
-"Animaci√≥n de √Årboles"
+"AnimaciÛn de ¡rboles"
 END
 
  
-"Alternar animaciones de √°rboles. Desactivar para mejor rendimiento"
+"Alternar animaciones de ·rboles. Desactivar para mejor rendimiento"
 END
 
 GUI:TankTreads
-"Huellas de Veh√≠culos"
+"Huellas de VehÌculos"
 END
 
  
-"Alternar marcas dejadas por veh√≠culos. Desactivar para mejor rendimiento"
+"Alternar marcas dejadas por vehÌculos. Desactivar para mejor rendimiento"
 END
 
 GUI:WaterWaves
@@ -981,7 +981,7 @@ END
 END
 
 GUI:BuildupAnimations
-"Animaciones de Construcci√≥n"
+"Animaciones de ConstrucciÛn"
 END
 
  
@@ -989,23 +989,23 @@ END
 END
 
 TOOLTIP:Skirmish/dumSkirmishProfileMain
-"Estad√≠sticas generales acumuladas para todos los ej√©rcitos que el jugador ha utilizado"
+"EstadÌsticas generales acumuladas para todos los ejÈrcitos que el jugador ha utilizado"
 END
 
 TOOLTIP:Skirmish/dumSkirmishProfileA
-"Estad√≠sticas generales acumuladas para Gondor"
+"EstadÌsticas generales acumuladas para Gondor"
 END
 
 TOOLTIP:Skirmish/dumSkirmishProfileB
-"Estad√≠sticas generales acumuladas para Rohan"
+"EstadÌsticas generales acumuladas para Rohan"
 END
 
 TOOLTIP:Skirmish/dumSkirmishProfileC
-"Estad√≠sticas generales acumuladas para Isengard"
+"EstadÌsticas generales acumuladas para Isengard"
 END
 
 TOOLTIP:Skirmish/dumSkirmishProfileD
-"Estad√≠sticas generales acumuladas para Mordor"
+"EstadÌsticas generales acumuladas para Mordor"
 END
 
 GUI:AdvancedOptionsToggleOnOff
@@ -1013,7 +1013,7 @@ GUI:AdvancedOptionsToggleOnOff
 END
 
 GUI:PerformanceTestingMessage
-"Por favor espere mientras probamos el rendimiento de su sistema para determinar la configuraci√≥n √≥ptima."
+"Por favor espere mientras probamos el rendimiento de su sistema para determinar la configuraciÛn Ûptima."
 END
 
 GUI:PerformanceTestingTitle
@@ -1037,7 +1037,7 @@ END
 END
 
  
-"F√ÅCIL"
+"F¡CIL"
 END
 
  
@@ -1045,7 +1045,7 @@ END
 END
 
  
-"DIF√çCIL"
+"DIFÕCIL"
 END
 
  
@@ -1057,7 +1057,7 @@ END
 END
 
 GUI:BehindBuilding
-"Detr√°s de Edificios"
+"Detr·s de Edificios"
 END
 
  
@@ -1081,11 +1081,11 @@ END
 END
 
 GUI:SurrenderConfirmationTitle
-"¬øRENUNCIA?"
+"øRENUNCIA?"
 END
 
 TOOLTIP:StartPositionN
-"Posici√≥n inicial para el jugador %d"
+"PosiciÛn inicial para el jugador %d"
 END
 
 TOOLTIP:TooltipNotEnoughMoneyToBuild
@@ -1093,15 +1093,15 @@ TOOLTIP:TooltipNotEnoughMoneyToBuild
 END
 
 TOOLTIP:TooltipNoMoreCommandPoints
-"No hay m√°s Puntos de Comando disponibles"
+"No hay m·s Puntos de Comando disponibles"
 END
 
 TOOLTIP:TooltipCannotPurchaseBecauseQueueFull
-"Cola de construcci√≥n llena"
+"Cola de construcciÛn llena"
 END
 
 TOOLTIP:TooltipCannotBuildUnitBecauseParkingFull
-"Aer√≥dromo lleno"
+"AerÛdromo lleno"
 END
 
 TOOLTIP:TooltipCannotBuildUnitBecauseMaximumNumber
@@ -1109,11 +1109,11 @@ TOOLTIP:TooltipCannotBuildUnitBecauseMaximumNumber
 END
 
 TOOLTIP:TooltipNukeReactorOverChargeIsOn
-"La sobrecarga est√° actualmente ACTIVADA"
+"La sobrecarga est· actualmente ACTIVADA"
 END
 
 TOOLTIP:TooltipNukeReactorOverChargeIsOff
-"La sobrecarga est√° actualmente DESACTIVADA"
+"La sobrecarga est· actualmente DESACTIVADA"
 END
 
 TOOLTIP:MapNoSuccess
@@ -1121,7 +1121,7 @@ TOOLTIP:MapNoSuccess
 END
 
 TOOLTIP:MapEasySuccess
-"Este campo de batalla ha sido conquistado en dificultad F√°cil."
+"Este campo de batalla ha sido conquistado en dificultad F·cil."
 END
 
 TOOLTIP:MapMediumSuccess
@@ -1129,11 +1129,11 @@ TOOLTIP:MapMediumSuccess
 END
 
 TOOLTIP:MapHardSuccess
-"Este campo de batalla ha sido conquistado en dificultad Dif√≠cil."
+"Este campo de batalla ha sido conquistado en dificultad DifÌcil."
 END
 
 TOOLTIP:MapHardMaxSuccess
-"Este campo de batalla ha sido conquistado en dificultad Dif√≠cil con el n√∫mero m√°ximo de enemigos."
+"Este campo de batalla ha sido conquistado en dificultad DifÌcil con el n˙mero m·ximo de enemigos."
 END
 
 TOOLTIP:UserMadeMap
@@ -1165,7 +1165,7 @@ GUI:ESRB_Top
 END
 
 GUI:ESRB_Bottom
-"La experiencia del juego puede\ncambiar durante el juego en l√≠nea"
+"La experiencia del juego puede\ncambiar durante el juego en lÌnea"
 END
 
 GUI:Objectives:
@@ -1173,7 +1173,7 @@ GUI:Objectives:
 END
 
 GUI:EstablishingConnectionPaths
-"ESTABLECIENDO RUTAS DE CONEXI√ìN"
+"ESTABLECIENDO RUTAS DE CONEXI”N"
 END
 
 GUI:MinSpecFailedTitle
@@ -1181,7 +1181,7 @@ GUI:MinSpecFailedTitle
 END
 
 GUI:MinSpecFailedMessage
-"Su sistema no cumple con los requisitos m√≠nimos de hardware. Es posible que experimente tasas de fotogramas m√°s lentas de lo normal en sus juegos multijugador."
+"Su sistema no cumple con los requisitos mÌnimos de hardware. Es posible que experimente tasas de fotogramas m·s lentas de lo normal en sus juegos multijugador."
 END
 
 GUI:QuitToDesktop
@@ -1189,39 +1189,39 @@ GUI:QuitToDesktop
 END
 
 GUI:QuitToDesktopConf
-"¬øEst√° seguro de que desea salir al escritorio?"
+"øEst· seguro de que desea salir al escritorio?"
 END
 
 GUI:SurrenderConfirmation
-"¬øEst√° seguro de que desea rendirse?"
+"øEst· seguro de que desea rendirse?"
 END
 
 GUI:RestartConfirmation
-"¬øEst√° seguro de que desea reiniciar?"
+"øEst· seguro de que desea reiniciar?"
 END
 
 GUI:ShowBehindBuildings
-"Firma t√©rmica detr√°s de edificios APAGADO"
+"Firma tÈrmica detr·s de edificios APAGADO"
 END
 
 GUI:HideBehindBuildings
-"Firma t√©rmica detr√°s de edificios ENCENDIDO"
+"Firma tÈrmica detr·s de edificios ENCENDIDO"
 END
 
 GUI:DetailsSetToLowest
-"Detalle gr√°fico bajo"
+"Detalle gr·fico bajo"
 END
 
 GUI:ReturnGraphicsToPreviousSettings
-"Restaurando la configuraci√≥n gr√°fica anterior"
+"Restaurando la configuraciÛn gr·fica anterior"
 END
 
 APT:CannotChangeResolution
-"Solo se puede cambiar desde la Configuraci√≥n del Men√∫ Principal."
+"Solo se puede cambiar desde la ConfiguraciÛn del Men˙ Principal."
 END
 
 APT:CannotChangeGraphics
-"No se puede cambiar mientras se est√° jugando."
+"No se puede cambiar mientras se est· jugando."
 END
 
 GUI:BeaconLabel
@@ -1233,19 +1233,19 @@ ERROR:D3DFailurePrompt
 END
 
 ERROR:D3DFailureMessage
-"Aseg√∫rese de tener DirectX 9.0 o superior instalado. Tambi√©n verifique que su tarjeta de video cumple con los requisitos m√≠nimos y que no tiene la aceleraci√≥n por hardware desactivada en el panel de Control de Visualizaci√≥n."
+"Aseg˙rese de tener DirectX 9.0 o superior instalado. TambiÈn verifique que su tarjeta de video cumple con los requisitos mÌnimos y que no tiene la aceleraciÛn por hardware desactivada en el panel de Control de VisualizaciÛn."
 END
 
 ERROR:InitError
-"Error de Inicializaci√≥n"
+"Error de InicializaciÛn"
 END
 
 ERROR:BaseGameNotInstalled
-"Juego base no instalado. La aplicaci√≥n se cerrar√°."
+"Juego base no instalado. La aplicaciÛn se cerrar·."
 END
 
 ERROR:BaseGameFilesNotFound
-"Archivos del juego base no encontrados. La aplicaci√≥n se cerrar√°."
+"Archivos del juego base no encontrados. La aplicaciÛn se cerrar·."
 END
 
 GUI:ErrorStartingGame
@@ -1257,11 +1257,11 @@ GUI:TooManyPlayers
 END
 
 GUI:SandboxWarning
-"Hacer clic en Iniciar nuevamente comenzar√° un juego de sandbox."
+"Hacer clic en Iniciar nuevamente comenzar· un juego de sandbox."
 END
 
 GUI:CantFindMap
-"No se puede encontrar el mapa. ¬øEst√° da√±ado?"
+"No se puede encontrar el mapa. øEst· daÒado?"
 END
 
 GUI:Beacon
@@ -1269,7 +1269,7 @@ GUI:Beacon
 END
 
 GUI:EACopyright
-"¬© 2004 ELECTRONIC ARTS INC.  TODOS LOS DERECHOS RESERVADOS."
+"© 2004 ELECTRONIC ARTS INC.  TODOS LOS DERECHOS RESERVADOS."
 END
 
 GUI:DeleteBeacon
@@ -1281,11 +1281,11 @@ GUI:BeaconPlaced
 END
 
 GUI:BeaconPlacementFailed
-"No se puede colocar la Baliza aqu√≠"
+"No se puede colocar la Baliza aquÌ"
 END
 
 GUI:TooManyBeacons
-"No se pueden colocar m√°s Balizas"
+"No se pueden colocar m·s Balizas"
 END
 
 GUI:Blank
@@ -1321,7 +1321,7 @@ APT:GameName
 END
 
 APT:CreatePassword
-"Contrase√±a del juego (Opcional)"
+"ContraseÒa del juego (Opcional)"
 END
 
 GUI:NoFileSelected
@@ -1341,7 +1341,7 @@ GUI:NewSaveReplayFile
 END
 
 GUI:AutoSaveName
-"Guardado autom√°tico para %ls"
+"Guardado autom·tico para %ls"
 END
 
 GUI:DefaultSaveFileName
@@ -1349,7 +1349,7 @@ GUI:DefaultSaveFileName
 END
 
 GUI:EnterSaveDesc
-"Ingresar descripci√≥n del juego"
+"Ingresar descripciÛn del juego"
 END
 
 GUI:TimeAM
@@ -1361,15 +1361,15 @@ GUI:TimePM
 END
 
 GUI:OverwriteSaveConfirmation
-"¬øSobrescribir el archivo existente?"
+"øSobrescribir el archivo existente?"
 END
 
 GUI:LoadGameConfirmation
-"Los datos del juego actual se perder√°n. ¬øCargar partida guardada?"
+"Los datos del juego actual se perder·n. øCargar partida guardada?"
 END
 
 GUI:MissionSave
-"Inicio de misi√≥n - %s %d"
+"Inicio de misiÛn - %s %d"
 END
 
 GUI:Buildings
@@ -1377,19 +1377,19 @@ GUI:Buildings
 END
 
 GUI:DeleteFile
-"¬øELIMINAR ARCHIVO?"
+"øELIMINAR ARCHIVO?"
 END
 
 GUI:AreYouSureDelete
-"¬øEst√° seguro de que desea eliminar el archivo seleccionado?"
+"øEst· seguro de que desea eliminar el archivo seleccionado?"
 END
 
 GUI:CopyFileToDesktop
-"¬øCOPIAR REPRISA AL ESCRITORIO?"
+"øCOPIAR REPRISA AL ESCRITORIO?"
 END
 
 GUI:AreYouSureCopy
-"¬øEst√° seguro de que desea copiar este archivo al escritorio? Esto sobrescribir√° cualquier archivo con el mismo nombre."
+"øEst· seguro de que desea copiar este archivo al escritorio? Esto sobrescribir· cualquier archivo con el mismo nombre."
 END
 
 GUI:ErrorCopyingFile
@@ -1421,7 +1421,7 @@ GUI:OverwriteReplayTitle
 END
 
 GUI:OverwriteReplay
-"¬øSobrescribir la reprisa?"
+"øSobrescribir la reprisa?"
 END
 
 GUI:ErrorDeletingFile
@@ -1429,7 +1429,7 @@ GUI:ErrorDeletingFile
 END
 
 GUI:ShortDescription
-"Descripci√≥n corta del juego:"
+"DescripciÛn corta del juego:"
 END
 
 GUI:LadderNameAndSize
@@ -1437,11 +1437,11 @@ GUI:LadderNameAndSize
 END
 
 GUI:InvalidLadderPassword
-"Contrase√±a de liga inv√°lida."
+"ContraseÒa de liga inv·lida."
 END
 
 GUI:EnterLadderPassword
-"Ingresar contrase√±a de liga:"
+"Ingresar contraseÒa de liga:"
 END
 
 GUI:LadderName
@@ -1449,31 +1449,31 @@ GUI:LadderName
 END
 
 GUI:LadderPassword
-"Contrase√±a de liga"
+"ContraseÒa de liga"
 END
 
 GUI:LadderURL
-"P√°gina principal: %hs"
+"P·gina principal: %hs"
 END
 
 GUI:LadderHasPassword
-"Esta liga est√° protegida con contrase√±a."
+"Esta liga est· protegida con contraseÒa."
 END
 
 GUI:LadderMinWins
-"Victorias m√≠nimas requeridas: %d"
+"Victorias mÌnimas requeridas: %d"
 END
 
 GUI:LadderMaxWins
-"Victorias m√°ximas permitidas: %d"
+"Victorias m·ximas permitidas: %d"
 END
 
 GUI:LadderFactions
-"Facciones de ej√©rcito permitidas:"
+"Facciones de ejÈrcito permitidas:"
 END
 
 GUI:LadderRandomFactions
-"Facciones de ej√©rcito aleatorias:"
+"Facciones de ejÈrcito aleatorias:"
 END
 
 GUI:LadderMaps
@@ -1493,7 +1493,7 @@ GUI:CreateGame
 END
 
 GUI:EndCampaign
-"Terminar campa√±a"
+"Terminar campaÒa"
 END
 
 GUI:Continue
@@ -1505,7 +1505,7 @@ GUI:Save
 END
 
 GUI:ConfirmDelete
-"¬øEst√° seguro de que desea eliminar este juego?"
+"øEst· seguro de que desea eliminar este juego?"
 END
 
 APT:Delete
@@ -1521,7 +1521,7 @@ APT:ChangeProfilePopHeader
 END
 
 APT:ChangeProfileInstructions
-"Seleccione un perfil existente de la lista y luego presione el bot√≥n Seleccionar."
+"Seleccione un perfil existente de la lista y luego presione el botÛn Seleccionar."
 END
 
 APT:AddProfilePopHeader
@@ -1529,7 +1529,7 @@ APT:AddProfilePopHeader
 END
 
 APT:AddProfileInstructions
-"Ingrese un nombre para el nuevo perfil. Las estad√≠sticas se mantienen para cada perfil."
+"Ingrese un nombre para el nuevo perfil. Las estadÌsticas se mantienen para cada perfil."
 END
 
 APT:DeleteProfilePopHeader
@@ -1537,7 +1537,7 @@ APT:DeleteProfilePopHeader
 END
 
 APT:DeleteProfileInstructions
-"Seleccione un perfil de la lista y luego presione el bot√≥n Eliminar para remover los datos del perfil. Cuando termine, presione Listo."
+"Seleccione un perfil de la lista y luego presione el botÛn Eliminar para remover los datos del perfil. Cuando termine, presione Listo."
 END
 
 APT:ProfileName
@@ -1569,7 +1569,7 @@ APT:ReplaySaveErrorMessageBox
 END
 
 GUI:Retry
-"¬øJUGAR DE NUEVO?"
+"øJUGAR DE NUEVO?"
 END
 
 GUI:MainMenu
@@ -1577,7 +1577,7 @@ GUI:MainMenu
 END
 
 APT:MainMenu
-"MEN√ö PRINCIPAL"
+"MEN⁄ PRINCIPAL"
 END
 
 GUI:RecentSave
@@ -1585,15 +1585,15 @@ GUI:RecentSave
 END
 
 GUI:GetUpdate
-"Obtener actualizaci√≥n"
+"Obtener actualizaciÛn"
 END
 
 APT:DirectConnect
-"Conexi√≥n directa"
+"ConexiÛn directa"
 END
 
 	//
-"Conexi√≥n directa"
+"ConexiÛn directa"
 END
 
 GUI:WorldBuilder
@@ -1613,15 +1613,15 @@ GUI:UseAccount
 END
 
 GUI:Score
-"Puntuaci√≥n"
+"PuntuaciÛn"
 END
 
 GUI:ScoreScreen
-"Pantalla de puntuaci√≥n"
+"Pantalla de puntuaciÛn"
 END
 
 GUI:Rehost
-"¬øJUGAR DE NUEVO?"
+"øJUGAR DE NUEVO?"
 END
 
 GUI:UnitsBuilt
@@ -1653,11 +1653,11 @@ GUI:ResourcesCollected
 END
 
 GUI:QuitPopupTitle
-"¬øSALIR?"
+"øSALIR?"
 END
 
 GUI:QuitPopupMessage
-"¬øEst√° seguro de que desea salir?"
+"øEst· seguro de que desea salir?"
 END
 
 GUI:MaxSelectionSize
@@ -1669,19 +1669,19 @@ GUI:MessagesOn
 END
 
 GUI:MissionDescription
-"Descripci√≥n de la misi√≥n"
+"DescripciÛn de la misiÛn"
 END
 
 GUI:MOTD
-"Mensaje del d√≠a"
+"Mensaje del dÌa"
 END
 
 GUI:DesyncTitle
-"Fuera de sincronizaci√≥n"
+"Fuera de sincronizaciÛn"
 END
 
 GUI:LadderDetails
-"Informaci√≥n de liga"
+"InformaciÛn de liga"
 END
 
 GUI:Ladder
@@ -1709,7 +1709,7 @@ END
 END
 
 GUI:NetgearDelay
-"Retardo de env√≠o"
+"Retardo de envÌo"
 END
 
 GUI:WaitingForManglerResponse
@@ -1717,7 +1717,7 @@ GUI:WaitingForManglerResponse
 END
 
 GUI:WaitingForMangledPort
-"Esperando n√∫mero de puerto"
+"Esperando n˙mero de puerto"
 END
 
 GUI:WaitingForResponse
@@ -1729,11 +1729,11 @@ GUI:ReceivedPorts
 END
 
 GUI:ConnectionDone
-"Conexi√≥n completada"
+"ConexiÛn completada"
 END
 
 GUI:ConnectionFailed
-"La conexi√≥n ha fallado"
+"La conexiÛn ha fallado"
 END
 
 GUI:UnknownConnectionState
@@ -1745,7 +1745,7 @@ GUI:Ok
 END
 
 GUI:Yes
-"S√ç"
+"SÕ"
 END
 
 GUI:No
@@ -1757,15 +1757,15 @@ GUI:Cancel
 END
 
 GUI:Back
-"ATR√ÅS"
+"ATR¡S"
 END
 
 APT:Back
-"ATR√ÅS"
+"ATR¡S"
 END
 
 GUI:Logout
-"MEN√ö PRINCIPAL"
+"MEN⁄ PRINCIPAL"
 END
 
 GUI:CancelMapSelect
@@ -1829,7 +1829,7 @@ GUI:Defeat
 END
 
 GUI:YouAreVictorious
-"¬°Has sido victorioso!"
+"°Has sido victorioso!"
 END
 
 GUI:YouHaveBeenDefeated
@@ -1881,7 +1881,7 @@ GUI:PlayerName
 END
 
 GUI:Info
-"Informaci√≥n del jugador"
+"InformaciÛn del jugador"
 END
 
 GUI:Players
@@ -1933,7 +1933,7 @@ GUI:MatchMe
 END
 
 GUI:PersonalInfo
-"Informaci√≥n personal"
+"InformaciÛn personal"
 END
 
 GUI:MultiplayerMaps
@@ -1945,7 +1945,7 @@ GUI:BetterMatch
 END
 
 GUI:MoreGames
-"B√∫squeda r√°pida"
+"B˙squeda r·pida"
 END
 
 GUI:ExitQuickMatch
@@ -1985,7 +1985,7 @@ GUI:Command&ConquerGenerals
 END
 
 GUI:FullGameName
-"The Lord of the Rings‚Ñ¢, The Battle for Middle-earth‚Ñ¢ II, The Rise of the Witch-king‚Ñ¢"
+"The Lord of the Ringsô, The Battle for Middle-earthô II, The Rise of the Witch-kingô"
 END
 
 GUI:SinglePlayer
@@ -1993,7 +1993,7 @@ GUI:SinglePlayer
 END
 
 APT:Online
-"EN L√çNEA"
+"EN LÕNEA"
 END
 
 APT:Network
@@ -2001,7 +2001,7 @@ APT:Network
 END
 
 GUI:Online
-"EN L√çNEA"
+"EN LÕNEA"
 END
 
 GUI:Network
@@ -2013,7 +2013,7 @@ GUI:DebugMultihead
 END
 
 GUI:SendDelay
-"Retardo de env√≠o"
+"Retardo de envÌo"
 END
 
 GUI:FirewallRefresh
@@ -2037,7 +2037,7 @@ GUI:Skirmish
 END
 
 GUI:Campaign
-"CAMPA√ëA"
+"CAMPA—A"
 END
 
 GUI:ClickToDisplayGameInfo
@@ -2045,7 +2045,7 @@ GUI:ClickToDisplayGameInfo
 END
 
 GUI:GameInfo
-"Informaci√≥n del juego"
+"InformaciÛn del juego"
 END
 
 GUI:StartGame
@@ -2057,23 +2057,23 @@ APT:Options
 END
 
 APT:Settings
-"CONFIGURACI√ìN"
+"CONFIGURACI”N"
 END
 
 APT:AdvancedSettings
-"CONFIGURACI√ìN PERSONALIZADA"
+"CONFIGURACI”N PERSONALIZADA"
 END
 
 APT:AdvancedSettings_Shadow_Shader_Notice
-"Las sombras configuradas en Alto solo funcionar√°n con Terreno y Shaders en Alto. El juego ha realizado los ajustes necesarios."
+"Las sombras configuradas en Alto solo funcionar·n con Terreno y Shaders en Alto. El juego ha realizado los ajustes necesarios."
 END
 
 GUI:OptionsDescription
-"Mostrar di√°logo de opciones del juego"
+"Mostrar di·logo de opciones del juego"
 END
 
 GUI:MusicVolume
-"Volumen de m√∫sica"
+"Volumen de m˙sica"
 END
 
 GUI:AmbientVolume
@@ -2081,7 +2081,7 @@ GUI:AmbientVolume
 END
 
 GUI:MovieVolume
-"Volumen de pel√≠culas"
+"Volumen de pelÌculas"
 END
 
 GUI:SFXVolume
@@ -2101,19 +2101,19 @@ GUI:ScrollSpeed
 END
 
 APT:AlternateMouse
-"Configuraci√≥n de mouse alternativo"
+"ConfiguraciÛn de mouse alternativo"
 END
 
 APT:DoubleClickGuard
-"Protecci√≥n de doble clic"
+"ProtecciÛn de doble clic"
 END
 
 APT:ShowUnitDecals
-"Mostrar calcoman√≠as de unidades"
+"Mostrar calcomanÌas de unidades"
 END
 
 TOOLTIP:Options/tooltipShowUnitDecals
-"Activar para mostrar el √≠cono \n de las unidades seleccionadas en el juego"
+"Activar para mostrar el Ìcono \n de las unidades seleccionadas en el juego"
 END
 
 APT:EnableHealthBars
@@ -2137,7 +2137,7 @@ GUI:Strategic
 END
 
 GUI:Resolution
-"Resoluci√≥n"
+"ResoluciÛn"
 END
 
 GUI:InGameDiplomacy
@@ -2181,7 +2181,7 @@ GUI:VeryLow
 END
 
 GUI:Easy
-"F√°cil"
+"F·cil"
 END
 
 GUI:MediumDifficulty
@@ -2189,7 +2189,7 @@ GUI:MediumDifficulty
 END
 
 GUI:Hard
-"Dif√≠cil"
+"DifÌcil"
 END
 
 GUI:SelectDifficulty
@@ -2197,7 +2197,7 @@ GUI:SelectDifficulty
 END
 
 APT:EasyDifficulty
-"F√ÅCIL"
+"F¡CIL"
 END
 
 APT:MediumDifficulty
@@ -2205,7 +2205,7 @@ APT:MediumDifficulty
 END
 
 APT:HardDifficulty
-"DIF√çCIL"
+"DIFÕCIL"
 END
 
 APT:DifficultyTitle
@@ -2229,7 +2229,7 @@ GUI:Team
 END
 
 GUI:Faction
-"Facci√≥n"
+"FacciÛn"
 END
 
 GUI:AntiAliasing0
@@ -2249,15 +2249,15 @@ GUI:IPAddresses
 END
 
 GUI:OnlineIPAddresses
-"IP en l√≠nea:"
+"IP en lÌnea:"
 END
 
 GUI:MinPointPercent
-"Porcentaje m√≠nimo de victorias requerido:"
+"Porcentaje mÌnimo de victorias requerido:"
 END
 
 GUI:MaxPointPercent
-"Porcentaje m√°ximo de victorias permitido:"
+"Porcentaje m·ximo de victorias permitido:"
 END
 
 GUI:AllowableMaps
@@ -2269,7 +2269,7 @@ GUI:QuickMatchTitle
 END
 
 GUI:ConnectionSpeed
-"Velocidad de conexi√≥n"
+"Velocidad de conexiÛn"
 END
 
 GUI:NumPlayers
@@ -2285,11 +2285,11 @@ GUI:TimeInMilliseconds
 END
 
 GUI:MaxDisconnects
-"Desconexiones m√°ximas permitidas:"
+"Desconexiones m·ximas permitidas:"
 END
 
 GUI:Confirm
-"¬øEst√° seguro?"
+"øEst· seguro?"
 END
 
 GUI:MapPreview
@@ -2329,7 +2329,7 @@ GUI:RemainingSkillPoints
 END
 
 TOOLTIP:PlayerCreatedName
-"Nombre del jugador que cre√≥ el juego"
+"Nombre del jugador que creÛ el juego"
 END
 
 TOOLTIP:HTTPProxy
@@ -2341,7 +2341,7 @@ TOOLTIP:PlayerSetting
 END
 
 TOOLTIP:Ping
-"Elige tu tolerancia a la velocidad de conexi√≥n del oponente"
+"Elige tu tolerancia a la velocidad de conexiÛn del oponente"
 END
 
 TOOLTIP:Disconnect
@@ -2353,7 +2353,7 @@ TOOLTIP:Ladder
 END
 
 TOOLTIP:QuickMatchStatus
-"El torneo intentar√° emparejarte seg√∫n tu nivel de habilidad, especificaciones de PC, etc."
+"El torneo intentar· emparejarte seg˙n tu nivel de habilidad, especificaciones de PC, etc."
 END
 
 TOOLTIP:SendDelay
@@ -2361,23 +2361,23 @@ TOOLTIP:SendDelay
 END
 
 TOOLTIP:RefreshNat
-"Haga clic despu√©s de cambiar la configuraci√≥n del firewall o el ISP"
+"Haga clic despuÈs de cambiar la configuraciÛn del firewall o el ISP"
 END
 
 TOOLTIP:OnlineIP
-"Direcci√≥n IP usada para conectarse a The Lord of the Rings, The Rise of the Witch-king Online"
+"DirecciÛn IP usada para conectarse a The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 TOOLTIP:LanIP
-"Direcci√≥n IP usada para conectarse con jugadores en juegos de red"
+"DirecciÛn IP usada para conectarse con jugadores en juegos de red"
 END
 
 TOOLTIP:Vote
-"Haga clic para votar la expulsi√≥n de un jugador para poder continuar"
+"Haga clic para votar la expulsiÛn de un jugador para poder continuar"
 END
 
 TOOLTIP:GamesBeingformed
-"Tu velocidad de conexi√≥n a los jugadores de este juego"
+"Tu velocidad de conexiÛn a los jugadores de este juego"
 END
 
  TOOLTIP:NameButton
@@ -2389,11 +2389,11 @@ TOOLTIP:EmoteText
 END
 
 TOOLTIP:AsianText
-"Clic para alternar chat asi√°tico, etc."
+"Clic para alternar chat asi·tico, etc."
 END
 
 TOOLTIP:NonAsianText
-"Clic para alternar chat no asi√°tico, etc."
+"Clic para alternar chat no asi·tico, etc."
 END
 
 TOOLTIP:ExperienceToLevel
@@ -2421,15 +2421,15 @@ TOOLTIP:ScrollSpeed
 END
 
 TOOLTIP:OptionsAccept
-"Aceptar los cambios y salir del Men√∫ de Opciones"
+"Aceptar los cambios y salir del Men˙ de Opciones"
 END
 
 TOOLTIP:OptionsCancel
-"Salir del Men√∫ de Opciones sin guardar los cambios"
+"Salir del Men˙ de Opciones sin guardar los cambios"
 END
 
 TOOLTIP:OptionsDefaults
-"Restablecer las opciones a la configuraci√≥n predeterminada"
+"Restablecer las opciones a la configuraciÛn predeterminada"
 END
 
 TOOLTIP:ScienceCost
@@ -2477,7 +2477,7 @@ TOOLTIP:StructureVeterancy
 END
 
 TOOLTIP:Rank
-"Nivel: %d / Nivel m√°ximo: %d"
+"Nivel: %d / Nivel m·ximo: %d"
 END
 
 TOOLTIP:MaxHealth
@@ -2485,11 +2485,11 @@ TOOLTIP:MaxHealth
 END
 
 TOOLTIP:MeleeDamage
-"Da√±o cuerpo a cuerpo: %d"
+"DaÒo cuerpo a cuerpo: %d"
 END
 
 TOOLTIP:RangedDamage
-"Da√±o a distancia: %d"
+"DaÒo a distancia: %d"
 END
 
 TOOLTIP:BattlesFought
@@ -2517,7 +2517,7 @@ TOOLTIP:StartWorldBuilder
 END
 
 TOOLTIP:GetUpdate
-"Descargar actualizaci√≥n del juego"
+"Descargar actualizaciÛn del juego"
 END
 
 TOOLTIP:DownloadProgress
@@ -2529,15 +2529,15 @@ TOOLTIP:GetMapPack
 END
 
 TOOLTIP:Skirmish
-"Ingresar al men√∫ de configuraci√≥n de Escaramuza"
+"Ingresar al men˙ de configuraciÛn de Escaramuza"
 END
 
 TOOLTIP:Online
-"Haga clic para unirse a The Lord of the Rings, The Rise of the Witch-king Online. ¬°Ponga a prueba sus habilidades contra oponentes de todo el mundo!"
+"Haga clic para unirse a The Lord of the Rings, The Rise of the Witch-king Online. °Ponga a prueba sus habilidades contra oponentes de todo el mundo!"
 END
 
 TOOLTIP:Network
-"Haga clic para unirse al Lobby de Red. ¬°Ponga a prueba su habilidad contra sus amigos en una Red de √Årea Local"
+"Haga clic para unirse al Lobby de Red. °Ponga a prueba su habilidad contra sus amigos en una Red de ¡rea Local"
 END
 
 TOOLTIP:Options
@@ -2557,7 +2557,7 @@ TOOLTIP:LoadGame
 END
 
 TOOLTIP:MapPreviewWindow
-"Las vistas previas del mapa pueden darle una ventaja en la batalla por venir. Aseg√∫rese de buscar sus Docks de Suministro y Edificios Tecnol√≥gicos. Tambi√©n puede elegir su punto de partida"
+"Las vistas previas del mapa pueden darle una ventaja en la batalla por venir. Aseg˙rese de buscar sus Docks de Suministro y Edificios TecnolÛgicos. TambiÈn puede elegir su punto de partida"
 END
 
 TOOLTIP:SaveGame
@@ -2565,7 +2565,7 @@ TOOLTIP:SaveGame
 END
 
 TOOLTIP:AcceptButton
-"Aceptar su elecci√≥n actual"
+"Aceptar su elecciÛn actual"
 END
 
 TOOLTIP:CopyReplayToDesktop
@@ -2577,7 +2577,7 @@ TOOLTIP:ProviderType
 END
 
 TOOLTIP:SpeakerType
-"Seleccionar su Configuraci√≥n de Altavoces"
+"Seleccionar su ConfiguraciÛn de Altavoces"
 END
 
 TOOLTIP:LANPlayer
@@ -2585,19 +2585,19 @@ TOOLTIP:LANPlayer
 END
 
 TOOLTIP:Resolution
-"Elija una resoluci√≥n de pantalla para su juego. Cuanto mayor sea la resoluci√≥n, m√°s lento ser√° su juego"
+"Elija una resoluciÛn de pantalla para su juego. Cuanto mayor sea la resoluciÛn, m·s lento ser· su juego"
 END
 
 TOOLTIP:CommandCategory
-"Elija una categor√≠a de comando de teclado"
+"Elija una categorÌa de comando de teclado"
 END
 
 TOOLTIP:CommandDescription
-"La descripci√≥n de su comando seleccionado"
+"La descripciÛn de su comando seleccionado"
 END
 
 TOOLTIP:StartPosition
-"Posici√≥n inicial"
+"PosiciÛn inicial"
 END
 
 TOOLTIP:SelectMap
@@ -2609,7 +2609,7 @@ TOOLTIP:NumberOfVotes
 END
 
 TOOLTIP:QuitMultiplayerGame
-"Salir a los men√∫s del juego"
+"Salir a los men˙s del juego"
 END
 
 TOOLTIP:RestartGame
@@ -2621,7 +2621,7 @@ TOOLTIP:Help
 END
 
 TOOLTIP:StartLocation
-"Posici√≥n de inicio"
+"PosiciÛn de inicio"
 END
 
 TOOLTIP:ReturnToGame
@@ -2629,7 +2629,7 @@ TOOLTIP:ReturnToGame
 END
 
 TOOLTIP:CommandList
-"Comandos disponibles para la categor√≠a actual"
+"Comandos disponibles para la categorÌa actual"
 END
 
 TOOLTIP:CurrentHotkey
@@ -2637,11 +2637,11 @@ TOOLTIP:CurrentHotkey
 END
 
 TOOLTIP:AssignHotkey
-"Ingrese su nuevo Hotkey de comando aqu√≠"
+"Ingrese su nuevo Hotkey de comando aquÌ"
 END
 
 TOOLTIP:AssignHotkeyCurrent
-"El comando al que este Hotkey est√° actualmente asignado"
+"El comando al que este Hotkey est· actualmente asignado"
 END
 
 TOOLTIP:AssignButton
@@ -2653,27 +2653,27 @@ TOOLTIP:ResetAll
 END
 
 TOOLTIP:BackButton
-"Volver al men√∫ anterior"
+"Volver al men˙ anterior"
 END
 
 TOOLTIP:ProviderSelect
-"Seleccionar el Proveedor de Audio 3D. El juego ya ha elegido su configuraci√≥n √≥ptima, pero puede cambiarla manualmente si lo prefiere"
+"Seleccionar el Proveedor de Audio 3D. El juego ya ha elegido su configuraciÛn Ûptima, pero puede cambiarla manualmente si lo prefiere"
 END
 
 TOOLTIP:SpeakerSelect
-"Seleccionar su configuraci√≥n de altavoces. El juego ya ha elegido su configuraci√≥n √≥ptima, pero puede cambiarla manualmente si lo prefiere"
+"Seleccionar su configuraciÛn de altavoces. El juego ya ha elegido su configuraciÛn Ûptima, pero puede cambiarla manualmente si lo prefiere"
 END
 
 TOOLTIP:DontUseAccount
-"Iniciar sesi√≥n sin usar su cuenta de The Lord of the Rings, The Rise of the Witch-king Online"
+"Iniciar sesiÛn sin usar su cuenta de The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 TOOLTIP:CommunicatorButton
-"Contactar a sus compa√±eros"
+"Contactar a sus compaÒeros"
 END
 
 TOOLTIP:SortBuddies
-"Ordenar Compa√±eros en la parte superior de la lista de juegos"
+"Ordenar CompaÒeros en la parte superior de la lista de juegos"
 END
 
 TOOLTIP:PingButton
@@ -2697,11 +2697,11 @@ TOOLTIP:CreateAccount
 END
 
 TOOLTIP:TOS
-"Ver el acuerdo de T√©rminos de Servicio"
+"Ver el acuerdo de TÈrminos de Servicio"
 END
 
 TOOLTIP:RememberInfo
-"Recordar informaci√≥n de inicio de sesi√≥n. No recomendado para computadores con m√∫ltiples usuarios"
+"Recordar informaciÛn de inicio de sesiÛn. No recomendado para computadores con m˙ltiples usuarios"
 END
 
 TOOLTIP:Back
@@ -2713,7 +2713,7 @@ TOOLTIP:ProgressToNextRank
 END
 
 TOOLTIP:SetLocale
-"Cambiar su selecci√≥n de idioma actual"
+"Cambiar su selecciÛn de idioma actual"
 END
 
 TOOLTIP:DeleteAccount
@@ -2721,19 +2721,19 @@ TOOLTIP:DeleteAccount
 END
 
 APT:ReplayMissionBttn
-"REPRISAR MISI√ìN"
+"REPRISAR MISI”N"
 END
 
 APT:NextMissionBttn
-"PR√ìXIMA MISI√ìN"
+"PR”XIMA MISI”N"
 END
 
 APT:CampaignNextMission
-"Pr√≥xima misi√≥n:"
+"PrÛxima misiÛn:"
 END
 
 APT:CampaignFailedMission
-"Misi√≥n fallida:"
+"MisiÛn fallida:"
 END
 
 GUI:RestartMission
@@ -2761,19 +2761,19 @@ GUI:InsertCDMessage
 END
 
 GUI:Credits
-"CR√âDITOS"
+"CR…DITOS"
 END
 
 GUI:AreYouSureDeleteAccount
-"¬øEst√° seguro de que desea eliminar permanentemente su cuenta y todas sus estad√≠sticas guardadas?"
+"øEst· seguro de que desea eliminar permanentemente su cuenta y todas sus estadÌsticas guardadas?"
 END
 
 GUI:NonAsianText
-"Texto no asi√°tico"
+"Texto no asi·tico"
 END
 
 GUI:AsianText
-"Texto asi√°tico"
+"Texto asi·tico"
 END
 
 GUI:DeleteAccount
@@ -2785,7 +2785,7 @@ GUI:SetLocale
 END
 
 GUI:Side
-"Ej√©rcito"
+"EjÈrcito"
 END
 
 GUI:WinLoss
@@ -2793,7 +2793,7 @@ GUI:WinLoss
 END
 
 GUI:FavSide
-"Ej√©rcito favorito"
+"EjÈrcito favorito"
 END
 
 GUI:Discons
@@ -2813,7 +2813,7 @@ GUI:GainRank
 END
 
 GUI:TotalBuddys
-"Total de compa√±eros"
+"Total de compaÒeros"
 END
 
 GUI:PlayerStatistics
@@ -2849,7 +2849,7 @@ GUI:FavoriteUnit
 END
 
 GUI:FavoriteSide
-"Ej√©rcito favorito"
+"EjÈrcito favorito"
 END
 
 GUI:CareerWins
@@ -2905,7 +2905,7 @@ END
 END
 
 GUI:LastLadder
-"√öltima liga"
+"⁄ltima liga"
 END
 
 GUI:GamesPlayed
@@ -2913,15 +2913,15 @@ GUI:GamesPlayed
 END
 
 GUI:TOS
-"T√âRMINOS DE SERVICIO"
+"T…RMINOS DE SERVICIO"
 END
 
 GUI:RememberInfo
-"Recordar mi informaci√≥n"
+"Recordar mi informaciÛn"
 END
 
 GUI:HostWantsToStart
-"El anfitri√≥n quiere comenzar. Presione el bot√≥n Aceptar."
+"El anfitriÛn quiere comenzar. Presione el botÛn Aceptar."
 END
 
 GUI:PlayerNoMap
@@ -2933,11 +2933,11 @@ GUI:LocalPlayerNoMap
 END
 
 GUI:PlayerNoMapWillTransfer
-"%ls no tiene el mapa %ls. Se transferir√° al inicio del juego."
+"%ls no tiene el mapa %ls. Se transferir· al inicio del juego."
 END
 
 GUI:LocalPlayerNoMapWillTransfer
-"Usted no tiene el mapa %ls. Se le transferir√° al inicio del juego."
+"Usted no tiene el mapa %ls. Se le transferir· al inicio del juego."
 END
 
 GUI:CouldNotTransferMap
@@ -2945,7 +2945,7 @@ GUI:CouldNotTransferMap
 END
 
 GUI:CouldNotTransferHero
-"No se pudieron transferir los datos del H√©roe. El juego no puede comenzar."
+"No se pudieron transferir los datos del HÈroe. El juego no puede comenzar."
 END
 
 GUI:Status
@@ -2981,19 +2981,19 @@ MapTransfer:Done
 END
 
 GUI:NeedMorePlayers
-"Necesita m√°s jugador(es) para comenzar el juego"
+"Necesita m·s jugador(es) para comenzar el juego"
 END
 
 GUI:NotifiedStartIntent
-"El anfitri√≥n quiere comenzar el juego pero no puede porque uno o m√°s jugadores no est√°n listos!"
+"El anfitriÛn quiere comenzar el juego pero no puede porque uno o m·s jugadores no est·n listos!"
 END
 
 GUI:HostLeftTitle
-"EL ANFITRI√ìN HA SALIDO"
+"EL ANFITRI”N HA SALIDO"
 END
 
 GUI:WidenSearch
-"AMPLIAR B√öSQUEDA"
+"AMPLIAR B⁄SQUEDA"
 END
 
 GUI:QMAborted
@@ -3025,7 +3025,7 @@ GUI:LobbyJoined
 END
 
 GUI:Email
-"Correo electr√≥nico"
+"Correo electrÛnico"
 END
 
 GUI:NoLadder
@@ -3041,11 +3041,11 @@ GUI:UnknownLadder
 END
 
 GUI:WOLLogin
-"INICIO DE SESI√ìN DE THE LORD OF THE RINGS, THE RISE OF THE WITCH-KING ONLINE"
+"INICIO DE SESI”N DE THE LORD OF THE RINGS, THE RISE OF THE WITCH-KING ONLINE"
 END
 
 GUI:PleaseEnterWOLInfo
-"Por favor ingrese su informaci√≥n"
+"Por favor ingrese su informaciÛn"
 END
 
 GUI:Username
@@ -3053,7 +3053,7 @@ GUI:Username
 END
 
 GUI:Password
-"Contrase√±a"
+"ContraseÒa"
 END
 
 GUI:Server
@@ -3061,15 +3061,15 @@ GUI:Server
 END
 
 GUI:AutoLogin
-"Iniciar sesi√≥n autom√°ticamente en el futuro"
+"Iniciar sesiÛn autom·ticamente en el futuro"
 END
 
 GUI:RememberPassword
-"Recordar mi contrase√±a"
+"Recordar mi contraseÒa"
 END
 
 GUI:Login
-"INICIAR SESI√ìN"
+"INICIAR SESI”N"
 END
 
 GUI:CreateAccount
@@ -3081,7 +3081,7 @@ GUI:TryAgain
 END
 
 GUI:QuickMatch
-"PARTIDA R√ÅPIDA"
+"PARTIDA R¡PIDA"
 END
 
 GUI:DisplayOptions
@@ -3093,7 +3093,7 @@ GUI:AudioOptions
 END
 
 GUI:AudioHardware
-"Audio con aceleraci√≥n por hardware"
+"Audio con aceleraciÛn por hardware"
 END
 
 GUI:AudioSurround
@@ -3101,7 +3101,7 @@ GUI:AudioSurround
 END
 
 TOOLTIP:CheckAudioHardware
-"Marcar esta casilla para activar la aceleraci√≥n por hardware para el audio"
+"Marcar esta casilla para activar la aceleraciÛn por hardware para el audio"
 END
 
 TOOLTIP:AudioSurround
@@ -3113,7 +3113,7 @@ GUI:NetworkOptions
 END
 
 GUI:SocketError
-"Error al comunicarse con la red, verifique su conexi√≥n."
+"Error al comunicarse con la red, verifique su conexiÛn."
 END
 
 GUI:NetworkError
@@ -3137,39 +3137,39 @@ GUI:LoadSave
 END
 
 APT:GoodCampaign
-"BUENA CAMPA√ëA"
+"BUENA CAMPA—A"
 END
 
 GUI:GoodCampaign
-"Campa√±a del Bien"
+"CampaÒa del Bien"
 END
 
 APT:EvilCampaign
-"MALA CAMPA√ëA"
+"MALA CAMPA—A"
 END
 
 GUI:EvilCampaign
-"Campa√±a del Mal"
+"CampaÒa del Mal"
 END
 
 APT:ContinueCampaign
-"CONTINUAR CAMPA√ëA"
+"CONTINUAR CAMPA—A"
 END
 
 APT:LoadCampaign
-"CARGAR CAMPA√ëA"
+"CARGAR CAMPA—A"
 END
 
 CAMPAIGN:GOOD
-"Campa√±a del Bien"
+"CampaÒa del Bien"
 END
 
 CAMPAIGN:EVIL
-"Campa√±a del Mal"
+"CampaÒa del Mal"
 END
 
 APT:GameHost
-"ANFITRI√ìN DEL JUEGO"
+"ANFITRI”N DEL JUEGO"
 END
 
 GUI:FirewallPopUpTitle
@@ -3177,7 +3177,7 @@ GUI:FirewallPopUpTitle
 END
 
 GUI:FirewallPopUpMessage
-"Esta computadora tiene el firewall de Windows XP SP2 habilitado. Se debe agregar una entrada a la lista de excepciones del firewall para jugar The Lord of the Rings, The Rise of the Witch-king. ¬øDesea que el juego agregue esta entrada autom√°ticamente?"
+"Esta computadora tiene el firewall de Windows XP SP2 habilitado. Se debe agregar una entrada a la lista de excepciones del firewall para jugar The Lord of the Rings, The Rise of the Witch-king. øDesea que el juego agregue esta entrada autom·ticamente?"
 END
 
 GUI:FirewallNoAdminTitle
@@ -3189,7 +3189,7 @@ GUI:ValidateDisplayModeTitle
 END
 
 GUI:ValidateDisplayModeMessage
-"¬øDesea mantener el modo de pantalla actual?\nEl modo de pantalla se revertir√° autom√°ticamente en 10 segundos"
+"øDesea mantener el modo de pantalla actual?\nEl modo de pantalla se revertir· autom·ticamente en 10 segundos"
 END
 
 GUI:SaveTime
@@ -3205,7 +3205,7 @@ GUI:Help
 END
 
 GUI:HelpDescription
-"Mostrar di√°logo de ayuda"
+"Mostrar di·logo de ayuda"
 END
 
 GUI:ReturnToGame
@@ -3269,7 +3269,7 @@ GUI:AllTimeDisconnects
 END
 
 GUI:HighestRank
-"Rango m√°s alto de todos los tiempos"
+"Rango m·s alto de todos los tiempos"
 END
 
 GUI:Honor
@@ -3277,7 +3277,7 @@ GUI:Honor
 END
 
 GUI:LastUpdated
-"Perfil del jugador actualizado por √∫ltima vez"
+"Perfil del jugador actualizado por ˙ltima vez"
 END
 
 GUI:WOLIconKey
@@ -3297,7 +3297,7 @@ GUI:Buddies
 END
 
 GUI:BuddiesTab
-"Compa√±eros"
+"CompaÒeros"
 END
 
 GUI:Community
@@ -3309,11 +3309,11 @@ GUI:SortAlpha
 END
 
 GUI:SortPing
-"Conexi√≥n"
+"ConexiÛn"
 END
 
 GUI:SortBuddies
-"Compa√±eros"
+"CompaÒeros"
 END
 
 GUI:GSRank0
@@ -3361,15 +3361,15 @@ GUI:GSErrorTitle
 END
 
 GUI:GSNoLoginInfoAll
-"Por favor ingrese su correo electr√≥nico, apodo y contrase√±a. Luego, haga clic en Iniciar sesi√≥n o Crear cuenta."
+"Por favor ingrese su correo electrÛnico, apodo y contraseÒa. Luego, haga clic en Iniciar sesiÛn o Crear cuenta."
 END
 
 GUI:GSNoLoginInfoEmailNickname
-"Por favor ingrese su correo electr√≥nico y apodo. Luego, haga clic en Iniciar sesi√≥n o Crear cuenta."
+"Por favor ingrese su correo electrÛnico y apodo. Luego, haga clic en Iniciar sesiÛn o Crear cuenta."
 END
 
 GUI:GSNoLoginInfoEmailPassword
-"Por favor ingrese su correo electr√≥nico y contrase√±a. Luego, haga clic en Iniciar sesi√≥n o Crear cuenta."
+"Por favor ingrese su correo electrÛnico y contraseÒa. Luego, haga clic en Iniciar sesiÛn o Crear cuenta."
 END
 
 GUI:Any
@@ -3377,19 +3377,19 @@ GUI:Any
 END
 
 GUI:GSNoLoginInfoNicknamePassword
-"Por favor ingrese su apodo y contrase√±a. Luego, haga clic en Iniciar sesi√≥n."
+"Por favor ingrese su apodo y contraseÒa. Luego, haga clic en Iniciar sesiÛn."
 END
 
 GUI:GSNoLoginInfoEmail
-"Por favor ingrese su correo electr√≥nico. Luego, haga clic en Iniciar sesi√≥n o Crear cuenta."
+"Por favor ingrese su correo electrÛnico. Luego, haga clic en Iniciar sesiÛn o Crear cuenta."
 END
 
 GUI:GSNoLoginInfoNickname
-"Por favor ingrese su apodo. Luego, haga clic en Iniciar sesi√≥n o Crear cuenta."
+"Por favor ingrese su apodo. Luego, haga clic en Iniciar sesiÛn o Crear cuenta."
 END
 
 GUI:GSNoLoginInfoPassword
-"Por favor ingrese su contrase√±a. Luego, haga clic en Iniciar sesi√≥n."
+"Por favor ingrese su contraseÒa. Luego, haga clic en Iniciar sesiÛn."
 END
 
 GUI:GSDisconnected
@@ -3397,15 +3397,15 @@ GUI:GSDisconnected
 END
 
 GUI:GSDisconReason1
-"Ese apodo ya est√° en uso. Por favor elija otro"
+"Ese apodo ya est· en uso. Por favor elija otro"
 END
 
 GUI:GSDisconReason2
-"Ese apodo es inv√°lido. Por favor elija otro"
+"Ese apodo es inv·lido. Por favor elija otro"
 END
 
 GUI:GSDisconReason3
-"Se perdi√≥ la conexi√≥n con The Lord of the Rings, The Battle for Middle-earth II, The Rise of the Witch-king Online."
+"Se perdiÛ la conexiÛn con The Lord of the Rings, The Battle for Middle-earth II, The Rise of the Witch-king Online."
 END
 
 GUI:GSDisconReason4
@@ -3413,19 +3413,19 @@ GUI:GSDisconReason4
 END
 
 GUI:GSDisconReason5
-"El proceso de inicio de sesi√≥n ha expirado. Por favor verifique su conexi√≥n a Internet"
+"El proceso de inicio de sesiÛn ha expirado. Por favor verifique su conexiÛn a Internet"
 END
 
 GUI:GSDisconReason6
-"Esa combinaci√≥n de apodo/correo electr√≥nico no existe. Si desea crear una cuenta, haga clic en Crear cuenta."
+"Esa combinaciÛn de apodo/correo electrÛnico no existe. Si desea crear una cuenta, haga clic en Crear cuenta."
 END
 
 GUI:GSDisconReason7
-"Ese correo electr√≥nico es inv√°lido"
+"Ese correo electrÛnico es inv·lido"
 END
 
 GUI:GSDisconReason8
-"Esa contrase√±a es incorrecta. Por favor intente de nuevo."
+"Esa contraseÒa es incorrecta. Por favor intente de nuevo."
 END
 
 GUI:GSDisconReason9
@@ -3437,23 +3437,23 @@ GUI:GSDisconReason10
 END
 
 GUI:GSDisconReason11
-"La conexi√≥n al servidor de compa√±eros fue rechazada"
+"La conexiÛn al servidor de compaÒeros fue rechazada"
 END
 
 GUI:GSDisconReason12
-"La autorizaci√≥n del servidor de compa√±eros fall√≥"
+"La autorizaciÛn del servidor de compaÒeros fallÛ"
 END
 
 GUI:GSDisconReason13
-"El n√∫mero de serie es inv√°lido. Por favor intente con otro"
+"El n˙mero de serie es inv·lido. Por favor intente con otro"
 END
 
 GUI:GSDisconReason14
-"El registro est√° corrupto y ha sido modificado"
+"El registro est· corrupto y ha sido modificado"
 END
 
 GUI:GSDisconReason15
-"El n√∫mero de serie est√° baneado."
+"El n˙mero de serie est· baneado."
 END
 
 GUI:GSDisconReason16
@@ -3461,7 +3461,7 @@ GUI:GSDisconReason16
 END
 
 GUI:GSDisconReason17
-"La contrase√±a es incorrecta. Por favor intente de nuevo"
+"La contraseÒa es incorrecta. Por favor intente de nuevo"
 END
 
 GUI:GSDisconReason18
@@ -3473,63 +3473,63 @@ GUI:GSDisconReason19
 END
 
 GUI:GSDisconReason20
-"La conexi√≥n fue cerrada. Por favor intente de nuevo."
+"La conexiÛn fue cerrada. Por favor intente de nuevo."
 END
 
 GUI:GSDisconReason21
-"Se perdi√≥ la conexi√≥n con The Lord of the Rings, The Rise of the Witch-king, debido a una cuenta duplicada (mismo cd-key)."
+"Se perdiÛ la conexiÛn con The Lord of the Rings, The Rise of the Witch-king, debido a una cuenta duplicada (mismo cd-key)."
 END
 
 GUI:GSGroupRoomJoinFail
-"Error al unirse al chat - la sala est√° llena"
+"Error al unirse al chat - la sala est· llena"
 END
 
 GUI:GSBuddyInviteFailedTitle
-"La invitaci√≥n de compa√±ero expir√≥"
+"La invitaciÛn de compaÒero expirÛ"
 END
 
 GUI:GSBuddyInviteFailed
-"No se pudo encontrar el juego desde la invitaci√≥n de compa√±ero."
+"No se pudo encontrar el juego desde la invitaciÛn de compaÒero."
 END
 
 GUI:GSGPDisconReason0
-"Ocurri√≥ un error de conexi√≥n desconocido. Por favor intente de nuevo."
+"OcurriÛ un error de conexiÛn desconocido. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason1
-"Ocurri√≥ un error de an√°lisis. Por favor intente de nuevo."
+"OcurriÛ un error de an·lisis. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason2
-"Actualmente no ha iniciado sesi√≥n. Por favor intente de nuevo."
+"Actualmente no ha iniciado sesiÛn. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason3
-"Clave de sesi√≥n incorrecta. Por favor intente de nuevo."
+"Clave de sesiÛn incorrecta. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason4
-"Ocurri√≥ un error de base de datos. Por favor intente de nuevo."
+"OcurriÛ un error de base de datos. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason5
-"Ocurri√≥ un error de red. Por favor intente de nuevo."
+"OcurriÛ un error de red. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason6
-"Hubo una desconexi√≥n forzada. Por favor intente de nuevo."
+"Hubo una desconexiÛn forzada. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason7
-"La conexi√≥n fue cerrada. Por favor intente de nuevo."
+"La conexiÛn fue cerrada. Por favor intente de nuevo."
 END
 
 GUI:GSGPDisconReason256
-"Error de inicio de sesi√≥n desconocido."
+"Error de inicio de sesiÛn desconocido."
 END
 
 GUI:GSGPDisconReason258
-"Apodo incorrecto. Este apodo no est√° asociado con esta cuenta de correo electr√≥nico."
+"Apodo incorrecto. Este apodo no est· asociado con esta cuenta de correo electrÛnico."
 END
 
 GUI:GSGPDisconReason259
@@ -3537,7 +3537,7 @@ GUI:GSGPDisconReason259
 END
 
 GUI:GSGPDisconReason260
-"Contrase√±a incorrecta. Por favor ingrese la contrase√±a correcta asociada a esta cuenta."
+"ContraseÒa incorrecta. Por favor ingrese la contraseÒa correcta asociada a esta cuenta."
 END
 
 GUI:GSGPDisconReason261
@@ -3545,23 +3545,23 @@ GUI:GSGPDisconReason261
 END
 
 GUI:GSGPDisconReason262
-"El perfil de inicio de sesi√≥n fue eliminado."
+"El perfil de inicio de sesiÛn fue eliminado."
 END
 
 GUI:GSGPDisconReason263
-"La conexi√≥n fall√≥."
+"La conexiÛn fallÛ."
 END
 
 GUI:GSGPDisconReason264
-"La autenticaci√≥n del servidor de inicio de sesi√≥n fall√≥."
+"La autenticaciÛn del servidor de inicio de sesiÛn fallÛ."
 END
 
 GUI:GSGPDisconReason265
-"Apodo √∫nico incorrecto. No existe para esta cuenta."
+"Apodo ˙nico incorrecto. No existe para esta cuenta."
 END
 
 GUI:GSGPDisconReason266
-"Pre-autenticaci√≥n incorrecta."
+"Pre-autenticaciÛn incorrecta."
 END
 
 GUI:GSGPDisconReason512
@@ -3569,27 +3569,27 @@ GUI:GSGPDisconReason512
 END
 
 GUI:GSGPDisconReason513
-"Error de nuevo usuario: Apodo inv√°lido. Intente de nuevo."
+"Error de nuevo usuario: Apodo inv·lido. Intente de nuevo."
 END
 
 GUI:GSGPDisconReason514
-"Error de nuevo usuario: Contrase√±a inv√°lida. Intente de nuevo."
+"Error de nuevo usuario: ContraseÒa inv·lida. Intente de nuevo."
 END
 
 GUI:GSGPDisconReason515
-"Error de nuevo usuario: El apodo √∫nico es inv√°lido. Intente con algo diferente."
+"Error de nuevo usuario: El apodo ˙nico es inv·lido. Intente con algo diferente."
 END
 
 GUI:GSGPDisconReason516
-"Error de nuevo usuario: El apodo √∫nico ya est√° en uso. Intente con algo diferente."
+"Error de nuevo usuario: El apodo ˙nico ya est· en uso. Intente con algo diferente."
 END
 
 GUI:JoinFailedRoomFull
-"Error al unirse - la sala est√° llena"
+"Error al unirse - la sala est· llena"
 END
 
 GUI:JoinFailedInviteOnly
-"Error al unirse - la sala es solo por invitaci√≥n"
+"Error al unirse - la sala es solo por invitaciÛn"
 END
 
 GUI:JoinFailedBannedFromRoom
@@ -3597,19 +3597,19 @@ GUI:JoinFailedBannedFromRoom
 END
 
 GUI:JoinFailedBadPassword
-"Error al unirse - contrase√±a incorrecta"
+"Error al unirse - contraseÒa incorrecta"
 END
 
 GUI:JoinFailedAlreadyInRoom
-"Error al unirse - ya est√° en una sala"
+"Error al unirse - ya est· en una sala"
 END
 
 GUI:JoinFailedNoConnection
-"Error al unirse - sin conexi√≥n al servidor de chat"
+"Error al unirse - sin conexiÛn al servidor de chat"
 END
 
 GUI:JoinFailedCRCMismatch
-"Error al unirse - el juego es una versi√≥n diferente"
+"Error al unirse - el juego es una versiÛn diferente"
 END
 
 GUI:JoinFailedUnknownLadder
@@ -3617,7 +3617,7 @@ GUI:JoinFailedUnknownLadder
 END
 
 GUI:JoinFailedGameInPlay
-"Error al unirse - el juego ya est√° en curso"
+"Error al unirse - el juego ya est· en curso"
 END
 
 GUI:JoinFailedGeneralError
@@ -3641,31 +3641,31 @@ GUI:GSKickedGameStarted
 END
 
 GUI:GSKickedGameFull
-"El juego est√° lleno."
+"El juego est· lleno."
 END
 
 GUI:GSFailedToHost
-"No se pudo ser anfitri√≥n del juego"
+"No se pudo ser anfitriÛn del juego"
 END
 
 GUI:NATNegotiationFailed
-"The Lord of the Rings, The Rise of the Witch-king no puede conectarse con otros jugadores. Si el problema persiste y tiene un dispositivo NAT o firewall:\n Haga clic en el bot√≥n Actualizar NAT en el men√∫ de opciones. Si tiene un dispositivo DLink, haga clic en el bot√≥n Retardo de env√≠o en el men√∫ de opciones. Si a√∫n no puede conectarse, considere abrir un puerto en su firewall. Consulte el manual y el readme para m√°s detalles."
+"The Lord of the Rings, The Rise of the Witch-king no puede conectarse con otros jugadores. Si el problema persiste y tiene un dispositivo NAT o firewall:\n Haga clic en el botÛn Actualizar NAT en el men˙ de opciones. Si tiene un dispositivo DLink, haga clic en el botÛn Retardo de envÌo en el men˙ de opciones. Si a˙n no puede conectarse, considere abrir un puerto en su firewall. Consulte el manual y el readme para m·s detalles."
 END
 
 GUI:GPErrorTitle
-"ERROR DE COMPA√ëERO"
+"ERROR DE COMPA—ERO"
 END
 
 GUI:GPNoCommunicator
-"El comunicador no est√° disponible en la prueba multijugador."
+"El comunicador no est· disponible en la prueba multijugador."
 END
 
 GUI:GPDisconnected
-"Ha sido desconectado del servidor de compa√±eros. ¬øDesea reconectarse?"
+"Ha sido desconectado del servidor de compaÒeros. øDesea reconectarse?"
 END
 
 GUI:GPNoProfile
-"No ha iniciado sesi√≥n con un perfil. No hay informaci√≥n de compa√±eros disponible."
+"No ha iniciado sesiÛn con un perfil. No hay informaciÛn de compaÒeros disponible."
 END
 
 GUI:PSErrorTitle
@@ -3681,19 +3681,19 @@ GUI:Error
 END
 
 GUI:EREGError
-"No se encontr√≥ la aplicaci√≥n de registro de EA en el directorio de instalaci√≥n. El registro es necesario para jugar en l√≠nea."
+"No se encontrÛ la aplicaciÛn de registro de EA en el directorio de instalaciÛn. El registro es necesario para jugar en lÌnea."
 END
 
 GUI:RuleChangeWarning
-"El anfitri√≥n del juego ha cambiado la siguiente regla:"
+"El anfitriÛn del juego ha cambiado la siguiente regla:"
 END
 
 GUI:RuleResetWarning
-"El anfitri√≥n del juego ha restablecido las reglas a sus valores predeterminados"
+"El anfitriÛn del juego ha restablecido las reglas a sus valores predeterminados"
 END
 
 Buddy:MatchingNotification
-"%hs est√° jugando Torneo"
+"%hs est· jugando Torneo"
 END
 
  
@@ -3713,11 +3713,11 @@ Buddy:Offline
 END
 
 Buddy:CantTalkToIngameBuddy
-"No puede enviar mensajes a compa√±eros mientras observa."
+"No puede enviar mensajes a compaÒeros mientras observa."
 END
 
 Buddy:Online
-"En l√≠nea"
+"En lÌnea"
 END
 
 Buddy:Chatting
@@ -3725,7 +3725,7 @@ Buddy:Chatting
 END
 
 Buddy:Staging
-"En preparaci√≥n"
+"En preparaciÛn"
 END
 
 Buddy:Loading
@@ -3741,15 +3741,15 @@ Buddy:Matching
 END
 
 Buddy:Disconnected
-"Ha sido desconectado\n de la lista de compa√±eros."
+"Ha sido desconectado\n de la lista de compaÒeros."
 END
 
 Buddy:MultipleOnlineNotification
-"Tiene compa√±eros en l√≠nea"
+"Tiene compaÒeros en lÌnea"
 END
 
 Buddy:OnlineNotification
-"Ahora en l√≠nea"
+"Ahora en lÌnea"
 END
 
 Buddy:OfflineNotification
@@ -3765,19 +3765,19 @@ Buddy:MessageNotification
 END
 
 Buddy:MessageDisconnected
-"Ha sido desconectado\n de la lista de compa√±eros."
+"Ha sido desconectado\n de la lista de compaÒeros."
 END
 
 Buddy:SelectBuddyToChat
-"Seleccionar compa√±ero para chatear"
+"Seleccionar compaÒero para chatear"
 END
 
 Buddy:BuddyRequest
-"Solicitud de compa√±ero"
+"Solicitud de compaÒero"
 END
 
 Buddy:FriendRequestSent
-"%hs ha sido invitado a unirse a su lista de compa√±eros."
+"%hs ha sido invitado a unirse a su lista de compaÒeros."
 END
 
 GUI:Close
@@ -4001,7 +4001,7 @@ GUI:ResetHonors
 END
 
 QM:JOININGQMCHANNEL
-"Uni√©ndose al canal del torneo..."
+"UniÈndose al canal del torneo..."
 END
 
 QM:WORKING
@@ -4017,11 +4017,11 @@ QM:LOOKINGFORBOT
 END
 
 QM:SENTINFO
-"Informaci√≥n del juego enviada..."
+"InformaciÛn del juego enviada..."
 END
 
 QM:WIDENINGSEARCH
-"Ampliando b√∫squeda para encontrar oponentes cercanos a sus preferencias..."
+"Ampliando b˙squeda para encontrar oponentes cercanos a sus preferencias..."
 END
 
 QM:MATCHED
@@ -4053,7 +4053,7 @@ QM:COULDNOTNEGOTIATEFIREWALLS
 END
 
 QM:STOPPED
-"Partida r√°pida cancelada"
+"Partida r·pida cancelada"
 END
 
 QM:WaitingForPlayerToJoin
@@ -4065,7 +4065,7 @@ QM:FindingGameChannel
 END
 
 QM:JoinedGameChannel
-"Se uni√≥ al juego del oponente"
+"Se uniÛ al juego del oponente"
 END
 
 QM:PlayerJoined
@@ -4077,7 +4077,7 @@ QM:LookingForMatchChannel
 END
 
 QM:NoMatchChannel
-"No se encontr√≥ canal del torneo"
+"No se encontrÛ canal del torneo"
 END
 
 QM:JoinedMatchChannel
@@ -4093,7 +4093,7 @@ QM:GameNotFound
 END
 
 QM:TimeoutOtherPlayer
-"El torneo esper√≥ demasiado para que el oponente se uniera al juego"
+"El torneo esperÛ demasiado para que el oponente se uniera al juego"
 END
 
 GUI:SandboxMode
@@ -4109,15 +4109,15 @@ GUI:CannotConnectToServservTitle
 END
 
 GUI:PatchAvailable
-"ACTUALIZACI√ìN DISPONIBLE"
+"ACTUALIZACI”N DISPONIBLE"
 END
 
 GUI:MustPatchForOnline
-"Debe descargar la actualizaci√≥n para jugar The Lord of the Rings, The Rise of the Witch-king Online."
+"Debe descargar la actualizaciÛn para jugar The Lord of the Rings, The Rise of the Witch-king Online."
 END
 
 GUI:CanPatchForOnline
-"¬øDesea descargar la actualizaci√≥n?"
+"øDesea descargar la actualizaciÛn?"
 END
 
 GUI:CheckingForPatches
@@ -4133,11 +4133,11 @@ GUI:DownloadSuccessTitle
 END
 
 GUI:DownloadSuccess
-"La descarga se complet√≥ sin errores"
+"La descarga se completÛ sin errores"
 END
 
 GUI:DownloadSuccessMustQuit
-"Haga clic en OK para salir de The Lord of the Rings, The Rise of the Witch-king y aplicar la actualizaci√≥n"
+"Haga clic en OK para salir de The Lord of the Rings, The Rise of the Witch-king y aplicar la actualizaciÛn"
 END
 
 GUI:DownloadBytesRatio
@@ -4169,7 +4169,7 @@ FTP:CouldNotConnect
 END
 
 FTP:LoginFailed
-"Error de inicio de sesi√≥n"
+"Error de inicio de sesiÛn"
 END
 
 FTP:NoSuchFile
@@ -4185,7 +4185,7 @@ FTP:TCPError
 END
 
 FTP:DisconnectError
-"Error de desconexi√≥n"
+"Error de desconexiÛn"
 END
 
 FTP:StatusConnecting
@@ -4193,7 +4193,7 @@ FTP:StatusConnecting
 END
 
 FTP:StatusLoggingIn
-"Iniciando sesi√≥n"
+"Iniciando sesiÛn"
 END
 
 FTP:StatusFindingFile
@@ -4229,11 +4229,11 @@ WOL:InternalError
 END
 
 WOL:ServerBan
-"Lo sentimos, has sido baneado de The Lord of the Rings, The Rise of the Witch-king Online. Por favor revisa los T√©rminos del Servicio"
+"Lo sentimos, has sido baneado de The Lord of the Rings, The Rise of the Witch-king Online. Por favor revisa los TÈrminos del Servicio"
 END
 
 WOL:DisconnectedError
-"Lo sentimos, has sido baneado de The Lord of the Rings, The Rise of the Witch-king Online. Por favor revisa los T√©rminos del Servicio"
+"Lo sentimos, has sido baneado de The Lord of the Rings, The Rise of the Witch-king Online. Por favor revisa los TÈrminos del Servicio"
 END
 
 WOL:NoServers
@@ -4245,23 +4245,23 @@ WOL:LoginTimeout
 END
 
 WOL:NoMatchChannel
-"No se encontr√≥ canal de partida"
+"No se encontrÛ canal de partida"
 END
 
 WOL:NoMatchbot
-"No se encontr√≥ MatchMaker"
+"No se encontrÛ MatchMaker"
 END
 
 WOL:BadMatchParams
-"Par√°metros de partida incorrectos"
+"Par·metros de partida incorrectos"
 END
 
 WOL:ChatErrorNickInUse
-"Ese apodo ya est√° en uso"
+"Ese apodo ya est· en uso"
 END
 
 WOL:ChatErrorBadPass
-"Contrase√±a incorrecta para ese nombre"
+"ContraseÒa incorrecta para ese nombre"
 END
 
 WOL:ChatErrorNoneSuch
@@ -4269,15 +4269,15 @@ WOL:ChatErrorNoneSuch
 END
 
 WOL:ChatErrorConNetDown
-"La conexi√≥n de red est√° ca√≠da"
+"La conexiÛn de red est· caÌda"
 END
 
 WOL:ChatErrorConLookupFailed
-"Error de b√∫squeda DNS."
+"Error de b˙squeda DNS."
 END
 
 WOL:ChatErrorConError
-"Ocurri√≥ un error de red fatal"
+"OcurriÛ un error de red fatal"
 END
 
 WOL:ChatErrorTimeout
@@ -4285,7 +4285,7 @@ WOL:ChatErrorTimeout
 END
 
 WOL:ChatErrorMustPatch
-"Debes obtener la √∫ltima actualizaci√≥n antes de unirte a The Lord of the Rings, The Rise of the Witch-king Online"
+"Debes obtener la ˙ltima actualizaciÛn antes de unirte a The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 WOL:ChatErrorStatusError
@@ -4297,7 +4297,7 @@ WOL:ChatErrorUnknownResponse
 END
 
 WOL:ChatErrorChannelFull
-"El canal est√° lleno"
+"El canal est· lleno"
 END
 
 WOL:ChatErrorChannelExists
@@ -4309,15 +4309,15 @@ WOL:ChatErrorChannelDoesNotExist
 END
 
 WOL:ChatErrorBadChannelPassword
-"Contrase√±a de canal incorrecta"
+"ContraseÒa de canal incorrecta"
 END
 
 WOL:ChatErrorBanned
-"Lo sentimos, has sido baneado de The Lord of the Rings, The Rise of the Witch-king Online. Por favor revisa los T√©rminos del Servicio"
+"Lo sentimos, has sido baneado de The Lord of the Rings, The Rise of the Witch-king Online. Por favor revisa los TÈrminos del Servicio"
 END
 
 WOL:ChatErrorNotOper
-"No se puede realizar esa operaci√≥n"
+"No se puede realizar esa operaciÛn"
 END
 
 WOL:ChatErrorAccountDisabled
@@ -4325,19 +4325,19 @@ WOL:ChatErrorAccountDisabled
 END
 
 WOL:ChatErrorSerialBanned
-"Tu n√∫mero de serie ha sido baneado. Por favor revisa los T√©rminos del Servicio"
+"Tu n˙mero de serie ha sido baneado. Por favor revisa los TÈrminos del Servicio"
 END
 
 WOL:ChatErrorSerialDup
-"Tu n√∫mero de serie ya est√° en uso"
+"Tu n˙mero de serie ya est· en uso"
 END
 
 WOL:ChatErrorSerialUnknown
-"Tu n√∫mero de serie es inv√°lido"
+"Tu n˙mero de serie es inv·lido"
 END
 
 WOL:NetUtilErrorGeneric
-"Error gen√©rico de NetUtil"
+"Error genÈrico de NetUtil"
 END
 
 WOL:NetUtilErrorBusy
@@ -4349,7 +4349,7 @@ WOL:NetUtilErrorTimeout
 END
 
 WOL:NetUtilErrorInvalidField
-"Campo inv√°lido"
+"Campo inv·lido"
 END
 
 WOL:NetUtilErrorCantVerify
@@ -4373,7 +4373,7 @@ WOL:ErrorTitle
 END
 
 WOL:LoginErrorTitle
-"Error de inicio de sesi√≥n"
+"Error de inicio de sesiÛn"
 END
 
 WOL:CreatingChannel
@@ -4385,7 +4385,7 @@ WOL:ChannelClosed
 END
 
 WOL:BadChannelPassword
-"Contrase√±a de canal incorrecta"
+"ContraseÒa de canal incorrecta"
 END
 
 WOL:ChannelFull
@@ -4401,19 +4401,19 @@ WOL:CannotJoinChannel
 END
 
 WOL:NoWOLAPI
-"Los componentes compartidos de Internet no est√°n instalados."
+"Los componentes compartidos de Internet no est·n instalados."
 END
 
 WOL:OldWOLAPI
-"Los componentes compartidos de Internet deben actualizarse. Inst√°lalos desde el disco de The Lord of the Rings, The Rise of the Witch-king"
+"Los componentes compartidos de Internet deben actualizarse. Inst·lalos desde el disco de The Lord of the Rings, The Rise of the Witch-king"
 END
 
 WOL:BadRegistry
-"El registro de The Lord of the Rings, The Rise of the Witch-king est√° da√±ado"
+"El registro de The Lord of the Rings, The Rise of the Witch-king est· daÒado"
 END
 
 WOL:GotPing
-"Se recibi√≥ un ping de %d ms. Cuanto menor sea el ping, mejor ser√° la conexi√≥n"
+"Se recibiÛ un ping de %d ms. Cuanto menor sea el ping, mejor ser· la conexiÛn"
 END
 
 WOL:ServerListAndVersion
@@ -4421,7 +4421,7 @@ WOL:ServerListAndVersion
 END
 
 WOL:GettingPings
-"Obteniendo pings. Cuanto menor sea el ping, mejor ser√° la conexi√≥n"
+"Obteniendo pings. Cuanto menor sea el ping, mejor ser· la conexiÛn"
 END
 
 WOL:Connecting
@@ -4437,7 +4437,7 @@ WOL:LeftChannel
 END
 
 WOL:UserKicked
-"%ls expuls√≥ a %ls de %ls"
+"%ls expulsÛ a %ls de %ls"
 END
 
 WOL:BeginIgnoreList
@@ -4453,31 +4453,31 @@ WOL:EndIgnoreList
 END
 
 WOL:DownloadPatchNow
-"¬øQuieres descargar la actualizaci√≥n ahora?"
+"øQuieres descargar la actualizaciÛn ahora?"
 END
 
 WOL:FindInChannel
-"%ls est√° en %s"
+"%ls est· en %s"
 END
 
 WOL:FindInChannelOtherServer
-"%ls est√° en %s en %s"
+"%ls est· en %s en %s"
 END
 
 WOL:FindOffline
-"%ls no ha iniciado sesi√≥n"
+"%ls no ha iniciado sesiÛn"
 END
 
 WOL:FindHiding
-"%ls no responde a la b√∫squeda"
+"%ls no responde a la b˙squeda"
 END
 
 WOL:FindNotInChannel
-"%ls no est√° en un canal"
+"%ls no est· en un canal"
 END
 
 WOL:FindNotInChannelOtherServer
-"%ls est√° en %s"
+"%ls est· en %s"
 END
 
 WOL:Lob_49_0
@@ -4505,51 +4505,51 @@ WOL:UnknownChannel
 END
 
 WOL:BuddyOffline
-"%ls est√° desconectado"
+"%ls est· desconectado"
 END
 
 WOL:BuddyMatching
-"%ls est√° en un torneo de jugadores"
+"%ls est· en un torneo de jugadores"
 END
 
 WOL:BuddyNotInChan
-"%ls est√° conectado"
+"%ls est· conectado"
 END
 
 WOL:BuddyInGame
-"%ls est√° jugando una partida"
+"%ls est· jugando una partida"
 END
 
 WOL:BuddyInChat
-"%ls est√° chateando en %ls"
+"%ls est· chateando en %ls"
 END
 
 WOL:BuddyGameSetup
-"%ls est√° en %ls"
+"%ls est· en %ls"
 END
 
 WOL:BuddyMatchingOtherServer
-"%ls est√° jugando en %ls"
+"%ls est· jugando en %ls"
 END
 
 WOL:BuddyNotInChanOtherServer
-"%ls est√° conectado en %ls"
+"%ls est· conectado en %ls"
 END
 
 WOL:BuddyInGameOtherServer
-"%ls est√° jugando una partida en %ls"
+"%ls est· jugando una partida en %ls"
 END
 
 WOL:BuddyInChatOtherServer
-"%ls est√° chateando en %ls en %ls"
+"%ls est· chateando en %ls en %ls"
 END
 
 WOL:BuddyGameSetupOtherServer
-"%ls est√° en %ls en %ls"
+"%ls est· en %ls en %ls"
 END
 
 WOL:BuddyHiding
-"%ls est√° oculto"
+"%ls est· oculto"
 END
 
 WOL:Locale00
@@ -4557,7 +4557,7 @@ WOL:Locale00
 END
 
 WOL:Locale01
-"Otra ubicaci√≥n"
+"Otra ubicaciÛn"
 END
 
 WOL:Locale02
@@ -4573,7 +4573,7 @@ WOL:Locale04
 END
 
 WOL:Locale05
-"B√©lgica"
+"BÈlgica"
 END
 
 WOL:Locale06
@@ -4581,7 +4581,7 @@ WOL:Locale06
 END
 
 WOL:Locale07
-"Canad√°"
+"Canad·"
 END
 
 WOL:Locale08
@@ -4621,7 +4621,7 @@ WOL:Locale16
 END
 
 WOL:Locale17
-"Jap√≥n"
+"JapÛn"
 END
 
 WOL:Locale18
@@ -4633,11 +4633,11 @@ WOL:Locale19
 END
 
 WOL:Locale20
-"M√©xico"
+"MÈxico"
 END
 
 WOL:Locale21
-"Pa√≠ses Bajos"
+"PaÌses Bajos"
 END
 
 WOL:Locale22
@@ -4669,11 +4669,11 @@ WOL:Locale28
 END
 
 WOL:Locale29
-"Sud√°frica"
+"Sud·frica"
 END
 
 WOL:Locale30
-"Espa√±a"
+"EspaÒa"
 END
 
 WOL:Locale31
@@ -4685,7 +4685,7 @@ WOL:Locale32
 END
 
 WOL:Locale33
-"Taiw√°n"
+"Taiw·n"
 END
 
 WOL:Locale34
@@ -4693,7 +4693,7 @@ WOL:Locale34
 END
 
 WOL:Locale35
-"Turqu√≠a"
+"TurquÌa"
 END
 
 WOL:Locale36
@@ -4737,23 +4737,23 @@ LAN:GameStartTimerSingular
 END
 
 LAN:HostNotResponding
-"La partida termin√≥; el anfitri√≥n no respond√≠a."
+"La partida terminÛ; el anfitriÛn no respondÌa."
 END
 
 LAN:PlayerDropped
-"%ls sali√≥; el jugador no respond√≠a."
+"%ls saliÛ; el jugador no respondÌa."
 END
 
 LAN:NeedMorePlayers
-"Necesitas m√°s de %d jugador(es) para iniciar una partida."
+"Necesitas m·s de %d jugador(es) para iniciar una partida."
 END
 
 LAN:NeedMoreTeams
-"Necesitas m√°s de 1 equipo para iniciar una partida."
+"Necesitas m·s de 1 equipo para iniciar una partida."
 END
 
 LAN:TooManyPlayers
-"Este mapa admite como m√°ximo %d jugadores."
+"Este mapa admite como m·ximo %d jugadores."
 END
 
 LAN:OK
@@ -4765,11 +4765,11 @@ LAN:ErrorNoGameSelected
 END
 
 LAN:ErrorTimeout
-"Se agot√≥ el tiempo de conexi√≥n."
+"Se agotÛ el tiempo de conexiÛn."
 END
 
 LAN:ErrorGameFull
-"La partida est√° llena."
+"La partida est· llena."
 END
 
 LAN:ErrorDuplicateName
@@ -4777,11 +4777,11 @@ LAN:ErrorDuplicateName
 END
 
 LAN:ErrorCRCMismatch
-"La partida detect√≥ una discrepancia. Esto significa que la partida multijugador perdi√≥ datos de sincronizaci√≥n entre los jugadores. Es posible que tu oponente haya modificado su versi√≥n del juego."
+"La partida detectÛ una discrepancia. Esto significa que la partida multijugador perdiÛ datos de sincronizaciÛn entre los jugadores. Es posible que tu oponente haya modificado su versiÛn del juego."
 END
 
 LAN:ErrorGameStarted
-"Lo sentimos, esta partida ya comenz√≥."
+"Lo sentimos, esta partida ya comenzÛ."
 END
 
 LAN:ErrorGameExists
@@ -4789,11 +4789,11 @@ LAN:ErrorGameExists
 END
 
 LAN:ErrorGameGone
-"La partida ya comenz√≥"
+"La partida ya comenzÛ"
 END
 
 LAN:ErrorBusy
-"Hay otra operaci√≥n pendiente."
+"Hay otra operaciÛn pendiente."
 END
 
 LAN:ErrorUnknown
@@ -4805,15 +4805,15 @@ LAN:JoinFailed
 END
 
 LAN:HostCanceledGame
-"El anfitri√≥n cancel√≥ la cuenta regresiva."
+"El anfitriÛn cancelÛ la cuenta regresiva."
 END
 
 LAN:NoMapSelected
-"No se puede iniciar la partida. No se seleccion√≥ ning√∫n mapa."
+"No se puede iniciar la partida. No se seleccionÛ ning˙n mapa."
 END
 
 LAN:HostCanceledGameBecausePlayerLeave
-"La cuenta regresiva se detuvo porque un jugador abandon√≥ la partida."
+"La cuenta regresiva se detuvo porque un jugador abandonÛ la partida."
 END
 
 LAN:CountdownStoppedGeneric
@@ -4821,7 +4821,7 @@ LAN:CountdownStoppedGeneric
 END
 
 Network:PlayerLeft
-"%ls abandon√≥ la partida."
+"%ls abandonÛ la partida."
 END
 
 INI:MissingDisplayName
@@ -4829,7 +4829,7 @@ INI:MissingDisplayName
 END
 
 INI:FactionDefault
-"Ej√©rcito predeterminado"
+"EjÈrcito predeterminado"
 END
 
 INI:FactionObserver
@@ -4905,11 +4905,11 @@ SIDE:Observer
 END
 
 TOOLTIP:Skirmish/tooltipMordor
-"Estad√≠sticas generales acumuladas de Mordor"
+"EstadÌsticas generales acumuladas de Mordor"
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/tooltipRememberMe
-"Activa esta opci√≥n para recordar tu contrase√±a."
+"Activa esta opciÛn para recordar tu contraseÒa."
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/tooltipOnlineEAAccountName
@@ -4917,11 +4917,11 @@ TOOLTIP:OnlineShell/OnlineLogin/tooltipOnlineEAAccountName
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/tooltipOnlineNickname
-"Los apodos distinguen entre may√∫sculas y min√∫sculas"
+"Los apodos distinguen entre may˙sculas y min˙sculas"
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/Login/Register/ButtonClip
-"Debes registrarte para jugar en l√≠nea"
+"Debes registrarte para jugar en lÌnea"
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/Login/DeleteNickname/Buttonclip
@@ -4937,19 +4937,19 @@ TOOLTIP:OnlineShell/OnlineLogin/Login/OfficialSite/ButtonClip
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/Login/Login/buttonClip
-"Ingresa tu nombre de usuario y contrase√±a."
+"Ingresa tu nombre de usuario y contraseÒa."
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipNumberPlayers
-"Selecciona el n√∫mero de jugadores"
+"Selecciona el n˙mero de jugadores"
 END
 
 TOOLTIP:onlineshell/onlinecustommatch/tooltipteam
-"Los equipos con el mismo n√∫mero son aliados"
+"Los equipos con el mismo n˙mero son aliados"
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipConnectionSpeed
-"Los n√∫meros menores representan conexiones m√°s r√°pidas. \nSelecciona esta opci√≥n para filtrar oponentes \ncon conexiones m√°s lentas"
+"Los n˙meros menores representan conexiones m·s r·pidas. \nSelecciona esta opciÛn para filtrar oponentes \ncon conexiones m·s lentas"
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipColor
@@ -4957,7 +4957,7 @@ TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipColor
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipSide
-"Selecciona el ej√©rcito"
+"Selecciona el ejÈrcito"
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/Searching/navSearching/Cancel/tooltipCancel
@@ -4965,7 +4965,7 @@ TOOLTIP:OnlineShell/OnlineQuickMatch/Searching/navSearching/Cancel/tooltipCancel
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/Searching/navSearching/WidenSearch/tooltipWidenSearch
-"El torneo intentar√° emparejar jugadores con un rango de clasificaci√≥n y una velocidad de conexi√≥n similares. Haz clic izquierdo en este bot√≥n para eliminar estos l√≠mites y emparejarte con cualquier jugador"
+"El torneo intentar· emparejar jugadores con un rango de clasificaciÛn y una velocidad de conexiÛn similares. Haz clic izquierdo en este botÛn para eliminar estos lÌmites y emparejarte con cualquier jugador"
 END
 
 Tooltip:OnlineShell/disableButton
@@ -4973,7 +4973,7 @@ Tooltip:OnlineShell/disableButton
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipGameName
-"T√≠tulos de las partidas creadas por otros jugadores"
+"TÌtulos de las partidas creadas por otros jugadores"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipGameType
@@ -4981,15 +4981,15 @@ TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipGameType
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipNumberPlayers
-"Elige el n√∫mero de jugadores con los que quieres emparejarte"
+"Elige el n˙mero de jugadores con los que quieres emparejarte"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipPing
-"Elige la velocidad de conexi√≥n aceptable del oponente. \nUn √≠cono rojo indica una velocidad m√°s lenta,\nuno verde indica una velocidad m√°s r√°pida"
+"Elige la velocidad de conexiÛn aceptable del oponente. \nUn Ìcono rojo indica una velocidad m·s lenta,\nuno verde indica una velocidad m·s r·pida"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Controls/buttonHost
-"Haz clic aqu√≠ para alojar una nueva partida"
+"Haz clic aquÌ para alojar una nueva partida"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Controls/buttonRefresh
@@ -4997,23 +4997,23 @@ TOOLTIP:OnlineShell/OnlineCustomMatch/Controls/buttonRefresh
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipArmy
-"Nombres de los ej√©rcitos que se unen a las partidas"
+"Nombres de los ejÈrcitos que se unen a las partidas"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tootipTeam
-"Equipos que se unen a la partida. Los equipos con los mismos n√∫meros de identificaci√≥n son aliados"
+"Equipos que se unen a la partida. Los equipos con los mismos n˙meros de identificaciÛn son aliados"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipColor
-"Colores de las casas de los ej√©rcitos que se unen a la partida"
+"Colores de las casas de los ejÈrcitos que se unen a la partida"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/tooltipHeadtoHead
-"Activa esta opci√≥n para jugar contra otros ej√©rcitos controlados por la computadora"
+"Activa esta opciÛn para jugar contra otros ejÈrcitos controlados por la computadora"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/tooltipScenerio
-"Activa esta opci√≥n para jugar una misi√≥n espec√≠fica con otros ej√©rcitos controlados por la computadora o contra ellos."
+"Activa esta opciÛn para jugar una misiÛn especÌfica con otros ejÈrcitos controlados por la computadora o contra ellos."
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/GameSetUp_02/tooltipOfficialMaps
@@ -5021,7 +5021,7 @@ TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/GameSetUp_02/tooltipOffic
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/GameSetUp_02/tooltipPlayerMadeMaps
-"Estos mapas no cuentan con la aprobaci√≥n oficial de EA y fueron creados por jugadores.\n Cuando descargues un mapa nuevo, aparecer√° en esta lista de mapas"
+"Estos mapas no cuentan con la aprobaciÛn oficial de EA y fueron creados por jugadores.\n Cuando descargues un mapa nuevo, aparecer· en esta lista de mapas"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/nav/tooltipPlayers
@@ -5033,11 +5033,11 @@ TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/nav/tooltipFriends
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/nav/tooltipIgnore
-"Para ignorar a un jugador, haz clic izquierdo en \nun nombre y luego en el recuadro \nIgnorar jugador. Los jugadores ignorados o \nsus mensajes no ser√°n visibles"
+"Para ignorar a un jugador, haz clic izquierdo en \nun nombre y luego en el recuadro \nIgnorar jugador. Los jugadores ignorados o \nsus mensajes no ser·n visibles"
 END
 
 TOOLTIP:OnlineShell/WebSite//tooltipOfficialWebsite
-"Haz clic izquierdo para visitar las clasificaciones oficiales y conocer las √∫ltimas noticias del juego"
+"Haz clic izquierdo para visitar las clasificaciones oficiales y conocer las ˙ltimas noticias del juego"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/tooltipFellowshipClubIcon
@@ -5045,7 +5045,7 @@ TOOLTIP:OnlineShell/OnlineChat/tooltipFellowshipClubIcon
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/tooltipPlayerName
-"Apodos de los jugadores que est√°n actualmente en esta sala de chat"
+"Apodos de los jugadores que est·n actualmente en esta sala de chat"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/tooltipIgnorePlayerName
@@ -5061,23 +5061,23 @@ TOOLTIP:OnlineShell/OnlineChat/tooltipChatLobby
 END
 
 TOOLTIP:OnlineLobby/tooltipArmy
-"Nombres de los ej√©rcitos que se unen a la partida"
+"Nombres de los ejÈrcitos que se unen a la partida"
 END
 
 TOOLTIP:OnlineLobby/tooltipTeam
-"Equipos que se unen a la partida. \nLos equipos con los mismos n√∫meros de identificaci√≥n son aliados"
+"Equipos que se unen a la partida. \nLos equipos con los mismos n˙meros de identificaciÛn son aliados"
 END
 
 TOOLTIP:OnlineLobby/tooltipColor
-"Colores de las casas de los ej√©rcitos que se unen a la partida"
+"Colores de las casas de los ejÈrcitos que se unen a la partida"
 END
 
 TOOLTIP:OnlineLobby/tooltipHeadtoHead
-"Activa esta opci√≥n para jugar contra otros jugadores"
+"Activa esta opciÛn para jugar contra otros jugadores"
 END
 
 TOOLTIP:OnlineLobby/tooltipScenerio
-"Activa esta opci√≥n para jugar una misi√≥n espec√≠fica con otros jugadores o contra ellos"
+"Activa esta opciÛn para jugar una misiÛn especÌfica con otros jugadores o contra ellos"
 END
 
 TOOLTIP:OnlineLobby/tooltipOfficialMaps
@@ -5085,7 +5085,7 @@ TOOLTIP:OnlineLobby/tooltipOfficialMaps
 END
 
 TOOLTIP:OnlineLobby/tooltipPlayerMadeMaps
-"Estos mapas no cuentan con la aprobaci√≥n oficial de EA y fueron creados por jugadores.\n Cuando descargues un mapa nuevo, aparecer√° en esta lista de mapas"
+"Estos mapas no cuentan con la aprobaciÛn oficial de EA y fueron creados por jugadores.\n Cuando descargues un mapa nuevo, aparecer· en esta lista de mapas"
 END
 
 TOOLTIP:OnlineJoin/tooltipName
@@ -5093,23 +5093,23 @@ TOOLTIP:OnlineJoin/tooltipName
 END
 
 TOOLTIP:OnlineJoin/tooltipArmy
-"Nombres de los ej√©rcitos que se unen a la partida"
+"Nombres de los ejÈrcitos que se unen a la partida"
 END
 
 TOOLTIP:OnlineJoin/tooltipTeam
-"Equipos que se unen a la partida. \nLos equipos con los mismos n√∫meros de identificaci√≥n son aliados"
+"Equipos que se unen a la partida. \nLos equipos con los mismos n˙meros de identificaciÛn son aliados"
 END
 
 TOOLTIP:OnlineJoin/tooltipColor
-"Colores de las casas de los ej√©rcitos que se unen a la partida"
+"Colores de las casas de los ejÈrcitos que se unen a la partida"
 END
 
 TOOLTIP:OnlineShell/OnlineHome/tooltipOfficialWebsite
-"Haz clic izquierdo para visitar las clasificaciones oficiales y conocer las √∫ltimas noticias del juego"
+"Haz clic izquierdo para visitar las clasificaciones oficiales y conocer las ˙ltimas noticias del juego"
 END
 
 TOOLTIP:OnlineShell/OnlineHome/tooltipRank
-"Posici√≥n actual en la clasificaci√≥n de la comunidad"
+"PosiciÛn actual en la clasificaciÛn de la comunidad"
 END
 
 TOOLTIP:OnlineShell/OnlineHome/tooltipcurrentLevel
@@ -5117,15 +5117,15 @@ TOOLTIP:OnlineShell/OnlineHome/tooltipcurrentLevel
 END
 
 TOOLTIP:OnlineShell/OnlineHome/tooltipCommunityWin
-"Estas estad√≠sticas registran los porcentajes totales de victorias del torneo para cada ej√©rcito durante la semana anterior"
+"Estas estadÌsticas registran los porcentajes totales de victorias del torneo para cada ejÈrcito durante la semana anterior"
 END
 
 TOOLTIP:OnlineShell/OnlineProfile/tooltipRohan
-"Estad√≠sticas generales acumuladas de Rohan"
+"EstadÌsticas generales acumuladas de Rohan"
 END
 
 TOOLTIP:OnlineShell/OnlineProfile/tooltipGondor
-"Estad√≠sticas generales acumuladas de Gondor"
+"EstadÌsticas generales acumuladas de Gondor"
 END
 
 TOOLTIP:OnlineShell/OnlineProfile/tooltipIsengard
@@ -14721,7 +14721,7 @@ LWA:OathbreakersArmy
 END
 
 LWA:EasterlingsArmy
-"Soldiers of Rh√ªn Army"
+"Soldiers of Rh˚n Army"
 END
 
 LWA:HaradrimArmy
@@ -30837,7 +30837,7 @@ CREDITS:On2Notice2
 END
 
 CREDITS:On2Notice3
-"On2 technology ¬© 2003 On2 Technologies, Inc.\" "
+"On2 technology © 2003 On2 Technologies, Inc.\" "
 END
 
 CREDITS:On2Notice4
@@ -30845,7 +30845,7 @@ CREDITS:On2Notice4
 END
 
 CREDITS:GameSpyNotice
-"This product contains software technology licensed from\nGameSpy Industries, Inc. ¬© 1999-2006 \nGameSpy Industries, Inc. GameSpy and the \n'Powered by GameSpy' design are trademarks \nof GameSpy Industries, Inc. All rights reserved."
+"This product contains software technology licensed from\nGameSpy Industries, Inc. © 1999-2006 \nGameSpy Industries, Inc. GameSpy and the \n'Powered by GameSpy' design are trademarks \nof GameSpy Industries, Inc. All rights reserved."
 END
 
 CREDITS:TeamThanks
@@ -30857,7 +30857,7 @@ END
 END
 
 CREDITS:Miles
-"Uses Miles Sound System. \n Copyright ¬© 1991-2006 \n by RAD Game Tools, Inc."
+"Uses Miles Sound System. \n Copyright © 1991-2006 \n by RAD Game Tools, Inc."
 END
 
 SUBTITLE:CS11_01
@@ -34845,7 +34845,7 @@ SUBTITLE:BABME_06
 END
 
 SUBTITLE:BABME_07
-"We thought him but a powerful Black N√∫menorean, but he is Nazgul, First of the Nine, most fell servant of the Dark Lord Sauron."
+"We thought him but a powerful Black N˙menorean, but he is Nazgul, First of the Nine, most fell servant of the Dark Lord Sauron."
 END
 
 SUBTITLE:BABME_08
@@ -34877,7 +34877,7 @@ SUBTITLE:BABMO_05
 END
 
 SUBTITLE:BABMO_06
-"We will not merely push the Witch-king back to his lair of Carn D√ªm as we had foolishly done before."
+"We will not merely push the Witch-king back to his lair of Carn D˚m as we had foolishly done before."
 END
 
 SUBTITLE:BABMO_07
@@ -34901,7 +34901,7 @@ SUBTITLE:BACO_012
 END
 
 SUBTITLE:BACO_013
-"a twisted, frozen land that lay North beyond the Ettenmoors, and home of the Black N√∫menoreans."
+"a twisted, frozen land that lay North beyond the Ettenmoors, and home of the Black N˙menoreans."
 END
 
 SUBTITLE:BACO_014
@@ -34913,7 +34913,7 @@ SUBTITLE:BACO_015
 END
 
 SUBTITLE:BACO_016
-"to destroy the D√∫nedain and their kingdom of Arnor ?"
+"to destroy the D˙nedain and their kingdom of Arnor ?"
 END
 
 SUBTITLE:BACO_02
@@ -34933,11 +34933,11 @@ SUBTITLE:BACO_05
 END
 
 SUBTITLE:BACO_06
-"and so it was that civil strife weakened the D√∫nedain and broke the land into three realms:"
+"and so it was that civil strife weakened the D˙nedain and broke the land into three realms:"
 END
 
 SUBTITLE:BACO_07
-"Rhudaur, the smallest and weakest of the D√∫nedain kingships?"
+"Rhudaur, the smallest and weakest of the D˙nedain kingships?"
 END
 
 SUBTITLE:BACO_08
@@ -34945,7 +34945,7 @@ SUBTITLE:BACO_08
 END
 
 SUBTITLE:BACO_09
-"where the forefathers of the D√∫nedain lay entombed ?"
+"where the forefathers of the D˙nedain lay entombed ?"
 END
 
 SUBTITLE:BAM1E_01
@@ -35005,11 +35005,11 @@ SUBTITLE:BAM3E_04
 END
 
 SUBTITLE:BAM3E_05
-"But despite their wounds, the D√∫nedain are not without power."
+"But despite their wounds, the D˙nedain are not without power."
 END
 
 SUBTITLE:BAM3E_06
-"The fortified Weather Hills and fortress at Amon S√ªl stand as a shield protecting Fornost and the heart of Arnor?"
+"The fortified Weather Hills and fortress at Amon S˚l stand as a shield protecting Fornost and the heart of Arnor?"
 END
 
 SUBTITLE:BAM3O_01
@@ -35021,7 +35021,7 @@ SUBTITLE:BAM3O_02
 END
 
 SUBTITLE:BAM3O_05
-"But Angmar, its power ready, advances into the weakest of the D√∫nedain realms."
+"But Angmar, its power ready, advances into the weakest of the D˙nedain realms."
 END
 
 SUBTITLE:BAM3O_06
@@ -35029,7 +35029,7 @@ SUBTITLE:BAM3O_06
 END
 
 SUBTITLE:BAM4E_01
-"Amon S√ªl is laid to ruin."
+"Amon S˚l is laid to ruin."
 END
 
 SUBTITLE:BAM4E_02
@@ -35041,7 +35041,7 @@ SUBTITLE:BAM4E_03
 END
 
 SUBTITLE:BAM4E_04
-"Arveleg  has escaped Amon S√ªl with a prize that the Witch-king covets over all others?"
+"Arveleg  has escaped Amon S˚l with a prize that the Witch-king covets over all others?"
 END
 
 SUBTITLE:BAM4O_01
@@ -35053,11 +35053,11 @@ SUBTITLE:BAM4O_02
 END
 
 SUBTITLE:BAM4O_03
-"Using the power of the Palantir of Amon S√ªl, Arveleg has foiled every attack and stratagem."
+"Using the power of the Palantir of Amon S˚l, Arveleg has foiled every attack and stratagem."
 END
 
 SUBTITLE:BAM4O_04
-"The Witch-king must now undertake a daring and dangerous strategy: a direct assault on the fortress of Amon S√ªl."
+"The Witch-king must now undertake a daring and dangerous strategy: a direct assault on the fortress of Amon S˚l."
 END
 
 SUBTITLE:BAM4O_05
@@ -35065,7 +35065,7 @@ SUBTITLE:BAM4O_05
 END
 
 SUBTITLE:BAM4O_06
-"Although not the largest bastions in Middle-Earth, Amon S√ªl is host to a mighty power ? the master Palantir of the North."
+"Although not the largest bastions in Middle-Earth, Amon S˚l is host to a mighty power ? the master Palantir of the North."
 END
 
 SUBTITLE:BAM5E_01
@@ -35073,7 +35073,7 @@ SUBTITLE:BAM5E_01
 END
 
 SUBTITLE:BAM5E_02
-"For many centuries the Black N√∫menoreans have dabbled in the dark arts."
+"For many centuries the Black N˙menoreans have dabbled in the dark arts."
 END
 
 SUBTITLE:BAM5E_03
@@ -35081,7 +35081,7 @@ SUBTITLE:BAM5E_03
 END
 
 SUBTITLE:BAM5O_01
-"The fall of Amon S√ªl is a terrible blow to the will of the D√∫nedain."
+"The fall of Amon S˚l is a terrible blow to the will of the D˙nedain."
 END
 
 SUBTITLE:BAM5O_02
@@ -35089,7 +35089,7 @@ SUBTITLE:BAM5O_02
 END
 
 SUBTITLE:BAM5O_03
-"Angered by its escape, the Witch-king dispatches the Lieutenant of Carn D√ªm with orders to retrieve the stolen orb."
+"Angered by its escape, the Witch-king dispatches the Lieutenant of Carn D˚m with orders to retrieve the stolen orb."
 END
 
 SUBTITLE:BAM60_06
@@ -35109,7 +35109,7 @@ SUBTITLE:BAM6E_03
 END
 
 SUBTITLE:BAM6O_01
-"The destruction of Amon S√ªl and its palantir crippled the Army of Arthedain, but Fornost still stands."
+"The destruction of Amon S˚l and its palantir crippled the Army of Arthedain, but Fornost still stands."
 END
 
 SUBTITLE:BAM6O_02
@@ -35121,7 +35121,7 @@ SUBTITLE:BAM6O_03
 END
 
 SUBTITLE:BAM6O_04
-"For the army of Cardolan was not at Amon S√ªl, and is still in the field."
+"For the army of Cardolan was not at Amon S˚l, and is still in the field."
 END
 
 SUBTITLE:BAM6O_05
@@ -35181,7 +35181,7 @@ SUBTITLE:BAM8E_01
 END
 
 SUBTITLE:BAM8E_02
-"Angmar?s great plague stretched far and wide, striking at the heart of Arnor and weakening the already fragile D√∫nedain defenses."
+"Angmar?s great plague stretched far and wide, striking at the heart of Arnor and weakening the already fragile D˙nedain defenses."
 END
 
 SUBTITLE:BAM8E_03

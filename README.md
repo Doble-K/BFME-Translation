@@ -57,9 +57,11 @@ BFME-Translation/
 ### Build Workflow (Release)
 
 When a release build is requested:
-1. `python3 tools/localization/build.py catalogs/spanish_work.json translations/spanish/data/lotr.str`
+1. `python3 tools/localization/build.py catalogs/spanish_work.json translations/spanish/data/lotr.str --encoding cp1252`
 2. `python3 tools/localization/pack.py`
 3. Verify that `releases/spanishpatch202.big` updates correctly.
+
+The build defaults to Windows-1252/ANSI for SAGE compatibility. Use `--encoding` with another compatible code page for languages that require it.
 
 ## Current Progress
 

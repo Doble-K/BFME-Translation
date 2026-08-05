@@ -1,10 +1,10 @@
 import sys
 
 
-def parse_str(path):
+def parse_str(path, encoding="cp1252"):
     entries = []
 
-    with open(path, "r", encoding="utf-8") as file:
+    with open(path, "r", encoding=encoding) as file:
         lines = file.readlines()
 
     current_key = None
@@ -24,7 +24,8 @@ def parse_str(path):
 
 
 if __name__ == "__main__":
-    result = parse_str(sys.argv[1])
+    encoding = sys.argv[2] if len(sys.argv) > 2 else "cp1252"
+    result = parse_str(sys.argv[1], encoding)
 
     print(f"Entries: {len(result)}")
 
