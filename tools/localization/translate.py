@@ -153,6 +153,9 @@ def main():
         args.advanced,
     )
     print(f"Pending: {len(entries)}")
+    if args.advanced:
+        print("AVISO: las entradas LETTER:* y NUMBER:* pueden ser hotkeys o controles automaticos.")
+        print("Modificalas solo si deseas cambiar intencionalmente los controles del juego.")
 
     for index, entry in enumerate(entries[:args.count]):
         print("=" * 60)

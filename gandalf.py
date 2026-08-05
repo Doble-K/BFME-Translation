@@ -212,7 +212,11 @@ def create_catalog(data, output_path, settings):
             "status": "reviewed" if automatic_id else ("translated" if review_mode else "pending"),
             "line": entry["line"],
             "flags": (["auto_id"] if automatic_id else (["needs_review"] if review_mode else [])),
-            "notes": "",
+            "notes": (
+                "Posible hotkey o control automatico; conservar salvo personalizacion intencional."
+                if automatic_id
+                else ""
+            ),
             "translation_meta": {
                 "origin": "system" if (review_mode or automatic_id) else None,
                 "model": None,
