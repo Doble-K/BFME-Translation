@@ -10,6 +10,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TOOLS = ROOT / "tools" / "localization"
+sys.path.insert(0, str(TOOLS))
+from project import load_project, resolve_project_path
 
 
 def run_tool(name, *args):
@@ -22,6 +24,15 @@ def run_tool(name, *args):
 
 
 class LocalizationToolTests(unittest.TestCase):
+    def test_rotwk_project_configuration(self):
+        project = load_project(ROOT / "config" / "project.json")
+        self.assertEqual(project["name"], "bfme2-rotwk-2.02")
+        self.assertEqual(project["encoding"], "cp1252")
+        self.assertEqual(
+            resolve_project_path(project, "output_package"),
+            ROOT / "releases" / "spanishpatch202.big",
+        )
+
     def test_translation_tokens_are_enforced(self):
         with tempfile.TemporaryDirectory() as directory:
             catalog = Path(directory) / "catalog.json"

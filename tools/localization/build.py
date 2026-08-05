@@ -6,13 +6,15 @@ import argparse
 from pathlib import Path
 
 from normalize_escapes import normalize_data
+from project import load_project, resolve_project_path
 
 
 def main():
     parser = argparse.ArgumentParser(description="Build an SAGE localization string file.")
-    parser.add_argument("catalog", help="Path to the localization catalog")
-    parser.add_argument("output", help="Path to the output .str file")
-    parser.add_argument("--encoding", default="cp1252", help="Output encoding")
+    parser.add_argument("catalog", nargs="?", help="Path to the localization catalog")
+    parser.add_argument("output", nargs="?", help="Path to the output .str file")
+    parser.add_argument("--project", help="Project configuration JSON")
+    parser.add_argument("--encoding", help="Output encoding")
     parser.add_argument("--debug", action="store_true", help="Use debug marker translations")
     parser.add_argument(
         "--allow-source-fallback",
@@ -37,9 +39,22 @@ def main():
     )
     args = parser.parse_args()
 
-    catalog_file = Path(args.catalog)
-    output_str_file = Path(args.output)
-    encoding = args.encoding
+    project = None
+    if args.project:
+        try:
+            project = load_project(args.project)
+        except (OSError, json.JSONDecodeError, ValueError) as error:
+            print(f"Error: configuración de proyecto inválida: {error}", file=sys.stderr)
+            sys.exit(1)
+
+    if not args.catalog and not project:
+        parser.error("indique catalog y output, o use --project")
+    if not args.output and not project:
+        parser.error("indique catalog y output, o use --project")
+
+    catalog_file = Path(args.catalog) if args.catalog else resolve_project_path(project, "catalog")
+    output_str_file = Path(args.output) if args.output else resolve_project_path(project, "output_string_file")
+    encoding = args.encoding or (project["encoding"] if project else "cp1252")
     debug = args.debug
 
     with open(catalog_file, "r", encoding="utf-8") as f:

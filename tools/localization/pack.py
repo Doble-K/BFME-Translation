@@ -7,6 +7,8 @@ import sys
 import tempfile
 from pathlib import Path
 
+from project import load_project, resolve_project_path
+
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -28,7 +30,16 @@ def main():
         choices=("first", "last"),
         help="Debug build keeping the first or last non-whitespace ID",
     )
+    parser.add_argument("--project", help="Project configuration JSON")
     args = parser.parse_args()
+
+    project = None
+    if args.project:
+        try:
+            project = load_project(args.project)
+        except (OSError, ValueError) as error:
+            print(f"Error: configuración de proyecto inválida: {error}", file=sys.stderr)
+            return 1
 
     big4f = ROOT / "tools" / "big4f" / "bin"
     platform_name = sys.platform
@@ -45,8 +56,16 @@ def main():
         print(f"Error: No se encontró el binario de big4f para '{platform_name}' en {big4f}")
         return 1
 
-    source_dir = ROOT / "translations" / "spanish"
-    output_release = ROOT / "releases" / "spanishpatch202.big"
+    source_dir = (
+        resolve_project_path(project, "string_directory")
+        if project
+        else ROOT / "translations" / "spanish"
+    )
+    output_release = (
+        resolve_project_path(project, "output_package")
+        if project
+        else ROOT / "releases" / "spanishpatch202.big"
+    )
     output_release.parent.mkdir(parents=True, exist_ok=True)
 
     debug_build = args.exclude_orphan_ids or args.debug or args.dedupe_ids
@@ -59,7 +78,7 @@ def main():
             build_command = [
                 sys.executable,
                 str(ROOT / "tools" / "localization" / "build.py"),
-                str(ROOT / "catalogs" / "spanish_work.json"),
+                str(resolve_project_path(project, "catalog") if project else ROOT / "catalogs" / "spanish_work.json"),
                 str(debug_str),
                 "--allow-source-fallback",
             ]

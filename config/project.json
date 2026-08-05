@@ -1,0 +1,13 @@
+{
+  "name": "bfme2-rotwk-2.02",
+  "source_archive": "source/lotr-2.02.big",
+  "string_directory": "translations/spanish",
+  "string_files": [
+    "data/lotr.str"
+  ],
+  "catalog": "catalogs/spanish_work.json",
+  "output_string_file": "translations/spanish/data/lotr.str",
+  "output_package": "releases/spanishpatch202.big",
+  "language": "es-419",
+  "encoding": "cp1252"
+}
