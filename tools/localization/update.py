@@ -93,11 +93,11 @@ def main():
         )
         selected = not duplicate or occurrence == new_id_counts[entry_id]
         previous_entries = existing_entries.get(entry_id, [])
-        if not isinstance(entry_id, str) or not entry_id.strip():
+        if duplicate or not isinstance(entry_id, str) or not entry_id.strip():
             previous = (
                 previous_entries[occurrence - 1]
                 if occurrence <= len(previous_entries)
-                else None
+                else (previous_entries[-1] if previous_entries else None)
             )
         else:
             previous = previous_entries[-1] if previous_entries else None

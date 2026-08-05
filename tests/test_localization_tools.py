@@ -108,6 +108,34 @@ class LocalizationToolTests(unittest.TestCase):
             restored_entry = next(e for e in restored_data["entries"] if e["id"] == "TEST:Two")
             self.assertIn("source_restored", restored_entry["flags"])
 
+    def test_update_applies_last_wins_metadata_and_is_idempotent(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            source = directory / "source.json"
+            catalog = directory / "catalog.json"
+            source.write_text(json.dumps({"entries": [
+                {"id": "TEST:Duplicate", "text": "First", "line": 1},
+                {"id": "TEST:Duplicate", "text": "Last", "line": 2},
+                {"id": " ", "text": "Orphan", "line": 3},
+            ]}), encoding="utf-8")
+            catalog.write_text(json.dumps({"entries": [
+                {"id": "TEST:Duplicate", "source": "Old", "translation": "Viejo", "status": "translated"},
+                {"id": " ", "source": "Orphan", "translation": "Huérfana", "status": "translated"},
+            ]}), encoding="utf-8")
+
+            first = run_tool("update.py", source, catalog)
+            self.assertEqual(first.returncode, 0, first.stdout + first.stderr)
+            result = json.loads(catalog.read_text(encoding="utf-8"))
+            duplicates = [e for e in result["entries"] if e["id"] == "TEST:Duplicate"]
+            self.assertEqual(duplicates[-1]["duplicate_meta"]["selected"], True)
+            self.assertEqual(duplicates[0]["duplicate_meta"]["selected"], False)
+            self.assertIn("orphan_meta", next(e for e in result["entries"] if e["id"] == " "))
+
+            before = catalog.read_bytes()
+            second = run_tool("update.py", source, catalog)
+            self.assertEqual(second.returncode, 0, second.stdout + second.stderr)
+            self.assertEqual(catalog.read_bytes(), before)
+
     def test_build_requires_explicit_partial_fallback(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)
