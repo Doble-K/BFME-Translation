@@ -15,24 +15,6 @@ ROOT = Path(__file__).resolve().parent
 
 
 def greet():
-    print(r"""
-                         /\
-                        /  \
-                   ____/____\____
-                  /      ||      \
-                 /   _   ||   _   \
-                /___|_|__||__|_|___\
-                |      MINAS       |
-                |      TIRITH       |
-                |  [] [] || [] []   |
-                |______  ||  _______|
-                       \||/
-                  /\    ||    /\
-                 /  \   ||   /  \
-                / WHITE HORSE  \
-                   /\        /\
-                  /  \______/  \
-""")
     print("Bienvenido, viajero. Las puertas de Minas Tirith estan abiertas. - Gandalf")
     print("Gandalf preparara tu proyecto de localizacion.\n")
 

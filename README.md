@@ -22,6 +22,7 @@ This translation project is not affiliated with, endorsed by, or sponsored by To
 
 ```
 BFME-Translation/
+├── gandalf.py                    # Main project and source wizard
 ├── catalogs/
 │   └── spanish_work.json    # Main translation catalog (11,069 entries)
 ├── config/
