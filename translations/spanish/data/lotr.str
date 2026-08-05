@@ -4739,15 +4739,15 @@ Chat:Allies
 END
 
 Chat:Observers
-"Observers View"
+"Vista de espectadores"
 END
 
 Chat:Console
-"ENTER CONSOLE COMMAND:"
+"ESCRIBE EL COMANDO DE CONSOLA:"
 END
 
 GUI:Clear
-"CLEAR"
+"BORRAR"
 END
 
 GUI:Color
@@ -4763,107 +4763,107 @@ LAN:GameStartTimerSingular
 END
 
 LAN:HostNotResponding
-"Game exited; the host was not responding."
+"La partida terminó; el anfitrión no respondía."
 END
 
 LAN:PlayerDropped
-"%ls dropped; player was not responding."
+"%ls salió; el jugador no respondía."
 END
 
 LAN:NeedMorePlayers
-"You need more than %d player(s) to start a game."
+"Necesitas más de %d jugador(es) para iniciar una partida."
 END
 
 LAN:NeedMoreTeams
-"You need more than 1 team to start a game."
+"Necesitas más de 1 equipo para iniciar una partida."
 END
 
 LAN:TooManyPlayers
-"This map only supports up to %d players."
+"Este mapa admite como máximo %d jugadores."
 END
 
 LAN:OK
-"OK"
+"ACEPTAR"
 END
 
 LAN:ErrorNoGameSelected
-"Please select a game first."
+"Selecciona una partida primero."
 END
 
 LAN:ErrorTimeout
-"Connection timed out."
+"Se agotó el tiempo de conexión."
 END
 
 LAN:ErrorGameFull
-"This game is full."
+"La partida está llena."
 END
 
 LAN:ErrorDuplicateName
-"Duplicate name already in game."
+"Ya existe un nombre duplicado en la partida."
 END
 
 LAN:ErrorCRCMismatch
-"Game has detected a mismatch. This means the multiplayer game has lost synchronization data between the players. It is possible that your opponent has modified their version of the game."
+"La partida detectó una discrepancia. Esto significa que la partida multijugador perdió datos de sincronización entre los jugadores. Es posible que tu oponente haya modificado su versión del juego."
 END
 
 LAN:ErrorGameStarted
-"Sorry, this game has already started."
+"Lo sentimos, esta partida ya comenzó."
 END
 
 LAN:ErrorGameExists
-"A game of the same name already exists."
+"Ya existe una partida con el mismo nombre."
 END
 
 LAN:ErrorGameGone
-"Game has already started"
+"La partida ya comenzó"
 END
 
 LAN:ErrorBusy
-"Another operation is pending."
+"Hay otra operación pendiente."
 END
 
 LAN:ErrorUnknown
-"Unknown error"
+"Error desconocido"
 END
 
 LAN:JoinFailed
-"JOIN FAILED"
+"NO SE PUDO UNIR"
 END
 
 LAN:HostCanceledGame
-"The host has cancelled the countdown."
+"El anfitrión canceló la cuenta regresiva."
 END
 
 LAN:NoMapSelected
-"Unable to start game. No map selected."
+"No se puede iniciar la partida. No se seleccionó ningún mapa."
 END
 
 LAN:HostCanceledGameBecausePlayerLeave
-"The countdown has stopped because a player has left the game."
+"La cuenta regresiva se detuvo porque un jugador abandonó la partida."
 END
 
 LAN:CountdownStoppedGeneric
-"The countdown has stopped because the game settings have changed."
+"La cuenta regresiva se detuvo porque cambiaron las opciones de la partida."
 END
 
 Network:PlayerLeft
-"%ls left the game."
+"%ls abandonó la partida."
 END
 
 INI:MissingDisplayName
-"MISSING DisplayName for Object '%S'"
+"FALTA DisplayName para el objeto '%S'"
 END
 
 INI:FactionDefault
-"Default Army"
+"Ejército predeterminado"
 END
 
 INI:FactionObserver
-"Observer"
+"Espectador"
 END
 
 INI:FactionCivilian
-"Civilian"
+"Civil"
 END
 
 INI:FactionNeutral
@@ -4871,15 +4871,15 @@ INI:FactionNeutral
 END
 
 INI:FactionMen
-"Men"
+"Hombres"
 END
 
 INI:FactionElves
-"Elves"
+"Elfos"
 END
 
 INI:FactionDwarves
-"Dwarves"
+"Enanos"
 END
 
 INI:FactionMordor
@@ -4895,15 +4895,15 @@ INI:FactionWild
 END
 
 SIDE:Men
-"Men"
+"Hombres"
 END
 
 SIDE:Elves
-"Elves"
+"Elfos"
 END
 
 SIDE:Dwarves
-"Dwarves"
+"Enanos"
 END
 
 SIDE:Mordor
@@ -4919,7 +4919,7 @@ SIDE:Wild
 END
 
 SIDE:Civilian
-"Civilian"
+"Civil"
 END
 
 SIDE:Neutral
@@ -4927,27 +4927,27 @@ SIDE:Neutral
 END
 
 SIDE:Observer
-"Observer"
+"Espectador"
 END
 
 TOOLTIP:Skirmish/tooltipMordor
-"Overall statistics accumulated for Mordor"
+"Estadísticas generales acumuladas de Mordor"
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/tooltipRememberMe
-"Enable to remember your password."
+"Activa esta opción para recordar tu contraseña."
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/tooltipOnlineEAAccountName
-"Register your account with EA. Complete this field with your new account name"
+"Registra tu cuenta con EA. Completa este campo con el nombre de tu nueva cuenta"
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/tooltipOnlineNickname
-"Nicknames are case sensitive"
+"Los apodos distinguen entre mayúsculas y minúsculas"
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/Login/Register/ButtonClip
-"You must register to play online"
+"Debes registrarte para jugar en línea"
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/Login/DeleteNickname/Buttonclip
@@ -4963,35 +4963,37 @@ TOOLTIP:OnlineShell/OnlineLogin/Login/OfficialSite/ButtonClip
 END
 
 TOOLTIP:OnlineShell/OnlineLogin/Login/Login/buttonClip
-"Please enter login and password."
+"Ingresa tu nombre de usuario y contraseña."
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipNumberPlayers
-"Select the number of players"
+"Selecciona el número de jugadores"
 END
 
 TOOLTIP:onlineshell/onlinecustommatch/tooltipteam
-"Teams of the same number are allies"
+"Los equipos con el mismo número son aliados"
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipConnectionSpeed
-"Smaller numbers represent \n quicker connections. \nSelect to filter out opponents \n with slower connections"
+"Los números menores representan conexiones más rápidas. 
+Selecciona esta opción para filtrar oponentes 
+con conexiones más lentas"
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipColor
-"Select the house color"
+"Selecciona el color de tu casa"
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/LeftFrame/tooltipSide
-"Select the army"
+"Selecciona el ejército"
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/Searching/navSearching/Cancel/tooltipCancel
-"Stop searching for opponents"
+"Deja de buscar oponentes"
 END
 
 TOOLTIP:OnlineShell/OnlineQuickMatch/Searching/navSearching/WidenSearch/tooltipWidenSearch
-"Tournament will attempt to match players of similar ladder rank and connection speed. Left click this button to remove these limits and match with any player"
+"El torneo intentará emparejar jugadores con un rango de clasificación y una velocidad de conexión similares. Haz clic izquierdo en este botón para eliminar estos límites y emparejarte con cualquier jugador"
 END
 
 Tooltip:OnlineShell/disableButton
@@ -4999,159 +5001,171 @@ Tooltip:OnlineShell/disableButton
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipGameName
-"Titles of games that other players have created"
+"Títulos de las partidas creadas por otros jugadores"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipGameType
-"Choose the type of game you would like to play"
+"Elige el tipo de partida que quieres jugar"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipNumberPlayers
-"Choose the number of players to match with"
+"Elige el número de jugadores con los que quieres emparejarte"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipPing
-"Choose the acceptable opponent \n Connection speed. \n A red icon indicates a slower speed,\n a green indicates a faster speed"
+"Elige la velocidad de conexión aceptable del oponente. 
+Un ícono rojo indica una velocidad más lenta,
+uno verde indica una velocidad más rápida"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Controls/buttonHost
-"Click here to host a new game"
+"Haz clic aquí para alojar una nueva partida"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Controls/buttonRefresh
-"Refresh the lobby display"
+"Actualiza la lista de partidas"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipArmy
-"Names of armies joining games"
+"Nombres de los ejércitos que se unen a las partidas"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tootipTeam
-"Teams that are joining game. Teams of the same ID numbers are allies"
+"Equipos que se unen a la partida. Los equipos con los mismos números de identificación son aliados"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/tooltipColor
-"House colors of armies joining game"
+"Colores de las casas de los ejércitos que se unen a la partida"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/tooltipHeadtoHead
-"Toggle on to play against other Computer armies"
+"Activa esta opción para jugar contra otros ejércitos controlados por la computadora"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/tooltipScenerio
-"Toggle on to play a specific mission with or against other Computer armies."
+"Activa esta opción para jugar una misión específica con otros ejércitos controlados por la computadora o contra ellos."
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/GameSetUp_02/tooltipOfficialMaps
-"These maps are officially created or sanctioned by Electronic Arts"
+"Estos mapas fueron creados o aprobados oficialmente por Electronic Arts"
 END
 
 TOOLTIP:OnlineShell/OnlineCustomMatch/Host/FrameB_Host/GameSetUp_02/tooltipPlayerMadeMaps
-"These maps are not officially sanctioned by EA and are created by players.\n When you download a new map it will appear in this map list"
+"Estos mapas no cuentan con la aprobación oficial de EA y fueron creados por jugadores.
+ Cuando descargues un mapa nuevo, aparecerá en esta lista de mapas"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/nav/tooltipPlayers
-"Players currently available to \n chat with in this lobby"
+"Jugadores disponibles actualmente para chatear 
+en esta sala"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/nav/tooltipFriends
-"To create a Friend, left click on \n a name in the Player list, \n then left click the Add Friend box"
+"Para crear un amigo, haz clic izquierdo en 
+un nombre de la lista de jugadores 
+y luego haz clic izquierdo en el recuadro Agregar amigo"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/nav/tooltipIgnore
-"To ignore a Player, left click on \n a name and left click on the \n Ignore Player box. Ignored players or \n their messages will not be visible"
+"Para ignorar a un jugador, haz clic izquierdo en 
+un nombre y luego en el recuadro 
+Ignorar jugador. Los jugadores ignorados o 
+sus mensajes no serán visibles"
 END
 
 TOOLTIP:OnlineShell/WebSite//tooltipOfficialWebsite
-"Left click to visit the official leader boards and get the latest game news"
+"Haz clic izquierdo para visitar las clasificaciones oficiales y conocer las últimas noticias del juego"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/tooltipFellowshipClubIcon
-"This player is part of the Fellowship Club and a founding elder of the game community"
+"Este jugador forma parte del Club de la Comunidad y es uno de sus miembros fundadores"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/tooltipPlayerName
-"Nicknames of players currently in this chat lobby"
+"Apodos de los jugadores que están actualmente en esta sala de chat"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/Buttons_inframe/tooltipIgnorePlayerName
-"Nicknames of players currently ignored"
+"Apodos de los jugadores ignorados actualmente"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/tooltipPlayerName
-"Names of players in this lobby"
+"Nombres de los jugadores en esta sala"
 END
 
 TOOLTIP:OnlineShell/OnlineChat/tooltipChatLobby
-"Change the chat lobby"
+"Cambia la sala de chat"
 END
 
 TOOLTIP:OnlineLobby/tooltipArmy
-"Names of armies joining game"
+"Nombres de los ejércitos que se unen a la partida"
 END
 
 TOOLTIP:OnlineLobby/tooltipTeam
-"Teams that are joining game. \n Teams of the same ID numbers are allies"
+"Equipos que se unen a la partida. 
+Los equipos con los mismos números de identificación son aliados"
 END
 
 TOOLTIP:OnlineLobby/tooltipColor
-"House colors of armies joining game"
+"Colores de las casas de los ejércitos que se unen a la partida"
 END
 
 TOOLTIP:OnlineLobby/tooltipHeadtoHead
-"Toggle on to play against other players"
+"Activa esta opción para jugar contra otros jugadores"
 END
 
 TOOLTIP:OnlineLobby/tooltipScenerio
-"Toggle on to play a specific mission with or against other players"
+"Activa esta opción para jugar una misión específica con otros jugadores o contra ellos"
 END
 
 TOOLTIP:OnlineLobby/tooltipOfficialMaps
-"These maps are officially created or sanctioned by Electronic Arts"
+"Estos mapas fueron creados o aprobados oficialmente por Electronic Arts"
 END
 
 TOOLTIP:OnlineLobby/tooltipPlayerMadeMaps
-"These maps are not officially sanctioned by EA and are created by players.\n When you download a new map it will appear in this map list"
+"Estos mapas no cuentan con la aprobación oficial de EA y fueron creados por jugadores.
+ Cuando descargues un mapa nuevo, aparecerá en esta lista de mapas"
 END
 
 TOOLTIP:OnlineJoin/tooltipName
-"Nicknames of players joining game"
+"Apodos de los jugadores que se unen a la partida"
 END
 
 TOOLTIP:OnlineJoin/tooltipArmy
-"Names of armies joining game"
+"Nombres de los ejércitos que se unen a la partida"
 END
 
 TOOLTIP:OnlineJoin/tooltipTeam
-"Teams that are joining game. \n Teams of the same ID numbers are allies"
+"Equipos que se unen a la partida. 
+Los equipos con los mismos números de identificación son aliados"
 END
 
 TOOLTIP:OnlineJoin/tooltipColor
-"House colors of armies joining game"
+"Colores de las casas de los ejércitos que se unen a la partida"
 END
 
 TOOLTIP:OnlineShell/OnlineHome/tooltipOfficialWebsite
-"Left click to visit the official leader boards and get the latest game news"
+"Haz clic izquierdo para visitar las clasificaciones oficiales y conocer las últimas noticias del juego"
 END
 
 TOOLTIP:OnlineShell/OnlineHome/tooltipRank
-"Current community ladder position"
+"Posición actual en la clasificación de la comunidad"
 END
 
 TOOLTIP:OnlineShell/OnlineHome/tooltipcurrentLevel
-"Current player persona status. Players receive 3 points for a victory and 1 point for a defeat"
+"Estado actual del personaje del jugador. Los jugadores reciben 3 puntos por una victoria y 1 punto por una derrota"
 END
 
 TOOLTIP:OnlineShell/OnlineHome/tooltipCommunityWin
-"These statistics track the total Tournament win percentages for each army from the previous week"
+"Estas estadísticas registran los porcentajes totales de victorias del torneo para cada ejército durante la semana anterior"
 END
 
 TOOLTIP:OnlineShell/OnlineProfile/tooltipRohan
-"Overall statistics accumulated for Rohan"
+"Estadísticas generales acumuladas de Rohan"
 END
 
 TOOLTIP:OnlineShell/OnlineProfile/tooltipGondor
-"Overall statistics accumulated for Gondor"
+"Estadísticas generales acumuladas de Gondor"
 END
 
 TOOLTIP:OnlineShell/OnlineProfile/tooltipIsengard
