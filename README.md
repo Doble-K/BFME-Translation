@@ -127,6 +127,11 @@ files are build artifacts.
 4. Validate the catalog and protected tokens.
 5. Review the result before compiling a release.
 
+System-preserved entries use status `preserved` and the `system_preserved` flag.
+They retain the source text intentionally, are validated and compiled normally,
+but are not treated as human translations or included in normal translation
+batches.
+
 For manual work:
 
 ```bash

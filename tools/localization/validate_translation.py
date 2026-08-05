@@ -66,7 +66,7 @@ def main():
 
     errors = 0
     for index, entry in enumerate(data.get("entries", [])):
-        if entry.get("status") not in {"translated", "reviewed"}:
+        if entry.get("status") not in {"translated", "reviewed", "preserved"}:
             continue
 
         source = entry.get("source")

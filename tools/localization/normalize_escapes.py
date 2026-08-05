@@ -21,7 +21,7 @@ def normalize_data(data):
         source = entry.get("source", "")
         translation = entry.get("translation", "")
 
-        if entry.get("status") != "translated" or not translation:
+        if entry.get("status") not in {"translated", "preserved"} or not translation:
             continue
 
         normalized = translation

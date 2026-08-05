@@ -100,12 +100,12 @@ def main():
         if "status" not in entry:
             print(f"[Error] [{entry_id}] Falta el campo 'status'.")
             errors += 1
-        elif entry["status"] not in ["pending", "translated", "reviewed"]:
+        elif entry["status"] not in ["pending", "translated", "reviewed", "preserved"]:
             print(f"[Error] [{entry_id}] Estado desconocido: {entry['status']}")
             errors += 1
 
         # 3. Verificar texto de traducción en estados finalizados
-        if entry.get("status") in ["translated", "reviewed"] and not entry.get("translation"):
+        if entry.get("status") in ["translated", "reviewed", "preserved"] and not entry.get("translation"):
             print(f"[Error] [{entry_id}] Estado '{entry.get('status')}' pero el texto de traducción está vacío.")
             errors += 1
 

@@ -100,6 +100,24 @@ class LocalizationToolTests(unittest.TestCase):
             invalid = run_tool("validate_translation.py", catalog)
             self.assertNotEqual(invalid.returncode, 0)
 
+    def test_preserved_entries_are_validated_as_system_text(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog = Path(directory) / "catalog.json"
+            catalog.write_text(json.dumps({
+                "entries": [{
+                    "id": "LETTER:G",
+                    "source": "%d <COL:RED>",
+                    "translation": "%d <COL:RED>",
+                    "status": "preserved",
+                }]
+            }), encoding="utf-8")
+
+            structural = run_tool("validate.py", catalog)
+            tokens = run_tool("validate_translation.py", catalog)
+
+            self.assertEqual(structural.returncode, 0, structural.stdout + structural.stderr)
+            self.assertEqual(tokens.returncode, 0, tokens.stdout + tokens.stderr)
+
     def test_extract_handles_crlf_and_rejects_incomplete_blocks(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)
@@ -305,6 +323,26 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertEqual(data["entries"][0]["source"], "Hello")
             self.assertEqual(data["entries"][0]["translation"], "Hola")
 
+    def test_preprocess_marks_system_entries_as_preserved(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog = Path(directory) / "catalog.json"
+            catalog.write_text(json.dumps({
+                "entries": [{
+                    "id": "LETTER:G",
+                    "source": "G",
+                    "translation": "",
+                    "status": "pending",
+                }]
+            }), encoding="utf-8")
+
+            result = run_tool("preprocess.py", catalog)
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
+            self.assertEqual(entry["status"], "preserved")
+            self.assertIn("system_preserved", entry["flags"])
+            self.assertEqual(entry["history"][0]["action"], "auto_preserved")
+
     def test_migrate_uses_project_catalog_and_schema(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)
@@ -316,6 +354,11 @@ class LocalizationToolTests(unittest.TestCase):
                     "source": "Hello",
                     "translation": "Bonjour",
                     "status": "translated",
+                }, {
+                    "id": "LETTER:G",
+                    "source": "G",
+                    "translation": "G",
+                    "status": "preserved",
                 }]
             }), encoding="utf-8")
             project_file.write_text(json.dumps({
@@ -338,6 +381,9 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertEqual(entry["translation_meta"]["origin"], "ai")
             self.assertIn("review", entry)
             self.assertEqual(entry["history"][0]["action"], "translated")
+            preserved = data["entries"][1]
+            self.assertEqual(preserved["translation_meta"]["origin"], "system")
+            self.assertEqual(preserved["history"][0]["action"], "auto_preserved")
 
     def test_compare_creates_generic_report(self):
         with tempfile.TemporaryDirectory() as directory:

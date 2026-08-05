@@ -209,11 +209,11 @@ def create_catalog(data, output_path, settings):
             "id": entry["id"],
             "source": entry["text"],
             "translation": current_text,
-            "status": "reviewed" if automatic_id else ("translated" if review_mode else "pending"),
+            "status": "preserved" if automatic_id else ("translated" if review_mode else "pending"),
             "line": entry["line"],
-            "flags": (["auto_id"] if automatic_id else (["needs_review"] if review_mode else [])),
+            "flags": (["system_preserved"] if automatic_id else (["needs_review"] if review_mode else [])),
             "notes": (
-                "Posible hotkey o control automatico; conservar salvo personalizacion intencional."
+                "Entrada del sistema preservada; conservar salvo personalizacion intencional."
                 if automatic_id
                 else ""
             ),

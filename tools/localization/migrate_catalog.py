@@ -23,11 +23,12 @@ def migrate(data, today):
             entry_changed = True
 
         if "translation_meta" not in entry:
+            preserved = entry.get("status") == "preserved"
             entry["translation_meta"] = {
-                "origin": "ai" if entry.get("status") == "translated" else None,
+                "origin": "system" if preserved else ("ai" if entry.get("status") == "translated" else None),
                 "model": None,
-                "date": today if entry.get("status") == "translated" else None,
-                "confidence": 1.0 if entry.get("status") == "translated" else 0.0,
+                "date": today if entry.get("status") in {"translated", "preserved"} else None,
+                "confidence": 1.0 if entry.get("status") in {"translated", "preserved"} else 0.0,
             }
             entry_changed = True
 
@@ -40,10 +41,10 @@ def migrate(data, today):
 
         if "history" not in entry:
             entry["history"] = []
-            if entry.get("status") == "translated" and entry.get("translation"):
+            if entry.get("status") in {"translated", "preserved"} and entry.get("translation"):
                 entry["history"].append({
                     "date": today,
-                    "action": "translated",
+                    "action": "auto_preserved" if entry["status"] == "preserved" else "translated",
                     "from": "",
                     "to": entry["translation"],
                     "by": entry["translation_meta"]["origin"] or "ai",
