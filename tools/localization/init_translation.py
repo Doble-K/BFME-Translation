@@ -2,15 +2,30 @@
 
 import json
 import sys
+import argparse
+from pathlib import Path
 
 
 def main():
-    if len(sys.argv) != 3:
-        print("Usage: init_translation.py <input.json> <output.json>")
-        sys.exit(1)
+    parser = argparse.ArgumentParser(description="Create a work catalog from an extracted source catalog.")
+    parser.add_argument("input", help="Extracted source JSON")
+    parser.add_argument("output", help="New work catalog JSON")
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Allow replacing an existing output catalog",
+    )
+    args = parser.parse_args()
 
-    source_file = sys.argv[1]
-    output_file = sys.argv[2]
+    source_file = args.input
+    output_path = Path(args.output)
+    if output_path.exists() and not args.force:
+        print(
+            f"Error: el catálogo de salida ya existe: {output_path}. "
+            "Use --force solo si desea reemplazarlo.",
+            file=sys.stderr,
+        )
+        return 1
 
     with open(source_file, encoding="utf-8") as f:
         data = json.load(f)
@@ -51,12 +66,13 @@ def main():
             "history": []
         })
 
-    with open(output_file, "w", encoding="utf-8") as f:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
 
-    print(f"Created {output_file}")
+    print(f"Created {output_path}")
     print(f"Entries: {len(result['entries'])}")
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

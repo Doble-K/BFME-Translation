@@ -77,8 +77,15 @@ python3 tools/localization/extract.py \
   catalogs/english.json
 python3 tools/localization/init_translation.py \
   catalogs/english.json \
-  catalogs/spanish_work.json
+  catalogs/rotwk_work.json
 ```
+
+`init_translation.py` refuses to overwrite an existing catalog unless
+`--force` is supplied. If the clone already contains
+`catalogs/spanish_work.json`, skip extraction and initialization and start the
+translation CLI directly. The `.big` placed in `sources/` must be the original
+English ROTWK 2.02 source package, not the generated Spanish package from
+`releases/`.
 
 If the repository already contains a prepared work catalog, start directly
 with the CLI:

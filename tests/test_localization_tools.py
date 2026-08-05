@@ -150,6 +150,17 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertEqual(partial.returncode, 0, partial.stdout + partial.stderr)
             self.assertIn("English", output.read_text(encoding="cp1252"))
 
+    def test_init_refuses_to_overwrite_existing_catalog(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            source = directory / "source.json"
+            output = directory / "catalog.json"
+            source.write_text(json.dumps({"source": "test", "entries": []}), encoding="utf-8")
+            output.write_text("keep", encoding="utf-8")
+            result = run_tool("init_translation.py", source, output)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertEqual(output.read_text(encoding="utf-8"), "keep")
+
     def test_pack_help_exposes_debug_controls(self):
         result = run_tool("pack.py", "--help")
         self.assertEqual(result.returncode, 0)
