@@ -2,3 +2,6 @@
 __pycache__/
 *.pyc
 sources/*.big
+releases/*.big
+source/**/*.str
+translations/**/*.str

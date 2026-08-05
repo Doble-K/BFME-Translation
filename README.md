@@ -37,9 +37,11 @@ BFME-Translation/
 │       └── pack.py               # Packages .str into .big
 ├── translations/
 │   └── spanish/data/
-│       └── lotr.str             # Translated output file
+│       └── lotr.str             # Local generated output (not versioned)
+├── sources/                      # Local input .big files (not versioned)
+├── source/                       # Local source .str files (not versioned)
 ├── releases/
-│   └── spanishpatch202.big      # Final compiled package
+│   └── spanishpatch202.big      # Local compiled package (not versioned)
 ├── tests/
 │   └── test_localization_tools.py # Pipeline regression tests
 ├── AGENTS.md                     # Agent translation instructions
@@ -79,12 +81,12 @@ tools/big4f/bin/linux/big4f x "$SOURCE_BIG" /tmp/rotwk-source && \
 python3 tools/localization/extract.py \
   /tmp/rotwk-source/data/lotr.str \
   catalogs/english.json
-python3 tools/localization/init_translation.py \
+python3 tools/localization/gandalf.py \
   catalogs/english.json \
   catalogs/rotwk_work.json
 ```
 
-`init_translation.py` refuses to overwrite an existing catalog unless
+`gandalf.py` refuses to overwrite an existing catalog unless
 `--force` is supplied. If the clone already contains
 `catalogs/spanish_work.json`, skip extraction and initialization and start the
 translation CLI directly. The `.big` placed in `sources/` must be the original
@@ -178,7 +180,7 @@ then asks for the source archive reference, source language, target language,
 source catalog, and output catalog:
 
 ```bash
-python3 tools/localization/init_translation.py --wizard
+python3 tools/localization/gandalf.py
 ```
 
 The wizard accepts any source-to-target language pair. The source `.big` or

@@ -73,7 +73,7 @@ def main():
     )
     args = parser.parse_args()
 
-    settings = wizard_settings() if args.wizard else None
+    settings = wizard_settings() if args.wizard or not args.input else None
     if settings:
         source_file = settings["source_catalog"]
         output_path = Path(settings["output_catalog"])

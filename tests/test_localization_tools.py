@@ -157,7 +157,7 @@ class LocalizationToolTests(unittest.TestCase):
             output = directory / "catalog.json"
             source.write_text(json.dumps({"source": "test", "entries": []}), encoding="utf-8")
             output.write_text("keep", encoding="utf-8")
-            result = run_tool("init_translation.py", source, output)
+            result = run_tool("gandalf.py", source, output)
             self.assertNotEqual(result.returncode, 0)
             self.assertEqual(output.read_text(encoding="utf-8"), "keep")
 
@@ -170,7 +170,7 @@ class LocalizationToolTests(unittest.TestCase):
             answers = "3\nCustom Mod\nSAGE mod\nsource/custom.big\nen-US\nfr-FR\n"
             answers += f"{source}\n{output}\n"
             result = subprocess.run(
-                [sys.executable, str(TOOLS / "init_translation.py"), "--wizard"],
+                [sys.executable, str(TOOLS / "gandalf.py")],
                 cwd=ROOT,
                 input=answers,
                 capture_output=True,
