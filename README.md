@@ -31,6 +31,7 @@ BFME-Translation/
 │       ├── validate.py           # Structural catalog validation
 │       ├── validate_translation.py # Translation validation
 │       ├── extract.py            # Extracts entries from .str files
+│       ├── gandalf.py            # Interactive project and source wizard
 │       ├── update.py             # Updates the work catalog from a new source
 │       ├── translate.py          # Manual review and translation CLI
 │       ├── build.py              # Compiles catalog to .str format
@@ -174,17 +175,18 @@ python3 tools/localization/translate.py --count 10 --edit
 
 Manual edits are token-validated, saved atomically, and recorded in entry history and metadata.
 
-To create a new work catalog interactively, use the initializer wizard. It
-asks whether the project is ROTWK 2.02, Age of the Ring, or another SAGE mod,
-then asks for the source archive reference, source language, target language,
-source catalog, and output catalog:
+To create a new work catalog interactively, use Gandalf. It detects `.big`
+files under `source/` and `sources/`, offers BFME1, BFME2, ROTWK 2.02, or a
+custom SAGE project, and asks for source language, target language, and output
+catalog:
 
 ```bash
 python3 tools/localization/gandalf.py
 ```
 
-The wizard accepts any source-to-target language pair. The source `.big` or
-`.str` must still be extracted to a JSON catalog with `extract.py` first.
+Gandalf extracts the selected `.big` and the selected `.str` automatically. It
+accepts any source-to-target language pair. The positional mode remains
+available for agents that already have an extracted JSON catalog.
 
 ### Build Workflow (Release)
 
