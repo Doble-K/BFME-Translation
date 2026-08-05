@@ -97,23 +97,25 @@ def parse_model_json(content):
 
 def ollama_response(url, model, mode, entries, glossary, language, timeout, feedback=None):
     if mode == "translate":
-        output_schema = '{"translations":[{"id":"...","translation":"..."}]}'
+        output_schema = '{"translations":[{"key":"...","translation":"..."}]}'
         task = "Translate every source string into the target language."
     else:
-        output_schema = '{"reviews":[{"id":"...","issues":[],"suggestion":null,"confidence":0.0}]}'
+        output_schema = '{"reviews":[{"key":"...","issues":[],"suggestion":null,"confidence":0.0}]}'
         task = "Review every current translation for meaning, terminology, and context."
     input_entries = [
         {
-            "id": entry["id"],
+            "key": f"item_{index}",
             "source": entry.get("source", ""),
             "translation": entry.get("translation", ""),
         }
-        for entry in entries
+        for index, entry in enumerate(entries)
     ]
     system = (
         "You are a localization assistant. Return JSON only, with no markdown. "
-        "Never change IDs. Preserve every protected token exactly. "
-        f"Target language: {language}. Output schema: {output_schema}"
+        "Keys are opaque and must be copied character-for-character; never invent or translate them. "
+        "Do not output engine IDs. Preserve every protected token exactly. "
+        f"Target language: {language}. Output schema: {output_schema}. "
+        "Example translation: input key item_0 with source '1 Second' returns key item_0 and translation '1 segundo'."
     )
     prompt = json.dumps({
         "task": task,
@@ -227,10 +229,10 @@ def main():
                             raise ValueError("La respuesta no contiene una lista translations")
                         matches = [
                             item for item in provider_items
-                            if isinstance(item, dict) and item.get("id") == entry_id
+                            if isinstance(item, dict) and item.get("key") == "item_0"
                         ]
                         if len(matches) != 1:
-                            raise ValueError(f"La respuesta del proveedor no contiene {entry_id}")
+                            raise ValueError(f"La respuesta del proveedor no contiene la clave opaca de {entry_id}")
                         translation = matches[0].get("translation")
                     if not isinstance(translation, str) or not translation:
                         raise ValueError(f"La traducción es inválida para {entry_id}")
@@ -242,7 +244,23 @@ def main():
                         )
                     results.append((entry, translation))
                 else:
-                    review = fixture_review(provider_result, entry_id)
+                    if args.provider == "ollama":
+                        provider_items = provider_result.get("reviews", [])
+                        if not isinstance(provider_items, list):
+                            raise ValueError("La respuesta no contiene una lista reviews")
+                        matches = [
+                            item for item in provider_items
+                            if isinstance(item, dict) and item.get("key") == "item_0"
+                        ]
+                        if len(matches) != 1:
+                            raise ValueError(f"La respuesta del proveedor no contiene la clave opaca de {entry_id}")
+                        review = {
+                            "issues": matches[0].get("issues", []),
+                            "suggestion": matches[0].get("suggestion"),
+                            "confidence": matches[0].get("confidence"),
+                        }
+                    else:
+                        review = fixture_review(provider_result, entry_id)
                     if review["suggestion"]:
                         expected = protected_tokens(entry["source"], rules)
                         actual = protected_tokens(review["suggestion"], rules)
