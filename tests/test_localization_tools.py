@@ -236,6 +236,26 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertEqual(partial.returncode, 0, partial.stdout + partial.stderr)
             self.assertIn('"English"', output.read_text(encoding="cp1252"))
 
+    def test_approve_promotes_suggestion_after_token_validation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Suggested",
+                "source": "%d Days",
+                "translation": "%d Días",
+                "status": "suggested",
+                "history": [],
+            }]}), encoding="utf-8")
+
+            result = run_tool("approve.py", catalog, "--id", "TEST:Suggested")
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
+            self.assertEqual(entry["status"], "translated")
+            self.assertEqual(entry["history"][0]["action"], "approved")
+            self.assertEqual(entry["translation_meta"]["approved_by"], "human")
+
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)
