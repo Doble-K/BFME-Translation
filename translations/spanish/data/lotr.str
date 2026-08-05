@@ -4010,159 +4010,160 @@ GUI:CurrentlyAssignedTo
 END
 
 GUI:Assign
-"Assign"
+"Asignar"
 END
 
 GUI:ResetAll
-"Reset All"
+"Restablecer todo"
 END
 
 GUI:Reset
-"Reset"
+"Restablecer"
 END
 
 GUI:ResetHonors
-"Reset Honors"
+"Restablecer honores"
 END
 
 QM:JOININGQMCHANNEL
-"Joining Tournament..."
+"Uniéndose al canal del torneo..."
 END
 
 QM:WORKING
-"There are %d players currently attempting to match..."
+"Hay %d jugadores intentando emparejar..."
 END
 
 QM:POOLSIZE
-"There are %d players currently attempting to match..."
+"Hay %d jugadores intentando emparejar..."
 END
 
 QM:LOOKINGFORBOT
-"Looking for The Lord of the Rings, The Rise of the Witch-king Online MatchMaker..."
+"Buscando el MatchMaker de The Lord of the Rings, The Rise of the Witch-king Online..."
 END
 
 QM:SENTINFO
-"Game info has been sent..."
+"Información del juego enviada..."
 END
 
 QM:WIDENINGSEARCH
-"Widening search for opponents closest to your preferences..."
+"Ampliando búsqueda para encontrar oponentes cercanos a sus preferencias..."
 END
 
 QM:MATCHED
-"Excellent, a match has been found..."
+"Excelente, se ha encontrado una partida..."
 END
 
 QM:INCHANNEL
-"In channel..."
+"En el canal..."
 END
 
 QM:NEGOTIATINGFIREWALLS
-"Negotiating firewalls..."
+"Negociando firewalls..."
 END
 
 QM:STARTINGGAME
-"Starting the game..."
+"Iniciando el juego..."
 END
 
 QM:COULDNOTFINDBOT
-"Could not find the MatchMaker"
+"No se pudo encontrar el MatchMaker"
 END
 
 QM:COULDNOTFINDCHANNEL
-"Could not find Tournament channel"
+"No se pudo encontrar el canal del torneo"
 END
 
 QM:COULDNOTNEGOTIATEFIREWALLS
-"Could not negotiate firewalls"
+"No se pudo negociar los firewalls"
 END
 
 QM:STOPPED
-"Quickmatch aborted"
+"Partida rápida cancelada"
 END
 
 QM:WaitingForPlayerToJoin
-"Waiting for opponent to join"
+"Esperando a que el oponente se una"
 END
 
 QM:FindingGameChannel
-"Finding opponent's game"
+"Buscando el juego del oponente"
 END
 
 QM:JoinedGameChannel
-"Joined opponent's game"
+"Se unió al juego del oponente"
 END
 
 QM:PlayerJoined
-"Opponent joined"
+"El oponente se ha unido"
 END
 
 QM:LookingForMatchChannel
-"Looking for Tournament channel"
+"Buscando canal del torneo"
 END
 
 QM:NoMatchChannel
-"No match Tournament channel found"
+"No se encontró canal del torneo"
 END
 
 QM:JoinedMatchChannel
-"Tournament channel joined"
+"Canal del torneo unido"
 END
 
 QM:NoMatchingBot
-"MatchMaker not found"
+"MatchMaker no encontrado"
 END
 
 QM:GameNotFound
-"Tournament could not find your opponent's game not found"
+"El torneo no pudo encontrar el juego del oponente"
 END
 
 QM:TimeoutOtherPlayer
-"Tournament timed out waiting for opponent to join the game"
+"El torneo esperó demasiado para que el oponente se uniera al juego"
 END
 
 GUI:SandboxMode
-"Entering sandbox mode..."
+"Entrando al modo sandbox..."
 END
 
 GUI:NeedStartSpots
-"All players must be assigned starting positions."
+"Todos los jugadores deben ser asignados a posiciones iniciales."
 END
 
 GUI:CannotConnectToServservTitle
-"CANNOT CONNECT"
+"NO SE PUEDE CONECTAR"
 END
 
 GUI:PatchAvailable
-"UPDATE AVAILABLE"
+"ACTUALIZACIÓN DISPONIBLE"
 END
 
 GUI:MustPatchForOnline
-"You must download the Update to play The Lord of the Rings, The Rise of the Witch-king Online."
+"Debe descargar la actualización para jugar The Lord of the Rings, The Rise of the Witch-king Online."
 END
 
 GUI:CanPatchForOnline
-"Would you like to download the Update?"
+"¿Desea descargar la actualización?"
 END
 
 GUI:CheckingForPatches
-"Checking for Updates. Please wait...\nPress OK to abort"
+"Buscando actualizaciones. Por favor espere...
+Presione OK para cancelar"
 END
 
 GUI:DownloadErrorTitle
-"DOWNLOAD ERROR"
+"ERROR DE DESCARGA"
 END
 
 GUI:DownloadSuccessTitle
-"DOWNLOAD SUCCESS"
+"DESCARGA EXITOSA"
 END
 
 GUI:DownloadSuccess
-"Download completed without errors"
+"La descarga se completó sin errores"
 END
 
 GUI:DownloadSuccessMustQuit
-"Click OK to exit The Lord of the Rings, The Rise of the Witch-king, and apply the Update"
+"Haga clic en OK para salir de The Lord of the Rings, The Rise of the Witch-king y aplicar la actualización"
 END
 
 GUI:DownloadBytesRatio
@@ -4170,7 +4171,7 @@ GUI:DownloadBytesRatio
 END
 
 GUI:DownloadTimeLeft
-"%d:%02d:%02d remaining"
+"%d:%02d:%02d restante"
 END
 
 GUI:DownloadUnknownTime
@@ -4178,295 +4179,295 @@ GUI:DownloadUnknownTime
 END
 
 FTP:StatusIdle
-"Idle"
+"Inactivo"
 END
 
 FTP:UnknownError
-"Unknown Error"
+"Error desconocido"
 END
 
 FTP:NoSuchServer
-"No Such Server"
+"Servidor no encontrado"
 END
 
 FTP:CouldNotConnect
-"Could Not Connect"
+"No se pudo conectar"
 END
 
 FTP:LoginFailed
-"Login Failed"
+"Error de inicio de sesión"
 END
 
 FTP:NoSuchFile
-"No Such File"
+"Archivo no encontrado"
 END
 
 FTP:LocalFileOpenFailed
-"Local File Open Failed"
+"No se pudo abrir el archivo local"
 END
 
 FTP:TCPError
-"TCP Error"
+"Error TCP"
 END
 
 FTP:DisconnectError
-"Disconnect Error"
+"Error de desconexión"
 END
 
 FTP:StatusConnecting
-"Connecting"
+"Conectando"
 END
 
 FTP:StatusLoggingIn
-"Logging In"
+"Iniciando sesión"
 END
 
 FTP:StatusFindingFile
-"Finding File"
+"Buscando archivo"
 END
 
 FTP:StatusQueryingResume
-"Querying to Resume Download"
+"Consultando para reanudar descarga"
 END
 
 FTP:StatusDownloading
-"Downloading"
+"Descargando"
 END
 
 FTP:StatusDisconnecting
-"Disconnecting"
+"Desconectando"
 END
 
 FTP:StatusFinishing
-"Finishing"
+"Finalizando"
 END
 
 FTP:StatusDone
-"Done"
+"Listo"
 END
 
 FTP:StatusNone
-"None"
+"Ninguno"
 END
 
 WOL:InternalError
-"The Lord of the Rings, The Rise of the Witch-king Online Internal Error"
+"Error interno de The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 WOL:ServerBan
-"Sorry, you've been banned from The Lord of the Rings, The Rise of the Witch-king Online. Please review the Service Terms"
+"Lo sentimos, has sido baneado de The Lord of the Rings, The Rise of the Witch-king Online. Por favor revisa los Términos del Servicio"
 END
 
 WOL:DisconnectedError
-"Sorry, you've been banned from The Lord of the Rings, The Rise of the Witch-king Online. Please review the Service Terms"
+"Lo sentimos, has sido baneado de The Lord of the Rings, The Rise of the Witch-king Online. Por favor revisa los Términos del Servicio"
 END
 
 WOL:NoServers
-"The Lord of the Rings, The Rise of the Witch-king Online not found"
+"The Lord of the Rings, The Rise of the Witch-king Online no encontrado"
 END
 
 WOL:LoginTimeout
-"Timed out waiting to join The Lord of the Rings, The Rise of the Witch-king Online"
+"Tiempo de espera agotado esperando unirte a The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 WOL:NoMatchChannel
-"No match channel found"
+"No se encontró canal de partida"
 END
 
 WOL:NoMatchbot
-"No MatchMaker found"
+"No se encontró MatchMaker"
 END
 
 WOL:BadMatchParams
-"Bad match parameters"
+"Parámetros de partida incorrectos"
 END
 
 WOL:ChatErrorNickInUse
-"That nickname is already in use"
+"Ese apodo ya está en uso"
 END
 
 WOL:ChatErrorBadPass
-"Incorrect password for that name"
+"Contraseña incorrecta para ese nombre"
 END
 
 WOL:ChatErrorNoneSuch
-"No such user or channel"
+"No existe ese usuario o canal"
 END
 
 WOL:ChatErrorConNetDown
-"Network connection is down"
+"La conexión de red está caída"
 END
 
 WOL:ChatErrorConLookupFailed
-"DNS lookup failed."
+"Error de búsqueda DNS."
 END
 
 WOL:ChatErrorConError
-"Fatal network error occurred"
+"Ocurrió un error de red fatal"
 END
 
 WOL:ChatErrorTimeout
-"Timeout occurred."
+"Se produjo un tiempo de espera."
 END
 
 WOL:ChatErrorMustPatch
-"You must get the latest Update before joining The Lord of the Rings, The Rise of the Witch-king Online"
+"Debes obtener la última actualización antes de unirte a The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 WOL:ChatErrorStatusError
-"Internal status error"
+"Error de estado interno"
 END
 
 WOL:ChatErrorUnknownResponse
-"Unknown response"
+"Respuesta desconocida"
 END
 
 WOL:ChatErrorChannelFull
-"Channel is full"
+"El canal está lleno"
 END
 
 WOL:ChatErrorChannelExists
-"Channel already exists"
+"El canal ya existe"
 END
 
 WOL:ChatErrorChannelDoesNotExist
-"Channel does not exist"
+"El canal no existe"
 END
 
 WOL:ChatErrorBadChannelPassword
-"Bad channel password"
+"Contraseña de canal incorrecta"
 END
 
 WOL:ChatErrorBanned
-"Sorry, you've been banned from The Lord of the Rings, The Rise of the Witch-king Online. Please review the Service Terms"
+"Lo sentimos, has sido baneado de The Lord of the Rings, The Rise of the Witch-king Online. Por favor revisa los Términos del Servicio"
 END
 
 WOL:ChatErrorNotOper
-"Cannot perform that operation"
+"No se puede realizar esa operación"
 END
 
 WOL:ChatErrorAccountDisabled
-"Your account has been disabled."
+"Tu cuenta ha sido deshabilitada."
 END
 
 WOL:ChatErrorSerialBanned
-"Your serial number has been banned. Please review the Service Terms"
+"Tu número de serie ha sido baneado. Por favor revisa los Términos del Servicio"
 END
 
 WOL:ChatErrorSerialDup
-"Your serial is already in use"
+"Tu número de serie ya está en uso"
 END
 
 WOL:ChatErrorSerialUnknown
-"Your serial is invalid"
+"Tu número de serie es inválido"
 END
 
 WOL:NetUtilErrorGeneric
-"Generic NetUtil error"
+"Error genérico de NetUtil"
 END
 
 WOL:NetUtilErrorBusy
-"Busy"
+"Ocupado"
 END
 
 WOL:NetUtilErrorTimeout
-"Timeout"
+"Tiempo de espera agotado"
 END
 
 WOL:NetUtilErrorInvalidField
-"Invalid field"
+"Campo inválido"
 END
 
 WOL:NetUtilErrorCantVerify
-"Can't verify"
+"No se puede verificar"
 END
 
 WOL:NetUtilFinished
-"Finished"
+"Finalizado"
 END
 
 WOL:UnknownError
-"Unknown error"
+"Error desconocido"
 END
 
 WOL:CouldNotCreateChannel
-"Could not create channel"
+"No se pudo crear el canal"
 END
 
 WOL:ErrorTitle
-"The Lord of the Rings, The Rise of the Witch-king Online Error"
+"Error de The Lord of the Rings, The Rise of the Witch-king Online"
 END
 
 WOL:LoginErrorTitle
-"Login Error"
+"Error de inicio de sesión"
 END
 
 WOL:CreatingChannel
-"Creating channel"
+"Creando canal"
 END
 
 WOL:ChannelClosed
-"Channel has closed"
+"El canal se ha cerrado"
 END
 
 WOL:BadChannelPassword
-"Bad channel password"
+"Contraseña de canal incorrecta"
 END
 
 WOL:ChannelFull
-"Channel full"
+"Canal lleno"
 END
 
 WOL:BannedFromChannel
-"You've been banned from the channel"
+"Has sido expulsado del canal"
 END
 
 WOL:CannotJoinChannel
-"Cannot join channel"
+"No se puede unir al canal"
 END
 
 WOL:NoWOLAPI
-"Shared Internet Components have not been installed."
+"Los componentes compartidos de Internet no están instalados."
 END
 
 WOL:OldWOLAPI
-"Shared Internet Components need to be updated. Please install from The Lord of the Rings, The Rise of the Witch-king disc"
+"Los componentes compartidos de Internet deben actualizarse. Instálalos desde el disco de The Lord of the Rings, The Rise of the Witch-king"
 END
 
 WOL:BadRegistry
-"The Lord of the Rings, The Rise of the Witch-king Registry is corrupt"
+"El registro de The Lord of the Rings, The Rise of the Witch-king está dañado"
 END
 
 WOL:GotPing
-"Received ping of %dms. The lower the ping, the better the connection"
+"Se recibió un ping de %d ms. Cuanto menor sea el ping, mejor será la conexión"
 END
 
 WOL:ServerListAndVersion
-"Fetching server list"
+"Obteniendo lista de servidores"
 END
 
 WOL:GettingPings
-"Getting pings. The lower the ping, the better the connection"
+"Obteniendo pings. Cuanto menor sea el ping, mejor será la conexión"
 END
 
 WOL:Connecting
-"Connecting"
+"Conectando"
 END
 
 WOL:JoinedChannel
-"You joined %ls"
+"Te uniste a %ls"
 END
 
 WOL:LeftChannel
-"You left %ls"
+"Saliste de %ls"
 END
 
 WOL:UserKicked
-"%ls kicked %ls out of %ls"
+"%ls expulsó a %ls de %ls"
 END
 
 WOL:BeginIgnoreList
-"Begin Ignore List"
+"Inicio de la lista de ignorados"
 END
 
 WOL:IgnoredUser
@@ -4474,91 +4475,91 @@ WOL:IgnoredUser
 END
 
 WOL:EndIgnoreList
-"End Ignore List"
+"Fin de la lista de ignorados"
 END
 
 WOL:DownloadPatchNow
-"Would you like to download the Update at this time?"
+"¿Quieres descargar la actualización ahora?"
 END
 
 WOL:FindInChannel
-"%ls is in %s"
+"%ls está en %s"
 END
 
 WOL:FindInChannelOtherServer
-"%ls is in %s on %s"
+"%ls está en %s en %s"
 END
 
 WOL:FindOffline
-"%ls is not logged in"
+"%ls no ha iniciado sesión"
 END
 
 WOL:FindHiding
-"%ls is not responding to search"
+"%ls no responde a la búsqueda"
 END
 
 WOL:FindNotInChannel
-"%ls is not in a channel"
+"%ls no está en un canal"
 END
 
 WOL:FindNotInChannelOtherServer
-"%ls is on %s"
+"%ls está en %s"
 END
 
 WOL:Lob_49_0
-"Main Lobby"
+"Sala principal"
 END
 
 WOL:Lob_49_1
-"Alternate"
+"Alternativa"
 END
 
 WOL:Lob_49_2
-"Reality"
+"Realidad"
 END
 
 WOL:Lob_41_0
-"Tournament"
+"Torneo"
 END
 
 WOL:UnknownServer
-"unknown server"
+"servidor desconocido"
 END
 
 WOL:UnknownChannel
-"unknown channel"
+"canal desconocido"
 END
 
 WOL:BuddyOffline
-"%ls is offline"
+"%ls está desconectado"
 END
 
 WOL:BuddyMatching
-"%ls is Player Tournament"
+"%ls está en un torneo de jugadores"
 END
 
 WOL:BuddyNotInChan
-"%ls is online"
+"%ls está conectado"
 END
 
 WOL:BuddyInGame
-"%ls is playing a game"
+"%ls está jugando una partida"
 END
 
 WOL:BuddyInChat
-"%ls is chatting in %ls"
+"%ls está chateando en %ls"
 END
 
 WOL:BuddyGameSetup
-"%ls is in %ls"
+"%ls está en %ls"
 END
 
 WOL:BuddyMatchingOtherServer
-"%ls is playing on %ls"
+"%ls está jugando en %ls"
 END
 
 WOL:BuddyNotInChanOtherServer
-"%ls is online on %ls"
+"%ls está conectado en %ls"
 END
 
 WOL:BuddyInGameOtherServer
