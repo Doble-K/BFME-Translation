@@ -312,9 +312,11 @@ def wizard(
         f"config/{slug}_{target_language}.json",
     ))
     if not force and (output_path.exists() or config_path.exists()):
-        raise FileExistsError(
-            "El catalogo o la configuracion de salida ya existen. Use --force o cambie las rutas."
-        )
+        print("El catalogo o la configuracion de salida ya existen.")
+        confirmation = ask("¿Deseas reemplazarlos? (s/N)", "n")
+        if confirmation.lower() not in {"s", "si", "sí", "y", "yes"}:
+            raise ValueError("Operacion cancelada: archivos de salida conservados")
+        force = True
     temporary_directory, string_file, entries = extract_source(big_file)
     try:
         relative_string_file = string_file.relative_to(Path(temporary_directory.name)).as_posix()
