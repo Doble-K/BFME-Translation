@@ -33,7 +33,7 @@ def greet():
                    /\        /\
                   /  \______/  \
 """)
-    print("Bienvenido, viajero. Las puertas de Minas Tirith estan abiertas.")
+    print("Bienvenido, viajero. Las puertas de Minas Tirith estan abiertas. - Gandalf")
     print("Gandalf preparara tu proyecto de localizacion.\n")
 
 
