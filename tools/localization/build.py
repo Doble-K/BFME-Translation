@@ -4,6 +4,8 @@ import json
 import sys
 from pathlib import Path
 
+from normalize_escapes import normalize_data
+
 
 def main():
     if len(sys.argv) < 3:
@@ -15,6 +17,10 @@ def main():
 
     with open(catalog_file, "r", encoding="utf-8") as f:
         data = json.load(f)
+
+    normalized_count = normalize_data(data)
+    if normalized_count:
+        print(f"Secuencias de escape normalizadas durante el build: {normalized_count}")
 
     entries = data.get("entries", [])
     output_str_file.parent.mkdir(parents=True, exist_ok=True)
