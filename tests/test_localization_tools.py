@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+
+import json
+import subprocess
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+TOOLS = ROOT / "tools" / "localization"
+
+
+def run_tool(name, *args):
+    return subprocess.run(
+        [sys.executable, str(TOOLS / name), *map(str, args)],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+
+
+class LocalizationToolTests(unittest.TestCase):
+    def test_translation_tokens_are_enforced(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog = Path(directory) / "catalog.json"
+            catalog.write_text(
+                json.dumps({
+                    "entries": [{
+                        "id": "TEST:Token",
+                        "source": "Damage %d <COL:RED> \\n",
+                        "translation": "Daño %d <COL:RED> \\n",
+                        "status": "translated",
+                    }]
+                }),
+                encoding="utf-8",
+            )
+            valid = run_tool("validate_translation.py", catalog)
+            self.assertEqual(valid.returncode, 0, valid.stdout + valid.stderr)
+
+            data = json.loads(catalog.read_text(encoding="utf-8"))
+            data["entries"][0]["translation"] = "Daño %s <COL:RED> \\n"
+            catalog.write_text(json.dumps(data), encoding="utf-8")
+            invalid = run_tool("validate_translation.py", catalog)
+            self.assertNotEqual(invalid.returncode, 0)
+
+    def test_extract_handles_crlf_and_rejects_incomplete_blocks(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            source = directory / "source.str"
+            output = directory / "source.json"
+            source.write_bytes(
+                b"// header\r\nTEST:One\r\n\"A \\n line\"\r\nEND\r\n"
+            )
+            result = run_tool("extract.py", source, output)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            extracted = json.loads(output.read_text(encoding="utf-8"))
+            self.assertEqual(extracted["entries"][0]["text"], "A \\n line")
+
+            source.write_text("TEST:Broken\n\"missing end\"\n", encoding="utf-8")
+            broken = run_tool("extract.py", source, output)
+            self.assertNotEqual(broken.returncode, 0)
+
+    def test_update_retires_and_restores_entries(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            source_removed = directory / "source-removed.json"
+            source_restored = directory / "source-restored.json"
+            catalog = directory / "catalog.json"
+            source_removed.write_text(
+                json.dumps({"entries": [{"id": "TEST:One", "text": "One", "line": 1}]}),
+                encoding="utf-8",
+            )
+            source_restored.write_text(
+                json.dumps({"entries": [
+                    {"id": "TEST:One", "text": "One", "line": 1},
+                    {"id": "TEST:Two", "text": "Two", "line": 2},
+                ]}),
+                encoding="utf-8",
+            )
+            catalog.write_text(json.dumps({"entries": [
+                {"id": "TEST:One", "source": "One", "translation": "Uno", "status": "translated"},
+                {"id": "TEST:Two", "source": "Two", "translation": "Dos", "status": "translated"},
+            ]}), encoding="utf-8")
+
+            removed = run_tool("update.py", source_removed, catalog)
+            self.assertEqual(removed.returncode, 0, removed.stdout + removed.stderr)
+            retired_data = json.loads(catalog.read_text(encoding="utf-8"))
+            self.assertEqual(len(retired_data["retired_entries"]), 1)
+            self.assertIn("source_removed", retired_data["retired_entries"][0]["flags"])
+
+            restored = run_tool("update.py", source_restored, catalog)
+            self.assertEqual(restored.returncode, 0, restored.stdout + restored.stderr)
+            restored_data = json.loads(catalog.read_text(encoding="utf-8"))
+            self.assertEqual(restored_data.get("retired_entries"), [])
+            restored_entry = next(e for e in restored_data["entries"] if e["id"] == "TEST:Two")
+            self.assertIn("source_restored", restored_entry["flags"])
+
+    def test_build_requires_explicit_partial_fallback(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            output = directory / "output.str"
+            catalog.write_text(json.dumps({"entries": [
+                {"id": "TEST:Pending", "source": "English", "translation": "", "status": "pending"},
+            ]}), encoding="utf-8")
+            strict = run_tool("build.py", catalog, output)
+            self.assertNotEqual(strict.returncode, 0)
+            partial = run_tool("build.py", catalog, output, "--allow-source-fallback")
+            self.assertEqual(partial.returncode, 0, partial.stdout + partial.stderr)
+            self.assertIn("English", output.read_text(encoding="cp1252"))
+
+    def test_pack_help_exposes_debug_controls(self):
+        result = run_tool("pack.py", "--help")
+        self.assertEqual(result.returncode, 0)
+        self.assertIn("--exclude-orphan-ids", result.stdout)
+        self.assertIn("--dedupe-ids", result.stdout)
+
+
+if __name__ == "__main__":
+    unittest.main()
