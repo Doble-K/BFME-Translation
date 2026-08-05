@@ -4,6 +4,8 @@ import argparse
 import json
 import os
 import sys
+import urllib.error
+import urllib.request
 from datetime import datetime
 from pathlib import Path
 
@@ -83,17 +85,83 @@ def fixture_review(fixture, entry_id):
     return {"issues": issues, "suggestion": suggestion, "confidence": confidence}
 
 
+def parse_model_json(content):
+    content = content.strip()
+    if content.startswith("```"):
+        content = content.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+    result = json.loads(content)
+    if not isinstance(result, dict):
+        raise ValueError("La respuesta del modelo debe ser un objeto JSON")
+    return result
+
+
+def ollama_response(url, model, mode, entries, glossary, language, timeout):
+    if mode == "translate":
+        output_schema = '{"translations":[{"id":"...","translation":"..."}]}'
+        task = "Translate every source string into the target language."
+    else:
+        output_schema = '{"reviews":[{"id":"...","issues":[],"suggestion":null,"confidence":0.0}]}'
+        task = "Review every current translation for meaning, terminology, and context."
+    input_entries = [
+        {
+            "id": entry["id"],
+            "source": entry.get("source", ""),
+            "translation": entry.get("translation", ""),
+        }
+        for entry in entries
+    ]
+    system = (
+        "You are a localization assistant. Return JSON only, with no markdown. "
+        "Never change IDs. Preserve every protected token exactly. "
+        f"Target language: {language}. Output schema: {output_schema}"
+    )
+    prompt = json.dumps({
+        "task": task,
+        "entries": input_entries,
+        "glossary": glossary,
+    }, ensure_ascii=False)
+    payload = json.dumps({
+        "model": model,
+        "stream": False,
+        "format": "json",
+        "options": {"temperature": 0},
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": prompt},
+        ],
+    }).encode("utf-8")
+    request = urllib.request.Request(
+        f"{url.rstrip('/')}/api/chat",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            body = json.loads(response.read().decode("utf-8"))
+    except (OSError, urllib.error.URLError, json.JSONDecodeError) as error:
+        raise ValueError(f"No se pudo consultar Ollama: {error}") from error
+    try:
+        return parse_model_json(body["message"]["content"])
+    except (KeyError, TypeError, json.JSONDecodeError) as error:
+        raise ValueError(f"Respuesta JSON inválida de Ollama: {error}") from error
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Run reproducible bulk AI translation or review jobs."
     )
     parser.add_argument("--project", required=True, help="Project configuration JSON")
     parser.add_argument("--mode", choices=("translate", "review"), required=True)
-    parser.add_argument("--fixture", required=True, help="Fixture JSON provider response")
+    parser.add_argument("--provider", choices=("fixture", "ollama"), default="fixture")
+    parser.add_argument("--fixture", help="Fixture JSON provider response")
     parser.add_argument("--count", type=int, default=50)
+    parser.add_argument("--dry-run", action="store_true", help="Do not write catalog changes")
     parser.add_argument("--write", action="store_true", help="Write results to the catalog")
     parser.add_argument("--model", default="fixture", help="Model/provider label in metadata")
     parser.add_argument("--actor", default="ai", help="Actor recorded in metadata")
+    parser.add_argument("--ollama-url", default="http://127.0.0.1:11434")
+    parser.add_argument("--timeout", type=int, default=300)
     parser.add_argument("--rules", type=Path, default=DEFAULT_RULES)
     parser.add_argument(
         "--glossary",
@@ -105,11 +173,15 @@ def main():
 
     if args.count < 1:
         parser.error("--count debe ser mayor que cero")
+    if args.provider == "fixture" and not args.fixture:
+        parser.error("--fixture es obligatorio con --provider fixture")
+    if args.write and args.dry_run:
+        parser.error("--write y --dry-run son incompatibles")
 
     try:
         project = load_project(args.project)
         catalog_path = resolve_project_path(project, "catalog")
-        fixture = load_fixture(Path(args.fixture))
+        fixture = load_fixture(Path(args.fixture)) if args.provider == "fixture" else None
         rules = json.loads(args.rules.read_text(encoding="utf-8"))
         glossary = args.glossary.read_text(encoding="utf-8")
     except (OSError, json.JSONDecodeError, ValueError) as error:
@@ -125,10 +197,40 @@ def main():
     today = datetime.now().strftime("%Y-%m-%d")
     results = []
     try:
+        if args.provider == "ollama":
+            provider_result = ollama_response(
+                args.ollama_url,
+                args.model,
+                args.mode,
+                entries,
+                glossary,
+                project["language"],
+                args.timeout,
+            )
+        else:
+            provider_result = fixture
+        if args.mode == "translate":
+            provider_items = provider_result.get("translations", [])
+            if args.provider == "fixture":
+                provider_translations = provider_items if isinstance(provider_items, dict) else {}
+            else:
+                if not isinstance(provider_items, list):
+                    raise ValueError("La respuesta no contiene una lista translations")
+                provider_translations = {
+                    item.get("id"): item.get("translation")
+                    for item in provider_items
+                    if isinstance(item, dict)
+                }
         for entry in entries:
             entry_id = entry["id"]
             if args.mode == "translate":
-                translation = fixture_translation(fixture, entry_id)
+                translation = (
+                    fixture_translation(provider_result, entry_id)
+                    if args.provider == "fixture"
+                    else provider_translations.get(entry_id)
+                )
+                if not isinstance(translation, str) or not translation:
+                    raise ValueError(f"La respuesta del proveedor no contiene {entry_id}")
                 expected = protected_tokens(entry["source"], rules)
                 actual = protected_tokens(translation, rules)
                 if expected != actual:
@@ -137,7 +239,7 @@ def main():
                     )
                 results.append((entry, translation))
             else:
-                review = fixture_review(fixture, entry_id)
+                review = fixture_review(provider_result, entry_id)
                 if review["suggestion"]:
                     expected = protected_tokens(entry["source"], rules)
                     actual = protected_tokens(review["suggestion"], rules)
