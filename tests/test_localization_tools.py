@@ -62,7 +62,7 @@ class LocalizationToolTests(unittest.TestCase):
             source = directory / "source.str"
             output = directory / "source.json"
             source.write_bytes(
-                b"// header\r\nTEST:One\r\n\"A \\n line\"\r\nEND\r\n"
+                b"// header\r\nTEST:One\r\n\"A \\n line\"\r\nEND \r\n"
             )
             result = run_tool("extract.py", source, output)
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)

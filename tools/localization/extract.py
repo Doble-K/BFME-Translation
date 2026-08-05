@@ -11,10 +11,11 @@ class StringFileError(ValueError):
 
 
 def parse_text(line, line_number):
-    if not line.startswith('"') or not line.endswith('"'):
+    normalized_line = line.rstrip()
+    if not normalized_line.startswith('"') or not normalized_line.endswith('"'):
         raise StringFileError(f"Línea {line_number}: texto sin comillas completas")
 
-    value = line[1:-1]
+    value = normalized_line[1:-1]
     result = []
     index = 0
     while index < len(value):
@@ -39,15 +40,15 @@ def extract_str(path, encoding="cp1252"):
                 line = raw_line.rstrip("\r\n")
 
                 if current_id is None:
-                    if not line or line.startswith("//"):
+                    if not line.strip() or line.lstrip().startswith("//"):
                         continue
-                    if line == "END":
+                    if line.strip().upper() == "END":
                         raise StringFileError(f"Línea {line_number}: END sin entrada")
                     current_id = line
                     start_line = line_number
                     continue
 
-                if line == "END":
+                if line.strip().upper() == "END":
                     if current_text is None:
                         raise StringFileError(
                             f"Línea {line_number}: falta el texto para {current_id}"
@@ -60,6 +61,22 @@ def extract_str(path, encoding="cp1252"):
                     current_id = None
                     current_text = None
                     start_line = None
+                    continue
+
+                if not line.strip():
+                    continue
+
+                if line.lstrip().startswith("//"):
+                    continue
+
+                if (
+                    current_text is None
+                    and not current_id.strip()
+                    and line.strip()
+                    and not line.startswith('"')
+                ):
+                    current_id = line
+                    start_line = line_number
                     continue
 
                 if current_text is not None:
