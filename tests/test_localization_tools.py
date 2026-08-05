@@ -598,6 +598,72 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertIn("fr:", result.stdout)
             self.assertIn("Hello", result.stdout)
 
+    def test_translate_review_clears_needs_review_after_edit(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog = Path(directory) / "catalog.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Review",
+                "source": "%d Days",
+                "translation": "%d Jornadas",
+                "status": "translated",
+                "flags": ["needs_review"],
+                "history": [],
+            }]}), encoding="utf-8")
+
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(TOOLS / "translate.py"),
+                    str(catalog),
+                    "--review",
+                    "--edit",
+                    "--count",
+                    "1",
+                ],
+                cwd=ROOT,
+                input="%d Días\n",
+                capture_output=True,
+                text=True,
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
+            self.assertEqual(entry["translation"], "%d Días")
+            self.assertNotIn("needs_review", entry["flags"])
+            self.assertTrue(entry["review"]["human"]["checked"])
+
+    def test_translate_review_keep_clears_needs_review_without_editing(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog = Path(directory) / "catalog.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:KeepReview",
+                "source": "Hello",
+                "translation": "Hola",
+                "status": "translated",
+                "flags": ["needs_review"],
+            }]}), encoding="utf-8")
+
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(TOOLS / "translate.py"),
+                    str(catalog),
+                    "--review",
+                    "--edit",
+                    "--count",
+                    "1",
+                ],
+                cwd=ROOT,
+                input=":keep\n",
+                capture_output=True,
+                text=True,
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
+            self.assertEqual(entry["translation"], "Hola")
+            self.assertNotIn("needs_review", entry["flags"])
+
     def test_translate_retries_after_token_error(self):
         with tempfile.TemporaryDirectory() as directory:
             catalog = Path(directory) / "catalog.json"

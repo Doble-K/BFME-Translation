@@ -79,12 +79,15 @@ def valid_translation(entry, value, rules):
     return protected_tokens(entry.get("source", ""), rules) == protected_tokens(value, rules)
 
 
-def record_translation(entry, value, today):
+def record_translation(entry, value, today, review=False):
     old_translation = entry.get("translation", "")
     entry["translation"] = value
-    entry["status"] = "translated"
+    if not review:
+        entry["status"] = "translated"
     entry.setdefault("flags", [])
-    if "needs_review" not in entry["flags"]:
+    if review:
+        entry["flags"] = [flag for flag in entry["flags"] if flag != "needs_review"]
+    elif "needs_review" not in entry["flags"]:
         entry["flags"].append("needs_review")
     entry["translation_meta"] = {
         "origin": "human",
@@ -98,6 +101,24 @@ def record_translation(entry, value, today):
         "from": old_translation,
         "to": value,
         "by": "human",
+    })
+    if review:
+        entry.setdefault("review", {}).setdefault("human", {})
+        entry["review"]["human"].update({
+            "checked": True,
+            "user": "human",
+            "date": today,
+        })
+
+
+def complete_review(entry, today):
+    entry.setdefault("flags", [])
+    entry["flags"] = [flag for flag in entry["flags"] if flag != "needs_review"]
+    entry.setdefault("review", {}).setdefault("human", {})
+    entry["review"]["human"].update({
+        "checked": True,
+        "user": "human",
+        "date": today,
     })
 
 
@@ -192,7 +213,7 @@ def main():
             index += 1
             continue
 
-        print("Comandos: :back volver, :skip saltar, :quit salir")
+        print("Comandos: :back volver, :skip saltar, :keep aceptar, :quit salir")
         while True:
             value = input(f"{target_language}: ").strip()
             if value == ":back":
@@ -200,6 +221,12 @@ def main():
                 break
             if value == ":quit":
                 return 0
+            if value == ":keep" and args.review:
+                complete_review(entry, datetime.now().strftime("%Y-%m-%d"))
+                save_catalog(catalog_path, data)
+                print("Review accepted")
+                index += 1
+                break
             if value in {"", ":skip"}:
                 index += 1
                 break
@@ -210,7 +237,12 @@ def main():
                 print("Corrige los tokens protegidos o deja vacío para saltar esta entrada.")
                 continue
 
-            record_translation(entry, value, datetime.now().strftime("%Y-%m-%d"))
+            record_translation(
+                entry,
+                value,
+                datetime.now().strftime("%Y-%m-%d"),
+                review=args.review,
+            )
             save_catalog(catalog_path, data)
             print("Saved")
             index += 1
