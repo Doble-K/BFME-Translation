@@ -267,13 +267,14 @@ def create_project_config(config_path, settings, string_file):
         config_file.write("\n")
 
 
-def handoff_to_translation(output_path, settings, advanced):
+def handoff_to_translation(output_path, config_path, settings, advanced):
     print("\nSiguiente paso:")
     print("  1. Iniciar batch manual")
-    print("  2. Ver batch sin modificar")
-    print("  3. Salir")
+    print("  2. Ejecutar bulk con Ollama (dry-run por defecto)")
+    print("  3. Ver batch manual sin modificar")
+    print("  4. Salir")
     choice = ask("Selecciona una opcion", "1")
-    if choice == "3":
+    if choice == "4":
         return
 
     count_value = ask("Cantidad de entradas", "20")
@@ -284,12 +285,37 @@ def handoff_to_translation(output_path, settings, advanced):
     except ValueError as error:
         raise ValueError("La cantidad debe ser un entero mayor que cero") from error
 
+    if choice == "2":
+        write = ask("¿Guardar resultados de Ollama? (s/N)", "n")
+        command = [
+            sys.executable,
+            str(ROOT / "tools/localization/ai_translate.py"),
+            "--project",
+            str(config_path),
+            "--provider",
+            "ollama",
+            "--mode",
+            "translate",
+            "--routing",
+            "auto",
+            "--count",
+            str(count),
+        ]
+        if write.lower() in {"s", "si", "sí", "y", "yes"}:
+            command.append("--write")
+        else:
+            command.append("--dry-run")
+        subprocess.run(command, cwd=ROOT, check=True)
+        return
+
     command = [
         sys.executable,
         str(ROOT / "tools/localization/translate.py"),
         str(output_path),
         "--count",
         str(count),
+        "--project",
+        str(config_path),
     ]
     if choice == "1":
         command.append("--edit")
@@ -377,7 +403,7 @@ def wizard(
             choice = ask("Selecciona una opcion", "1")
             if choice == "1":
                 print(f"Usando catalogo existente: {output_path}")
-                handoff_to_translation(output_path, settings, advanced)
+                handoff_to_translation(output_path, config_path, settings, advanced)
                 return
             if choice != "2":
                 raise ValueError("Operacion cancelada: archivos de salida conservados")
@@ -400,7 +426,7 @@ def wizard(
     print(f"Proyecto: {project['name']}")
     print(f"Idioma: {source_language} -> {target_language}")
     print(f"Configuracion: {config_path}")
-    handoff_to_translation(output_path, settings, advanced)
+    handoff_to_translation(output_path, config_path, settings, advanced)
 
 
 def non_interactive(args):
