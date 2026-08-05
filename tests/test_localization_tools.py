@@ -248,13 +248,41 @@ class LocalizationToolTests(unittest.TestCase):
                 "history": [],
             }]}), encoding="utf-8")
 
-            result = run_tool("approve.py", catalog, "--id", "TEST:Suggested")
+            result = run_tool("review.py", "approve", catalog, "--id", "TEST:Suggested")
 
             self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
             entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
             self.assertEqual(entry["status"], "translated")
             self.assertEqual(entry["history"][0]["action"], "approved")
             self.assertEqual(entry["translation_meta"]["approved_by"], "human")
+
+    def test_review_reject_preserves_suggestion_and_reason(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog = Path(directory) / "catalog.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Rejected",
+                "source": "English",
+                "translation": "Propuesta",
+                "status": "suggested",
+                "history": [],
+            }]}), encoding="utf-8")
+
+            result = run_tool(
+                "review.py",
+                "reject",
+                catalog,
+                "--id",
+                "TEST:Rejected",
+                "--reason",
+                "Needs context",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
+            self.assertEqual(entry["status"], "rejected")
+            self.assertEqual(entry["translation"], "Propuesta")
+            self.assertEqual(entry["translation_meta"]["rejection_reason"], "Needs context")
+            self.assertEqual(entry["history"][0]["action"], "rejected")
 
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:
