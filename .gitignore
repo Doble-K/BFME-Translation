@@ -5,3 +5,11 @@ sources/*.big
 releases/*.big
 source/**/*.str
 translations/**/*.str
+backup/
+
+# Local test artifacts
+GOAL.md
+output_test.str
+catalogs/bfme2-rotwk-2.02_es_work.json
+config/bfme2-rotwk-2.02_es.json
+reports/generated/english-*.json
