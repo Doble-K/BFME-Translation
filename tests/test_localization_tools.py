@@ -13,7 +13,13 @@ from unittest.mock import Mock, patch
 ROOT = Path(__file__).resolve().parents[1]
 TOOLS = ROOT / "tools" / "localization"
 sys.path.insert(0, str(TOOLS))
-from project import load_project, resolve_project_path
+from project import (
+    PROJECT_SCOPE_PATH_ENV,
+    PROJECT_SCOPE_REVISION_ENV,
+    load_project,
+    project_revision,
+    resolve_project_path,
+)
 from ai_translate import (
     choose_model,
     mask_protected_tokens,
@@ -29,6 +35,13 @@ from opencode_farm import (
     build_opencode_command,
     load_farm_config,
     stop_farm,
+)
+from catalog_edit import (
+    CatalogEditError,
+    EntryConflictError,
+    EntryReservedError,
+    commit_entry,
+    search_entries,
 )
 
 
@@ -51,6 +64,25 @@ def fill_agent_response(batch_path, translations):
             item["translation"] = translations[item["id"]]
     response_path.write_text(json.dumps(response), encoding="utf-8")
     return response_path
+
+
+def create_project_fixture(directory, entries, name="catalog-edit-test"):
+    directory = Path(directory)
+    catalog = directory / "catalog.json"
+    project_file = directory / "project.json"
+    catalog.write_text(json.dumps({"entries": entries}), encoding="utf-8")
+    project_file.write_text(json.dumps({
+        "name": name,
+        "source_archive": str(directory / "source.big"),
+        "string_directory": str(directory),
+        "string_files": ["data/strings.str"],
+        "catalog": str(catalog),
+        "output_string_file": str(directory / "strings.str"),
+        "output_package": str(directory / "output.big"),
+        "language": "es-419",
+        "encoding": "cp1252",
+    }), encoding="utf-8")
+    return project_file, catalog
 
 
 class LocalizationToolTests(unittest.TestCase):
@@ -1105,6 +1137,169 @@ class LocalizationToolTests(unittest.TestCase):
             self.assertFalse((directory / "rejected.json").exists())
             self.assertEqual(accepted.returncode, 0, accepted.stdout + accepted.stderr)
 
+    def test_catalog_edit_rejects_reserved_entry_without_writing(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, catalog = create_project_fixture(directory, [{
+                "id": "TEST:Reserved",
+                "source": "Reserved",
+                "translation": "",
+                "status": "pending",
+                "flags": [],
+            }])
+            snapshot = search_entries(project_path=project_file)[0]
+            self.assertEqual(len(snapshot["entry_revision"]), 32)
+            exported = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--worker", "reservation-test", "--count", "1",
+                "--output", directory / "batch.json",
+            )
+            self.assertEqual(exported.returncode, 0, exported.stdout + exported.stderr)
+            before = catalog.read_bytes()
+
+            with self.assertRaisesRegex(EntryReservedError, "reservada por"):
+                commit_entry(
+                    snapshot["id"],
+                    snapshot["entry_revision"],
+                    "save",
+                    project_path=project_file,
+                    translation="Reservado",
+                )
+
+            self.assertEqual(catalog.read_bytes(), before)
+
+    def test_catalog_edit_merges_with_unrelated_agent_application(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, catalog = create_project_fixture(directory, [
+                {
+                    "id": "TEST:Manual",
+                    "source": "Manual",
+                    "translation": "",
+                    "status": "pending",
+                    "flags": [],
+                },
+                {
+                    "id": "TEST:Agent",
+                    "source": "Agent",
+                    "translation": "",
+                    "status": "pending",
+                    "flags": [],
+                },
+            ])
+            manual_snapshot = next(
+                item for item in search_entries(project_path=project_file)
+                if item["id"] == "TEST:Manual"
+            )
+            batch_file = directory / "agent.json"
+            exported = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--worker", "agent-worker", "--count", "1",
+                "--output", batch_file,
+            )
+            self.assertEqual(exported.returncode, 0, exported.stdout + exported.stderr)
+            fill_agent_response(batch_file, {"TEST:Agent": "Agente"})
+            applied = run_tool(
+                "agent_batch.py", "apply", "--project", project_file,
+                "--input", batch_file, "--actor", "agent-worker",
+            )
+            self.assertEqual(applied.returncode, 0, applied.stdout + applied.stderr)
+
+            commit_entry(
+                manual_snapshot["id"],
+                manual_snapshot["entry_revision"],
+                "save",
+                project_path=project_file,
+                translation="Manual corregido",
+            )
+
+            entries = {
+                item["id"]: item
+                for item in json.loads(catalog.read_text(encoding="utf-8"))["entries"]
+            }
+            self.assertEqual(entries["TEST:Agent"]["translation"], "Agente")
+            self.assertEqual(
+                entries["TEST:Manual"]["translation"], "Manual corregido"
+            )
+
+    def test_catalog_edit_rejects_stale_entry_revision(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:Conflict",
+                "source": "One",
+                "translation": "",
+                "status": "pending",
+                "flags": [],
+            }])
+            snapshot = search_entries(project_path=project_file)[0]
+            commit_entry(
+                snapshot["id"], snapshot["entry_revision"], "save",
+                project_path=project_file, translation="Uno",
+            )
+
+            with self.assertRaisesRegex(EntryConflictError, "cambió"):
+                commit_entry(
+                    snapshot["id"], snapshot["entry_revision"], "save",
+                    project_path=project_file, translation="Uno corregido",
+                )
+
+    def test_catalog_edit_validates_tokens_and_requires_explicit_preserve(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, catalog = create_project_fixture(directory, [{
+                "id": "TEST:Tokens",
+                "source": "%d Days",
+                "translation": "",
+                "status": "pending",
+                "flags": [],
+            }])
+            snapshot = search_entries(project_path=project_file)[0]
+
+            with self.assertRaisesRegex(CatalogEditError, "tokens inválidos"):
+                commit_entry(
+                    snapshot["id"], snapshot["entry_revision"], "save",
+                    project_path=project_file, translation="Días",
+                )
+            with self.assertRaisesRegex(CatalogEditError, "use la acción preserve"):
+                commit_entry(
+                    snapshot["id"], snapshot["entry_revision"], "save",
+                    project_path=project_file, translation="%d Days",
+                )
+
+            preserved = commit_entry(
+                snapshot["id"], snapshot["entry_revision"], "preserve",
+                project_path=project_file,
+            )
+            entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
+            self.assertEqual(preserved["status"], "preserved")
+            self.assertEqual(entry["translation"], "%d Days")
+            self.assertIn("source_preserved", entry["flags"])
+
+    def test_catalog_edit_review_and_requeue_are_explicit(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, catalog = create_project_fixture(directory, [{
+                "id": "TEST:Review",
+                "source": "Hello",
+                "translation": "Hola",
+                "status": "translated",
+                "flags": ["needs_review"],
+            }])
+            snapshot = search_entries(project_path=project_file)[0]
+            reviewed = commit_entry(
+                snapshot["id"], snapshot["entry_revision"], "review",
+                project_path=project_file,
+            )
+            self.assertEqual(reviewed["status"], "reviewed")
+            self.assertNotIn("needs_review", reviewed["flags"])
+
+            requeued = commit_entry(
+                reviewed["id"], reviewed["entry_revision"], "requeue",
+                project_path=project_file,
+            )
+            entry = json.loads(catalog.read_text(encoding="utf-8"))["entries"][0]
+            self.assertEqual(requeued["status"], "pending")
+            self.assertEqual(entry["translation"], "")
+            self.assertIn("manual_requeue", entry["flags"])
+
     def test_opencode_farm_uses_explicit_models_for_every_coordinator(self):
         config_path = ROOT / "config" / "opencode_farm.json"
         config = load_farm_config(config_path)
@@ -1123,13 +1318,21 @@ class LocalizationToolTests(unittest.TestCase):
             ],
         )
         for coordinator in config["coordinators"]:
-            command = build_opencode_command(coordinator, 4, 25)
+            command = build_opencode_command(
+                coordinator, config["project"], 4, 25
+            )
             self.assertEqual(
                 command[command.index("--agent") + 1],
                 "translation-coordinator",
             )
             self.assertEqual(command[command.index("--model") + 1], coordinator["model"])
-            self.assertEqual(command[-4:], ["translate-parallel", coordinator["prefix"], "4", "25"])
+            arguments = json.loads(command[-1])
+            self.assertEqual(arguments, {
+                "project": str(config["project"]),
+                "prefix": coordinator["prefix"],
+                "workers": 4,
+                "count": 25,
+            })
             self.assertNotIn("gemma", " ".join(command).lower())
 
         dry_run = run_tool(
@@ -1141,9 +1344,12 @@ class LocalizationToolTests(unittest.TestCase):
     def test_opencode_farm_passes_exact_worker_scope_to_child(self):
         with tempfile.TemporaryDirectory() as directory:
             directory = Path(directory)
+            project_file = directory / "project.json"
+            project_file.write_text("{}", encoding="utf-8")
             config = {
                 "config_path": directory / "farm.json",
-                "project": directory / "project.json",
+                "project": project_file,
+                "project_revision": "project-revision",
                 "workers": 4,
                 "count": 25,
                 "max_restarts": 1,
@@ -1169,7 +1375,80 @@ class LocalizationToolTests(unittest.TestCase):
                 environment["BFME_TRANSLATION_WORKER_PREFIX"], "farm-safe"
             )
             self.assertEqual(environment["BFME_TRANSLATION_WORKER_COUNT"], "4")
+            self.assertEqual(
+                environment[PROJECT_SCOPE_PATH_ENV], str(directory / "project.json")
+            )
+            self.assertEqual(
+                environment[PROJECT_SCOPE_REVISION_ENV], "project-revision"
+            )
             supervisor.slots[0]["log"].close()
+
+    def test_supervised_project_scope_rejects_other_or_changed_project(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+
+            def create_project(name):
+                project_directory = directory / name
+                project_directory.mkdir()
+                catalog = project_directory / "catalog.json"
+                project_file = project_directory / "project.json"
+                catalog.write_text(json.dumps({"entries": [{
+                    "id": f"TEST:{name}",
+                    "source": name,
+                    "translation": "",
+                    "status": "pending",
+                }]}), encoding="utf-8")
+                project_file.write_text(json.dumps({
+                    "name": name,
+                    "source_archive": str(project_directory / "source.big"),
+                    "string_directory": str(project_directory),
+                    "string_files": ["data/strings.str"],
+                    "catalog": str(catalog),
+                    "output_string_file": str(project_directory / "strings.str"),
+                    "output_package": str(project_directory / "output.big"),
+                    "language": "es-419",
+                    "encoding": "cp1252",
+                }), encoding="utf-8")
+                return project_file, catalog
+
+            project_a, catalog_a = create_project("project-a")
+            project_b, _catalog_b = create_project("project with spaces")
+            environment = os.environ.copy()
+            environment.update({
+                PROJECT_SCOPE_PATH_ENV: str(project_b.resolve()),
+                PROJECT_SCOPE_REVISION_ENV: project_revision(project_b),
+            })
+            self.assertEqual(len(environment[PROJECT_SCOPE_REVISION_ENV]), 32)
+            before_a = catalog_a.read_bytes()
+
+            wrong_project = run_tool(
+                "agent_batch.py", "status", "--project", project_a,
+                "--mode", "incomplete", "--json", env=environment,
+            )
+            correct_project = run_tool(
+                "agent_batch.py", "status", "--project", project_b,
+                "--mode", "incomplete", "--json", env=environment,
+            )
+
+            self.assertNotEqual(wrong_project.returncode, 0)
+            self.assertIn("fuera del ámbito supervisado", wrong_project.stderr)
+            self.assertEqual(catalog_a.read_bytes(), before_a)
+            self.assertEqual(
+                correct_project.returncode,
+                0,
+                correct_project.stdout + correct_project.stderr,
+            )
+
+            project_b.write_text(
+                project_b.read_text(encoding="utf-8") + "\n",
+                encoding="utf-8",
+            )
+            changed_project = run_tool(
+                "agent_batch.py", "status", "--project", project_b,
+                "--mode", "incomplete", "--json", env=environment,
+            )
+            self.assertNotEqual(changed_project.returncode, 0)
+            self.assertIn("cambió durante la ejecución", changed_project.stderr)
 
     def test_opencode_farm_cleans_up_after_unexpected_error(self):
         with tempfile.TemporaryDirectory() as directory:

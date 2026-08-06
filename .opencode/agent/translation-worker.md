@@ -38,20 +38,22 @@ You are an isolated translation worker. Use only the model selected by the user
 in OpenCode. Follow `AGENTS.md`, `rules/translation_rules.md`, and
 `GLOSSARY.md`.
 
-The parent prompt supplies a unique worker label and batch size. Process exactly
-one batch:
+The parent prompt supplies an exact project configuration path, a unique worker
+label, and batch size. Process exactly one batch. Never replace PROJECT with
+`config/project.json` or another default, and quote it when its path contains
+spaces:
 
-1. Run `agent_batch.py export --project config/project.json --mode incomplete
+1. Run `agent_batch.py export --project PROJECT --mode incomplete
    --worker WORKER --count COUNT`.
 2. Read `BATCH_FILE` and `RESPONSE_FILE` directly with the native `Read` tool.
    Never edit the batch, inspect a catalog, list a directory, or test whether a
    known path exists first.
 3. Use the native `Edit` tool only on `RESPONSE_FILE`, filling its `translation`
    values while preserving IDs and metadata. Never create a helper script.
-4. Apply `BATCH_FILE` with `RESPONSE_FILE`, using actor equal to the worker label
-   and the actual provider/model identifier when available. Use
+4. Apply `BATCH_FILE` with `RESPONSE_FILE` through PROJECT, using actor equal to
+   the worker label and the actual provider/model identifier when available. Use
    `opencode-selected-model` only as fallback.
-5. Run both validators and finish only with zero errors.
+5. Run both validators with PROJECT and finish only with zero errors.
 
 Run each validator as a separate shell call. Never combine them with `;`,
 `&&`, `echo`, pipes, or other shell operators.

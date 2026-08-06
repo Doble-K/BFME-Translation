@@ -200,6 +200,13 @@ Los leases son locales al checkout. Para agentes en otras maquinas o clones se
 necesita una cola compartida externa; no se deben sincronizar archivos de lease
 mediante Git.
 
+La correccion manual de Gandalf y `translate.py --edit` puede convivir con una
+granja activa. Cada guardado vuelve a cargar el catalogo bajo el mismo lock y
+modifica solamente su estado mas reciente. Una entrada reservada por un batch o
+modificada desde que se abrio se rechaza sin escribir; se debe actualizar la
+vista y volver a intentarlo. Gandalf tambien permite devolver una entrada a la
+cola, preservarla de forma explicita o marcar su review como completado.
+
 Despues de cada lote se deben ejecutar ambos validadores:
 
 ```bash

@@ -18,6 +18,12 @@ from agent_batch import (
     release_prefix,
     save_json,
 )
+from project import (
+    PROJECT_SCOPE_PATH_ENV,
+    PROJECT_SCOPE_REVISION_ENV,
+    canonical_project_path,
+    project_revision,
+)
 from watch_progress import progress_snapshot
 
 
@@ -67,11 +73,13 @@ def load_farm_config(path):
         prefixes.add(prefix)
         normalized.append({"prefix": prefix, "model": model})
 
-    project_path = resolve_root_path(data.get("project", "config/project.json"))
-    project_path.resolve(strict=True)
+    project_path = canonical_project_path(
+        resolve_root_path(data.get("project", "config/project.json"))
+    )
     return {
         "config_path": config_path,
         "project": project_path,
+        "project_revision": project_revision(project_path),
         "workers": workers,
         "count": count,
         "max_restarts": max_restarts,
@@ -86,7 +94,13 @@ def load_farm_config(path):
     }
 
 
-def build_opencode_command(coordinator, workers, count):
+def build_opencode_command(coordinator, project_path, workers, count):
+    arguments = json.dumps({
+        "project": str(canonical_project_path(project_path)),
+        "prefix": coordinator["prefix"],
+        "workers": workers,
+        "count": count,
+    }, ensure_ascii=True, separators=(",", ":"))
     return [
         "opencode",
         "run",
@@ -98,9 +112,7 @@ def build_opencode_command(coordinator, workers, count):
         coordinator["prefix"],
         "--command",
         "translate-parallel",
-        coordinator["prefix"],
-        str(workers),
-        str(count),
+        arguments,
     ]
 
 
@@ -162,6 +174,8 @@ class FarmSupervisor:
         return {
             "schema_version": STATE_SCHEMA_VERSION,
             "config": str(self.config["config_path"]),
+            "project": str(self.config["project"]),
+            "project_revision": self.config["project_revision"],
             "supervisor_pid": os.getpid(),
             "updated_at": datetime.now(timezone.utc).isoformat(),
             "children": [
@@ -183,7 +197,10 @@ class FarmSupervisor:
     def launch(self, slot):
         coordinator = slot["coordinator"]
         command = build_opencode_command(
-            coordinator, self.config["workers"], self.config["count"]
+            coordinator,
+            self.config["project"],
+            self.config["workers"],
+            self.config["count"],
         )
         self.config["log_directory"].mkdir(parents=True, exist_ok=True)
         log_path = self.config["log_directory"] / f"{coordinator['prefix']}.log"
@@ -196,6 +213,8 @@ class FarmSupervisor:
             environment = os.environ.copy()
             environment[WORKER_SCOPE_PREFIX_ENV] = coordinator["prefix"]
             environment[WORKER_SCOPE_COUNT_ENV] = str(self.config["workers"])
+            environment[PROJECT_SCOPE_PATH_ENV] = str(self.config["project"])
+            environment[PROJECT_SCOPE_REVISION_ENV] = self.config["project_revision"]
             process = subprocess.Popen(
                 command,
                 cwd=ROOT,
@@ -339,7 +358,10 @@ class FarmSupervisor:
 def print_dry_run(config):
     for coordinator in config["coordinators"]:
         print(" ".join(build_opencode_command(
-            coordinator, config["workers"], config["count"]
+            coordinator,
+            config["project"],
+            config["workers"],
+            config["count"],
         )))
 
 

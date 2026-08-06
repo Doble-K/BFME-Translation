@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 
+import hashlib
 import json
+import os
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
+PROJECT_SCOPE_PATH_ENV = "SAGE_LOCALIZATION_PROJECT"
+PROJECT_SCOPE_REVISION_ENV = "SAGE_LOCALIZATION_PROJECT_REVISION"
 REQUIRED_FIELDS = {
     "name",
     "string_directory",
@@ -17,8 +21,41 @@ REQUIRED_FIELDS = {
 }
 
 
+def canonical_project_path(path):
+    return Path(path).expanduser().resolve(strict=True)
+
+
+def project_revision(path):
+    return hashlib.md5(
+        canonical_project_path(path).read_bytes(), usedforsecurity=False
+    ).hexdigest()
+
+
+def validate_project_scope(path):
+    expected_path_text = os.environ.get(PROJECT_SCOPE_PATH_ENV)
+    expected_revision = os.environ.get(PROJECT_SCOPE_REVISION_ENV)
+    if expected_path_text is None and expected_revision is None:
+        return
+    if not expected_path_text or not expected_revision:
+        raise ValueError("el ámbito supervisado del proyecto está incompleto")
+
+    actual_path = canonical_project_path(path)
+    expected_path = canonical_project_path(expected_path_text)
+    if actual_path != expected_path:
+        raise ValueError(
+            f"proyecto fuera del ámbito supervisado: {actual_path}; "
+            f"se esperaba {expected_path}"
+        )
+    actual_revision = project_revision(actual_path)
+    if actual_revision != expected_revision:
+        raise ValueError(
+            "la configuración del proyecto cambió durante la ejecución supervisada"
+        )
+
+
 def load_project(path):
-    project_path = Path(path)
+    project_path = canonical_project_path(path)
+    validate_project_scope(project_path)
     with project_path.open(encoding="utf-8") as project_file:
         project = json.load(project_file)
 

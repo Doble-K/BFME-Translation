@@ -148,6 +148,7 @@ BFME-Translation/
 │       ├── extract.py             # .str to JSON extraction
 │       ├── update.py              # Source-to-catalog synchronization
 │       ├── translate.py           # Manual translation and correction CLI
+│       ├── catalog_edit.py        # Transactional per-entry manual editing
 │       ├── agent_batch.py         # Bounded exchange with external agents
 │       ├── opencode_farm.py        # Unattended multi-model OpenCode supervisor
 │       ├── watch_progress.py      # Live queue progress monitor
@@ -174,6 +175,9 @@ files are build artifacts.
 
 The complete internal tool sequence and stage-specific requirements are
 documented in [`docs/workflow.md`](docs/workflow.md).
+The incremental plan for integrating project-bound farms, safe manual editing,
+DEBUG snapshots, and generic mod projects into Gandalf is documented in
+[`docs/gandalf-roadmap.md`](docs/gandalf-roadmap.md).
 
 ### OpenCode
 
@@ -228,6 +232,11 @@ lease under a shortened or unrelated name.
 Translation agents deny every shell command outside the fixed localization
 allowlist. They use OpenCode's native `Read` and `Edit` tools for batch files, so
 parallel runs do not require interactive permission approval.
+
+Gandalf's `Corregir entradas` window and the terminal manual editor share the
+same transactional backend. They may be used while the farm is active: the
+backend rejects reserved IDs, reloads the latest catalog under the shared lock,
+and rejects stale entry revisions instead of overwriting concurrent work.
 
 Monitor live translation progress from a separate terminal. The display updates
 in place every ten seconds and includes the completion percentage, newly applied

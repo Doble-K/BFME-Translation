@@ -18,6 +18,13 @@ from tools.localization.extract import extract_str
 
 
 ROOT = Path(__file__).resolve().parent
+LOCALIZATION_TOOLS = ROOT / "tools" / "localization"
+if str(LOCALIZATION_TOOLS) not in sys.path:
+    sys.path.insert(0, str(LOCALIZATION_TOOLS))
+
+from catalog_edit import CatalogEditError, commit_entry, search_entries
+
+
 AUTO_ID_PREFIXES = ("LETTER:", "NUMBER:")
 GANDALF_CONFIG_PATH = ROOT / "config" / "gandalf.local.json"
 
@@ -887,6 +894,7 @@ def launch_gui():
         create_button.configure(state="disabled")
         run_button.configure(state="disabled")
         build_button.configure(state="disabled")
+        correct_button.configure(state="disabled")
         for widget in input_widgets:
             widget.configure(state="disabled")
         threading.Thread(target=worker, daemon=True).start()
@@ -897,6 +905,7 @@ def launch_gui():
         create_button.configure(state="normal")
         run_button.configure(state="normal")
         build_button.configure(state="normal")
+        correct_button.configure(state="normal")
         for widget in input_widgets:
             widget.configure(state="readonly" if isinstance(widget, ttk.Combobox) else "normal")
         if success:
@@ -991,6 +1000,8 @@ def launch_gui():
         process_paused = False
         run_button.configure(state="normal")
         create_button.configure(state="normal")
+        build_button.configure(state="normal")
+        correct_button.configure(state="normal")
         for widget in input_widgets:
             widget.configure(state="readonly" if isinstance(widget, ttk.Combobox) else "normal")
         status_var.set("Ejecución terminada." if return_code == 0 else "Ejecución terminada con errores.")
@@ -1024,6 +1035,7 @@ def launch_gui():
         build_button.configure(state="disabled")
         run_button.configure(state="disabled")
         create_button.configure(state="disabled")
+        correct_button.configure(state="disabled")
         status_var.set("Construyendo paquete de prueba...")
 
         def worker():
@@ -1053,6 +1065,227 @@ def launch_gui():
 
         worker_thread = threading.Thread(target=worker, name="gandalf-build", daemon=False)
         worker_thread.start()
+
+    def open_catalog_editor():
+        config_path = Path(config_var.get()).expanduser()
+        if not config_path.exists():
+            messagebox.showerror(
+                "Proyecto no encontrado",
+                "Prepara el proyecto o indica una configuración existente.",
+            )
+            return
+
+        editor = tk.Toplevel(root)
+        editor.title("Gandalf - Corregir traducciones")
+        editor.geometry("1040x680")
+        editor.minsize(820, 540)
+        container = ttk.Frame(editor, padding=12)
+        container.pack(fill="both", expand=True)
+
+        search_frame = ttk.Frame(container)
+        search_frame.pack(fill="x", pady=(0, 8))
+        query_var = tk.StringVar()
+        filter_var = tk.StringVar(value="Todas")
+        editor_status_var = tk.StringVar(value="Cargando entradas...")
+        ttk.Label(search_frame, text="Buscar").pack(side="left")
+        query_entry = ttk.Entry(search_frame, textvariable=query_var)
+        query_entry.pack(side="left", fill="x", expand=True, padx=(6, 8))
+        ttk.Combobox(
+            search_frame,
+            textvariable=filter_var,
+            values=(
+                "Todas",
+                "Pendientes",
+                "Traducidas",
+                "Por revisar",
+                "Revisadas",
+                "Preservadas",
+            ),
+            state="readonly",
+            width=14,
+        ).pack(side="left")
+
+        content = ttk.Panedwindow(container, orient="horizontal")
+        content.pack(fill="both", expand=True)
+        results_frame = ttk.LabelFrame(content, text="Entradas")
+        details_frame = ttk.Frame(content)
+        content.add(results_frame, weight=2)
+        content.add(details_frame, weight=3)
+
+        result_list = tk.Listbox(results_frame, exportselection=False)
+        result_scroll = ttk.Scrollbar(
+            results_frame, orient="vertical", command=result_list.yview
+        )
+        result_list.configure(yscrollcommand=result_scroll.set)
+        result_list.pack(side="left", fill="both", expand=True, padx=(6, 0), pady=6)
+        result_scroll.pack(side="right", fill="y", padx=(0, 6), pady=6)
+
+        info_var = tk.StringVar(value="Selecciona una entrada.")
+        ttk.Label(details_frame, textvariable=info_var, wraplength=560).pack(
+            anchor="w", fill="x", pady=(0, 6)
+        )
+        source_frame = ttk.LabelFrame(details_frame, text="Fuente")
+        source_frame.pack(fill="both", expand=True, pady=(0, 6))
+        source_editor = tk.Text(source_frame, height=8, wrap="word", state="disabled")
+        source_editor.pack(fill="both", expand=True, padx=6, pady=6)
+        translation_frame = ttk.LabelFrame(details_frame, text="Traducción")
+        translation_frame.pack(fill="both", expand=True)
+        translation_editor = tk.Text(translation_frame, height=8, wrap="word")
+        translation_editor.pack(fill="both", expand=True, padx=6, pady=6)
+
+        action_frame = ttk.Frame(container)
+        action_frame.pack(fill="x", pady=(8, 0))
+        records = []
+        selected = {"record": None}
+        edit_buttons = []
+
+        def set_editor_text(widget, value, editable):
+            widget.configure(state="normal")
+            widget.delete("1.0", "end")
+            widget.insert("1.0", value)
+            widget.configure(state="normal" if editable else "disabled")
+
+        def show_record(_event=None):
+            selection = result_list.curselection()
+            if not selection:
+                selected["record"] = None
+                return
+            record = records[selection[0]]
+            selected["record"] = record
+            reservation_text = ""
+            if record["reserved"]:
+                workers = ", ".join(
+                    item.get("worker") or "desconocido"
+                    for item in record["reservations"]
+                )
+                reservation_text = f" | RESERVADA por {workers}"
+            flags = ", ".join(record["flags"]) or "sin flags"
+            info_var.set(
+                f"{record['id']} | estado={record['status']} | {flags}"
+                f"{reservation_text}"
+            )
+            set_editor_text(source_editor, record["source"], False)
+            set_editor_text(
+                translation_editor,
+                record["translation"],
+                not record["reserved"],
+            )
+            state = "disabled" if record["reserved"] else "normal"
+            for button in edit_buttons:
+                button.configure(state=state)
+
+        def refresh_entries(select_id=None):
+            nonlocal records
+            status_map = {
+                "Pendientes": {"pending"},
+                "Traducidas": {"translated"},
+                "Revisadas": {"reviewed"},
+                "Preservadas": {"preserved"},
+            }
+            try:
+                records = search_entries(
+                    project_path=config_path,
+                    query=query_var.get(),
+                    statuses=status_map.get(filter_var.get()),
+                    limit=500,
+                )
+                if filter_var.get() == "Por revisar":
+                    records = [
+                        record for record in records
+                        if "needs_review" in record["flags"]
+                    ]
+            except (CatalogEditError, OSError, ValueError, json.JSONDecodeError) as error:
+                messagebox.showerror("No se pudo cargar el catálogo", str(error), parent=editor)
+                return
+
+            result_list.delete(0, "end")
+            selected_index = None
+            for index, record in enumerate(records):
+                marker = "[RESERVADA] " if record["reserved"] else ""
+                result_list.insert(
+                    "end", f"{marker}{record['id']} | {record['status']}"
+                )
+                if record["id"] == select_id:
+                    selected_index = index
+            editor_status_var.set(f"Entradas mostradas: {len(records)}")
+            if records:
+                index = selected_index if selected_index is not None else 0
+                result_list.selection_set(index)
+                result_list.see(index)
+                show_record()
+            else:
+                selected["record"] = None
+                info_var.set("No hay entradas para este filtro.")
+                set_editor_text(source_editor, "", False)
+                set_editor_text(translation_editor, "", False)
+                for button in edit_buttons:
+                    button.configure(state="disabled")
+
+        def apply_action(action, mark_reviewed=False):
+            record = selected["record"]
+            if record is None:
+                return
+            if action in {"requeue", "preserve"}:
+                labels = {
+                    "requeue": "devolver esta entrada a la cola",
+                    "preserve": "preservar intencionalmente el texto fuente",
+                }
+                if not messagebox.askyesno(
+                    "Confirmar acción",
+                    f"¿Deseas {labels[action]}?",
+                    parent=editor,
+                ):
+                    return
+            translation = translation_editor.get("1.0", "end-1c")
+            try:
+                updated = commit_entry(
+                    record["id"],
+                    record["entry_revision"],
+                    action,
+                    project_path=config_path,
+                    translation=translation if action == "save" else None,
+                    mark_reviewed=mark_reviewed,
+                )
+            except (CatalogEditError, OSError, ValueError, json.JSONDecodeError) as error:
+                messagebox.showerror("No se pudo guardar", str(error), parent=editor)
+                refresh_entries(record["id"])
+                return
+            editor_status_var.set(f"Guardado: {updated['id']}")
+            refresh_entries(updated["id"])
+
+        search_button = ttk.Button(
+            search_frame, text="Buscar", command=lambda: refresh_entries()
+        )
+        search_button.pack(side="left", padx=(8, 0))
+        query_entry.bind("<Return>", lambda _event: refresh_entries())
+        result_list.bind("<<ListboxSelect>>", show_record)
+
+        for text, action, reviewed in (
+            ("Guardar", "save", False),
+            ("Guardar y revisar", "save", True),
+            ("Marcar revisada", "review", False),
+            ("Devolver a cola", "requeue", False),
+            ("Preservar fuente", "preserve", False),
+        ):
+            button = ttk.Button(
+                action_frame,
+                text=text,
+                command=lambda current_action=action, current_reviewed=reviewed: apply_action(
+                    current_action, current_reviewed
+                ),
+            )
+            button.pack(side="left", padx=(0, 6))
+            edit_buttons.append(button)
+        ttk.Button(
+            action_frame, text="Actualizar", command=lambda: refresh_entries()
+        ).pack(side="left", padx=(8, 0))
+        ttk.Button(action_frame, text="Cerrar", command=editor.destroy).pack(side="right")
+        ttk.Label(container, textvariable=editor_status_var).pack(
+            anchor="w", pady=(6, 0)
+        )
+        apply_theme()
+        refresh_entries()
+        query_entry.focus_set()
 
     def pause_run():
         nonlocal process_paused
@@ -1112,6 +1345,10 @@ def launch_gui():
     run_button.pack(side="left", padx=(8, 0))
     build_button = ttk.Button(buttons, text="Construir prueba", command=build_test_package)
     build_button.pack(side="left", padx=(8, 0))
+    correct_button = ttk.Button(
+        buttons, text="Corregir entradas", command=open_catalog_editor
+    )
+    correct_button.pack(side="left", padx=(8, 0))
     pause_button = ttk.Button(buttons, text="Pausar", command=pause_run, state="disabled")
     pause_button.pack(side="left", padx=(8, 0))
     ttk.Button(buttons, text="Abrir Debug", command=open_debug_window).pack(side="left", padx=(8, 0))
@@ -1125,6 +1362,10 @@ def launch_gui():
     add_tooltip(create_button, "Extrae el archivo .big y crea el catálogo y la configuración del proyecto.")
     add_tooltip(run_button, "Exporta un lote pequeño para un agente externo o abre el editor manual.")
     add_tooltip(build_button, "Construye y empaqueta un .big parcial usando el texto original como fallback.")
+    add_tooltip(
+        correct_button,
+        "Busca y corrige entradas no reservadas sin detener workers activos.",
+    )
     add_tooltip(pause_button, "Pausa o reanuda el proceso de construcción.")
     add_tooltip(save_button, "Guarda la configuración local de Gandalf.")
     add_tooltip(exit_button, "Cierra Gandalf cuando no haya un proceso activo.")

@@ -9,12 +9,13 @@ Run unattended. Never ask the user for shell permission or clarification. The
 configured native tools and localization command allowlist are sufficient for
 the complete workflow.
 
-Interpret `$ARGUMENTS` as `PREFIX WORKERS COUNT`. Require a unique prefix for
-this run matching `[A-Za-z0-9][A-Za-z0-9._-]{0,55}`, between 2 and 8 workers,
-and a batch size between 1 and 100. Example:
+Interpret `$ARGUMENTS` as `PROJECT PREFIX WORKERS COUNT`. Require an existing
+project configuration, a unique prefix for this run matching
+`[A-Za-z0-9][A-Za-z0-9._-]{0,55}`, between 2 and 8 workers, and a batch size
+between 1 and 100. Example:
 
 ```text
-/translate-parallel-all rotwk-run1 4 25
+/translate-parallel-all config/project.json rotwk-run1 4 25
 ```
 
 Use fresh `translation-worker` subagent contexts for every wave. Worker labels
@@ -24,11 +25,12 @@ instructions. It must claim work through `agent_batch.py export`; never assign
 IDs or split a catalog in prompts. Do not restate or override the worker
 procedure in delegated prompts.
 
-Preserve PREFIX exactly as supplied. Never shorten it, remove a suffix, use it
-as a worker label by itself, or run `agent_batch.py export` or `apply` in the
-coordinator. Only the isolated workers may claim and apply batches.
+Preserve PROJECT and PREFIX exactly as supplied. Never substitute a default
+project, shorten the prefix, remove a suffix, use it as a worker label by
+itself, or run `agent_batch.py export` or `apply` in the coordinator. Give every
+worker the exact PROJECT. Only the isolated workers may claim and apply batches.
 
-Before the first wave, run aggregate `agent_batch.py status` in incomplete mode.
+Before the first wave, run aggregate `agent_batch.py status` for PROJECT in incomplete mode.
 Track the initial eligible count and a cumulative applied count. Then repeat:
 
 1. Run aggregate status. If `eligible` is zero, leave the loop. If `available`
@@ -36,8 +38,8 @@ Track the initial eligible count and a cumulative applied count. Then repeat:
    leases; do not busy-wait or claim completion.
 2. Calculate the number of workers for this wave as the smaller of WORKERS and
    `ceil(available / COUNT)`. Launch exactly that many `translation-worker`
-   subagents concurrently in one parallel task call. Give each only its stable
-   worker label and COUNT.
+   subagents concurrently in one parallel task call. Give each PROJECT, its
+   stable worker label, and COUNT.
 3. Wait for every worker and add its applied entry count to the cumulative
    total. A successful worker must report one applied batch or explicitly report
    that no entries were available.

@@ -36,10 +36,11 @@ batch yourself. Follow `AGENTS.md`, `rules/translation_rules.md`, and
 `GLOSSARY.md`.
 
 For `/translate-parallel` and `/translate-parallel-all`, preserve the supplied
-PREFIX byte-for-byte. Never shorten it or remove a suffix. Launch only isolated
-`translation-worker` subagents, with exact labels `PREFIX-1` through
-`PREFIX-WORKERS`. Give each worker its label and COUNT; its own instructions are
-authoritative.
+PROJECT and PREFIX byte-for-byte. Never substitute a default project, shorten a
+prefix, or remove a suffix. Launch only isolated `translation-worker` subagents,
+with exact labels `PREFIX-1` through `PREFIX-WORKERS`. Give each worker PROJECT,
+its label, and COUNT; its own instructions are authoritative. Quote PROJECT in
+shell commands when its path contains spaces.
 
 Never run `agent_batch.py export`, `apply`, `renew`, or `reset-response`. Never
 read a batch or response, edit files, translate entries, inspect a catalog, use

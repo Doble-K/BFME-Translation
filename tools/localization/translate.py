@@ -1,14 +1,22 @@
 #!/usr/bin/env python3
 
 import argparse
+import copy
 import json
-import os
 import sys
 from datetime import datetime
 from pathlib import Path
 
 from validate_translation import DEFAULT_RULES, protected_tokens, protected_tokens_match
 from project import load_project, resolve_project_path
+from catalog_edit import (
+    CatalogEditError,
+    EntryConflictError,
+    EntryReservedError,
+    catalog_snapshot,
+    commit_entry,
+    entry_revision,
+)
 
 
 AUTO_ID_PREFIXES = ("LETTER:", "NUMBER:")
@@ -18,20 +26,6 @@ SYSTEM_ID_PREFIXES = ("LETTER:", "NUMBER:", "Version:")
 def load_catalog(path):
     with open(path, encoding="utf-8") as catalog_file:
         return json.load(catalog_file)
-
-
-def save_catalog(path, data):
-    catalog_path = Path(path)
-    temporary_path = catalog_path.with_name(f".{catalog_path.name}.tmp")
-    try:
-        with temporary_path.open("w", encoding="utf-8", newline="\n") as catalog_file:
-            json.dump(data, catalog_file, ensure_ascii=False, indent=2)
-            catalog_file.write("\n")
-        os.replace(temporary_path, catalog_path)
-    except OSError:
-        if temporary_path.exists():
-            temporary_path.unlink()
-        raise
 
 
 def pending_entries(
@@ -174,7 +168,7 @@ def main():
             parser.error("indique catalog o use --project")
         catalog_path = Path(args.catalog) if args.catalog else resolve_project_path(project, "catalog")
         target_language = args.language or (project or {}).get("language", "TARGET")
-        data = load_catalog(catalog_path)
+        data, reservations = catalog_snapshot(catalog_path=catalog_path)
         with args.rules.open(encoding="utf-8") as rules_file:
             rules = json.load(rules_file)
     except (OSError, json.JSONDecodeError, ValueError) as error:
@@ -190,14 +184,27 @@ def main():
         args.advanced,
     )
     print(f"Pending: {len(entries)}")
+    reserved_count = sum(
+        1 for entry in entries if reservations.get(entry.get("id"))
+    )
+    if reserved_count:
+        print(f"Reserved skipped: {reserved_count}")
     if args.advanced:
         print("AVISO: las entradas LETTER:* y NUMBER:* pueden ser hotkeys o controles automaticos.")
         print("Modificalas solo si deseas cambiar intencionalmente los controles del juego.")
 
-    batch = entries[:args.count]
+    batch = [
+        {
+            "entry": copy.deepcopy(entry),
+            "expected_revision": entry_revision(entry),
+        }
+        for entry in entries
+        if not reservations.get(entry.get("id"))
+    ][:args.count]
     index = 0
     while index < len(batch):
-        entry = batch[index]
+        item = batch[index]
+        entry = item["entry"]
         print("=" * 60)
         print("INDEX:", index)
         print("ID:", entry.get("id"))
@@ -227,8 +234,23 @@ def main():
             if value == ":quit":
                 return 0
             if value == ":keep" and args.review:
-                complete_review(entry, datetime.now().strftime("%Y-%m-%d"))
-                save_catalog(catalog_path, data)
+                try:
+                    updated = commit_entry(
+                        entry.get("id"),
+                        item["expected_revision"],
+                        "review",
+                        catalog_path=catalog_path,
+                    )
+                except (CatalogEditError, OSError, json.JSONDecodeError) as error:
+                    print(f"EDIT ERROR: {error}")
+                    if isinstance(error, (EntryConflictError, EntryReservedError)):
+                        index += 1
+                        break
+                    continue
+                batch[index] = {
+                    "entry": updated,
+                    "expected_revision": updated["entry_revision"],
+                }
                 print("Review accepted")
                 index += 1
                 break
@@ -242,13 +264,25 @@ def main():
                 print("Corrige los tokens protegidos o deja vacío para saltar esta entrada.")
                 continue
 
-            record_translation(
-                entry,
-                value,
-                datetime.now().strftime("%Y-%m-%d"),
-                review=args.review,
-            )
-            save_catalog(catalog_path, data)
+            try:
+                updated = commit_entry(
+                    entry.get("id"),
+                    item["expected_revision"],
+                    "save",
+                    catalog_path=catalog_path,
+                    translation=value,
+                    mark_reviewed=args.review,
+                )
+            except (CatalogEditError, OSError, json.JSONDecodeError) as error:
+                print(f"EDIT ERROR: {error}")
+                if isinstance(error, (EntryConflictError, EntryReservedError)):
+                    index += 1
+                    break
+                continue
+            batch[index] = {
+                "entry": updated,
+                "expected_revision": updated["entry_revision"],
+            }
             print("Saved")
             index += 1
             break
