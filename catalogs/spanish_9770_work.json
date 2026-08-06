@@ -295176,15 +295176,17 @@
     {
       "id": "APT:NewCAHFeature5Desc",
       "source": "More ways to prove that you have created Middle-earth's most dominant hero.",
-      "translation": "",
-      "status": "pending",
+      "translation": "Más formas de demostrar que has creado al héroe más dominante de la Tierra Media.",
+      "status": "translated",
       "line": 46102,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295199,20 +295201,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Más formas de demostrar que has creado al héroe más dominante de la Tierra Media.",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "GUI:DesyncText",
       "source": "The Lord of the Rings, The Rise of the Witch-king has gone out of synch with the other game participants and cannot continue. It is possible that the other players have modified their game versions. Please exit out of the game before attempting to play again.",
-      "translation": "",
-      "status": "pending",
+      "translation": "El Señor de los Anillos, La Ascensión del Rey Brujo ha perdido la sincronización con los demás participantes y no puede continuar. Es posible que los otros jugadores hayan modificado sus versiones del juego. Por favor, salga del juego antes de intentar jugar de nuevo.",
+      "status": "translated",
       "line": 46115,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295227,20 +295239,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "El Señor de los Anillos, La Ascensión del Rey Brujo ha perdido la sincronización con los demás participantes y no puede continuar. Es posible que los otros jugadores hayan modificado sus versiones del juego. Por favor, salga del juego antes de intentar jugar de nuevo.",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "ToolTip:OnlineShell/OnlineLogin/GamespyShortcut",
       "source": "Click here to visit the Gamespy The Lord of the Rings,The Rise of the Witch-king website including the official tournament ladders.",
-      "translation": "",
-      "status": "pending",
+      "translation": "Haga clic aquí para visitar el sitio web de Gamespy de El Señor de los Anillos, La Ascensión del Rey Brujo, incluyendo las escaleras de torneo oficiales.",
+      "status": "translated",
       "line": 46120,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295255,20 +295277,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Haga clic aquí para visitar el sitio web de Gamespy de El Señor de los Anillos, La Ascensión del Rey Brujo, incluyendo las escaleras de torneo oficiales.",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "TOOLTIP:AngmarSpikedCollar",
       "source": "Spiked Collars",
-      "translation": "",
-      "status": "pending",
+      "translation": "Collares con pinchos",
+      "status": "translated",
       "line": 46124,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295283,20 +295315,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Collares con pinchos",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "Stat:Killed_Morgomir_Count_Name",
       "source": "Morgomirs Defeated",
-      "translation": "",
-      "status": "pending",
+      "translation": "Morgomires Derrotados",
+      "status": "translated",
       "line": 46128,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295311,20 +295353,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Morgomires Derrotados",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "Stat:KILLED_KARSH_COUNT_Name",
       "source": "Karshs Defeated",
-      "translation": "",
-      "status": "pending",
+      "translation": "Karsh Derrotados",
+      "status": "translated",
       "line": 46132,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295339,20 +295391,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Karsh Derrotados",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "Stat:Killed_Hwaldar_Count_Name",
       "source": "Hwaldars Defeated",
-      "translation": "",
-      "status": "pending",
+      "translation": "Hwaldar Derrotados",
+      "status": "translated",
       "line": 46136,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295367,20 +295429,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Hwaldar Derrotados",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "Stat:Killed_Rogash_Count_Name",
       "source": "Rogashs Defeated",
-      "translation": "",
-      "status": "pending",
+      "translation": "Rogash Derrotados",
+      "status": "translated",
       "line": 46140,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295395,20 +295467,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Rogash Derrotados",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "Stat:Killed_Gothmog_Count_Name",
       "source": "Gothmogs Defeated",
-      "translation": "",
-      "status": "pending",
+      "translation": "Gothmog Derrotados",
+      "status": "translated",
       "line": 46144,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295423,20 +295505,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Gothmog Derrotados",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "Stat:ANGMAR_Infantry_Killed_Name",
       "source": "Angmar Infantry Killed",
-      "translation": "",
-      "status": "pending",
+      "translation": "Infantería de Angmar Muerta",
+      "status": "translated",
       "line": 46148,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295451,20 +295543,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Infantería de Angmar Muerta",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "Stat:Killed_AZOG_Count_Name",
       "source": "Azogs Defeated",
-      "translation": "",
-      "status": "pending",
+      "translation": "Azog Derrotados",
+      "status": "translated",
       "line": 46152,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295479,20 +295581,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Azog Derrotados",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "Stat:Killed_CAPTDALE_Count_Name",
       "source": "Captains of Dale Defeated",
-      "translation": "",
-      "status": "pending",
+      "translation": "Capitanes de Valle Derrotados",
+      "status": "translated",
       "line": 46156,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295507,20 +295619,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Capitanes de Valle Derrotados",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "Award:Icebane_Name",
       "source": "Thrall Killer",
-      "translation": "",
-      "status": "pending",
+      "translation": "Asesino de Esclavos",
+      "status": "translated",
       "line": 46160,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295535,20 +295657,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Asesino de Esclavos",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "Award:Icebane_Desc",
       "source": "Hero has killed 1000 Thralls of the Witch-king",
-      "translation": "",
-      "status": "pending",
+      "translation": "El héroe ha matado a 1000 Esclavos del Rey Brujo",
+      "status": "translated",
       "line": 46164,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295563,20 +295695,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "El héroe ha matado a 1000 Esclavos del Rey Brujo",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "CONTROLBAR:DaleSlamArrow",
       "source": "Sla&m Shot",
-      "translation": "",
-      "status": "pending",
+      "translation": "Disparo de Embestida [&M]",
+      "status": "translated",
       "line": 46168,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295591,20 +295733,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Disparo de Embestida [&M]",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "CONTROLBAR:LW_Unit_RohanSpearmenHorde",
       "source": "Rohan Spearmen Battalion",
-      "translation": "",
-      "status": "pending",
+      "translation": "Batallón de Lanceros de Rohan",
+      "status": "translated",
       "line": 46172,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295619,20 +295771,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Batallón de Lanceros de Rohan",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "CONTROLBAR:LW_Unit_RohanSpearmenHordePlural",
       "source": "Rohan Spearmen Battalions",
-      "translation": "",
-      "status": "pending",
+      "translation": "Batallones de Lanceros de Rohan",
+      "status": "translated",
       "line": 46176,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295647,20 +295809,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Batallones de Lanceros de Rohan",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "BANNERUI:PluralRohanSpearmen",
       "source": "Rohan Spearmen",
-      "translation": "",
-      "status": "pending",
+      "translation": "Lanceros de Rohan",
+      "status": "translated",
       "line": 46180,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295675,20 +295847,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Lanceros de Rohan",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "BANNERUI:ElvenRivendellArchers",
       "source": "Lindon Horse Archer Battalion",
-      "translation": "",
-      "status": "pending",
+      "translation": "Batallón de Arqueros a Caballo de Lindon",
+      "status": "translated",
       "line": 46184,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295703,20 +295885,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Batallón de Arqueros a Caballo de Lindon",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "BANNERUI:PluralElvenRivendellArchers",
       "source": "Lindon Horse Archer Battalions",
-      "translation": "",
-      "status": "pending",
+      "translation": "Batallones de Arqueros a Caballo de Lindon",
+      "status": "translated",
       "line": 46188,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295731,20 +295923,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Batallones de Arqueros a Caballo de Lindon",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "CONTROLBAR:LW_Unit_ElvenRivendellArcherHorde",
       "source": "Lindon Horse Archer Battalion",
-      "translation": "",
-      "status": "pending",
+      "translation": "Batallón de Arqueros a Caballo de Lindon",
+      "status": "translated",
       "line": 46192,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295759,20 +295961,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Batallón de Arqueros a Caballo de Lindon",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "CONTROLBAR:LW_Unit_ElvenRivendellArcherHordePlural",
       "source": "Lindon Horse Archer Battalions",
-      "translation": "",
-      "status": "pending",
+      "translation": "Batallones de Arqueros a Caballo de Lindon",
+      "status": "translated",
       "line": 46196,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295787,20 +295999,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Batallones de Arqueros a Caballo de Lindon",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "CONTROLBAR:LW_Unit_MordorBlackOrcHordePlural",
       "source": "Black Orc Warrior Hordes",
-      "translation": "",
-      "status": "pending",
+      "translation": "Hordas de Guerreros Orcos Negros",
+      "status": "translated",
       "line": 46202,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295815,20 +296037,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Hordas de Guerreros Orcos Negros",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "CONTROLBAR:LW_ToolTipBuild_MordorHaradrimRiderHorde",
       "source": "Unit Type: Basic Cavalry\\nStrong vs. Archers\\n",
-      "translation": "",
-      "status": "pending",
+      "translation": "Tipo de unidad: Caballería básica\\nFuerte contra arqueros\\n",
+      "status": "translated",
       "line": 46206,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295843,20 +296075,30 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Tipo de unidad: Caballería básica\\nFuerte contra arqueros\\n",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "BANNERUI:MordorHaradrimRider",
       "source": "Haradrim Lancer Horde",
-      "translation": "",
-      "status": "pending",
+      "translation": "Horda de Lanceros Haradrim",
+      "status": "translated",
       "line": 46210,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
-        "model": null,
-        "date": null,
+        "origin": "agent",
+        "model": "opencode/nemotron-3-ultra-free",
+        "date": "2026-08-06",
         "confidence": 0.0
       },
       "review": {
@@ -295871,7 +296113,15 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06",
+          "action": "translated",
+          "from": "",
+          "to": "Horda de Lanceros Haradrim",
+          "by": "rotwk-nemotron-all-2"
+        }
+      ]
     },
     {
       "id": "BANNERUI:MordorHaradrimRiders",
