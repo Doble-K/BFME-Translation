@@ -51,15 +51,13 @@ python3 gandalf.py --gui
 ```
 
 The GUI creates the catalog and project configuration, includes a light/dark
-mode toggle, and leaves translation batches on the existing CLI tools.
+mode toggle, and leaves translation to an external agent or the manual CLI.
 
-After selecting an existing project, the `Run` controls can start an Ollama
-bulk batch or open the manual editor in a terminal. Ollama starts in dry-run
-mode unless `Guardar IA` is selected, and its output is shown in the lower log
-panel. The progress panel separately shows the current `n/total`, entry ID,
-model, result, and a determinate progress bar. The GUI also provides
-`Construir prueba`, which runs build with source fallback and then packages a
-partial test `.big`; it is not a release build.
+After selecting an existing project, the `Run` controls can export a bounded
+JSON batch for an external agent or open the manual editor in a terminal. The
+agent receives only that small file, never the complete catalog. The GUI also
+provides `Construir prueba`, which runs build with source fallback and then
+packages a partial test `.big`; it is not a release build.
 
 Gandalf detects `.big` files, lists their contents, selects a string file,
 creates a work catalog and project configuration, and supports arbitrary
@@ -70,7 +68,7 @@ If a work catalog already exists, continue with the translation CLI:
 
 ```bash
 python3 tools/localization/translate.py \
-  catalogs/spanish_work.json \
+  --project config/project.json \
   --count 20 \
   --edit
 ```
@@ -79,12 +77,12 @@ For direct source extraction instead of Gandalf:
 
 ```bash
 tools/big4f/bin/linux/big4f x \
-  sources/englishpatch202.big \
+  sources/englishpatch202_v9.7.7.big \
   /tmp/rotwk-source
 
 python3 tools/localization/extract.py \
   /tmp/rotwk-source/data/lotr.str \
-  catalogs/english.json
+  catalogs/english_9770.json
 ```
 
 Do not use a generated localization package as the source reference.
@@ -102,8 +100,8 @@ other languages and SAGE projects are supported by the same workflow.
   9.7.5.
 - French package used for pipeline tests and functionality checks: version
   9.7.6.
-- Current Spanish work catalog: 13,533 entries, 1,322 translated/preserved and
-  12,211 pending (9.8%).
+- Current Spanish work catalog: 13,533 entries freshly initialized from the
+  English 9.7.7 build; translation proceeds through bounded agent batches.
 - A final, fully translated and in-game-tested Spanish package has not been
   released yet.
 
@@ -129,9 +127,9 @@ preserved
 - `needs_review`: flag for a human correction; it is not a separate status.
 
 V1 is focused on a stable multilingual catalog pipeline, manual translation,
-safe bulk preparation, validation, build, and packaging. A real AI provider can
-write `translated` entries with `needs_review`; the legacy `ai_translate.py`
-simulation is not part of the active workflow.
+safe bulk preparation, validation, build, and packaging. External agents write
+through `agent_batch.py`; the legacy provider-specific `ai_translate.py` is not
+part of Gandalf's active workflow.
 
 ## Repository Structure
 
@@ -139,7 +137,7 @@ simulation is not part of the active workflow.
 BFME-Translation/
 ├── gandalf.py                    # Interactive project and source wizard
 ├── catalogs/
-│   └── spanish_work.json         # Editable Spanish work catalog
+│   └── spanish_9770_work.json    # Editable Spanish work catalog
 ├── config/
 │   └── project.json              # ROTWK 2.02 project configuration
 ├── tools/
@@ -150,6 +148,9 @@ BFME-Translation/
 │       ├── extract.py             # .str to JSON extraction
 │       ├── update.py              # Source-to-catalog synchronization
 │       ├── translate.py           # Manual translation and correction CLI
+│       ├── agent_batch.py         # Bounded exchange with external agents
+│       ├── opencode_farm.py        # Unattended multi-model OpenCode supervisor
+│       ├── watch_progress.py      # Live queue progress monitor
 │       ├── review.py              # V2 proposal/review operations
 │       ├── compare.py             # Language/version comparison reports
 │       ├── build.py               # Catalog to .str generation
@@ -171,6 +172,81 @@ BFME-Translation/
 The JSON catalog is the editable source of truth. Generated `.str` and `.big`
 files are build artifacts.
 
+The complete internal tool sequence and stage-specific requirements are
+documented in [`docs/workflow.md`](docs/workflow.md).
+
+### OpenCode
+
+The repository includes a project-local OpenCode agent that inherits whichever
+model the user selects. Restart OpenCode after pulling configuration changes,
+select a model in the interface or at startup, then use:
+
+```bash
+opencode -m PROVIDER/MODEL
+```
+
+```text
+/translate-next main 20
+/translate-all main 100
+/translate-parallel rotwk-run1 4 100
+/translate-parallel-all rotwk-run2 4 25
+/translation-status
+/build-candidate
+```
+
+`/translate-parallel` runs one bounded wave. `/translate-parallel-all` launches
+fresh parallel worker contexts for each wave and continues until the queue is
+complete or safely reports a blocker.
+
+For an unattended run with the explicit model matrix in
+`config/opencode_farm.json`, preview and start the detached supervisor with:
+
+```bash
+python3 tools/localization/opencode_farm.py start \
+  --config config/opencode_farm.json --dry-run
+python3 tools/localization/opencode_farm.py start \
+  --config config/opencode_farm.json --detach
+```
+
+Inspect or stop it without releasing another worker's reservations:
+
+```bash
+python3 tools/localization/opencode_farm.py status \
+  --config config/opencode_farm.json
+python3 tools/localization/opencode_farm.py stop \
+  --config config/opencode_farm.json
+```
+
+`clean` releases only leases whose worker names use one of the configured farm
+prefixes, and refuses to run while that supervisor is active.
+
+Farm sessions use a dedicated `translation-coordinator` that cannot export or
+apply batches. The supervisor also scopes `agent_batch.py` to the exact worker
+labels for each configured prefix, preventing a coordinator from creating a
+lease under a shortened or unrelated name.
+
+Translation agents deny every shell command outside the fixed localization
+allowlist. They use OpenCode's native `Read` and `Edit` tools for batch files, so
+parallel runs do not require interactive permission approval.
+
+Monitor live translation progress from a separate terminal. The display updates
+in place every ten seconds and includes the completion percentage, newly applied
+translations, the rolling five-minute rate, last progress time, an ETA based
+only on recent activity, and active workers:
+
+```bash
+python3 tools/localization/watch_progress.py \
+  --project config/project.json \
+  --interval 10
+```
+
+Stop the monitor with `Ctrl+C`.
+
+The `translator` agent cannot read or edit complete catalogs directly. It works
+only through bounded files in `.agent/` and the validated localization tools.
+Parallel workers reserve disjoint batches when they share the same checkout.
+Every concurrently active session must use a different worker label.
+
 1. Select a limited batch of pending entries.
 2. Translate `source` into Latin American Spanish in `translation`.
 3. Set the entry status to `translated` and record metadata/history.
@@ -178,12 +254,43 @@ files are build artifacts.
 
 ```bash
 python3 tools/localization/normalize_hotkeys.py \
-  catalogs/spanish_work.json \
+  --project config/project.json \
   --write
 ```
 
 5. Validate the catalog and protected tokens.
 6. Review the result before compiling a release.
+
+For an external LLM agent, export only a small batch instead of opening the
+complete catalog:
+
+```bash
+python3 tools/localization/agent_batch.py export \
+  --project config/project.json \
+  --count 20 \
+  --mode incomplete \
+  --worker worker-1
+```
+
+The command prints an immutable `BATCH_FILE` and an editable `RESPONSE_FILE`.
+The agent reads the batch and fills only the `translation` values in the
+response. Apply both files with:
+
+```bash
+python3 tools/localization/agent_batch.py apply \
+  --project config/project.json \
+  --input BATCH_FILE \
+  --response RESPONSE_FILE \
+  --actor worker-1 \
+  --model MODEL_NAME
+```
+
+The `incomplete` mode includes both pending entries and English source
+placeholders previously stored as translated. The local Python process reads
+the catalog, but the LLM context receives only the exported entries. Applying
+is atomic and validates the active lease, immutable manifest, complete response,
+IDs, entry hashes, current eligibility, and protected tokens before changing
+the catalog.
 
 System-preserved entries use status `preserved` and the `system_preserved` flag.
 They retain the source text intentionally, are validated and compiled normally,
@@ -198,7 +305,7 @@ For manual work:
 
 ```bash
 python3 tools/localization/translate.py \
-  catalogs/spanish_work.json \
+  --project config/project.json \
   --count 20 \
   --edit
 ```
@@ -227,7 +334,7 @@ normal batches. Inspect them only for explicit investigation:
 
 ```bash
 python3 tools/localization/translate.py \
-  catalogs/spanish_work.json \
+  --project config/project.json \
   --advanced \
   --count 20
 ```
@@ -248,7 +355,7 @@ python3 tools/localization/extract.py \
 
 python3 tools/localization/update.py \
   catalogs/new_source.json \
-  catalogs/spanish_work.json
+  catalogs/spanish_9770_work.json
 ```
 
 `extract.py` rejects undecodable files, incomplete blocks, and missing `END`
@@ -317,8 +424,7 @@ For an intentionally partial debug package only, source fallback is available:
 
 ```bash
 python3 tools/localization/build.py \
-  catalogs/spanish_work.json \
-  /tmp/partial.str \
+  --project config/project.json \
   --allow-source-fallback
 ```
 

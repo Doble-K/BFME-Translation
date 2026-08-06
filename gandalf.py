@@ -302,7 +302,7 @@ def create_project_config(config_path, settings, string_file):
 def handoff_to_translation(output_path, config_path, settings, advanced):
     print("\nSiguiente paso:")
     print("  1. Iniciar batch manual")
-    print("  2. Ejecutar bulk con Ollama (dry-run por defecto)")
+    print("  2. Preparar lote pequeño para un agente externo")
     print("  3. Ver batch manual sin modificar")
     print("  4. Salir")
     choice = ask("Selecciona una opcion", "1")
@@ -318,32 +318,19 @@ def handoff_to_translation(output_path, config_path, settings, advanced):
         raise ValueError("La cantidad debe ser un entero mayor que cero") from error
 
     if choice == "2":
-        write = ask("¿Guardar resultados de Ollama? (s/N)", "n")
         command = [
             sys.executable,
-            str(ROOT / "tools/localization/ai_translate.py"),
+            str(ROOT / "tools/localization/agent_batch.py"),
+            "export",
             "--project",
             str(config_path),
-            "--provider",
-            "ollama",
-            "--mode",
-            "translate",
-            "--routing",
-            "auto",
             "--count",
             str(count),
+            "--mode",
+            "incomplete",
+            "--worker",
+            "gandalf-cli",
         ]
-        max_seconds = ask("Tiempo máximo en segundos (0 sin límite)", "300")
-        try:
-            if float(max_seconds) < 0:
-                raise ValueError
-        except ValueError as error:
-            raise ValueError("El tiempo máximo debe ser un número no negativo") from error
-        command.extend(("--max-seconds", max_seconds))
-        if write.lower() in {"s", "si", "sí", "y", "yes"}:
-            command.append("--write")
-        else:
-            command.append("--dry-run")
         subprocess.run(command, cwd=ROOT, check=True)
         return
 
@@ -570,8 +557,6 @@ def launch_gui():
     candidates = find_big_files()
     saved_config = load_gandalf_config()
     saved_last = saved_config.get("last", {}) if isinstance(saved_config.get("last", {}), dict) else {}
-    saved_ai = saved_config.get("ai", saved_config) if isinstance(saved_config, dict) else {}
-
     project_var = tk.StringVar(value=saved_last.get("project", "BFME2 ROTWK 2.02"))
     source_var = tk.StringVar(value=saved_last.get("source", str(candidates[0] if candidates else ROOT / "sources/englishpatch202.big")))
     source_language_var = tk.StringVar(value=saved_last.get("source_language", "English"))
@@ -581,15 +566,8 @@ def launch_gui():
     config_var = tk.StringVar(value=saved_last.get("config", "config/bfme2-rotwk-2.02_es.json"))
     force_var = tk.BooleanVar(value=False)
     dark_mode_var = tk.BooleanVar(value=False)
-    run_mode_var = tk.StringVar(value=saved_last.get("mode", "IA Ollama"))
+    run_mode_var = tk.StringVar(value=saved_last.get("mode", "Agente externo"))
     run_count_var = tk.StringVar(value=saved_last.get("count", "20"))
-    run_max_seconds_var = tk.StringVar(value=saved_last.get("max_seconds", "300"))
-    run_write_var = tk.BooleanVar(value=saved_last.get("write", False))
-    provider_var = tk.StringVar(value=saved_ai.get("provider", "ollama"))
-    ollama_url_var = tk.StringVar(value=saved_ai.get("ollama_url", "http://127.0.0.1:11434"))
-    small_model_var = tk.StringVar(value=saved_ai.get("small_model", "llama3.2:3b"))
-    large_model_var = tk.StringVar(value=saved_ai.get("large_model", "qwen2.5:7b"))
-    timeout_var = tk.StringVar(value=str(saved_ai.get("timeout", 300)))
     status_var = tk.StringVar(value="Listo para preparar un proyecto.")
     process_handle = None
     worker_thread = None
@@ -646,30 +624,12 @@ def launch_gui():
     ttk.Combobox(
         run_controls,
         textvariable=run_mode_var,
-        values=("IA Ollama", "Manual (terminal)"),
+        values=("Agente externo", "Manual (terminal)"),
         state="readonly",
         width=18,
     ).pack(side="left", padx=(6, 12))
     ttk.Label(run_controls, text="Entradas").pack(side="left")
     ttk.Entry(run_controls, textvariable=run_count_var, width=7).pack(side="left", padx=(6, 12))
-    ttk.Label(run_controls, text="Máx. segundos").pack(side="left")
-    ttk.Entry(run_controls, textvariable=run_max_seconds_var, width=7).pack(side="left", padx=(6, 12))
-    ttk.Checkbutton(run_controls, text="Guardar IA", variable=run_write_var).pack(side="left")
-    ai_config = ttk.Frame(run_frame)
-    ai_config.pack(fill="x", padx=8, pady=(0, 8))
-    ttk.Label(ai_config, text="Proveedor").pack(side="left")
-    provider_widget = ttk.Entry(ai_config, textvariable=provider_var, width=10)
-    provider_widget.pack(side="left", padx=(6, 12))
-    ttk.Label(ai_config, text="URL").pack(side="left")
-    url_widget = ttk.Entry(ai_config, textvariable=ollama_url_var, width=25)
-    url_widget.pack(side="left", padx=(6, 12))
-    ttk.Label(ai_config, text="Modelo corto").pack(side="left")
-    small_model_widget = ttk.Entry(ai_config, textvariable=small_model_var, width=16)
-    small_model_widget.pack(side="left", padx=(6, 12))
-    ttk.Label(ai_config, text="Modelo largo").pack(side="left")
-    large_model_widget = ttk.Entry(ai_config, textvariable=large_model_var, width=16)
-    large_model_widget.pack(side="left", padx=(6, 12))
-    input_widgets.extend((provider_widget, url_widget, small_model_widget, large_model_widget))
 
     progress_frame = ttk.LabelFrame(frame, text="Progreso del lote")
     progress_frame.pack(fill="both", expand=True)
@@ -773,13 +733,6 @@ def launch_gui():
     def persist_settings():
         try:
             save_gandalf_config({
-                "ai": {
-                    "provider": provider_var.get().strip() or "ollama",
-                    "ollama_url": ollama_url_var.get().strip() or "http://127.0.0.1:11434",
-                    "small_model": small_model_var.get().strip() or "llama3.2:3b",
-                    "large_model": large_model_var.get().strip() or "qwen2.5:7b",
-                    "timeout": int(timeout_var.get() or 300),
-                },
                 "last": {
                     "project": project_var.get(),
                     "source": source_var.get(),
@@ -790,8 +743,6 @@ def launch_gui():
                     "config": config_var.get(),
                     "mode": run_mode_var.get(),
                     "count": run_count_var.get(),
-                    "max_seconds": run_max_seconds_var.get(),
-                    "write": run_write_var.get(),
                 },
             })
         except (OSError, ValueError):
@@ -976,16 +927,13 @@ def launch_gui():
         raise RuntimeError("No se encontró una terminal gráfica compatible para el modo manual.")
 
     def run_translation():
-        nonlocal process_handle, worker_thread
         persist_settings()
         try:
             count = int(run_count_var.get())
-            max_seconds = float(run_max_seconds_var.get())
-            request_timeout = int(timeout_var.get())
-            if count < 1 or max_seconds < 0 or request_timeout < 1:
+            if not 1 <= count <= 100:
                 raise ValueError
         except ValueError as error:
-            messagebox.showerror("Valores inválidos", "Entradas debe ser mayor que cero y el tiempo no negativo.")
+            messagebox.showerror("Valores inválidos", "Entradas debe estar entre 1 y 100.")
             return
 
         config_path = Path(config_var.get()).expanduser()
@@ -1001,69 +949,40 @@ def launch_gui():
 
         command = [
             sys.executable,
-            str(ROOT / "tools/localization/ai_translate.py"),
+            str(ROOT / "tools/localization/agent_batch.py"),
+            "export",
             "--project",
             str(config_path),
-            "--provider",
-            provider_var.get().strip() or "ollama",
-            "--mode",
-            "translate",
-            "--routing",
-            "auto",
             "--count",
             str(count),
-            "--max-seconds",
-            str(max_seconds),
-            "--ollama-url",
-            ollama_url_var.get().strip() or "http://127.0.0.1:11434",
-            "--small-model",
-            small_model_var.get().strip() or "llama3.2:3b",
-            "--large-model",
-            large_model_var.get().strip() or "qwen2.5:7b",
-            "--timeout",
-            str(request_timeout),
-            "--write" if run_write_var.get() else "--dry-run",
+            "--mode",
+            "incomplete",
+            "--worker",
+            "gandalf-gui",
         ]
-        if run_write_var.get():
-            command.append("--checkpoint")
-        write_output(f"$ {' '.join(command)}\n")
-        progress_bar.configure(maximum=count, value=0)
-        completed_ids.clear()
-        completed_records.clear()
-        completed_selector.configure(values=())
-        completed_var.set("")
-        set_text(source_view, "")
-        set_text(target_view, "Esperando resultado...")
-        run_button.configure(state="disabled")
-        create_button.configure(state="disabled")
-        build_button.configure(state="disabled")
-        pause_button.configure(state="normal")
-        for widget in input_widgets:
-            widget.configure(state="disabled")
-        status_var.set("Ejecutando Ollama...")
-
-        def worker():
-            nonlocal process_handle
-            try:
-                process = subprocess.Popen(
-                    command,
-                    cwd=ROOT,
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.STDOUT,
-                    text=True,
-                    bufsize=1,
-                )
-                process_handle = process
-                for line in process.stdout:
-                    log_line(line)
-                return_code = process.wait()
-                root.after(0, run_finished, return_code)
-            except OSError as error:
-                log_line(f"Error: {error}")
-                root.after(0, run_finished, 1)
-
-        worker_thread = threading.Thread(target=worker, name="gandalf-ollama", daemon=False)
-        worker_thread.start()
+        try:
+            result = subprocess.run(command, cwd=ROOT, check=True, capture_output=True, text=True)
+            write_output(f"$ {' '.join(command)}\n{result.stdout}")
+            batch_match = re.search(r"^BATCH_FILE (.+)$", result.stdout, re.MULTILINE)
+            response_match = re.search(r"^RESPONSE_FILE (.+)$", result.stdout, re.MULTILINE)
+            if not batch_match or not response_match:
+                raise ValueError("La herramienta no informó las rutas del lote y la respuesta")
+            batch_path = Path(batch_match.group(1))
+            response_path = Path(response_match.group(1))
+            batch = json.loads(batch_path.read_text(encoding="utf-8"))
+            progress_bar.configure(maximum=max(1, len(batch["entries"])), value=0)
+            set_text(source_view, f"Lote exportado con {len(batch['entries'])} entradas.")
+            set_text(target_view, f"Batch: {batch_path}\nRespuesta: {response_path}")
+            status_var.set("Lote listo para un agente externo.")
+            messagebox.showinfo(
+                "Lote para agente",
+                f"Batch de solo lectura:\n{batch_path}\n\n"
+                f"Respuesta editable:\n{response_path}\n\n"
+                "El agente debe completar la respuesta y ejecutar agent_batch.py apply.",
+            )
+        except (OSError, ValueError, subprocess.CalledProcessError, json.JSONDecodeError, KeyError) as error:
+            write_output(f"Error: {error}\n")
+            status_var.set("No se pudo preparar el lote para el agente.")
 
     def run_finished(return_code):
         nonlocal process_handle, worker_thread, process_paused, close_when_done
@@ -1162,12 +1081,6 @@ def launch_gui():
         if process_handle is None:
             root.destroy()
             return
-        if not run_write_var.get():
-            messagebox.showwarning(
-                "Dry-run activo",
-                "El lote no está configurado para guardar. Marca 'Guardar IA' antes de salir.",
-            )
-            return
         if process_paused:
             pause_run()
         close_when_done = True
@@ -1178,19 +1091,15 @@ def launch_gui():
     def save_current():
         persist_settings()
         if process_handle is not None:
-            if not run_write_var.get():
-                messagebox.showwarning("Dry-run activo", "Este lote no está configurado para guardar.")
-                return
-            status_var.set("Guardado automático activo: cada entrada completada se conserva por checkpoint.")
-            write_output("Guardar: los resultados completados ya están guardados por checkpoint.\n")
+            status_var.set("Hay un proceso de construcción en curso.")
             return
-        messagebox.showinfo("Guardar", "No hay un lote activo. Los cambios guardados ya están en el catálogo.")
+        messagebox.showinfo("Guardar", "La configuración local está guardada.")
 
     def request_close():
         if process_handle is not None:
             messagebox.showinfo(
                 "Lote en ejecución",
-                "Gandalf esperará a que termine Ollama antes de cerrar. Usa un límite de tiempo si tarda demasiado.",
+                "Gandalf esperará a que termine el proceso antes de cerrar.",
             )
             return
         root.destroy()
@@ -1214,11 +1123,11 @@ def launch_gui():
     exit_button.pack(side="left", padx=(8, 0))
     ttk.Label(frame, textvariable=status_var).pack(anchor="w", pady=(0, 8), before=form)
     add_tooltip(create_button, "Extrae el archivo .big y crea el catálogo y la configuración del proyecto.")
-    add_tooltip(run_button, "Ejecuta el lote seleccionado: IA Ollama o editor manual en terminal.")
+    add_tooltip(run_button, "Exporta un lote pequeño para un agente externo o abre el editor manual.")
     add_tooltip(build_button, "Construye y empaqueta un .big parcial usando el texto original como fallback.")
-    add_tooltip(pause_button, "Pausa o reanuda el proceso de IA sin cerrar Gandalf.")
-    add_tooltip(save_button, "Confirma el guardado por checkpoint de las entradas ya completadas.")
-    add_tooltip(exit_button, "Cierra Gandalf; si hay IA activa, espera o conserva el lote según su estado.")
+    add_tooltip(pause_button, "Pausa o reanuda el proceso de construcción.")
+    add_tooltip(save_button, "Guarda la configuración local de Gandalf.")
+    add_tooltip(exit_button, "Cierra Gandalf cuando no haya un proceso activo.")
     root.protocol("WM_DELETE_WINDOW", request_close)
     persist_settings()
 

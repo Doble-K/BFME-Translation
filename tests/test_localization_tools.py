@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
+import os
 import json
 import subprocess
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import Mock, patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,15 +23,34 @@ from ai_translate import (
     restore_protected_tokens,
     select_entries,
 )
+from watch_progress import activity_state, calculate_recent_rate, render_snapshot
+from opencode_farm import (
+    FarmSupervisor,
+    build_opencode_command,
+    load_farm_config,
+    stop_farm,
+)
 
 
-def run_tool(name, *args):
+def run_tool(name, *args, env=None):
     return subprocess.run(
         [sys.executable, str(TOOLS / name), *map(str, args)],
         cwd=ROOT,
         capture_output=True,
         text=True,
+        env=env,
     )
+
+
+def fill_agent_response(batch_path, translations):
+    batch = json.loads(Path(batch_path).read_text(encoding="utf-8"))
+    response_path = Path(batch["response_file"])
+    response = json.loads(response_path.read_text(encoding="utf-8"))
+    for item in response["translations"]:
+        if item["id"] in translations:
+            item["translation"] = translations[item["id"]]
+    response_path.write_text(json.dumps(response), encoding="utf-8")
+    return response_path
 
 
 class LocalizationToolTests(unittest.TestCase):
@@ -568,6 +589,776 @@ class LocalizationToolTests(unittest.TestCase):
         self.assertEqual(source, "Alternate Weapon")
         self.assertEqual(hotkeys, ["&t"])
         self.assertEqual(restore_hotkeys("Arma alternativa", hotkeys), "Arma alternativa &t")
+
+    def test_agent_batch_exports_only_bounded_translation_data_and_applies_it(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            batch_file = directory / "batch.json"
+            catalog.write_text(json.dumps({
+                "private_metadata": "must not be exported",
+                "entries": [
+                    {"id": "TEST:One", "source": "One", "translation": "", "status": "pending"},
+                    {
+                        "id": "TEST:Two",
+                        "source": "%d Days",
+                        "translation": "%d Days",
+                        "status": "translated",
+                        "translation_meta": {"origin": "source_placeholder"},
+                    },
+                ],
+            }), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "agent-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+
+            exported = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--output", batch_file, "--count", "1",
+            )
+
+            self.assertEqual(exported.returncode, 0, exported.stdout + exported.stderr)
+            batch = json.loads(batch_file.read_text(encoding="utf-8"))
+            self.assertEqual(len(batch["entries"]), 1)
+            self.assertEqual(batch["mode"], "incomplete")
+            self.assertEqual(batch["entries"][0]["id"], "TEST:Two")
+            self.assertNotIn("private_metadata", batch)
+            self.assertEqual(batch["entries"][0]["protected_tokens"], ["%d"])
+            self.assertNotIn("translation", batch["entries"][0])
+            batch_before = batch_file.read_bytes()
+            fill_agent_response(batch_file, {"TEST:Two": "%d Días"})
+
+            applied = run_tool(
+                "agent_batch.py", "apply", "--project", project_file,
+                "--input", batch_file, "--model", "test-agent",
+            )
+
+            self.assertEqual(applied.returncode, 0, applied.stdout + applied.stderr)
+            self.assertEqual(batch_file.read_bytes(), batch_before)
+            entries = json.loads(catalog.read_text(encoding="utf-8"))["entries"]
+            self.assertEqual(entries[0]["status"], "pending")
+            self.assertEqual(entries[1]["translation"], "%d Días")
+            self.assertEqual(entries[1]["status"], "translated")
+            self.assertIn("needs_review", entries[1]["flags"])
+            self.assertEqual(entries[1]["translation_meta"]["origin"], "agent")
+
+    def test_agent_batch_rejects_invalid_tokens_without_partial_writes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            batch_file = directory / "batch.json"
+            catalog.write_text(json.dumps({"entries": [
+                {"id": "TEST:One", "source": "One", "translation": "", "status": "pending"},
+                {"id": "TEST:Two", "source": "%d Days", "translation": "", "status": "pending"},
+            ]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "agent-atomic-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+            exported = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--output", batch_file, "--count", "2",
+            )
+            self.assertEqual(exported.returncode, 0, exported.stdout + exported.stderr)
+            batch = json.loads(batch_file.read_text(encoding="utf-8"))
+            fill_agent_response(batch_file, {
+                batch["entries"][0]["id"]: "Uno",
+                batch["entries"][1]["id"]: "Días",
+            })
+            before = catalog.read_bytes()
+
+            applied = run_tool(
+                "agent_batch.py", "apply", "--project", project_file, "--input", batch_file,
+            )
+
+            self.assertNotEqual(applied.returncode, 0)
+            self.assertIn("tokens inválidos", applied.stderr)
+            self.assertEqual(catalog.read_bytes(), before)
+
+    def test_agent_batch_rejects_truncated_response_and_can_reset_it(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            batch_file = directory / "batch.json"
+            catalog.write_text(json.dumps({"entries": [
+                {"id": "TEST:One", "source": "One", "translation": "", "status": "pending"},
+                {"id": "TEST:Two", "source": "Two", "translation": "", "status": "pending"},
+            ]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "response-reset-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+            exported = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--worker", "response-worker", "--count", "2", "--output", batch_file,
+            )
+            self.assertEqual(exported.returncode, 0, exported.stdout + exported.stderr)
+            batch_before = batch_file.read_bytes()
+            batch = json.loads(batch_before)
+            response_path = Path(batch["response_file"])
+            response = json.loads(response_path.read_text(encoding="utf-8"))
+            response["translations"] = response["translations"][:1]
+            response_path.write_text(json.dumps(response), encoding="utf-8")
+
+            applied = run_tool(
+                "agent_batch.py", "apply", "--project", project_file, "--input", batch_file,
+            )
+            self.assertNotEqual(applied.returncode, 0)
+            self.assertIn("IDs de la respuesta no coinciden", applied.stderr)
+            self.assertEqual(batch_file.read_bytes(), batch_before)
+
+            reset = run_tool(
+                "agent_batch.py", "reset-response", "--project", project_file,
+                "--input", batch_file,
+            )
+            self.assertEqual(reset.returncode, 0, reset.stdout + reset.stderr)
+            restored = json.loads(response_path.read_text(encoding="utf-8"))
+            self.assertEqual(len(restored["translations"]), 2)
+            self.assertTrue(all(not item["translation"] for item in restored["translations"]))
+            restored["translations"][0]["actor"] = "not-allowed"
+            response_path.write_text(json.dumps(restored), encoding="utf-8")
+            extra_field = run_tool(
+                "agent_batch.py", "apply", "--project", project_file, "--input", batch_file,
+            )
+            self.assertNotEqual(extra_field.returncode, 0)
+            self.assertIn("solo id y translation", extra_field.stderr)
+
+    def test_agent_batches_reserve_disjoint_work_for_multiple_workers(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            batch_a = directory / "worker-a.json"
+            batch_b = directory / "worker-b.json"
+            catalog.write_text(json.dumps({"entries": [
+                {"id": f"TEST:{index}", "source": f"Source {index}", "translation": "", "status": "pending"}
+                for index in range(1, 5)
+            ]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "multi-agent-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+
+            commands = [
+                [sys.executable, str(TOOLS / "agent_batch.py"), "export",
+                 "--project", str(project_file), "--worker", worker,
+                 "--count", "2", "--output", str(batch_path)]
+                for worker, batch_path in (("worker-a", batch_a), ("worker-b", batch_b))
+            ]
+            processes = [
+                subprocess.Popen(
+                    command, cwd=ROOT, stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE, text=True,
+                )
+                for command in commands
+            ]
+            results = [process.communicate(timeout=30) for process in processes]
+            for process, (stdout, stderr) in zip(processes, results):
+                self.assertEqual(process.returncode, 0, stdout + stderr)
+            data_a = json.loads(batch_a.read_text(encoding="utf-8"))
+            data_b = json.loads(batch_b.read_text(encoding="utf-8"))
+            ids_a = {entry["id"] for entry in data_a["entries"]}
+            ids_b = {entry["id"] for entry in data_b["entries"]}
+            self.assertFalse(ids_a & ids_b)
+            self.assertEqual(len(ids_a | ids_b), 4)
+
+            status_result = run_tool(
+                "agent_batch.py", "status", "--project", project_file, "--json",
+            )
+            self.assertEqual(status_result.returncode, 0, status_result.stdout + status_result.stderr)
+            queue = json.loads(status_result.stdout)
+            self.assertEqual(queue["eligible"], 4)
+            self.assertEqual(queue["reserved"], 4)
+            self.assertEqual(queue["available"], 0)
+            self.assertEqual(len(queue["active_batches"]), 2)
+
+            apply_commands = []
+            for batch_path, batch_data, worker in (
+                (batch_a, data_a, "worker-a"),
+                (batch_b, data_b, "worker-b"),
+            ):
+                fill_agent_response(batch_path, {
+                    entry["id"]: f"Traducción {entry['id']}"
+                    for entry in batch_data["entries"]
+                })
+                apply_commands.append([
+                    sys.executable, str(TOOLS / "agent_batch.py"), "apply",
+                    "--project", str(project_file), "--input", str(batch_path),
+                    "--actor", worker,
+                ])
+            apply_processes = [
+                subprocess.Popen(
+                    command, cwd=ROOT, stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE, text=True,
+                )
+                for command in apply_commands
+            ]
+            apply_results = [process.communicate(timeout=30) for process in apply_processes]
+            for process, (stdout, stderr) in zip(apply_processes, apply_results):
+                self.assertEqual(process.returncode, 0, stdout + stderr)
+
+            final_entries = json.loads(catalog.read_text(encoding="utf-8"))["entries"]
+            self.assertTrue(all(entry["status"] == "translated" for entry in final_entries))
+            final_status = run_tool(
+                "agent_batch.py", "status", "--project", project_file, "--json",
+            )
+            queue = json.loads(final_status.stdout)
+            self.assertEqual(queue["eligible"], 0)
+            self.assertEqual(queue["active_batches"], [])
+
+    def test_watch_progress_reports_effective_queue_percentage(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            catalog.write_text(json.dumps({"entries": [
+                {
+                    "id": "TEST:Pending",
+                    "source": "Pending",
+                    "translation": "",
+                    "status": "pending",
+                },
+                {
+                    "id": "TEST:Translated",
+                    "source": "Translated",
+                    "translation": "Traducido",
+                    "status": "translated",
+                },
+                {
+                    "id": "TEST:Placeholder",
+                    "source": "Placeholder",
+                    "translation": "Placeholder",
+                    "status": "translated",
+                    "translation_meta": {"origin": "source_placeholder"},
+                },
+                {
+                    "id": "TEST:Preserved",
+                    "source": "Preserved",
+                    "translation": "Preserved",
+                    "status": "preserved",
+                },
+                {
+                    "id": "Version:BuildMachine",
+                    "source": "Build machine",
+                    "translation": "",
+                    "status": "pending",
+                },
+            ]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "progress-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+
+            result = run_tool(
+                "watch_progress.py", "--project", project_file,
+                "--once", "--no-clear",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertIn("33,33%", result.stdout)
+            self.assertIn("Traducciones completadas: 1 / 3", result.stdout)
+            self.assertIn("Entradas incompletas: 2", result.stdout)
+            self.assertIn("Estado: DETENIDO", result.stdout)
+            self.assertIn("Ritmo reciente (últimos 5 min): 0,00 entradas/min", result.stdout)
+            self.assertNotIn("Tiempo restante estimado:", result.stdout)
+            self.assertIn("Lotes activos: 0", result.stdout)
+            self.assertNotIn("\033", result.stdout)
+
+    def test_watch_progress_recent_rate_expires_after_five_minutes(self):
+        samples = [
+            (0.0, 100),
+            (60.0, 125),
+            (300.0, 125),
+        ]
+        self.assertEqual(calculate_recent_rate(samples), 5.0)
+
+        samples = [
+            (60.0, 125),
+            (300.0, 125),
+            (361.0, 125),
+        ]
+        self.assertEqual(calculate_recent_rate(samples), 0.0)
+
+    def test_watch_progress_distinguishes_activity_states(self):
+        snapshot = {"eligible": 100, "active_batches": [{"worker": "worker-1"}]}
+        self.assertEqual(activity_state(snapshot, 5.0, 600.0, 300.0), "AVANZANDO")
+        self.assertEqual(
+            activity_state(snapshot, 0.0, 120.0, 300.0),
+            "ESPERANDO APLICACIÓN",
+        )
+        self.assertEqual(
+            activity_state(snapshot, 0.0, 301.0, 300.0),
+            "SIN AVANCE RECIENTE",
+        )
+        snapshot["active_batches"] = []
+        self.assertEqual(
+            activity_state(snapshot, 10.0, 600.0, 300.0),
+            "DETENIDO (sin lotes activos)",
+        )
+        snapshot["eligible"] = 0
+        self.assertEqual(activity_state(snapshot, 0.0, 600.0, 300.0), "COMPLETADO")
+
+    def test_watch_progress_eta_uses_only_recent_activity(self):
+        snapshot = {
+            "project": "progress-test",
+            "language": "es-419",
+            "completed": 100,
+            "total": 200,
+            "progress_percent": 50.0,
+            "eligible": 100,
+            "reserved": 25,
+            "available": 75,
+            "active_batches": [{
+                "worker": "worker-1",
+                "entries": 25,
+                "expires_at": "2099-01-01T00:00:00+00:00",
+            }],
+        }
+
+        stalled = render_snapshot(
+            snapshot, 50, 100, 301.0, 10.0, 0.0, 5.0, 301.0
+        )
+        advancing = render_snapshot(
+            snapshot, 50, 75, 301.0, 10.0, 20.0, 5.0, 10.0
+        )
+
+        self.assertIn("Estado: SIN AVANCE RECIENTE", stalled)
+        self.assertNotIn("Tiempo restante estimado:", stalled)
+        self.assertIn("Estado: AVANZANDO", advancing)
+        self.assertIn("Tiempo restante estimado: 5m", advancing)
+
+    def test_agent_batch_release_returns_reserved_entries_to_queue(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            batch_file = directory / "worker.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Reserved",
+                "source": "Reserved",
+                "translation": "",
+                "status": "pending",
+            }]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "lease-release-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+            exported = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--worker", "worker-release", "--output", batch_file,
+            )
+            self.assertEqual(exported.returncode, 0, exported.stdout + exported.stderr)
+
+            released = run_tool(
+                "agent_batch.py", "release", "--project", project_file,
+                "--input", batch_file,
+            )
+
+            self.assertEqual(released.returncode, 0, released.stdout + released.stderr)
+            status_result = run_tool(
+                "agent_batch.py", "status", "--project", project_file, "--json",
+            )
+            queue = json.loads(status_result.stdout)
+            self.assertEqual(queue["eligible"], 1)
+            self.assertEqual(queue["reserved"], 0)
+            self.assertEqual(queue["available"], 1)
+
+    def test_agent_batch_release_prefix_keeps_unrelated_leases(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            catalog.write_text(json.dumps({"entries": [
+                {
+                    "id": f"TEST:{index}",
+                    "source": f"Source {index}",
+                    "translation": "",
+                    "status": "pending",
+                }
+                for index in range(4)
+            ]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "release-prefix-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+
+            for worker in ("farm-a-1", "farm-b-1"):
+                result = run_tool(
+                    "agent_batch.py", "export", "--project", project_file,
+                    "--worker", worker, "--count", "2",
+                    "--output", directory / f"{worker}.json",
+                )
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+            released = run_tool(
+                "agent_batch.py", "release-prefix", "--project", project_file,
+                "--prefix", "farm-a",
+            )
+            status_result = run_tool(
+                "agent_batch.py", "status", "--project", project_file, "--json",
+            )
+            queue = json.loads(status_result.stdout)
+
+            self.assertEqual(released.returncode, 0, released.stdout + released.stderr)
+            self.assertIn("Reservas liberadas para farm-a: 1", released.stdout)
+            self.assertEqual(queue["reserved"], 2)
+            self.assertEqual(queue["available"], 2)
+            self.assertEqual(
+                [batch["worker"] for batch in queue["active_batches"]],
+                ["farm-b-1"],
+            )
+
+    def test_agent_batch_enforces_supervisor_worker_scope(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Scoped",
+                "source": "Scoped",
+                "translation": "",
+                "status": "pending",
+            }]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "worker-scope-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+            environment = os.environ.copy()
+            environment.update({
+                "BFME_TRANSLATION_WORKER_PREFIX": "farm-safe",
+                "BFME_TRANSLATION_WORKER_COUNT": "4",
+            })
+
+            rejected = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--worker", "farm", "--output", directory / "rejected.json",
+                env=environment,
+            )
+            accepted = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--worker", "farm-safe-1", "--output", directory / "accepted.json",
+                env=environment,
+            )
+
+            self.assertNotEqual(rejected.returncode, 0)
+            self.assertIn("worker fuera del ámbito", rejected.stderr)
+            self.assertFalse((directory / "rejected.json").exists())
+            self.assertEqual(accepted.returncode, 0, accepted.stdout + accepted.stderr)
+
+    def test_opencode_farm_uses_explicit_models_for_every_coordinator(self):
+        config_path = ROOT / "config" / "opencode_farm.json"
+        config = load_farm_config(config_path)
+
+        self.assertEqual(config["workers"], 4)
+        self.assertEqual(config["count"], 25)
+        self.assertEqual(len(config["coordinators"]), 5)
+        self.assertEqual(
+            [item["model"] for item in config["coordinators"]],
+            [
+                "opencode/ling-3.0-flash-free",
+                "opencode/deepseek-v4-flash-free",
+                "opencode/mimo-v2.5-free",
+                "opencode/nemotron-3-ultra-free",
+                "opencode/laguna-s-2.1-free",
+            ],
+        )
+        for coordinator in config["coordinators"]:
+            command = build_opencode_command(coordinator, 4, 25)
+            self.assertEqual(
+                command[command.index("--agent") + 1],
+                "translation-coordinator",
+            )
+            self.assertEqual(command[command.index("--model") + 1], coordinator["model"])
+            self.assertEqual(command[-4:], ["translate-parallel", coordinator["prefix"], "4", "25"])
+            self.assertNotIn("gemma", " ".join(command).lower())
+
+        dry_run = run_tool(
+            "opencode_farm.py", "start", "--config", config_path, "--dry-run"
+        )
+        self.assertEqual(dry_run.returncode, 0, dry_run.stdout + dry_run.stderr)
+        self.assertEqual(len(dry_run.stdout.strip().splitlines()), 5)
+
+    def test_opencode_farm_passes_exact_worker_scope_to_child(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            config = {
+                "config_path": directory / "farm.json",
+                "project": directory / "project.json",
+                "workers": 4,
+                "count": 25,
+                "max_restarts": 1,
+                "poll_seconds": 1.0,
+                "state_file": directory / "state.json",
+                "log_directory": directory / "logs",
+                "coordinators": [{
+                    "prefix": "farm-safe",
+                    "model": "provider/model",
+                }],
+            }
+            supervisor = FarmSupervisor(config)
+            process = Mock(pid=12345)
+
+            with (
+                patch("opencode_farm.subprocess.Popen", return_value=process) as popen,
+                patch.object(supervisor, "save_state"),
+            ):
+                supervisor.launch(supervisor.slots[0])
+
+            environment = popen.call_args.kwargs["env"]
+            self.assertEqual(
+                environment["BFME_TRANSLATION_WORKER_PREFIX"], "farm-safe"
+            )
+            self.assertEqual(environment["BFME_TRANSLATION_WORKER_COUNT"], "4")
+            supervisor.slots[0]["log"].close()
+
+    def test_opencode_farm_cleans_up_after_unexpected_error(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            config = {
+                "config_path": directory / "farm.json",
+                "project": directory / "project.json",
+                "workers": 4,
+                "count": 25,
+                "max_restarts": 1,
+                "poll_seconds": 1.0,
+                "state_file": directory / "state.json",
+                "log_directory": directory / "logs",
+                "coordinators": [{
+                    "prefix": "farm-test",
+                    "model": "provider/model",
+                }],
+            }
+            supervisor = FarmSupervisor(config)
+
+            with (
+                patch("opencode_farm.signal.signal"),
+                patch.object(supervisor, "save_state"),
+                patch(
+                    "opencode_farm.progress_snapshot",
+                    side_effect=RuntimeError("snapshot failed"),
+                ),
+                patch.object(supervisor, "cleanup") as cleanup,
+            ):
+                with self.assertRaisesRegex(RuntimeError, "snapshot failed"):
+                    supervisor.run()
+
+            cleanup.assert_called_once_with()
+
+    def test_opencode_farm_stop_keeps_leases_if_supervisor_will_not_exit(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            state_file = directory / "state.json"
+            state_file.write_text(json.dumps({
+                "schema_version": 1,
+                "supervisor_pid": 12345,
+                "children": [],
+            }), encoding="utf-8")
+            config = {
+                "state_file": state_file,
+                "project": directory / "project.json",
+                "coordinators": [],
+            }
+
+            with (
+                patch("opencode_farm.process_is_alive", return_value=True),
+                patch("opencode_farm.wait_for_process_exit", return_value=False),
+                patch("opencode_farm.os.kill"),
+                patch("opencode_farm.release_farm_leases") as release_leases,
+            ):
+                with self.assertRaisesRegex(RuntimeError, "no se detuvo"):
+                    stop_farm(config)
+
+            release_leases.assert_not_called()
+            self.assertTrue(state_file.exists())
+
+    def test_agent_batch_reuses_active_lease_for_same_worker(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            first_batch = directory / "first.json"
+            unused_batch = directory / "unused.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "lease-reuse-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+            first = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--worker", "same-worker", "--output", first_batch,
+            )
+            repeated = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--worker", "same-worker", "--output", unused_batch,
+            )
+
+            self.assertEqual(first.returncode, 0, first.stdout + first.stderr)
+            self.assertEqual(repeated.returncode, 0, repeated.stdout + repeated.stderr)
+            self.assertIn(str(first_batch.resolve()), repeated.stdout)
+            self.assertFalse(unused_batch.exists())
+
+    def test_agent_batch_can_release_corrupt_file_by_batch_id(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            batch_file = directory / "worker.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Corrupt", "source": "Corrupt", "translation": "", "status": "pending",
+            }]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "corrupt-release-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+            exported = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--worker", "worker-corrupt", "--output", batch_file,
+            )
+            self.assertEqual(exported.returncode, 0, exported.stdout + exported.stderr)
+            batch_id = json.loads(batch_file.read_text(encoding="utf-8"))["batch_id"]
+            batch_file.write_text("{broken", encoding="utf-8")
+
+            released = run_tool(
+                "agent_batch.py", "release", "--project", project_file,
+                "--batch-id", batch_id, "--worker", "worker-corrupt",
+            )
+
+            self.assertEqual(released.returncode, 0, released.stdout + released.stderr)
+            queue = json.loads(run_tool(
+                "agent_batch.py", "status", "--project", project_file, "--json",
+            ).stdout)
+            self.assertEqual(queue["available"], 1)
+            self.assertEqual(queue["active_batches"], [])
+
+    def test_agent_batch_rejects_expired_lease_and_renew_extends_it(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            project_file = directory / "project.json"
+            batch_file = directory / "worker.json"
+            catalog.write_text(json.dumps({"entries": [{
+                "id": "TEST:Lease", "source": "Lease", "translation": "", "status": "pending",
+            }]}), encoding="utf-8")
+            project_file.write_text(json.dumps({
+                "name": "lease-expiry-test",
+                "source_archive": str(directory / "source.big"),
+                "string_directory": str(directory),
+                "string_files": ["data/strings.str"],
+                "catalog": str(catalog),
+                "output_string_file": str(directory / "strings.str"),
+                "output_package": str(directory / "output.big"),
+                "language": "es-419",
+                "encoding": "cp1252",
+            }), encoding="utf-8")
+            exported = run_tool(
+                "agent_batch.py", "export", "--project", project_file,
+                "--worker", "worker-lease", "--output", batch_file,
+                "--lease-seconds", "60",
+            )
+            self.assertEqual(exported.returncode, 0, exported.stdout + exported.stderr)
+            registry_path = directory / ".catalog.json.agent-leases.json"
+            before_renew = json.loads(
+                registry_path.read_text(encoding="utf-8")
+            )["leases"][0]["expires_at"]
+            renewed = run_tool(
+                "agent_batch.py", "renew", "--project", project_file,
+                "--input", batch_file, "--lease-seconds", "120",
+            )
+            self.assertEqual(renewed.returncode, 0, renewed.stdout + renewed.stderr)
+            after_renew = json.loads(
+                registry_path.read_text(encoding="utf-8")
+            )["leases"][0]["expires_at"]
+            self.assertGreater(after_renew, before_renew)
+
+            registry = json.loads(registry_path.read_text(encoding="utf-8"))
+            registry["leases"][0]["expires_at"] = 0
+            registry_path.write_text(json.dumps(registry), encoding="utf-8")
+            fill_agent_response(batch_file, {"TEST:Lease": "Reserva"})
+            before_apply = catalog.read_bytes()
+
+            applied = run_tool(
+                "agent_batch.py", "apply", "--project", project_file, "--input", batch_file,
+            )
+
+            self.assertNotEqual(applied.returncode, 0)
+            self.assertIn("reserva del lote venció", applied.stderr)
+            self.assertEqual(catalog.read_bytes(), before_apply)
 
     def test_init_refuses_to_overwrite_existing_catalog(self):
         with tempfile.TemporaryDirectory() as directory:

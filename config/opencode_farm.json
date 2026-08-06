@@ -1,0 +1,31 @@
+{
+  "project": "config/project.json",
+  "workers": 4,
+  "count": 25,
+  "max_restarts": 1,
+  "poll_seconds": 5,
+  "state_file": ".agent/opencode-farm-state.json",
+  "log_directory": ".agent/logs/opencode-farm",
+  "coordinators": [
+    {
+      "prefix": "rotwk-ling-all",
+      "model": "opencode/ling-3.0-flash-free"
+    },
+    {
+      "prefix": "rotwk-deep-all",
+      "model": "opencode/deepseek-v4-flash-free"
+    },
+    {
+      "prefix": "rotwk-mimo-all",
+      "model": "opencode/mimo-v2.5-free"
+    },
+    {
+      "prefix": "rotwk-nemotron-all",
+      "model": "opencode/nemotron-3-ultra-free"
+    },
+    {
+      "prefix": "rotwk-laguna-all",
+      "model": "opencode/laguna-s-2.1-free"
+    }
+  ]
+}
