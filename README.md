@@ -51,13 +51,15 @@ python3 gandalf.py --gui
 ```
 
 The GUI creates the catalog and project configuration, includes a light/dark
-mode toggle, and leaves translation to an external agent or the manual CLI.
+mode toggle, and can operate an external agent farm or the manual editor.
 
 After selecting an existing project, the `Run` controls can export a bounded
 JSON batch for an external agent or open the manual editor in a terminal. The
-agent receives only that small file, never the complete catalog. The GUI also
-provides `Construir prueba`, which runs build with source fallback and then
-packages a partial test `.big`; it is not a release build.
+agent receives only that small file, never the complete catalog. `Corregir
+entradas` edits individual records safely while agents work. The farm panel can
+start, reconnect to, drain, resume, or stop the detached supervisor and inspect
+its logs. The GUI also provides `Construir prueba`, which runs build with source
+fallback and then packages a partial test `.big`; it is not a release build.
 
 Gandalf detects `.big` files, lists their contents, selects a string file,
 creates a work catalog and project configuration, and supports arbitrary
@@ -182,7 +184,12 @@ DEBUG snapshots, and generic mod projects into Gandalf is documented in
 ### OpenCode
 
 The repository includes a project-local OpenCode agent that inherits whichever
-model the user selects. Restart OpenCode after pulling configuration changes,
+model the user selects. Upon opening, the default agent is `director`, which
+coordinates tasks and delegates to smaller, low-cost agents; the farm uses
+`translation-coordinator` explicitly and does not depend on the default agent.
+The `director` works inside the repository, translates only when explicitly
+asked, and reads `config/opencode_farm.json` only for translation or farm
+tasks. Restart OpenCode after pulling configuration changes,
 select a model in the interface or at startup, then use:
 
 ```bash
@@ -196,11 +203,16 @@ opencode -m PROVIDER/MODEL
 /translate-parallel-all rotwk-run2 4 25
 /translation-status
 /build-candidate
+/farm start --detach
 ```
 
 `/translate-parallel` runs one bounded wave. `/translate-parallel-all` launches
 fresh parallel worker contexts for each wave and continues until the queue is
-complete or safely reports a blocker.
+complete or safely reports a blocker. `/farm` asks the `director` to drive the
+same supervisor that Gandalf uses
+(`tools/localization/opencode_farm.py --config config/opencode_farm.json`),
+so the farm can be started either manually in the Gandalf GUI or from
+OpenCode.
 
 For an unattended run with the explicit model matrix in
 `config/opencode_farm.json`, preview and start the detached supervisor with:
@@ -212,14 +224,32 @@ python3 tools/localization/opencode_farm.py start \
   --config config/opencode_farm.json --detach
 ```
 
-Inspect or stop it without releasing another worker's reservations:
+Inspect it, finish the active wave without starting another, resume it, or stop
+it immediately without releasing another worker's reservations:
 
 ```bash
 python3 tools/localization/opencode_farm.py status \
   --config config/opencode_farm.json
+python3 tools/localization/opencode_farm.py drain \
+  --config config/opencode_farm.json
+python3 tools/localization/opencode_farm.py resume \
+  --config config/opencode_farm.json
 python3 tools/localization/opencode_farm.py stop \
   --config config/opencode_farm.json
 ```
+
+`drain` lets the current coordinator processes finish and then shuts down the
+supervisor. `resume` cancels a pending drain or starts a new detached supervisor
+after draining completed. `stop` terminates active process groups before
+releasing the configured farm leases. Gandalf polls this same state, so closing
+and reopening the GUI reconnects to a running farm instead of owning its
+lifetime.
+
+Farm state, control, acknowledgement, and log paths must remain under an
+`.agent` directory. Their locations are anchored to the canonical profile while
+the farm runs. If that profile or its project becomes temporarily unreadable,
+`status`, `drain`, `stop`, and Gandalf can recover the frozen runtime identity;
+starting a new farm still requires a valid profile.
 
 `clean` releases only leases whose worker names use one of the configured farm
 prefixes, and refuses to run while that supervisor is active.

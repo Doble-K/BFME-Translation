@@ -61,9 +61,7 @@ Herramientas obligatorias en esta etapa:
 
 ## 2. Traducir con OpenCode
 
-La configuracion local de OpenCode define el agente primario `translator` sin
-fijar proveedor ni modelo. Hereda el modelo seleccionado por el usuario y
-ofrece estos comandos:
+La configuracion local de OpenCode define el agente primario `director` (el agente director, que coordina y delega con agentes pequenos de bajo costo). Al abrir OpenCode se inicia este agente por defecto, pero los comandos de traduccion usan explicitamente el agente `translator` (cada comando declara su agente en el frontmatter). El `director` trabaja dentro del repositorio, solo traduce cuando se le pide explicitamente y solo lee `config/opencode_farm.json` para tareas de traduccion o de granja. La granja (`config/opencode_farm.json`) no depende del agente primario: cada coordinador se lanza con `--agent translation-coordinator` y `--model` explicitos, por lo que funciona aunque el agente por defecto sea `director`. Ofrece estos comandos:
 
 ```bash
 opencode models
@@ -77,6 +75,7 @@ opencode -m PROVIDER/MODEL
 /translate-parallel-all rotwk-run2 4 25
 /translation-status
 /build-candidate
+/farm start --detach
 ```
 
 `/translate-next` procesa un lote. `/translate-all` continua hasta agotar la
@@ -84,7 +83,11 @@ cola o encontrar un bloqueo tecnico. `/translate-parallel` ejecuta una sola
 ronda de entre 2 y 8 subagentes con reservas separadas.
 `/translate-parallel-all` crea contextos nuevos en cada ronda y continua hasta
 completar la cola o detectar un bloqueo seguro. `/build-candidate` valida y
-empaqueta solo cuando ya no quedan entradas incompletas ni lotes activos. Al
+empaqueta solo cuando ya no quedan entradas incompletas ni lotes activos.
+`/farm` pide al `director` que ejecute el mismo supervisor que usa Gandalf
+(`tools/localization/opencode_farm.py --config config/opencode_farm.json`), de
+modo que la granja puede arrancarse manualmente en la GUI de Gandalf o desde
+OpenCode. Al
 cambiar `opencode.json` o archivos de `.opencode/`, se debe cerrar y volver a
 abrir OpenCode.
 

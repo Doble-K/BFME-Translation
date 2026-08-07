@@ -23,10 +23,76 @@ if str(LOCALIZATION_TOOLS) not in sys.path:
     sys.path.insert(0, str(LOCALIZATION_TOOLS))
 
 from catalog_edit import CatalogEditError, commit_entry, search_entries
+from opencode_farm import (
+    farm_status,
+    load_farm_config,
+    load_farm_config_with_runtime_fallback,
+)
+from project import load_project
 
 
 AUTO_ID_PREFIXES = ("LETTER:", "NUMBER:")
 GANDALF_CONFIG_PATH = ROOT / "config" / "gandalf.local.json"
+FARM_ACTIONS = {"start", "drain", "resume", "stop"}
+
+
+def resolve_workspace_path(value):
+    path = Path(value).expanduser()
+    return (path if path.is_absolute() else ROOT / path).resolve()
+
+
+def read_log_tail(path, line_count=200, chunk_size=8192, max_bytes=65536):
+    path = Path(path)
+    with path.open("rb") as log_file:
+        log_file.seek(0, os.SEEK_END)
+        position = log_file.tell()
+        chunks = []
+        newline_count = 0
+        bytes_read = 0
+        while (
+            position > 0
+            and newline_count <= line_count
+            and bytes_read < max_bytes
+        ):
+            read_size = min(chunk_size, position, max_bytes - bytes_read)
+            position -= read_size
+            log_file.seek(position)
+            chunk = log_file.read(read_size)
+            chunks.append(chunk)
+            newline_count += chunk.count(b"\n")
+            bytes_read += read_size
+    text = b"".join(reversed(chunks)).decode("utf-8", errors="replace")
+    return "\n".join(text.splitlines()[-line_count:])
+
+
+def start_gandalf_worker(work, callback, name):
+    def worker():
+        try:
+            result = work()
+            error = None
+        except (OSError, RuntimeError, ValueError, json.JSONDecodeError) as caught:
+            result = None
+            error = str(caught)
+        callback(result, error)
+
+    thread = threading.Thread(target=worker, name=name, daemon=True)
+    thread.start()
+    return thread
+
+
+def gandalf_farm_command(action, config_path):
+    if action not in FARM_ACTIONS:
+        raise ValueError(f"acción de granja inválida: {action}")
+    command = [
+        sys.executable,
+        str(ROOT / "tools/localization/opencode_farm.py"),
+        action,
+        "--config",
+        str(resolve_workspace_path(config_path)),
+    ]
+    if action == "start":
+        command.append("--detach")
+    return command
 
 
 def load_gandalf_config():
@@ -485,6 +551,36 @@ def non_interactive(args):
     return create_catalog(data, output_path, settings)
 
 
+def farm_button_states(
+    active,
+    mode,
+    enabled=True,
+    control_supported=True,
+    project_changed=False,
+    profile_available=True,
+    action_running=False,
+):
+    if not enabled or action_running:
+        return ("disabled",) * 4
+    return (
+        "normal" if not active and profile_available else "disabled",
+        "normal"
+        if active
+        and mode == "running"
+        and control_supported
+        and not project_changed
+        and profile_available
+        else "disabled",
+        "normal"
+        if (not active or mode == "draining")
+        and control_supported
+        and not project_changed
+        and profile_available
+        else "disabled",
+        "normal" if active else "disabled",
+    )
+
+
 def launch_gui():
     try:
         import tkinter as tk
@@ -497,8 +593,8 @@ def launch_gui():
     except tk.TclError as error:
         raise RuntimeError("No se pudo iniciar la GUI; comprueba que haya un display disponible") from error
     root.title("Gandalf - SAGE Localization")
-    root.geometry("760x620")
-    root.minsize(680, 520)
+    root.geometry("900x720")
+    root.minsize(780, 620)
 
     def add_tooltip(widget, text):
         tooltip_window = None
@@ -571,15 +667,22 @@ def launch_gui():
     encoding_var = tk.StringVar(value=saved_last.get("encoding", "cp1252"))
     catalog_var = tk.StringVar(value=saved_last.get("catalog", "catalogs/bfme2-rotwk-2.02_es_work.json"))
     config_var = tk.StringVar(value=saved_last.get("config", "config/bfme2-rotwk-2.02_es.json"))
+    farm_config_var = tk.StringVar(
+        value=saved_last.get("farm_config", "config/opencode_farm.json")
+    )
     force_var = tk.BooleanVar(value=False)
     dark_mode_var = tk.BooleanVar(value=False)
     run_mode_var = tk.StringVar(value=saved_last.get("mode", "Agente externo"))
     run_count_var = tk.StringVar(value=saved_last.get("count", "20"))
     status_var = tk.StringVar(value="Listo para preparar un proyecto.")
+    farm_status_var = tk.StringVar(value="Granja: comprobando estado...")
     process_handle = None
     worker_thread = None
     process_paused = False
     close_when_done = False
+    farm_action_running = False
+    farm_status_refresh_running = False
+    farm_status_after_id = None
 
     style = ttk.Style(root)
     style.theme_use("clam")
@@ -621,6 +724,7 @@ def launch_gui():
     add_row("Encoding SAGE", encoding_var)
     add_row("Catálogo de salida", catalog_var)
     add_row("Configuración de salida", config_var)
+    add_row("Perfil de granja", farm_config_var)
     ttk.Checkbutton(form, text="Reemplazar archivos existentes", variable=force_var).pack(anchor="w", pady=8)
 
     run_frame = ttk.LabelFrame(frame, text="Ejecutar traducción")
@@ -748,6 +852,7 @@ def launch_gui():
                     "encoding": encoding_var.get(),
                     "catalog": catalog_var.get(),
                     "config": config_var.get(),
+                    "farm_config": farm_config_var.get(),
                     "mode": run_mode_var.get(),
                     "count": run_count_var.get(),
                 },
@@ -1287,6 +1392,264 @@ def launch_gui():
         refresh_entries()
         query_entry.focus_set()
 
+    def selected_farm_config():
+        profile_path = resolve_workspace_path(farm_config_var.get())
+        profile = load_farm_config_with_runtime_fallback(profile_path)
+        project_path = resolve_workspace_path(config_var.get())
+        if profile["project"] != project_path:
+            raise ValueError(
+                "El perfil de granja apunta a otro proyecto: "
+                f"{profile['project']}"
+            )
+        return profile["config_path"], profile
+
+    def use_farm_project():
+        profile_path = resolve_workspace_path(farm_config_var.get())
+        try:
+            profile = load_farm_config(profile_path)
+            project = load_project(profile["project"])
+        except (OSError, ValueError, json.JSONDecodeError) as error:
+            messagebox.showerror("Perfil de granja inválido", str(error))
+            return
+        project_path = profile["project"]
+        try:
+            project_text = str(project_path.relative_to(ROOT))
+        except ValueError:
+            project_text = str(project_path)
+        config_var.set(project_text)
+        catalog_var.set(project["catalog"])
+        persist_settings()
+        refresh_farm_status(schedule=False)
+
+    def set_farm_buttons(
+        active,
+        mode,
+        enabled=True,
+        control_supported=True,
+        project_changed=False,
+        profile_available=True,
+    ):
+        states = farm_button_states(
+            active,
+            mode,
+            enabled=enabled,
+            control_supported=control_supported,
+            project_changed=project_changed,
+            profile_available=profile_available,
+            action_running=farm_action_running,
+        )
+        for button, state in zip(
+            (
+                farm_start_button,
+                farm_drain_button,
+                farm_resume_button,
+                farm_stop_button,
+            ),
+            states,
+        ):
+            button.configure(state=state)
+
+    def schedule_farm_status_refresh():
+        nonlocal farm_status_after_id
+        if farm_status_after_id is None and root.winfo_exists():
+            farm_status_after_id = root.after(5000, scheduled_farm_status_refresh)
+
+    def scheduled_farm_status_refresh():
+        nonlocal farm_status_after_id
+        farm_status_after_id = None
+        refresh_farm_status()
+
+    def refresh_farm_status(schedule=True):
+        nonlocal farm_status_refresh_running
+        if farm_status_refresh_running:
+            if schedule:
+                schedule_farm_status_refresh()
+            return
+        try:
+            _profile_path, profile = selected_farm_config()
+        except (OSError, RuntimeError, ValueError, json.JSONDecodeError) as error:
+            farm_status_var.set(f"Granja no disponible: {error}")
+            set_farm_buttons(False, "stopped", enabled=False)
+            if schedule:
+                schedule_farm_status_refresh()
+            return
+
+        farm_status_refresh_running = True
+
+        def finish_refresh(result, error):
+            nonlocal farm_status_refresh_running
+            farm_status_refresh_running = False
+            if error is not None:
+                farm_status_var.set(f"Granja no disponible: {error}")
+                set_farm_buttons(False, "stopped", enabled=False)
+                if schedule:
+                    schedule_farm_status_refresh()
+                return
+            supervisor = result["supervisor"]
+            queue = result["queue"]
+            active_children = sum(
+                1 for child in result["children"] if child.get("active")
+            )
+            mode_label = {
+                "running": "activa",
+                "draining": "drenando",
+                "orphaned": "huérfana",
+                "stopped": "detenida",
+            }.get(supervisor["mode"], supervisor["mode"])
+            prefix = (
+                "Proyecto modificado: detén la granja"
+                if supervisor["project_changed"]
+                else (
+                    "Perfil inválido: usando estado runtime"
+                    if not supervisor["profile_available"]
+                    else f"Granja {mode_label}"
+                )
+            )
+            farm_status_var.set(
+                f"{prefix} | coordinadores {active_children} | "
+                f"incompletas {queue['eligible']} | reservadas {queue['reserved']} | "
+                f"avance {queue['progress_percent']:.2f}%"
+            )
+            set_farm_buttons(
+                supervisor["active"],
+                supervisor["mode"],
+                enabled=True,
+                control_supported=supervisor["control_supported"],
+                project_changed=supervisor["project_changed"],
+                profile_available=supervisor["profile_available"],
+            )
+            if schedule:
+                schedule_farm_status_refresh()
+
+        def finish_status(result, error):
+            try:
+                root.after(0, finish_refresh, result, error)
+            except RuntimeError:
+                pass
+
+        start_gandalf_worker(
+            lambda: farm_status(profile),
+            finish_status,
+            "gandalf-farm-status",
+        )
+
+    def run_farm_action(action):
+        nonlocal farm_action_running
+        try:
+            profile_path, _profile = selected_farm_config()
+        except (OSError, ValueError, json.JSONDecodeError) as error:
+            messagebox.showerror("Perfil de granja inválido", str(error))
+            return
+        if action == "stop" and not messagebox.askyesno(
+            "Detener granja",
+            "¿Deseas detener inmediatamente los coordinadores y liberar sus leases?",
+        ):
+            return
+
+        command = gandalf_farm_command(action, profile_path)
+        farm_action_running = True
+        set_farm_buttons(False, "stopped", enabled=False)
+        farm_status_var.set(f"Ejecutando acción de granja: {action}...")
+        write_output(f"$ {' '.join(command)}\n")
+
+        def worker():
+            try:
+                result = subprocess.run(
+                    command,
+                    cwd=ROOT,
+                    capture_output=True,
+                    text=True,
+                )
+                output = result.stdout + result.stderr
+                root.after(0, finish_action, result.returncode, output)
+            except OSError as error:
+                root.after(0, finish_action, 1, f"Error: {error}\n")
+
+        def finish_action(return_code, output):
+            nonlocal farm_action_running
+            farm_action_running = False
+            write_output(output)
+            if return_code:
+                messagebox.showerror(
+                    "Acción de granja fallida",
+                    output.strip() or f"Código de salida {return_code}",
+                )
+            refresh_farm_status(schedule=False)
+
+        threading.Thread(
+            target=worker,
+            name=f"gandalf-farm-{action}",
+            daemon=True,
+        ).start()
+
+    def open_farm_logs():
+        try:
+            _profile_path, profile = selected_farm_config()
+        except (OSError, ValueError, json.JSONDecodeError) as error:
+            messagebox.showerror("Perfil de granja inválido", str(error))
+            return
+        window = tk.Toplevel(root)
+        window.title("Gandalf - Logs de la granja")
+        window.geometry("980x620")
+        view = tk.Text(window, wrap="none", state="disabled")
+        view.pack(fill="both", expand=True, padx=8, pady=(8, 4))
+        logs_refresh_running = False
+
+        def refresh_logs():
+            nonlocal logs_refresh_running
+            if logs_refresh_running:
+                return
+            logs_refresh_running = True
+            refresh_logs_button.configure(state="disabled")
+
+            def finish_logs(text):
+                nonlocal logs_refresh_running
+                logs_refresh_running = False
+                if not window.winfo_exists():
+                    return
+                refresh_logs_button.configure(state="normal")
+                view.configure(state="normal")
+                view.delete("1.0", "end")
+                view.insert("1.0", text)
+                view.configure(state="disabled")
+
+            def logs_worker():
+                sections = []
+                try:
+                    log_names = ["supervisor.log"] + [
+                        f"{coordinator['prefix']}.log"
+                        for coordinator in profile["coordinators"]
+                    ]
+                    for name in log_names:
+                        path = profile["log_directory"] / name
+                        if not path.is_file():
+                            continue
+                        sections.append(
+                            f"===== {path.name} =====\n" + read_log_tail(path)
+                        )
+                    text = "\n\n".join(sections) or "Todavía no hay logs."
+                except OSError as error:
+                    text = f"Error al leer logs: {error}"
+                try:
+                    root.after(0, finish_logs, text)
+                except RuntimeError:
+                    pass
+
+            threading.Thread(
+                target=logs_worker,
+                name="gandalf-farm-logs",
+                daemon=True,
+            ).start()
+
+        controls = ttk.Frame(window)
+        controls.pack(fill="x", padx=8, pady=(0, 8))
+        refresh_logs_button = ttk.Button(
+            controls, text="Actualizar", command=refresh_logs
+        )
+        refresh_logs_button.pack(side="left")
+        ttk.Button(controls, text="Cerrar", command=window.destroy).pack(side="right")
+        refresh_logs()
+
     def pause_run():
         nonlocal process_paused
         if process_handle is None:
@@ -1369,8 +1732,40 @@ def launch_gui():
     add_tooltip(pause_button, "Pausa o reanuda el proceso de construcción.")
     add_tooltip(save_button, "Guarda la configuración local de Gandalf.")
     add_tooltip(exit_button, "Cierra Gandalf cuando no haya un proceso activo.")
+
+    farm_frame = ttk.LabelFrame(frame, text="Granja OpenCode")
+    farm_frame.pack(fill="x", pady=(6, 8), before=progress_frame)
+    farm_controls = ttk.Frame(farm_frame)
+    farm_controls.pack(fill="x", padx=8, pady=(8, 4))
+    farm_start_button = ttk.Button(
+        farm_controls, text="Iniciar", command=lambda: run_farm_action("start")
+    )
+    farm_start_button.pack(side="left")
+    farm_drain_button = ttk.Button(
+        farm_controls, text="Drenar", command=lambda: run_farm_action("drain")
+    )
+    farm_drain_button.pack(side="left", padx=(6, 0))
+    farm_resume_button = ttk.Button(
+        farm_controls, text="Reanudar", command=lambda: run_farm_action("resume")
+    )
+    farm_resume_button.pack(side="left", padx=(6, 0))
+    farm_stop_button = ttk.Button(
+        farm_controls, text="Detener ahora", command=lambda: run_farm_action("stop")
+    )
+    farm_stop_button.pack(side="left", padx=(6, 0))
+    ttk.Button(farm_controls, text="Abrir logs", command=open_farm_logs).pack(
+        side="right"
+    )
+    ttk.Button(
+        farm_controls, text="Usar proyecto del perfil", command=use_farm_project
+    ).pack(side="right", padx=(0, 6))
+    ttk.Label(farm_frame, textvariable=farm_status_var).pack(
+        anchor="w", padx=8, pady=(0, 8)
+    )
+    set_farm_buttons(False, "stopped", enabled=False)
     root.protocol("WM_DELETE_WINDOW", request_close)
     persist_settings()
+    root.after(250, refresh_farm_status)
 
     root.mainloop()
 

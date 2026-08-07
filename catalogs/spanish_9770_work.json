@@ -836,16 +836,18 @@
     {
       "id": "Color:Red",
       "source": "Red",
-      "translation": "",
-      "status": "pending",
+      "translation": ":skip\u001bOM:skip",
+      "status": "translated",
       "line": 104,
-      "flags": [],
+      "flags": [
+        "needs_review"
+      ],
       "notes": "",
       "translation_meta": {
-        "origin": null,
+        "origin": "human",
         "model": null,
-        "date": null,
-        "confidence": 0.0
+        "date": "2026-08-06T14:56:38.879233+00:00",
+        "confidence": 1.0
       },
       "review": {
         "ai": {
@@ -859,7 +861,15 @@
           "date": null
         }
       },
-      "history": []
+      "history": [
+        {
+          "date": "2026-08-06T14:56:38.879233+00:00",
+          "action": "translated",
+          "from": "",
+          "to": ":skip\u001bOM:skip",
+          "by": "human"
+        }
+      ]
     },
     {
       "id": "Color:MordorRed",

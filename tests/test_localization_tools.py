@@ -2,9 +2,12 @@
 
 import os
 import json
+import signal
 import subprocess
 import sys
 import tempfile
+import threading
+import time
 import unittest
 from pathlib import Path
 from unittest.mock import Mock, patch
@@ -32,16 +35,36 @@ from ai_translate import (
 from watch_progress import activity_state, calculate_recent_rate, render_snapshot
 from opencode_farm import (
     FarmSupervisor,
+    active_state_process_groups,
+    bind_runtime_paths,
     build_opencode_command,
+    drain_farm,
+    farm_status,
+    load_control,
     load_farm_config,
+    load_farm_config_with_runtime_fallback,
+    load_state,
+    release_farm_leases,
+    resume_farm,
+    save_control,
+    start_detached_locked,
     stop_farm,
+    supervisor_is_alive,
 )
+from agent_batch import release_catalog_workers
 from catalog_edit import (
     CatalogEditError,
     EntryConflictError,
     EntryReservedError,
     commit_entry,
     search_entries,
+)
+from gandalf import (
+    farm_button_states,
+    gandalf_farm_command,
+    read_log_tail,
+    resolve_workspace_path,
+    start_gandalf_worker,
 )
 
 
@@ -1355,6 +1378,7 @@ class LocalizationToolTests(unittest.TestCase):
                 "max_restarts": 1,
                 "poll_seconds": 1.0,
                 "state_file": directory / "state.json",
+                "control_file": directory / "control.json",
                 "log_directory": directory / "logs",
                 "coordinators": [{
                     "prefix": "farm-safe",
@@ -1456,11 +1480,16 @@ class LocalizationToolTests(unittest.TestCase):
             config = {
                 "config_path": directory / "farm.json",
                 "project": directory / "project.json",
+                "project_revision": "project-revision",
+                "project_name": "farm-test",
+                "language": "es-419",
+                "catalog": directory / "catalog.json",
                 "workers": 4,
                 "count": 25,
                 "max_restarts": 1,
                 "poll_seconds": 1.0,
                 "state_file": directory / "state.json",
+                "control_file": directory / "control.json",
                 "log_directory": directory / "logs",
                 "coordinators": [{
                     "prefix": "farm-test",
@@ -1473,9 +1502,10 @@ class LocalizationToolTests(unittest.TestCase):
                 patch("opencode_farm.signal.signal"),
                 patch.object(supervisor, "save_state"),
                 patch(
-                    "opencode_farm.progress_snapshot",
+                    "opencode_farm.catalog_progress_snapshot",
                     side_effect=RuntimeError("snapshot failed"),
                 ),
+                patch("opencode_farm.project_revision", return_value="project-revision"),
                 patch.object(supervisor, "cleanup") as cleanup,
             ):
                 with self.assertRaisesRegex(RuntimeError, "snapshot failed"):
@@ -1488,18 +1518,25 @@ class LocalizationToolTests(unittest.TestCase):
             directory = Path(directory)
             state_file = directory / "state.json"
             state_file.write_text(json.dumps({
-                "schema_version": 1,
+                "schema_version": 3,
+                "config": str(directory / "farm.json"),
+                "project": str(directory / "project.json"),
+                "project_revision": "project-revision",
                 "supervisor_pid": 12345,
+                "mode": "running",
                 "children": [],
             }), encoding="utf-8")
             config = {
+                "config_path": directory / "farm.json",
                 "state_file": state_file,
+                "control_file": directory / "control.json",
                 "project": directory / "project.json",
+                "project_revision": "project-revision",
                 "coordinators": [],
             }
 
             with (
-                patch("opencode_farm.process_is_alive", return_value=True),
+                patch("opencode_farm.supervisor_is_alive", return_value=True),
                 patch("opencode_farm.wait_for_process_exit", return_value=False),
                 patch("opencode_farm.os.kill"),
                 patch("opencode_farm.release_farm_leases") as release_leases,
@@ -1509,6 +1546,786 @@ class LocalizationToolTests(unittest.TestCase):
 
             release_leases.assert_not_called()
             self.assertTrue(state_file.exists())
+
+    def test_opencode_farm_drain_and_resume_write_control(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            state_file = directory / "state.json"
+            control_file = directory / "control.json"
+            state_file.write_text(json.dumps({
+                "schema_version": 3,
+                "config": str(directory / "farm.json"),
+                "project": str(directory / "project.json"),
+                "project_revision": "project-revision",
+                "supervisor_pid": 12345,
+                "mode": "running",
+                "children": [],
+            }), encoding="utf-8")
+            config = {
+                "config_path": directory / "farm.json",
+                "state_file": state_file,
+                "control_file": control_file,
+                "project": directory / "project.json",
+                "project_revision": "project-revision",
+                "coordinators": [],
+            }
+
+            with (
+                patch("opencode_farm.supervisor_is_alive", return_value=True),
+                patch("opencode_farm.wait_for_control_ack", return_value=True),
+            ):
+                self.assertEqual(drain_farm(config), 0)
+                self.assertEqual(
+                    json.loads(control_file.read_text(encoding="utf-8"))["action"],
+                    "drain",
+                )
+                self.assertEqual(resume_farm(config), 0)
+                self.assertEqual(
+                    json.loads(control_file.read_text(encoding="utf-8"))["action"],
+                    "resume",
+                )
+
+    def test_opencode_farm_draining_does_not_launch_new_cycles(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            config = {
+                "config_path": directory / "farm.json",
+                "project": directory / "project.json",
+                "project_revision": "project-revision",
+                "project_name": "farm-test",
+                "language": "es-419",
+                "catalog": directory / "catalog.json",
+                "workers": 4,
+                "count": 25,
+                "max_restarts": 1,
+                "poll_seconds": 1.0,
+                "state_file": directory / "state.json",
+                "control_file": directory / "control.json",
+                "log_directory": directory / "logs",
+                "coordinators": [{
+                    "prefix": "farm-test",
+                    "model": "provider/model",
+                }],
+            }
+            supervisor = FarmSupervisor(config)
+
+            def request_drain():
+                supervisor.draining = True
+
+            with (
+                patch("opencode_farm.signal.signal"),
+                patch.object(supervisor, "save_state"),
+                patch.object(supervisor, "apply_control", side_effect=request_drain),
+                patch("opencode_farm.catalog_progress_snapshot", return_value={
+                    "eligible": 10,
+                    "available": 10,
+                    "active_batches": [],
+                }),
+                patch("opencode_farm.project_revision", return_value="project-revision"),
+                patch.object(supervisor, "launch") as launch,
+                patch.object(supervisor, "cleanup") as cleanup,
+            ):
+                result = supervisor.run()
+
+            self.assertEqual(result, 0)
+            launch.assert_not_called()
+            cleanup.assert_called_once_with()
+
+    def test_opencode_farm_resume_restarts_inactive_supervisor(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            config = {
+                "state_file": directory / "state.json",
+                "control_file": directory / "control.json",
+            }
+            with patch("opencode_farm.start_detached_locked", return_value=0) as start:
+                self.assertEqual(resume_farm(config), 0)
+            start.assert_called_once_with(config)
+
+    def test_opencode_farm_status_returns_structured_queue(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:Pending",
+                "source": "Pending",
+                "translation": "",
+                "status": "pending",
+            }], name="farm-status-test")
+            config = {
+                "state_file": directory / "state.json",
+                "project": project_file,
+                "project_name": "farm-status-test",
+                "language": "es-419",
+                "catalog": _catalog,
+            }
+
+            result = farm_status(config)
+
+            self.assertFalse(result["supervisor"]["active"])
+            self.assertEqual(result["supervisor"]["mode"], "stopped")
+            self.assertEqual(result["queue"]["eligible"], 1)
+
+    def test_opencode_farm_loads_legacy_state_for_safe_shutdown(self):
+        with tempfile.TemporaryDirectory() as directory:
+            state_file = Path(directory) / "state.json"
+            for schema_version in (1, 2):
+                state_file.write_text(json.dumps({
+                    "schema_version": schema_version,
+                    "config": str(Path(directory) / "farm.json"),
+                    "project": str(Path(directory) / "project.json"),
+                    "project_revision": "legacy-revision",
+                    "supervisor_pid": 12345,
+                    "children": [],
+                }), encoding="utf-8")
+
+                state = load_state(state_file)
+
+                self.assertEqual(state["schema_version"], schema_version)
+                self.assertEqual(state["mode"], "running")
+                self.assertIsNone(state["last_control_id"])
+
+    def test_opencode_farm_stops_legacy_state_when_identity_is_verified(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            catalog.write_text('{"entries": []}', encoding="utf-8")
+            state_file = directory / "state.json"
+            state_file.write_text(json.dumps({
+                "schema_version": 1,
+                "config": str(directory / "farm.json"),
+                "project": str(directory / "project.json"),
+                "project_revision": "legacy-revision",
+                "supervisor_pid": 12345,
+                "children": [{"prefix": "farm-legacy", "pid": None}],
+            }), encoding="utf-8")
+            config = {
+                "config_path": directory / "farm.json",
+                "project": directory / "project.json",
+                "project_revision": "legacy-revision",
+                "catalog": catalog,
+                "state_file": state_file,
+                "control_file": directory / "control.json",
+                "workers": 2,
+                "coordinators": [{"prefix": "farm-legacy"}],
+            }
+
+            with (
+                patch("opencode_farm.supervisor_is_alive", return_value=True),
+                patch("opencode_farm.wait_for_process_exit", return_value=True),
+                patch("opencode_farm.os.kill") as kill,
+                patch("opencode_farm.release_catalog_workers") as release,
+            ):
+                self.assertEqual(stop_farm(config), 0)
+
+            kill.assert_called_once_with(12345, signal.SIGTERM)
+            release.assert_called_once_with(
+                catalog, {"farm-legacy-1", "farm-legacy-2"}
+            )
+            self.assertFalse(state_file.exists())
+
+    def test_opencode_farm_does_not_signal_reused_supervisor_pid(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            catalog = directory / "catalog.json"
+            catalog.write_text('{"entries": []}', encoding="utf-8")
+            state_file = directory / "state.json"
+            state_file.write_text(json.dumps({
+                "schema_version": 3,
+                "config": str(directory / "farm.json"),
+                "project": str(directory / "project.json"),
+                "project_revision": "project-revision",
+                "catalog": str(catalog),
+                "supervisor_pid": 12345,
+                "supervisor_identity": "old-process",
+                "children": [],
+            }), encoding="utf-8")
+            config = {
+                "config_path": directory / "farm.json",
+                "project": directory / "project.json",
+                "project_revision": "project-revision",
+                "catalog": catalog,
+                "state_file": state_file,
+                "control_file": directory / "control.json",
+                "workers": 2,
+                "coordinators": [],
+            }
+
+            with (
+                patch("opencode_farm.process_is_alive", return_value=True),
+                patch("opencode_farm.process_identity", return_value="new-process"),
+                patch("opencode_farm.os.kill") as kill,
+                patch("opencode_farm.release_farm_leases"),
+            ):
+                self.assertFalse(supervisor_is_alive(load_state(state_file)))
+                self.assertEqual(stop_farm(config), 0)
+
+            self.assertNotIn(
+                ((12345, signal.SIGTERM), {}),
+                [(call.args, call.kwargs) for call in kill.call_args_list],
+            )
+
+    def test_opencode_farm_runtime_paths_survive_profile_edits(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:Pending",
+                "source": "Pending",
+                "translation": "",
+                "status": "pending",
+            }], name="farm-anchor-test")
+            farm_file = directory / "farm.json"
+            runtime_directory = directory / ".agent"
+            profile = {
+                "project": str(project_file),
+                "workers": 2,
+                "count": 1,
+                "state_file": str(runtime_directory / "state-a.json"),
+                "control_file": str(runtime_directory / "control-a.json"),
+                "coordinators": [{
+                    "prefix": "farm-anchor",
+                    "model": "provider/model",
+                }],
+            }
+            farm_file.write_text(json.dumps(profile), encoding="utf-8")
+            first = load_farm_config(farm_file)
+            bind_runtime_paths(first, create=True)
+
+            profile["state_file"] = str(runtime_directory / "state-b.json")
+            profile["control_file"] = str(runtime_directory / "control-b.json")
+            farm_file.write_text(json.dumps(profile), encoding="utf-8")
+            second = load_farm_config(farm_file)
+
+            self.assertEqual(
+                second["state_file"], runtime_directory / "state-a.json"
+            )
+            self.assertEqual(
+                second["control_file"], runtime_directory / "control-a.json"
+            )
+
+    def test_opencode_farm_rejects_unsafe_or_aliased_runtime_paths(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:Pending",
+                "source": "Pending",
+                "translation": "",
+                "status": "pending",
+            }], name="farm-path-test")
+            farm_file = directory / "farm.json"
+            profile = {
+                "project": str(project_file),
+                "workers": 2,
+                "count": 1,
+                "state_file": str(directory / "unsafe-state.json"),
+                "coordinators": [{
+                    "prefix": "farm-path",
+                    "model": "provider/model",
+                }],
+            }
+            farm_file.write_text(json.dumps(profile), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "directorio .agent"):
+                load_farm_config(farm_file)
+
+            shared_path = directory / ".agent" / "shared.json"
+            profile["state_file"] = str(shared_path)
+            profile["control_file"] = str(shared_path)
+            farm_file.write_text(json.dumps(profile), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "deben ser distintas"):
+                load_farm_config(farm_file)
+
+    def test_opencode_farm_runtime_fallback_survives_deleted_profile(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:Pending",
+                "source": "Pending",
+                "translation": "",
+                "status": "pending",
+            }], name="farm-fallback-test")
+            farm_file = directory / "farm.json"
+            runtime_directory = directory / ".agent"
+            farm_file.write_text(json.dumps({
+                "project": str(project_file),
+                "workers": 2,
+                "count": 1,
+                "state_file": str(runtime_directory / "state.json"),
+                "log_directory": str(runtime_directory / "logs"),
+                "coordinators": [{
+                    "prefix": "farm-fallback",
+                    "model": "provider/model",
+                }],
+            }), encoding="utf-8")
+            config = load_farm_config(farm_file)
+            bind_runtime_paths(config, create=True)
+            farm_file.unlink()
+
+            recovered = load_farm_config_with_runtime_fallback(farm_file)
+
+            self.assertTrue(recovered["runtime_fallback"])
+            self.assertEqual(recovered["project"], project_file.resolve())
+            status = run_tool(
+                "opencode_farm.py", "status", "--config", farm_file, "--json"
+            )
+            self.assertEqual(status.returncode, 0, status.stdout + status.stderr)
+            self.assertFalse(
+                json.loads(status.stdout)["supervisor"]["profile_available"]
+            )
+
+    def test_opencode_farm_requires_identity_and_tokens_in_current_state(self):
+        state = {
+            "schema_version": 3,
+            "supervisor_pid": 12345,
+            "children": [{"prefix": "farm-current", "pid": 23456}],
+        }
+        with (
+            patch("opencode_farm.process_is_alive", return_value=True),
+            self.assertRaisesRegex(RuntimeError, "no identifica al supervisor"),
+        ):
+            supervisor_is_alive(state)
+        with (
+            patch("opencode_farm.process_group_is_alive", return_value=True),
+            self.assertRaisesRegex(RuntimeError, "no identifica el grupo"),
+        ):
+            active_state_process_groups(state)
+
+    def test_opencode_farm_rejects_overlapping_prefixes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:Pending",
+                "source": "Pending",
+                "translation": "",
+                "status": "pending",
+            }], name="farm-prefix-test")
+            farm_file = directory / "farm.json"
+            farm_file.write_text(json.dumps({
+                "project": str(project_file),
+                "workers": 2,
+                "count": 1,
+                "coordinators": [
+                    {"prefix": "farm", "model": "provider/model"},
+                    {"prefix": "farm-1", "model": "provider/model"},
+                ],
+            }), encoding="utf-8")
+
+            with self.assertRaisesRegex(ValueError, "no pueden solaparse"):
+                load_farm_config(farm_file)
+
+    def test_agent_batch_releases_only_exact_worker_labels(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, catalog = create_project_fixture(directory, [
+                {
+                    "id": "TEST:One",
+                    "source": "One",
+                    "translation": "",
+                    "status": "pending",
+                },
+                {
+                    "id": "TEST:Two",
+                    "source": "Two",
+                    "translation": "",
+                    "status": "pending",
+                },
+            ], name="exact-release-test")
+            for worker in ("farm-1", "farm-10"):
+                exported = run_tool(
+                    "agent_batch.py", "export", "--project", project_file,
+                    "--worker", worker, "--count", "1",
+                    "--output", directory / f"{worker}.json",
+                )
+                self.assertEqual(
+                    exported.returncode, 0, exported.stdout + exported.stderr
+                )
+
+            release_catalog_workers(catalog, {"farm-1"})
+            queue = json.loads(run_tool(
+                "agent_batch.py", "status", "--project", project_file, "--json"
+            ).stdout)
+
+            self.assertEqual(
+                [batch["worker"] for batch in queue["active_batches"]],
+                ["farm-10"],
+            )
+
+    def test_opencode_farm_reports_orphaned_coordinators_as_active(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, catalog = create_project_fixture(directory, [{
+                "id": "TEST:Pending",
+                "source": "Pending",
+                "translation": "",
+                "status": "pending",
+            }], name="farm-orphan-test")
+            state_file = directory / "state.json"
+            state_file.write_text(json.dumps({
+                "schema_version": 3,
+                "config": str(directory / "farm.json"),
+                "project": str(project_file),
+                "project_revision": project_revision(project_file),
+                "project_name": "farm-orphan-test",
+                "language": "es-419",
+                "catalog": str(catalog),
+                "supervisor_pid": 111,
+                "children": [{"prefix": "farm-orphan", "pid": 222}],
+            }), encoding="utf-8")
+            config = {
+                "config_path": directory / "farm.json",
+                "project": project_file,
+                "project_revision": project_revision(project_file),
+                "project_name": "farm-orphan-test",
+                "language": "es-419",
+                "catalog": catalog,
+                "state_file": state_file,
+            }
+
+            with (
+                patch("opencode_farm.supervisor_is_alive", return_value=False),
+                patch("opencode_farm.active_state_process_groups", return_value=[222]),
+            ):
+                result = farm_status(config)
+
+            self.assertTrue(result["supervisor"]["active"])
+            self.assertTrue(result["supervisor"]["orphaned"])
+            self.assertEqual(result["supervisor"]["mode"], "orphaned")
+            self.assertFalse(result["supervisor"]["control_supported"])
+            self.assertTrue(result["children"][0]["active"])
+
+    def test_opencode_farm_control_claim_does_not_delete_newer_command(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            config = {
+                "control_file": directory / "control.json",
+                "project": directory / "project.json",
+                "project_revision": "project-revision",
+            }
+            state = {
+                "supervisor_pid": 12345,
+                "project": str(config["project"]),
+                "project_revision": config["project_revision"],
+            }
+            first_control_id = save_control(config, state, "drain")
+            real_json_loads = json.loads
+            replacement = {}
+
+            def replace_while_reading(value):
+                replacement["id"] = save_control(config, state, "resume")
+                return real_json_loads(value)
+
+            with patch("opencode_farm.json.loads", side_effect=replace_while_reading):
+                claimed = load_control(config, 12345)
+
+            queued = real_json_loads(
+                config["control_file"].read_text(encoding="utf-8")
+            )
+            self.assertEqual(claimed["control_id"], first_control_id)
+            self.assertEqual(queued["control_id"], replacement["id"])
+            self.assertEqual(queued["action"], "resume")
+
+    def test_opencode_farm_acknowledges_control_in_state(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            config = {
+                "config_path": directory / "farm.json",
+                "project": directory / "project.json",
+                "project_revision": "project-revision",
+                "project_name": "farm-control-test",
+                "language": "es-419",
+                "catalog": directory / "catalog.json",
+                "state_file": directory / "state.json",
+                "control_file": directory / "control.json",
+                "workers": 2,
+                "coordinators": [],
+            }
+            supervisor = FarmSupervisor(config)
+            supervisor.prepare()
+            state = load_state(config["state_file"])
+            control_id = save_control(config, state, "drain")
+
+            supervisor.apply_control()
+
+            acknowledged = load_state(config["state_file"])
+            self.assertTrue(supervisor.draining)
+            self.assertEqual(acknowledged["mode"], "draining")
+            self.assertEqual(acknowledged["last_control_id"], control_id)
+
+    def test_opencode_farm_releases_frozen_catalog_and_prefixes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            old_catalog = directory / "old.json"
+            new_catalog = directory / "new.json"
+            old_catalog.write_text('{"entries": []}', encoding="utf-8")
+            new_catalog.write_text('{"entries": []}', encoding="utf-8")
+            config = {
+                "project": directory / "project.json",
+                "project_revision": "new-revision",
+                "catalog": new_catalog,
+                "coordinators": [{"prefix": "farm-new"}],
+            }
+            state = {
+                "project": str(config["project"]),
+                "project_revision": "old-revision",
+                "catalog": str(old_catalog),
+                "workers": 2,
+                "children": [{"prefix": "farm-old"}],
+            }
+
+            with patch("opencode_farm.release_catalog_workers") as release:
+                release_farm_leases(config, state)
+
+            release.assert_called_once_with(
+                old_catalog.resolve(), {"farm-old-1", "farm-old-2"}
+            )
+
+    def test_opencode_farm_stop_uses_recorded_state_after_project_change(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            old_catalog = directory / "old.json"
+            new_catalog = directory / "new.json"
+            old_catalog.write_text('{"entries": []}', encoding="utf-8")
+            new_catalog.write_text('{"entries": []}', encoding="utf-8")
+            state_file = directory / "state.json"
+            state_file.write_text(json.dumps({
+                "schema_version": 3,
+                "config": str(directory / "farm.json"),
+                "project": str(directory / "project.json"),
+                "project_revision": "old-revision",
+                "catalog": str(old_catalog),
+                "workers": 2,
+                "supervisor_pid": 12345,
+                "mode": "running",
+                "children": [{"prefix": "farm-old", "pid": None}],
+            }), encoding="utf-8")
+            config = {
+                "config_path": directory / "farm.json",
+                "project": directory / "project.json",
+                "project_revision": "new-revision",
+                "catalog": new_catalog,
+                "state_file": state_file,
+                "control_file": directory / "control.json",
+                "workers": 2,
+                "coordinators": [{"prefix": "farm-new"}],
+            }
+
+            with (
+                patch("opencode_farm.supervisor_is_alive", return_value=False),
+                patch("opencode_farm.process_group_is_alive", return_value=False),
+                patch("opencode_farm.release_catalog_workers") as release,
+            ):
+                self.assertEqual(stop_farm(config), 0)
+
+            release.assert_called_once_with(
+                old_catalog.resolve(), {"farm-old-1", "farm-old-2"}
+            )
+            self.assertFalse(state_file.exists())
+
+    def test_opencode_farm_keeps_exited_leader_until_group_finishes(self):
+        supervisor = FarmSupervisor({
+            "coordinators": [{"prefix": "farm-tree", "model": "provider/model"}],
+        })
+        process = Mock(pid=12345, returncode=0)
+        process.poll.return_value = 0
+        supervisor.slots[0]["process"] = process
+
+        with patch("opencode_farm.process_group_is_alive", return_value=True):
+            supervisor.close_finished_slot(supervisor.slots[0])
+
+        self.assertIs(supervisor.slots[0]["process"], process)
+
+    def test_opencode_farm_cleans_up_when_detached_handshake_fails(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            config = {
+                "config_path": directory / "farm.json",
+                "project": directory / "project.json",
+                "project_revision": "project-revision",
+                "state_file": directory / "state.json",
+                "control_file": directory / "control.json",
+                "log_directory": directory / "logs",
+            }
+            process = Mock(pid=12345)
+
+            with (
+                patch("opencode_farm.shutil.which", return_value="/bin/opencode"),
+                patch("opencode_farm.subprocess.Popen", return_value=process),
+                patch("opencode_farm.load_state", side_effect=ValueError("bad state")),
+                patch("opencode_farm.cleanup_failed_detached_start") as cleanup,
+            ):
+                with self.assertRaisesRegex(ValueError, "bad state"):
+                    start_detached_locked(config)
+
+            cleanup.assert_called_once_with(config, process)
+
+    def test_opencode_farm_rejects_excessive_poll_interval(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:Pending",
+                "source": "Pending",
+                "translation": "",
+                "status": "pending",
+            }], name="farm-poll-test")
+            farm_file = directory / "farm.json"
+            farm_file.write_text(json.dumps({
+                "project": str(project_file),
+                "workers": 2,
+                "count": 1,
+                "poll_seconds": 11,
+                "coordinators": [{
+                    "prefix": "farm-poll",
+                    "model": "provider/model",
+                }],
+            }), encoding="utf-8")
+
+            with self.assertRaisesRegex(ValueError, "entre 1 y 10"):
+                load_farm_config(farm_file)
+
+    def test_opencode_farm_detached_lifecycle_smoke(self):
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:Pending",
+                "source": "Pending",
+                "translation": "",
+                "status": "pending",
+            }], name="farm-lifecycle-test")
+            fake_bin = directory / "bin"
+            fake_bin.mkdir()
+            fake_opencode = fake_bin / "opencode"
+            fake_opencode.write_text(
+                "#!/bin/sh\n"
+                f'"{sys.executable}" "{TOOLS / "agent_batch.py"}" export '
+                '--project "$SAGE_LOCALIZATION_PROJECT" '
+                '--worker "${BFME_TRANSLATION_WORKER_PREFIX}-1" '
+                f'--count 1 --output "{directory}/batch-$$.json" >/dev/null\n'
+                "sleep 1.5\n",
+                encoding="utf-8",
+            )
+            fake_opencode.chmod(0o755)
+            runtime_directory = directory / ".agent"
+            state_file = runtime_directory / "state.json"
+            farm_file = directory / "farm.json"
+            second_farm_file = directory / "farm-second.json"
+            farm_profile = {
+                "project": str(project_file),
+                "workers": 2,
+                "count": 1,
+                "max_restarts": 0,
+                "poll_seconds": 1,
+                "state_file": str(state_file),
+                "log_directory": str(runtime_directory / "logs"),
+                "coordinators": [{
+                    "prefix": "farm-smoke",
+                    "model": "provider/model",
+                }],
+            }
+            farm_file.write_text(json.dumps(farm_profile), encoding="utf-8")
+            second_farm_file.write_text(json.dumps(farm_profile), encoding="utf-8")
+            environment = os.environ.copy()
+            environment["PATH"] = f"{fake_bin}{os.pathsep}{environment['PATH']}"
+            active_farm_file = farm_file
+
+            def farm_command(command, *extra):
+                return run_tool(
+                    "opencode_farm.py",
+                    command,
+                    "--config",
+                    active_farm_file,
+                    *extra,
+                    env=environment,
+                )
+
+            try:
+                starts = [
+                    subprocess.Popen(
+                        [
+                            sys.executable,
+                            str(TOOLS / "opencode_farm.py"),
+                            "start",
+                            "--config",
+                            str(profile_path),
+                            "--detach",
+                        ],
+                        cwd=ROOT,
+                        env=environment,
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.PIPE,
+                        text=True,
+                    )
+                    for profile_path in (farm_file, second_farm_file)
+                ]
+                start_results = []
+                for process in starts:
+                    stdout, stderr = process.communicate(timeout=15)
+                    start_results.append((process.returncode, stdout, stderr))
+                self.assertEqual(
+                    sorted(result[0] for result in start_results), [0, 1]
+                )
+                self.assertIn(
+                    "ya está activa",
+                    "".join(result[2] for result in start_results),
+                )
+                active_farm_file = (
+                    farm_file if start_results[0][0] == 0 else second_farm_file
+                )
+                deadline = time.monotonic() + 5
+                active_child = None
+                while time.monotonic() < deadline:
+                    payload = json.loads(farm_command("status", "--json").stdout)
+                    active_child = next(
+                        (
+                            child for child in payload["children"]
+                            if child["active"]
+                        ),
+                        None,
+                    )
+                    if active_child and payload["queue"]["reserved"] == 1:
+                        break
+                    time.sleep(0.1)
+                self.assertIsNotNone(active_child, "no coordinator became active")
+                self.assertEqual(payload["queue"]["reserved"], 1)
+                drained = farm_command("drain")
+                self.assertEqual(
+                    drained.returncode, 0, drained.stdout + drained.stderr
+                )
+                deadline = time.monotonic() + 8
+                while state_file.exists() and time.monotonic() < deadline:
+                    time.sleep(0.1)
+                self.assertFalse(state_file.exists(), "the drained farm did not exit")
+                drained_status = json.loads(farm_command("status", "--json").stdout)
+                self.assertEqual(drained_status["queue"]["reserved"], 0)
+
+                resumed = farm_command("resume")
+                self.assertEqual(
+                    resumed.returncode, 0, resumed.stdout + resumed.stderr
+                )
+                deadline = time.monotonic() + 5
+                while time.monotonic() < deadline:
+                    payload = json.loads(farm_command("status", "--json").stdout)
+                    if (
+                        any(child["active"] for child in payload["children"])
+                        and payload["queue"]["reserved"] == 1
+                    ):
+                        break
+                    time.sleep(0.1)
+                self.assertTrue(
+                    any(child["active"] for child in payload["children"]),
+                    "no coordinator became active after resume",
+                )
+                self.assertEqual(payload["queue"]["reserved"], 1)
+                stopped = farm_command("stop")
+                self.assertEqual(
+                    stopped.returncode, 0, stopped.stdout + stopped.stderr
+                )
+            finally:
+                if state_file.exists():
+                    farm_command("stop")
+
+            status = farm_command("status", "--json")
+            self.assertEqual(status.returncode, 0, status.stdout + status.stderr)
+            payload = json.loads(status.stdout)
+            self.assertFalse(payload["supervisor"]["active"])
+            self.assertEqual(payload["queue"]["reserved"], 0)
 
     def test_agent_batch_reuses_active_lease_for_same_worker(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -1684,6 +2501,103 @@ class LocalizationToolTests(unittest.TestCase):
         self.assertIn("--gui", result.stdout)
         self.assertIn("--cli", result.stdout)
         self.assertIn("--avanced", result.stdout)
+
+    def test_gandalf_builds_exact_farm_control_commands(self):
+        config_path = ROOT / "config" / "opencode_farm.json"
+        start = gandalf_farm_command("start", config_path)
+        drain = gandalf_farm_command("drain", config_path)
+        relative = gandalf_farm_command(
+            "stop", Path("config") / "opencode_farm.json"
+        )
+
+        self.assertEqual(start[-1], "--detach")
+        self.assertEqual(start[-4:-1], ["start", "--config", str(config_path)])
+        self.assertEqual(drain[-3:], ["drain", "--config", str(config_path)])
+        self.assertEqual(relative[-1], str(config_path))
+        self.assertEqual(
+            resolve_workspace_path("config/opencode_farm.json"), config_path
+        )
+        with self.assertRaisesRegex(ValueError, "acción de granja inválida"):
+            gandalf_farm_command("invalid", config_path)
+
+    def test_gandalf_farm_button_policy_covers_safe_states(self):
+        self.assertEqual(
+            farm_button_states(True, "orphaned", control_supported=False),
+            ("disabled", "disabled", "disabled", "normal"),
+        )
+        self.assertEqual(
+            farm_button_states(False, "stopped"),
+            ("normal", "disabled", "normal", "disabled"),
+        )
+        self.assertEqual(
+            farm_button_states(True, "draining"),
+            ("disabled", "disabled", "normal", "normal"),
+        )
+        self.assertEqual(
+            farm_button_states(True, "running", project_changed=True),
+            ("disabled", "disabled", "disabled", "normal"),
+        )
+        self.assertEqual(
+            farm_button_states(True, "running", profile_available=False),
+            ("disabled", "disabled", "disabled", "normal"),
+        )
+        self.assertEqual(
+            farm_button_states(
+                True, "running", enabled=False, action_running=True
+            ),
+            ("disabled", "disabled", "disabled", "disabled"),
+        )
+
+    def test_gandalf_reads_only_the_requested_log_tail(self):
+        with tempfile.TemporaryDirectory() as directory:
+            log_path = Path(directory) / "farm.log"
+            log_path.write_text(
+                "\n".join(f"line-{index}" for index in range(250)) + "\n",
+                encoding="utf-8",
+            )
+
+            lines = read_log_tail(log_path, line_count=20).splitlines()
+
+            self.assertEqual(lines[0], "line-230")
+            self.assertEqual(lines[-1], "line-249")
+            self.assertEqual(len(lines), 20)
+
+            log_path.write_text(
+                "must-not-be-read-" + ("x" * 2048) + "\nlast-line\n",
+                encoding="utf-8",
+            )
+            bounded = read_log_tail(log_path, max_bytes=64)
+            self.assertNotIn("must-not-be-read", bounded)
+            self.assertLessEqual(len(bounded.encode("utf-8")), 64)
+
+    def test_gandalf_worker_runs_work_off_the_initiating_thread(self):
+        initiating_thread = threading.get_ident()
+        work_threads = []
+        callback_threads = []
+        result = []
+
+        def work():
+            work_threads.append(threading.get_ident())
+            return "catalog result"
+
+        def callback(value, error):
+            callback_threads.append(threading.get_ident())
+            result.append((value, error))
+
+        worker = start_gandalf_worker(work, callback, "gandalf-test-worker")
+        worker.join(timeout=2)
+
+        self.assertFalse(worker.is_alive())
+        self.assertEqual(result, [("catalog result", None)])
+        self.assertEqual(len(work_threads), 1)
+        self.assertEqual(work_threads, callback_threads)
+        self.assertNotEqual(work_threads[0], initiating_thread)
+
+    def test_opencode_farm_help_exposes_lifecycle_controls(self):
+        result = run_tool("opencode_farm.py", "--help")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        for command in ("start", "status", "drain", "resume", "stop"):
+            self.assertIn(command, result.stdout)
 
     def test_pack_help_exposes_debug_controls(self):
         result = run_tool("pack.py", "--help")

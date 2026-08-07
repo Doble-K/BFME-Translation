@@ -7,6 +7,7 @@
     "encoding": "cp1252",
     "catalog": "catalogs/bfme2-rotwk-2.02_es_work.json",
     "config": "config/bfme2-rotwk-2.02_es.json",
+    "farm_config": "config/opencode_farm.json",
     "mode": "Agente externo",
     "count": "20"
   }

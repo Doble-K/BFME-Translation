@@ -53,6 +53,16 @@ def completed_entry_ids(data, mode):
 def progress_snapshot(project_path, mode):
     project = load_project(project_path)
     catalog_path = resolve_project_path(project, "catalog").resolve(strict=True)
+    return catalog_progress_snapshot(
+        catalog_path,
+        mode,
+        project_name=project["name"],
+        language=project["language"],
+    )
+
+
+def catalog_progress_snapshot(catalog_path, mode, project_name, language):
+    catalog_path = Path(catalog_path).resolve(strict=True)
     registry_path = lease_registry_path(catalog_path)
 
     with catalog_lock(catalog_path):
@@ -73,8 +83,8 @@ def progress_snapshot(project_path, mode):
     completed = len(completed_ids)
 
     return {
-        "project": project["name"],
-        "language": project["language"],
+        "project": project_name,
+        "language": language,
         "completed": completed,
         "total": total,
         "progress_percent": 100.0 if total == 0 else completed * 100.0 / total,

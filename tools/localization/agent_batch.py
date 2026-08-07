@@ -643,9 +643,8 @@ def release_lease(project_path, batch_id, worker):
     return 0
 
 
-def release_prefix(project_path, prefix):
-    project = load_project(project_path)
-    catalog_path = resolve_project_path(project, "catalog").resolve(strict=True)
+def release_catalog_prefix(catalog_path, prefix):
+    catalog_path = Path(catalog_path).resolve(strict=True)
     registry_path = lease_registry_path(catalog_path)
 
     with catalog_lock(catalog_path):
@@ -666,6 +665,40 @@ def release_prefix(project_path, prefix):
     print(f"Reservas liberadas para {prefix}: {len(released)}")
     print(f"Entradas devueltas: {released_entries}")
     return 0
+
+
+def release_catalog_workers(catalog_path, workers):
+    catalog_path = Path(catalog_path).resolve(strict=True)
+    worker_names = set(workers)
+    if not worker_names or any(
+        not isinstance(worker, str) or not WORKER_PATTERN.fullmatch(worker)
+        for worker in worker_names
+    ):
+        raise ValueError("workers contiene labels inválidos")
+    registry_path = lease_registry_path(catalog_path)
+
+    with catalog_lock(catalog_path):
+        registry = load_lease_registry(registry_path, catalog_path)
+        prune_leases(registry)
+        released = [
+            lease for lease in registry["leases"]
+            if lease.get("worker") in worker_names
+        ]
+        registry["leases"] = [
+            lease for lease in registry["leases"] if lease not in released
+        ]
+        save_json(registry_path, registry)
+
+    released_entries = sum(len(lease.get("entry_ids", [])) for lease in released)
+    print(f"Reservas exactas liberadas: {len(released)}")
+    print(f"Entradas devueltas: {released_entries}")
+    return 0
+
+
+def release_prefix(project_path, prefix):
+    project = load_project(project_path)
+    catalog_path = resolve_project_path(project, "catalog").resolve(strict=True)
+    return release_catalog_prefix(catalog_path, prefix)
 
 
 def main():
