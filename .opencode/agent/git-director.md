@@ -1,6 +1,6 @@
 ---
 description: Specialized Git Director for repository operations requiring human approval for write actions.
-mode: primary
+mode: subagent
 model: opencode-go/mimo-v2.5
 permission:
   read:
