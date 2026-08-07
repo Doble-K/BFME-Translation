@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "a81d24c31813475b83bff18827ad70ce",
+  "worker": "rotwk-nemo-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:GloinRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGimli",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:RohanGimliRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:RohanGimliRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:AngmarHwaldarRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:AngmarHwaldarRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:AngmarMorgramirRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:AngmarMorgramirRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:AngmarKarshRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:AngmarKarshRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:AngmarRogashRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:AngmarRogashRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:AngmarWitchKingRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:AngmarWitchKingRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:IsengardWormtongueRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:IsengardWormtongueRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:IsengardSharkuRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:IsengardSharkuRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildLurtz",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:IsengardLurtzRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:IsengardLurtzRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:IsengardSarumanRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:IsengardSarumanRevive",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:WildAzogRecruit",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:WildAzogRevive",
+      "translation": ""
+    }
+  ]
+}

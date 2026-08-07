@@ -1,0 +1,350 @@
+{
+  "schema_version": 3,
+  "batch_id": "990bffc0819d4fe4b20c35489e471a20",
+  "worker": "rotwk-deep-all-3",
+  "created_at": "2026-08-06T07:00:57.517343+00:00",
+  "lease_expires_at": "2026-08-06T13:00:57.515928+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-deep-all-3-990bffc0819d.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardForgedBladesPurchased",
+      "source": "Upgrades this horde with Forged Blades \\n Increases the damage done by Melee Weapons \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "5ea1d5a04cd78526a8350ed3771a0b240a202362f8db42c0b429429b1c1d5b23",
+      "entry_hash": "c5f4e1ccf0cd56cb03d252aecf5747df722671865f78d34f2b57c6d597f80cd9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardHeavyArmorPurchased",
+      "source": "Allows hordes to purchase the Heavy Armor upgrade \\n When equipped, significantly reduces the amount of damage taken \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "4cc8be9ea2347ff57e8c185cef38f1495b57088154eec42e2ccc8234791eb76f",
+      "entry_hash": "0c38431f5b3cca0bf04883b638ad90472a0c32e9717f627ccc4de5dfc9b9725c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardTorchesPurchased",
+      "source": "Allows Wildmen to purchase the Torches upgrade \\n When equipped, increases the damage done by Melee attacks \\n \\n Research Time: Instant \\n \\n This upgrade has already been purchased",
+      "source_hash": "4078a6191738bfb0b5c5d47d8d921fb02c8f70dae9323684a379c443c3398a0e",
+      "entry_hash": "704de4aa23047f2fa4f53a4f2b98f3dce9916993d4d6422346a8789cdfc55634",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardTorchesPurchased",
+      "source": "Upgrades this horde with Torches \\n Increases the damage done by Melee attacks \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "a0e8189c126db141b7a410d9ce29a00f5f531b032ff35d98eec1097b45230a03",
+      "entry_hash": "b6dc8a436d1b8f08b8bcabcab3f83c12a0491dfb202f0cbc35eecdef8fa5a8ba",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressMurderOfCrowsPurchased",
+      "source": "Increases the Vision Range of the Fortress and provides stealth detection \\n Vision Range: 1760 \\n Stealth Detection Radius: 800 \\n \\n Upgrade Time: 15s \\n \\n This upgrade has already been purchased",
+      "source_hash": "f44e25ba052e6bfbda8a844f9acb7fc0978caf4eabc40283acefb7c388020b43",
+      "entry_hash": "f0a865d4178023ac5a7894e6ee79cc31f581f07e1b14dc8420bac8051f085cb2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressBurningForgesPurchased",
+      "source": "Reduces the cost of Isengard unit Upgrades \\n 1  Fortress with forges = 33% cheaper \\n 2 Fortresses with forges = 41% cheaper \\n 3 Fortresses with forges = 49% cheaper \\n 4 Fortresses with forges = 58% cheaper \\n 5 Fortresses with forges = 67% cheaper \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "4fd224503345fadc6aa52f2fdbb3d522f998357ca996845f56fc50b625174438",
+      "entry_hash": "52c285d9c99fb727f63d37e464fc05064af69cc463ed92c24157e07db05180f0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressWizardsTowerPurchased",
+      "source": "Casts several bolts of lightning at an area surrounding the Fortress \\n \\n Upgrade Time: 45s \\n \\n This upgrade has already been purchased",
+      "source_hash": "4b29ef83c1665c7876391d31c47c6bde81c0f53029a9449452876e4a6f0b3f5f",
+      "entry_hash": "d998ed28a1843a8a24541490c40334764dd5a881adeea62412b22e7877365fa7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyMordorHeavyArmorPurchased",
+      "source": "Allows hordes to purchase the Heavy Armor upgrade \\n When equipped, significantly reduces the amount of damage taken \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "21056b463988d31b4ced5c1bde7cc833208c18eba331ab9bd4c672ebdabf6ce6",
+      "entry_hash": "b98600f2d35095c86afac41931487d9e527c9ec4157004cda3c289caf20cbf1e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardHeavyArmorPurchased",
+      "source": "Upgrades this horde with Heavy Armor \\n Significantly reduces the amount of damage taken \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "a37a056028c64d55120792b306f6b5cc1447c3c5d9327d2776e30f8176e1f644",
+      "entry_hash": "a0888ff8bee9194e6e682b133ace89533bc95e2bdbb16afbbb2cab166c5dd498",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyMordorForgedBladesPurchased",
+      "source": "Allows hordes to purchase the Forged Blades upgrade \\n When equipped, increases the damage done by Melee Weapons \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "4b317fe8de490a746d4d49845a0412772faf4c122ee90702b6401832f7270539",
+      "entry_hash": "6b82d5bcc3c341ef066786b6d8bc94be1e5f69961866bed99a1369a3f4bef515",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorForgedBladesPurchased",
+      "source": "Upgrades this horde with Forged Blades \\n Increases the damage done by Melee Weapons \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "72d762ac86d182566a7f4064f8c023c107c60aa11cafcfa025ce78403bbeef1e",
+      "entry_hash": "a51d1712b42d220747ae95cf11f5b7c503e0697c8b6a73d736b46d6aa03c9629",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyMordorFireArrowsPurchased",
+      "source": "Allows hordes to purchase the Fire Arrows upgrade \\n When equipped, significantly increases the damage done by Arrows \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "f3f334e3cd78a79508f69a8ff4796c8ed7e30124d7187318914dbf1979663f35",
+      "entry_hash": "717c8057d3b5c1e9e1847ed73a2dfb1c1e63e6516c63effd6a962b5f9c15ef51",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFireArrowsPurchased",
+      "source": "Upgrades this horde with Fire Arrows \\n Significantly increases the damage done by Arrows \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "18eab129c14c0e0348e0709b808fee4cfa0dc70b306c53ccbb5e246aa34c1262",
+      "entry_hash": "ee29083d0d128b57f9ae36d53caa283258b9a5e8818d1ae04506afcb405a7812",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyMordorBasicTrainingPurchased",
+      "source": "Allows hordes to purchase the Banner Carrier upgrade \\n Increases a horde to Level 2 \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "a0791dec7c36d92968093361cddc7537fc5887468569324caac08260e3d467fb",
+      "entry_hash": "df32278c26e0c444046f7f7c98081a8c490713bb7779c0ab14f7850e5c93d1ae",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorBasicTrainingPurchased",
+      "source": "Increases horde to Level 2 \\n Can only be equipped at Level 1 \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "09d38681fb259b9f98ecfc93529c242f6c3cfed46c860af99bff138a70998d22",
+      "entry_hash": "fbd4d818ad9a24ed3c7d3e9244609133f195838d298845761d8b3a5f57ccc0ff",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressDoomPyresPurchased",
+      "source": "Modifier Type: Leadership \\n Allies near the Fortress gain +25% Damage, +25% Armor, and earn Experience 50% faster \\n Stacks with Buffs and Spells \\n\\nReduces Hero cost by 10% \\n Reduces Hero recruit time by 10% \\n Reduces the cost of builders by 20% \\n Radius: 300 \\n \\n Upgrade Time: 15s \\n \\n This upgrade has already been purchased",
+      "source_hash": "f2b35c71e9f47560978830fd6efd0d9ba33ed93cf82386de422a2fb8cb18d75a",
+      "entry_hash": "47062eb3696c7a714ce70be55c238d45b00c0ff6bbdef5901a2d9f809a6b56f3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressMagmaCauldronsPurchased",
+      "source": "Allows the Fortress to pour burning lava on nearby enemy units \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "3070154726217d2a5c787a8db1fffffbe2b04e335773ab336d4f6cce0c5c30f6",
+      "entry_hash": "820ed26a25d87e940873339cefdb0918cc38c908449c9ea0dffcc0c4ea17b9de",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressLavaMoatPurchased",
+      "source": "Decreases melee vulnerability of the Fortress \\n \\n Upgrade Time: 15s \\n \\n This upgrade has already been purchased",
+      "source_hash": "bcfe6d20d95bed6be6a5704766a24fed4af68f9e300818a7fbfed68241427cfe",
+      "entry_hash": "2313067989cc42308b8ddfa4ac4bdcf5e203363f05e154f2147a5b916268092b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildBasicTrainingPurchased",
+      "source": "Increases this horde to Level 2 \\n Can only be equipped at Level 1 \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "1032862ad0f2b6d368ff8aec98666de05843837bab317bfa162d8438140488cb",
+      "entry_hash": "20fe22f8f380448087d03cc034afe18c108ad01b7651e6a8fbd3e650c76b1bb3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTrainingPurchased",
+      "source": "Allows hordes to purchase the Banner Carrier upgrade \\n Increases a horde to Level 2 \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "0e51567bb761fdad434ab240ce6bf0c17eb880d56fdfc53322efe9dd292b8264",
+      "entry_hash": "8da65f38ecc65580024edff4724d950860824206c519f02e467fc764010db590",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFireArrowsPurchased",
+      "source": "Upgrades this horde with Fire Arrows \\n Significantly increases the damage done by Arrows \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "18dd76c7f1f28aab25313f0f73a615d9fd6a062aae6b94e09fac22a19d63c9e0",
+      "entry_hash": "ae01163bfb45b4a123c8db27ff628c7344a10d30b69708dbe9d2bc7b47e6a841",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrowsPurchased",
+      "source": "Allows hordes to purchase the Fire Arrows upgrade \\n When equipped, significantly increases the damage done by Arrows \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "5518880df7f4c502c5f3853395ce3ac10c5e322feb52c07f511517f1c225413d",
+      "entry_hash": "7e26cf5383ee9d9b09d832eb1e5aa04557dabe4b7224a81dfdd299d6ca45fd4b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildForgedBladePurchased",
+      "source": "Upgrades this horde with Forged Blades \\n When equipped, Increases the damage done by Melee Weapons \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "fd866e5c8fa8c144e5c6d0aef03865cb4d43e1fbe57662425430198bf3aa8ab7",
+      "entry_hash": "1cfc2bd7dd998d83724585c739f5821d362ecd273f6ff23d4067fdf7502b332a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBladesPurchased",
+      "source": "Allows hordes to purchase the Forged Blades upgrade \\n Increases the damage done by Melee Weapons \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "0322308bc3841baa5e47688cbf32c79f045fccb9d33a220c9a59ed7095e7f2d8",
+      "entry_hash": "f86f4c55efe0470c27881f521715345c772764f94d1f97c4bb044f480f77a6c5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildHeavyArmorPurchased",
+      "source": "Upgrades this horde with Scavenged Armor \\n When equipped, significantly reduces the amount of damage taken \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "c341bcfc45394a256dd4e87fa2a266a579b67ab6226b70ac814435f55ce45cc2",
+      "entry_hash": "18fc11eb865dd061ea0eda419f5c3353f91c12aea59bdeccc1e022ec8cb92dec",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "16bdeb9f2039587a7d2c7b3af19874f5267be83b53b928c9e24dc012d4c88d64"
+}

@@ -1,0 +1,58 @@
+Iniciado rotwk-ling-all con opencode/ling-3.0-flash-free (PID 3202888, ciclo 1)
+Iniciado rotwk-deep-all con opencode/deepseek-v4-flash-free (PID 3202889, ciclo 1)
+Iniciado rotwk-mimo-all con opencode/mimo-v2.5-free (PID 3202890, ciclo 1)
+Iniciado rotwk-nemotron-all con opencode/nemotron-3-ultra-free (PID 3202891, ciclo 1)
+Iniciado rotwk-laguna-all con opencode/laguna-s-2.1-free (PID 3202892, ciclo 1)
+Deteniendo granja y liberando leases...
+Reservas liberadas para rotwk-ling-all: 0
+Entradas devueltas: 0
+Reservas liberadas para rotwk-deep-all: 4
+Entradas devueltas: 100
+Reservas liberadas para rotwk-mimo-all: 4
+Entradas devueltas: 100
+Reservas liberadas para rotwk-nemotron-all: 1
+Entradas devueltas: 25
+Reservas liberadas para rotwk-laguna-all: 0
+Entradas devueltas: 0
+Iniciado rotwk-ling-all con opencode/ling-3.0-flash-free (PID 3210086, ciclo 1)
+Iniciado rotwk-deep-all con opencode/deepseek-v4-flash-free (PID 3210087, ciclo 1)
+Iniciado rotwk-mimo-all con opencode/mimo-v2.5-free (PID 3210088, ciclo 1)
+Iniciado rotwk-nemotron-all con opencode/nemotron-3-ultra-free (PID 3210089, ciclo 1)
+Iniciado rotwk-laguna-all con opencode/laguna-s-2.1-free (PID 3210090, ciclo 1)
+Iniciado rotwk-ling-all con opencode/ling-3.0-flash-free (PID 3217806, ciclo 2)
+Iniciado rotwk-mimo-all con opencode/mimo-v2.5-free (PID 3222052, ciclo 2)
+rotwk-nemotron-all terminó con código 1 (fallo 1/2)
+Iniciado rotwk-nemotron-all con opencode/nemotron-3-ultra-free (PID 3233401, ciclo 2)
+Iniciado rotwk-ling-all con opencode/ling-3.0-flash-free (PID 3237703, ciclo 3)
+Iniciado rotwk-deep-all con opencode/deepseek-v4-flash-free (PID 3243866, ciclo 2)
+Iniciado rotwk-nemotron-all con opencode/nemotron-3-ultra-free (PID 3244639, ciclo 3)
+Iniciado rotwk-mimo-all con opencode/mimo-v2.5-free (PID 3248547, ciclo 3)
+Iniciado rotwk-laguna-all con opencode/laguna-s-2.1-free (PID 3257370, ciclo 2)
+Iniciado rotwk-laguna-all con opencode/laguna-s-2.1-free (PID 3279072, ciclo 3)
+Deteniendo granja y liberando leases...
+Reservas liberadas para rotwk-ling-all: 4
+Entradas devueltas: 100
+Reservas liberadas para rotwk-deep-all: 2
+Entradas devueltas: 50
+Reservas liberadas para rotwk-mimo-all: 1
+Entradas devueltas: 25
+Reservas liberadas para rotwk-nemotron-all: 2
+Entradas devueltas: 50
+Reservas liberadas para rotwk-laguna-all: 1
+Entradas devueltas: 25
+Iniciado rotwk-ling-all con opencode/ling-3.0-flash-free (PID 3333292, ciclo 1)
+Iniciado rotwk-deep-all con opencode/deepseek-v4-flash-free (PID 3333293, ciclo 1)
+Iniciado rotwk-mimo-all con opencode/mimo-v2.5-free (PID 3333294, ciclo 1)
+Iniciado rotwk-nemotron-all con opencode/nemotron-3-ultra-free (PID 3333295, ciclo 1)
+Iniciado rotwk-laguna-all con opencode/laguna-s-2.1-free (PID 3333296, ciclo 1)
+Deteniendo granja y liberando leases...
+Reservas liberadas para rotwk-ling-all: 0
+Entradas devueltas: 0
+Reservas liberadas para rotwk-deep-all: 0
+Entradas devueltas: 0
+Reservas liberadas para rotwk-mimo-all: 0
+Entradas devueltas: 0
+Reservas liberadas para rotwk-nemotron-all: 3
+Entradas devueltas: 75
+Reservas liberadas para rotwk-laguna-all: 4
+Entradas devueltas: 100

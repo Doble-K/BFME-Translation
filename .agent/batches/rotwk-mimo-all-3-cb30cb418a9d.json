@@ -1,0 +1,252 @@
+{
+  "schema_version": 3,
+  "batch_id": "cb30cb418a9d4de99d0f4a2933361552",
+  "worker": "rotwk-mimo-all-3",
+  "created_at": "2026-08-06T07:50:47.807899+00:00",
+  "lease_expires_at": "2026-08-06T13:50:47.806566+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-all-3-cb30cb418a9d.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPWORBlackGate/Desc",
+      "source": "The northern entrance to the lands of Mordor and the site of the final stand-off between good and evil.\\n\\n Size: 450 x 450\\n Lairs: 2x Goblin Lair, 2x Fire Drake Lair\\n Neutral Structures:",
+      "source_hash": "926d7b2c93f6706b8d895523049af90c78f21601f4959a02c482b79908892099",
+      "entry_hash": "0b5b5f8acea4fdb6ecc2d6e9fe5e7cf6dca728dbea5b9ed93a0a24cdf0a3547a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORBuckland",
+      "source": "Buckland",
+      "source_hash": "5423662433e8616a33796810deb305a6c7d1e5d3ada417e9b4f4acc663ae3a29",
+      "entry_hash": "69b108c2a179dea4047b1cd018fad9a870f17fcd04f5a4cbd6a640f1bcd65e2e",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORBuckland/Desc",
+      "source": "The Eastern border of the Shire was the home of Merry Brandybuck.\\n\\n Size: 350 x 350\\n Lairs: 2x Troll Lair, 2x Barrow Wight Lair\\n Neutral Structures: 1x Outpost, 2x Signal Fire",
+      "source_hash": "441d37a4b09a77e7c87fe71170b6910116e87877978669fd99b2e9932d0a5076",
+      "entry_hash": "ce928eae744f6b05b190b8bcc025dc425bb539ef89f12fbf8e8d04ec600db6f9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORCairAndros",
+      "source": "Cair Andros",
+      "source_hash": "db64f5b5808e7c91ac24d8e8a4c0ddce00c7dc400484f518610fb90cb4fa4af4",
+      "entry_hash": "9a5a94b06abf4de08500f1f6f44d2738716835733573d5deadac37e035467ca5",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORCairAndros/Desc",
+      "source": "An old Gondor island fortress on the Anduin River, north of the city of Osgiliath.\\n\\n Size: 410 x 450\\n Lairs: 1x Warg Lair, 2x Troll Lair, 3x Barrow Wight Lair\\n Neutral Structures: 2x Outpost, 2x Inn, 2x Signal Fire, 12x Tower",
+      "source_hash": "3f40bb2601511e1b54b2ee7ba7bb857521f9663613355b5d74f67573ec152fbc",
+      "entry_hash": "2b5fd9915352f73ed45d382dbcb90465012b33fca9b4f286d6f447ce3e876524",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORCardolan",
+      "source": "Cardolan",
+      "source_hash": "4bcdc0937e2be78c738ecc80ef228e23f253823391df989ae1fa288275f68299",
+      "entry_hash": "4d5ac6b154a1ee1673faa001f34143ec067adf7bbea4c703a358b2770e851585",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORCardolan/Desc",
+      "source": "One of the three kingdoms of Arnor, Cardolan lies between the rivers Brandywine and Greyflood (with the Great East road serving as its northern border).\\n\\n Size: 500 x 400\\n Lairs: 4x Warg Lair\\n Neutral Structures: 2x Outpost, 1x Signal Fire",
+      "source_hash": "4d9981257946c0fc3eba362d0f3559d2c9dbf13240495072108b7c0925e6b5ab",
+      "entry_hash": "affe08b845f6f78cfcc7a8732b4f368a62dc36679fe8245fbdb5945501b2069b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORCarrock",
+      "source": "Carrock",
+      "source_hash": "cce331b342deae5c00b56f5f7982875c74e73b4f3c2789d480f9ed427ca16df3",
+      "entry_hash": "64d42fbf0f6d85bc125ed5fe173c89ea2390e3f24f2ad9f822edd00f88768bb2",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORCarrock/Desc",
+      "source": "A region along the upper reaches of the great river Anduin, Carrock is named for a rocky river island north of the Old Ford.\\n\\n Size: 361 x 421\\n Lairs: 2x Warg Lair, 2x Troll Lair\\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "790e857f1a1d43377d3b0522aaec46d58d507b2c57efa7d5810e5813128e20c2",
+      "entry_hash": "b010a9749e489d2e27ed5477d4b0ec8e12ad1a56bd91e7c3b1e3c7501a1d66f7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORCelduin",
+      "source": "Celduin",
+      "source_hash": "b1b1d7586264dc19aab4b11e627bd6a88edb0dbd6eab8684983e9e8aa81d3068",
+      "entry_hash": "39909e1699ab677a03a46f034e1a0fb14ee03030805bf72d23ae625424dc2fcf",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORCelduin/Desc",
+      "source": "The settlements along the River Running, which rises from Erebor and flows southward into the Sea of Rhun.\\n\\n Size: 450 x 465\\n Lairs: 4x Troll Lair, 4x Barrow Wight Lair\\n Neutral Structures: 4x Outpost, 6x Inn, 2x Signal Fire, 4x Shipwright, 2x Tower",
+      "source_hash": "602352911d3447d5bde78a8e2720ec110c9b0104e0a04621db14ff0eb6d63215",
+      "entry_hash": "fe9de0f586643e974ecf2974ae566c3038b8418fe91f1b471221d39176744943",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORDagorlad",
+      "source": "Dagorlad",
+      "source_hash": "96f700521944b880f92db08041e28a975710e1ab3615474ee82d1da62a87746d",
+      "entry_hash": "5132ad9d029daf50e31f0be4a8b94ab544548747afa30f8e8a4291a729ffe21e",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORDagorlad/Desc",
+      "source": "Also known as the Plain of Victory, Dagorlad is where the War of the Last Alliance took place at the end of the Second Age.\\n\\n Size: 500 x 480\\n Lairs: 6x Goblin Lair, 2x Fire Drake Lair\\n Neutral Structures: 2x Outpost, 4x Inn, 2x Signal Fire",
+      "source_hash": "3f3e3a80d619d8161ca90c25fbd2c9c9b60b6ae3c5f31e5f2ce1526a7d2ffb16",
+      "entry_hash": "1e15ba9b7606f477fa2bc7c7a085dbec303bdc57e32dae729bf0a177abd3a338",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORDeadMarshes",
+      "source": "Dead Marshes",
+      "source_hash": "2124b2048c6c90a25198adc0e937ab0ff70c080a043a6960ddbb923f99cb41d1",
+      "entry_hash": "d953f1c50c7814ba968334f915cac92a68e37b6ff0b610cc40620571ff732ebd",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORDeadMarshes/Desc",
+      "source": "A haunted swampland, lying just outside Mordor. Gollum led Frodo and Sam through these lands on their way to Mount Doom.\\n\\n Size: 500 x 500\\n Lairs: 2x Goblin Lair, 2x Troll Lair, 6x Barrow Wight Lair\\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "bd2a7cbdf35eb074098f8370bbb0eeb94927a9d25c493d3af5fe393ed867d1a8",
+      "entry_hash": "510d76c016cba0cf5c1ab301e3284b8442c886de6a45894198e3bbbb88592804",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORDolGuldur",
+      "source": "Dol Guldur",
+      "source_hash": "ce134563d0a6e22c0bdc9dc5984aca7b98276821b062449be37826a58e210fe9",
+      "entry_hash": "b05d73f8cd6d43ea790ab89b2ac80cb0803f471ca1e64cd17a281500091f9291",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORDolGuldur/Desc",
+      "source": "Sauron's hilltop stronghold in Mirkwood, now led by his Ringwraiths.\\n\\n Size: 480 x 480\\n Lairs: 8x Spider Lair\\n Neutral Structures: 5x Signal Fire, Fortress",
+      "source_hash": "b672627b9601dddc64e4df6601d64526c20d6caaaee68da9b26ecc9762e5038b",
+      "entry_hash": "ef2338e54fa884802253e32bdde0917f82f3a27109964ff62accc1dd186a3072",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWOREnedwaith",
+      "source": "Enedwaith",
+      "source_hash": "5d8a08ae0669f2c1c84219799450e11a641647b1ef680903f079cded16007a6e",
+      "entry_hash": "3a944cbb55cb2d95ac91024bd99c6718b7051b7f1d463e6d97c641dfe8042dfb",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWOREnedwaith/Desc",
+      "source": "A wide, open land that lies to the west of Rohan.\\n\\n Size: 450 x 450\\n Lairs: 4x Warg Lair\\n Neutral Structures: 1x Inn, 4x Signal Fire, 2x Tower",
+      "source_hash": "5e7fef1e0b8039ddac245e0572641ae22e2ef886e7aa0657cb7427d1192f0312",
+      "entry_hash": "24adc7a328821ed04bb6b59e4cf5f37b2295d5751a33d4fd4db256b5f9032575",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORErebor",
+      "source": "Erebor",
+      "source_hash": "08469348af3255a990a376dcc5895f0402f7e48e444a8ccdbd7ed80c30b03cd7",
+      "entry_hash": "893922c8dbffcc4bdb3c16144e38d02aedd11ba46209faf2958f0d2508b9e871",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORErebor/Desc",
+      "source": "The Dwarven fortress within Mount Erebor is the proud domain of King Dain Ironfoot.\\n\\n Size: 500 x 500\\n Lairs: 2x Fire Drake Lair\\n Neutral Structures: 2x Outpost, 1x Inn, 2x Signal Fire, 6x Tower, Fortress",
+      "source_hash": "bc0ef8317997048b1dc01b3b0bf46aa09e914dd564d78b154ea194f9105fa042",
+      "entry_hash": "d287e26e2d331a20c1cc02459499eda7a5f4afdbd23b412925eb6e794135200c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWOREttenmoors",
+      "source": "Ettenmoors",
+      "source_hash": "129fc8fd9a9bebcf01dfdd5074937ed0cdd864b86a22a2fb7a7375049ac23f1f",
+      "entry_hash": "27a17383de1d73ffb6e5f7b1e0841f9ffdd2f9562f76efb800551115b860cbd5",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORFangorn",
+      "source": "Fangorn",
+      "source_hash": "af52e585450e158cba2b82fffe96ce95b60f33f05368801030a8106bc42ea992",
+      "entry_hash": "8300d8499252bee1a67cca89f783930e6b1fe11d641274fd0dc392840175109f",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORFangorn/Desc",
+      "source": "A dark and mysterious forest that is the home of Treebeard and the Ents.\\n\\n Size: 350 x 350\\n Lairs: 2x Goblin Lair, 2x Barrow Wight Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "a87248db56b155ea6b40fa91f4c0bc89eb59848ccf4fe42590e66388ccc5c738",
+      "entry_hash": "cd20eac5c480851da3d017595a1de859f9e48b7824a105272548bd8ba21722a6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORForlindon",
+      "source": "Forlindon",
+      "source_hash": "b77632859ec3eade1856844e310a8b25c85332004b954f5ff841e64172a6c955",
+      "entry_hash": "ab3440809fe99e6006065dcebd62ad23747e95568adf1bafb5d17de3c86c8071",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "da0a4818d377738fc86bec353b9d7ba0a0123e57dc44d2e8de5bf8eccc5a3529"
+}

@@ -1,0 +1,13 @@
+{
+  "project": "/tmp/tmpz34l3dmv/project.json",
+  "workers": 4,
+  "count": 20,
+  "max_restarts": 0,
+  "poll_seconds": 1,
+  "coordinators": [
+    {
+      "prefix": "yes-a1c84c63",
+      "model": "opencode/nemotron-3-ultra-free"
+    }
+  ]
+}

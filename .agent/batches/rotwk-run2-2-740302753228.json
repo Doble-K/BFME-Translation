@@ -1,0 +1,242 @@
+{
+  "schema_version": 3,
+  "batch_id": "7403027532284d399d0297ffd68bdd80",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T19:44:22.191565+00:00",
+  "lease_expires_at": "2026-08-06T01:44:22.189288+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-740302753228.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildEregionForgeLevel3",
+      "source": "Allows research of Elven Armor and Silverthorn Arrows \\n +25% Faster Production Speed \\n Adds defensive Arrow Tower \\n \\n Upgrade Time: 1m",
+      "source_hash": "f1483103f2de828ef2e329ab40ac7b0e39bcb3fafeed2345d7086a92c597bd7c",
+      "entry_hash": "8b96af3d44e88e77368ba174ec63019582352c7c45aaf20600a892b53b08a943",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenSiegeHammerPurchased",
+      "source": "When equipped, slightly increases the damage done to units and enables splash damage \\n Significantly increases the damage done to Structures \\n Cannot be combined with Forged Blades \\n \\n Research Time: 20s \\n \\n This upgrade has already been purchased",
+      "source_hash": "d622ad131b695d34a69cd9adf60a70eeab9ed69c28102dcf63e1325a34071c5e",
+      "entry_hash": "cfc8ff169a772797c9dfbc9249287ca245016ab3492faa3c758e99de57f72488",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenSiegeHammer",
+      "source": "When equipped, slightly increases the damage done to units and enables splash damage \\n Significantly increases the damage done to Structures \\n Cannot be combined with Forged Blades \\n \\n Research Time: 20s",
+      "source_hash": "a8767b96960d95f8b4d6ee0363e2685e528785257f95061fae95b5fb59465e93",
+      "entry_hash": "821dc8966cfa90aebb3c75d10c5585c2fe9a796a76c1517931f67a6220209a5f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMordorNazgulMorgulBlade",
+      "source": "Requires Level 6 \\n Targeted enemy takes poison damage over time, and becomes a wight upon death \\n Temporarily cripples non-Monster unit \\n Monster suffers -33% Speed \\n Damage: 150 (Hero) & 10/s (Poison) \\n Duration: 10s \\n Target Range: 15 \\n Recharge Time: 1m \\n Left click icon then left click on target",
+      "source_hash": "69ff28c1e3932046516a28b46f688d2c9f640a13b7807cca89a38182be2c27c4",
+      "entry_hash": "b50d3b247bb8ea0ad31dd5dc6a0d78183a31152f288195dcad8bd9a0aa69c0be",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToggleHaldirWeapons",
+      "source": "Al&ternate Weapon",
+      "source_hash": "aa50a6a051ddb83650b1d032b5288b02c9e292891a3219797a0ffbc1da14c84b",
+      "entry_hash": "b24c1918b41a78b70764b891805f2d70a21ff56334e218688b5f80430d80459a",
+      "protected_tokens": [
+        "&t"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToggleNoldorWeapons",
+      "source": "Al&ternate Weapon",
+      "source_hash": "4d58f369fd610ce774c337c7e69fd60f7fcdefd64ee0fc4e3bdedaca6b0ed14a",
+      "entry_hash": "0665ac0b089fa722ed1f314712f72f56ca6afd3dceaade78e15197cb21362721",
+      "protected_tokens": [
+        "&t"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToggleGaladhrimWarriorWeapons",
+      "source": "Al&ternate Weapon",
+      "source_hash": "eba28b20d6ef185e997972ff77e7af896c56b2107b390b1a62c049dce7991bfc",
+      "entry_hash": "75ec51e85cac90f785e81aed4851e2f5573bdf194cbdb662e0883f92dcf20ac3",
+      "protected_tokens": [
+        "&t"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Builder",
+      "source": "Movement Speed: 60 \\n Vision Range: 100",
+      "source_hash": "a3015925a1755f2b441ed3d04274657b0e3d31288b2ff6e6fc02eacedcbb1b16",
+      "entry_hash": "4ab6a267bfd88a04e926080aaa778a3237b690bb72fcde22c932ba385a1c3c44",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackDwarvenBasicTrainingForBattleWagon",
+      "source": "Research upgrade at Hall of Warriors to enable this equipment\\nWhen equipped, nearby allies gain\\n +25% Damage, +25% Armor,\\nand earn experience twice as fast\\nAdds several Phalanxes to the Battlewagon \\n \\n Upgrade Time: 10s",
+      "source_hash": "447e4a0319ca653b2cee98c80dc5ebed9a5d42b994aebcfafd4471c4ea709fd5",
+      "entry_hash": "2bf835316c4d952ab0e5762d05658d9dbb4a1b89a47b100ad7c603d6adfe2e48",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBattleWagonUpgradeBannerCarrier",
+      "source": "Adds several Phalanxes to the Battlewagon \\n Strong vs. Cavalry \\n \\n Modifier Type: Leadership \\n Nearby allies gain +25% Damage, +25% Armor, and earn Experience 50% faster \\n Stacks with Buffs and Spells \\n Radius: 200 \\n \\n Upgrade Time: 10s",
+      "source_hash": "bd538063bb6390aea537287d4ffcb111b6de31ffaebf9569e7b162be8cc75757",
+      "entry_hash": "9da288268f4695a954322e8acb1d82615ae46da516a3f8ef6a5856f3b7956925",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipBarricade",
+      "source": "Summons a defensive Tower garrisoned with Archers \\n Can be upgraded to bolster offensive capabilities \\n Detects stealthed units \\n Duration: Permanent \\n Recharge Time: 4m \\n Left click icon then left click on pathable location",
+      "source_hash": "44329816cc59f48497dfdc0d53ee46b7ad828eb8153b717149ef55ccd7ddec50",
+      "entry_hash": "9e52f9adcfd2d6dba7951c3e6bbf8fc0dc23ecdb62a6eb783cd456f8d7820fa0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackAngmarSpikedCollars",
+      "source": "Research this upgrade at the Troll and Wolf Den to enable this upgrade \\n When equipped, significantly reduces the amount of damage taken \\n \\n Upgrade Time: 10s",
+      "source_hash": "6a613cd2bbb7e929f7bbe0a4ec4410a740357e89b5407bffeffd2e5d306b60b6",
+      "entry_hash": "55bd2511b1e5a1ada0c9568f374a72c8589697931acf1a8743da9e67da6260ab",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackDwarvenSiegeHammer",
+      "source": "Research upgrade at Hall of Warriors to enable this equipment \\n When equipped, slightly increases the damage done to units and enables splash damage \\n Significantly increases the damage done to Structures \\n Cannot be combined with Forged Blades \\n \\n Upgrade Time: 10s",
+      "source_hash": "ec4ea87f43caea18cfdbe5fbf4084f04ec4ba1521c1ac00c83d9f6954ed2e884",
+      "entry_hash": "b2440a55471e7c51b7227b3e95bd24389f50a12417da076a7c62140a4c7c328f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeAngmarIceShot",
+      "source": "Pur&chase Ice Shot",
+      "source_hash": "d5985a3ca1c7a20bf3b3019279d9783c75f9e3030da6e879dcad4d684bf3877c",
+      "entry_hash": "0ee13588d0734d054aaab9afe1eeaabc68acd5599b3f63c81d842c89ce3f9ead",
+      "protected_tokens": [
+        "&c"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackAngmarIceShot",
+      "source": "Research this upgrade at the Dark Iron Forge to enable this equipment \\n When equipped, significantly increases the Stone Thrower's damage \\n \\n Upgrade Time: 10s",
+      "source_hash": "76a451a74accf4d4a6280d3ce13b9d83f1d3608786635240fb002e0ecfe4f622",
+      "entry_hash": "b479b71c821dfbd2223fe6d05ddf894f6d7163397a1e3b723d25bb0d07f0ce43",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackVenomSacksTechnology",
+      "source": "Research upgrade at Spider Pit to enable this equipment \\n When equipped, slightly increases damage done by melee attacks \\n Allows poison to be inflicted on enemies causing additional damage over time \\n \\n Upgrade Time: 10s",
+      "source_hash": "3092cf041603e8c3330bddbda6e3197a7bbb1767a99d185efcde56ae00c3c60f",
+      "entry_hash": "5bf377167ba9e9817e919be8a8391d8643d940ac89df58d07264b5a68c7995af",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:EvilMenNazgulHotkey",
+      "source": "Mo&rgomir",
+      "source_hash": "45682eda41f4fd19721fc4f62277bb052f49fd76c3ea79770b9c816578c2bd01",
+      "entry_hash": "1c8ebc7d7ded5502a99e0a96a67e68ee6bd3171dc7cbf1914421769905388763",
+      "protected_tokens": [
+        "&r"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeSentryTowerFireArrows",
+      "source": "Fire Arro&ws",
+      "source_hash": "9a47a696376f450790e70bb331d73a55a56af75623cf9712a78c9b59069b79bd",
+      "entry_hash": "76a406b6ea25b6c16832974a18f3cc8b62a02a030aecf0948ebfa611ea596ef6",
+      "protected_tokens": [
+        "&w"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:BattleWagonUpgradeAxeThrowers",
+      "source": "Upgrade &with Axe Throwers",
+      "source_hash": "a487f8595aac84deb8fa4d33ec1419e43d388bb06d14b01f8d361f898c27926b",
+      "entry_hash": "28b4ef30c758ef89df3020ea99813b3770687968eedaa7486a1684d082b45767",
+      "protected_tokens": [
+        "&w"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:BattleWagonUpgradeHearth",
+      "source": "Upgrade with Hear&th",
+      "source_hash": "256464813fee8a6158e648a17676130e991f77de98e9e8787aaa5ae666efc13b",
+      "entry_hash": "cdfed99c4803ac20817862d947b42f77d22d7d62f5220a85e1827d5048dd6d94",
+      "protected_tokens": [
+        "&t"
+      ]
+    }
+  ],
+  "manifest_hash": "9f651ed2e2210e3c5087095812ebc95cb315788a0e13e1760f94d3172ff39890"
+}

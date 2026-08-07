@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "b70491503fdf4a7ebd20c2aa332cdc65",
+  "worker": "rotwk-laguna-all-2",
+  "translations": [
+    {
+      "id": "SCRIPT:FORNOST_BATTLE_END_EVIL",
+      "translation": "OFICIAL DE ARNOR: ¡Retírense! ¡De vuelta a la ciudad! ¡Déjenlos enfrentar los muros si desean venir más lejos!"
+    },
+    {
+      "id": "SCRIPT:FORNOST_ARCHERS_DEFENSE",
+      "translation": "OFICIAL DE ARNOR: ¡Debemos mantener la puerta! ¡Arceros, comiencen a disparar!"
+    },
+    {
+      "id": "SCRIPT:ELF_ATTACK_01",
+      "translation": "¡Elfos, debemos detener este ataque!"
+    },
+    {
+      "id": "SCRIPT:FORNOST_HINT_BUILD",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_HINT_BUILD_EVIL",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:HOBBIT_ATTACK",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:HOBBIT_ATTACK_HINT",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ELF_ATTACK",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ELF_ATTACK_HINT",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ELF_CAMP_ATTACK",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:PRINCE_RIDES_OUT",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CAVALRY_WARNING",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_BLACKSMITH_HINT",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_BLACKSMITH_DESTROYED",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:SEE_FORNOST_BARRICADE",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOSTOUTERBUILDINGS",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_OBJ_COMPLETE",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_CIVBUILDING_HINT",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORGES_DESTROYED",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:OUTER_BUILDINGS_CLEARED",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_10_BUILDINGS_LEFT",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_5_BUILDINGS_LEFT",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_3_COMPLETE",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_4_COMPLETE",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_5_COMPLETE",
+      "translation": ""
+    }
+  ]
+}

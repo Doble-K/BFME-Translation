@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "51524a24e88e405a82a8d21a1c2c4114",
+  "worker": "rotwk-deep-all-2",
+  "translations": [
+    {
+      "id": "Map:MAPMPAnorien",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPAnorien/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPArgonath",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPArgonath/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPAzanulbizarValley",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPAzanulbizarValley/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPDale",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPDale/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPDesertofRhun",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPDesertofRhun/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPDruadanForest",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPDruadanForest/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPDungeonsOfErebor",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPDungeonsOfErebor/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEastBight",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEastBight/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEmynArnen",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEmynArnen/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPErech",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPErech/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPErechII",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPErechII/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEredMithrin",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEredMithrin/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEregion",
+      "translation": ""
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "schema_version": 3,
+  "batch_id": "4e3bc78d17704fd08f74e721ce1512dd",
+  "worker": "rotwk-mimo-all-4",
+  "created_at": "2026-08-06T07:59:46.371757+00:00",
+  "lease_expires_at": "2026-08-06T13:59:46.370438+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-all-4-4e3bc78d1770.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SUBTITLE:BAM7E_02",
+      "source": "The well-timed arrival of his lieutenants prevented a complete annihilation of his army.",
+      "source_hash": "a82e0a62e410e82ae5e797e43e6284e573d7601b9f41255e3869fa1f545a754f",
+      "entry_hash": "8e9dc417155af6874a400cca34167482cc0cd501abb845350c9e2a21228fc31a",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM7E_03",
+      "source": "The Iron Crown has suffered a heavy blow, but Angmar has not been defeated ?",
+      "source_hash": "39b037bf7ed4921c9cf7b00e8e13d6aae6854fcb8fe02fc3ea25badfa1a79f2a",
+      "entry_hash": "79d0e0c098097637a7a2d711512b0cdb76ce6a9a45ee2928e726000dfa3ee70c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM7E_04",
+      "source": "It will take time to recover its strength? Perhaps enough time for Arnor to rise anew.",
+      "source_hash": "70d77e8137402617ae2ca5485a3eab367115b441f3833c1e526eddb312197672",
+      "entry_hash": "6a8ce09461c23a57f0183592337c30de01d4471f9922d9d04f414757b41b3be2",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM7E_05",
+      "source": "But the Witch-king has no intention of allowing this to happen?",
+      "source_hash": "d954232b3ebaac802b8c6478c4497e7023a6bd1d1e00d4752e77ae9d7cfb139f",
+      "entry_hash": "6ab66240fabf5cf11568b84a528276b1e77e9c248faffcdd86c9b42c6ac1f7f2",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM7O_01",
+      "source": "Arnor sits at the edge of the abyss. Rhudaur is the Witch-king?s, Cardolan is reduced to scattered bands of refugees.",
+      "source_hash": "54e90b63a2074d3aa4d83d8c240d6f9f3161102b543923bbe668ef5dad154654",
+      "entry_hash": "4f56e28d180c844446850c3cb78b603cb8cda5d6430866f25b085265e4531b80",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM7O_02",
+      "source": "Only Fornost stands between Angmar and total domination of the North.",
+      "source_hash": "0683a93a71841379510f2d5ff9ca0ddad16d685ebb1792f6be388d5af4c1ad53",
+      "entry_hash": "a5309dba51d2f0593cec1721733761e2ab8cdd5a17e0e6e491a819814284b46a",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM7O_03",
+      "source": "Or so it appeared. The attack on Rivendell has united the Elven strongholds.",
+      "source_hash": "f0670ccfc19af0c86a3e119e2f56c0d87abe8c29242c15479abd7956d44dffd4",
+      "entry_hash": "2664be90cd0fa1db631b66515975695bc25a50177c3d5c13d1ad4107b32b1316",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM7O_04",
+      "source": "Now, the Elves of Lindon, Rivendell and even L??n march against Angmar.",
+      "source_hash": "b0c0b2f5b76ea3ed3fb67cc2f13024c43212c005a15262387b67c1f9b8a29e5c",
+      "entry_hash": "95643d2c1876a731279bc209c65c6d3c05847a9cd59f4abcbd1a1fe9e63733b7",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM7O_05",
+      "source": "They are intent to drive a sword into the heart of Angmar that would last an age ?",
+      "source_hash": "0a4bc0f92bd6d7dbca154459af008a8e3421c32a279cc31a52ddf17c2c4ed9dd",
+      "entry_hash": "074209a7863aeb9ae7af87eed0aab3b708eee21421c8ec0a240d858301ff616c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM8E_01",
+      "source": "Though he fought with a valor rarely seen among men, the young Arnorian captain paid a price beyond death, and now serves the Iron Crown.",
+      "source_hash": "51258008615b626a24a91a0e9e5236a1428c0ae401a5814b5929601701f6dd10",
+      "entry_hash": "856a5f1726e313c88543f5206f9f35ad943466a01ca94a6cc651597e7aebac17",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM8E_02",
+      "source": "Angmar?s great plague stretched far and wide, striking at the heart of Arnor and weakening the already fragile DÃºnedain defenses.",
+      "source_hash": "02f78081c9af13249a193db9f7b51860722f771be7a10dd4d7bf5a6742ad4d95",
+      "entry_hash": "77a0a9b26d6f2eddfd34d53555efee2fc660663e0b29df16d2c7c8f8ea90d884",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM8E_03",
+      "source": "But the Witch-king will not be satisfied until Arnor lay buried in the bodies and blood of its youth.",
+      "source_hash": "3e7e2e209d9ac1d04c86e647fe038f608330198faa9dadf6e941da75842dc8f0",
+      "entry_hash": "943e801367966ca19af08543755c138f64de312282c43d7029c2d81506b0f930",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM8O_01",
+      "source": "The Dunedain of Arnor believe the Elven strike will provide them a chance to recover.",
+      "source_hash": "04b1dc7fb6deea363c202a19ef2f15864276bf5c66a8b488469518b0ddbbceb1",
+      "entry_hash": "6f1600cc28e2aa529cd1d9aff681cd19142b1e59a574430d80100dc0503dd1fa",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM8O_02",
+      "source": "Given time, Arnor can finish what the elves had started.",
+      "source_hash": "349961d4bc2d5b6c127e1a3fed741c2f7b679ae862ec40007ab188e60fa63fa4",
+      "entry_hash": "ea42e01a1899feceb70dfd30c3cd9005b85bcac70b8ba1f99307e3feae7e14f7",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM8O_03",
+      "source": "But they reckon without knowledge of the depth of the Witch-king?s hatred?",
+      "source_hash": "f24fa03a95d2e7fc63d29323d7ee7752260fc51b508677dc397e6d29e54364ac",
+      "entry_hash": "5801ad850dbe6d231dc8a325b345665a0164ebd2f11188adf8218791e2c78659",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM8O_04",
+      "source": "He sends his sorcerers among the barrows of the great Arnor kings.",
+      "source_hash": "563325f5974b5a9d26be20228c1ecdb5d733b146a7141ac088112ee5ead35bd4",
+      "entry_hash": "94e03a1afa202b268b60e03c59af12d34233ea72f8cbe641af26c26665f9bc1e",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM8O_05",
+      "source": "While the desecration of this hallowed soil might break the hearts of men, the Witch-king has an even darker purpose:",
+      "source_hash": "18f691682274872a1eabfd64522adb60e8e1480821a12151678a5155525bf6d1",
+      "entry_hash": "7a794496376c0a0612087f0a50af0692f1851d9fc09daf07c6aea2e8cf571102",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM8O_06",
+      "source": "to unleash a malevolent plague across the lands of men and elves.",
+      "source_hash": "c01f29ec57110ccfc0588a24ad04a2d135581b3ce2493dd54b03536f0aa48ac2",
+      "entry_hash": "11f85b8053c9af62dcbbb42b2d3a1838252a049545eec6b2d69a0dcd7f763c86",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM9E_01",
+      "source": "Angmar?s hammer fell, and down came Fornost, in ash and fire!",
+      "source_hash": "baca4f9264838f307be5dfeeeacb4ced22c87f2e54d2651f83fa0884de821a78",
+      "entry_hash": "139f8483370e2df5b62492b758ba56d070bd00d9a683b594664748a05c9e562c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM9E_02",
+      "source": "Arnor never wakes from its age-long nightmare; thousands lay dead in the streets.",
+      "source_hash": "e025236ddb1444bfea7e5417e03fd381b40d2a05cd7ba832a4f8f47f8607c2d9",
+      "entry_hash": "e609a384579ebcfeb6051ca053cf2287c1f21807d0e40e82b3bdae47e1153ac7",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM9E_03",
+      "source": "The Witch-king?s malice can now spread throughout these Northern Lands.",
+      "source_hash": "e0cb9a7f5e914f967b703b89dc5ae88e476950bc29941a7baa07c29caae9fa88",
+      "entry_hash": "f9549433b788c86dd4a7d91eb135c0d20287731437259097e7b4e76ca2148733",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM9E_04",
+      "source": "Evil had come to Arnor? and evil prevailed.",
+      "source_hash": "8b2b3be6d4c40c1fb52500769adb670de626f4302fdc6fb36d592a8203e6e2d9",
+      "entry_hash": "c881d9b32b00d40c56689709eb11d06607f5deab0dbc363d0a83fa614149151d",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM9O_01",
+      "source": "Many years have passed since the great plague devastated the North.",
+      "source_hash": "c1b12247dbbd9d9ce75cca66083a904ea8258515b9a89a7610ba8349385a8bb8",
+      "entry_hash": "0a49b4d479d97364689e577031bc9b2f2b4213902c62a807756bd7e15482d2c8",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM9O_02",
+      "source": "In great secrecy the hosts of Angmar have been reforged, and the final stroke is ready to fall upon the last bastion of Arnor?s power: Fornost.",
+      "source_hash": "97b09feec5a0aed007222207439543bfd96d99ddb4004b82e93b84e51dbce9fc",
+      "entry_hash": "1418cef9c8f1bf6145e50f91a87af3fee047b987267444679b8e52352b58aa14",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM9O_03",
+      "source": "With its beautiful spires and unyielding walls, it alone stands between the Witch-king and total victory.",
+      "source_hash": "bc66e348bd645110bb46d7d9958bf4d726a0d02f5673efedd05f777b2b964bfb",
+      "entry_hash": "3d2340eee053ca3d9e44d497adc92637114cf47a52d33729939ee6b9a195f767",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "baa5fd44096e6e0d811334605da08d23a23b51b939ee2fd98ebf015fbc22e0ba"
+}

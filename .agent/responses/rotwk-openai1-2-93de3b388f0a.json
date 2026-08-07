@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "93de3b388f0a4426a93eefd7bdaea157",
+  "worker": "rotwk-openai1-2",
+  "translations": [
+    {
+      "id": "OBJECT:MoneyMaker",
+      "translation": "Mina de oro"
+    },
+    {
+      "id": "OBJECT:MoneyMakerDescription",
+      "translation": "Genera recursos"
+    },
+    {
+      "id": "OBJECT:PowerPointMaker",
+      "translation": "Árbol blanco del poder"
+    },
+    {
+      "id": "OBJECT:PowerPointMakerDescription",
+      "translation": "Genera puntos de poder"
+    },
+    {
+      "id": "OBJECT:CommandPointMaker",
+      "translation": "Almacén de suministros"
+    },
+    {
+      "id": "OBJECT:CommandPointMakerDescription",
+      "translation": "Permite aumentar los puntos de mando"
+    },
+    {
+      "id": "OBJECT:MoneyMaker_V2Building",
+      "translation": "Mina de los mineros"
+    },
+    {
+      "id": "OBJECT:MoneyMaker_V2BuildingDescription",
+      "translation": "Permite construir mineros enanos e investigar mejoras"
+    },
+    {
+      "id": "OBJECT:CustomOre",
+      "translation": "Mena de oro"
+    },
+    {
+      "id": "OBJECT:CustomOreDescription",
+      "translation": "X"
+    },
+    {
+      "id": "OBJECT:PowerPointMaker_v2Building",
+      "translation": "Barad-dûr"
+    },
+    {
+      "id": "OBJECT:PowerPointMaker_v2BuildingDescription",
+      "translation": "X"
+    },
+    {
+      "id": "OBJECT:AngmarWightMakerTower",
+      "translation": "Torre de Nigromancia"
+    },
+    {
+      "id": "OBJECT:AngmarWightMakerTowerDescription",
+      "translation": "X"
+    },
+    {
+      "id": "OBJECT:GenericUpgradeMaker",
+      "translation": "Forja universal"
+    },
+    {
+      "id": "OBJECT:GenericUpgradeMakerDescription",
+      "translation": "Investiga mejoras de unidades"
+    },
+    {
+      "id": "OBJECT:CustomCampKeepTactics",
+      "translation": "Ciudadela"
+    },
+    {
+      "id": "UPGRADE:CustomGenericUpgrades",
+      "translation": "X"
+    },
+    {
+      "id": "Map:mapmpthelaststand",
+      "translation": "*Defensa de la fortaleza: La última resistencia"
+    },
+    {
+      "id": "Map:mapmppuzzlersringwar",
+      "translation": "*Defensa de la fortaleza: Guerra del anillo de Puzzler"
+    }
+  ]
+}

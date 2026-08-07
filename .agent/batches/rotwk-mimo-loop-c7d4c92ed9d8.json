@@ -1,0 +1,367 @@
+{
+  "schema_version": 3,
+  "batch_id": "c7d4c92ed9d843efb23d8bbf9e5bf833",
+  "worker": "rotwk-mimo-loop",
+  "created_at": "2026-08-06T06:50:30.282165+00:00",
+  "lease_expires_at": "2026-08-06T12:50:30.280730+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-loop-c7d4c92ed9d8.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipHawkStrike",
+      "source": "Double-arrow attack that deals splash damage \\n Damage: 600 (Hero Ranged) \\n Splash Damage Radius: 20 \\n Target Range: 485 \\n Recharge Time: 45s \\n Left click icon then left click on target",
+      "source_hash": "1d942d288ad3995d9b082a57825507864f132d4271cce977e04eb1265ccea38f",
+      "entry_hash": "967f0c5be585c01df8e805bf69594fba00a01a27233e925a14e25695f9363096",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLegolasTrainArchers  ",
+      "source": "Requires Level 3 \\n Targeted archers gain superior Experience \\n Experience Yield: 120 XP \\n Target Radius: 150 \\n Target Range: 200 \\n Recharge Time: 2m 30s \\n Left click icon then left click on target archers",
+      "source_hash": "c7f9de1eb6b1f74744b7d0b2e10d00723a05a66f75789f0a520c1970c12e077d",
+      "entry_hash": "5770be237f9bdd3de99038a91d5bba6bba186b34942b87213ef2eec8dc71f7bd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipArrowWind",
+      "source": "Requires Level 7 \\n Launch a continuous volley of arrows \\n Damage: 200 (Hero Ranged) \\n Target Radius: 200 \\n Target Range: 450 \\n Total Arrows: 70 \\n Recharge Time: 3m 30s \\n Left click icon then left click on target area",
+      "source_hash": "4ef8687efd44154da92ae90ee88fcdbb3906c044d116237f41c988d8369d01de",
+      "entry_hash": "ec6734a4840b7bac44de7a2fc794ae544fb9e2c8fb6193118c07b1027c1d00b2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipNoldorWeaponSong",
+      "source": "Requires Level 5 \\n Noldor Warriors gain 50% Damage and +100% Armor \\n Duration: 30s \\n Recharge Time: 2m \\n Left click to activate",
+      "source_hash": "60434ac50bf7184a23b4ff970047196e3db053cdffb651a29f20c5f0ef4e591a",
+      "entry_hash": "e0d0cfd37f2c307416638d22933b014c9e239e2ac5b3631a81cfd38658fb51d7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDaleSlamArrow",
+      "source": "Requires Level 2 \\n Causes damage and knockback to enemy units \\n Can only use with bow equipped \\n Damage: 400 (Hero Ranged) \\n Splash Damage Radius: 20 \\n Target Range: 325 \\n Recharge Time: 45s \\n Left click icon then left click on target unit",
+      "source_hash": "b0bf91fa85bc6d45abd9df6624a69457809248991eb009f60a0af6b0eae46c0b",
+      "entry_hash": "445880eaf06322150da7e0554b5a66639f362d3c4cbacecf24b054a267877bc7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTrainArchers",
+      "source": "Requires Level 4 \\n Targeted archers gain moderate Experience \\n Experience Yield: 80 XP \\n Target Radius: 150 \\n Target Range: 200 \\n Recharge Time: 2m 30s \\n Left click icon then left click on target archers",
+      "source_hash": "8eace6fb517370fdc3c15fec04ffea44f21048e1b0588416de45f26aedbcaa72",
+      "entry_hash": "3619af89064b962f9f65fb6f45dabcdef6c55b55e07e370e20e5c4bf857ca541",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDaleBeastSlayerArrow",
+      "source": "Requires Level 7 \\n Causes bonus damage to flying enemies and severe damage to monsters \\n Damage: 1000 (Hero) \\n Target Range: 450 \\n Recharge Time: 2m 24s \\n Can only use with bow equipped \\n Left click icon then left click on target",
+      "source_hash": "796782dc944e637f49f9b6cb01620c159fae1c8b8aca62af4cdf2fd3a65f3660",
+      "entry_hash": "e94bdf03dcb843be6d524f7e50bd887653b07a462ba756687be62fa54b079e50",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDwarvenGloinSlam",
+      "source": "Powerful attack that causes meta impact to all units and mass damage to structures \\n Deals bonus damage to Heroes and Trolls \\n Damage: 500 (Crush) & 500 (Siege) \\n Splash Damage Radius: 50 \\n Target Range: 10 \\n Recharge Time: 1m \\n Left click icon then left click on target",
+      "source_hash": "0a0f0162d800ab74338f287d85d7a13091761378f16674b9658c4b83e410ead5",
+      "entry_hash": "37f084c4b5cebb01916f3215e461bb57637ca74f752ccbffc38102da1dfa02f7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDwarvenGloinShakeFoundation",
+      "source": "Requires Level 4\\nTarget enemy building takes heavy damage and is temporarily disabled \\n Automatically opens targeted gate \\n Damage: 2000 (Siege) \\n Duration: 20s \\n Target Range: 15 \\n Recharge Time: 3m \\n Left click icon then left click on target",
+      "source_hash": "64f9197029b06be3a5cae785fabaaba93effe107c68746807d343683f659b85d",
+      "entry_hash": "03ed474a92d04363c4bc6f382e31ca5f14c6d510d40045a412b2816bfc87a305",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGloinSmash",
+      "source": "Requires Level 10 \\n Causes a small earthquake around Gloin's location and knocks all units \\n Damage: 750 (Magic) \\n Radius: 210 \\n Recharge Time: 4m \\n Left click icon then left click on target",
+      "source_hash": "1c6e31167b3df55d2ffb01a1f0ca82b63fa4ee8fb05e13cae065080c6a942ef6",
+      "entry_hash": "b74b308e1e256bcdd58499ab825f574aa1519f9645775920e59818c7ed2a6357",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDainStubbornPride",
+      "source": "Requires Level 2 \\n Grants all nearby allies resistance to fear and terror \\n Radius: 200 \\n Passive ability",
+      "source_hash": "488de84f618580c135802f3c3c5f555eb56195dcfad8fc1782d30cfd1d245bd3",
+      "entry_hash": "fa8536f6ba8db78e0ce2ffdf444cefaebb9bfda54f123450b8fb8e0d27362e53",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMightyRage",
+      "source": "Requires Level 5 \\n Modifier Type: Spell and Active Debuff \\n Targeted friendly units gain +25% Damage and +25% Armor\\n Targeted enemy units suffer -20% Damage and -20% Armor \\nNullifies enemy Leadership \\n Stacks with Buffs, Leadership, and other Spells \\n Does not stack with other Debuffs \\n Radius: 150 \\n Duration: 30s \\n Target Range: 200 \\n Recharge Time: 3m \\n Left click icon then left click on target units",
+      "source_hash": "3d3e6ac1e31da30a65742e851bf04c181b2b3cf22b867551b3ecc40cec86cb34",
+      "entry_hash": "70f12eaf8d114c75d05c785f58be1a55c8b0e770951f5a33129d91a2f6bee91a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipAxeThrow",
+      "source": "Powerful ranged attack with radius damage \\n Highly effective against Heroes and Monsters \\n Damage: 800 (Hero) \\n Splash Damage Radius: 15 \\n Target Range: 275 \\n Recharge Time: 45s \\n Left click icon then left click on target",
+      "source_hash": "ce3f9771a1cba37eb0792fe353f83e14d53428cc68d5547fc28f4c914e458d83",
+      "entry_hash": "8b2942a4ce28404b38a73b1fed9fbae3fa6c1402aeeaaa44ff4e6740e718ec28",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLeap",
+      "source": "Requires Level 2 \\n Gimli jumps to a location causing area-effect damage \\n Damage: 200 (Hero) \\n Splash Damage Radius: 40 \\n Target Range: 200 \\n Recharge Time: 1m \\n Left click icon then left click on target area",
+      "source_hash": "3b725638897f86ff68481616e638da880fece98b1d62543175d35384dc8c3c6b",
+      "entry_hash": "77ef5baebbbed65f17616c42fe3db7622d015cdaab7a4ce16a4eba46ee4209c5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBlackArrows",
+      "source": "Requires Level 2 \\n Special ranged attack that deals triple damage \\n Causes enemy monsters to flee in terror \\n Can be fired from an extended range \\n Damage: 225 (Pierce) \\n Duration: 10s \\n Target Range: 480 \\n Recharge Time: 45s \\n Left click icon then left click on target",
+      "source_hash": "57deb9cd21f5088443660af0b54589362167a9cf556c1f717bc95c56665af91b",
+      "entry_hash": "bce106ce010f2ddf485076f0487d3a602fb5ffe11c1660bbc3d6472d85ef67eb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipZealotAxeThrow",
+      "source": "Requires Level 2 \\n Powerful ranged attack with radius damage \\n Damage: 200 (Hero) \\n Splash Damage Radius: 15 \\n Target Range: 350 \\n Recharge Time: 45s \\n Left click icon then left click on target",
+      "source_hash": "ff5743f8d41e7511bad96e10a7e39e955097d9dbec1c8178d65ad4f151d776c8",
+      "entry_hash": "f8360605a4526497f0330c0b577c47578ef02e011b5b03e0487caf7747889b86",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityOilBarrels",
+      "source": "Launches flaming oil barrels that explode on the battlefield \\n Damage: 100 (Siege) \\n Splash Damage Radius: 25 \\n Target Range: 150 \\n Recharge Time: 1m 20s \\n Left click icon then left click on target area",
+      "source_hash": "c0eae981a2a1171e37422fb72975f1aba4071a9f2f6185f054f3f3a74577a31c",
+      "entry_hash": "d0ab168d8fd3f3830b883ef9a1e39ab47434b7e18f9cbf06f8f35f872316e5b6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityCatapultOilBarrels",
+      "source": "Launches flaming oil barrels that explode on the battlefield \\n Damage: 150 (Siege) \\n Splash Damage Radius: 45 \\n Target Range: 500 \\n Recharge Time: 1m \\n Left click icon then left click on target area",
+      "source_hash": "d778a32a199b84df6f6e40995c66cdd455439d9ac10fd54aeab1a6a9b704ba28",
+      "entry_hash": "0a70c107f450f6df1bf320627f24a28a8dd075e1320d16164ac0c13db3289952",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMorgomirDreadVisage  ",
+      "source": "Requires Level 2 \\n Modifier Type: Passive Debuff \\n Nearby enemy units suffer -20% Damage and -20% Armor \\n Does not stack with other Debuffs \\n Radius: 200 \\n Passive ability",
+      "source_hash": "5e73d5f1df4e9cfbab2db56d02e2ab6fa632c26c153befb9c7d0828a84ea05b6",
+      "entry_hash": "ccc8d42f677aa54d0ae208a59acdf90f19ecde4af1164476b9c42c65717d7ad3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMorgomirMorgulBlade",
+      "source": "Requires Level 4 \\n Targeted enemy takes poison damage over time, and becomes a wight upon death \\n Temporarily cripples non-Monster unit \\n Target Monster suffers -33% Speed \\n Damage: 200 (Hero) & 10/s (Poison) \\n Duration: 10s \\n Target Range: 15 \\n Recharge Time: 1m \\n Left click icon then left click on target",
+      "source_hash": "db3f8f3843200e0ddc3c293fe71ae43e55a9ecfb9f9328c19d076edcdc717e58",
+      "entry_hash": "a2fc4e24c120f8453aa0215daf6e26e3a5cf5adb26fba19b34d93379f8e5efad",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDarkGlory",
+      "source": "Requires Level 5 \\n Modifier Type: Spell \\n Morgomir and nearby Dark Dunedain gain +25% Damage and +25% Armor \\n Stacks with Buffs, Leadership, and other Spells \\n Radius: 350 \\n Duration: 30s \\n Recharge Time: 3m \\n Left click icon to activate",
+      "source_hash": "47b31939c5be022033ed1853dff5a10d51918eaba49d2eae78ef9ab13aaaacc3",
+      "entry_hash": "bc310e00b189c5860d856923c9364152347119a5fcc972abd730566a9dcb36c3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMorgramirRuin",
+      "source": "Requires Level 8\\nTarget enemy building takes heavy damage and is temporarily disabled \\n Automatically opens targeted gate \\n Damage: 3000 (Siege) \\n Duration: 30s \\n Target Range: 75 \\n Recharge Time: 3m \\n Left click icon then left click on target",
+      "source_hash": "d0b66a22d2d20e9cf6757208f4a0f7f09641f76466c3761eb5d68bdac763745b",
+      "entry_hash": "df55719bc7e593bdce1db62120402822b1c0342dcdd10c33ee0e43a66e958f72",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityKarshFearlessLeadership",
+      "source": "Requires Level 4 \\n Grants all nearby allies resistance to Fear and Terror\\n Passive ability \\n Radius: 200",
+      "source_hash": "b736261e7dfe3ab38ba89fc0879fc86e3a6cdacc14b89bd986809c864a9ed4ff",
+      "entry_hash": "1acc7b300b8341452bd24341da153e58dd8169447b2a6ccc04cae4aa0e21da6e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Controlbar:TooltipSpecialAbilityKarshBlink",
+      "source": "Requires Level 5 \\nKarsh can teleport to a selected area \\n Damages enemies nearby the target location \\n Damage: 100 (Crush) \\n Splash Damage Radius: 55 \\n Target Range: Global \\n Recharge Time: 2m \\n Left click icon then left click on pathable location",
+      "source_hash": "bd99ac841a245d2465a6e82a461bbfae95490441272a373145f040e1e86e93b1",
+      "entry_hash": "77d2ee1fc0913e1a3fb149ba71d68c823cb736ee7bb3c426c7ca991c92358166",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBar:ToolTipRogashDominateTroll",
+      "source": "Take control of target enemy Trolls \\n Duration: Permanent \\n Target Range: 150 \\n Recharge Time: 3m \\n Left click icon then left click on target troll",
+      "source_hash": "cfc5146ebfa6a0f9a08c2527d53a00ea7ef91f1b679e5cb1ca7bd2fca596315d",
+      "entry_hash": "53469a6c3583e11225ecbd0927c2645fa3a0eaf9fb58a9781852a9a12f5de50f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "7dd58028f3291c694ea5c37593dd3e4213dbd090929060cfda6f8b59518e37c9"
+}

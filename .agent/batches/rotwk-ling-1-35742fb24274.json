@@ -1,0 +1,251 @@
+{
+  "schema_version": 3,
+  "batch_id": "35742fb2427443ba84ad0e02c06e84d4",
+  "worker": "rotwk-ling-1",
+  "created_at": "2026-08-06T07:51:04.969913+00:00",
+  "lease_expires_at": "2026-08-06T13:51:04.968636+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-ling-1-35742fb24274.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ElvenLorienArcherHorde",
+      "source": "\\nUnit Type: Basic Archer\\nStrong vs. Infantry \\n Can stealth near trees",
+      "source_hash": "0894d78a852e7a80255962df87e2a55f6cf26badb1f863b650b9146edae4f106",
+      "entry_hash": "79546d031635dc4d6c4b152249fe1766579ddff143b03142720a979e74dbe16c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_DwarvenAxeThrowerHorde",
+      "source": "Unit Type: Basic Archer\\nStrong vs. Pikemen and Archers\\n",
+      "source_hash": "14ce2682e4e6855e0bf6c5eefbc2fdcc5a5a8a3252c4c108d9efff96c893588c",
+      "entry_hash": "84e64ecba7ddfa345046422bda4588fb40ae0a5bf40d8631f572d50a5257e4b7",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_DwarvenAxeThrowerHorde",
+      "source": "\\nUnit Type: Basic Archer\\nStrong vs. Pikemen and Archers",
+      "source_hash": "008cb91fb3539fa227224d3408fcb270d6a2c8578c81ad11d722165317b2c12b",
+      "entry_hash": "bb89b3f2732213d1ea3456c0995d825525f49e16fae79a87e1464a123ee9581e",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_DwarvenMenOfDaleHorde",
+      "source": "Unit Type: Elite Archer\\nStrong vs. Infantry and Monsters\\n Can fire Black Arrows\\n",
+      "source_hash": "21a314f2bda13667756f0974827bfd05acdd42054f210db9db0b21b7b16d6f1f",
+      "entry_hash": "547897d18a4b5e4f018bc951e251258fbe01f86e6a31882253dbcb5743e5e890",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_DwarvenMenOfDaleHorde",
+      "source": "\\nUnit Type: Elite Archer\\nStrong vs. Infantry and Monsters \\n Can Fire Black Arrows",
+      "source_hash": "981bcc6d658b2171619c431abaddc1ca5182c0f414489537e6f4d2c9736836bb",
+      "entry_hash": "554b9ea71cd5d395a9aa24f7ca283717b18ac3781b65a163692ea4817c012d6d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_IsengardUrukCrossbowHorde",
+      "source": "Unit Type: Basic Archer\\nStrong vs. Infantry\\n",
+      "source_hash": "e347f6ba18dde8401af98631f5ee5d9c149f0ebd4bf3538bf015f83e42a601d9",
+      "entry_hash": "d949380ad131b09495fdd0dd1dedeeae6dc3f30ccf4ec5d875a33e3d6aa662a7",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_IsengardUrukCrossbowHorde",
+      "source": "\\nUnit Type: Basic Archer\\nStrong vs. Infantry",
+      "source_hash": "b768fb891e5628f9dbbc76df9d2227ba8a406c028e8d1f97c27a2697abe6c271",
+      "entry_hash": "d70c64b98bb374bd04fe354756bf9b5a08c81585e9dae0c85da9bdb9631293b4",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_IsengardWildmanAxeHorde",
+      "source": "Unit Type: Basic Archer\\nStrong vs. Pikemen and Archers\\n",
+      "source_hash": "d3ba8bf999de6cb5373462d025e1cd549278c9e3b70dabbc50b3b146e7220cac",
+      "entry_hash": "8d0a801f281474962e1b4e318e59c310d40c9cfb5992a25f34b254a66cee0a65",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_IsengardWildmanAxeHorde",
+      "source": "\\nUnit Type: Basic Archer\\nStrong vs. Pikemen and Archers",
+      "source_hash": "843b68aa5a2b00f215a6d42e296c1f37d1873dd82b98e8541e9eb674df4e704f",
+      "entry_hash": "577139a207a3d523a0b2b33c1e3e60f1b509ceeaf0e5ccf537db4b98f16c5cff",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_MordorArcherHorde",
+      "source": "Unit Type: Basic Archer\\nStrong vs. Infantry\\n",
+      "source_hash": "4cf5f579f0ccf93e422df3350e3ee7a2cae290a269a59f22ad79a79e24aef189",
+      "entry_hash": "f5f254887450443fa3fe0ecba98fd0d6397c90c76d7e2f2bcf189af523fe3a06",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_MordorArcherHorde",
+      "source": "\\nUnit Type: Basic Archer\\nStrong vs. Infantry",
+      "source_hash": "3b187cfc06d5d2a18bfbf1c858a3b2c6d9082285d39fb48feb789e28e74501af",
+      "entry_hash": "6482ac3e77d8683a9243e4596389028ef297d83d46c4bc6ba993e7104311f410",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_MordorHaradrimArcherHorde",
+      "source": "Unit Type: Elite Archer\\nStrong vs. Infantry and Monsters \\n Can fire Barbed Arrows\\n",
+      "source_hash": "b1f896d362653419267994873270e86b48babfd6f929ba385975fb616a1db2d0",
+      "entry_hash": "49dfcf3b0ebd1d10c45c4cb401e28591ba51a89baa3fd6f9894c6b534908782e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_MordorHaradrimArcherHorde",
+      "source": "\\nUnit Type: Elite Archer\\nStrong vs. Infantry and Monsters \\n Can fire Barbed Arrows",
+      "source_hash": "c07fa5226114db549a45d046d1d2cf07e6e81bc7759376e4d1778444cd14fdbd",
+      "entry_hash": "3d3472d97961a5e45556c6824dbd1a05fa5b5d791bf47004991002d91ae4afc6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:Knife",
+      "source": "&Knife",
+      "source_hash": "3075d92c5f9fb8764638bb9ffe5c8e90866e75f85c6135712a9263de261e81be",
+      "entry_hash": "3541ad692705c0972eecbc456ba613d9cc71b090f33e7cdf8d4a117fdb8a9036",
+      "protected_tokens": [
+        "&K"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_DwarfCharge_L1",
+      "source": "Hero can crush enemies for a short duration \\n Gains +100% Armor and +50% Damage",
+      "source_hash": "6734480d70544a0400f65c7148b5b1c80ba24635c534fbbeef187df6880a68d9",
+      "entry_hash": "5ebd77f2baf1ae738ff2679b0c348f5d00813ac9abe4db7425334c5cd1b07e2e",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_DwarfCharge_L2",
+      "source": "Hero can crush enemies for a medium duration \\n Gains +100% Armor and +100% Damage",
+      "source_hash": "ccc1b2feec3d336d594a4366bdc01d29224ed0c5dd72aef3bd853f69108b0467",
+      "entry_hash": "090e99e59feca5c8619d3b438870437789cfb8ec96952b68923f7902a8d7baaf",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_DwarfCharge_L3",
+      "source": "Hero can crush enemies and is immune to arrows for a long duration \\n Gains +100% Armor and +100% Damage",
+      "source_hash": "db10a7fbd95711df6e0da3b2b04f047772f2a5bf5c6b61829683f578c3250c9e",
+      "entry_hash": "6e66cce3b17d02eac864e0a9f4694ef5ae02a5ee07a2ea7e82721734932f1d04",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:HordeRohanElves",
+      "source": "Galadhrim Warriors",
+      "source_hash": "a2344db6876add06df1cde35767a31d06708289640c04803e764c7185727c29d",
+      "entry_hash": "cb0a0c69634759efd4e237e370eaf4e2096ef8e4718ffccc200a8b0ee9958216",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:RohanElvenWarrior",
+      "source": "Galadhrim Warrior",
+      "source_hash": "79ccf4c0c00f5b3ce2b953ddb71c384862a18482710dbcbde76a76742ec6a1fc",
+      "entry_hash": "c967fe8960492408a1cb29a766e760676a12079552f64787137bfb3af32470ec",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ConstructRohanElvenWarriorHorde",
+      "source": "Galadhrim &Warriors",
+      "source_hash": "ae13c7b7347e8117f955218da8f5c1ee714add35765b21bcfb46780b1ffa55fa",
+      "entry_hash": "8945b3b1c928e1d1dcae2224820624189365e45b9cb3bb7053fa5e3aaa8f9d31",
+      "protected_tokens": [
+        "&W"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipExtinguishTorch",
+      "source": "Extinguish the torch that detonates explosive mines when lit\\n No modifier \\n Left click to activate",
+      "source_hash": "aae7ef656d0168234d627908b407e13d6eb588bed3b07a55196d523fadc04bc7",
+      "entry_hash": "d504cb9eabef9bb452987aab4f09486cfe7b29c23b102df15048a7a67675c533",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:MordorHaradrimSpearman",
+      "source": "Haradrim Spearman",
+      "source_hash": "c56917ee086f1835799b66e23cdea237346e2633d9ad586a60af764ad5343fad",
+      "entry_hash": "376d5e21822caf983074e4cfac32eb8114b7aa2fb7ed2311c22830147575534b",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:HordeHaradrimSpearmen",
+      "source": "Haradrim Spearmen",
+      "source_hash": "10ff2b3187d70ffc0aaf32fbc4bb05fd3524006eab70af8350ad4e25ea08e55d",
+      "entry_hash": "daa4e1a08c59f43cc443cc968cdd910fbe07c6a51375eca439ba1a6b3a73a39b",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ConstructMordorHaradrimLancerHorde",
+      "source": "Haradrim &Spearmen",
+      "source_hash": "3e7abe6c0150734fa9d19d033ca6abf7fc683645d2c5d92f50b1cb78a7f60bd6",
+      "entry_hash": "1a4e69ad1926a49926e292c41ce87129c12d94aabd96d323d8e110d725e88a36",
+      "protected_tokens": [
+        "&S"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_MordorHaradrimLancerHorde",
+      "source": "Haradrim Spearman Horde",
+      "source_hash": "75931a7ce8badd92258dfd4c9909b95c307a6c76afe155b47bff35242243292b",
+      "entry_hash": "f86dbac3323731e412c7e6382c19f81212e9ab58a0cf61ad14c240367b0eebd3",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "c39739159d5d043dce7d560bce2bd31e3ac9da89ca7c03e95fa12c647df93fe4"
+}

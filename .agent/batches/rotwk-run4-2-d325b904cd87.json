@@ -1,0 +1,269 @@
+{
+  "schema_version": 3,
+  "batch_id": "d325b904cd8748afbdad5b965dfc8f03",
+  "worker": "rotwk-run4-2",
+  "created_at": "2026-08-05T20:05:51.174702+00:00",
+  "lease_expires_at": "2026-08-06T02:05:51.173465+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run4-2-d325b904cd87.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardCrossbowmen",
+      "source": "Strong vs. Swordsmen, Pikemen, and Monsters \\n Can be upgraded for improved attack range \\n \\n Unit Type: Basic Archer \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "796549a646d61f526423facfb2946e4f73af1efc487319a28f232639c2bdada9",
+      "entry_hash": "adcc75eaf33bd2f2f1b1d26d1fd48e4f4e978a831ad47df8cbe6d0c90a026c6b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:HTMarauders",
+      "source": "Damage Type: Specialist \\n Health: 600 \\n Melee Damage: 100 (Specialist) \\n Upgraded Melee Damage: 200 (Specialist) \\n Crush Revenge Damage: 500 \\n Upgraded Crush Revenge Damage: 750 \\n Melee Attack Speed: 1.5s \\n Movement Speed: 50 \\n Vision Range: 300",
+      "source_hash": "dad4f1eb5735213cdc9e1b4d6bed69b383ae7cdfe4b3efa517200ae91467a123",
+      "entry_hash": "8458afeca9861b1dedbb2d8102c49de8632172f4b101d096715cb49472f445a2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardWargPack",
+      "source": "Strong vs. Swordsmen \\n \\n Unit Type: Basic Cavalry \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "5189c780ac3dc597a2f9ca17c4a38847b2f229ddf4c34bddaf15bc2b0aa56a1e",
+      "entry_hash": "e737f3257167d013f40719a5327098f792f893ebe5f4224ddf914696d31c9874",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSummonWights",
+      "source": "Summons several Barrow Wights under your control \\n Barrow Wights can charge at enemies and heal with each attack \\n Duration: 1m \\n Recharge Time: 6m \\n Left click icon then left click on pathable location",
+      "source_hash": "24d1b70c937af66f244a3fa41464a4b90a46cbf86bbfcd86d4d934616c5585cc",
+      "entry_hash": "9220c27a2f2601532ea8035ff5cec1f6a6f32e31558f5767b6789da0b1358a2f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityMouthOfSauronEvilEye",
+      "source": "Requires Level 7 \\n A powerful ray of light that damages targeted units \\n Damage: 2500 (Magic) \\n Splash Damage Radius: 20 \\n Target Range: 200 \\n Recharge Time: 2m 30s \\n Left click icon then left click on target",
+      "source_hash": "2e42854e8253d37be9ec5b9d3fb10d6e1d60ffd73c0ed5062bf863c2f1ad99f1",
+      "entry_hash": "7ab57d8932566828b87d508b0a30537ad8bab5bb63ac9bb55ad897ef8646ddee",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipDDDeathMask",
+      "source": "Upgrades this horde with Death Masks \\n Modifier Type: Passive Debuff \\n When equipped, enemy units briefly suffer -20% Damage and -20% Armor when attacked directly \\n Does not stack with other Debuffs \\n \\n Upgrade Time: 10s",
+      "source_hash": "86eed4c7735177115c9dab12d5010ce41e45f52ff6f0a3e3d4e85af4fdfb39eb",
+      "entry_hash": "0ee17772e4dffa343cbc22d32eec8e3d665ca9a15683f156491c74d2aa4239a2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipDDDeathMaskPurchased",
+      "source": "Upgrades this horde with Death Masks \\n Modifier Type: Passive Debuff \\n When equipped, enemy units briefly suffer -20% Damage and -20% Armor when attacked directly \\n Does not stack with other Debuffs \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "37762f7d51b6e9a215d55b698211baad736b1d122f912099ec4d1448d31c8bd1",
+      "entry_hash": "48da0fb940b0bb1688f3a70577905f5f8b36beb72e1c73c9106bb8db2890b2c3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPUdunII",
+      "source": "Udun II",
+      "source_hash": "7d82530ac92f6b61f3ef0149b137a0ba5b5ac884cf0d84294d604c684bb6b6c4",
+      "entry_hash": "b847655fefcb5f44c2075120426e77ea656a13ff1a496d8873ebc99604d0e9f2",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPUdunII/Desc",
+      "source": "The lands behind the Black Gate known as Udun take the name of the underworld due to the volcanic ash and noxious fumes that cover them.\\n\\n Size: 430 x 430\\n Lairs: 2x Warg Lair \\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "11e8f64ab7fda5c6fdf3d01e81f4dce130bbcd78d27fe22b283e27d75b170fcc",
+      "entry_hash": "a316b324059ac434b4d6fb5d02d33f42c72faabf3a2c24cc376675a2fe523d50",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPGlanduinCanyon",
+      "source": "Glanduin Canyon",
+      "source_hash": "e17b067609ff984ffea959f499e81c319c8119945577cac0c1bca2b70598808b",
+      "entry_hash": "c5d48952bcdd03c92f89a2a40816f32c5d9bc8cd81d81758f853d5726d97fe7d",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPGlanduinCanyon/Desc",
+      "source": "The Glanduin was a river in the region of Eriador in Middle-earth and an eastern arm of the Gwathlo. \\n\\n Size: 380 x 368 \\n Lairs: 2x Troll Lair, 4x Warg Lair, 2x Wildmen Encampment \\n Neutral Structures: 2x Inn",
+      "source_hash": "154bb0d6b3a7e151d2b846d3e5889924052f0fd562de43585e14b29f1ba007fb",
+      "entry_hash": "d8f911e7a87f6bc312848f0327209b4c5ef5e8c906734b17a9bd64ef6b16a730",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGoblinCaveTrollLair",
+      "source": "Strong vs. Swordsmen and Structures \\n \\n Unit Type: Basic Monster \\n Recruit Time: 35s \\n Level: 2: +10% Health, +10% Damage, 40/s Health Regeneration \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "d04f416ddd4e5518662aea03078058f369611a17c615379b4f445f7e498b5fcc",
+      "entry_hash": "b1894a1ed582261472c6cf2cf8a9b8d465ad99a2565208507cd66ba248af709d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLurtzPillage",
+      "source": "Requires Level 8 \\n Lurtz and nearby allies loot enemy kills for resources \\n Bounty Percentage: 70% \\n Radius 200 \\n Passive ability",
+      "source_hash": "93ae7fc6e18d36e7b3ba887b20133e667a320f25b380b415ea273cb885a37fce",
+      "entry_hash": "373373c274838a42a97feaee9135c2de234a77fe6c4e8f70c253067689cf8e32",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipOutlawLeadership",
+      "source": "Requires Level 4 \\n Nearby allies earn resources per kill \\n Bounty Percentage: 70% \\n Radius 200 \\n Passive ability",
+      "source_hash": "ef1f435257f7c4e243cedf422a5ef04bca9e95a22fd25133d7a3b49cb7f85a8c",
+      "entry_hash": "0c93caf4759d66e90bd71cc0b7c5b7d19c989515647f727dca7f4f2b40758933",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHwaldarBrigandage",
+      "source": "Requires Level 3\\nNearby Rhudaur Spearmen, Axe Throwers, and Hillmen Rebels gain resources for kills \\n Bounty Percentage: 70% \\n Radius 200 \\n Passive ability",
+      "source_hash": "0078ced1b1358ba28da6a607bfeb917a742617046dba576a06d1adce6ae62efd",
+      "entry_hash": "1806f58bfaab294ee79b6a8c14a5b0cdfda01ef2269b0765d6c866dc43317cd1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipAzogBrigandage",
+      "source": "Requires Level 6 \\n Azog and nearby Goblins, Half-Trolls, Spiderlings, and Spider Riders loot enemy kills for resources \\n Bounty Percentage: 100% \\n Radius 200 \\n Passive ability",
+      "source_hash": "80500fd3d17294887483f2bebfd28c1a2f737f79399469940d4f418ed5ef5b64",
+      "entry_hash": "4526cb973fac418a8770384b2782109e9fd5ac3c6d3dbe029782bc9c26465251",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Battlewagon",
+      "source": "Damage Type: Cavalry \\n Crush Damage: 180 (Crush) \\n Melee Attack Speed: 1.5s \\n Movement Speed: 85 \\n Vision Range: 400 \\n\\n Axe Thrower Damage: 108 (Slash) \\n Men of Dale Damage: 263 (Pierce) \\n Phalanx Damage: 50 (Specialist) \\n Hearth Heal Amount: 20 /2s \\n Hearth Heal Radius: 150 \\n Banner Carriers Leadership Radius: 200",
+      "source_hash": "c1ec3c2417fb62756f1927fc335f18eaac3ed16532f44cb6f28dcb5289503495",
+      "entry_hash": "3a093ca3936d7f5ebf68729427d7c7354cc42d2bda584102f95a9dd78d217d93",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_EntAshMelee",
+      "source": "Guardian Ent",
+      "source_hash": "7210265c2a40c54175fdbce6697d792e107c63efdc33066c6dab345ab126616c",
+      "entry_hash": "f9a74f3518f62b2da99406f1351fec8f783c3f6354f3c3a90766cbc620ad032e",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_EntAshMelee",
+      "source": "Unit Type: Basic Cavalry\\nStrong vs. Swordsmen and Cavalry\\n",
+      "source_hash": "7a0f51069c2bb8bfa957a83ffac21f1f5fd5b3f26a4237b2175d1d1b557ae671",
+      "entry_hash": "6ad503033a2895e56284d822b18d0d5b7858b25cb8c9338705f57c3dda8c510d",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildTreebeard",
+      "source": "Requires Level 3 Ent Moot \\n Recruit the leader of the Ents \\n Strong vs. Structures, Swordsmen, and Archers \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 1m \\n 50/s Health Regeneration \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "959cac1a17f9c08e2d52f58df22981f6fddb0d471dd7f669ad14c2306576fdd2",
+      "entry_hash": "d4f2d8dc0ec72c9e93f9fac5b41940adcb82c178d9e85435a0b8bb60bde94dd2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "25e75e4aee12a95da0b7aa35fbdd1128d3c851843d73fef8b20b565e7e0147ae"
+}

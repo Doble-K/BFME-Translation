@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "85d79d564e004f6d86923b3e78a38ca1",
+  "worker": "rotwk-run2-1",
+  "translations": [
+    {
+      "id": "TOOLTIP:VigilantEntExpansion",
+      "translation": "Tipo de daño: Asedio \\n Velocidad de ataque a distancia: 4.55s \\n Radio de daño de área de roca: 50 \\n Velocidad de movimiento: 0 \\n Alcance de lanzamiento de roca: 625 \\n Alcance de visión: 650"
+    },
+    {
+      "id": "CONTROLBAR:ConstructEntAshMelee",
+      "translation": "Ent Guardián [&G]"
+    },
+    {
+      "id": "OBJECT:RohanEntAshMelee",
+      "translation": "Ent Guardián de Fresno"
+    },
+    {
+      "id": "CONTROLBAR:ToggleBlackRiderLineFormation",
+      "translation": "Formación en línea [&m]"
+    },
+    {
+      "id": "CONTROLBAR:ConstructEnt",
+      "translation": "Ent de Asedio [&n]"
+    },
+    {
+      "id": "OBJECT:RohanEntBirch",
+      "translation": "Ent de Asedio de Abedul"
+    },
+    {
+      "id": "OBJECT:RohanEntFir",
+      "translation": "Ent de Asedio de Abeto"
+    },
+    {
+      "id": "OBJECT:RohanEntAsh",
+      "translation": "Ent de Asedio de Fresno"
+    },
+    {
+      "id": "OBJECT:RohanEntOak",
+      "translation": "Ent de Asedio de Roble"
+    },
+    {
+      "id": "TOOLTIP:GoblinCaveTroll",
+      "translation": "Tipo de daño: Asedio \\n Daño de aplastamiento: 30 (Aplastamiento) \\n Radio de daño de área a distancia: 15 \\n Radio de daño de área cuerpo a cuerpo: 60 \\n Radio de daño de área contra árbol: 50 \\n Velocidad de ataque a distancia: 2.67s \\n Velocidad de ataque cuerpo a cuerpo: 1.5s \\n Velocidad de ataque contra estructuras: 2s \\n Velocidad de ataque contra árbol: 2.2s \\n Velocidad de movimiento: 60 \\n Alcance de lanzamiento de roca: 250 \\n Alcance de visión: 400"
+    },
+    {
+      "id": "TOOLTIP:MordorMountainTroll",
+      "translation": "Tipo de daño: Asedio \\n Daño de aplastamiento: 30 (Aplastamiento) \\n Radio de daño de área a distancia: 15 \\n Radio de daño de área cuerpo a cuerpo: 60 \\n Radio de daño de área contra árbol: 50 \\n Velocidad de ataque a distancia: 2.67s \\n Velocidad de ataque cuerpo a cuerpo: 1.5s \\n Velocidad de ataque contra estructuras: 2s \\n Velocidad de ataque contra árbol: 2.2s \\n Velocidad de movimiento: 60 \\n Alcance de lanzamiento de roca: 500 \\n Alcance de visión: 400"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTaint",
+      "translation": "Contamina una zona del terreno \\n Tipo de modificación: Potenciador \\n Todas las unidades aliadas ganan +33% de Daño y +33% de Armadura \\n Se acumula con Liderazgo y Hechizos \\n Solo puede superponerse parcialmente con otros hechizos de Tierra Contaminada o Madera Élfica \\n Radio: 250 \\n Duración: 5m \\n Tiempo de recarga: 6m \\n Clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTaintIsengard  ",
+      "translation": "Contamina una zona del terreno \\n Tipo de modificación: Potenciador \\n Todas las unidades aliadas ganan +33% de Daño y +33% de Armadura, y obtienen recursos por cada muerte \\n Se acumula con Liderazgo y Hechizos \\n Solo puede superponerse parcialmente con otros hechizos de Tierra Contaminada o Madera Élfica \\n Radio: 250 \\n Porcentaje de recompensa: 100% \\n Duración: 5m \\n Tiempo de recarga: 4m \\n Clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipElvenWood",
+      "translation": "Crea un terreno exuberante \\n Tipo de modificación: Potenciador \\n Todas las unidades aliadas ganan +33% de Daño y +33% de Armadura y se vuelven inmunes al Miedo y al Terror \\n Se acumula con Liderazgo y Hechizos \\n Solo puede superponerse parcialmente con otros hechizos de Madera Élfica o Tierra Contaminada \\n Radio: 250 \\n Duración: 5m \\n Tiempo de recarga: 4m \\n Clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityFireWhip",
+      "translation": "Ataca con un látigo de fuego para infligir daño severo a unidades y estructuras \\n Daño: 3024 (Fuego) y 3024 (Magia) \\n Radio objetivo: 210 \\n Alcance objetivo: 40 \\n Tiempo de recarga: 15s \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "Map:MAPMPGreenham",
+      "translation": "Greenham"
+    },
+    {
+      "id": "Map:MAPMPGreenham/Desc",
+      "translation": "Greenham era una ciudad de Gondor y la capital de la provincia de Lamedon. Estaba situada dentro de un campo cercado sobre una pequeña colina y se extendía a lo largo del río Ciril \\n \\n Tamaño: 326x372 \\n Guaridas: 2x Guarida de Troll, 2x Guarida de Araña, 2x Guarida de Huargo \\n Estructuras neutrales: 2x Posada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipEntAllies",
+      "translation": "Invoca 3 Ents Guardianes y un Ent de Asedio al campo de batalla \\n Resistentes a las flechas y efectivos contra estructuras \\n Duración: 1m 15s \\n Tiempo de recarga: 9m \\n Clic izquierdo en el icono y luego clic izquierdo en una ubicación transitable"
+    },
+    {
+      "id": "OBJECT:ElvenBattleTowerDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 75 (Estructural) y 20 (Magia) \\n Alcance del arco: 250 \\n Alcance de visión: 650 \\n Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHourOfTheWitchKing",
+      "translation": "Requiere nivel 8 \\n Los temporizadores de habilidades especiales de los enemigos objetivo se reinician como recién usados \\n Las unidades cerca del Rey Brujo sufren miedo incontrolable \\n Radio objetivo: 250 \\n Radio de miedo: 350 \\n Duración: 7s \\n Alcance objetivo: 300 \\n Tiempo de recarga: 3m \\n Clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    }
+  ]
+}

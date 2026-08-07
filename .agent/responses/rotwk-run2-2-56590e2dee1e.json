@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "56590e2dee1e442880c9bb2762046d2b",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CustomGenericTimer:14",
+      "translation": "La oleada 14 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:15",
+      "translation": "La oleada 15 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:16",
+      "translation": "La oleada 16 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:17",
+      "translation": "La oleada 17 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:18",
+      "translation": "La oleada 18 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:19",
+      "translation": "La oleada 19 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:20",
+      "translation": "La oleada 20 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:21",
+      "translation": "La oleada final comienza en:"
+    },
+    {
+      "id": "CustomGeneric:Wave",
+      "translation": "Oleada:"
+    },
+    {
+      "id": "CustomGeneric:GameStart",
+      "translation": "La partida comienza en:"
+    },
+    {
+      "id": "CustomGeneric:Hardcoremode",
+      "translation": "Modo Hardcore activado"
+    },
+    {
+      "id": "BW:NotificationTier_2",
+      "translation": "¡Oleada de Nivel 2 entrante! \\n ¡Buena suerte!"
+    },
+    {
+      "id": "BW:NotificationTier_3",
+      "translation": "¡Oleada de Nivel 3 entrante! \\n ¡Buena suerte!"
+    },
+    {
+      "id": "BW:NotificationTier_4",
+      "translation": "¡Oleada de Nivel 4 entrante! \\n ¡Gran trabajo! \\n ¡Buena suerte!"
+    },
+    {
+      "id": "BW:NotificationTier_5",
+      "translation": "¡Oleada de Nivel 5 entrante! \\n ¡Los enemigos no se detendrán hasta que estés muerto! \\n ¡Buena suerte!"
+    },
+    {
+      "id": "CustomGenericScore:P1",
+      "translation": "Puntuación del Jugador 1: "
+    },
+    {
+      "id": "CustomGenericScore:P2",
+      "translation": "Puntuación del Jugador 2: "
+    },
+    {
+      "id": "CustomGenericScore:P3",
+      "translation": "Puntuación del Jugador 3: "
+    },
+    {
+      "id": "CustomGenericScore:P4",
+      "translation": "Puntuación del Jugador 4: "
+    },
+    {
+      "id": "BW:TimerScreen",
+      "translation": "Oleada 1: "
+    }
+  ]
+}

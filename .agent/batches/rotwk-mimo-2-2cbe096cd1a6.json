@@ -1,0 +1,273 @@
+{
+  "schema_version": 3,
+  "batch_id": "2cbe096cd1a649e497911f4cff18b59d",
+  "worker": "rotwk-mimo-2",
+  "created_at": "2026-08-06T06:29:22.741585+00:00",
+  "lease_expires_at": "2026-08-06T12:29:22.740099+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-2-2cbe096cd1a6.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildWildSpiderlingHorde",
+      "source": "Strong vs. Swordsmen and Cavalry \\n Can stealth near trees \\n \\n Unit Type: Basic Cavalry \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "42bc95c7c6903d4f7e9e00f829a7a439d376f09cf5929a93d43964a4bbafc34c",
+      "entry_hash": "ec2a131fef40260ee7322af05a01d48212368c8e21aaf6a87bc70f107062975a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologySpiderVenomSacks",
+      "source": "Allows hordes to purchase the Venom Sacs upgrade \\n When equipped, slightly increases damage done by melee attacks \\n Allows poison to be inflicted on enemies causing additional damage over time \\n \\n Research Time: Instant",
+      "source_hash": "e37fdda416012d6f0f87bcccb26b9e877cdc1c996395d9c0d6d0323d2fce3a1d",
+      "entry_hash": "17b2f6a483b8334f7124d8fb7574c2aa3ff23ffb5dea17e17228770873bcbc70",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildWildSpiderRiderHorde",
+      "source": "Requires Level 2 Spider Pit \\n Can switch between Bow and Spear \\n Strong vs. Swordsmen and Archers \\n \\n Unit Type: Elite Cavalry \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "c0d8376e6b1621bdcf81e75690499465688db30f277e310be0bf80fa943be4d3",
+      "entry_hash": "c332d7e030a7a0d9425cf98c496cced6ff0a4cf284d9df1f36bffa9cdeb3da22",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildWildSpiderPitLevel2Upgrade",
+      "source": "Allows training of Goblin Spider Riders\\n+10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "14a9b918ce0c6b37c6d6f5bc644bcff99737d862165d907fa7885be7e3b0f721",
+      "entry_hash": "d7070a9beecbb61b7845496aefb3c013c2ac70eaeda19dc47857c25bbbdeee73",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyWildBasicTraining",
+      "source": "Allows hordes to purchase the Banner Carrier upgrade \\n Increases a horde to Level 2 \\n \\n Research Time: 30s",
+      "source_hash": "9b260e1a314b91b051b6547b3a093304015f7d8f8f762d9335501cf16c68966c",
+      "entry_hash": "8446d56efe89e13dde53eef406bfd400e81f6c34ddf8af2b0bf902f8d40c4901",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyWildFireArrows",
+      "source": "Allows hordes to purchase the Fire Arrows upgrade \\n When equipped, significantly increases the damage done by Arrows \\n \\n Research Time: 30s",
+      "source_hash": "7f045f6b138cf19e3cf49cc91322764ad29b519d16359573dbb9c41c153f0288",
+      "entry_hash": "3a8db9e6e9a2b265bbf0db856367bb77328da984d13980c913a94bbeb315672e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyWildForgedBlades",
+      "source": "Allows hordes to purchase the Forged Blades upgrade \\n Increases the damage done by Melee Weapons \\n \\n Research Time: 30s",
+      "source_hash": "91659db7094b4ec5fdbce1d84d86a285e4a6f1583a5d2304b015dedf058dc94b",
+      "entry_hash": "8a7043da567ebdd4be04c371938c768ad6617ed0c9c8cae1552b7b1657235c59",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseechnologyWildHeavyArmor",
+      "source": "Allows hordes to purchase Scavenged Armor \\n Significantly reduces the amount of damage taken \\n \\n Research Time: 30s",
+      "source_hash": "60640ddf1ad82d4eb6ee8af32e46b62c5dbbcdb478ba768535149343391d4b1a",
+      "entry_hash": "00271f113adb7150c2cffc36fe0c423cac6b7030816fb2a1928b23e932cc6a66",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:HordeMordorSoldiersOfRhun",
+      "source": "Easterlings",
+      "source_hash": "d65d4d5cad5f752f0b9e61b94e6698fabe824dc431e5681036ea292e0508e6e9",
+      "entry_hash": "df24c940f379ab6eeaa835d5d82907423be9e0f103930f3c02ccefbb86f3f777",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MapMPEnedwaithII",
+      "source": "West Enedwaith",
+      "source_hash": "b1b291941e817ae4f4a989fab1591cf77b4af35d39fbf9f425034806ae6ffb08",
+      "entry_hash": "95cdf6ea1b2226bac99cdeb7dbc8e4b6d3027ead544ce9db277e62768fe78878",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MapMPEnedwaithII/Desc",
+      "source": "A region of Middle-earth located between Arnor and Gondor, which was home to men known as the Haladin. \\n\\n Size: 500 x 500\\n Lairs: 7x Troll Lair, 4x Goblin Lair\\n Neutral Structures: 4x Outpost, 4x Signal Fire",
+      "source_hash": "7210e9743ef67b9fec9acf3cb4607df4d8be70bd61442433653df4d44f095096",
+      "entry_hash": "4e2bd18be277d9eea873fe842ca49d4d29ac7fcc39cd35e9e6ea33afe0a199fd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPMorthondValley",
+      "source": "Morthond Valley",
+      "source_hash": "e30a9eeb4f9646d9af49cf700f1dc65be7e83a893e66af6f9b167a0c05088944",
+      "entry_hash": "2c72b2da0ab62ccf44d1b1a6f1d79521a68b0277a76ae51c3e84e14b4bff9928",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPMorthondValley/Desc",
+      "source": "The Morthond was one of the seven rivers of Gondor. Aragorn, Gimli, Legolas, and the Army of the Dead exited from the Paths of the Dead alongside it\\n\\n Size: 320 x 380\\n Lairs: 2x Spider Lair, 2x Troll Lair\\n Neutral structures: 2x Inn",
+      "source_hash": "6129890fe0a03679254e916327eeb4c78be1b1cdd79282697d0fa3f47711e9d3",
+      "entry_hash": "034fc3c192e988bef509a81c2d63a851112c4137ff0b295c79f7ca817cdab5c2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPRhunShore",
+      "source": "Rhun Shore",
+      "source_hash": "4bdf4be06ce8eed883b3a9293a394db1b785783a068c8d79a990c1d0a5a7d9fc",
+      "entry_hash": "2a8264e378207c069aeb9be156ac8f22ef470a92f3de229b409796ccd3a36d00",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPRhunShore/Desc",
+      "source": "Sea of Rhun is a large inland sea located in the arid domain of Esterling. After the downfall of Sauron, Aragorn and Eomer rode there to flush out the last remnants of the enemy forces.\\n\\n Size: 380 x 350\\n Lairs: 4x Warg Lair, 2x Troll Lair\\n Neutral Structures: 1x Outpost, 1x Inn",
+      "source_hash": "7d5f3276f7a387533aea81d5c30de575bc16802475db77302c79ef5d5b923d1b",
+      "entry_hash": "176a2790a054824b754ec469e7e695d97e4795ce6f03ac0f4fb2c52e73282443",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPDwarrowdelf",
+      "source": "Dwarrowdelf",
+      "source_hash": "56a770aaf91a9a65215576c7e82cf90c87ad9ce60c0755835f6b3eacd33cbdf4",
+      "entry_hash": "9823f898ed98cbe4a5868053830f1769c4a3d6aedfef801173e26c3d117a558a",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPDwarrowdelf/Desc",
+      "source": "Khazad-dum, also known as Hadhodrond, Casarrondo and Phurunargian, which translates to Dwarrowdelf, latterly known as Moria.\\n\\n Size: 600 x 500\\n Lairs: 8x Goblin Lair, 4x Troll Lair\\n Neutral Structures: 4x Outpost, 4x Inn, 2x Signal Fire",
+      "source_hash": "43c3641ad35c6153cad131aafc6bbfc64234624a025e95fd38f122464097812c",
+      "entry_hash": "773df61e3f785127b09d70dee7d8d940f7b5424bfe2bcb3c2b426ffb82d7511a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "MAP:MapMPKhamulTomb",
+      "source": "Harnen Valley",
+      "source_hash": "853b56f32bd08e18aac113dbe173f48e8b10284f587e3632cc703bd162b10a26",
+      "entry_hash": "f5caa5af4679cb242c9955763dbc1e30e1fd4d5616d15e84d88cf9024a590c78",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MapMPKhamulTomb/Desc",
+      "source": "The Harnen formed the south-eastern border of the contested land of Harondor, also known as south Gondor, and as such formed the southern border of Dunedain influence. \\n\\n Size: 600 x 600\\n Lairs: 1x Troll Lair, 2x Goblin Lair, 4x Warg Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "0fefecfd596a5ff9c0549b6a71dc09075fe1b6086e6db9e3d779e753c47dfc26",
+      "entry_hash": "22c59ef007679d6c241c583b7f0c23950d9cb689a4570cb748ba0c1432659588",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPLebennin",
+      "source": "Lebennin",
+      "source_hash": "ebb6caa6fb517c0de6b36147451932dcc5b4bf429643c9dba0703627a21d9209",
+      "entry_hash": "6a86d23051fc3f954f1b7d6f5840f1ca77b76f18dd258bfbbc6e62bd57428b85",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPLebennin/Desc",
+      "source": "This lush, green land in southern Gondor lies where the Anduin River completes its journey into the Bay of Belfalas.\\n\\n Size: 425 x 500\\n Lairs: 2x Troll Lair, 6x Warg Lair, 4x Goblin Lair \\n Neutral Structures: 3x Signal Fire",
+      "source_hash": "f61fd708373ed0698ab3790fb94015df7921af5db2bcdfbce6561e8d8f82b6bf",
+      "entry_hash": "1b23878f3498e96a51564b40e9c6849ebfe01000c2f58e07735ea83276636311",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPWestRohan",
+      "source": "West Rohan",
+      "source_hash": "a90f9d4416eb16c5a32278ef9d652f8604be2efac1106626be8c5fe823f1d56f",
+      "entry_hash": "d63df809eab5f1d52be93dc4ecad40a4af13a678f5a52f479b22f65d565985d9",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPWestRohan/Desc",
+      "source": "A region found within the land of Rohan. Also referred to as Westemnet, the region extends along the mountains to Helm's Deep and to the Gap of Rohan. \\n\\n Size: 600 x 600 \\n Lairs: 5x Warg Lair, 2x Troll Lair \\n Neutral Structures: 1x Outpost, 2x Inn, 2x Signal Fire",
+      "source_hash": "6bd4109fc39d6d751a2c9b324af3e4d832caa5c66795ceecc088693b1ec48c6a",
+      "entry_hash": "138f9d154048933859b8a8af50b30480f915445e7ea2bcb4e5650c3c0827bdf5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPBelfalasAbyss",
+      "source": "Belfalas Abyss",
+      "source_hash": "ea75e54e7d7a7ba050060594dc1c63d0136ae0ed35909e817b875e268c496ece",
+      "entry_hash": "7208a126f4e6ef9777d46099e818d9f6286ed089042629b838ddcb9cf5fa3e60",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPBelfalasAbyss/Desc",
+      "source": "The marvellous depths of the Sea of Belfalas. \\n\\n Size: 380 x 360 \\n Lairs: 2x Spider Lair, 2x Wight lair",
+      "source_hash": "e04ef7f9c0c38700ac3e3dd9fe5239c065a7a20e02640f14333ed7dae31525c8",
+      "entry_hash": "a0815e3e4c97296705ef7099ffeef944e8ae0cdf457ef1b301109b1c8106be46",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "84af9e7a3350f9154ef2f9109df9b725f6be111dafa6ffe1705e89f0efb3a451"
+}

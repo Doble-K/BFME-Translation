@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "bd0813659b5741749917c61bbb1bd19b",
+  "worker": "rotwk-run2-1",
+  "translations": [
+    {
+      "id": "Map:MAPMPIcebayofForochel/Desc",
+      "translation": "Una inmensa masa de agua situada al norte de Eriador y al noroeste de Forodwaith, en las frías regiones del norte de la Tierra Media. Una franja de tierra llamada el Cabo de Forochel formaba el límite occidental de la bahía, creando una entrada estrecha hacia el sur. \\n\\n Tamaño: 550 x 550 \\n Guaridas: 2x Guarida de troll, 4x Guarida de huargo, 4x Guarida de goblin \\n Estructuras neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPIsleofRhun",
+      "translation": "Isla de Rhûn"
+    },
+    {
+      "id": "Map:MAPMPIsleofRhun/Desc",
+      "translation": "Una isla de palmeras situada en la parte sureste del Mar de Rhûn. \\n\\n Tamaño: 500 x 500 \\n Guaridas: 3x Guarida de troll, 2x Guarida de huargo \\n Estructuras neutrales: 2x Puesto de avanzada, 2x Posada, 1x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPLaketown",
+      "translation": "Villa del Lago"
+    },
+    {
+      "id": "Map:MAPMPLaketown/Desc",
+      "translation": "Villa del Lago, también conocida como Esgaroth, era un pequeño asentamiento independiente de los Hombres en la parte noroccidental del Lago Largo en Rhovanion. \\n\\n Tamaño: 600 x 520 \\n Guaridas: 2x Guarida de troll, 2x Guarida de huargo, 5x Guarida de goblin \\n Estructuras neutrales: 2x Puesto de avanzado, 1x Posada"
+    },
+    {
+      "id": "Map:MAPMPLune",
+      "translation": "Lune"
+    },
+    {
+      "id": "Map:MAPMPLune/Desc",
+      "translation": "El río Lune es un río del noroeste de Eriador. Los Puertos Grises se encuentran en la desembocadura de este río. \\n\\n Tamaño: 350 x 350 \\n Guaridas: 2x Guarida de troll, 2x Guarida de huargo \\n Estructuras neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPTumladenValley",
+      "translation": "Valle de Tumladen"
+    },
+    {
+      "id": "Map:MAPMPTumladenValley/Desc",
+      "translation": "Un valle oculto en las Montañas Circundantes donde se construyó la ciudad élfica de Gondolin durante la Primera Edad. \\n\\n Tamaño: 550 x 550 \\n Guaridas: 3x Guarida de troll, 4x Guarida de araña, 2x Guarida de huargo \\n Estructuras neutrales: 4x Posada, 1x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPTumladen",
+      "translation": "Paso de Tumladen"
+    },
+    {
+      "id": "Map:MAPMPTumladen/Desc",
+      "translation": "Tumladen es un valle profundo entre los ríos Celos y Sirith. Fue el refugio de muchos civiles de Minas Tirith durante la Guerra del Anillo. \\n\\n Tamaño: 490 x 460 \\n Guaridas: 2x Guarida de huargo \\n Estructuras neutrales: 2x Posada, 1x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPUpperAnduin",
+      "translation": "Alto Anduin"
+    },
+    {
+      "id": "Map:MAPMPUpperAnduin/Desc",
+      "translation": "El Anduin fluye desde las regiones septentrionales de la Tierra Media hasta la bahía de Belfalas, muy al sur. Los ancestros de los Rohirrim vivieron cerca de los manantiales del Gran Río. \\n\\n Tamaño: 400 x 400 \\n Guaridas: 1x Guarida de troll, 4x Guarida de huargo \\n Estructuras neutrales: 1x Posada"
+    },
+    {
+      "id": "Map:MAPMPStockbrook",
+      "translation": "Vados de Stockbrook"
+    },
+    {
+      "id": "Map:MAPMPStockbrook/Desc",
+      "translation": "El Stockbrook era un arroyo situado en la Cuaderna Oriental de la Comarca. Se unía al río Brandivino tras pasar por su homónimo, la aldea de Stock. Tenía orillas escarpadas cubiertas de zarzas que se vuelven gradualmente más bajas a medida que se dirige hacia el río. \\n\\n Tamaño: 313 x 375 \\n Guaridas: 2x Guarida de espíritu de túmulo, 4x Guarida de huargo \\n Estructuras neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPHobbitonHill",
+      "translation": "Colina de Hobbiton"
+    },
+    {
+      "id": "Map:MAPMPHobbitonHill/Desc",
+      "translation": "La Colina de Hobbiton, a veces denominada la Colina, era una elevación en la Cuaderna Occidental entre Hobbiton y Sobrecolina. \\n\\n Tamaño: 402 x 400 \\n Guaridas: 2x Guarida de troll, 2x Guarida de huargo \\n Estructuras neutrales: 2x Posada, 1x Fuego de señales"
+    },
+    {
+      "id": "TOOLTIP:ThrallMaster",
+      "translation": "Tipo de daño: Cortante \\n Velocidad de ataque cuerpo a cuerpo: 1.17s \\n Velocidad de movimiento: 60 \\n Alcance de visión: 175"
+    },
+    {
+      "id": "CONTROLBAR:TooltipScreechBlackRider",
+      "translation": "Requiere nivel 7 \\n Tipo de modificador: Debuff activo \\n Hace que las unidades enemigas huyan atenidas \\n Los enemigos que huyen sufren -20% de Daño y -20% de Armadura \\n Anula el Liderazgo enemigo \\n Radio: 200 \\n Duración del terror: 5s \\n Duración del debuff: 20s \\n Tiempo de recarga: 3m \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "TOOLTIP:WargRiders",
+      "translation": "Tipo de daño: Caballería \\n Salud: 425 \\n Daño cuerpo a cuerpo: 80 (Caballería) \\n Daño cuerpo a cuerpo mejorado: 140 (Caballería) \\n Daño de aplastamiento: 100 (Aplastamiento) \\n Daño de aplastamiento mejorado: 150 (Aplastamiento) \\n Velocidad de ataque cuerpo a cuerpo: 1.8s \\n Velocidad de movimiento: 90 \\n Alcance de visión: 400"
+    }
+  ]
+}

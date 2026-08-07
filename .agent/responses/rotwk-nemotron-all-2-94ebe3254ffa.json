@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "94ebe3254ffa4700975a4c8abe9146ab",
+  "worker": "rotwk-nemotron-all-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:MirrorStealthDetection",
+      "translation": "Revelador"
+    },
+    {
+      "id": "CONTROLBAR:HearthStealthDetection",
+      "translation": "Revelador"
+    },
+    {
+      "id": "Map:MAPMPBrownLands",
+      "translation": "Antiguas Tierras Pardas"
+    },
+    {
+      "id": "Map:MAPMPBrownLands/Desc",
+      "translation": "Tierras al este del río Anduin abrasadas por Sauron al final de la Segunda Edad. Antes el exuberante hogar de las Entesposas, esta zona ha estado desolada desde las batallas de la Última Alianza.\\n\\n Tamaño: 500 x 500\\n Guaridas: 10x Guarida Goblin\\n Estructuras Neutrales:"
+    },
+    {
+      "id": "MAP:MAPMPEastEmnet",
+      "translation": "Emnet Oriental"
+    },
+    {
+      "id": "MAP:MAPMPEastEmnet/Desc",
+      "translation": "Las llanuras orientales de Rohan, salpicadas de asentamientos nómadas y tierras de cultivo.\\n\\n Tamaño: 480 x 360\\n Guaridas: 2x Guarida Huargo, 3x Guarida Troll\\n Estructuras Neutrales: 1x Posada"
+    },
+    {
+      "id": "Map:MAPMPEastMarch",
+      "translation": "Marca Oriental"
+    },
+    {
+      "id": "Map:MAPMPEastMarch/Desc",
+      "translation": "Una pequeña pero densamente poblada franja de tierra entre el Bosque Viejo y la orilla este del río Brandivino, habitada por Hobbits.\\n\\n Tamaño: 600 x 500\\n Guaridas: 8x Guarida Goblin, 8x Guarida Troll\\n Estructuras Neutrales: 1x Torre"
+    },
+    {
+      "id": "MAP:MAPMPEasternRohan",
+      "translation": "Rohan Oriental"
+    },
+    {
+      "id": "MAP:MAPMPEasternRohan/Desc",
+      "translation": "Exuberantes tierras verdes en el Rohan Oriental, divididas por el río Entaguas.\\n\\n Tamaño: 270 x 420\\n Guaridas: 6x Guarida Huargo\\n Estructuras Neutrales: 2x Puesto Avanzado, 2x Posada, 2x Fuego de Señal"
+    },
+    {
+      "id": "Map:MAPMPEastfold",
+      "translation": "Estepliegue"
+    },
+    {
+      "id": "Map:MAPMPEastfold/Desc",
+      "translation": "Una región de Rohan que limitaba con el Westfold a través del río Nivíscaro al oeste y Anórien en Gondor al este.\\n\\n Tamaño: 400 x 350\\n Guaridas: 4x Guarida Huargo, 2x Guarida Troll\\n Estructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPEredLuinValley",
+      "translation": "Valle de Ered Luin"
+    },
+    {
+      "id": "Map:MAPMPEredLuinValley/Desc",
+      "translation": "Un vasto valle en las partes orientales de las Montañas Azules. \\n\\n Tamaño: 440 x 390\\n Guaridas: 2x Guarida Goblin, 2x Guarida Troll\\n Estructuras Neutrales: 2x Fuego de Señal"
+    },
+    {
+      "id": "Map:MAPMPFordsOfGlanduin",
+      "translation": "Vados del Glanduin"
+    },
+    {
+      "id": "Map:MAPMPFordsOfGlanduin/Desc",
+      "translation": "Naciendo en los Hithaeglir al sur de Khazad-dûm, el Glanduin formaba el límite sur de Eregion con Dunland.\\n\\n Tamaño: 500 x 500\\n Guaridas: 4x Guarida Huargo, 2x Guarida Troll\\n Estructuras Neutrales: 2x Posada, 2x Fuego de Señal"
+    },
+    {
+      "id": "Map:MAPMPFrostfallCanyon",
+      "translation": "Cañón Escarcha"
+    },
+    {
+      "id": "Map:MAPMPFrostfallCanyon/Desc",
+      "translation": "Valles secretos ubicados en lo profundo de las Montañas Grises \\n\\n Tamaño: 470 x 470\\n Guaridas: 6x Guarida Huargo, 2x Guarida Goblin, 2x Guarida Troll, 4x Guarida Espectro\\n Estructuras Neutrales: 2x Posada, 1x Puesto Avanzado"
+    },
+    {
+      "id": "Map:MAPMPFrozenRift",
+      "translation": "Grieta Helada"
+    },
+    {
+      "id": "Map:MAPMPFrozenRift/Desc",
+      "translation": "Una grieta helada que puede encontrarse en las tierras heladas del Norte, cerca de la Bahía de Hielo de Forochel. Los Lossoth se encuentran entre los pocos que se atreven a desafiar estas tierras congeladas.\\n\\n Tamaño: 500 x 500\\n Guaridas: 2x Guarida Goblin, 2x Guarida Troll\\n Estructuras Neutrales: 1x Fuego de Señal"
+    },
+    {
+      "id": "Map:MAPMPGondorOutpost",
+      "translation": "Puesto Avanzado de Gondor"
+    },
+    {
+      "id": "Map:MAPMPGondorOutpost/Desc",
+      "translation": "Un puesto avanzado en la frontera de Harondor que servía para vigilar los caminos del sur.\\n\\n Tamaño: 500 x 500\\n Guaridas: 8x Guarida Huargo\\n Estructuras Neutrales: 1x Puesto Avanzado"
+    },
+    {
+      "id": "Map:MAPMPGreenleafForest",
+      "translation": "Bosque Verdehoja"
+    },
+    {
+      "id": "Map:MAPMPGreenleafForest/Desc",
+      "translation": "Tras la caída de Sauron en la Tercera Edad, el Bosque Negro fue purificado y se convirtió en Eryn Lasgalen, un hermoso bosque una vez más.\\n\\n Tamaño: 425 x 410\\n Guaridas: 5x Guarida Araña \\n Estructuras Neutrales: 2x Posada, 1x Fuego de Señal"
+    },
+    {
+      "id": "Map:MAPMPHitherLandsOfKhand",
+      "translation": "Tierras Próximas de Khand"
+    }
+  ]
+}

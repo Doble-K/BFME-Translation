@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "d325b904cd8748afbdad5b965dfc8f03",
+  "worker": "rotwk-run4-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardCrossbowmen",
+      "translation": "Fuerte contra Espadachines, Lanceros y Monstruos \\n Puede mejorarse para aumentar el alcance de ataque \\n \\n Tipo de Unidad: Arquero Básico \\n Tiempo de Reclutamiento: 30s \\n Nivel 2: +10% Salud, +10% Daño \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "TOOLTIP:HTMarauders",
+      "translation": "Tipo de Daño: Especialista \\n Salud: 600 \\n Daño Cuerpo a Cuerpo: 100 (Especialista) \\n Daño Cuerpo a Cuerpo Mejorado: 200 (Especialista) \\n Daño de Represalia por Aplastamiento: 500 \\n Daño de Represalia por Aplastamiento Mejorado: 750 \\n Velocidad de Ataque Cuerpo a Cuerpo: 1.5s \\n Velocidad de Movimiento: 50 \\n Rango de Visión: 300"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardWargPack",
+      "translation": "Fuerte vs. Espadachines \\n \\n Tipo de Unidad: Caballería Básica \\n Tiempo de Reclutamiento: 30s \\n Nivel 2: +10% Salud, +10% Daño \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:TooltipSummonWights",
+      "translation": "Invoca varios Espíritus de Túmulo bajo tu control \\n Los Espíritus de Túmulo pueden cargar contra los enemigos y curarse con cada ataque \\n Duración: 1m \\n Tiempo de Recarga: 6m \\n Haz clic en el ícono y luego haz clic izquierdo en el lugar accesible"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityMouthOfSauronEvilEye",
+      "translation": "Requiere Nivel 7 \\n Un poderoso rayo de luz que daña a las unidades objetivo \\n Daño: 2500 (Mágico) \\n Radio de Daño por Salpicadura: 20 \\n Rango de Objetivo: 200 \\n Tiempo de Recarga: 2m 30s \\n Haz clic en el ícono y luego haz clic en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:TooltipDDDeathMask",
+      "translation": "Mejora esta horda con Máscaras de Muerte \\n Tipo de Modificador: Debuff Pasivo \\n Al equiparlas, las unidades enemigas sufren brevemente -20% Daño y -20% Armadura al ser atacadas directamente \\n No se acumula con otros Debuffs \\n \\n Tiempo de Mejora: 10s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipDDDeathMaskPurchased",
+      "translation": "Mejora esta horda con Máscaras de Muerte \\n Tipo de Modificador: Debuff Pasivo \\n Al equiparlas, las unidades enemigas sufren brevemente -20% Daño y -20% Armadura al ser atacadas directamente \\n No se acumula con otros Debuffs \\n \\n Tiempo de Mejora: 10s \\n \\n Esta mejora ya se ha comprado"
+    },
+    {
+      "id": "Map:MAPMPUdunII",
+      "translation": "Udun II"
+    },
+    {
+      "id": "Map:MAPMPUdunII/Desc",
+      "translation": "Las tierras detrás de la Puerta Negra, conocidas como Udun, toman el nombre del mundo subterráneo por la ceniza volcánica y los gases nocivos que las cubren.\\n\\n Tamaño: 430 x 430 \\n Guaridas: 2x Guarida de Wargs \\n Estructuras Neutrales: 1x Fuego de Señal"
+    },
+    {
+      "id": "Map:MAPMPGlanduinCanyon",
+      "translation": "Cañón de Glanduin"
+    },
+    {
+      "id": "Map:MAPMPGlanduinCanyon/Desc",
+      "translation": "El Glanduin era un río en la región de Eriador en la Tierra Media y un brazo oriental del Gwathlo. \\n\\n Tamaño: 380 x 368 \\n Guaridas: 2x Guarida de Trolls, 4x Guarida de Wargs, 2x Campamento de Salvajes \\n Estructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGoblinCaveTrollLair",
+      "translation": "Fuerte contra Espadachines y Estructuras \\n \\n Tipo de Unidad: Monstruo Básico \\n Tiempo de Reclutamiento: 35s \\n Nivel 2: +10% Salud, +10% Daño, 40/s Regeneración de Salud \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLurtzPillage",
+      "translation": "Requiere Nivel 8 \\n Lurtz y los aliados cercanos saquean las muertes enemigas para obtener recursos \\n Porcentaje de Recompensa: 70% \\n Radio 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipOutlawLeadership",
+      "translation": "Requiere Nivel 4 \\n Los aliados cercanos obtienen recursos por cada muerte \\n Porcentaje de Recompensa: 70% \\n Radio 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHwaldarBrigandage",
+      "translation": "Requiere Nivel 3 \\n Los Lanceros de Rhudaur, Lanzahachas y Rebeldes de las Colinas cercanos obtienen recursos por cada muerte \\n Porcentaje de Recompensa: 70% \\n Radio 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipAzogBrigandage",
+      "translation": "Requiere Nivel 6 \\n Azog y los Goblins, Mediotrolls, Arañas Pequeñas y Jinetes de Araña cercanos saquean las muertes enemigas para obtener recursos \\n Porcentaje de Recompensa: 100% \\n Radio 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "TOOLTIP:Battlewagon",
+      "translation": "Tipo de Daño: Caballería \\n Daño de Aplastamiento: 180 (Aplastamiento) \\n Velocidad de Ataque Cuerpo a Cuerpo: 1.5s \\n Velocidad de Movimiento: 85 \\n Rango de Visión: 400 \\n\\n Daño de Lanzador de Hachas: 108 (Corte) \\n Daño de Hombres de Valle: 263 (Perforación) \\n Daño de Falange: 50 (Especialista) \\n Cantidad de Curación del Hogar: 20 /2s \\n Radio de Curación del Hogar: 150 \\n Radio de Liderazgo de Portadores de Estandarte: 200"
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_EntAshMelee",
+      "translation": "Ent Guardián"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_EntAshMelee",
+      "translation": "Tipo de Unidad: Caballería Básica \\n Fuerte contra Espadachines y Caballería \\n"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildTreebeard",
+      "translation": "Requiere el Cónclave Ent de Nivel 3 \\n Recluta al líder de los Ents \\n Fuerte contra Estructuras, Espadachines y Arqueros \\n \\n Tipo de Unidad: Héroe de Nivel 2 \\n Tiempo de Reclutamiento: 1m \\n 50/s Regeneración de Salud \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    }
+  ]
+}

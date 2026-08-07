@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "9a56e5bb66164acfb0356c0808659f0d",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:TooltipUpgradeIsengardUrukPitLevel2",
+      "translation": "Permite el entrenamiento de Berserkers Uruk\\n+10% Velocidad de producción\\n\\nTiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorMountainTroll",
+      "translation": "Fuerte contra Espadachines y Estructuras\\n\\nTipo de unidad: Monstruo Básico\\nTiempo de reclutamiento: 35s\\nNivel 2: +10% Salud, +10% Daño, 40/s Regeneración de Salud\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:TooltipConstructMordorDrummerTrolls",
+      "translation": "Requiere Jaula de Trolls de Nivel 2\\nProporciona Liderazgo a los aliados cercanos\\n\\nTipo de unidad: Monstruo Básico\\nTiempo de reclutamiento: 30s\\nNivel 2: +10% Salud, +10% Daño, 40/s Regeneración de Salud\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorAttackTroll",
+      "translation": "Requiere Jaula de Trolls de Nivel 3\\nFuerte contra Espadachines, Caballería y Estructuras\\n\\nTipo de unidad: Monstruo de Élite\\nTiempo de reclutamiento: 45s\\nNivel 2: +10% Salud, +10% Daño, 40/s Regeneración de Salud\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildWildMountainGiant",
+      "translation": "Requiere Fissura de Nivel 3\\nFuerte contra Estructuras, Espadachines y Arqueros\\n\\nTipo de unidad: Monstruo de Élite\\nTiempo de reclutamiento: 45s\\nNivel 2: +10% Salud, +10% Daño, 40/s Regeneración de Salud\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseWildFireDrake",
+      "translation": "Invoca un Draco de Fuego bajo tu control\\nFuerte contra Espadachines, Caballería y Estructuras\\nConserva la mitad de los niveles ganados al ser eliminado\\n\\nTipo de unidad: Monstruo de Élite\\nTiempo de reclutamiento: 1m\\nNivel 2: +5% Salud, +5% Daño, 40/s Regeneración de Salud\\nNiveles 3-5: +5% Salud, +5% Daño\\nNiveles 6-9: +5% Salud, +4% Daño\\nNivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildFireDrake",
+      "translation": "Recluta un Draco de Fuego\\nFuerte contra Espadachines, Caballería y Estructuras\\n\\nTipo de unidad: Monstruo de Élite\\nTiempo de reclutamiento: 1m\\nNivel 2: +5% Salud, +5% Daño, 40/s Regeneración de Salud\\nNiveles 3-5: +5% Salud, +5% Daño\\nNiveles 6-9: +5% Salud, +4% Daño\\nNivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "TOOLTIP:Towerguards",
+      "translation": "Tipo de daño: Especialista\\nSalud: 370\\nDaño cuerpo a cuerpo: 70 (Especialista)\\nDaño cuerpo a cuerpo mejorado: 140 (Especialista)\\nDaño de venganza aplastante: 250\\nDaño de venganza aplastante mejorado: 375\\nVelocidad de ataque cuerpo a cuerpo: 1.5s\\nVelocidad de movimiento: 45\\nAlcance visual: 400"
+    },
+    {
+      "id": "TOOLTIP:IthilienRangers",
+      "translation": "Tipo de daño: Perforación / Cortante\\nSalud: 250\\nDaño a distancia: 80 (Perforación)\\nDaño a distancia mejorado: 95 (Perforación) y 30 (Fuego)\\nDaño cuerpo a cuerpo: 80 (Cortante)\\nVelocidad de ataque a distancia: 1.5-2s\\nVelocidad de ataque cuerpo a cuerpo: 1.5s\\nVelocidad de movimiento: 55\\nAlcance del arco: 400\\nAlcance visual: 500"
+    },
+    {
+      "id": "TOOLTIP:DunedainRangers",
+      "translation": "Tipo de daño: Perforación / Cortante\\nSalud: 250\\nDaño a distancia: 85 (Perforación)\\nDaño a distancia mejorado: 95 (Perforación) y 30 (Fuego)\\nDaño cuerpo a cuerpo: 85 (Cortante)\\nVelocidad de ataque a distancia: 1.5-2s\\nVelocidad de ataque cuerpo a cuerpo: 1.5s\\nVelocidad de movimiento: 55\\nAlcance del arco: 400\\nAlcance visual: 500"
+    },
+    {
+      "id": "TOOLTIP:LorienArchers",
+      "translation": "Tipo de daño: Perforación\\nSalud: 200\\nDaño a distancia: 38 (Perforación)\\nDaño a distancia mejorado: 48 (Perforación) y 15 (Magia)\\nVelocidad de ataque a distancia: 1.6s\\nVelocidad de movimiento: 55\\nAlcance del arco: 360\\nAlcance visual: 500"
+    },
+    {
+      "id": "TOOLTIP:LindonArchers",
+      "translation": "Tipo de daño: Perforación\\nSalud: 300\\nDaño a distancia: 40 (Perforación)\\nDaño a distancia mejorado: 50 (Perforación) y 15 (Magia)\\nDaño de aplastamiento: 80 (Aplastamiento)\\nVelocidad de ataque a distancia: 1.25-1.75s\\nVelocidad de movimiento: 105\\nAlcance del arco: 350\\nAlcance visual: 500"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFireWeaponMightyCatapult",
+      "translation": "Dispara una ráfaga de rocas en llamas a un área alrededor de la Fortaleza\\nDaño: 3000 (Asedio) y 3000 (Fuego)\\nRadio objetivo: 125\\nAlcance objetivo: 1500\\nTiempo de recarga: 6m\\nClic izquierdo en el icono y luego en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFueltheFires",
+      "translation": "Aumenta en 75% la cantidad de recursos que los Trabajadores entregan en los Aserraderos\\nAumenta la tasa de agotamiento de los árboles en 75%\\nRadio: Global\\nDuración: 4m\\nTiempo de recarga: 6m\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWizardsTowerLightningStrike",
+      "translation": "Lanza varios rayos de relámpago a un área objetivo y provoca un incendio\\nDaño: 300 (Magia) y 100 (Fuego)\\nRadio de daño en salpicadura: 20\\nRadio objetivo: 120\\nAlcance objetivo: 1500\\nRayos totales: 16\\nTiempo de recarga: 5m\\nClic izquierdo en el icono y luego en el área objetivo"
+    },
+    {
+      "id": "TOOLTIP:WildmenAxeThrowers",
+      "translation": "Tipo de daño: Cortante\\nSalud: 170\\nDaño a distancia: 45 (Cortante)\\nDaño a distancia mejorado: 60 (Cortante)\\nVelocidad de ataque a distancia: 2.33s\\nVelocidad de movimiento: 55\\nAlcance de lanzamiento de hacha: 275\\nAlcance visual: 400"
+    },
+    {
+      "id": "TOOLTIP:Wormtongue",
+      "translation": "Tipo de daño: Héroe\\nVelocidad de ataque cuerpo a cuerpo: 1.4s\\nVelocidad de movimiento: 55\\nAlcance visual: 300"
+    },
+    {
+      "id": "TOOLTIP:Saruman",
+      "translation": "Tipo de daño: Héroe\\nVelocidad de ataque cuerpo a cuerpo: 1.66s\\nRadio de daño en salpicadura: 10\\nVelocidad de movimiento: 55\\nAlcance visual: 300\\n\\nSaruman de Muchos Colores\\nRequiere Nivel 5\\nLos aliados cerca de Saruman se vuelven inmunes al Miedo y al Terror\\nRadio: 200"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFireWeaponMordorFortressSpireFireball",
+      "translation": "Lanza una gran Bola de Fuego que causa un daño grave y provoca un incendio\\nDaño: 1000 (Asedio) y 1000 (Fuego)\\nRadio objetivo: 150\\nAlcance objetivo: 1500\\nTiempo de recarga: 6m\\nClic izquierdo en el icono y luego en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildWildMarauderHorde",
+      "translation": "Fuerte contra Caballería y Monstruos\\nPuede cambiar de formación para proteger a otras unidades\\n\\nTipo de unidad: Piquero de Élite\\nTiempo de reclutamiento: 30s\\nNivel 2: +10% Salud, +10% Daño\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    }
+  ]
+}

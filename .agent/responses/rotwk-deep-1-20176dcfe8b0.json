@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "batch_id": "20176dcfe8b047b09e54a65833b19b6e",
+  "worker": "rotwk-deep-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:GaladrielThunderStorm",
+      "translation": "Tempestad violenta [&m]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGaladrielThunderStorm",
+      "translation": "Crea un vendaval que arrastra a las unidades enemigas hacia el centro \\n Golpea a las unidades enemigas con varios rayos de relámpago \\n Las unidades afectadas sufren -33% de Velocidad y -33% de Velocidad de Ataque \\n Daño de Viento: 150 (Escarcha) \\n Daño de Relámpago: 2100 (Fuego) y 1200 (Magia) \\n Radio de Arrastre: 250 \\n Radio del Daño de Relámpago: 100 \\n Tiempo de Recarga: 4m \\n Haz clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:TooltipElrondWhirlwind",
+      "translation": "Requiere Nivel 7 \\n Invoca un vendaval destructivo en el campo de batalla \\n Daño: 440/s (Héroe) \\n Radio del Daño: 50 \\n Velocidad: 20 \\n Duración: 40s \\n Tiempo de Recarga: 5m \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:TooltipGaladrielTornado",
+      "translation": "Invoca un tornado destructivo en el campo de batalla \\n Daño: 600/s (Héroe) \\n Radio del Daño: 70 \\n Velocidad: 20 \\n Duración: 1m \\n Tiempo de Recarga: 5m \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el área objetivo"
+    }
+  ]
+}

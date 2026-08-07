@@ -1,0 +1,1035 @@
+{
+  "schema_version": 2,
+  "batch_id": "b91db81463654d6d83668def48826c90",
+  "worker": "rotwk-run1-6",
+  "created_at": "2026-08-05T19:28:26.044863+00:00",
+  "lease_expires_at": "2026-08-06T01:28:26.041181+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "instructions": "Translate source into the target language. Fill only translation. Do not change any other field.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressWebCocoon",
+      "source": "Upgrades the Fortress with +67% Armor \\n Prerequisite to Dragon's Nest \\n \\n Upgrade Time: 30s",
+      "source_hash": "c41090facf4ab253c66a3d881380156d1d13d564722d051a1d60b37cb1079a25",
+      "entry_hash": "daecc94f1917957fd52661ce48eb620e65dd6bfe2dac5930d24ed293c37d9f8b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressIceMunitions",
+      "source": "Upgrades all Battle Tower Expansions and Stone Thrower Expansions with Ice damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Dark Iron Forges \\n \\n Upgrade Time: 30s",
+      "source_hash": "0ea3cf9220cb2e7448b3ca8a2613c4a4e4ddb989123baca736df62ee93e7aec8",
+      "entry_hash": "5d641147dc8ea4876dbfcda6a0c4d8b6c90b57087700d0b69dfd49cce6ed5409",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressIceMunitionsPurchased",
+      "source": "Upgrades all Battle Tower Expansions and Stone Thrower Expansions with Frost damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Dark Iron Forges \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "f4518bbc2dd10357cbdfe80c78f3c9c5d13218b4ea34c553a5ce909a1fbda1ab",
+      "entry_hash": "96eb49e19365e61bcea35019422bc82f080e29ef44c2f5668c7518ebe3fe6a4f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressIceWallsPurchased",
+      "source": "Upgrades the Fortress and all Walls with +67% Armor \\n Prerequisite for the Witch-king's Sanctum \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "8d008549da82c5a12955389f77dfed8360e5b6722ce1b677815e624a5eace68c",
+      "entry_hash": "7e8ce7eb2d45994ca9f49ed2fa8e83f0cd9f865e3ca46fdf6221490379e3055a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressIceWalls",
+      "source": "Upgrades the Fortress and all Walls with +67% Armor \\n Prerequisite for the Witch-king's Sanctum \\n \\n Upgrade Time: 30s",
+      "source_hash": "fd66279ef76f6627e5dff0d5f3bfc8e86daf51d9bbd4234cea2a05060221e8a0",
+      "entry_hash": "6cc4859d930b34604df50f4161d36830c32b7eb0722225c3c30359d34d11e215",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyIsengardFireArrows",
+      "source": "Research Flaming Bol&ts",
+      "source_hash": "acf84a920ad9730b21c7c87f75b40c57b81fd49ac1931cbfeaa539d1290b8a52",
+      "entry_hash": "3badd67d7ff00e08be6a8cd6daf740d631cb40f20d12f3c6aba31a8c6155c753",
+      "protected_tokens": [
+        "&t"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardFireArrows",
+      "source": "Allows hordes to purchase the Flaming Bolts upgrade \\n When equipped, significantly increases the damage done by Bolts \\n Increases horde attack range by 10% \\n \\n Research Time: 30s",
+      "source_hash": "1f003f1219fb675337c309300959bccc8bd2f1cd41cc3ac38154d60a1d094196",
+      "entry_hash": "f9f2dfed3198095672af16e3e270de30917a723233c1e7ffbe2aae1a7c46796c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardFireArrowsPurchased",
+      "source": "Allows hordes to purchase the Flaming Bolts upgrade \\n When equipped, significantly increases the damage done by Bolts \\n Increases horde attack range by 10% \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "6f0ad8b1bb11e35a3a7d427191c2a71642e98ee30d1a7a31d02d30514bc637ba",
+      "entry_hash": "c19ffcc1f8730692cd6f9c2569b7ad04f46efb3777fa62c663575f9302c2bf74",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:IsengardFlamingBoltsUpgrade",
+      "source": "Purchase Flaming Bol&ts",
+      "source_hash": "d152f5083c22b853cb87b5662ee7721f79d4d8d7a12d2bdcc3a787aafa6b0c8d",
+      "entry_hash": "153a01626730b81048907dd221c6b484495db31cf10cc601aba0e909a7859835",
+      "protected_tokens": [
+        "&t"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFireArrows",
+      "source": "Upgrades this horde with Flaming Bolts \\n Significantly increases the damage done by Bolts \\n Increases horde attack range by 10% \\n \\n Upgrade Time: 10s",
+      "source_hash": "21d0c1e75bf05991e9f12aa771b1140b261dca026e9257281b6f7e01a1558f91",
+      "entry_hash": "691ef214b0397089f04ac7d73ff2fd95e34ca99e6e83746fbdd2d56398d112b1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFireArrowsPurchased",
+      "source": "Upgrades this horde with Flaming Bolts \\n Significantly increases the damage done by Boltd \\n Increases horde attack range by 10% \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "e49e86f5e6dc2d83cd2217d85300e2d6d1cbe6df14662a391d1879c2aae8e031",
+      "entry_hash": "6f1137f6afbfc5ac41b5e9c905021481654ededa75ef5eea2a2dc5fa88c314e6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:LackIsengardFireArrows",
+      "source": "Research upgrade at Armory to enable this equipment \\n When equipped, significantly increases the damage done by Bolts \\n Increases horde attack range by 10% \\n \\n Upgrade Time: 10s",
+      "source_hash": "de8857a9e61cfee1bf93037abf99f1dfc8b478a896ab15007a0c8a9fca4f80b9",
+      "entry_hash": "4bbd313c700d324be6b748cea71189db6abd124f8c1145a5ed66aa95af21682d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipNecroBlackIce",
+      "source": "Modifier Type: Spell \\n Targeted enemy units suffer -25% Speed \\n Stacks with Buffs, Leadership, and other Spells \\n Extinguishes fires \\n Target Radius: 150 \\n Duration: 20s \\n Target Range: 400 \\n Acolytes Sacrificed: 1 \\n Left click icon then left click on target area",
+      "source_hash": "3c6edc0bc3b1b64a44c7776e6ee0d9a58dc5ac41eea50227915a8ca420578a45",
+      "entry_hash": "358c5a09b1f89e1551c3270eeda0d12219b179ec5687f44f8e7311a00c487403",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMirkwoodArcherHiddenHunter",
+      "source": "Unleash a volley of arrows that deal +100% damage \\n Disables cloak \\n Recharge Time: 45s",
+      "source_hash": "d318932682350be82f8ca127b84040fabea567c4ab426c10ef82a0eab23147a2",
+      "entry_hash": "c3988c13f9ec9ab1875ee688ba13692d862142743843115a2029f69a1a2a0ebd",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipElvenCloakMirkwoodArcher",
+      "source": "Allows Mirkwood Archers to immediately escape combat by stealthing \\n Remains stealthed temporarily while moving or standing still \\n While stealthed, Mirkwood Archers can unleash a volley of arrows that deal +100% damage \\n Firing disables cloak \\n Duration: 30s \\n Recharge Time: 45s \\n Left click to activate",
+      "source_hash": "d6e4f8f6b28c39711b17c889eb97a82522a6cc6c7bc96cedf97e3b0c0a686cd8",
+      "entry_hash": "a3b9ee69266e709e8944f4cc44c2dc5613e3b0f68e9019f0f571d9e14c128465",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipAvalanche",
+      "source": "Summons an avalanche that deals massive damage to enemy units and structures and puts out fires\\n Modifier Type: Spell \\n Enemy units that pass through the snowfield suffer -25% Speed \\n Stacks with Buffs, Leadership, and other Spells \\n Damage: 6400 (Hero) & 4000 (Frost) & 3200 (Crush) \\n Radius: 200 \\n Recharge Time: 12m \\n Left click icon then left click on target area",
+      "source_hash": "79b11335679eb2f93da56958f6d9fc0adae9b0346505c65e02fb625324e82f9c",
+      "entry_hash": "4636cdb9ed35f9f3b3019ee60b3bd3df4dac1bcf6da13bc88f01fdcaa3f69fd0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEphelduath",
+      "source": "Ephel Duath",
+      "source_hash": "271fdfa2e1a998ee5cbbc513328fb9cdde2caf73f6083a3ccd91c1609ec4aae0",
+      "entry_hash": "237ef5708d01e14e572aac9fed85b4124f92920fd3c8e44d711e74368255790f",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEphelduath/Desc",
+      "source": "The Ephel Duath, or the Mountains of Shadow, were a range of mountains that guarded Mordor's western and southern borders. \\n\\n Size: 375 x 375 \\n Lairs: 2x Troll Lair, 2x Spider Lair, 2x Goblin Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "f3759c32975c380d05507f87f1100ceeb74410c3c43a32973d54e19891120fb6",
+      "entry_hash": "452aa30105b9805cfa608b694c35a0a808e1d2c9b17c0dea1247625907b40225",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPNearHarad",
+      "source": "Near Harad",
+      "source_hash": "4a708d232fa47fcd2a3cff479ae172258ac43cefff35b21e7c959fc60ee981b9",
+      "entry_hash": "a77a96970ff3c5dc2cb7baf8b5a8ae2016f0866258f2823f28d92f0c33b2f62e",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPNearHarad/Desc",
+      "source": "Near Harad was an indefinite region of Harad that lay to the south of Gondor and Mordor, beyond the River Harnen. \\n\\n Size: 370 x 315 \\n Lairs: 2x Troll Lair, 2x Warg Lair, 2x Goblin Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "b8ae469457be7ef13d959da3d1e70d220695fcb12397462b01f3f1d4396e7876",
+      "entry_hash": "db146a238249e7483c3a20b3a364cb3906fe3c05a096997e4643145a8eb291a1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPRiverNimrodel",
+      "source": "River Nimrodel",
+      "source_hash": "caab13123ce00d41a7f30cf3105e84e5e0d6e221a128dac63fe14b21d76d36cf",
+      "entry_hash": "e2143869b657af759605c852466ba1e730014f2421df0429435ba7068b91678b",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPRiverNimrodel/Desc",
+      "source": "Nimrodel was the small river that rose in the eastern foothills of the Misty Mountains, and flowed east to meet the Celebrant on the western borders of Lothlorien. \\n\\n Size: 386 x 320 \\n Lairs: 2x Troll Lair, 2x Spider Lair, 2x Warg Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "0387817e237af025e37b4a57fe4a3785951cbb4e66f87e03b2079a564e50503b",
+      "entry_hash": "41b782ceebea54af30c0664be7762f1b26a0c0e1776ce17dcc93f58d320c777e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPSuperTestArena",
+      "source": "*Test Map: Super Test Arena",
+      "source_hash": "38d65a34c2a1307903e0777f8bdb47f934f8198b7bcc34bbe40004b2eddcab87",
+      "entry_hash": "66a0955cebb6d676afd6b10cc82d627e34e5f4c9f1b9c959026e65156a4ca216",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPSuperTestArena/Desc",
+      "source": "Patch 2.02 all-purpose testing map with instant recruit and spell recharge timers. \\n\\n Size: 500 x 500 \\n Lairs: 4x Drake Lair, 4x Troll Lair, 4x Barrow Wight Lair, 4x Spider Lair, 4x Warg Lair, 4x Goblin Lair \\n Neutral Structures: 4x Inn, 4x Signal Fire, 4x Shipwright",
+      "source_hash": "0b509ac058ef6e28c76975cf3eb20800a51fff91acdfb0704485bb372949b261",
+      "entry_hash": "b2337796a54481152de43ea110fddbdeb35d0ae53a712aa36f69758503571cae",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEmeraldIslet",
+      "source": "Emerald Islet",
+      "source_hash": "7120ca6a3dc0181dd79a5103acd384510b7b9fa0f51bdbfc5fc17a12f96458ef",
+      "entry_hash": "46c77a7b02e6e8f412f9f218ae0e208265e6a18eb7a48f543a9b9b7a85dfcf08",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEmeraldIslet/Desc",
+      "source": "One of many uncharted islands in the Sea of Umbar. \\n\\n Size: 500 x 450 \\n Lairs: 2x Spider Lair, 2x Goblin Lair",
+      "source_hash": "c27e6f53c861734a4e25503044d6b67813224e95c20e78e475424d63bf0c6ba4",
+      "entry_hash": "a16dbb788ac61a79358db9d25dde40f2742451b9af2846246880eaacf8d6e54c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPWORBucklandII",
+      "source": "Buckland II",
+      "source_hash": "737f67ac52c0dd1bc633c5e4bbc974566054644006b497b9ed191b70b76b948f",
+      "entry_hash": "4098a56b76e58b6949689e9033c6bd000d5e3e3c17226abab73ead0103e5fb58",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPWORBucklandII/Desc",
+      "source": "The Eastern border of the Shire was the home of Merry Brandybuck. \\n\\n Size: 400 x 395\\n Lairs: 2x Troll Lair, 2x Spider Lair\\n Neutral Structures: 1x Inn, 2x Signal Fire",
+      "source_hash": "3e4778bb13a1e2c55862aecf0b1d2478016f58ea9ff8b29621f7a6db876bc1ac",
+      "entry_hash": "ea830d24f90e7d62bd1d914f696deb3f9b96bd6a2939d1506c69384ebbad17f6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPFenmarch",
+      "source": "Fenmarch",
+      "source_hash": "4195e9d31b00b78f7338114e32a39eb54e761f7d5d1b19099bc61201f30ad661",
+      "entry_hash": "b054eb0c7c6dead5ff7046d25e6b4e0a0d6f3b17a49a4ceaf8ddb8ebc364a791",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPFenmarch/Desc",
+      "source": "The Fenmarch was a marshy border-land along the Mering Stream in the east of Rohan. \\n\\n Size: 380 x 330 \\n Lairs: 2x Troll Lair, 2x Spider Lair, 2x Goblin Lair \\n Neutral Structures: 2x Inn, 2x Signal Fire",
+      "source_hash": "edf2759685c14e163fae05dce88134cb09efbe570b7ee61ab179bc818705c62d",
+      "entry_hash": "bcdb5374fff6dc21047b3105481447aaca35bcb593ecbcdeb34fe7413f3a37df",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:MoneyMaker",
+      "source": "Gold mine",
+      "source_hash": "c08301549c82153e6eab29f0dde57963efd365b5473adfd9633011671953f781",
+      "entry_hash": "fdd59ea1a1f726220e3ed74df6000c6b0e3b0aa4c7e11bcb0a565a86b5f366c6",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:MoneyMakerDescription",
+      "source": "Generates resources",
+      "source_hash": "85a9e8b46d445173b8dad22351fdea669a962ad2f28a5badca28ee9311d11071",
+      "entry_hash": "3a94789072cc1a3e7c5c1cc0c5d9168f4bec89e9650a214245db5bef24e41a90",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:PowerPointMaker",
+      "source": "White tree of power",
+      "source_hash": "290e8beb404add806cafeaece3267e7cc7f819598499e8b92ddd4a7c18092271",
+      "entry_hash": "02818155450d27fe2b3a780239352f4d1c1eb7eb0975f7bf23f9ac56a156bbe5",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:PowerPointMakerDescription",
+      "source": "Generates power points",
+      "source_hash": "dcade9300c63ad2f2d8024a8e2c4a017af2694161b0ee3cc30ae0e34f68a5710",
+      "entry_hash": "294438cc230fd4308b3cb14e9ac69d122caeec29c8a8a3f53c2bf2ac7b2906d9",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:CommandPointMaker",
+      "source": "Supply warehouse",
+      "source_hash": "278c4586c7a32254b8a675d2a198d3ff566a925fe137233c30171f2536d110c3",
+      "entry_hash": "111f8fd4baf4299a74f137fa9fcf303b19737c880c84fd0b80ff0017b2a4863e",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:CommandPointMakerDescription",
+      "source": "Allows to increase Command Points",
+      "source_hash": "8e155d7015ae32224b14e3d24dc92cb46b5efd9768e057c012f4e533a2443f90",
+      "entry_hash": "1e7484ab919d801370a61251df3c6f07c1d7e131d1ce38df0cd2c0b68d0aa865",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:MoneyMaker_V2Building",
+      "source": "Miners' Mine",
+      "source_hash": "2e5bf97f6dde69cb126e88fa76bf67c157467d75d7681bb0244b93c7ce8343c4",
+      "entry_hash": "dd652afd6e335532ea5bbd17bb8969bcfb9bb98924b96c6eb764af46ca0e83ff",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:MoneyMaker_V2BuildingDescription",
+      "source": "Allows to build dwarven miners and research upgrades",
+      "source_hash": "ec892ee75ff4391cba4e95e842dcb29e6e3945737216c70b3730bfd0fc704cd7",
+      "entry_hash": "3a711807b8cdcd132bfabcb843c006aad13d8124f166a353ed3072c49c97ac21",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:CustomOre",
+      "source": "Gold ore",
+      "source_hash": "2ce4b32b766ec19865d5816b00addd3145665de8eeed091cdc5613179d91049f",
+      "entry_hash": "27d2b4e0e0d36b699544ea78c184cb4198fb126522f50a309916ed34395431fc",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:CustomOreDescription",
+      "source": "X",
+      "source_hash": "9dba4d19e62910c92d039e14ed7af8b480367676f9e7715b765283942f5abc79",
+      "entry_hash": "55f97d09363fa9f613cef2fb6505208bdb8b65ab14f5efb585fadb843ca0156a",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:PowerPointMaker_v2Building",
+      "source": "Barad-dur",
+      "source_hash": "f897bd214dfcb92db35cf517a2149245e71bebe71e815c00b59cc8e9053be6ca",
+      "entry_hash": "b04631a3f6afdd797c4af8f1b56f8e0dc759815f0c82bfd1e71d2c563bb78175",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:PowerPointMaker_v2BuildingDescription",
+      "source": "X",
+      "source_hash": "3c236474bf425bfdea28fc31362d62cfcdec4da5f28ba780cb192aef4afc349d",
+      "entry_hash": "0d77c7335b6da6854cc129da8f34a0e487ffb7571b09009fb8638bdd6e763f05",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:AngmarWightMakerTower",
+      "source": "Tower of Necromancy",
+      "source_hash": "944fe1c58b45dcb39ce6c47bb89cdfbbe59175d0d96b885d5b0611a43e6a843e",
+      "entry_hash": "07ef52d0a4aba600f2f996950e28386708bbe6c25699cbbe5ab6bc46f1f44321",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:AngmarWightMakerTowerDescription",
+      "source": "X",
+      "source_hash": "3122d385b91ceba357e4f4034134f1dd6a25413f5d2ef56151687c2be33e989d",
+      "entry_hash": "269b99d55716fdfdd207eece62bb52876a6a24d9933586305b8e6f5ec3c8c7fe",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:GenericUpgradeMaker",
+      "source": "Universal forge",
+      "source_hash": "08b9ec01c3c1a429270906ece15aba599f5ae4485e1b4b9af45c1d6375a12fb1",
+      "entry_hash": "39cd49f2d71357f85ce3aeb0e12017cf7e9229d124c8b66c30b5ea8ab59796bc",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:GenericUpgradeMakerDescription",
+      "source": "Researches unit upgrades",
+      "source_hash": "3643d2e3b341a98592b0f1c451d4aaf459168b6fde43335dc37b5462fd95584c",
+      "entry_hash": "e97410972a8a1d89bac65daccfe90df7e9357b4f7b2606e43a9a46f8c48f94fe",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:CustomCampKeepTactics",
+      "source": "Ð¡itadel",
+      "source_hash": "d3151e536936ad8f241fa6bd7f4d44a35a11d41d9315fe46ad58f0729d2195a7",
+      "entry_hash": "bf7a7327194f1b67343583b2250c6613d313689aee78751920dc478acc3516f6",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "UPGRADE:CustomGenericUpgrades",
+      "source": "X",
+      "source_hash": "d0de56142fb73c4de805f54516a87fff625bd6c25bc5e8c91fe912809680772b",
+      "entry_hash": "e43a4f0ec84c53dc843421ce90a6f1fbfbe296a207d93e71255ad620cf468083",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmpthelaststand",
+      "source": "*Keep Defence: The Last Stand",
+      "source_hash": "cab37f5c4f1018e26356a9003f8a88ab3e04b8505d808602d9f2cc40b90a0420",
+      "entry_hash": "8370e3bcc5b9b249a418a2cf6ee9b501d4798c519e03fd7dda32fb348fff065c",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmppuzzlersringwar",
+      "source": "*Fort Defence: Puzzler's Ring War",
+      "source_hash": "bdfb4d9866aaf63e3a078ded547bef05e1465e8b1ee03bfd8212fae37b2ff52d",
+      "entry_hash": "88057ed37df573ffcc19ec23a910ac7bda4fa5ba79e40471ab8e6ac4dcb826fc",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmppuzzlersringwar/Desc",
+      "source": "There is only one Lord of the Ring, only one who can bend it to his will. And he does not share power. \\n\\nGame modes: 2-4 players\\nHardcore mode: None",
+      "source_hash": "d180190fa67bd5783e6e1e754fd6f1282cc76b2131a10acddf8edef758d210d0",
+      "entry_hash": "f710377ee08f2ee0e25ff4193e03ba65f4e42d5521c4653ed7a3d1b9dac9ff6b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmpbesiegeedoras",
+      "source": "*Besiege: Edoras",
+      "source_hash": "d4db30df5fe266dc2792820b28e635afcb2a0a7a3a88c8277bfda09841babf6c",
+      "entry_hash": "ae2fe6350c3ed3cc5a2346ab195ca665f696f63bf64303d7421d2cf2850ca558",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmpbesiegeedoras/Desc",
+      "source": "Expel the peasants from Edoras. Show them that you are the better farmer. \\n\\nGame modes: 1-2 players\\nHardcore mode: Enable Ring Heroes",
+      "source_hash": "dac067144a18b2810930eef8d4d8e7122816775f6baa8df98be13ee15495c385",
+      "entry_hash": "e69e0a7e496a0a7299278ca715b5dd1b758212a1f5faac53dbab2cbdfa177238",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmptheinvasionofsauron",
+      "source": "*Hero Defence: The Invasion of Sauron",
+      "source_hash": "481c2e67520e3ac37f07f7737a93e34d3f4ac8277fd22b88fdbca64e3483b5d3",
+      "entry_hash": "b3509ae923db5b831636e70a0c628f4e638539b96ab773a79434b644148f1682",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmptheinvasionofsauron/Desc",
+      "source": "Sauron wants to conquer Middle-earth, and only 18 heroes are against him. Be careful, because your heroes have just one life. \\n\\nWaves: 23\\nGame modes: 1-4 players\\nHardcore mode: Enable Ring Heroes",
+      "source_hash": "b9a61636343c1f6cb7d1e051f3b042fe85afbe6a44ed79684e7d57d4860b907e",
+      "entry_hash": "c233423a751d675db84db4e7de4ffdcaedea9f1cd13f8f8cdd2a1dd17a5b344a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmpshockwavehc",
+      "source": "*Fort Defence: Shockwave HC",
+      "source_hash": "d7305141481b9dfff6accc3823aad67b3b1a4f2ade8ea09d00b598fcd41b765f",
+      "entry_hash": "be535f50db17d8c19b3786bfd7d31064fccb8a1e74d78311fb96066fa0cc0ed0",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmpshockwavehc/Desc",
+      "source": "Defend your Fortress! Fight and destroy powerful waves!\\n\\nWaves: 23\\nGame modes: 1-4 players\\nHardcore mode: Enable Ring Heroes",
+      "source_hash": "e2f467abca36820b210996dac03994b4f92ca419ace91b11ae2b948ad68f755d",
+      "entry_hash": "c415d97312339acbfd1000031eb71ca6ecbc8b31c233fa47482b9abf7cb10461",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmpblackwave",
+      "source": "*Fort Defence: Black Wave",
+      "source_hash": "39702e5fd2be97435fff5831da7ca150660f052ac5a9fef5c2ca2196f75a544d",
+      "entry_hash": "20146509777c6942ed02bc012c4d57b9f84e0f9ca5d9e5b139510654159f91e0",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmpblackwave/Desc",
+      "source": "Rise up and face the armies of Middle-earth\\n\\nWaves: Endless\\nGame modes: 1-4 players\\nHardcore mode: None",
+      "source_hash": "1484c0adf6863b3b5e7e5f5545f70ed9e3f29ce8d81e5413a39dc22dda76421c",
+      "entry_hash": "2f52a518401e1b0eb4a0b634386d9b65fae9dffe50b91de1ab308d60d3555458",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmpheroesarena",
+      "source": "*Hero Defence: Heroes Arena",
+      "source_hash": "c5267a8f1513f18724e8d6e690416e407c34a5b023ddc65a71a5578a28fa07bf",
+      "entry_hash": "f0206e129d1c6e8c7ff78279391bce704b3cc39c637db5d32a1295b750af9f04",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "Map:mapmpheroesarena/Desc",
+      "source": "Kill your enemies and survive to unlock bonuses\\n\\nWaves: 35\\nGame modes: 1-4 players\\nHardcore mode: Enable Ring Heroes",
+      "source_hash": "f2c30384c96fb10a116716169c0854f01a06fea6bb762ec43a7a74f70438c6de",
+      "entry_hash": "2cf92bf3f4b6bb38cd9764134c0bde1613859d5e83fb8abca151fff534654ab5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:CustomGaladrielHealing",
+      "source": "Healing",
+      "source_hash": "af4af97fdce2957b9dd3681d3ffa4cfac6c4d9045490d224085bd8da7fd0c6b1",
+      "entry_hash": "b0e1630fa35395d56ab4a77fcce459e58d87e6a1a4ab4a3d2d1af4e1a14698d8",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipCustomGaladrielHealing",
+      "source": "All nearby allies within a 200 radius are healed (works during combat)\\nTroops healing: 20hp every 2s\\nHeroes: 50hp every 2s\\nPassive ability",
+      "source_hash": "4ca6c04c39dbf78466b470f3f74832455699690499d75444ecb3eda2e8c6e88e",
+      "entry_hash": "6a4892c2e34e4940b5065bef754c17102f1e8f2b887602645bd44750343fb13d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:GaladrielRageMode",
+      "source": "Galadriel's Rage (&R)",
+      "source_hash": "3b1b0444f1a7241804eea4740134bfe9fb4c961befc8d4fccf97e638c420340e",
+      "entry_hash": "2c4e341e8d62f599d547d6e98f4f1cef193c62cb71e6bb56223aa04a18b9b159",
+      "protected_tokens": [
+        "&R"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipGaladrielRageMode",
+      "source": "Galadriel gains: +100% damage, +100% armor, and +30% speed, but loses the ability to heal allies\\nWhen activated, enemies within a 300 radius take damage and are knocked back\\nDuration 1m\\nRecharge Time:2 min\\nLeft click to activate",
+      "source_hash": "75446c6014329d33a03d71a8d20831879843c808732d98f06a62c5bf59e708c0",
+      "entry_hash": "e58c5bde63481ec86a4d2b53e4fe856651786221dcf6e0398950b469e834aaa9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:CustomGaladrielCharge",
+      "source": "Purge (&T)",
+      "source_hash": "29d26d2cc9b4f2b493c31e832d2bc68a0b6bb1734a9842d32f906a894ae635c9",
+      "entry_hash": "e29dcff4fc2881846bda055aaf6a22540df45ddf955eb98286c33ae981cdd3fd",
+      "protected_tokens": [
+        "&T"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomGaladrielCharge",
+      "source": "Removes passive and active debuffs from all nearby allies and grants +50% armor, but Galadriel loses -50% armor\\nDuration: 45s\\nRecharge Time: 2m\\nLeft click to activate",
+      "source_hash": "3894e6624c740f9251460982b6fe608bd4eadd9ea16e73112ba95186cdfa5838",
+      "entry_hash": "5809e4682379464bad2613af9b56cfd5f841df71aed34ebb42f6e1248d6c3a5c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:CustomSelectAbilityShop",
+      "source": "Ability Store (&R)",
+      "source_hash": "c8bdda41dc23e80835f64a4322c0df5e70ff1f43b6efe0ddf52997aff8c524fa",
+      "entry_hash": "8bdd3a7bfc880d853ecc4ac2cc40bfbbaabc03fc4ade4abf5257318e62ef34f7",
+      "protected_tokens": [
+        "&R"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:CustomTacticsBuildTimeAbility",
+      "source": "Call to battle",
+      "source_hash": "70fe4510c0b62276fcab82ccefddba0e43bb7a4b9b3641d3e37c967c76497d43",
+      "entry_hash": "79ec4f516561bb3252eec5de8931ff51e4a54c8ea867be79d09f622da2ab20a8",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:CustomTacticsDamageAbility",
+      "source": "Damage bonus",
+      "source_hash": "ebf965bcd125b2ac2dc1685cd772c13c7ab53e1ccebc6f075e3ebf618bff18ce",
+      "entry_hash": "3a6280593c365d4ad88965999dc777509a4aeecb9d2ccaaa8f47917ad11e90d3",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomTacticsDamageAbility",
+      "source": "Units, heroes and monsters receive +33% damage\\nDoes not affect allies\\nStacks with Buffs, Leadership, and other Spells\\nDuration: 1m",
+      "source_hash": "7a49ec07d17e4e509817b3aae9136e5695e036505d6f79e421e5f0646f5e83df",
+      "entry_hash": "968b45f2329a00db81e1b6f6d25d52f4fd24026acfeb36249fc4ae859f132c86",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:CustomTacticsArmorAbility",
+      "source": "Armor bonus",
+      "source_hash": "6db4b8f2f8e2c813d650df17d16f52ba2d4fbaf76769f0300533b66d3654576b",
+      "entry_hash": "1a9d2657ae3c0d20b697ae982558b7bf57296b286f6b4c8c6a6da3b7923c90ca",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomTacticsArmorAbility",
+      "source": "Units, heroes and monsters receive +33% armor\\nDoes not affect allies\\nStacks with Buffs, Leadership, and other Spells\\nDuration: 1m",
+      "source_hash": "cefbe53dc4d147c128a972b053305940c208ebeb57003a44e2a42dbc9c119948",
+      "entry_hash": "bdf1a5dd0389594f7b73d31939a9f8c20b35c0b8ea05bb311f6e79c208c664c4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:BuildCustomGondorWorker",
+      "source": "Repairman",
+      "source_hash": "29e73a180bd5c1e283679b729fc4288dacbfc5968cc0b06b3513bc6efdf34b7e",
+      "entry_hash": "c456fa724bdfa7a53ede0795a469e8418eed2b621c26be44b7aa4f9bb9fe6321",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildCustomGondorWorker",
+      "source": "Hire an invulnerable repairman to repair buildings\\nDuration 2m\\nOnly 5 Repairmen are allowed at any time",
+      "source_hash": "a659d5d4140b29311c8f92b23c15829ab088080c47aea5117c91917f3e074351",
+      "entry_hash": "afbd4e6330cdd35c6a23b0b45ef8394af0e4c156f7d135d23128dcc7fa7abb2f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:BuildCustomTacticsGrantPowerPointsAbility",
+      "source": "Power Point",
+      "source_hash": "0f7b92dec673f05b59f13e4e8dfd5d5ea78979cfcfac3deae0ce207c316c9844",
+      "entry_hash": "c9f336b9d2dcbaa35e5482d1023a05071f31ad789b9a8225960f365347bee166",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildCustomTacticsGrantPowerPointsAbility",
+      "source": "Grant 1 Power Point",
+      "source_hash": "376cc794c57e2fa717468e50d8fbe8812deca009032c58f14987b735730ab9ec",
+      "entry_hash": "b9fb7491c2020d442626020a728519068d5e0828dda2e74a18247801d3a4f834",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:BuildCustomTacticsStructureBuffAbility",
+      "source": "Numenorean Stonework",
+      "source_hash": "626e813cf57973521a60edd9f62c6239fbc999bc891cc8f28f78bd508c70afd8",
+      "entry_hash": "3c8f7d4e2e1a595e0e6733dc5db463bcd6dcc16a20c741c0de2eb772e0fb434c",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildCustomTacticsStructureBuffAbility",
+      "source": "Temporarily grants 100% armor to Citadel and Gate (Does not affect allies)\\nDuration 20s",
+      "source_hash": "3ccbe58416564b746146f8cf4dfc2388131fc676e55eeeef72b2fad575fec16d",
+      "entry_hash": "478a4d4be42138e489fc4a54b869485ee6356316bd4e51460272a06bad8beed6",
+      "protected_tokens": [
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:BuildCustomTowerShieldGuardAbility",
+      "source": "Elite Tower Shield Guard",
+      "source_hash": "46de24c57c87f8ece3d5c08354eb92da60f57971a2eb7c4b247912c54322072f",
+      "entry_hash": "8743b9a48600e4e106dbfe2b3382e9bbcb97da641b1709e71f73027f790d1d81",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildCustomTowerShieldGuardAbility",
+      "source": "Hire reinforced Tower Shield Guard Horde\\nDuration: 90s\\nOnly 5 battalions of Elite Tower Shield Guard are allowed at any time",
+      "source_hash": "61add402d23d1d984d7c23f64f9400a6cadb8aeff0c0530dc423d3179aff3a33",
+      "entry_hash": "9a07f60d9847b2e14c21634025c96d123329cbc121c9e46aa84a994b4e7c9cbb",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:BuildCustomTacticsElvenGaladrielAbility",
+      "source": "Galadriel",
+      "source_hash": "c6b19ce4c79447945963a471ad0fd9d510e7ae1ca36616334551f52727b61e4c",
+      "entry_hash": "8044d1249f0396991d6ea1d9e7ec5e88055c1a50b5f0941d246e4a41ba3e8c01",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildCustomTacticsElvenGaladrielAbility",
+      "source": "Galadriel appears temporarily on the battlefield\\nDuration 5min\\nLimit 1",
+      "source_hash": "84b673329f137813b47f6d8ac0b10f471642aa6081cd0774b65fbd8dfb0e2f4b",
+      "entry_hash": "defdccbc963ff5431b7fc1ed649e9af758b73e7b791a4bbade86f7bd42155d43",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:BuildCustomTacticsGondorDefenderAbility",
+      "source": "Hero of Minas Tirith",
+      "source_hash": "df4c0314c0f69e873a12cab8bfbf3ed28742c7a06bd00247776110673472418e",
+      "entry_hash": "f9b4bb4ca49a22fe5e07b6e3c24435135214bff0c0cc72c73b5723d41388bbdd",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildCustomTacticsGondorDefenderAbility",
+      "source": "Hire a fearless and mighty warrior of Minas Tirith",
+      "source_hash": "c463fce851d1434df1b2fb5ec7a99ab98bdeff9fe2520f84432c35ff8a922150",
+      "entry_hash": "b672060138427472d194d48c941cf89b10deab62637dcde286bd21c95577fc0a",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:BuildCustomTacticsSpeedDebuffAbility",
+      "source": "You will pass but just a little bit",
+      "source_hash": "38e1c9465acc43cc29cf9b344ee32a3f78c47f7e34d2fd8a4015921f9f53bbd7",
+      "entry_hash": "5ae7748bd16304b32536b4c03837dd6187cdd14c0ecc86891e3df4b8d494b6a9",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildCustomTacticsSpeedDebuffAbility",
+      "source": "Modifier Type: Spell\\nAll enemies on the map lose -50% attack speed and movement speed\\nStacks with Buffs, Leadership, and other Spells\\nDuration: 60s",
+      "source_hash": "7942cc1d23ecb64c9eb50178f1d7cfd7340f37bd8cd3fb765b64ee3d28768bb9",
+      "entry_hash": "b1e129b25628c25b3ec980ef102924386524a385feae69aca95402cd660629b9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:SauronReflectDamage",
+      "source": "Damage reflection",
+      "source_hash": "ff51d9e6e88f7f501541faed63b98612a500d246781f1d5bb7071d1a4758b114",
+      "entry_hash": "789d1c97465d659f92ac498a49808be54d2e8e65f957022cdd20944d08429782",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSauronReflectDamage",
+      "source": "Reflects 10 percent of all absorbed damage\\nPassive ability",
+      "source_hash": "fa9bb8483630d10ad4ed332ab0db1260db283364e3df298006a6ec06a0fa5848",
+      "entry_hash": "b787e1268837089d001b8f218bc4a6ef453eefd6a6a8eed4395029a96ac28553",
+      "protected_tokens": [
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:SauronMaceMaster",
+      "source": "Mace Master (&R)",
+      "source_hash": "52a72383f5d9d5bf8d8d1ed24fb4efd6f227b51bdcc5e6b75ee0bb167677e50e",
+      "entry_hash": "86a76e231e7e2d5bce5a7319937e82903afaf2b388a1113c59806c8bbd4048b2",
+      "protected_tokens": [
+        "&R"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSauronMaceMaster",
+      "source": "Sauron temporarily gains +500% Damage, +500% Armor, +25% Speed and permanently increases maximum hit points by 5000 (each use stacks)\\nDuration: 60s\\nRecharge Time: 2m",
+      "source_hash": "d360ec8c8975b26a954770719ee7440d7e979ff85f75c11809b3e65c3977402b",
+      "entry_hash": "67a40e9f0d87b936a7496ad70fdb376e6b3989ae4234c645da6422f6eeccf3a1",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:SauronTerribleFury",
+      "source": "Terrible Fury (&T)",
+      "source_hash": "09fc477bec3f35dcafb28ed6aac9faa90d88252de29bd8f38dbad1e74e7d73c6",
+      "entry_hash": "517682f15bc78b95625fec48aa74444a01420c8705e40c1a8bb51454ff911c23",
+      "protected_tokens": [
+        "&T"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipSauronTerribleFury",
+      "source": "All enemies (including heroes) near Sauron lose -33% damage and armor\\nDuration: 90s\\nRecharge Time: 3m",
+      "source_hash": "796dd20352179bd3a388a4141a9ca7457d637a7dea5fb24f0fe290de3a5ce70f",
+      "entry_hash": "f8930dffb5bb06966754f8a2dbcc836ccbe181932f24ab318693cd6ce9b91c0f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:SauronSoulCapture",
+      "source": "Soul Capture (&C)",
+      "source_hash": "c308ddc0dca2540a2c0bd581483d142c9a0af76c4b33b00c071759d171b8caf4",
+      "entry_hash": "5187d24df1a9ed2b453505b86ccd5d5bb4800b6d6ab3cf5b6730b63e51f3c7d9",
+      "protected_tokens": [
+        "&C"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSauronSoulCapture",
+      "source": "To activate, Sauron's health must be below 35%\\n\\nTarget enemy hero dies and fully heals Sauron\\nRecharge Time: 3m\\nLeft click on icon then left click on target area",
+      "source_hash": "e38223bad5827d929ca3188586a54fc6493cc08395e51cd2e6b8e5a70e273d2f",
+      "entry_hash": "9d916fab7750d21eec90b29ec7f030d4c706b591be605dcfe6a843651c3aaa5c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:SauronBombard",
+      "source": "Sauron Barrage (&V)",
+      "source_hash": "472741c80b8c4e021f1413d37dd15e712857f8a425b520bb1d4cabd8ab0304e2",
+      "entry_hash": "9c414c906aab73c122f9d1e4531badec324ab5aed1a4396c874c843ada54394b",
+      "protected_tokens": [
+        "&V"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSauronBombard",
+      "source": "Bombard target area with devastating artillery\\nRecharge Time: 3m\\n Left click icon then left click on target area",
+      "source_hash": "8cc3ff4ed255f1c03e4e83f8f897ae5c6991177079b3697f65b69882f7716944",
+      "entry_hash": "63f029bbcaeb2583f020fbdf2316a4c7ab764c83642d58a7162cef34455d227f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:CustomPillage",
+      "source": "Pillage",
+      "source_hash": "b437ad0a7c474af6400a9c2ce76bd1ebfb9cb3068db08403130bdd1c4c8c6259",
+      "entry_hash": "a25868ad2cdf8a234869cb035b5049a677a78bac5f6196284d216f5ef204259b",
+      "protected_tokens": [],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipCustomPillage",
+      "source": "Allows all kills to earn resources\\nEffect Radius: Global\\nBounty Percentage: 35% (Stacks with other abilities)\\nDuration: Permanent\\nRecharge Time: Passive Power",
+      "source_hash": "4eb4bbd1c24dd16b8e77a75d077bbf2ebb671c5ea526dc247ec29c0ef8229b39",
+      "entry_hash": "c3081526462f1b5a9c2ac45c9ddb63a35e5a2f9428dbf732fcaf95026c379e5e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomCampKeepTacticsLvls",
+      "source": "Level up (&E)",
+      "source_hash": "eedc36d972901a5c78a6fd4bd714c966921311648784b825383ac2448dbcbb09",
+      "entry_hash": "bf333f7e8d02b9b4c83722e0f20ea5b500feacb440314a2ed6b7305a55f03666",
+      "protected_tokens": [
+        "&E"
+      ],
+      "translation": ""
+    }
+  ],
+  "manifest_hash": "c8117521a16afea2c6acb9cd3a0487b36965a7024a5f052d2bcccde2a4a87d78"
+}

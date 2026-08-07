@@ -1,0 +1,252 @@
+{
+  "schema_version": 3,
+  "batch_id": "d95791b72dee4d6cbdd03df7307c63b6",
+  "worker": "rotwk-deep-all-1",
+  "created_at": "2026-08-06T07:50:57.610029+00:00",
+  "lease_expires_at": "2026-08-06T13:50:57.608672+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-deep-all-1-d95791b72dee.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPHollin",
+      "source": "Hollin",
+      "source_hash": "ddb74108e8184c9a2b608fda7ba725e799d5aacab5c8916bd0b0c5befe42b959",
+      "entry_hash": "3f6a0640e93d95ca0bfce26c9a8b805e4ba5f95a4a7aea6fd4a6aa9b31f7c7d6",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPIslandsofValinor",
+      "source": "Islands of Valinor",
+      "source_hash": "f56252178e8ca09991d878b2c14a2ec2fe4c96f43eb3ee12554096212e32dbdf",
+      "entry_hash": "84a9b1aa72dc650392c08f3a128d0f949124da8e7551c277300e05f395fea900",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPIslandsofValinor/Desc",
+      "source": "A small group of islands at the shores of the Immortal Lands.\\n\\n Size: 600 x 530\\n Lairs: 2x Troll Lair\\n Neutral Structures: 2x Outpost, 2x Signal Fire, 4x Shipwright, 2x Tower",
+      "source_hash": "b7fa28c139f7708e6b2644127f20c12385637b0ff17f3b6e23c43d89c8d4321f",
+      "entry_hash": "d39a5cfdbbabf07d5976dc5fb97b42216cea4d6fb29c0fcc09e915c6276dba56",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPIthilienHills",
+      "source": "Ithilien Hills",
+      "source_hash": "6dcf104bc30ab86fee199a6dea2abe494400931be0d45eae2c1cbf0b17c5c9e3",
+      "entry_hash": "1173c531cb51bbc6257aeb4a392205e49ea94d7230d44bb196d7d3e4b7d52f07",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPIthilienHills/Desc",
+      "source": "A small range of hills in the center of Ithilien, the easternmost province of Gondor.\\n\\n Size: 500 x 450\\n Lairs: 2x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Outpost, 2x Signal Fire",
+      "source_hash": "a31c664888a8d28f4674114f7068ae55004dad679c57ffec55c43b4a221c0bd6",
+      "entry_hash": "40c73a377a61275820f6e8b2dda389dc980978f8ee487007614fbb144b8d52d0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPLorienPlateau",
+      "source": "Lorien Plateau",
+      "source_hash": "2b4eb9662e424bd404149ff1bf416de979fe7d5ef871e20d2a3d13eff1f8781c",
+      "entry_hash": "3e710156cb63ad197da48fddde1baf68feb0aa6c9858defc5a2504b7ff71e2d8",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPLorienPlateau/Desc",
+      "source": "An area of highland in the Woods of Lothlorien, the fairest forest realm of the Elves remaining in Middle-earth.\\n\\n Size: 550 x 550\\n Lairs: 4x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Outpost, 2x Inn",
+      "source_hash": "ebe39f71edf5afbe12815b7b819d9cc5351bce61b7d6f9a7888d1d5794811506",
+      "entry_hash": "8a5188cf5bb8fc2e8e7953254354d8fba48041a41aa79c6d268cb559202a6b0d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPMithlondValley",
+      "source": "Mithlond Valley",
+      "source_hash": "9b01518683e5078bb68b0b4002356d2f94000f76e6e4ed6c433d8c8d8b8aa73f",
+      "entry_hash": "13dbac1367a706b5521e861e5eea47ad0dde6fb2489a069b31c13e4ccb3109b5",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPMithlondValley/Desc",
+      "source": "A periphery settlement of the Grey Havens, constructed in a great valley that originates in the Ered Lindon.\\n\\n Size: 450 x 500\\n Lairs: 4x Warg Lair, 2x Troll Lair\\n Neutral Structures: 1x Outpost, 2x Signal Fire",
+      "source_hash": "6c7bd4cb6866d2c97999a79ca58c9b1cc76a14686676548f8f3c9fbb17653fb5",
+      "entry_hash": "a86a45ea620e2f68d025518076845a3104c9b09ac11043f0fd60d8c5f60ab862",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPNanduhirion",
+      "source": "Nanduhirion",
+      "source_hash": "604bb40415970184b668ed3383916746a531628e555f1a3edcc1054149e9b1ba",
+      "entry_hash": "ed8b885776d8f8530ac538c46dee82802e1a19cc4c42705009e81f83ee4d6003",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPNanduhirion/Desc",
+      "source": "This valley was the site of the decisive battle in the War of the Dwarves and Orcs.\\n\\n Size: 550 x 450\\n Lairs: 2x Goblin Lair, 4x Troll Lair, 2x Fire Drake Lair\\n Neutral Structures: 4x Outpost, 1x Inn, 2x Signal Fire",
+      "source_hash": "c173cd45f49b1ba8b4e85f32145262d4e6c6069187378dc4583447fc89bdc82a",
+      "entry_hash": "bbc84a8f5be246c9ac0d1ae233940fa6c67791f3791cbd6c323747fe2d1163cf",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPNevrast",
+      "source": "Nevrast",
+      "source_hash": "de598a0bed146dc4a3a4553f8e43582e387dc3d90b66e4c82d0985c0a12b0b9d",
+      "entry_hash": "314bc6ee41ae1e80a01cbb4689b4bc62396ae660bf53179471365e531dab27ff",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPNevrast/Desc",
+      "source": "A sheltered land on the west coast of Middle-earth, located between Hithlum to the north northeast and West Beleriand to the south.\\n\\n Size: 500 x 500\\n Lairs: 8x Goblin Lair\\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "fdd853390336488583874d03f8bf28c4010b17c4b006e6a90d6614c11351bb41",
+      "entry_hash": "bb59ec47b5d526376ecef63462e3b574c16a6dcdabdeaa4db1a2f96c14ec133b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPOldBrownLands",
+      "source": "Old Brown Lands",
+      "source_hash": "d7773db778f4ca1ee5529fcea9fbd1182f6dac4d85f2f395e7089e2ea0c9a281",
+      "entry_hash": "76bbade018f6c1bfd51cc07f17ae1f3d7b089d34defe7395126b999b3f2fbc59",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPOldBrownLands/Desc",
+      "source": "Lands to the east of the River Anduin scorched by Sauron at the end of the Second Age. Once the lush home of the Entwives, this area has been desolate since the battles of the Last Alliance.\\n\\n Size: 500 x 500\\n Lairs: 10x Goblin Lair\\n Neutral Structures:",
+      "source_hash": "1b63e1f4146645627d2aea7062f6231a0062c1fe0a285c63b53b677d983be828",
+      "entry_hash": "b607b316c217b0ab2503c89b6dcc56604c125fda9074d2dcc59783547699e800",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPOldForest",
+      "source": "Old Forest",
+      "source_hash": "436686b60ada48e101d6e0080c974defd2a01c8ef1e372d60d868c1ac1a15878",
+      "entry_hash": "91ae3bdc9b995bc88e240aade5087afc4f555ce8860febdfa35941f51cae0fc4",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPOldForest/Desc",
+      "source": "Standing between the borders of Buckland and Breeland, The Old Forest hides great mystery and danger beneath its dark canopy.\\n\\n Size: 360 x 310\\n Lairs: 4x Spider Lair, 2x Barrow Wight Lair\\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "64e983dfba367ed26e64e264b2ef430854900e9edd131f91d379baf745898beb",
+      "entry_hash": "38eb185d70fcd1c3c8afa099aad0a5a10654a8e3c78337b9841da0d620f006b9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPPathsOfTheDead",
+      "source": "Paths of the Dead",
+      "source_hash": "7bdaefdec594e55ba5262df91c678fd09be4d10fb564d29f64820c758032a772",
+      "entry_hash": "cbb66398a15ef9d8baa948a5533d99ed30a4c646dad0c0b86c2e344f60a950d6",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPPathsOfTheDead/Desc",
+      "source": "A cavernous passageway through the White Mountains running from Dwimorberg in the north to the Morthond Vale in the south.\\n\\n Size: 230 x 390\\n Lairs:\\n Neutral Structures:",
+      "source_hash": "61ea87d445319240c36062d6866561a81c432781d0dbd9482114be5067c0a6bc",
+      "entry_hash": "1635a1f778089f709e2a257278b87630e1aa11ea96d325d10fbdb830952aae50",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPPlainsofRohan",
+      "source": "Plains of Rohan",
+      "source_hash": "2ab310593d7e907793dc3eff0486bc63b7ddf11aa6d66b5e2a74d256d13491ed",
+      "entry_hash": "c666cf6391a70d1626faf3f15bb8786dad4696262e884dfc7271add906dd5011",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPPlainsOfRohan/Desc",
+      "source": "Between the Gap of Rohan and the borders of Gondor lie the vast plains of the Riddermark, home to the great horse-lords of Middle-earth.\\n\\n Size: 350 x 375\\n Lairs: 4x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Inn, 2x Signal Fire",
+      "source_hash": "d5debcf1282e33e34e66bd8fb0710769e8d37b9a0e411d11f1aba821fe6a109b",
+      "entry_hash": "cedb98be7c90e62fe0cd1b44b9abef2c9807360041c41e8da96573695f4e3a63",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPRedDesertofKhand",
+      "source": "Red Desert of Khand",
+      "source_hash": "9352a6111581ea13ad9442426f8bced5f1ddd39e30e32a1c34ee8838e65fe777",
+      "entry_hash": "f8be8b41c0dce37e27e8cb28e2e5158b2f9520759bd8c3b5d189addb612ebc55",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPRedDesertofKhand/Desc",
+      "source": "A red desert land which lay to the south-east of Mordor and to the east of Near Harad.\\n\\n Size: 440 x 440\\n Lairs: 2x Goblin Lair, 2x Troll Lair\\n Neutral Structures: 2x Inn, 2x Signal Fire",
+      "source_hash": "3005c0c59038e83c0f27cb40b14e9b16be32e6192a730fb82e3db9ea38bfa473",
+      "entry_hash": "da21dc57beb9341f993e34029f663975c2f01423c72d4f20a9a2ef659046054c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:mapmpRingloRiver",
+      "source": "Ringlo River",
+      "source_hash": "1c1b5b52fbf30a7b042c1f45f35c995989d5ab3a25cafaf8451289145c8a0664",
+      "entry_hash": "e6687313ed89d162050506cdde3d6ebec1c2a62e05a51148a5ea218440da8d84",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:mapmpRingloRiver/Desc",
+      "source": "A winding river in the central regions of Gondor which served as the boundary between Anfalas to the west and Belfalas to the east.\\n\\n Size: 500 x 450\\n Lairs: 4x Warg Lair, 2x Troll Lair\\n Neutral Structures: 1x Outpost, 1x Inn",
+      "source_hash": "265c54d7051febaf80116cba649379eb0d05ce5660595ac16f3cee597815bbcd",
+      "entry_hash": "ea924f71304a217ca66020c19d02955aee4d2fe82651d235b1765bce75becbb3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "209cc8d131c611c171dbb0eced10ec6c98266b76268055c2cbd1286b5d6982cf"
+}

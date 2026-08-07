@@ -1,0 +1,233 @@
+{
+  "schema_version": 3,
+  "batch_id": "5c97e52a8886424198e05883459f9eb0",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T20:11:28.454480+00:00",
+  "lease_expires_at": "2026-08-06T02:11:28.453298+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-5c97e52a8886.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:TooltipWkTerribleFury",
+      "source": "Requires Level 6 \\n Causes fear in nearby enemies \\n Cannot be cancelled by Fear and Terror immunity spells \\n Radius: 200 \\n Duration: 5s \\n Recharge Time: 3m \\n Left click to activate",
+      "source_hash": "c0ffd6c7a23354bfd17c07281559986f35fcabb46bf1ef90adf2ec8558f7ecf5",
+      "entry_hash": "02f1a69f6844f15fe662e5d724b7c3a65452b571f090daeb6a0cb23efffa42f6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipTerribleFury",
+      "source": "Causes fear in nearby enemies \\n Cannot be cancelled by Fear and Terror immunity spells \\n Radius: 200 \\n Duration: 5s \\n Recharge Time: 3m \\n Left click to activate",
+      "source_hash": "6c5075a0c6de99c6966297f1648247033ae4968db3a093459c3ed1a85119024b",
+      "entry_hash": "d5072b245e13c06ea70d906f998557ea0cd6f262dc1f6db4bad5494c891c0083",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityBalrogScream",
+      "source": "Screams to frighten nearby foes \\n Cannot be cancelled by Fear and Terror immunity spells \\n Radius: 250 \\n Duration: 5s \\n Recharge Time: 30s \\n Left click to activate",
+      "source_hash": "f13085206fe7c340efd3d064c59a2e4713ab82c9b04fc6583234fc7875f4118a",
+      "entry_hash": "f520e60340bfd1d190865e2dd9c7233892064cc5febbb880b491c5acf5012c6d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorBlackOrcHordeInn",
+      "source": "Strong vs. Pikemen \\n\\n Horde Bonus \\n Modifier Type: Spell \\n All Black Orcs gain +25% damage when gathered in numbers of 100 or more \\n Stacks with Buffs, Leadership, and other Spells \\n \\n Unit Type: Elite Swordsman \\n Recruit Time: 45s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "ae013ca487caee2102872d865b3fb787558da6816bab689b764f5a71b0aa5418",
+      "entry_hash": "6b8d4326dd7f1dfdf00d89ed41ad2c7d0c8d1ee1fef6f727b291f36a4c195d4d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipZerkSlayer",
+      "source": "Requires Level 5 \\n Zealots gains +50% Damage, +20% movement speed, and attack twice as fast \\n Disables Axe Throw ability while active \\n Splash Damage Radius: 10 \\n Duration: 20s \\n Recharge Time: 3m \\n Left click to activate",
+      "source_hash": "eb382eb8a277445cb9cd41136742c98b000936df25319f7e97e9a0f463e75db3",
+      "entry_hash": "a21e54842374c03030553ff6adee46f208246f244162d3c4e06cfd65d0298a23",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityGrabPassenger",
+      "source": "Pick up a tree or rock to use as weapon \\n Tree Search Radius: 600",
+      "source_hash": "d253649f76ed837d42bb4ad6fe1ec15b77386f83e9e4076bc5f6392d094f6ac0",
+      "entry_hash": "f93bd2150e51118b31626018da8ccb0517c00950744dd20ccc947cce528086a6",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "ThingTemplate:IronHillsRockyOutcropping01",
+      "source": "Iron Hills Rocky Outcropping 1",
+      "source_hash": "9d3427caee26ea6b48d9162cc0c98a89e0b75aa9cfce63e1b7ebaa6f6b7c9e7a",
+      "entry_hash": "1bf1bc1a6b04a74146d1b181a17fda585eb9dd7ce816450a6eeb8908ae825201",
+      "protected_tokens": []
+    },
+    {
+      "id": "ThingTemplate:IronHillsRockyOutcropping02",
+      "source": "Iron Hills Rocky Outcropping 2",
+      "source_hash": "68b0dccef48a5766d129b7a86bb79faaad64ca3aa8ead71bdbaa047b338fee46",
+      "entry_hash": "c70d8ff2b465110ea1fd5f5b12efbebb01b27dff5c41ab3a5d405513e16b32af",
+      "protected_tokens": []
+    },
+    {
+      "id": "ThingTemplate:IronHillsRockyOutcropping03",
+      "source": "Iron Hills Rocky Outcropping 3",
+      "source_hash": "e39e7bf7661871049c674c9396fc867711b35abbb3de37ab113579413d8a2807",
+      "entry_hash": "9c680c93b7e81093b2f8bfcd173112df2cbccb300183102b05a09c319b89475d",
+      "protected_tokens": []
+    },
+    {
+      "id": "ThingTemplate:IronHillsRockyOutcropping04",
+      "source": "Iron Hills Rocky Outcropping 4",
+      "source_hash": "309c16c9de91d74043f2150d3e7bf9d75c7934b079b142a5e47c0a890046c2ec",
+      "entry_hash": "22f4a7cfcd6d07d187effcb06c444b0b72eac8f4e2c14070fb9b08da0d072aaf",
+      "protected_tokens": []
+    },
+    {
+      "id": "VALUE:ThirdX",
+      "source": "Random Teams (MP)",
+      "source_hash": "26ec9b38d5d190e7e83add93f9678029f08afcf70a2ce2830d7bc9db754b8282",
+      "entry_hash": "3ff60906ed2013f7ab48e46c867ab6116fe0146229cf844dc3726bf8687c7e09",
+      "protected_tokens": []
+    },
+    {
+      "id": "VALUE:8X",
+      "source": "Higher FPS (SP)",
+      "source_hash": "f07ee43b7dd8a3beffda2e301c496ec449e252410786d4b28c4a47a177d396ef",
+      "entry_hash": "a47b5f3f3bc617696d3158c42a07b66e057a9e2cd931ad3edf0fbb3689a8850b",
+      "protected_tokens": []
+    },
+    {
+      "id": "VALUE:HalfX",
+      "source": "Chaos Builder Mode",
+      "source_hash": "dfd9d74588959800bc0de57a498e5568f10a2e8dce9c8789e1356ac73b600c4c",
+      "entry_hash": "9550a90a999c26dddf7cb49762df9d57820bbc839742da77a24d74feba702625",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:EntStomp",
+      "source": "S&tomp",
+      "source_hash": "8d73b657989cdb2cfb0ae06602a2d04a7694d82f93ed96d0b86889210e81cbfd",
+      "entry_hash": "fd9f6803bafa05e60c7f924e86cc4fc914201bdc4ef7ba477750270f76d059c4",
+      "protected_tokens": [
+        "&t"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipEntStomp",
+      "source": "Ground attack that causes additional damage and meta impact \\n Damage: 200 (Force) \\n Splash Damage Radius: 70 \\n Recharge Time: 1m \\nLeft click to activate",
+      "source_hash": "24087a47d88a2452ff40daba1e63cd44bfc2c5c4079e694a5a00fa42a281ffe6",
+      "entry_hash": "ecc8758a7b63450cf45172bc2058cdd0ab4c4ae3936b01a38e53aed18c8b1cf0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressGorgorothSpire",
+      "source": "Allows the Fortress to launch a giant fireball \\n Increases Fortress vision range\\n Vision Range: 2080 \\n \\n Upgrade Time: 45s",
+      "source_hash": "2111b1bc15edcfa3e5c41bdbe7ae1c982903d26b174990bf065742818030735e",
+      "entry_hash": "6e0428b526649eeac0d0a610715ec64bc301229441e0d26c3920bf3aa64b1382",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressGorgorothSpirePurchased",
+      "source": "Allows the Fortress to launch a giant fireball \\n Increases Fortress vision range \\n Vision Range: 2080 \\n \\n Upgrade Time: 45s \\n \\n This upgrade has already been purchased\"",
+      "source_hash": "477cc30f4e09847cf56588b23e2e156b455b4f9afee60617c162450aed0f1ddf",
+      "entry_hash": "071c0a8ee011eabc5372b8adedefcfab834e7fdc274854f606e806eedfe11764",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressSanctum",
+      "source": "Constructs the Witch-king's Sanctum, which launches chunks of ice \\n Increases Fortress vision range \\n Vision Range: 2080 \\n \\n Upgrade Time: 45s",
+      "source_hash": "413897ef98a5de74a74278d8107c23bf03592de984cbba54d89adcd5ce56c1b3",
+      "entry_hash": "c769aece1780f69cdc5af3ecb68960555199b27082eba86a7e9299595b486a7f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressSanctumPurchased",
+      "source": "Constructs the Witch-king's Sanctum, which launches chunks of ice \\n Increases Fortress vision range \\n Vision Range: 2080 \\n \\n Upgrade Time: 45s \\n \\n This upgrade has already been purchased",
+      "source_hash": "a879ce956cf189495832abb1748b6a5591083de6f74aaabb7a49a436d274b0ad",
+      "entry_hash": "ba262c0aa5831cb0c8304398f350bc8b96a88de564c7503239bc76be27a0f826",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressIvoryTower",
+      "source": "Provides Palantir Vision Power \\n Increases Fortress vision range \\n Vision Range: 2080 \\n \\n Upgrade Time: 45s",
+      "source_hash": "6cc49b98aa132d8340592857b3d41f8066b0d782c4c262c0a2be6c2f25324ce3",
+      "entry_hash": "f61513d598de88ef0190ea5f4daff9efee3125173c018a194025826498d08b22",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "3a4c10a5603ae25cc670857079bd4043897bca6dd3282b5724124a78bcce07e8"
+}

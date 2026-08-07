@@ -1,0 +1,303 @@
+{
+  "schema_version": 3,
+  "batch_id": "0e330107a549408b887e1684cb6affce",
+  "worker": "rotwk-deep-4",
+  "created_at": "2026-08-06T06:43:25.967366+00:00",
+  "lease_expires_at": "2026-08-06T12:43:25.966011+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-deep-4-0e330107a549.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:DwarvenCatapultExpansionDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "7f5ebeeb17673db382fbb874c4adcd35881b9f6fa98a67ee29b9db93d7a38872",
+      "entry_hash": "fd9c562940c559383bcb233b46bd1fe6e49ec06b4c422be74d0ca2552d4ff75b",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardUrukPit",
+      "source": "Trains various types of Uruks \\n\\n Build Time: 30s",
+      "source_hash": "87c7864b3839ef7ce8d4fe4b74ab60492d3af064e0410bc72872caae0bdeea7a",
+      "entry_hash": "d2a79ecbcc0099f9e8c23ce47b4df0559db1a5be9cc1d32a1c2447ea940ec38d",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:IsengardUrukPitDescription",
+      "source": "Vision Range: 160 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed\\n Level 3: +25% Faster Production Speed",
+      "source_hash": "44dcd53dd5b34cc3c036dd7602cb776282a5f5bc37367dc3b51d22ec86029188",
+      "entry_hash": "f465827e0c12338650440e2a7d178d3e182622c9fc3bf2ab35e962f31c435346",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipIsengardSiegeWorks",
+      "source": "Builds and repairs Isengard siege weapons \\n\\n Build Time: 30s",
+      "source_hash": "fe8b4e4774aa7689059ed8cd855806422a5ad8d1428877df1910491b00ef50c4",
+      "entry_hash": "84fc2ffa14923186905ffd1027772ba23ff14c59ceb8348fb7c712ed8a22c24a",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:IsengardSiegeWorksDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 300 \\n Level 2 Siege Repair Rate: 4% /2s \\n Level 3 Siege Repair Rate: 6% /2s \\n Radius: 200 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed\\n Level 3: +25% Faster Production Speed",
+      "source_hash": "ea80c67a74a77d8aeaea592f516678e3426d862fcdea2a35be3a29964808aa16",
+      "entry_hash": "5888fb1ec1dd5743a124ba43fac0a728f23bfbad333471362254b380f102f627",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipIsengardWargPit",
+      "source": "Trains Warg Packs and Warg Riders \\n\\n Build Time: 30s",
+      "source_hash": "e80ba7b2416b45757961b85e17b07bcaf9ab6d68fde78d15ec4fdab7ec58a13e",
+      "entry_hash": "81ccaa17350791227ee5c8a410f803c2ca875009159e0f4f1b9fa259520f0879",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:IsengardWargPitDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed\\n Level 3: +25% Faster Production Speed",
+      "source_hash": "bfe457a0242d1d7dc742c99b4f2c56dabba630d3db8bd7d0c5a203e34b5c6275",
+      "entry_hash": "9766173de0b738baa2878858f4bef68eee75a35bcd8d99976250797421b9e408",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:IsengardArmoryDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "29180d5d51bc873e33e413178a395376054d8c94f6e9e1d3d8f0f614030385e0",
+      "entry_hash": "3ae12f51d59d5f2acebe3b3a784ff35e46ca5c0a4e684d6026f0c6579bf40133",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:IsengardTavernDescription",
+      "source": "Vision Range: 160 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed\\n Level 3: +25% Faster Production Speed",
+      "source_hash": "e65ae476cca9771ceb2b693372aaea4773ad0a42245c0e226abf76540875370b",
+      "entry_hash": "4144916e80bb3259f963c5f6260058b6ee759a916f7620d4263c8a579c437b04",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardWargSentry",
+      "source": "Sentry with defensive Wargs that will attack nearby enemies \\n\\n Build Time: 45s",
+      "source_hash": "0bb583a50aabefbe9e331db9f94a3ea652408cf7c8075f5bdcfa42e7249c700b",
+      "entry_hash": "7124418cb8090d19ce419d8c7b7b6ed01b7e3bd80c0d3e0619a365e4d8971ee7",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:IsengardWargSentryDescription",
+      "source": "Warg Attack Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Respawn Time: 6s",
+      "source_hash": "dd90c5cf3cf0bb5004b1081957b442f8ace6353f6fa22ad6603645b69c857032",
+      "entry_hash": "c73e3fb23872e113d9fd86fd94c267457d3292526fdff54141c4bc109d545192",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:IsengardWallHubDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Wall Build Radius: 1000",
+      "source_hash": "3569958607d37855177f288d9ebcb7bac0630036654b43fbae95235b7935ab63",
+      "entry_hash": "1c936700ebd7f8019df00d77017d143f14bffd9e91f2d362cad4a04d6ac3cbdb",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardTowerExpansion",
+      "source": "Defensive Arrow Tower that fires at enemies \\n\\n Build Time: 20s",
+      "source_hash": "3cad3e21a6d059ec49183f44f209092db38260390545e6dbecd0e75d405d5a99",
+      "entry_hash": "dc255f8ee2f40b0aa1f1f2c1556c9777542d9c9cbbc73271628c17b5a17d4f07",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardTowerExpansionDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 120 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "ad42cf25638c31dbe53775bbec40423a1c0c83ffd501cf4af412ba54305b70b9",
+      "entry_hash": "9069b08d621056573d93e7d37e95419fa72af6646819cfe3627340fb6f92962d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardBallistaExpansion",
+      "source": "Long range defensive weapon \\n\\n Build Time: 30s",
+      "source_hash": "69874cb4649e29b74db18e0d4306010a5b3dcbd92ce29f39c8cc80169a1c5f37",
+      "entry_hash": "6bc371cdab6818263f8ee4da75ee1bd5e921bfce76b732a7b3adee6b978b1c86",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardBallistaExpansionDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "d01d193ded2f8eebc23716ca615c127635114eca7b9442a38cd5855190b87c37",
+      "entry_hash": "20721a9f695eec904303516e66835623a93b621555e66a93b499bb96500b9914",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:IsengardFortressDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 120 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 800 \\n Repair Delay: 2m \\n Repair Rate: 0.3%/s",
+      "source_hash": "13a0b929a3ee7e6f34237c0be012d88a4be4a9549e09b0a8a08dadccc776f1e4",
+      "entry_hash": "e44c856adf65b96e985541993222f55dd90b848086efc90a8c3f15992ac80e20",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFurnace",
+      "source": "Generates resources based on available terrain \\n Increases Command Point limit by 50 \\n Resource output is reduced when structure is damaged \\n\\n Build Time: 15s",
+      "source_hash": "4275ac536b132a3958b02fc8c664c96c1956500fbe0d196787fd3d9e45ad938e",
+      "entry_hash": "24ebb9fabcd2c366cb21c7fd29dd24c45db9076aedef748b93a62adda61f30be",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSlaughterhouseUnpack",
+      "source": "Generates resources based on available terrain Increases Command Point limit \\n Reduces the cost of Trolls and Mumakil",
+      "source_hash": "7114d6e0e807f49a48cc6db221da22d1de9a81045e9f334c84e7c64adffd7ffe",
+      "entry_hash": "b5ad07904b08993bfa23130b8b10ce834cc512ca566bc696afbaecd0eda429c5",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSlaughterHouse",
+      "source": "Generates resources based on available terrain \\n Increases Command Point limit by 50 \\n Allows allied orcs to be decommissioned for additional experience \\n Resource output is reduced when structure is damaged \\n\\n Build Time: 15s",
+      "source_hash": "2688c30ea167915ad22e5a5567dd9014dfa6de4e95012201873139da324fd4be",
+      "entry_hash": "92b773b3425c5475fe54fd4a517e74b27ee28dd8f32fa5910a1cc07324da1cf6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLumberMill",
+      "source": "Harvests resources from nearby trees \\n\\n Build Time: 30s",
+      "source_hash": "3bc1c4f4c6bef385b96663cfe99b1a74dd7da0211a2f631443d4ee1f5814a3d0",
+      "entry_hash": "7981f5dff8f76e19bc1c5264c97590616cb15ea07822cb0f28f7f432153b039c",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLumberMillDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 260 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +25% Production, +25 Command Points \\n Level 3: +20% Production, +25 Command Points",
+      "source_hash": "53368ef7255393c7d79eaa0d4b59849685017b2cce64701dc0e10fc21500e996",
+      "entry_hash": "ba7be0d232ecd6dd825f7b5b42c25fa20abe614d5288ca010231dc7254118ce5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:MordorOrcPitDescription",
+      "source": "Vision Range: 160 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "ce3003a7f87d38075b7bcd0ec18f756fd9d55fad86921ad5d31c7a7c4d884ffe",
+      "entry_hash": "08d188c8b519cdbd7f2441c32e376f0f8682be1aaac134c4f0a0186ad0d3868f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMordorTrollCage",
+      "source": "Trains Mountain, Drummer, and Attack Trolls \\n\\n Build Time: 30s",
+      "source_hash": "16b55302dc6459f2d563a3a43e273d9f73bf5c3cfc2c904bd59dab48684c770a",
+      "entry_hash": "bd2f747bee6d67e1618545b91323b479be77acbb927cbaeedd7ec28ca1a13c5d",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipordorSiegeWorks",
+      "source": "Builds and repairs Mordor siege weapons \\n\\n Build Time: 30s",
+      "source_hash": "d85f212dba612e5a0fa43737b6bc672696059fa0b95ef71ce845754ae9caba22",
+      "entry_hash": "55a9b5e9abaafcf3987a065bbd63b14cb6a4c190198e0ebe5f9574e810f1f414",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "06154de9dc393085f3a94a71e9a1b87dbb5c3becfbdad80674964018fe094d5f"
+}

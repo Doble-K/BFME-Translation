@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "2dd87eb26e504321aa92f69d8500ef74",
+  "worker": "rotwk-openai1-3",
+  "translations": [
+    {
+      "id": "RW:Balrog",
+      "translation": "Balrog"
+    },
+    {
+      "id": "RW:RecruitBalrog",
+      "translation": "Fuerte contra todas las unidades y estructuras"
+    },
+    {
+      "id": "RW:Galadriel",
+      "translation": "Galadriel"
+    },
+    {
+      "id": "RW:RecruitGaladriel",
+      "translation": "Fuerte contra todas las unidades y estructuras"
+    },
+    {
+      "id": "RW:SauronLabel",
+      "translation": "Sauron"
+    },
+    {
+      "id": "RW:RecruitSauron",
+      "translation": "Fuerte contra todas las unidades y estructuras"
+    },
+    {
+      "id": "RW:NewDevastation",
+      "translation": "Inflige gran daño a todos los monstruos y máquinas enemigos \\nLos árboles se convierten al instante en recursos"
+    },
+    {
+      "id": "RW:ComeToMe",
+      "translation": "Ven a mí"
+    },
+    {
+      "id": "Describe:ComeToMe",
+      "translation": "Empuja hacia atrás a las hordas enemigas en un radio cercano \\nAtrae al héroe objetivo hacia Saruman"
+    },
+    {
+      "id": "RW:FireWave",
+      "translation": "Onda de fuego"
+    },
+    {
+      "id": "Describe:FireWave",
+      "translation": "Una onda expansiva ígnea que empuja hacia atrás a las unidades dentro de un gran radio \\nDaña por igual a aliados y enemigos"
+    },
+    {
+      "id": "RW:BarbedArrows",
+      "translation": "Flechas con púas"
+    },
+    {
+      "id": "Describe:BarbedArrows",
+      "translation": "Requiere nivel 7 \\nAumenta el daño infligido por las flechas \\nHabilidad pasiva"
+    },
+    {
+      "id": "Describe:ElvenCloakThranduil",
+      "translation": "Requiere nivel 3 \\nPermite a Thranduil camuflarse mientras permanece inmóvil \\nHabilidad pasiva"
+    },
+    {
+      "id": "Describe:WildWalk",
+      "translation": "Requiere nivel 4 \\nPermite a Thranduil camuflarse mientras se mueve \\nTambién puede disparar mientras está camuflado si está entre árboles \\nHabilidad pasiva"
+    },
+    {
+      "id": "Describe:ThornofVengeance",
+      "translation": "Requiere nivel 7 \\nPoderoso ataque de un solo disparo que derriba a los enemigos y causa gran daño"
+    },
+    {
+      "id": "RW:GoldenArrows",
+      "translation": "Flechas doradas"
+    },
+    {
+      "id": "Describe:GoldenArrows",
+      "translation": "Requiere nivel 10 \\nThranduil dispara Flechas doradas durante un corto tiempo \\nCausa gran daño y aturde a las unidades enemigas"
+    },
+    {
+      "id": "Describe:Elendil",
+      "translation": "Requiere nivel 2 \\nAragorn se vuelve resistente al retroceso \\ny hace huir a las unidades enemigas cercanas"
+    },
+    {
+      "id": "Describe:BladeMaster",
+      "translation": "Requiere nivel 6 \\nAragorn obtiene temporalmente +100% de daño y +100% de armadura"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "0b9871edcd7d481da8aa4bd740a23ffe",
+  "worker": "rotwk-ling-all-4",
+  "translations": [
+    {
+      "id": "OBJECT:DwarvenZerker",
+      "translation": "Zelote Enano"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleIFighterBlockToLineFormation",
+      "translation": "Las unidades regresan a la formación de línea estándar"
+    },
+    {
+      "id": "OBJECT:IsengardArcher",
+      "translation": "Ballestero Uruk"
+    },
+    {
+      "id": "OBJECT:IsengardPikeman",
+      "translation": "Piquero Uruk"
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeIsengardTorches",
+      "translation": "Comprar &Torches"
+    },
+    {
+      "id": "OBJECT:IsengardWildmanAxeHorde",
+      "translation": "Lanzadores de Hacha Salvajes"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFanaticStoneWall",
+      "translation": "Requiere Nivel 2 \\n Los Portadores de la Muerte se vuelven altamente resistentes al derribo\\nHabilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeMorderHeavyArmor",
+      "translation": "Comprar Arm&vadura Pesada"
+    },
+    {
+      "id": "OBJECT:MordorBlackOrc",
+      "translation": "Guerrero Orco Negro"
+    },
+    {
+      "id": "OBJECT:MordorEasterling",
+      "translation": "Easterling"
+    },
+    {
+      "id": "OBJECT:HordeMordorHaradrimArcher",
+      "translation": "Arqueros Haradrim"
+    },
+    {
+      "id": "OBJECT:MordorMumakil",
+      "translation": "Mumak"
+    },
+    {
+      "id": "CONTROLBAR:ConstructMordorMumakilPen",
+      "translation": "Construir Recinto de &Mumak"
+    },
+    {
+      "id": "CONTROLBAR:ConstructMordorMumakil",
+      "translation": "&Mumak"
+    },
+    {
+      "id": "Stat:Mumakils_Killed_Name",
+      "translation": "Mumakils Abatidos"
+    },
+    {
+      "id": "OBJECT:MordorMumakilPen",
+      "translation": "Recinto de Mumak"
+    },
+    {
+      "id": "CONTROLBAR:UpgradeMordorMumakilPenLevel2",
+      "translation": "Mejorar &U Recinto de Mumak al Nivel 2"
+    },
+    {
+      "id": "CONTROLBAR:UpgradeMordorMumakilPenLevel3",
+      "translation": "Mejorar &U Recinto de Mumak al Nivel 3"
+    },
+    {
+      "id": "OBJECT:MordorBlackRider",
+      "translation": "Jinete Negro"
+    },
+    {
+      "id": "CONTROLBAR:BlackRiderRecruit\t",
+      "translation": "Jinetes Negro&k"
+    },
+    {
+      "id": "OBJECT:GoblinFighter",
+      "translation": "Guerrero Goblin"
+    },
+    {
+      "id": "OBJECT:GoblinArcher",
+      "translation": "Arquero Goblin"
+    },
+    {
+      "id": "OBJECT:WildMarauder",
+      "translation": "Salvaje Medio Troll"
+    },
+    {
+      "id": "OBJECT:WildMarauderHorde",
+      "translation": "Salvajes Medio Troll"
+    },
+    {
+      "id": "OBJECT:WildSpiderling",
+      "translation": "Arañita"
+    }
+  ]
+}

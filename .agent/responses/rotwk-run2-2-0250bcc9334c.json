@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "0250bcc9334c40aab7345a9dd64bc51a",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipSummonRoyalGuard",
+      "translation": "Requiere Nivel 8 \\n Invoca varios batallones de enanos al lado de Dain \\n Duración: 1m 15s \\n Alcance del objetivo: 200 \\n Tiempo de recarga: 3m 30s \\n Haz clic izquierdo en el icono y luego clic izquierdo en un lugar transitable"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityDrogothFireflight",
+      "translation": "Requiere Nivel 6 \\n Envía un misil de dragón ardiente al objetivo seleccionado \\n Daño: 1000 (Héroe) y 1000 (Fuego) \\n Radio de daño en área: 70 \\n Alcance del objetivo: 300 \\n Tiempo de recarga: 3m \\n Haz clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "TOOLTIP:MordorBatteringRam",
+      "translation": "Tipo de daño: Asedio \\n Radio de daño en área: 10 \\n Velocidad de ataque cuerpo a cuerpo: 4.3s \\n Velocidad de movimiento: 45 \\n Alcance de visión: 250"
+    },
+    {
+      "id": "TOOLTIP:IsengardBatteringRam",
+      "translation": "Tipo de daño: Asedio \\n Radio de daño en área: 10 \\n Velocidad de ataque cuerpo a cuerpo: 4.3s \\n Velocidad de movimiento: 45 \\n Alcance de visión: 250"
+    },
+    {
+      "id": "TOOLTIP:Demolisher",
+      "translation": "Tipo de daño: Asedio \\n Radio de daño en área: 20 \\n Daño de aplastamiento: 1000 (Aplastamiento) \\n Velocidad de ataque cuerpo a cuerpo: 4.3s \\n Velocidad de movimiento: 40 \\n Alcance de visión: 200"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressHouseOfLamentation",
+      "translation": "Tipo de modificador: Debuff activo \\n Las unidades enemigas cercanas sufren -20% de daño y -20% de armadura \\n Anula el liderazgo enemigo \\n No se acumula con otros debuffs \\n Radio: 400 \\n \\n Tiempo de mejora: 15s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressHouseOfLamentationPurchased",
+      "translation": "Tipo de modificador: Debuff activo \\n Las unidades enemigas cercanas sufren -20% de daño y -20% de armadura \\n Anula el liderazgo enemigo \\n No se acumula con otros debuffs \\n Radio: 400 \\n \\n Tiempo de mejora: 15s \\n \\n Esta mejora ya ha sido adquirida"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardMineLauncherExpansion",
+      "translation": "Lanza minas explosivas contra los enemigos cercanos \\n\\n Tiempo de construcción: 20s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipUntamedAllegiance",
+      "translation": "Lánzalo sobre una Guarida para obtener el control de la Guarida y las criaturas asociadas \\n Lánzalo sobre el lugar de una Guarida destruida para reconstruirla \\n Capturar o reconstruir una Guarida recluta al instante varias unidades gratuitas adicionales \\n Lánzalo sobre edificios de producción de monstruos o criaturas, o guaridas capturadas, para aumentar la velocidad de producción en un 100% \\n Radio: 100 \\n Duración de la bonificación de velocidad de edificio de producción: 1m \\n Duración de la bonificación de velocidad de la guarida: 30s \\n Tiempo de recarga: 6m \\n Haz clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "TOOLTIP:LesserWightLair",
+      "translation": "Tipo de daño: Magia \\n Velocidad de ataque cuerpo a cuerpo: 1.6s \\n Radio de daño en área: 10 \\n Multiplicador de drenaje de vida: 0.15x \\n Velocidad de movimiento: 55 \\n Alcance de visión: 200"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGoblinFighterHorde",
+      "translation": "Fuerte contra piqueros \\n\\n Bonificación de horda \\n Tipo de modificador: Hechizo \\n Los guerreros goblin y los arqueros goblin ganan +25% de daño cuando se reúnen en números de 100 o más \\n Se acumula con mejoras, liderazgo y otros hechizos \\n \\n Tipo de unidad: Espadachín básico \\n Tiempo de reclutamiento: 28s \\n Nivel 2: +10% de salud, +10% de daño \\n Niveles 3-4: +10% de salud, +9% de daño \\n Nivel 5: +10% de salud, +8% de daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGoblinCave",
+      "translation": "Entrena guerreros goblin y arqueros \\n\\n Tiempo de construcción: 25s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildGoblinCave",
+      "translation": "Entrena guerreros goblin y arqueros goblin \\n\\n Tiempo de construcción: 25s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenMarketPlace",
+      "translation": "Aumenta la producción de recursos de las granjas \\n Permite investigar mejoras económicas \\n Límite de construcción: 1 \\n\\n Tiempo de construcción: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenFortress",
+      "translation": "Recluta constructores y héroes \\n Puede mejorarse con mejoras y expansiones \\n Aumenta el límite de puntos de mando en 100 \\n Construir fortalezas adicionales aumenta el costo de construcción \\n Límite de construcción: 5 \\n\\n Tiempo de construcción: 2m"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructElvenFortress",
+      "translation": "Recluta constructores y héroes \\n Puede mejorarse con mejoras y expansiones \\n Aumenta el límite de puntos de mando en 100 \\n Construir fortalezas adicionales aumenta el costo de construcción \\n Límite de construcción: 5 \\n\\n Tiempo de construcción: 2m"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenFortress",
+      "translation": "Recluta constructores y héroes \\n Puede mejorarse con mejoras y expansiones \\n Aumenta el límite de puntos de mando en 100 \\n Construir fortalezas adicionales aumenta el costo de construcción \\n Límite de construcción: 5 \\n\\n Tiempo de construcción: 2m"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardFortress",
+      "translation": "Recluta constructores y héroes \\n Puede mejorarse con mejoras y expansiones \\n Aumenta el límite de puntos de mando en 100 \\n Construir fortalezas adicionales aumenta el costo de construcción \\n Límite de construcción: 5 \\n\\n Tiempo de construcción: 2m"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMordorFortress",
+      "translation": "Recluta constructores y héroes \\n Puede mejorarse con mejoras y expansiones \\n Aumenta el límite de puntos de mando en 100 \\n Construir fortalezas adicionales aumenta el costo de construcción \\n Límite de construcción: 5 \\n\\n Tiempo de construcción: 2m"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructAngmarFortress",
+      "translation": "Recluta constructores y héroes \\n Puede mejorarse con mejoras y expansiones \\n Aumenta el límite de puntos de mando en 100 \\n Construir fortalezas adicionales aumenta el costo de construcción \\n Límite de construcción: 5 \\n\\n Tiempo de construcción: 2m"
+    }
+  ]
+}

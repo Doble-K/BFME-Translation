@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "b9b045abd69d43f59cfc22ae891b7c5d",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroHealBonus_1",
+      "translation": "Todos los héroes cerca del héroe restauran +70 HP cada 2 segundos dentro de un radio de 300 (Afecta a los aliados)\\La curación funciona en combate\\n\\nSolo se puede comprar 1 aura"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroDebuffAuraBonus_2",
+      "translation": "Aura de Debuff"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroDebuffAuraBonus_2",
+      "translation": "Los héroes enemigos cerca del héroe sufren -15% de daño, Armadura y velocidad\\n\\nSolo se puede comprar 1 aura"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroSilenceAuraBonus_3",
+      "translation": "Aura de Silencio"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroSilenceAuraBonus_3",
+      "translation": "Los héroes enemigos cerca del héroe pierden la capacidad de usar sus habilidades dentro de un radio de 150\\n\\nSolo se puede comprar 1 aura"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroBuffAuraBonus_4",
+      "translation": "Aura de Mejora"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroBuffAuraBonus_4",
+      "translation": "Todos los héroes cerca del héroe reciben +15% de daño, Armadura y experiencia dentro de un radio de 300 (Afecta a los aliados)\\n\\nSolo se puede comprar 1 aura"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroHitPointsAuraBonus_5",
+      "translation": "Aura de Puntos de Vida"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroHitPointsAuraBonus_5",
+      "translation": "Todos los héroes cerca del héroe reciben +5 HP cada 3s hasta su salud máxima dentro de un radio de 300 (Afecta a los aliados)\\nLos puntos de vida extra se restablecen al morir\\n\\nSolo se puede comprar 1 aura"
+    },
+    {
+      "id": "TOOLTIP:Lacksprerequisiteupgradedefault",
+      "translation": "Se requiere la actualización anterior"
+    },
+    {
+      "id": "SHC:1",
+      "translation": "¡Hola!"
+    },
+    {
+      "id": "SHC:2",
+      "translation": "Para ganar el mapa tendrás que sobrevivir 23 oleadas OP"
+    },
+    {
+      "id": "SHC:HC1",
+      "translation": "Has seleccionado el Modo Hardcore"
+    },
+    {
+      "id": "SHC:HC2",
+      "translation": "Necesitarás algo de efectivo extra"
+    },
+    {
+      "id": "SHC:3",
+      "translation": "Me aseguré de que tengas algo de descanso entre las oleadas"
+    },
+    {
+      "id": "SHC:4",
+      "translation": "¡Disfruta del mapa!"
+    },
+    {
+      "id": "SCRIPT:Rest",
+      "translation": "Descanso por:"
+    },
+    {
+      "id": "TIOS:1",
+      "translation": "Sauron te observa, su invasión ha comenzado. ¡Defiende la Tierra Media!"
+    },
+    {
+      "id": "TIOS:2",
+      "translation": "¡No está mal! Pero ¿qué vas a hacer contra este ejército?"
+    },
+    {
+      "id": "TIOS:3",
+      "translation": "¿Creías que ya era todo? ¡Los goblins te harán pedazos!"
+    }
+  ]
+}

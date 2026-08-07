@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "439d966847a84c54b3195996509d5f38",
+  "worker": "rotwk-openai1-3",
+  "translations": [
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerFieldSupplies",
+      "translation": "Permite que la Torre Solitaria sane lentamente a los aliados cercanos y reabastezca batallones de unidades \\nNo se acumula con otras estructuras de sanación \\nTasa de sanación: 6% /3 s \\nRadio: 200 \\n\\nTiempo de mejora: 15 s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerFieldSuppliesPurchased",
+      "translation": "Permite que la Torre Solitaria sane lentamente a los aliados cercanos y reabastezca batallones de unidades \\nNo se acumula con otras estructuras de sanación \\nTasa de sanación: 6% /3 s \\nRadio: 200 \\n\\nTiempo de mejora: 15 s \\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTower",
+      "translation": "Invoca una Torre defensiva de múltiples objetivos \\nPuede mejorarse para reforzar las capacidades defensivas y ofensivas \\nTambién puede mejorarse para sanar y reabastecer unidades aliadas \\nDetecta unidades camufladas \\nDuración: permanente \\nTiempo de recarga: 6 min \\nHaz clic izquierdo en el icono y luego clic izquierdo en un lugar transitable"
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeMordorFortressFireArrows",
+      "translation": "Municiones de fuego de orcos [&F]"
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeIsengardFortressOrcfireMunitions",
+      "translation": "Municiones ígneas [&F]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressNumenorStonework",
+      "translation": "Mejora la Fortaleza y todos los muros con +67% de armadura \\nRequisito para la Torre de Marfil \\n\\nTiempo de mejora: 30 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressNumenorStoneworkPurchased",
+      "translation": "Mejora la Fortaleza y todos los muros con +67% de armadura \\nRequisito para la Torre de Marfil \\n\\nTiempo de mejora: 30 s \\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressFlamingMunitionsPurchased",
+      "translation": "Mejora todas las ampliaciones de torre de flechas y catapulta con daño de fuego \\nAplica la mejora a todos los edificios de producción, edificios de recursos y herrerías \\n\\nTiempo de mejora: 30 s \\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressFlamingMunitions",
+      "translation": "Mejora todas las ampliaciones de torre de flechas y catapulta con daño de fuego \\nAplica la mejora a todos los edificios de producción, edificios de recursos y herrerías \\n\\nTiempo de mejora: 30 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressFlamingMunitions",
+      "translation": "Mejora todas las ampliaciones de torre de vigilancia con daño mágico \\nAplica la mejora a todos los edificios de producción, edificios de recursos y forjas de Eregion \\n\\nTiempo de mejora: 30 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressFlamingMunitionsPurchased",
+      "translation": "Mejora todas las ampliaciones de torre de vigilancia con daño mágico \\nAplica la mejora a todos los edificios de producción, edificios de recursos y forjas de Eregion \\n\\nTiempo de mejora: 30 s \\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressEncasingVines",
+      "translation": "Mejora la Fortaleza y todos los muros con +67% de armadura \\nRequisito para el Nido del Águila \\n\\nTiempo de mejora: 30 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressEncasingVinesPurchased",
+      "translation": "Mejora la Fortaleza y todos los muros con +67% de armadura \\nRequisito para el Nido del Águila \\n\\nTiempo de mejora: 30 s \\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressDwarvenStoneworkPurchased",
+      "translation": "Mejora la Fortaleza y todos los muros con +67% de armadura \\nRequisito para la Catapulta Poderosa \\n\\nTiempo de mejora: 30 s \\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressDwarvenStonework",
+      "translation": "Mejora la Fortaleza y todos los muros con +67% de armadura \\nRequisito para la Catapulta Poderosa \\n\\nTiempo de mejora: 30 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenSummonedCitadelDwarvenStonework",
+      "translation": "Mejora la Ciudadela con +25% de armadura y todos los muros con +67% de armadura \\n\\nTiempo de mejora: 30 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenSummonedCitadelDwarvenStoneworkPurchased",
+      "translation": "Mejora la Ciudadela con +25% de armadura y todos los muros con +67% de armadura \\n\\nTiempo de mejora: 30 s \\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressFlamingMunitionsPurchased",
+      "translation": "Mejora todas las ampliaciones de torre de hachas con hojas forjadas y las ampliaciones de catapulta con daño de fuego \\nAplica la mejora a los edificios de producción, edificios de recursos y forjas cercanos \\nRadio de mejora: 1000 \\n\\nTiempo de mejora: 30 s \\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeSummonedStructureFlamingMunitionsPurchased  ",
+      "translation": "Mejora todas las ampliaciones de torre de hachas con hojas forjadas y las ampliaciones de catapulta con daño de fuego \\nAplica la mejora a los edificios de producción, edificios de recursos y forjas cercanos \\nRadio de mejora: 1000 \\n\\nTiempo de mejora: 30 s \\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressFlamingMunitions",
+      "translation": "Mejora todas las ampliaciones de torre de hachas con hojas forjadas y las ampliaciones de catapulta con daño de fuego \\nAplica la mejora a todos los edificios de producción, edificios de recursos y forjas \\n\\nTiempo de mejora: 30 s"
+    }
+  ]
+}

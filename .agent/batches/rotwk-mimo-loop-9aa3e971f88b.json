@@ -1,0 +1,377 @@
+{
+  "schema_version": 3,
+  "batch_id": "9aa3e971f88b45efa764f6cc82828591",
+  "worker": "rotwk-mimo-loop",
+  "created_at": "2026-08-06T06:49:32.566682+00:00",
+  "lease_expires_at": "2026-08-06T12:49:32.565243+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-loop-9aa3e971f88b.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipRogashLeap",
+      "source": "Requires Level 4 \\n Rogash jumps to a location causing area-effect damage \\n Damage: 300 (Hero) \\n Splash Damage Radius: 50 \\n Target Range: 200 \\n Recharge Time: 2m \\n Left click icon then left click on target area",
+      "source_hash": "a47da61dc295c4519ae8862b08e1e3b6f3a518bf2ad97c44b6877e641d386ecf",
+      "entry_hash": "e2c288900a3d45201bf0b73e5e86832c203c9f467e154bba9c13d49005476778",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipRageoftheNorth",
+      "source": "Requires Level 7 \\n Rogash gains +100% Damage and +100% Armor \\n Splash Damage Radius: 30 \\n Duration: 30s \\n Recharge Time: 3m \\n Left click icon to activate",
+      "source_hash": "4e5cd98ea47c0f972ac597408fb32b06a2678dd80fb814a8301aaa0ffc313c70",
+      "entry_hash": "ed5027fe803295aff0b6f53f0e4741fb9fda08ed22eedebb0bb998a3b9cc1d66",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWitchkingMorgulCorruption",
+      "source": "Requires Level 4 \\n Targeted enemy takes poison damage over time, and becomes a wight upon death \\n Temporarily cripples non-Monster unit \\n Monster suffers -33% Speed \\n Damage: 300 (Hero) & 30/s (Poison) \\n Duration: 10s \\n Target Range: 15 \\n Recharge Time: 1m \\n Left click icon then left click on target",
+      "source_hash": "21ba3162c9ab3feff9339779ed350425053f8f8ce7e5d9ad3818c5719dee3ad1",
+      "entry_hash": "1dd26f21dd8849c297694dddda6d4fb1bac1451e3585327b0ae1d159da93bf55",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWitchKingDreadWrath",
+      "source": "Requires Level 2 \\n Modifier Type: Heavy Nullifier Debuff \\n Nearby enemy units suffer -33% Damage and -33% Armor \\nNullifies enemy Leadership \\n Takes precedence over other Debuffs \\n Radius: 200 \\n Passive ability",
+      "source_hash": "cadfa4b25d00d2357dad8c9f9e0c0c140a68762d52ed7dc2ba3d77c9d240435b",
+      "entry_hash": "6c64e9623b9e95c120e7d2649fd9ddb4a9df17500f05d876d6da005fa76103a1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipAzogFury",
+      "source": "Requires Level 4 \\n Azog gains +100% Damage and +40% Armor \\n Duration: 30s \\n Recharge Time: 2m \\n Left click to activate",
+      "source_hash": "1c4cc723a5bdfe4ff6a422b7f52d76c67f3eea4ed65eb42e9c900a3d9c479a0a",
+      "entry_hash": "b8627588f8c2c0530e0172e1afa44e4eedf66646a2df78b131d422622d12cf5d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipAzogCracktheWhip",
+      "source": "Requires Level 2 \\n Targeted units gain good Experience \\n Experience Yield: 100 XP \\n Target Radius: 150 \\n Target Range: 200 \\n Recharge Time: 2m 30s \\n Left click icon then left click on target units",
+      "source_hash": "619c2183228b2224fe2603bd37803b1fdc9b9ec6284ea97910969723e217b8cf",
+      "entry_hash": "626f6f081bbfc2b5f1a7005f002805dbbe407a235672c3a5388c8c29969471d5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipGoblinKingSkullTotem",
+      "source": "Requires Level 2 \\n Places a skull totem which will remain on the map until destroyed \\n Modifier Type: Buff \\n Nearby allies gain +33% damage, +33% armor and become immune to fear and terror \\n Stacks with Leadership and Spells \\n Detects stealth \\n Duration: Permanent \\n Radius: 200 \\n Target Range: 25 \\n Recharge Time: 2m \\n Left click icon then left click on target area",
+      "source_hash": "c95176628bff76c4fb93072844990a2e2594e50bb340af92f2d0c79854190154",
+      "entry_hash": "72ff2850feadfcf85f9760ba844dbc993412506fbfb188172e9a2b8d7665ed38",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGoblinKingMount",
+      "source": "Requires Level 3 \\n Left click to mount and unmount the Goblin King's scorpion \\n When mounted, the Goblin King gains +50% damage \\n Mounted Damage: 300 (Hero)",
+      "source_hash": "4b00b1f3a4cff472a08dcf09b3e5ece7f1ed9c2f5787b261dc06fac911f6a2e4",
+      "entry_hash": "b3a9f6d60e6688acae9798b0a01042e156f3d342dc59d6d363d5cb65b2bbecdb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipGoblinKingSpawnFireDrakes",
+      "source": "Requires Level 10 \\n Summons three Fire Drakes under the caster's control \\n Duration: 1m \\n Target Range: 250 \\n Recharge Time: 5m \\n Left click icon then left click on pathable location",
+      "source_hash": "6016cec50e3c2f0b8619059300e6e696dbee555c9ec53812532b6473df5c98ca",
+      "entry_hash": "cfb226b3641beeba063d31946f04ec426be3a910d73caad3ee03b82fbe3dd30a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipShelobWebbing",
+      "source": "Spins webs around a single target and damages them \\n Modifier Type: Spell \\n Units nearby the webbed area temporarily suffer -33% Speed and -33% Rate of Attack \\n Highly effective against flying units \\n Stacks with Buffs, Leadership, and other Spells \\n Damage: 400 (Hero Ranged) \\n Radius: 150 \\n Duration: 20s \\n Target Range: 300 \\n Recharge Time: 1m \\n Left click icon then left click on target",
+      "source_hash": "b4957f9684c949cc47ddb0f41e9d2761b34f1586159ade34014ecdbb7c494052",
+      "entry_hash": "4b500153ab871a0fd0f79348d5e7765b7c8d1773309a4ad313116d7d17bbff72",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipWildShelobInstillTerror",
+      "source": "Requires Level 3 \\n Modifier Type: Active Debuff \\n Causes Terror in nearby enemies \\n Fleeing enemies suffer -20% Damage and -20% Armor \\n Nullifies enemy Leadership \\n Radius: 200 \\n Terror Duration: 5s \\n Debuff Duration: 20s \\n Recharge Time: 3m \\n Left click to activate",
+      "source_hash": "03495ae11d7dbd4c1c934098e57ed2f0dd8d32d899472e71ac5c013eb8ddf45b",
+      "entry_hash": "008db996c7906c9ae14439f6e6762e17ee8e8eb7395dff115b2852537238bdaf",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWildShelobPoisonedStinger",
+      "source": "Requires Level 7 \\n Cripples and poisons the enemy, causing severe damage over time \\n Damage: 125/s (Poison) \\n Damage Duration: 30s \\n Paralyze Duration: 15s \\n Target Range: 30 \\n Recharge Time: 2m \\n Left click icon then left click on target",
+      "source_hash": "50aead1bd30fe7bc2c0f82d5d8e0489e1e73aa40b7c7a3b65bccbb9e94f615e3",
+      "entry_hash": "44a06487e4cf37ab094eff01321b3c8d48e1b0bd9cd43b3fcdc086436e6fc30e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityDrogothFireball",
+      "source": "Sends a fireball at selected target \\n Damage: 400 (Magic) & 400 (Flame) \\n Splash Damage Radius: 30 \\n Target Range: 400 \\n Recharge Time: 1m \\n Left click icon then left click on target",
+      "source_hash": "a52a914067f39e32ad0c25d5f9d65395ed6050fd5e22c3e74f214174de37f46b",
+      "entry_hash": "594a243266d041d9a7744262abea89f1cabfc16d5d4ac2f54a0d9997886bfcf5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityWingBlast",
+      "source": "Requires Level 3 \\n Shoots a shockwave of force below Drogoth, causing meta damage to enemies \\n Intensifies ground fire in the target area \\n Damage: 40 (Crush) \\n Target Radius: 150 \\n Duration: Persistent \\n Recharge Time: 1m 30s \\n Left click icon then left click on target area",
+      "source_hash": "599558b0647188d3ac5a2c11c9d5cd066e4efbd0fe91251729be487368ec40a0",
+      "entry_hash": "54933a7b1326d3643d1112684b7b7f1b694db313d2e38443dffa2854beac20eb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWildMountainGiantStomp",
+      "source": "Powerful ground attack that causes additional damage and meta impact \\n Damage: 200 (Force) \\n Splash Damage Radius: 70 \\n Recharge Time: 1m \\n Cannot use with rock equipped\\nLeft click to activate",
+      "source_hash": "98f8e4c6e5a11428f0a21d3af2c1f03d80044f9114860483a31792d89372fbaf",
+      "entry_hash": "bd4b30d4e5b238748484a93a75b565136887aaa82387a2447d4f4ea67125f460",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpiderRiderPoisonArrows",
+      "source": "Poison tipped arrows that cause increased and over time damage \\n Effective against Cavalry, Monsters, and flying creatures \\n Can be fired from an extended range \\n Can only use with bow equipped \\n Damage: 85 (Pierce) & 6/s (Poison) \\n Duration: 15s \\n Target Range: 500 \\n Recharge Time: 45s \\n Left click icon then left click on target",
+      "source_hash": "81e2a8684afc5b7fac26da15b0f0c32182816bbdf2be826f45d102b197063333",
+      "entry_hash": "420a89044352ec8a2f3c11a5ea83e9c92d13a17a8b8af74dcaf5c9b06357d232",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTrollfindgoblintothrow",
+      "source": "Find a Goblin or Orc to pick up and throw at the enemy\\n Knocks and damages enemies on impact \\n Nearby enemies briefly suffer uncontrollable fear \\n Damage: 300 (Siege) \\n Splash Damage Radius: 15 \\n Fear Radius: 25 \\n Duration: 2.5s \\n Target Range: 400",
+      "source_hash": "cb5dacfd8e047372751e55cd54d62b8632591c8af5dee095bbfd379b177f2299",
+      "entry_hash": "98dd95c6ed33fa0143fa9905af341d2167c136f9ee9a1544924fa09a152d5eb8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityFireDrakeInferno",
+      "source": "Requires Level 4 \\n Breathes fire over a selected area \\n Damage: 2000 (Flame) \\n Target Radius: 150 \\n Target Range: 60 \\n Recharge Time: 3m \\n Left click icon then left click on target area",
+      "source_hash": "25084aadb306e2bef6bb9360435b5575fed275096a7c192f844243ab600f3460",
+      "entry_hash": "74fece45e821a51255c5dccca0296dfc5641904eb1d7a1b50a293d47b58632f2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityFortressFireDrakeInferno",
+      "source": "Requires Level 5 \\n Breathes fire over a selected area \\n Damage: 2000 (Flame) \\n Target Radius: 150 \\n Target Range: 60 \\n Recharge Time: 3m \\n Left click icon then left click on target area",
+      "source_hash": "fd80defdc40dbcc7130f8674e69894d9e082843c3e32937391279c36f35230d8",
+      "entry_hash": "3a635b409bd173968b4d873dd8bb63a8f18f1bb869a0b72a669b12a60fb4e328",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityDrakeBroodInferno",
+      "source": "Requires Level 5 \\n Breathes fire over a selected area \\n Damage: 800 (Flame) \\n Target Radius: 100 \\n Target Range: 60 \\n Recharge Time: 3m \\n Left click icon then left click on target area",
+      "source_hash": "2695589b7fd6173893aec8a9ae77e8b71c0858c1d56e9c0efb137e71eabcc50f",
+      "entry_hash": "482c5247c0bbd6696ba01a7248d3d21cdc6a5c26d7e31ee79b6062f90accf81d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSharkuManEater",
+      "source": "Requires Level 7 \\n Kill target enemy which restores Sharku's health and temporarily grants +50% Damage and +100% Armor \\n Heal Amount: 100% Health \\n Duration: 20s \\n Target Range: 8 \\n Recharge Time: 1m 30s \\n Left click icon then left click on target enemy",
+      "source_hash": "5df5147b75b8a03781a3bc8e04a442ad281b018307c80f93286e8dd4aaefaab1",
+      "entry_hash": "bcd90a74175f3f6d0ed3ebd86e71ece4e2db13bc4957fb893f09f4465364c76f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityLurtzCarnage",
+      "source": "Requires Level 2 \\n Lurtz gains +100% Damage \\n Can only use with sword equipped \\n Splash Damage Radius: 15 \\n Duration: 20s \\n Recharge Time: 2m \\n Left click to activate",
+      "source_hash": "c660364af2937e66c01bebc86cdda28a33e27c94480872b356635ebf535fb7d1",
+      "entry_hash": "9a1cf01f7761eaa403956ef43b2aafac04e7ebd34cb6d13b871973568a75d2eb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityLurtzCripple",
+      "source": "Requires Level 4 \\n Pins enemy Hero in place \\n Deals bonus damage to Monsters \\n Can only use with bow equipped \\n Damage: 200 (Hero) \\n Duration: 20s \\n Target Range: 320 \\n Recharge Time: 1m 20s \\n Left click icon then left click on target Hero or Monster",
+      "source_hash": "77fe585256b283be74c08f96cd765440d28f2da602b64daf689c1e50b99ecbe0",
+      "entry_hash": "389d8d0c3cec53e5c03320aae842bd453a0ae84eee141ea30ab4eb9b7477a6da",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWizardBlastSaruman",
+      "source": "Close range attack that blasts back enemies \\n Damage: 650 (Magic) \\n Splash Damage Radius: 110 \\n Target Range: 100 \\n Recharge Time: 1m \\n Left click icon then left click on target",
+      "source_hash": "3f5417020d7bc396c266a29695977a5c5c607f2d92a4cfb5fdb87adcdcff0266",
+      "entry_hash": "e4b59239b41995f2c3ddcd47c176d2e2e6786bf5390eb9b6b46202c0859a39df",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpeechCraft",
+      "source": "Requires Level 4 \\n Give targeted units excellent Experience \\n Experience Yield: 110 XP \\n Target Radius: 150 \\n Target Range: 200 \\n Recharge Time: 2m 30s \\n Left click icon then left click on target units",
+      "source_hash": "dedec75e625aa0361c6760e68b9c117646dc0853537b13eb4efea700cbe7ed86",
+      "entry_hash": "848732fdfd89bd97124971e9769f56f36158e3d82d2413ffc30c510c5e5d0e47",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "5b56ccfa6871f16340b2e09eb906568493e174da1110b92a4d99e73c4ae06b51"
+}

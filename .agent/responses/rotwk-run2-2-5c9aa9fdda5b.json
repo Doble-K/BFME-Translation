@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "5c9aa9fdda5b4a2d94778f3a8dfd60ba",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFireArrowsPurchased",
+      "translation": "Mejora esta horda con Flechas Flameantes\\nAumenta significativamente el daño causado por los Dardos\\nAumenta el alcance de ataque de la horda en un 10%\\n\\nTiempo de mejora: 10s\\n\\nEsta mejora ya ha sido adquirida"
+    },
+    {
+      "id": "TOOLTIP:LackIsengardFireArrows",
+      "translation": "Investiga la mejora en la Armería para habilitar este equipo\\nAl equiparlo, el daño causado por los Dardos aumenta considerablemente\\nAumenta el alcance de ataque de la horda en un 10%\\n\\nTiempo de mejora: 10s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipNecroBlackIce",
+      "translation": "Tipo de efecto: Hechizo\\nLas unidades enemigas seleccionadas sufren un -25% de velocidad\\nSe acumula con ventajas, liderazgo y otros hechizos\\nExtingue fuegos\\nRadio de objetivo: 150\\nDuración: 20s\\nAlcance de objetivo: 400\\nAcólitos sacrificados: 1\\nHaz clic izquierdo en el icono y luego en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMirkwoodArcherHiddenHunter",
+      "translation": "Desata una descarga de flechas que causa un +100% de daño\\nDesactiva la capa\\nTiempo de recarga: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipElvenCloakMirkwoodArcher",
+      "translation": "Permite a los Arqueros del Bosque Negro escapar del combate al instante ocultándose\\nPermanecen ocultos temporalmente al estar detenidos o en movimiento\\nMientras permanecen ocultos los Arqueros del Bosque Negro pueden desatar una descarga de flechas que causa +100% de daño\\nEl disparo desactiva la capa\\nDuración: 30s\\nTiempo de recarga: 45s\\nHaz clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:TooltipAvalanche",
+      "translation": "Invoca una avalancha que causa un daño masivo a las unidades y estructuras enemigas y apaga fuegos\\nTipo de efecto: Hechizo\\nLas unidades enemigas que cruzan el campo de nieve sufren -25% de velocidad\\nSe acumula con ventajas, liderazgo y otros hechizos\\nDaño: 6400 (Héroe) y 4000 (Escarcha) y 3200 (Aplastamiento)\\nRadio: 200\\nTiempo de recarga: 12m\\nHaz clic izquierdo en el icono y luego en el área objetivo"
+    },
+    {
+      "id": "Map:MAPMPEphelduath",
+      "translation": "Ephel Duath"
+    },
+    {
+      "id": "Map:MAPMPEphelduath/Desc",
+      "translation": "Los Ephel Duath, o las Montañas de la Sombra, eran una cordillera que protegía las fronteras occidental y meridional de Mordor.\\n\\nTamaño: 375 x 375\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Araña, 2x Guarida de Goblin\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPNearHarad",
+      "translation": "Cerca de Harad"
+    },
+    {
+      "id": "Map:MAPMPNearHarad/Desc",
+      "translation": "Cerca de Harad era una región indefinida de Harad situada al sur de Gondor y Mordor, más allá del Río Harnen.\\n\\nTamaño: 370 x 315\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Huargo, 2x Guarida de Goblin\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPRiverNimrodel",
+      "translation": "Río Nimrodel"
+    },
+    {
+      "id": "Map:MAPMPRiverNimrodel/Desc",
+      "translation": "El Nimrodel era el pequeño río que nacía en las estribaciones orientales de las Montañas Nubladas y fluía hacia el este para unirse al Celebrant en las fronteras occidentales de Lothlórien.\\n\\nTamaño: 386 x 320\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Araña, 2x Guarida de Huargo\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPSuperTestArena",
+      "translation": "*Mapa de Prueba: Super Test Arena"
+    },
+    {
+      "id": "Map:MAPMPSuperTestArena/Desc",
+      "translation": "Mapa de pruebas polivalente del Parche 2.02 con reclutamiento instantáneo y temporizadores de recarga de hechizos.\\n\\nTamaño: 500 x 500\\nGuaridas: 4x Guarida de Draco, 4x Guarida de Troll, 4x Guarida de Espectro de Túmulo, 4x Guarida de Araña, 4x Guarida de Huargo, 4x Guarida de Goblin\\nEstructuras Neutrales: 4x Posada, 4x Fuego de Señales, 4x Astillero"
+    },
+    {
+      "id": "Map:MAPMPEmeraldIslet",
+      "translation": "Islote Esmeralda"
+    },
+    {
+      "id": "Map:MAPMPEmeraldIslet/Desc",
+      "translation": "Una de las muchas islas inexploradas del Mar de Umbar.\\n\\nTamaño: 500 x 450\\nGuaridas: 2x Guarida de Araña, 2x Guarida de Goblin"
+    },
+    {
+      "id": "Map:MAPWORBucklandII",
+      "translation": "Buckland II"
+    },
+    {
+      "id": "Map:MAPWORBucklandII/Desc",
+      "translation": "La frontera oriental de la Comarca era el hogar de Merry Brandybuck.\\n\\nTamaño: 400 x 395\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Araña\\nEstructuras Neutrales: 1x Posada, 2x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPFenmarch",
+      "translation": "Fenmarch"
+    },
+    {
+      "id": "Map:MAPMPFenmarch/Desc",
+      "translation": "El Fenmarch era una tierra fronteriza pantanosa a lo largo del Arroyo Mering, en el este de Rohan.\\n\\nTamaño: 380 x 330\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Araña, 2x Guarida de Goblin\\nEstructuras Neutrales: 2x Posada, 2x Fuego de Señales"
+    }
+  ]
+}

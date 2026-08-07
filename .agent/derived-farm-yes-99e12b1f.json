@@ -1,0 +1,13 @@
+{
+  "project": "/tmp/tmp0q72cizw/project.json",
+  "workers": 4,
+  "count": 20,
+  "max_restarts": 0,
+  "poll_seconds": 1,
+  "coordinators": [
+    {
+      "prefix": "yes-99e12b1f",
+      "model": "opencode/mimo-v2.5-free"
+    }
+  ]
+}

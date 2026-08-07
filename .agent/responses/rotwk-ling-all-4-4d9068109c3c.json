@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "4d9068109c3c431fa1587c16c3eeb400",
+  "worker": "rotwk-ling-all-4",
+  "translations": [
+    {
+      "id": "SCRIPT:FORNOST_GOAL_6_COMPLETE",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_7_COMPLETE",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:WITCHKING_ARRIVAL",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurIntroText_01",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurIntroText_02",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurIntroText_03",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurIntroText_04",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveText_01",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveText_02",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveText_03",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveText_04",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveText_05",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurVillageCleared_01",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurVillageCleared_02",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurVillageCleared_03",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurBonusObjectiveText_01",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_01",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_02",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_03",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_04",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_05",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_06",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurBonusObjectiveComplete_01",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_01",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_02",
+      "translation": ""
+    }
+  ]
+}

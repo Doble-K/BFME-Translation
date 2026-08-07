@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "4e3bc78d17704fd08f74e721ce1512dd",
+  "worker": "rotwk-mimo-all-4",
+  "translations": [
+    {
+      "id": "SUBTITLE:BAM7E_02",
+      "translation": "La llegada oportuna de sus lugartenientes evitó la aniquilación completa de su ejército."
+    },
+    {
+      "id": "SUBTITLE:BAM7E_03",
+      "translation": "La Corona de Hierro ha sufrido un golpe duro, pero Angmar no ha sido derrotado?"
+    },
+    {
+      "id": "SUBTITLE:BAM7E_04",
+      "translation": "Tomará tiempo recuperar su fuerza? Quizás el tiempo suficiente para que Arnor se alce de nuevo."
+    },
+    {
+      "id": "SUBTITLE:BAM7E_05",
+      "translation": "Pero el Rey-hechicero no tiene la intención de permitir que esto suceda?"
+    },
+    {
+      "id": "SUBTITLE:BAM7O_01",
+      "translation": "Arnor se encuentra al borde del abismo. Rhudaur es del Rey-hechicero, Cardolan está reducido a bandas dispersas de refugiados."
+    },
+    {
+      "id": "SUBTITLE:BAM7O_02",
+      "translation": "Solo Fornost se interpone entre Angmar y la dominación total del Norte."
+    },
+    {
+      "id": "SUBTITLE:BAM7O_03",
+      "translation": "O al menos eso parecía. El ataque a Rivendel ha unido las fortalezas élficas."
+    },
+    {
+      "id": "SUBTITLE:BAM7O_04",
+      "translation": "Ahora, los Elfos de Lindon, Rivendel e incluso Lórien marchan contra Angmar."
+    },
+    {
+      "id": "SUBTITLE:BAM7O_05",
+      "translation": "Están decididos a clavar una espada en el corazón de Angmar que dure una era?"
+    },
+    {
+      "id": "SUBTITLE:BAM8E_01",
+      "translation": "Aunque luchó con un valor raramente visto entre los hombres, el joven capitán arnórico pagó un precio más allá de la muerte, y ahora sirve a la Corona de Hierro."
+    },
+    {
+      "id": "SUBTITLE:BAM8E_02",
+      "translation": "La gran peste de Angmar se extendió por doquier, golpeando el corazón de Arnor y debilitando las ya frágiles defensas de los Dúnedain."
+    },
+    {
+      "id": "SUBTITLE:BAM8E_03",
+      "translation": "Pero el Rey-hechicero no estará satisfecho hasta que Arnor yace sepultado en los cuerpos y la sangre de su juventud."
+    },
+    {
+      "id": "SUBTITLE:BAM8O_01",
+      "translation": "Los Dúnedain de Arnor creen que el ataque élfico les proporcionará una oportunidad para recuperarse."
+    },
+    {
+      "id": "SUBTITLE:BAM8O_02",
+      "translation": "Con tiempo, Arnor puede terminar lo que los elfos habían comenzado."
+    },
+    {
+      "id": "SUBTITLE:BAM8O_03",
+      "translation": "Pero calculan sin conocer la profundidad del odio del Rey-hechicero?"
+    },
+    {
+      "id": "SUBTITLE:BAM8O_04",
+      "translation": "Envía a sus hechiceros entre los túmulos de los grandes reyes de Arnor."
+    },
+    {
+      "id": "SUBTITLE:BAM8O_05",
+      "translation": "Si bien la profanación de esta tierra sagrada podría quebrantar los corazones de los hombres, el Rey-hechicero tiene un propósito aún más oscuro:"
+    },
+    {
+      "id": "SUBTITLE:BAM8O_06",
+      "translation": "desatar una peste maligna por las tierras de hombres y elfos."
+    },
+    {
+      "id": "SUBTITLE:BAM9E_01",
+      "translation": "El martillo de Angmar cayó, ¡y Fornost se derrumbó, en cenizas y fuego!"
+    },
+    {
+      "id": "SUBTITLE:BAM9E_02",
+      "translation": "Arnor nunca despierta de su pesadilla milenaria; miles yacen muertos en las calles."
+    },
+    {
+      "id": "SUBTITLE:BAM9E_03",
+      "translation": "La malicia del Rey-hechicero ahora puede extenderse por estas Tierras del Norte."
+    },
+    {
+      "id": "SUBTITLE:BAM9E_04",
+      "translation": "El mal había llegado a Arnor? y el mal prevaleció."
+    },
+    {
+      "id": "SUBTITLE:BAM9O_01",
+      "translation": "Muchos años han pasado desde que la gran peste devastó el Norte."
+    },
+    {
+      "id": "SUBTITLE:BAM9O_02",
+      "translation": "En gran secreto, los ejércitos de Angmar han sido reforjados, y el golpe final está listo para caer sobre el último bastión del poder de Arnor: Fornost."
+    },
+    {
+      "id": "SUBTITLE:BAM9O_03",
+      "translation": "Con sus hermosas agujas y muros inquebrantables, él solo se interpone entre el Rey-hechicero y la victoria total."
+    }
+  ]
+}

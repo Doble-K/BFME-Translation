@@ -1,0 +1,392 @@
+{
+  "schema_version": 3,
+  "batch_id": "a81d24c31813475b83bff18827ad70ce",
+  "worker": "rotwk-nemo-2",
+  "created_at": "2026-08-06T06:40:43.717725+00:00",
+  "lease_expires_at": "2026-08-06T12:40:43.716235+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemo-2-a81d24c31813.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:GloinRevive",
+      "source": "Revive the fallen Hero, Gloin \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "10592144c1911ed57ad96f96b238a2ba89cf90caf5aec40d17c42c3ad9d0c5d3",
+      "entry_hash": "d64427d393ad3aa3dadab62887ee38ed58f4a00e255f7ee71e5333797eb7036b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGimli",
+      "source": "Recruit the Dwarf of the Lonely Mountain \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "895bd3f1c47c6f750151a609d545c713cca138ff9566813b7f8452eeba2e3a5a",
+      "entry_hash": "7ffc3e96ba9ba380e48f453963d10845498ef634721df5fbbabdf44888e9db16",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:RohanGimliRecruit",
+      "source": "Recruit the Dwarf of the Lonely Mountain \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "e92610f4bde044b263f15ce2ff717141a5838473bed46c9d8c6a999f27674e70",
+      "entry_hash": "cfa1b82bb2633ca5b2a0b1f6e15ec6afcb8dfec7ce7ff0e5b54cb2631c1ec1f8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:RohanGimliRevive",
+      "source": "Revive the fallen Hero, Gimli \\n \\n Unit Type: Tier 4 Hero \\n Revive Time: 55s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "8849d71a0c0145bf7755a7907c831fec6a183c0b388e9eaca7e3759004e82680",
+      "entry_hash": "9eba49e9a87b3b6a1364ce28bfa87bb56f1bff226cef337ca0f93be5cab32989",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarHwaldarRecruit",
+      "source": "Recruit the Traitor of Rhudaur \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "e009d8204e78973de34941093c8fb97f983f45cdeee9fb2bfda0f6505871277d",
+      "entry_hash": "fa6a0ae927cb662edc94c66d06329757f62dd0717910f4444f55d913ab381594",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarHwaldarRevive",
+      "source": "Revive the fallen Hero, Hwaldar \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "9a93005d9a16d159d70fc0315f9908c33b0fd82730bd7cf29dbf584989b12c78",
+      "entry_hash": "6c9a13958206b942e05e69f4b816d72ae947ca2e934e317bf5f46bfb72a00f45",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarMorgramirRecruit",
+      "source": "Recruit the Lieutenant of Carn Dum \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "a7cb9ce4bec4193cc3c5379d1fa8e9918b9fe6d306997c5ca3ca1d9d8476ab55",
+      "entry_hash": "cce881c60693b998720830c64a9b9ac5d6331b63f76e2177931a38b6686b1471",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarMorgramirRevive",
+      "source": "Revive the fallen Hero, Morgomir \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "8db929f6370d1d731e9286de16b0f707660ce2904956b4e696de7b941ea2eab0",
+      "entry_hash": "e01a114c8ce5f962536f6cb3552a3653e10d7dd3647bf7be248a597d98dac819",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarKarshRecruit",
+      "source": "Recruit the Whispering Wraith of Angmar \\n \\n Unit Type: Tier 3 Hero \\n Recruit Time: 45s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "93798c0f4f0847a614674df3219b6ff5de0dcb53562ff48532c3fcbe8a05d9e0",
+      "entry_hash": "1cdebb33011b3b14cdf7962c1f7c0d703222edaa9038c2d0930b109075e65079",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarKarshRevive",
+      "source": "Revive the fallen Hero, Karsh \\n \\n Unit Type: Tier 3 Hero \\n Revive Time: 50s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "9263ba24b9756412edbb31bbed770c4fef4cbdc4117cc93bab7fb8606ca51d97",
+      "entry_hash": "09b2f1ce58e313800c121e12244f53f7e3fdbb486e8b2ba72ae13eff2f45f30f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarRogashRecruit",
+      "source": "Recruit the mighty Troll of the North \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "08cae338d44257b937f00c3853ec62940d3f23091c32112750e8bd0f5572f987",
+      "entry_hash": "701d594235fd37b68885fd36c53d98ea8887d6eed7e5e340b5698a772b31191c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarRogashRevive",
+      "source": "Revive the fallen Hero, Rogash \\n \\n Unit Type: Tier 4 Hero \\n Revive Time: 55s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "c5005013dda3f94fa9333d2f032e366f2fe1e952efabfd60ecea06262e17f3a1",
+      "entry_hash": "ffc0c608875c9e21babfffbfc8a138ace12bf43c28c7379684423c180da9e43b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarWitchKingRecruit",
+      "source": "Recruit the Ruler of Angmar \\n \\n Unit Type: Tier 5 Hero \\n Recruit Time: 55s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "39731992cd4618153d442f1723f9ef9d8991168cdba5e5b9f9b9d2541ad8516c",
+      "entry_hash": "822a61815008bfc2ffcb353d4c3c61a2bcaa471edb573ab16176d70231afdd59",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarWitchKingRevive",
+      "source": "Revive the fallen Hero, The Witch-king \\n \\n Unit Type: Tier 5 Hero \\n Revive Time: 1m x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "6893a093c8422c8ad96ff7314db5764c16ea70df7ba7da634c625e782e305fdc",
+      "entry_hash": "bd641261feaa3b4e8e380c9bb339018949db3f0e286cd5c8e13028bb89ddaa78",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardWormtongueRecruit",
+      "source": "Recruit the spy of Saruman \\n \\n Unit Type: Tier 1 Hero \\n Recruit Time: 35s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "9bbcf22dfcc364e60700fdac7c57c0d8fb04cb11106fa4ca257b638dd2d45fc8",
+      "entry_hash": "5ca2ec25ccde0b2662345e76ef2edfdfe1cd030b70111a270311f8394e2f313a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardWormtongueRevive",
+      "source": "Revive the fallen Hero, Wormtongue \\n \\n Unit Type: Tier 1 Hero \\n Revive Time: 40s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "067d225cba7a3ebc21fc0bdfb99dc850b544212b77897b80a403860d6fcb5fd7",
+      "entry_hash": "df2f38f402029a340bded9f7800423272143ff268a79a8132ad2074a139f9b35",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardSharkuRecruit",
+      "source": "Recruit the leader of the warg riders \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "aae32b2b5daca3d64efc71e1ae5b5828a1f330bf7a5a85af87a36aff3f86f119",
+      "entry_hash": "3f26a0ec977eefdea7040d97948e08ace624a7d6041216e3dfcdb57fc8fe2c00",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardSharkuRevive",
+      "source": "Revive the fallen Hero, Sharku \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "2968e742c7c086592eb4d1872da0b1a145a85f41d568c3a107461b2df3ed2162",
+      "entry_hash": "5de5ef30674413a7ccfca336082721422a93674b432c812de17c920741580733",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildLurtz",
+      "source": "Recruit the leader of the Uruk-hai \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "d0e75a24d18efd2a8ef252b1967a90f1c5ea87be1f04dbe7541eccfa734a59fe",
+      "entry_hash": "2a7bbf88e7b4bf1a86644f8f1a97377ef1bd0289030969208c99e60fa60951e4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardLurtzRecruit",
+      "source": "Recruit the leader of the Uruk-hai \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "e46dbac3a5d3d872b40bd00d0841fedca41ddd56b70effdfab266aa329473359",
+      "entry_hash": "ccf267e9da4cf5f841ea233607a90cd78e02bdc906ade3a5c4f971be03a7c8c6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardLurtzRevive",
+      "source": "Revive the fallen Hero, Lurtz \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "579879f274461d576a459442d0900b940302aba2c0f66be5b6b0db5c34f03a12",
+      "entry_hash": "1244a6f260f85f6a6f2914de2c12f284c53ae65971c7a209795db785ec9b5d19",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardSarumanRecruit",
+      "source": "Recruit the Wizard leader armed with an arsenal of magical powers \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "6a064816fcb2fe19fffccc95bb0d0d0d5602ff97ea788f781bcca815b6ddad3a",
+      "entry_hash": "5f39d99a50f8a6c63d874f5734310b194276a3f165074c1f38eff8fa8f2b60df",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardSarumanRevive",
+      "source": "Revive the fallen Hero, Saruman \\n \\n Unit Type: Tier 4 Hero \\n Revive Time: 55s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "0d0a376d94abd25e78edf6f1e37a42599701ac5c90bb571ae8cdab737fd0cb6d",
+      "entry_hash": "0635918f1a01ff8cf36701c954338e2ce8953403872bcd54db4220bdec1e25e2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:WildAzogRecruit",
+      "source": "Recruit the Goblin Chieftain of Moria \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "f64b94e26865c379b0f69021a7164b0cf8f6c34438d98d50d95261e64298ebf0",
+      "entry_hash": "ef406e02b23e0416af5a47597aa9171594cf726160a51a1c108c75707f23d845",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:WildAzogRevive",
+      "source": "Revive the fallen Hero, Azog \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "f61cb54301b905e7f7583d7e23548e54fb963ce81f3a2c318bee722ba3632b6c",
+      "entry_hash": "2f806889e7364802a8b991c4fc771b85013627c78dcb2377dcf3e06f0569c096",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "54df77bc10b6d59081487e36b4bb2dd94b24fcbb64662249899377b2dceda2cc"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "82e1d1c2df254c22a296eeb2310c5736",
+  "worker": "rotwk-deep-4",
+  "translations": [
+    {
+      "id": "TOOLTIP:MordorCatapultExpansion",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:HaradrimSpearmen",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:Laborer",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:Azog",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:GoblinKing",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:Drogoth",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:SpiderlingsExpansion",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:SpiderRiders",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:HTSwordsmen",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:MountainGiant",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:MountainGiantExpansion",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:Hwaldar",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:Morgomir",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:Karsh",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:Rogash",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:RhudaurAxeThrowers",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:BlackNumenorians",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:DarkRangers",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:DireWolves",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:DireWolvesExpansion",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:SnowTrolls",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:StoneThrower",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:StoneThrowerExpansion",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:TomBombadil",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:Balrog",
+      "translation": ""
+    }
+  ]
+}

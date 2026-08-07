@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "b5650abf436c4ed6b36559e8c78bef45",
+  "worker": "rotwk-mimo-all-4",
+  "translations": [
+    {
+      "id": "SCRIPT:ANGAngmarVOText_08",
+      "translation": "REY BRUJO: Esta montaña es nuestra ahora. El resto seguirá. ¡Pináculos de hierro custodiarán estas cumbres por siempre!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_09",
+      "translation": "¡Hemos despejado un terreno de construcción y comenzado a construir una Fortaleza!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_10",
+      "translation": "¡Hemos terminado de construir una de nuestras Fortalezas!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_11",
+      "translation": "¡Los Númenóreanos Negros han invocado a un dragón para ayudarlos!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_12",
+      "translation": "ROGASH: Rey Oscuro, ¡cuidado! ¡Gigantes cerca, con esclavos Troll!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_13",
+      "translation": "¡Los Númenóreanos Negros han llegado! ¡Si destruyen alguna de las fortalezas, todo está perdido!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_01",
+      "translation": "Los Númenóreanos Negros aún son fuertes en estas montañas - ¡mejora tus fortalezas para protegerlas de un contraataque!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_02",
+      "translation": "Algunos Númenóreanos Negros han llegado antes que la fuerza principal - ¡elimínalos antes de que lleguen sus hermanos!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_03",
+      "translation": "¡Los Trolls de Nieve cautivos aquí se han unido a nosotros!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_04",
+      "translation": "¡Es un campamento de Númenóreanos Negros! ¡Mátenlos y tomen el Molino!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_05",
+      "translation": "¡Hemos visto algunos esclavos Troll de Nieve! ¡Si matamos a sus guardias, podrían unirse a nosotros!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_06",
+      "translation": "¡Mira! ¡Un refugio de Trolls de Colina está bajo ataque! Podría ser útil - ¡no lo dejes caer!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_07",
+      "translation": "¡Hemos tomado el Molino para nosotros! Producirá más recursos para que usemos."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_08",
+      "translation": "¡Hemos derrotado a estos Númenóreanos Negros, y este Refugio es nuestro! ¡Podemos usarlo para reclutar nuevos Trolls y Lobos!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_09",
+      "translation": "¡Hemos derrotado a estos Númenóreanos Negros, pero lograron destruir el Refugio!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_10",
+      "translation": "Estos Númenóreanos Negros tienen una Forja de Hierro Oscuro. ¡Mátenlos y podremos tomarla!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_11",
+      "translation": "¡Hemos tomado el control de esta Forja de Hierro Oscuro! Podemos usarla para construir Lanzapiedras y mejorar nuestras tropas con armas y armadura de Hierro Oscuro."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_12",
+      "translation": "Ahora que controlamos un Refugio de Trolls, nuestros Constructores pueden construir más."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_13",
+      "translation": "Ahora que controlamos una Torre de Batalla, nuestros Constructores pueden construir más."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_14",
+      "translation": "Ahora que controlamos una Forja de Hierro Oscuro, nuestros Constructores pueden construir más."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_15",
+      "translation": "Ahora que controlamos un Molino, nuestros Constructores pueden construir más."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_16",
+      "translation": "Estas murallas son demasiado fuertes para nosotros. Deberíamos encontrar máquinas de asedio para derribarlas."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarHintText_17",
+      "translation": "¡Tienen un Troll de Cueva! Pero Rogash puede someter a sus hermanos Troll a su voluntad."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarEndCineText_01",
+      "translation": "REY BRUJO: O sus vidas o sus voluntades están perdidas. Elijan ahora."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarEndCineText_02",
+      "translation": "EXPLORADOR OSCURO: Su voluntad es nuestra, temido señor, ahora y por siempre."
+    }
+  ]
+}

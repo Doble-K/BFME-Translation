@@ -1,0 +1,218 @@
+{
+  "schema_version": 3,
+  "batch_id": "61ec5b8146654f279f894dfe950c9a89",
+  "worker": "rotwk-ling-all-1",
+  "created_at": "2026-08-06T07:57:49.537154+00:00",
+  "lease_expires_at": "2026-08-06T13:57:49.535837+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-ling-all-1-61ec5b814665.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipCAH_ThrowSpear_Level2_Palantir",
+      "source": "Ranged attack that does good damage in a small radius \\n Left click icon then left click on target",
+      "source_hash": "5f216d9e7973bb8980fc899f906d961139732fc1315cef2ca1f866f8004ba769",
+      "entry_hash": "ee22fd6249f871dc660874cf752a030b53838e322a97b8972c19a17b3dfcebcd",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_ThrowSpear_Level3",
+      "source": "Ranged attack that does excellent damage in a small radius",
+      "source_hash": "7a5960c9d68ab6859863aec6f9fa39a66bb8e13a991d282edc1f75a544e87f60",
+      "entry_hash": "56e7005f1546e944f0629a1e95843600bfc139b8d43130529dab9ea5db8944d6",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_ThrowSpear_Level3_Palantir",
+      "source": "Ranged attack that does excellent damage in a small radius\\n Left click icon then left click on target",
+      "source_hash": "f319b6d924a8b5380f096450d33fc41120d86a82af5d766d3f02c29fb773846d",
+      "entry_hash": "91e19df0ffe99584e7d1705b1eb71510f5015a6086497296b905125c0aef0a92",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level1",
+      "source": "Launches a Fireball that does moderate damage",
+      "source_hash": "091c36eec2179c8a343bcbbe09783e507b221086a0a3ab86cacb16b0d2af4c7f",
+      "entry_hash": "e6d98f7abe404eeb339c418fe85700eb9bac95094046e690b926870fa7d9c5d9",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level1_Palantir",
+      "source": "Launches a Fireball that does moderate damage \\n Left click icon then left click on target",
+      "source_hash": "468afe849ff5644a2675ef6011c144a73b1b0a56d81cab851c10481762a34df7",
+      "entry_hash": "98e2e27ecd6a9c4b85de2b07a1d1d4e8f0f78b0e01375e52347a6de12ce0af6d",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level2",
+      "source": "Launches a Fireball that does good damage",
+      "source_hash": "0f1088edd031ecd96b414a9944e3447d7cba598ca4d60f6538c616cc98ee9875",
+      "entry_hash": "c1236f75f536c7bd83ed47b3ddbf6173bc7e2ba83053cc1ec811034059ca2145",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level2_Palantir",
+      "source": "Launches a Fireball that does good damage\\n Left click icon then left click on target",
+      "source_hash": "04c95f4ab32043767aa5a7654a1079eea17a359f77c016d3675ee000ff06d9a0",
+      "entry_hash": "44b1c1a949767c6731038d3a99afdf43a9df1a8e1f211eab85c0d7077ed6317e",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level3",
+      "source": "Launches a Fireball that does excellent damage",
+      "source_hash": "775cec9a5854b66b4e857d27225de7acb35ade49b4781eb0f27f6f4c67e397c5",
+      "entry_hash": "db764bde7b4c7bef663a4ea338495a16985c15994829171af1e5be446e4388f2",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level3_Palantir",
+      "source": "Launches a Fireball that does excellent damage\\n Left click icon then left click on target",
+      "source_hash": "5569c34c852edb9ac0937b23c42ad4a37e229446d2ee2f541fe1b6f8736a3de7",
+      "entry_hash": "01d8e1e38a5194547af5f477acd6a4cfbf7a2cda7c6076cde6b19acd42394fc5",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L1",
+      "source": "Sends out a lightning bolt that does moderate damage",
+      "source_hash": "edda7bd67b4090deb79d5957271b5640a06d67282da66ff48db810f9f4e0b551",
+      "entry_hash": "1073ef64c20c9c7753993123df1994429892c3e251af93931ec80fe7c15eeba5",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L1_Palantir",
+      "source": "Sends out a lightning bolt that does moderate damage \\n Left click icon then left click on target",
+      "source_hash": "4bc5a912164b3579db5ccee9049ecc1db6eed855c838e24e86784b2d1c4a3aa9",
+      "entry_hash": "cd0f9a67abf7404a583f52a0a4c807e56df1c1d41f96ddc32e03dcbc3d184bd0",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L2",
+      "source": "Sends out a lightning bolt that does good damage",
+      "source_hash": "6b71da8484b998839e2d4a1f0e09924e855db365f3beab933b761215b57e3642",
+      "entry_hash": "a08aa126b727b6a67fc6cfd80d61c0f14b29d4cded91164202e3791cdee89790",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L2_Palantir",
+      "source": "Sends out a lightning bolt that does good damage \\n Left click icon then left click on target",
+      "source_hash": "4fa854e343d636172200cad24c8026a8775340f75084454606512c292ac5900e",
+      "entry_hash": "60e65b951f8cf57fd4ed31e696d6f8874e9d425f979502c43e7d99a2dc3302c3",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L3",
+      "source": "Sends out a lightning bolt that does excellent damage",
+      "source_hash": "064f33593003ba7fecb2a5b607b82b187ef451ad4a727cc270893aa21e78f06d",
+      "entry_hash": "e59f812d218c82528b43983a037868c18f969fb2cb0176d4e8ffe04b8c264a29",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L3_Palantir",
+      "source": "Sends out a lightning bolt that does excellent damage \\n Left click icon then left click on target",
+      "source_hash": "9877f852679285786e67b0f5f34d94010b3663f412142b3dc63ba07b9f09fa16",
+      "entry_hash": "8d9414a078bdb09fff5b3afa1ee9eed291eaf49358d46405287cf2ada168e34f",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConvertEnemy_L1",
+      "source": "Permanently convert enemy units in a small radius",
+      "source_hash": "ce091386e67843d135c5b06f5f0d1d5de323402b6d7f4b18738f04e56fa15ddd",
+      "entry_hash": "507ba431237da46701f295f1b035e9fb0b23c3f75f2b3133e4299ae5f2ca8bae",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConvertEnemy_L1_Palantir",
+      "source": "Permanently convert enemy units in a small radius \\n Left click icon then left click on target units",
+      "source_hash": "3a11729ab03c398d878f31ed4b23d24becafcab1fa88254945109317e984a145",
+      "entry_hash": "2eb28c4ca96dcbdead7a2eceb4d7c7c088850ce96fb1c4ab43ad97b9e8394900",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConvertEnemy_L2",
+      "source": "Permanently convert enemy units in a large radius",
+      "source_hash": "1ab35500d9c81d968837cc0ce07f816890b5d7287c8f7590bc1ff26923c5960b",
+      "entry_hash": "fc312b87a17fad28aa6a129ec0764848c058102d1f57fff166ec93db9fb0c96d",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConvertEnemy_L2_Palantir",
+      "source": "Permanently convert enemy units in a large radius \\n Left click icon then left click on target units",
+      "source_hash": "61e0813f58d5c57125b8fc04aa48007c1cab0a429421b638701ad5e4b249e14d",
+      "entry_hash": "3c6123de2803d46d82559b2079ea567a99f30c2a9ec42d4848e09ff4949caad1",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level1",
+      "source": "Hero can convert the allegiance of a single battalion or horde",
+      "source_hash": "513f81c673002eb73d60fe2f2b3aaf4d1ad2cbd53d14cfcbc1910473ee12ff99",
+      "entry_hash": "c16fc893337acd0f05d68f53eb09092052513393b6a292aef39c67ee7b06789a",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level1_Palantir",
+      "source": "Hero can convert the allegiance of a single battalion or horde \\n Left click icon then left click on target",
+      "source_hash": "2da1ec6b08ec4b06b7695b56917edd82b2999cf90ffe3536a0bd757270865deb",
+      "entry_hash": "351f3282285409e9a42e57fa84dcf7f1824f6f100ee97593e56a15853e94ad58",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level2",
+      "source": "Hero can convert the allegiance of enemy units in a small radius",
+      "source_hash": "de15c2b958b9c2e480591e5ea66f4825dc5f1775da4c3c3025d7e7dc78372c1d",
+      "entry_hash": "33b3496f870f143e3c325740cd5f3678880beab0f941e23c0ae0e90edb713c2f",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level2_Palantir",
+      "source": "Hero can convert the allegiance of enemy units in a small radius \\n Left click icon then left click on target area",
+      "source_hash": "54a9ff2b52fd87f5da1d22f89ab4ec61225b8b6ac1195142f3e5117f03cd263d",
+      "entry_hash": "7ac631706f0ebe894407d82a362e272003db03cd9299dedd28efd0d92e44adf4",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level3_Palantir",
+      "source": "Hero can convert the allegiance of enemy units in a large radius \\n Left click icon then left click on target area",
+      "source_hash": "24c728efc7c603158793449d38957fd041bd01b06a0c632baab1e3bf57df1a6b",
+      "entry_hash": "11a30b349445c3c8ec20f565bf5e03709b735d38265df9b4b138accc3f88b2b1",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level3",
+      "source": "Hero can convert the allegiance of enemy units in a large radius",
+      "source_hash": "49caa8800015bfff8ca408e66ca1fade60ed7c5c64e29ec1956c30553a95a9ef",
+      "entry_hash": "e09049290456f322e6486c647a6856f004a7c888e3deb4c75f6fc6270d76d34c",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "ffee09cd447a72f27325074eea2dfd12194f5c513ace5beaa86225e08fe89b1c"
+}

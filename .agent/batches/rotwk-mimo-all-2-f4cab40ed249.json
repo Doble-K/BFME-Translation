@@ -1,0 +1,227 @@
+{
+  "schema_version": 3,
+  "batch_id": "f4cab40ed24947b58a1c9c6f48c315a8",
+  "worker": "rotwk-mimo-all-2",
+  "created_at": "2026-08-06T07:55:38.044315+00:00",
+  "lease_expires_at": "2026-08-06T13:55:38.043036+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-all-2-f4cab40ed249.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_WildMountainGiant",
+      "source": "Unit Type: Siege\\nStrong vs. Swordsmen, Cavalry, and Structures\\n",
+      "source_hash": "6ff88632794d813f0cb94ef815f25c32b7241f3ce1bf5879db4bc01012e68a9f",
+      "entry_hash": "e18563aa75294341357de7a8502da954d825c6e864ef452497740e92a6d13262",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_WildMountainGiant",
+      "source": "\\nUnit Type: Siege\\nStrong vs. Swordsmen, Cavalry, and Structures",
+      "source_hash": "d1c1b839a732a965d8be5ef43c2f05fc44111d1d3e92fecb03f569f0df151608",
+      "entry_hash": "e08c68d283e4379704b6b7fc5373f35972d92b675b44d6557d10edd43ccf476e",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "BANNERUI:WildBabyDrake",
+      "source": "Fire Drake Brood",
+      "source_hash": "4c98db5d5a449b5d635299a56e196b511233339c271366734d0936607cad1f1a",
+      "entry_hash": "5e4a041966ef4e0fc5978b49d496499552918e1be90306de4eb97786ce033f22",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:WildBabyDrakes",
+      "source": "Fire Drake Broods",
+      "source_hash": "d7412ef084426ccb1814bab57c174132a51822c9c8659b6f13ef457eb3bcf4d5",
+      "entry_hash": "cc3b82a9af9e4a422fabac32b1a4f24ca316bdace75f7ee303a6f279cfe04afb",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_WildBabyDrakeHorde",
+      "source": "Fire Drake Brood Horde",
+      "source_hash": "cac36197a7b20133399718df2aab07615cd20459a532bcccdd2e0d910aec1cd2",
+      "entry_hash": "5f442633e21208b639131f668d5aa1fb1f833032ce47f21e8b20267438d47ca7",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_WildBabyDrakeHordePlural",
+      "source": "Fire Drake Brood Hordes",
+      "source_hash": "e60a65ce60284f2f2c359a31c5569de202319cdedbaaa84aa290f04dbdabe737",
+      "entry_hash": "896f88533905e113c037e6302a6c2e5390df69589b71a099b8c238af2034f827",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_WildBabyDrakeHorde",
+      "source": "Unit Type: Hero Support\\nWeak vs. Archers",
+      "source_hash": "89839940ab2ba301ddc69005a86aa5b8125f0e8e36bcdee397ae442e6b3fc0d1",
+      "entry_hash": "70c8da8c192d4390c4e49af3624a6b9f68ae4c9706396294a24572e4fa080d38",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_WildSpiderlingHorde",
+      "source": "Unit Type: Elite Infantry\\nWeak vs. Pikemen\\n",
+      "source_hash": "71335e4ebc795d812818e7fba011bfd24bc43a9c99b4f0741df9e7948e75951a",
+      "entry_hash": "fc686d02a698724030a3f1ed1d798817bab163f9906296c9f6efccba59d0ca2f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_WildSpiderlingHorde",
+      "source": "\\nUnit Type: Elite Infantry\\nWeak vs. Pikemen",
+      "source_hash": "0936838b058182e35c8eb9fa6c70f7ca776739e69897dd88460ee88db6802b39",
+      "entry_hash": "1d02842710a86c549386605791bc7b04b1d5585e34bd401a01fd8a4f6d9b7a37",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_GoblinSpiderRiderHorde",
+      "source": "Goblin Spider Rider Horde",
+      "source_hash": "8904b9ce9452cc83fa3416f32456bdbb50d65af92956ee47baf956bd6a87c9dc",
+      "entry_hash": "ef3ada59c722a65a07ad4055e2d0e7729b2975ffc88715360f608712eec325ec",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_GoblinSpiderRiderHordePlural",
+      "source": "Goblin Spider Rider Hordes",
+      "source_hash": "d9770773a47b0570b239964922b541325108b7eb0fdfe7a64f4ddcfec6cc5ff7",
+      "entry_hash": "e10c8f6079bea81a8e0782ef5c1e9473cf4229880adb448ab309952714ee8f18",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Hero_GoblinKing",
+      "source": "Gorkil the Goblin King",
+      "source_hash": "87436232bc44d08fc7028bec49740607fd1c690d675bea37c36c920121ba2f69",
+      "entry_hash": "f8af06b179812be893a8474d070358e36218c10584be85f55ff699d93f475213",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Structure_AngmarFortress",
+      "source": "Fortress",
+      "source_hash": "b1d0cef2826c752cb783045fef857fa11f1ff7d4ade8068a37149ee822abd7e2",
+      "entry_hash": "a5047279e787924ff34fa751f80e121f77fef813ffbd4cefbd8fc588f69538a0",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_AngmarThrallMaster",
+      "source": "Unit Type: Weak Support Unit\\nVersatile\\n",
+      "source_hash": "0b2c67e1488e27151b351c77c3414ac6e770d49847f1b8eaa99fad10899d1574",
+      "entry_hash": "c4fff7effbc9ee663f8e2e2af7f9033bf640e5537b60787444a2c3d4de2f9300",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_AngmarThrallMaster",
+      "source": "\\nUnit Type: Weak Support Unit\\nVersatile",
+      "source_hash": "a47936065c30346fc27fb5f0627d82d4523a1d4f045368bcccea4afcb9e48ac4",
+      "entry_hash": "3a87cd0e7d708b8b9addf626f95ef73d39fba7e00e081cfb0b9a00305ca47522",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_AngmarDarkDunedainHorde",
+      "source": "\\nUnit Type: Elite Swordsmen\\nStrong vs. Pikemen",
+      "source_hash": "435d34200974ca2cbdf05be7452c1596537230f873a4b275a5d3db05ff692fdc",
+      "entry_hash": "493e8864434005d2c38eef438291be1e5ae1fde768175ad5d84ff0f2f9d1c82f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_AngmarDireWolfHorde",
+      "source": "Dire Wolf Horde",
+      "source_hash": "4e5717ac40f9335c424396818b98804449fdfc8a57014ccad8110aa63786cb4d",
+      "entry_hash": "55c11892704d563b4ad06421e49fee917357f5e03648652160412a8c0f289835",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_AngmarDireWolfHordePlural",
+      "source": "Dire Wolf Hordes",
+      "source_hash": "02c6ed0abe10a0d39dbb6088005b80c71b351d89dcabc04697c34d89d2150804",
+      "entry_hash": "08f7488fd0c7e79f2773b3cd769f9e5c7a07ee36df63118a6a122dfc7094e3e6",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_AngmarDireWolfHorde",
+      "source": "Unit Type: Basic Infantry\\nVery strong vs. Pikemen\\n",
+      "source_hash": "4b32ef77a585656c21014ef357e1277ae52a597aca6203b3887fb7ec45827503",
+      "entry_hash": "0e1601548722265a32a13ea445c2d9ff5f6b66f7c1583f129f5d17fa69b28dc9",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_AngmarDireWolfHorde",
+      "source": "\\nUnit Type: Basic Infantry\\nVery strong vs. Pikemen",
+      "source_hash": "d1093561d9f6ab536b987dd5bc7ac1f416d5f970b75d77fea67174671385ccf6",
+      "entry_hash": "fe0d35bd3ee586485f91b1b545b080c1cd92b679cf2f2622b4abd72fa6e9e864",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_AngmarSnowTrollHorde",
+      "source": "Snow Troll Horde",
+      "source_hash": "e519d1bf2af7570ed8f1fed111f2d7432db7c4ad34984de990a1de3afd3c7144",
+      "entry_hash": "a07b0f46dec8fa2f905227f4414ef35676e22cfe875718d9a7dd57ee6ad886ee",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_AngmarSnowTrollsHordePlural",
+      "source": "Snow Troll Hordes",
+      "source_hash": "f58727f519a17df0853d1852b37e5338267a5304dab7f9515171886e418fe265",
+      "entry_hash": "83b3977d44f6dc73b725d4a92d0785e528f8f56245950ee3b0a9405d6ed1dee9",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_AngmarSnowTrollHorde",
+      "source": "Unit Type: Elite Cavalry\\nStrong vs. Archers\\n",
+      "source_hash": "0a0b58f524494a81cc158f5df5b4c20184fa3a4c77bf147526a76915ed4c4373",
+      "entry_hash": "50b3d1ea9df5faaba6fb03f71fd6e55ed3e85ab730b7ede61059cc235db7fef5",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_AngmarSnowTrollHorde",
+      "source": "\\nUnit Type: Elite Cavalry\\nStrong vs. Archers",
+      "source_hash": "8ff9f048b0ea65958255f127b28f840b17fd29f8b6cb53196a99c3aa4b0945c9",
+      "entry_hash": "294e9a9a3391b83e725359c1eceaaad3c9a62b65661b3fbe13a9d7305289c244",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_AngmarHillTrollHorde",
+      "source": "Hill Troll Hordes",
+      "source_hash": "a0825c0a9098d258fa8224c5db1db630a409fc5a9e66029af66a3f76c18fc05c",
+      "entry_hash": "61561b85758ca97fd59b24ba64fc14be591d5db95d46af4ff839aa7dc46c1a0f",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "b9038c7efb6b51e281b9ea269f967ecf2f10bb2c867fc17a7ed48d267ab86bef"
+}

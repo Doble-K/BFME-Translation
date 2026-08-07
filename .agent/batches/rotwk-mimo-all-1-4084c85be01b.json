@@ -1,0 +1,218 @@
+{
+  "schema_version": 3,
+  "batch_id": "4084c85be01b4f8cb140fc7da6de8fe9",
+  "worker": "rotwk-mimo-all-1",
+  "created_at": "2026-08-06T07:59:32.045893+00:00",
+  "lease_expires_at": "2026-08-06T13:59:32.044655+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-all-1-4084c85be01b.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "OBJECT:HordeLorienWarrior",
+      "source": "Lorien Warriors",
+      "source_hash": "3ce562bd2a1f7f820c9de1fbb7262b60bc9d54a6f3e2fbfc4f7a369abc926998",
+      "entry_hash": "dfb9b7f5757b2fcc93c94a6fa6e8f878ec576a882c39cd5cf6511a9ec19d9367",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ConstructElvenLorienWarriorHorde",
+      "source": "Lorien &Warriors",
+      "source_hash": "3a191703246ca7b7284b42824f5abcbc07688a10c90e7337b42f9fdf4a87edd4",
+      "entry_hash": "b693ba7a90878f072a9e072da564fd9764c01e899a462949c3a0c17b2facf764",
+      "protected_tokens": [
+        "&W"
+      ]
+    },
+    {
+      "id": "OBJECT:HordeLorienArcher",
+      "source": "Lorien Archers",
+      "source_hash": "5cb99512cddba711c5b7fe5e4f71a86bd971ff275c5949f117546a260a29b4a9",
+      "entry_hash": "0ed0e8744f1346bea29a59ea0c0681f9a9dafaf14a543403c88096c00f131653",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ConstructElvenLorienArcherHorde",
+      "source": "Lorien &Archers",
+      "source_hash": "077f88e7135695d18a0d6467adf1e407e3e4f92d06413d2fe77f0ec9ccecbbd0",
+      "entry_hash": "1c6f60dce858872c56501c6bb61990c056f1933f18ca346ac60a8cdeff3aba78",
+      "protected_tokens": [
+        "&A"
+      ]
+    },
+    {
+      "id": "OBJECT:HordeMithlondSentry",
+      "source": "Mithlond Sentries",
+      "source_hash": "168f4d35103efe5e1516938711caa20056f66c134fdce5ba3219c963eebfc810",
+      "entry_hash": "ac4d807965aee31109c88b519c9836f61357af1f9867f616553f291190002172",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ConstructElvenMithlondSentryHorde",
+      "source": "&Mithlond Sentries",
+      "source_hash": "fd04d2748443b4a795c6b2510e5efcf7fa6dbabd0a9bde0b477d110c51216db1",
+      "entry_hash": "c384cae327a519b6c9c3fe58ee1f5032abd8b998cc87e6dd0ecb748f2c427c6d",
+      "protected_tokens": [
+        "&M"
+      ]
+    },
+    {
+      "id": "OBJECT:ElvenMirkwoodArcherHorde",
+      "source": "Mirkwood Archers",
+      "source_hash": "86fe14593e5c4abb110958d11a05e99730de16a83ebf200d55a9c63b3133475a",
+      "entry_hash": "ee96cd13045b77637ec486acba37a16e0f63d2f85b620fa1423b7fd848b621ae",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ConstructElvenMirkwoodArcherHorde",
+      "source": "Mir&kwood Archers",
+      "source_hash": "3a44c8b77e1ab72a370d3b2e93c16e85d26e7a134674981c6fc46683e6c3fd86",
+      "entry_hash": "e0983883cf762287c761bab89a9733de4ba7e2c891aee552792de31a82884788",
+      "protected_tokens": [
+        "&k"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:BuildElvenRivendellLancers",
+      "source": "Rivende&ll Lancers",
+      "source_hash": "992a599c1c0b1d6840702a78af8bb7270b9a118a3d64b45b923ccadba50f15a6",
+      "entry_hash": "ee81d958200de7ebc720a3d5884b386e69b92caa726d8eebef7c89b653b60aae",
+      "protected_tokens": [
+        "&l"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:BuildElvenRivendellArchers",
+      "source": "Lindon Horse A&rchers",
+      "source_hash": "4f8547062a4b971ce80dc5b1fe403e3566c28c085323819f0f9cea48934f806b",
+      "entry_hash": "57f9f061a9a1feeba460da55749827d283798c379b8d5d2b6362223f33f6d60a",
+      "protected_tokens": [
+        "&r"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ConstructElvenHobbitShirrif",
+      "source": "Hobbi&ts",
+      "source_hash": "7c6ab3a9fe0c7b1840d64908fc5ce42bb9bed5c59547fd1a683c08356691c924",
+      "entry_hash": "40ae475c829becee21f373aec093b175b75da432bc9fc78d5affb15b76dcaeb5",
+      "protected_tokens": [
+        "&t"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeElvenBarracksLevel3",
+      "source": "&Upgrade Elven Barracks to Level 3",
+      "source_hash": "4afb5db4d92bf4e45952b60fc094494b9d832d47896f1634b73d11853c93703f",
+      "entry_hash": "715a61d302c374425b2989a49958718dd81f1ed44c0b5c603c3e78eb394f9f9f",
+      "protected_tokens": [
+        "&U"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeElvenSilverthornArrowsForBattleTower",
+      "source": "Silverthorn Arro&ws",
+      "source_hash": "0b84040a385c99e434771518d188b213f401c173268e764e6262e962405484c4",
+      "entry_hash": "828b27b504efe5444f2c4447a25f008adb4f876442053f6c1985583f4aaf5eaa",
+      "protected_tokens": [
+        "&w"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeElvenFortressFlamingMunitions",
+      "source": "Silverthorn Arro&ws",
+      "source_hash": "c15fadf2ee14234baecb53039db70f43560af85658c27da5ed612fd3f92ca81f",
+      "entry_hash": "1621d39e986a725fb6764577d2b0a5de3446058eb749996132d9a395853da67b",
+      "protected_tokens": [
+        "&w"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TreeBeardLeadership  ",
+      "source": "March of the Ents",
+      "source_hash": "1e7809ea82d389e15ccb8ca8649b6cff4958e23d39b1eb87a65e486064072cd8",
+      "entry_hash": "1de19580bdceab7e1bd0fe3b8cb3f9fb0fa3e223ee653e450391864a95045d22",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ElvenCloakThranduil",
+      "source": "Elven Cloak",
+      "source_hash": "9804e6e19bce503cd04675671015c15a818c6593e80f2f247712bcc3a8a51ccd",
+      "entry_hash": "252fbce0c373aee016f5bcd558ba88806f4c28ba861942b14273bfd2f582a10b",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:HordeDwarvenGuardian",
+      "source": "Guardians",
+      "source_hash": "0214faee69b7a38cc4d2d6f763d40402768784bd91adc6f3d969b0b704d6f94f",
+      "entry_hash": "1768198718f7848092f8ffb12c72d08b22a4da036417d39987a88f95530c4af4",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeDwarvenSiegeHammer",
+      "source": "Purchase S&iege Hammers",
+      "source_hash": "b9e50a320dbb10275a575e555f48e5c3b9e9af5d8d097e6d1e957d95d31f631a",
+      "entry_hash": "1232dce0d5cf1bbf4c68b1bf07e397a32241b4d83ec842a6faf0c6f842f4ff31",
+      "protected_tokens": [
+        "&i"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenPhalanx",
+      "source": "Phalanx",
+      "source_hash": "cba5d56823b71c4613fa953d75472d59278dd668cbacd2c19df0d3f859682884",
+      "entry_hash": "d9d71142bda498cc579417363e02d4a2034732bc7eeff4b58243c223e0d6eacf",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:HordeDwarvenPhalanx",
+      "source": "Phalanxes",
+      "source_hash": "4f82fd036944329cf11e6f2520f36a3b8a1acca61f98885dbb122a26397869a5",
+      "entry_hash": "e45c54843a0f9623211103ea35438bd4556a0708b63309adb7fc6e9da578736b",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:DwarvenMenOfDale",
+      "source": "Man of Dale",
+      "source_hash": "f792747f71ced04bc26446c591da6ae9c427704dc84b67d9a0316c1f07999a1f",
+      "entry_hash": "e1a09235b93c49dd57f0ffb739f30b78cc02736a4e6d702bd05ec7a84180ea72",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeDwarvenFlamingShot",
+      "source": "Purchase Flaming Sho&t",
+      "source_hash": "ea977b8ca14c7cb25935daaed0f80c9d10c0e57575ae1af2fc0544735d901671",
+      "entry_hash": "403181ce37a1bcf6e3658ee52f3dad8fb55ed9b5cda10226d2fa22ff8c762e6e",
+      "protected_tokens": [
+        "&t"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackLevel2HallOfWarriors",
+      "source": "Requires Level 2 Hall of Warriors",
+      "source_hash": "b4643d2795891e986a6ef59e3429af539e0101cdeae89cac97b8d61e9c346427",
+      "entry_hash": "d8f65dc42b9608f3d78f088e8d3d998f0ac6a85ff8176c292989c0c156a8ff83",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:LackLevel3HallOfWarriors  ",
+      "source": "Requires Level 3 Hall of Warriors",
+      "source_hash": "42307febc174d5d66967c17acd46d969f13ee3f9546d8a243e649855dd35c26c",
+      "entry_hash": "8bfbe9135c5501368bff3be95b1700197e459c7d5f39e4b64607f5a5e6c6b1c0",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeSentryTowerForgedBlades",
+      "source": "Forged B&lades",
+      "source_hash": "ea69c6bb00560d00caaed70c956e25fcd02c40431eab1997206d7de493e557db",
+      "entry_hash": "0e892de8dd7247e090f498f9845118ef9f36c9c8041cdd66d9fdfaf508eebac6",
+      "protected_tokens": [
+        "&l"
+      ]
+    }
+  ],
+  "manifest_hash": "3d51dfb1686d269ce4255efad171d9295ce8ed6d6e31837224e99790a1549b1d"
+}

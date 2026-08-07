@@ -1,0 +1,287 @@
+{
+  "schema_version": 3,
+  "batch_id": "c46050fc03fc45fdaedacfec58794cc1",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T20:14:33.421959+00:00",
+  "lease_expires_at": "2026-08-06T02:14:33.420618+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-c46050fc03fc.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:TooltipFrozenLand",
+      "source": "Freezes an area of terrain and puts out all fires \\n Modifier Type: Leadership and Spell \\n All ally units gain +25% Damage, +25% Armor earn Experience 50% faster \\n Enemy units suffer -25% Speed \\n Stacks with Buffs and Spells \\n Radius: 250 \\n Duration: 5m \\n Recharge Time: 4m \\n Left click icon then left click on target area",
+      "source_hash": "534aabcc4dc5c68f2721d58f5b3f4d7e056e0c3cb3329d690a7648789f1bce23",
+      "entry_hash": "9297591cf5b7601d76be8fdb9fc8045068230265e46528524522a5154de58335",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityChillSoul",
+      "source": "All nearby enemies suffer -25% Speed and take slight damage over time \\n Damage: 2.5/s (Magic) \\n Radius: 75 \\n Passive ability",
+      "source_hash": "6a8d78c8db0d3bd3253c999b457721a773175760614b15fc84dc301c51dd6c79",
+      "entry_hash": "52ea610064659e8252141261fb3d246dffab9a0418b34ea1c9be8f2572a6605f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorOrcFighterHordeShelobsLair",
+      "source": "Strong vs. Pikemen \\n\\n Horde Bonus \\n Modifier Type: Spell \\n Orc Warriors, Orc Archers and Black Orcs gain +25% damage when gathered in numbers of 100 or more \\n Stacks with Buffs, Leadership, and other Spells \\n \\n Unit Type: Swordsman \\n Recruit Time: 22s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "99bf8d1f03fdb2c93b859c5df439a00834586cc6d84174e0908d3968b299ba06",
+      "entry_hash": "21f3eb067f918e4b37dd271ab163f410f5b7c9ef2761d1c48a71a1fe24c7cc5a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorOrcFighterHorde",
+      "source": "Strong vs. Pikemen \\n\\n Horde Bonus \\n Modifier Type: Spell \\n Orc Warriors, Orc Archers and Black Orcs gain +25% damage when gathered in numbers of 100 or more \\n Stacks with Buffs, Leadership, and other Spells \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: 22s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "4be8d19aadab2f1311079e4b8db3a00179e0c1a736973a68d414ed84fee23567",
+      "entry_hash": "a40f940ca04193e14a8eb28722fd3d8cffac1e3b0c85d6dfb3cef3fba8c9df09",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorOrcArcherHorde",
+      "source": "Strong vs. Swordsmen and Pikemen \\n\\n Horde Bonus \\n Modifier Type: Spell \\n Orc Warriors, Orc Archers and Black Orcs gain +25% damage when gathered in numbers of 100 or more \\n Stacks with Buffs, Leadership, and other Spells \\n \\n Unit Type: Basic Archer \\n Recruit Time: 25s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "43818aa8d1a0fdfab96607cafda5d5dc0a2a1f6fa8fa199c20dc8d37308c4598",
+      "entry_hash": "380ee472719c5c8bdd2b938aed8836a3c5deb299f51c5bc191ea5182337476de",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGoblinArcherHorde",
+      "source": "Strong vs. Swordsmen and Pikemen \\n Can Fire Poison Arrows \\n\\n Horde Bonus \\n Modifier Type: Spell \\n Goblin Warriors and Goblin Archers gain +25% damage when gathered in numbers of 100 or more \\n Stacks with Buffs, Leadership, and other Spells \\n \\n Unit Type: Basic Archer \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "e9772b3809ce44b167e861caf239e484e29de64776df2c479a82227cba00615d",
+      "entry_hash": "ee95c340639fe79eb6a0dd44a3062b9fff1c5d719573879be286687cfb1ba9c0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipThrallMasterUpgradeOrcWarriors",
+      "source": "Summon Gundabad Orcs to serve you \\nStrong vs. Pikemen \\n\\n Horde Bonus \\n Modifier Type: Spell \\n Gundabad Orcs gain +25% damage when gathered in numbers of 100 or more \\n Stacks with Buffs, Leadership, and other Spells \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: Instant \\n Level: 2 +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "aec40bc712c8d45ef3b8f13151bb3afb58c19aa25ff48dd6fe07a7ef4e0f5fa4",
+      "entry_hash": "1629f4cae593c883131ad9b7d77d69429864507dc2a8b4de90ee6bc3b111c144",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipIndustry",
+      "source": "Selected structure's resource output is temporarily increased by 150% \\n Radius: 100 \\n Duration: 2m \\n Recharge Time: 3m \\n Left click icon then left click on target resource structure",
+      "source_hash": "313aa146d205e90df57a9aabcacf8d8d4c89cb82a6fab93236c996f243817edf",
+      "entry_hash": "8d5ca40cec09cfd7bf2af09fe4f478cf809e52ffa0c914ba2e6615394dfcc8f9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipDwarvenRiches",
+      "source": "Selected structure's resource output is temporarily increased by 150% \\n Radius: 100 \\n Duration: 2m \\n Recharge Time: 3m \\n Left click icon then left click on target resource structure",
+      "source_hash": "c52e3ec28a6ca9b929f771f730808d162b70777283ac069799be5d826079ab57",
+      "entry_hash": "d2ad8f87d28343445ec33da91aa99426bb0c4c318e22a8ee94f2ee753faa2418",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleGFighterLineToBlockFormation",
+      "source": "Gondor Soldiers gain +25% Armor but suffer -10% Damage and -40% Speed",
+      "source_hash": "767695163ae0e087bead1e8ce7ee5cbd7cf7cc56a3ea1d712d05ae00e4d53cac",
+      "entry_hash": "da1287967ebd1cec92bf82d507bd9994f4a21c4d375a05bca0f3c8efadad97e0",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleIFighterLooseToBlockFormation",
+      "source": "Uruk-hai gain +25% Armor but suffer -10% Damage and -40% Speed",
+      "source_hash": "0a74dd19222ec8b2df111af097f61795511c58d7f7bdb7952e31bb07993f0a07",
+      "entry_hash": "f777c699777030b683be668e5f34301035d9f3526d477654689e505a56ed8342",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:GondorMarketPlaceDescription",
+      "source": "Vision Range: 160 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "24931998b6e2c73102a1af77b866b3f8b77b278316007dc7abefe460eb4ef338",
+      "entry_hash": "98cd8a96ae96d8d46571f115dc717ae9fc74462325086fe0420bc3d4800dde62",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGrandHarvestUpgrade",
+      "source": "Increases Farm resource output from Farms by 12% \\n \\n Research Time: 45s",
+      "source_hash": "ed0595ef17f94cd38d691438208415c56762756d50010d2156159cf626e90720",
+      "entry_hash": "65d65d9afcf28fc8bca09b25f365532fed48e231e43966f191a7976264675aac",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGrandHarvestUpgradePurchased",
+      "source": "Increases resource output from Farms by 12% \\n \\n Research Time: 45s \\n \\n This upgrade has already been purchased",
+      "source_hash": "e2496aa6ecb814707dabe40bd686e26a7eb3abe3b54454743b5f9c31a1a0f2ae",
+      "entry_hash": "6d6c049472c040c2cd38b3120bcbb50b156980dcb1775b3cb9ae634c540596d7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ActivateGrandHarvest",
+      "source": "&Grand Harvest",
+      "source_hash": "9b74dceafa4be8d2860982e7b513ca6074e3b085f0fae934861ff45a2e582b86",
+      "entry_hash": "232a0db513dab541885fff404b017d3f1ecbcaadf05dfe69550b57e326e4b844",
+      "protected_tokens": [
+        "&G"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipActivateGrandHarvest",
+      "source": "Temporarily increases resource output from Farms by 15% \\n Duration: 2m \\n Recharge Time: 3m \\n Left click to activate",
+      "source_hash": "0c0843dc9112761767101b46a6fe06f8c755e568a234faa66aaf6ae1cee5dffb",
+      "entry_hash": "5f31c74240fbd5af59a831da507ffedd37407abbb093eeca1cc3e48f5f3b88b5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSummonArmyoftheDead",
+      "source": "Summons the Army of the Dead \\n Deals devastating damage to units, but weak against structures \\n Fast and highly resistant to most types of damage \\n Duration: 25s \\n Recharge Time: 12m \\n Left click icon then left click on pathable location",
+      "source_hash": "b6f1e08186127f96ca031f7911520dc5abf0d0bd1cc4dbb8260c91582b13a2ae",
+      "entry_hash": "75172c86453f25a39cdc17d5ed51f489126bf33ff433afaefd5e90ded767716e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHaldirGoldenArrow",
+      "source": "Requires Level 8 \\n A high damage attack that stuns nearby enemy units \\n Can only use with bow equipped \\n Damage: 1000 (Magic) & 800 (Hero Ranged) \\n Stun Radius: 300 \\n Duration: 7s \\n Target Range: 325 \\n Recharge Time: 3m \\n Left click icon then left click on target",
+      "source_hash": "547335eb8ac3cf3fb69e91f6dd89e0c5f0220fcec4b2e2b66c369e39b311d1ae",
+      "entry_hash": "4889baa22cdb04d468ddb3acdaf98b1bba7b1239b30d66f54445ce639a4f45b6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Haldir",
+      "source": "Damage Type: Hero / Hero Ranged \\n Melee Attack Speed: 1.3s \\n Ranged Attack Speed: 1.2-1.6s \\n Splash Damage Radius: 10 \\n Movement Speed: 60 \\n Bow Range: 350 \\n Vision Range: 500",
+      "source_hash": "1d1fec7b50bc3ae403096bb470a152371fc56bc227c63303614d51619fce40e9",
+      "entry_hash": "64a9a8a63978d2e01009a731ececec51f83fdbed0fa14ea9a49cbafa107b69d5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Thranduil",
+      "source": "Damage Type: Hero Ranged / Hero \\n Ranged Attack Speed: 1.5s \\n Melee Attack Speed: 1s \\n Movement Speed: 60 \\n Bow Range: 400 \\n Vision Range: 575",
+      "source_hash": "0b2e6584c2534d254dc27e0fc229e080753a9b9c7a215f7a492cb8d029238ab1",
+      "entry_hash": "1fb9838822b63c7fc787239c2185cbb35a3f673cae4fb79744e75b0e20079bdb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "a74e63e16a97e09c713654a868f191c58cceab90416a25199f602a941a59a2f2"
+}

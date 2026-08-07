@@ -1,0 +1,248 @@
+{
+  "schema_version": 3,
+  "batch_id": "bf8aa0a6451647dbaa1bdb217bcc109c",
+  "worker": "rotwk-nemotron-all-1",
+  "created_at": "2026-08-06T09:17:58.939642+00:00",
+  "lease_expires_at": "2026-08-06T15:17:58.938384+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemotron-all-1-bf8aa0a64516.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:DwarvenCaptainofDale",
+      "source": "King Brand",
+      "source_hash": "f689dbb95cc8f9c6363693bb5e86ba6ba09bc75e65d3e2f5d69a916b08885bf6",
+      "entry_hash": "d9f3d721debf4107962b655fe1dd1bf7a5adbddd7cd2305e24f703be87c39a3d",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:DwarvenCaptainofDaleHotkey",
+      "source": "&King Brand",
+      "source_hash": "738f31bad076dfbc8a9f1819b08e4011add71b3251bfa181046266f7be337ed3",
+      "entry_hash": "7994f100c7149591ddb5e7b8455d750647a1c1f09751c250bd910b76b545fd00",
+      "protected_tokens": [
+        "&K"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenCaptainofDale",
+      "source": "King Brand",
+      "source_hash": "6b4992a857863d37798e4e993752ad7449c989b0d789a872ff8ad38fc96195b3",
+      "entry_hash": "82038e2063de485e23c11b24058064e75921cbe8a8101a619dfce7efd7295ea0",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildWildTreasureTroveLevel3Upgrade",
+      "source": "Allows research of the Scavenged Armor upgrade \\n +25% Faster Production Speed \\n Adds defensive Arrow Tower",
+      "source_hash": "eb03bb4bcddac3c6ada8e78110008b08d2b71ed3471eb1df445041a3d9bce490",
+      "entry_hash": "92be6ba833f5535ab47993ae9d96c6fe5683c65bdbea95d563436fc04bdfcaa6",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityDwarvenDemolisherDeploy",
+      "source": "Demolisher becomes immobile but gains +100% armor",
+      "source_hash": "99430c657b4162dc600c04e836bc9d089cd642004071c336d2fad5cedd595ba0",
+      "entry_hash": "ac389534c11fb005e3e2d17ceaf25fa092feafb7f899c33b4f98482c85952e45",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:EnableCEContents",
+      "source": "Activate Collector's Edition Features",
+      "source_hash": "96e36d241c0b202228ef328630bedf9f9545ab0cd6688ed509685232179d307f",
+      "entry_hash": "8796aecc1ecc38e1b49b9f769df5eea8419a20eb04424651f10e265da8d04dc0",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:DaleBeastSlayerArrow",
+      "source": "Beast Sla&yer Arrow",
+      "source_hash": "5a69fa7ec8eb02a87be9749429b84e124811830ede8ef87753a3d4eb049c2471",
+      "entry_hash": "2462b502ec323161705024b589e29622a8eea430c02b70b23e574be68eceb54c",
+      "protected_tokens": [
+        "&y"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorHaradrimHorde",
+      "source": "Strong vs. Infantry and Monsters",
+      "source_hash": "ee213d06fb8e5716d06f216e407277986e7c3347937d1be2907f79a1592519ab",
+      "entry_hash": "55b2d86356ad9cfc998d9c4aaa420b504c30a53bfd12ab81df06407d1f216c52",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorHaradrimArcherHorde_Inn  ",
+      "source": "Strong vs. Infantry and Monsters \\n Can fire Barbed Arrows",
+      "source_hash": "c30e2f839227b0f002d0bc179ea27e0ba4bd0993510b9d9ac9d607b3fce02f65",
+      "entry_hash": "968c94e2c4c69d597e8c4927997b2cfee11dc8a62e756e0ba92256473d33b39d",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorArcher",
+      "source": "Strong vs. Infantry",
+      "source_hash": "bd8fdd47ffb6e8538064e568dc3fda91d4cb4c1e8a01c99c77b379dad825ff46",
+      "entry_hash": "3103e05281de5528fd231ffb096413903ceb35527dc03ae17d4281cf62d31c14",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenMenOfDaleInnHorde",
+      "source": "Strong vs. Infantry and Monsters \\n Can fire Black Arrows",
+      "source_hash": "1d2a0c567b0b1f0015d9722f88984fd5ea54d8b9a7a9d543bc88129a5a3f2417",
+      "entry_hash": "5aaa8c485895d63a43062fbabfa46a642f810d9a12e402566a2769f9975d7e92",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_GoblinArcherHorde",
+      "source": "Unit Type: Basic Archer\\nStrong vs. Infantry\\n Can Fire Poison Arrows\\n",
+      "source_hash": "eb1f0f53a5f3c71455b31c8026225e9ffa48b3f540cbb922a4aaf2c61e760c68",
+      "entry_hash": "01820bf2758265de35179e9b797899ef4724555ff398df6164b62cf1febc60b8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_GoblinArcherHorde",
+      "source": "\\nUnit Type: Basic Archer\\nStrong vs. Infantry\\n Can Fire Poison Arrows",
+      "source_hash": "26e459706d5d05a736a97c9d327e9e6fdf8fd14bbaea856ca424dafdd1f313fa",
+      "entry_hash": "d0eaf0230c16e5cb364ece2de22a80b38a40bb13d59dfacddbc5972bc3ce6de3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildCorsairShip",
+      "source": "Corsair ship garrisoned with archers \\n Strong vs. Siege Ships",
+      "source_hash": "1a82411ed5382e242a1000f774894b3d6ea48109f74e290f050c23e6e26f8373",
+      "entry_hash": "32f66b656f7f20258c45964046d404f6318e3c32bed93c4fcc2d0a91cb4d69db",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEvilShip",
+      "source": "Corsair ship garrisoned with archers \\n Strong vs. Siege Ships",
+      "source_hash": "e634acd8faaaee8a923cc5d2ac8b9d9c4a65824c1a203391716e458439b758ff",
+      "entry_hash": "14b354fa312a7772479be22dc4d50ab474037e36252d3a38d765c56deeb94b6a",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGoodShip",
+      "source": "Elven ship garrisoned with archers \\n Strong vs. Siege Ships",
+      "source_hash": "2e15e095206ab274c0f3a60b4dbf08ee5b89bc13244e3d7ade9efaf39186a8db",
+      "entry_hash": "af092e04232fdd5877024f843fe4344e2e74bb4bab81fa7d4e3da22f05b4ec1b",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildArnorRangerHorde",
+      "source": "Requires Level 2 Archery Range \\n Strong vs. Infantry and Monsters \\n Can fire Longshot arrow volleys",
+      "source_hash": "ef794d07b3b0cd5060403a0db26ddbcc7f5db9061916f78dcfaf8f09740d5ff2",
+      "entry_hash": "edc8094faa01c15c3c16fcbd5934cb0f3bdc2e60b9ba5efd08f957bef3052661",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildArnorRangerHordeForGoodIthilien",
+      "source": "Strong vs. Infantry and Monsters \\n Can fire Longshot arrow volleys",
+      "source_hash": "743e010491f606e3f892df062c3b5c2c766098b6531665e3f04e9ddefc50e2bb",
+      "entry_hash": "69ac3ba5e0fd2a25c712650604c01e714327266a3c5f367e185b15dc6828a78b",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ArnorArcherHorde",
+      "source": "Unit Type: Basic Archer\\nStrong vs. Infantry and Monsters \\n Can fire Longshot arrow volleys\\n",
+      "source_hash": "ec6d8519e926bbe3c88db61f2a2f2f437a862a634cc5066e660da8f576ba9315",
+      "entry_hash": "5700450a9ca1692ca575ce038eef9bef37a5650da9f453788e0ae4e34a2af03f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ArnorArcherHorde",
+      "source": "\\nUnit Type: Basic Archer\\nStrong vs. Infantry and Monsters \\n Can fire Longshot arrow volleys",
+      "source_hash": "097828e8eb950ae41e14e2b9443549c581d100abf7a130b4c16d6b58d96357e0",
+      "entry_hash": "93cff64e90c9b873edc0a651f68d6ee96df8e64bfdbd5dbd8f5975feccce61ff",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ArnorRangerHorde",
+      "source": "Unit Type: Elite Archer\\nStrong vs. Infantry and Monsters \\n Can fire Longshot arrow volleys\\n",
+      "source_hash": "ea13a1627a95fb0cffd2fc1ba29de526d65d337c3148f724dac66be02805d5a8",
+      "entry_hash": "c960bac5ca54a885cd5ec95c4c4d28845b43b381e0b76a31cd9185ec0671b8a2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ArnorRangerHorde",
+      "source": "\\nUnit Type: Elite Archer\\nStrong vs. Infantry and Monsters \\n Can fire Longshot arrow volleys",
+      "source_hash": "d83e508e45cffde277dda869454fabd2ac9902811b1714d2f29a5722ac79140d",
+      "entry_hash": "e77ac6867d4c799571363d59b3532e272889f4da1d380c1f54818fa617b94951",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_GondorArcherHorde",
+      "source": "Unit Type: Basic Archer\\nStrong vs. Infantry\\n",
+      "source_hash": "e00c5beb852cabeb2c79694257f155e8acc6474648771e075ec8a71ac27c494e",
+      "entry_hash": "a1df2acfd8f8ff84f2804d08a158511eabc15dddbc3b27c34d9b4120ca21670d",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_GondorArcherHorde",
+      "source": "\\nUnit Type: Basic Archer\\nStrong vs. Infantry",
+      "source_hash": "b1f7523c4e8365fa813f415e8e8b0450963d0e844dee9b7f6aa4d54d32e6859f",
+      "entry_hash": "e4beb33c87069f1fcd10b5c23fb5bae9c0bbc556d7d69e316655de39fec8c3f2",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ElvenLorienArcherHorde",
+      "source": "Unit Type: Basic Archer\\nStrong vs. Infantry \\n Can stealth near trees\\n",
+      "source_hash": "175cd5a310ce931b35d0359c274387e45c2466a25a768850b16d88de50ebfd0a",
+      "entry_hash": "fd5587046087fac2743f16c661883b000b3ef63df2d73dd668a153467f2b4274",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "810ebac4fe12626e0ea470a4a8489b30932af57f088335c207c41007413f618c"
+}

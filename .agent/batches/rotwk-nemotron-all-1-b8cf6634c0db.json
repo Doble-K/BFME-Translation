@@ -1,0 +1,257 @@
+{
+  "schema_version": 3,
+  "batch_id": "b8cf6634c0db4b43945fd1f16d0b5fd3",
+  "worker": "rotwk-nemotron-all-1",
+  "created_at": "2026-08-06T07:03:17.704742+00:00",
+  "lease_expires_at": "2026-08-06T13:03:17.703403+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemotron-all-1-b8cf6634c0db.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPHitherLandsOfKhand/Desc",
+      "source": "A desert wasteland where pools of fresh water can be found.\\n\\n Size: 465 x 430\\n Lairs: 2x Goblin Lair, 4x Troll lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "b35ef264a1d01bfbcd514eb9c3468030a91b3e7cef445c1db32c8b313d178856",
+      "entry_hash": "9b0d6b05c55565f7241f9a2d591d40482e377fcd5ff01e8f82fe90fbdc4680da",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPJunglesofFarHarad",
+      "source": "Jungles of Far Harad",
+      "source_hash": "8a15afd2cdbc195c07cbed07d4bbda5efb03b15784defd8d25ba011fbb736fd4",
+      "entry_hash": "681a66d66d0737dc7ecde19ba526b1357e2323adf9370bf4ff284780645411c8",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPJunglesofFarHarad/Desc",
+      "source": "A region in the very south of Far Harad densely forested with tropical trees and bushes. It is supplied with water from rivers which ultimately flow out into the Great Sea.\\n\\n Size: 380 x 400\\n Lairs: 4x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "8e11025e015a330cfd3f5f462bd7c91a18376005e64698bc62324c342ee4c09f",
+      "entry_hash": "f9e3f64b47ee903fd05e7850f95001f40370736d8f1bcc6cb28a093e4820dff8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPLamedon",
+      "source": "Lamedon",
+      "source_hash": "896e5cd53f7d558eb949e5f92313cdae0ddfaee2569b7324cba3fdbc74d53c33",
+      "entry_hash": "d8eb0ee0001c68a81c1b4e9d1fb0f22ec2653e74e37c0eca13e531d74d603b5c",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPLamedon/Desc",
+      "source": "Lamedon was a region and fiefdom in southern Gondor, a series of valleys through which the Ringlo and Ciril rivers flowed south.\\n\\n Size: 600 x 600\\n Lairs: 2x Warg Lair, 4x Troll Lair\\n Neutral Structures: 2x Inn, 2x Outpost, 2x Signal Fire",
+      "source_hash": "052459bd53fb96b3965e251d828a2b13daf42ee29c0a828b70c80205410cc7b3",
+      "entry_hash": "f2ba159d11c0084383b3b8257ee1da9c527e91597df484ccc69cd016205d8c03",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "MAP:MAPMPMirkwoodForest",
+      "source": "Mirkwood Forest",
+      "source_hash": "8f2ad18fb7ed7fb15ad29263ecdd439b390b4e697cf5f14d7c53886b0b7340d0",
+      "entry_hash": "6bbba8f27546d117014016e8179f8029fcceea0a5e5cde5e4e47cae61d1ddb53",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MAPMPMirkwoodForest/Desc",
+      "source": "A dark and treacherous forest located in the north-western part of Middle-earth \\n\\n Size: 380 x 380\\n Lairs: 4x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "8e58a7cc458cd6f31f24a9c3afd52b060e2bbbf3cedf9103ba8cc17d1c5d9856",
+      "entry_hash": "c460f5a06331b84ab54996ef65435a3270a94a1535e593dbd6ff1b5e5d6a1c67",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPMoongladeVale",
+      "source": "Moonglade Vale",
+      "source_hash": "85f0612c31a3b8f05a53daad17caa87350142127611ee0be8d05ef00b98c0cac",
+      "entry_hash": "b14c52f2e94722e6f51900dd3c9d92d6636ea9f47b12cc41ee7426ef77ce9ac5",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPMoongladeVale/Desc",
+      "source": "A moonforest which the Elves of Middle-earth revere in adoration of Varda, creator of starlight, whom they call Elbereth.\\n\\n Size: 480 x 480\\n Lairs: 2x Troll Lair, 2x Goblin Cave\\n Netural Structures:",
+      "source_hash": "5f9ba3a49e2b53f563a496a0d41c7d788dd441558505c86678f2265b769f561a",
+      "entry_hash": "ac4606e3f6af6af4e0d526107d1df4b0bf31fae8727e9c4987851164c4145924",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPNanMarillion",
+      "source": "Nan Marillion",
+      "source_hash": "6f829cc2f1a74fe52ac18ac0a76f2221b60544b19dca289cf4e67c4d3b81320c",
+      "entry_hash": "fd0dcd5ec94379ad1362615dd85e387cb75adc312757305fa5892f67cf36a0a2",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPNanMarillion/Desc",
+      "source": "A tropical land of flowers and rivers protected by the mystical power of the three crystals that are spread across the great valley in sacred locations.\\n\\n Size: 440 x 390\\n Lairs: 2x Warg Lair, 2x Troll lair\\n Neutral Structures: 2x Inn, 2x Signal Fire",
+      "source_hash": "6fffd472eba9e7c276ff83eef736caa6c21c7bebae56485b72fd2c0ba3709f0f",
+      "entry_hash": "5aa42dfc935808f2f3a373368089f7a1c6f2781ed5095f41ed6b7beb78b41a1f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPPlainsOfLindon",
+      "source": "Plains of Lindon",
+      "source_hash": "b62b3bf65ff1eba6ea37861e491951629c54750706be9f2c176398c1c6956d84",
+      "entry_hash": "b91e38fbe9c96209745c13791247e042b6b7d89b4444a73b96cb287f23ddaee7",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPPlainsOfLindon/Desc",
+      "source": "A green and quiet Elvish country beyond the Lune.\\n\\n Size: 313 x 375\\n Lairs: 2x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "cc47150ae4347bf840167ef07aa1a36d2d319b0452bb7554ab0f8cc99d3cef37",
+      "entry_hash": "ad788f6ecc5548a9722f3fc8ffbd47638f1b325b3e67668d4af4ab59a1dadbf5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPRhovanionSteppes",
+      "source": "Rhovanion Steppes",
+      "source_hash": "40f9036cbf16dc31f26215bc4273340af5e9c74a9c17ebdd7edc24d4bbf633c7",
+      "entry_hash": "1b4fe90f5d1d4446def6a415a3bd1dc5ea2e05b02ef1c4a307c3cc8ead508b50",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPRhovanionSteppes/Desc",
+      "source": "East of southern Mirkwood lies leagues of plains that have seen centuries of expansion and war.\\n\\n Size: 375 x 450\\n Lairs: 4x Goblin Lair, 4x Warg Lair\\n Neutral Structures: 2x Inn, 1x Tower",
+      "source_hash": "1a055e33ca87f93cca9cc3092375db67a56ea4137205cbec1528d9a0e0c6c97a",
+      "entry_hash": "7b5fcd641dc4d07dc16777ebfd85fb5e69a4722322d7857d0f4aa72918ab40bc",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "MAP:MAPMPVolcanosOfForodwaith",
+      "source": "Volcanoes of Forodwaith",
+      "source_hash": "ff25352500cac1d097887e5aeb91289b28fe6d262620c34ef66b43226800e5f7",
+      "entry_hash": "f60afa836171a80727b4c3b72bb53ccd12f95d2b7aec591bcdad55095e653db1",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MAPMPVolcanosOfForodwaith/Desc",
+      "source": "The Northern Waste was a vast, cold region of mostly ice and snow, in the far north-end of Middle-earth, beyond Mount Gundabad and the Ered Mithrin.\\n\\n Size: 500 x 500\\n Lairs: 2x Troll Lair\\n Neutral Structures:",
+      "source_hash": "04412baa7d966ad2abef91a437f73d218692e363754c2b5f863e43b9e65f792c",
+      "entry_hash": "a3420d1e1c5e467cabb7a86eb1ef932b7e8a8decaae5199a9a636218859ff1e5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPDruwaithReef",
+      "source": "Druwaith Reef",
+      "source_hash": "c243786d4b7c60492cf247024aeb70a23eda328ce420dff41fc8ea9c0eec8449",
+      "entry_hash": "7ec1108d6af92f8606441b2459860b0ab5e67879dcdf38fd4a7e3a86269a8433",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPDruwaithReef/Desc",
+      "source": "This coastal region, once inhabited by the Druedain, has been the site of sacrificial offerings to Ulmo. \\n\\n Size: 410 x 350\\n Lairs: 2x Spider Lair, 2x Troll Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "73b3dbce43304c44ed9497654bf1090ec966785657de3117b820e92c2a2cf85b",
+      "entry_hash": "73a16a9bc094b40a586adfdf215473f74c9c3df9f5dbb125c7a3e1a20b7cbf0b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPFordsOfHarnen",
+      "source": "Fords of Harnen",
+      "source_hash": "bc88bb4f1dc6878cce061fcdebe2df3c765f822de2dba1fed1ece98d1fc30638",
+      "entry_hash": "7afaca45a9df46aec96d2c7bcdd5f99470840ecbdfbce2dbd8ea70e1a739bd77",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPFordsOfHarnen/Desc",
+      "source": "A river located south of Gondor. South of the Harnen lay the land of Near Harad.\\n\\n Size: 560 x 450\\n Lairs: 4x Troll Lair\\n Neutral Structures: 4x Signal Fire",
+      "source_hash": "63ecae48b22e3863c7e70a4a97577135b4a6ecdaca51570430fa75d84fe12a84",
+      "entry_hash": "01b601daf45e30897f799854c9dcc86254e8d49cfb04eb37dadfc240e214fa44",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPGatesofMoria",
+      "source": "Gates of Moria",
+      "source_hash": "c49925e035ea8ca920a783bc23513261f58e7f4864f8fe4fdfbcf100a7d57537",
+      "entry_hash": "828daec7b32e736acc504e738af24fb7757d39a4dcb7a2b74f66654e343c17b9",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPGatesofMoria/Desc",
+      "source": "An enormous and ancient underground complex in north-western Middle-earth that runs through the Misty Mountains.\\n\\n Size: 400 x 400\\n Lairs: 2x Troll Lair, 2x Barrow Wight Lair\\n Neutral Structures: 1x Outpost, 1x Inn, 1x Signal Fire",
+      "source_hash": "c7ac873858573f71127de27b4f93ab041adba03df38f1d679d2b497af0baedd0",
+      "entry_hash": "417a9d3c126d33fe81eb2b39d2cebde02212446b1740ee1dd048828f98b1d29a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPGorgoroth",
+      "source": "Gorgoroth",
+      "source_hash": "c748908ca1c919ffafbab98c158487705363e80e08921c23aa8a158828895f95",
+      "entry_hash": "b6187d56e25136ddef0ced9c761de137dff0110e208afe2d0cfae14d6a4064e2",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPGorgoroth/Desc",
+      "source": "A hostile and desolate region in Mordor, frequently reshaped by volcanic activities.\\n\\n Size: 480 x 580\\n Lairs: 2x Goblin Lair, 4x Troll Lair, 2x Fire Drake Lair\\n Neutral Structures: 4x Outpost, 2x Signal Fire",
+      "source_hash": "19e5258b99733e56d454969fa65bd8e95c1022de9a1ae67e6b0342b90f230bbd",
+      "entry_hash": "aed828d1f4a56247ba752787e41bb9c1b924c95ad78edd9e8c81073506914076",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "883fe3d147f7ef7e8132aad443eeb66bde4294aeb89e606133782f9e5359d4ff"
+}

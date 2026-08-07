@@ -1,0 +1,269 @@
+{
+  "schema_version": 3,
+  "batch_id": "b684ca540fa44d9f94f7c359c1af6952",
+  "worker": "rotwk-run2-1",
+  "created_at": "2026-08-05T20:11:04.472127+00:00",
+  "lease_expires_at": "2026-08-06T02:11:04.470910+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-1-b684ca540fa4.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressIvoryTowerPurchased",
+      "source": "Provides Palantir Vision Power \\n Increases Fortress vision range \\n Vision Range: 2080 \\n \\n Upgrade Time: 45s \\n \\n This upgrade has already been purchased",
+      "source_hash": "b6f5edff3620914513c1a69f99d1987242ae9ed7842b797636863dd1f46b97cf",
+      "entry_hash": "2a76fe2e1a4f9229d22542acf1516f291a545a64c5ac5ec2522aa2b308e66bde",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackIvoryTower",
+      "source": "Requires the Numenor Stonework upgrade \\n Provides Palantir Vision Power \\n Increases Fortress vision range \\n Vision Range: 2080 \\n \\n Upgrade Time: 45s",
+      "source_hash": "99b111c0f1a1e4a98ae23df3a3b7161fd3aa08f1d242569efe74aef3f0d62f4e",
+      "entry_hash": "5aaf3151e9dcd6cb6421cdc2efc322558528de2ffbf8214597c631776590f7e2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressMightyCatapult",
+      "source": "Constructs a Catapult on the top of the Fortress that delivers flaming barrages \\n Increases Fortress vision range \\n Vision Range: 2080 \\n \\n Upgrade Time: 45s",
+      "source_hash": "76fd90e04e414f4835d8aaa5f3f534e1396a5eade6ec9c899f40a3ea61eaf9d4",
+      "entry_hash": "0bae41cbb57f737a4172cc51981f4447689435cf6d00d4a81289e81f5b721f3c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressMightyCatapultPurchased",
+      "source": "Constructs a Catapult on the top of the Fortress that delivers flaming barrages \\n Increases Fortress vision range \\n Vision Range: 2080 \\n \\n Upgrade Time: 45s \\n \\n This upgrade has already been purchased",
+      "source_hash": "e2d66f234a71dad8c04dc58673b3916a85d721dc54a3d589dd6cac4e79e88f8c",
+      "entry_hash": "6226505648574d70ee8e8ec28e2ae3c28068535bb4da86a907171b0e132423b3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMordorPorter",
+      "source": "Train a Builder \\n Constructs Buildings \\n Health Regeneration: 5/s \\n \\n Recruit Time: 30s",
+      "source_hash": "96c474ff006133855d22f36fa09ec6aabb8d930e692e61c0df38a3e29f52f6ed",
+      "entry_hash": "ab395ca08eff91daacbb8a749c3f3c41299ec83abee7a47084af432cc6a71766",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenPorter",
+      "source": "Train a Builder \\n Constructs Buildings \\n Health Regeneration: 5/s \\n \\n Recruit Time: 30s",
+      "source_hash": "dfe8870c995183730b29b2e0f48dd0cd84b414a01257a7a142cc4a2eb5961f3e",
+      "entry_hash": "ba40bee58d9f9712ce85613469a96f7c12d4f94938374285479c7a0603859039",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:Tooltipconstructelvenporter",
+      "source": "Train a Builder \\n Constructs Buildings \\n Health Regeneration: 5/s \\n \\n Recruit Time: 30s",
+      "source_hash": "0eaa8b67ba4ce36b50ce1fdbb00bbd3337a5b5ef0c201a214c8e59aa96d0ebfb",
+      "entry_hash": "92619ae6b80d05ba1552d1a2a0ef4eb193d90171f220248f1d9b3667c548cdfd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenPorter",
+      "source": "Train a Builder \\n Constructs Buildings \\n Health Regeneration: 5/s \\n \\n Recruit Time: 30s",
+      "source_hash": "380ff79708e588cdd087d845b39fd448d7a64ba045acac48408c3125644cba20",
+      "entry_hash": "b69904fd3f85e2220dc0007551e8948b84de0147ee7d47d6b858ec1320b3d3c6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructAngmarPorter",
+      "source": "Train a Builder \\n Constructs Buildings \\n Health Regeneration: 5/s \\n \\n Recruit Time: 30s",
+      "source_hash": "c259c4ffd49df4e71ba72f0675e3b0e1579d1e33ff3f2204576daec26f6f6606",
+      "entry_hash": "1ce1c2bf0cf29e4db8258d12381dd58ddee9bd757e58079d812c64d2aeb7f5f0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardPorter",
+      "source": "Train a Builder \\n Constructs Buildings \\n Health Regeneration: 5/s \\n \\n Recruit Time: 30s",
+      "source_hash": "8520608dadf6e37138d3fdcf3037c0781dd07036f3d94d3e48ffd323dcc55bcf",
+      "entry_hash": "d7799b981fda8463d8a14234cbe2ec00edf751ef36152da165142f59577e6f9f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildPorter",
+      "source": "Train a Builder \\n Constructs Buildings \\n Health Regeneration: 5/s \\n \\n Recruit Time: 30s",
+      "source_hash": "f6d01380a2cdf8a72b62f235587de3a8e597ce2a6ba06e674bb45bbf287ea373",
+      "entry_hash": "92c236a5b442346a0fa0d775b72b4b1b45d9e5c0ec98218254faac708d9af69e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructArnorPorter",
+      "source": "Train a Builder \\n Constructs Buildings \\n Health Regeneration: 5/s \\n \\n Recruit Time: 30s",
+      "source_hash": "3b8f8ac1fd245901cc311c94f3e2e6698e99476dea9c3179a573a7b5c8b324dc",
+      "entry_hash": "7ef5a416137bafa4e73d7d489f9b5f58bb253c7bd2b09a14afb9ede58c9e8dae",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipThranduilWildWalk",
+      "source": "Requires Level 2 \\n Allows Thranduil to stealth while moving or standing still \\n Can also shoot while stealthed if near trees\\nPassive ability",
+      "source_hash": "a857bf1cf79246e8b5c02d96a27de9c1a0f6ec17e891dd093881be693173e1cc",
+      "entry_hash": "960e29594dd2c532a8bf9915c760f53f88fb14828d656fd1ea0910353d343bc5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildBarrowWight",
+      "source": "Recruit a Wight to fight for your side \\n Strong vs. Swordsmen and Cavalry \\n \\n Unit Type: Elite Swordsman \\n Recruit Time: 15s \\n Level: 2 +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "ec2a53a0ee54d3451049873f61c9bc079c0b84e2731403f3ce5b103e9bea7215",
+      "entry_hash": "c58170c78ee87a9a35d1296158c681992f0ddfb0523bce4a475c8f94d4505686",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipThranduilHiddenHunter",
+      "source": "Allows Thranduil to immediately escape combat by stealthing \\n Remains stealthed temporarily while moving or standing still \\n Deals +100% damage with his first arrow shot whilst stealthed \\n Firing disables cloak \\n Duration: 30s \\n Recharge Time: 45s \\n Left click to activate",
+      "source_hash": "abc1956bdf413945bfdd5ea244406085d47ec6f8ba4f2d30bd3a93bfeb724276",
+      "entry_hash": "ace2ee16e889635e19ab854410fbc4c2c7927d99130d9c5f18f83fbfc7f0fd65",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWoundingArrow",
+      "source": "Requires Level 2 \\n Single ranged attack \\n Temporarily slows down target unit or horde by 33% \\n Causes target Monster to flee \\n Can only use with bow equipped \\n Damage: 600 (Hero Ranged) \\n Duration: 10s \\n Target Range: 350 \\n Recharge Time: 45s \\n Left click icon then left click on target",
+      "source_hash": "9eae8a3b06e73a1ac53718e11dad9cfb185169b5e75ba4c774d20209eb994fe5",
+      "entry_hash": "5616d4f23e9f29eaabf1d7eaaec4349a2589320ccc0b6113ef6bf812680f7190",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSummonTomBombadil",
+      "source": "Summons Tom Bombadil \\n Resistant Hero that can trample and blast back enemies \\n Deals bonus damage to Siege and Monsters \\n Duration: 45s \\n Recharge Time: 6m \\n Left click icon then left click on pathable location",
+      "source_hash": "c133d95147b29b96b577bf8e2275dabacfc81a8432de1f9cc3da18e401bcd1fa",
+      "entry_hash": "1a220fb603015bcb6c59da2be487233cf063c1a150dfbe3094757867c76ff629",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilitySarumanFireball",
+      "source": "Requires Level 2 \\n Hurls a ball of energy to blast units and structures \\n Deals bonus damage against Monsters \\n Damage: 350 (Magic) & 400 (Flame) \\n Splash Damage Radius: 30 \\n Target Range: 345 \\n Recharge Time: 1m \\n Left click icon then left click on target",
+      "source_hash": "78fe6ccb0a4cc78afa0f4adea3f95a4e60711c0a961a6e83938142c7bdabfe34",
+      "entry_hash": "f016b522724eda60b7d0417dfbfcea403e4ef3318da14f5152091de98687af7e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:DeployMine",
+      "source": "Deploy &Mine",
+      "source_hash": "18db4a62dd832d3df55b1a20bbcecc2265618c6fed1dba3c425fb8aa95787767",
+      "entry_hash": "19f28115fb36aea227d0f83ae196d53c2b17356a4607f5a43952f157a414b346",
+      "protected_tokens": [
+        "&M"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardMineDetonate",
+      "source": "Detonate &Mine",
+      "source_hash": "c44167380adeeb9145e347eba33cd3c97465ba7ac0a71b1b67750c96f9e12659",
+      "entry_hash": "de769b8bf7caf0a516195cb576c5ef8a66403d839bf423e21ebb63b90a44a595",
+      "protected_tokens": [
+        "&M"
+      ]
+    }
+  ],
+  "manifest_hash": "d8f4ccb4a900e923be9cb91d0fb62568d66deae8345f509ab9aefa0fe7be72ac"
+}

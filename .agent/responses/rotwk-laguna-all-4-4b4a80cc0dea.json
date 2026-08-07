@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "4b4a80cc0dea4bf1a5583aca8926f630",
+  "worker": "rotwk-laguna-all-4",
+  "translations": [
+    {
+      "id": "Map:MAPWORBlackGate/Desc",
+      "translation": "La entrada norte a las tierras de Mordor y el lugar del enfrentamiento final entre el bien y el mal.\\n\\n Tamaño: 450 x 450\\n Guaridas: 2x Guarida de Goblin, 2x Guarida de Drake de Fuego\\n Estructuras Neutrales:"
+    },
+    {
+      "id": "Map:MAPWORBuckland",
+      "translation": "Buckland"
+    },
+    {
+      "id": "Map:MAPWORBuckland/Desc",
+      "translation": "La frontera oriental de La Comarca fue el hogar de Merry Brandybuck.\\n\\n Tamaño: 350 x 350\\n Guaridas: 2x Guarida de Troll, 2x Guarida de Barrow Wight\\n Estructuras Neutrales: 1x Puesto Avanzado, 2x Fuego de Señalización"
+    },
+    {
+      "id": "Map:MAPWORCairAndros",
+      "translation": "Cair Andros"
+    },
+    {
+      "id": "Map:MAPWORCairAndros/Desc",
+      "translation": "Una antigua fortaleza insular de Gondor en el río Anduil, al norte de la ciudad de Osgiliath.\\n\\n Tamaño: 410 x 450\\n Guaridas: 1x Guarida de Warg, 2x Guarida de Troll, 3x Guarida de Barrow Wight\\n Estructuras Neutrales: 2x Puesto Avanzado, 2x Posada, 2x Fuego de Señalización, 12x Torre"
+    },
+    {
+      "id": "Map:MAPWORCardolan",
+      "translation": "Cardolan"
+    },
+    {
+      "id": "Map:MAPWORCardolan/Desc",
+      "translation": "Uno de los tres reinos de Arnor, Cardolan se encuentra entre los ríos Brandywine y Greyflood (con la Gran Vía del Este sirviendo como su frontera norte).\\n\\n Tamaño: 500 x 400\\n Guaridas: 4x Guarida de Warg\\n Estructuras Neutrales: 2x Puesto Avanzado, 1x Fuego de Señalización"
+    },
+    {
+      "id": "Map:MAPWORCarrock",
+      "translation": "Carrock"
+    },
+    {
+      "id": "Map:MAPWORCarrock/Desc",
+      "translation": "Una región a lo largo de las aguas superiores del gran río Anduil, Carrock recibe su nombre de una isla rocosa en el río al norte del Viejo Ford.\\n\\n Tamaño: 361 x 421\\n Guaridas: 2x Guarida de Warg, 2x Guarida de Troll\\n Estructuras Neutrales: 1x Fuego de Señalización"
+    },
+    {
+      "id": "Map:MAPWORCelduin",
+      "translation": "Celduin"
+    },
+    {
+      "id": "Map:MAPWORCelduin/Desc",
+      "translation": "Los asentamientos a lo largo del río River Running, que nace de Erebor y fluye hacia el sur hasta el Mar de Rhun.\\n\\n Tamaño: 450 x 465\\n Guaridas: 4x Guarida de Troll, 4x Guarida de Barrow Wight\\n Estructuras Neutrales: 4x Puesto Avanzado, 6x Posada, 2x Fuego de Señalización, 4x Astillero, 2x Torre"
+    },
+    {
+      "id": "Map:MAPWORDagorlad",
+      "translation": "Dagorlad"
+    },
+    {
+      "id": "Map:MAPWORDagorlad/Desc",
+      "translation": "Conocido también como la Llanura de la Victoria, Dagorlad es donde tuvo lugar la Guerra de la Última Alianza al final de la Segunda Edad.\\n\\n Tamaño: 500 x 480\\n Guaridas: 6x Guarida de Goblin, 2x Guarida de Drake de Fuego\\n Estructuras Neutrales: 2x Puesto Avanzado, 4x Posada, 2x Fuego de Señalización"
+    },
+    {
+      "id": "Map:MAPWORDeadMarshes",
+      "translation": "Dead Marshes"
+    },
+    {
+      "id": "Map:MAPWORDeadMarshes/Desc",
+      "translation": "Una tierra pantanosa embrujada, justo fuera de Mordor. Gollum llevó a Frodo y Sam a través de estas tierras en su camino hacia la Montaña de la Perdición.\\n\\n Tamaño: 500 x 500\\n Guaridas: 2x Guarida de Goblin, 2x Guarida de Troll, 6x Guarida de Barrow Wight\\n Estructuras Neutrales: 2x Fuego de Señalización"
+    },
+    {
+      "id": "Map:MAPWORDolGuldur",
+      "translation": "Dol Guldur"
+    },
+    {
+      "id": "Map:MAPWORDolGuldur/Desc",
+      "translation": "La fortaleza en la cima de la colina de Sauron en Mirkwood, ahora liderada por sus Nahores.\\n\\n Tamaño: 480 x 480\\n Guaridas: 8x Guarida de Araña\\n Estructuras Neutrales: 5x Fuego de Señalización, Fortaleza"
+    },
+    {
+      "id": "Map:MAPWOREnedwaith",
+      "translation": "Enedwaith"
+    },
+    {
+      "id": "Map:MAPWOREnedwaith/Desc",
+      "translation": "Una tierra ancha y abierta que se extiende al oeste de Rohan.\\nn\\n Tamaño: 450 x 450\\n Guaridas: 4x Guarida de Warg\\n Estructuras Neutrales: 1x Posada, 4x Fuego de Señalización, 2x Torre"
+    },
+    {
+      "id": "Map:MAPWORErebor",
+      "translation": "Erebor"
+    },
+    {
+      "id": "Map:MAPWORErebor/Desc",
+      "translation": "La fortaleza enana dentro de la Montaña Erebor es el orgulloso dominio del Rey Dain Brazodehierro.\\n\\n Tamaño: 500 x 500\\n Guaridas: 2x Guarida de Drake de Fuego\\n Estructuras Neutrales: 2x Puesto Avanzado, 1x Posada, 2x Fuego de Señalización, 6x Torre, Fortaleza"
+    },
+    {
+      "id": "Map:MAPWOREttenmoors",
+      "translation": "Ettenmoors"
+    },
+    {
+      "id": "Map:MAPWORFangorn",
+      "translation": "Fangorn"
+    },
+    {
+      "id": "Map:MAPWORFangorn/Desc",
+      "translation": "Un bosque oscuro y misterioso que es el hogar de Barbolarga y los Entes.\\n\\n Tamaño: 350 x 350\\n Guaridas: 2x Guarida de Goblin, 2x Guarida de Barrow Wight\\n Estructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPWORForlindon",
+      "translation": "Forlindon"
+    }
+  ]
+}

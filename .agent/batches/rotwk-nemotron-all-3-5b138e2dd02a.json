@@ -1,0 +1,192 @@
+{
+  "schema_version": 3,
+  "batch_id": "5b138e2dd02a4aa9a663f2c031b0b67f",
+  "worker": "rotwk-nemotron-all-3",
+  "created_at": "2026-08-06T08:03:56.323948+00:00",
+  "lease_expires_at": "2026-08-06T14:03:56.322583+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemotron-all-3-5b138e2dd02a.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SUBTITLE:BAM4E_04",
+      "source": "Arveleg  has escaped Amon SÃ»l with a prize that the Witch-king covets over all others?",
+      "source_hash": "ded2f1a370dbd21b6a536d6a6117a22cda61784f7c7d626a02121d14cbe02fac",
+      "entry_hash": "656c31ea3c9f25611910900e653304c7263e1e6a250e11c995da66ee24bbee7f",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM4O_01",
+      "source": "The new king, Arveleg son of Argeleb, with the help of Cardolan and the Elves, has checked Angmar?s advance;",
+      "source_hash": "86e7eb7f3be2aabf85de23bf70fb066e0df262c38dfd654fca6caea87d2a2b27",
+      "entry_hash": "d5db8c587aa63b81a4faa8dbfd91cbe6ec8209d4351a14a201d6f6a78fd77407",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM4O_02",
+      "source": " for many years they have held a frontier along the Weather Hills.",
+      "source_hash": "fbbf817b8ba8e21a9a08b882bce70364125001b4b09ae42e8cbf2c38dd09a6c3",
+      "entry_hash": "f738cb4ecb1471edb71e151c31a5aa49baf254531fa00d43eb5384790e64d9d1",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM4O_03",
+      "source": "Using the power of the Palantir of Amon SÃ»l, Arveleg has foiled every attack and stratagem.",
+      "source_hash": "ead238fe904c9b919b78f5631900081bceb02f97bc40c07bb80fb0863f575544",
+      "entry_hash": "dc1b5cdf8d5b423dab0fa9369664d5f4399ed8557d9049b47093c3f782606d12",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM4O_04",
+      "source": "The Witch-king must now undertake a daring and dangerous strategy: a direct assault on the fortress of Amon SÃ»l.",
+      "source_hash": "ee700b534fa72d7adffef3b04e1bdb801ecfde7add085454e607dbc0cd7af741",
+      "entry_hash": "12f082e99cd0846d7e11c0bebacb550a67662876678e53beb589d2626d736577",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM4O_05",
+      "source": "Diversionary attacks draw off the forces of Cardolan and the Elves, while the main army strikes the fortress.",
+      "source_hash": "afc61eb0825fc6ce95278a7ccb0ce102609012bb23825701ec8429e1886de17e",
+      "entry_hash": "8b7e78c47462f10b1eed680cd37821d08af371a020a0250ce9714011fc0d0b1b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM4O_06",
+      "source": "Although not the largest bastions in Middle-Earth, Amon SÃ»l is host to a mighty power ? the master Palantir of the North.",
+      "source_hash": "1c33b450f87a96246ca2bb5d3b463c5725081046c0931af90a9867691d901791",
+      "entry_hash": "1faa840db055a912e9acd9f27506c6130c6b262e9abd6c5d1a8baff32a417198",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM5E_01",
+      "source": "The shards of the Palantir still contain great power.",
+      "source_hash": "9588a6a9a55d0a78e8e5104a2aa1a975cfb633e12ffe716a45e4d56ada6bd1bd",
+      "entry_hash": "853e1ac6225367b89734dd40a299e7c62fd7d972f9ee0de5b8815025f4986d29",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM5E_02",
+      "source": "For many centuries the Black NÃºmenoreans have dabbled in the dark arts.",
+      "source_hash": "8bac0b6ed4d7e201bb2afa5c9d9f294142cd2a677b5c399b32791663aa6d4340",
+      "entry_hash": "cba82a15b5d6c1dd59eb110736c9c0342b32b6fa40598efeee585149d6e58880",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM5E_03",
+      "source": "Now these sorcerers have a focus to enhance and concentrate their power, unleashing a new terror upon Arnor.",
+      "source_hash": "492cc856f3d3b73a4d25c3465917b16bfd26fee6cd07dc632d4894c41b5aac8d",
+      "entry_hash": "cd0861e9f2526545a637818dd77cf40a4b8426d562d856395f1c5c0d0fb1621c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM5O_01",
+      "source": "The fall of Amon SÃ»l is a terrible blow to the will of the DÃºnedain.",
+      "source_hash": "3159451507cd92bd85b06e554a0e4afcaf34a72284da50154ab9f8a1b63370a1",
+      "entry_hash": "95320c7f3d0ff37bfbbca582d61bf773f3e04f10a9f5b916aa555efe8a41dbd3",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM5O_02",
+      "source": "However, a brave band led by Arveleg has fled the fortress with the Palantir, heading back toward Fornost.",
+      "source_hash": "be87d1d70913a8f4a5c5f7e1b4507a21f32d3a3a7544d294a801fbebb21d348a",
+      "entry_hash": "a8d4031ca1ca5c21b4f4c029150678a3203a034f60335ef05a9bca820a6f3555",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM5O_03",
+      "source": "Angered by its escape, the Witch-king dispatches the Lieutenant of Carn DÃ»m with orders to retrieve the stolen orb.",
+      "source_hash": "496b1214cc08bdf0b11dd49aed9f095c2b508c4a0e81d62b8ffe55d03c9b2e29",
+      "entry_hash": "14aab509ce9d3e3b3c1ac3c3a83649b68591990464bb3e770f752a12576ef84b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM60_06",
+      "source": "The Witch-king orders his proven lieutenants, Hwaldar and Rogash, to seize the most sacred ground in Arnor, the Barrow Downs.",
+      "source_hash": "32f98835a3de9cf76fc66e144925b1a8ffe18b175a852048559d1b50237a6965",
+      "entry_hash": "7a9ca8ff7ded5469736b833ae63dc9ff5ac00b206c4669797dd1c599cf61ee80",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM6E_01",
+      "source": "Everywhere the armies of Angmar march, death and desolation follow.",
+      "source_hash": "0abea40ad2a67f5ab96e623afe16df325a252d9f83da96c188832301be22c8c7",
+      "entry_hash": "89a9a38e59801a7202e503135caf24bb9b06407d89459531716b934c9be60c56",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM6E_02",
+      "source": "Cardolan has fallen, and all that remains is the realm of Arthedain. Men have allowed this to happen?",
+      "source_hash": "c362654f4a5b0d21b555dd4a9649974d6bed7f1e652b45df32edae40c0f37fe5",
+      "entry_hash": "7836f96cbfb47938930f5b2f5e2981c817e7642b034bf89d7c5851033929be36",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM6E_03",
+      "source": "Their indecision and disunity have brought them to the brink of annihilation?",
+      "source_hash": "232d05bd50a2d97489799b9938138988db90ac24c1f4d920afb69a9aaede13dd",
+      "entry_hash": "8bfe777bb0cfae0055efa68fbdd161d8970780eb77a6adc5f5e1321c21b6ffe5",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM6O_01",
+      "source": "The destruction of Amon SÃ»l and its palantir crippled the Army of Arthedain, but Fornost still stands.",
+      "source_hash": "57ca61b7553d7cdb597e17e80843c13737e9d882aa11baa35ef18c2bcb385479",
+      "entry_hash": "8dc565d0684d1a8c6b298301ae68d4ad43638da522ff9978e92775b842cb1f6c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM6O_02",
+      "source": "The army and the people are prepared to defend the city to the bitter end.",
+      "source_hash": "2c289f218332406e16918ee96f6250b0d7292846fbfdaa67a838ee440cc8e8d3",
+      "entry_hash": "d9bec8bf7b3a1a26fa569803eed08734cdee18aa1b9bbb1b5aa1ca6feee0aa25",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM6O_03",
+      "source": "But the Witch-king cannot commit his army to a siege at Fornost with an enemy free to attack his rear.",
+      "source_hash": "938fa9bdccfc28327add0e0b90ab6178d6bb7965e8e033fbda69d164531a2979",
+      "entry_hash": "9785115265143b698d881753d1654c13815769bd77fe14f903a94d476030f211",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM6O_04",
+      "source": "For the army of Cardolan was not at Amon SÃ»l, and is still in the field.",
+      "source_hash": "454816ac39e7064c3587e8c089de52eb757a185c43bc9f6471b68866b9b10a1f",
+      "entry_hash": "1ad71c1fa74a1b5798369b74aa3aff8827efb529e7629d43712fe8808e9b2403",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM6O_05",
+      "source": "A way must be devised to make them fight on ground of the Witch-king?s choosing.",
+      "source_hash": "431d83517fecfeafff92ff2037860cdc68d2c620ba569ef6da7ad3823dedcdfd",
+      "entry_hash": "ff3c584bf5fb4a667065b94820db84d2233b2da4db0a7fae7b696e507fabd882",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM6O_07",
+      "source": "With the hallowed graves of their ancestors and kings at risk, Cardolan will be forced to battle.",
+      "source_hash": "c37aee74b72c261233ae916379c5ea25970dc5c78074f2ab3c7aa99228bb1f4b",
+      "entry_hash": "fa4b06082da20f6180da292784b3a4ddfdfde29e0214783681538fb5993483ac",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM6O_08",
+      "source": "On these grounds Angmar can bleed them white, clearing the path for final victory.",
+      "source_hash": "f67a593d907b754a5f0cb5444a8a13c341d6a2012301ea2c12ff264c8f690115",
+      "entry_hash": "059cb6c2b02a1a0663db2ddbe4d4175b98a530038f38ef465e1ecd9361213a6b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM7E_01",
+      "source": "The Witch-king?s cunning matches his cruelty.",
+      "source_hash": "e55607c8af291088cb6abb29390bcef8aa7fd9bcb3cfcf7085a901a5bc688274",
+      "entry_hash": "83950c7a12fae749bbd95ee6d21d6ff353393eb1e9f1c872039b74e28d602650",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "7a1f518562c8d468c2de172f6f6644c88702da2b521fa979e7101aeb1860e2fa"
+}

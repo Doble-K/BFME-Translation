@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "2d155657bd964fbc92178e761b1f6084",
+  "worker": "rotwk-laguna-all-1",
+  "translations": [
+    {
+      "id": "SCRIPT:DARK_EYE_ALL_POWERS_RETURN",
+      "translation": "Todos tus poderes han regresado"
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_COMP_01",
+      "translation": "El rey Arveleg ha sido asesinado"
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_COMP_03",
+      "translation": "Has recuperado tus poderes"
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_COMP_04",
+      "translation": "Has recuperado todas las piezas pero el puesto de Arnor aún permanece"
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_COMP_05",
+      "translation": "El puesto de Arnor ha sido destruido"
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_COMP_06",
+      "translation": "Debemos atacar el puesto para recuperar las piezas que Arnor ha saqueado"
+    },
+    {
+      "id": "SCRIPT:STOPARNOR",
+      "translation": "¡Impide que la pieza alcance la protección de la fortaleza enemiga!"
+    },
+    {
+      "id": "SCRIPT:PLAYERHASSHARD",
+      "translation": "¡Hemos encontrado una de las piezas del Palantir!"
+    },
+    {
+      "id": "SCRIPT:ARNOR_HAS_4_SHARDS",
+      "translation": "Arnor ha recogido cuatro piezas. ¡Todo está perdido!"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_1",
+      "translation": "El Rey Brujo debe sobrevivir"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_2",
+      "translation": "Ingresa a la Ciudad de Fornost"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_4",
+      "translation": "Destruye el 75% de los Edificios Civiles de Fornost"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_3",
+      "translation": "Destruye la Ciudadela de Fornost"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_5",
+      "translation": "Derrota el contraataque Elfo"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_6",
+      "translation": "Aplasta el ataque de los Hobbits"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_7",
+      "translation": "Derrota el ejército de Fornost"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_8",
+      "translation": "Destruye todos los edificios fuera de las murallas"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_9",
+      "translation": "Captura el Fuego de Señal"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_10",
+      "translation": "Captura la Posada"
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_11",
+      "translation": "Destruye las 5 Herrerías de Arnor"
+    },
+    {
+      "id": "SCRIPT:FORNOST_INTRO_1",
+      "translation": "REY BRUJO: Fornost, la capital de los hombres y residencia de los herederos de Isildur. Más que eso, es un símbolo para los hombres."
+    },
+    {
+      "id": "SCRIPT:FORNOST_INTRO_2",
+      "translation": "REY BRUJO: Es un símbolo que debe ser destruido."
+    },
+    {
+      "id": "SCRIPT:FORNOST_INTRO_3",
+      "translation": "El ejército de Fornost se enfrenta a nosotros. Debe ser vencido si queremos entrar a la ciudad."
+    },
+    {
+      "id": "SCRIPT:FORNOST_BATTLE_END_01",
+      "translation": "OFICIAL DE ARNOR: El mal nunca entrará a Fornost. ¡A la carga!"
+    },
+    {
+      "id": "SCRIPT:FORNOST_BATTLE_END_GOOD",
+      "translation": "OFICIAL DE ARNOR: ¡Esto será el resultado de todos los intentos de entrar a nuestra ciudad!"
+    }
+  ]
+}

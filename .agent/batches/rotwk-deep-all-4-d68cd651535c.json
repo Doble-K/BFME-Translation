@@ -1,0 +1,192 @@
+{
+  "schema_version": 3,
+  "batch_id": "d68cd651535c4e31836f167ad54c5189",
+  "worker": "rotwk-deep-all-4",
+  "created_at": "2026-08-06T08:11:55.392468+00:00",
+  "lease_expires_at": "2026-08-06T14:11:55.391194+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-deep-all-4-d68cd651535c.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SCRIPT:ANGBonusMissionScene4Text_05",
+      "source": "The Witch-king returns! Now we must defeat him once and for all time!",
+      "source_hash": "9fe398fdd6be31eb6621c6d7e755c5fb3c978d036c3a55a92ae35364ec3f083a",
+      "entry_hash": "53828be3e797cce44499d411fc7871ec7b759bba9fd97fb92e5314e186272ca0",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBonusMissionHintText_01",
+      "source": "Either Earnur or Glorfindel must survive this final ordeal.",
+      "source_hash": "42e22d49dc24d579f39356a574fad3880ad54b5ee1a1254e92b940d8f0da6547",
+      "entry_hash": "9d2a25f549839a9c02dfcac6f6f3a0db0283e8d65f6553414d6bcd02bd604222",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBonusMissionHintText_02",
+      "source": "Our builders have arrived; we can build a camp and recruit reinforcements for this final struggle!",
+      "source_hash": "cf5c24b5ca30fb8538d45702519acf17ce9b7ab64c6dc55daa64eec2d2968112",
+      "entry_hash": "45f29ad23b7ea3455dcaae1409a361e9ca794711f809b71719acc5dbfbcbbebc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBonusMissionHintText_03",
+      "source": "The legendary Elvish warriors known as the Noldor, and Gondor's elite Knights of Dol Amroth, stand with us this day.",
+      "source_hash": "affdcb180f70eeebee74658bd5b2c53c11c20f9ca1d9c32aff70217f79f8b970",
+      "entry_hash": "4ac347a41c4998a24f622268de0071782215d885e6b69f15f1822b7dcb34aee0",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBonusMissionHintText_04",
+      "source": "These Troll attacks are focused and strong. Perhaps we can find out where they are coming from and stop them at the source.",
+      "source_hash": "6bad5a62a86cab8deea936daa1415b945bf3246406ff0f85351a2cdf7924667f",
+      "entry_hash": "f3d79918f13a1eb910dd5b4f7ef0a3a9719453fe63664f0990db4a3ba7c18ba2",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBonusMissionHintText_13",
+      "source": "Medium Difficulty",
+      "source_hash": "6069aacebf308aa4cbd4341be5e0078ea7face222d9e562fc71c9546a798360d",
+      "entry_hash": "c7274d406334061d152a9ed4d653e1ef8892c9a91597afc8a7a124073efe9377",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBonusMissionHintText_14",
+      "source": "Hard Difficulty",
+      "source_hash": "2c195cca8b2d46cb27574f9dc36f132ed62f7fd56ccb78f21404e6b13a6a9ecb",
+      "entry_hash": "c61789151cd567bc1a5ebd4c9eede769589129d647b597e302294868adba1063",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:1Test",
+      "source": "Second Wave:",
+      "source_hash": "4138432a5a50f31c90d98560faa47a3e705f4383f4c750253177cec7fd6fa14c",
+      "entry_hash": "bae038e67e94f1c858518f18a321cbdad09326e6b610ebdc786e81d4d522d114",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:2test",
+      "source": "Third Wave:",
+      "source_hash": "173120744310e8f3c9359c6b09d2263ccf6703a6db5c849a66b769c0cb83f0e8",
+      "entry_hash": "531b60fb37b8993921c700abb7df8284c47ae0e4d57e5621fcc21e18f69ebebd",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:3test",
+      "source": "Fourth Wave:",
+      "source_hash": "6b8d0e26b1aa103bc1fc6e9371f818753b30a441c676ac70efa7aa405ea0d11e",
+      "entry_hash": "55e7c053111471e73b9fd2ae56110f84af97fc61908571f7ef14714253c45e12",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:4test",
+      "source": "Fifth Wave:",
+      "source_hash": "db85e30f5b7dca0336bdc6dda03b55a2f6de2b54ba81d989251312971f9e16a7",
+      "entry_hash": "c1d5311ec2eecfa8915b5599ff449d7a719256cde522d0b1a1f959222f253e13",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:5test",
+      "source": "Final Wave:",
+      "source_hash": "707dc77a062343209acb54c0abe50df218727ccfc140bc0068c3d095413f33f9",
+      "entry_hash": "d460f7f22a9a2753b7b0d94ae1cfed5d2f8f0e2387fb3aab35ea4c83591e5eed",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:1STWAVETIMER",
+      "source": "Time Remaining:",
+      "source_hash": "67e2666bb3ec8b2a01e9bbf66c32348f3f1755a0393bfbcf82143db4a05bb890",
+      "entry_hash": "35033b1f74ab0b5628f7309adbe96a3e70d4232145e1ffb10ce9a39c4a465875",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:2STWAVETIMER",
+      "source": "Time until Elves attack:",
+      "source_hash": "f7d4191b1ea0f6c964e4a831cce2cddc9ca989fff81c11aad7cf21d4b60149c8",
+      "entry_hash": "e1dc91ea4ca2872a622898be97101ec616bf8923116b70cbf53b57572618bcb1",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:CARNDUM_INITIALATTACK",
+      "source": "ANGMAR OFFICER: The Elves have come! Ready the defenses!",
+      "source_hash": "7749c2257bdef147600ffb486b9fa85a674410a33572081a1251967c915db6df",
+      "entry_hash": "3ed0ed76dae16a993654f876e24b6c14316290a228bd694a5f8955ba6d5de237",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:Elvesattackgate",
+      "source": "ANGMAR OFFICER: They're attacking the front gate!",
+      "source_hash": "15bec937125417a39e2a154beba818b84f756e5d61bf876df1185e593cacbb53",
+      "entry_hash": "590d77e45ac5e8d0d7321f3ffe3f0abd31f241a7918298122938252cd0046837",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ElvesAttackWall",
+      "source": "ANGMAR OFFICER: They're attacking the weakened wall!",
+      "source_hash": "da1110e221c9f1f8fc83e2e93f469df3a5c7d2de7e6eea6ca1ab2c07893671d5",
+      "entry_hash": "d6276a747e4d2ac9dec6eb00a706503d90d4cb3a2809595716697f6ef6844636",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ELVESSOON",
+      "source": "ANGMAR OFFICER: They'll be here soon!",
+      "source_hash": "356ad3994f7e2fb21c17e3c5a9988001dbd40db5e07501685d786157cb4cb3b2",
+      "entry_hash": "6fba5dc6ae716f0680b41ecb715d21e779844d3840a359bd5a31d1865535741f",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ELVESENTERGATE",
+      "source": "ANGMAR OFFICER: They're through the gate!",
+      "source_hash": "9b0abd0a74da0dac206be4d3449d1b4ce6630f5fe814d7ad429219694e158d45",
+      "entry_hash": "734bad0f96b4071ee1af2ed13b78b8818079bac41e1af253878a93b653f06031",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ELVESENTERWall",
+      "source": "ANGMAR OFFICER: They're through the wall!",
+      "source_hash": "af0ac82e68ebcadcaa2fa28d073834edd0128e5c32015f6e8856f25011342c8a",
+      "entry_hash": "286254bd46f5a026e9d780b889defcbe97af35564352631cb84d90bba52b9b24",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ELVELENTER2NDGATE",
+      "source": "ANGMAR OFFICER: They've broken through the main gate!",
+      "source_hash": "d3ed5438ac57209e0e24c197d95e7a96a9b4770cb8d4cb2c88fce0eda2be5ee5",
+      "entry_hash": "6b97c01739cd98588dd8c179edb5eb62ed7ecff5e028556c43ca51ebc89d1e45",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ELVESENTERCITADELGATE",
+      "source": "ANGMAR OFFICER: They're attacking the citadel gate!",
+      "source_hash": "8b9b29c8836f89a826473d8f5b4a39d9471c66e7da55e8aa9010bca0d9fc7a36",
+      "entry_hash": "b78745954837d047e837855dd3d1616c04dad9ad703e7c8fdcd4e2c669ba7acc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ElvesAttackingCitadel",
+      "source": "ANGMAR OFFICER: The elves are attacking the citadel!",
+      "source_hash": "28bfa9ad020214b50f45dd2a74de00c303caad3b7832e5ac5651ba49edc61da0",
+      "entry_hash": "31eaef19893e08fe1a9ecb37abf90ba86fc84bd51a1e2387c1734c49c0634d35",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ELVISHATTACKDRIVENOFF",
+      "source": "ELF OFFICER: Their walls are too strong! Fall back and await reinforcements!",
+      "source_hash": "59ac478ce32a3c2621b843c6ed4d7dde7e5b2126a571278aec4039d3cb244c55",
+      "entry_hash": "316f368a4999e81e98428d6f4e43ebfd04850336e3382a6efd62c6fe1025e3c5",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:SEIGEWEAPONSARRIVE",
+      "source": "ELF OFFICER: Now Angmar must face the might of our siege engines!",
+      "source_hash": "278a2681df7386da3adbdd8f125c3c00406e43710cc10d7f6135a9849dc53daa",
+      "entry_hash": "9d7f69e0bc26d7ae41b50fc2516cac544431573c94fa089f64734f6f113f35c3",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "36dd068b0e23f1816d52050e0494cec9a6b2a24c806f681e71195eba81888177"
+}

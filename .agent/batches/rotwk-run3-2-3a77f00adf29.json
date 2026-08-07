@@ -1,0 +1,165 @@
+{
+  "schema_version": 3,
+  "batch_id": "3a77f00adf294f2c85102c1d82997d00",
+  "worker": "rotwk-run3-2",
+  "created_at": "2026-08-05T19:51:02.135334+00:00",
+  "lease_expires_at": "2026-08-06T01:51:02.134221+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run3-2-3a77f00adf29.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "RW:ChooseArchers",
+      "source": "Show units which attack from a distance",
+      "source_hash": "8336031b9f76c88f762775a05252b128d82c82891d573e20e50ab00cd11a34a8",
+      "entry_hash": "a68291cef59e9599a696f1751f0bfd182e9026f7df16a16c93056c079a451302",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:Supers",
+      "source": "Super units",
+      "source_hash": "ff22482c915c92a3eff8ff2a20abd3f1b4a066d89bb0aca2312d5393b907231d",
+      "entry_hash": "ea5b0163dbc45f4c7dd9bfd30f3d9b0e6fdc2068fd84f36f15c9a57024c1bd9b",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:ChooseSupers",
+      "source": "Show units which annihilate at a close range",
+      "source_hash": "39af8f19afede7dad44dc9f5acd07e7a945ebbec677af63695b2992dfdef8c90",
+      "entry_hash": "2acdea098bc9ddd91e210f722f7dd7c44cdac7a0668e591943b90c0db5a97f0b",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:TomBombadil",
+      "source": "Tom Bombadil",
+      "source_hash": "6709e2ca1b3174583dc23ba47fe8b1ebb6c26d3ff0cc6588efaa0f1e012b4e42",
+      "entry_hash": "75ef6a83b27d17df7e32a4e19a702e19731f28e2a7ec3aaff9bb7a43f440d7f2",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:RecruitTomBombadil",
+      "source": "Strong vs all units",
+      "source_hash": "f4a927c4f0c1bb6823d76713ee87136f485f2d78f2d3433489b7bd3a3312e2d2",
+      "entry_hash": "c718ecd4371586fd9a5a9b97967766cbcaea0ce1b962df3a6032232213803e01",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:Oathbreakers",
+      "source": "Oathbreakers",
+      "source_hash": "374ddca6ff605a02f848bbade229c04bfe6d7a1e66aa4e5ecaf1dbe90f0a29fa",
+      "entry_hash": "a8b9024da7ef71564827577b06fc52638920185c6db88b897edb76361f3ea9c6",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:RecruitOathbreakers",
+      "source": "Strong vs mortals \\n Vulnerable to Magic, Hero and Frost damage",
+      "source_hash": "0ffe35ee676865363e0254dada13cad04f69c54591d7a1e5b0bf5acb4bc5718a",
+      "entry_hash": "98cbe708f054aa6568ca84dc1efd07799cb11ef6c6b2fb5c4bb7e30712d412de",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "RW:MountedOathbreakers",
+      "source": "Mounted Oathbreakers",
+      "source_hash": "a96c40ced1cfb86b6e8e92c0cec9f9865efa28dc120bf00f507c2dc1a4eb0c3e",
+      "entry_hash": "c95e587c7de60b3238cd7a4dac0a2f405c80b0f2574daf46cc796f4b0bd77b2b",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:RecruitMountedOathbreakers",
+      "source": "Strong vs mortals \\n Vulnerable to Magic, Hero and Frost damage",
+      "source_hash": "75c042012ed06ce23dc878c4c769c2f8938c296f5e0d26c73ffa788fc047910b",
+      "entry_hash": "b1c792d309d3ca5f1bab25f850f610e557b9ad7e5fdb67f04cdaf36e8cc7d158",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "RW:FloodHorse",
+      "source": "Flood Horse",
+      "source_hash": "136c86bcbc80eed974c2ff128e7b34319f32a3cabb2b55e01d6e315fafbee5e2",
+      "entry_hash": "d4c9867b28fed9d376bbd706405d0b329f626cb00e62a933ca701405d566ec96",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:RecruitFloodHorse",
+      "source": "Strong vs all units \\n Vulnerable to Fire, Frost, Hero and Magic damage",
+      "source_hash": "3cf4872c32e170f334e6d6f560c91af4422cca48f5e1ea6a952535efca144a3b",
+      "entry_hash": "36817dd7906280260470f6b5cec82b05ac15cf91cdd294b0eb1c3b7fb119252e",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "RW:HugeTroll",
+      "source": "Huge Troll",
+      "source_hash": "bed53cbc14159b05db1abb8e212b8236dc5e36b31312d1cd07a32440671d5f63",
+      "entry_hash": "fef57dd76aa9ad3c7b95c36e2958f00f515851180b6c9e22c1c515dd5f7159a0",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:RecruitHugeTroll",
+      "source": "Strong vs structures",
+      "source_hash": "e3a235717935e6e02c5914affc7b321fed138386456b7a4cf66c9774562a16aa",
+      "entry_hash": "3eb0fb2faa855e4009255c66c56e699c513660cf807467bf3dc5ed15e33f118a",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:Gollum",
+      "source": "Explosive Gollum",
+      "source_hash": "bb5b8803c18be0a4b1a0123a80423abf1830071cf23ecc082a5a420b19a8d82a",
+      "entry_hash": "9e107b03dac545d728f64dc44b7f5fe6b50af518021e5fee1182cf6b117f4e62",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:RecruitGollum",
+      "source": "Remained stealthed until detected within a close range \\n Can detonate to cause explosive damage",
+      "source_hash": "bcad76019407575315b3a7554da610d2e14537b10d74bfd8831d1d4e9541a659",
+      "entry_hash": "655bbda4ff3f8ceeba28a8f34f36fef1f901f23a1bd5a8313a2d966721e874ad",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "RW:BlowUp",
+      "source": "Gollum immediately blows himself up",
+      "source_hash": "711b803e724786836f0a9dfc5f419a80331fa0de552a4c8227e5e77b779010c2",
+      "entry_hash": "74fd23161dc4603cef6e0093b7d4a471e01d12306648ab4cf309269597cb72c4",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:Shade",
+      "source": "Shade of the Wolf",
+      "source_hash": "99de02888f2c418f2af3d1256e3fabcedf9db42a49d72116b290f7836698aee6",
+      "entry_hash": "ef5c42c090de4cfbd213448609b8170673dd9d4e8ebcb80d917be4329355223d",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:RecruitShade",
+      "source": "Strong vs all units and structures",
+      "source_hash": "27c7517d5c6b76119074622ddab018bdb282071acfd9542dadc7e146a2066720",
+      "entry_hash": "a107eddc1424495018e19260aff7df1b7de900d16a1a98a5f64b6b33b7cb1b2b",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:Dragon",
+      "source": "Dragon",
+      "source_hash": "fd9bb657a68ec4505a9d93c3c11ca46808c5e4a4d1614f32a2f795c915d81fb4",
+      "entry_hash": "a7acc14ab9fa401c64aa4697f1008387f14c638c891447dabd4ad817fceafb17",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:RecruitDragon",
+      "source": "Strong vs all units and structures",
+      "source_hash": "08cf7751d0371a04f9b2bf6e861cbfdd631a78b7e1c0cd864214b225afff3c53",
+      "entry_hash": "a9bdd5a3e1e0d85ee3e92b9765f09b06019cc6d94d6f279eeb97084431d48726",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "7bf4d0293823aef4c534671ff294746816be14c5355116899b127d4f34dcfb06"
+}

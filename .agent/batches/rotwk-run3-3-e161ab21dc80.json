@@ -1,0 +1,198 @@
+{
+  "schema_version": 3,
+  "batch_id": "e161ab21dc80414fb1ea9fe78013d5e3",
+  "worker": "rotwk-run3-3",
+  "created_at": "2026-08-05T19:56:15.688752+00:00",
+  "lease_expires_at": "2026-08-06T01:56:15.687583+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run3-3-e161ab21dc80.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipSauronMaceMaster",
+      "source": "Sauron temporarily gains +500% Damage, +500% Armor, +25% Speed and permanently increases maximum hit points by 5000 (each use stacks)\\nDuration: 60s\\nRecharge Time: 2m",
+      "source_hash": "d360ec8c8975b26a954770719ee7440d7e979ff85f75c11809b3e65c3977402b",
+      "entry_hash": "67a40e9f0d87b936a7496ad70fdb376e6b3989ae4234c645da6422f6eeccf3a1",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:SauronTerribleFury",
+      "source": "Terrible Fury (&T)",
+      "source_hash": "09fc477bec3f35dcafb28ed6aac9faa90d88252de29bd8f38dbad1e74e7d73c6",
+      "entry_hash": "517682f15bc78b95625fec48aa74444a01420c8705e40c1a8bb51454ff911c23",
+      "protected_tokens": [
+        "&T"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSauronTerribleFury",
+      "source": "All enemies (including heroes) near Sauron lose -33% damage and armor\\nDuration: 90s\\nRecharge Time: 3m",
+      "source_hash": "796dd20352179bd3a388a4141a9ca7457d637a7dea5fb24f0fe290de3a5ce70f",
+      "entry_hash": "f8930dffb5bb06966754f8a2dbcc836ccbe181932f24ab318693cd6ce9b91c0f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:SauronSoulCapture",
+      "source": "Soul Capture (&C)",
+      "source_hash": "c308ddc0dca2540a2c0bd581483d142c9a0af76c4b33b00c071759d171b8caf4",
+      "entry_hash": "5187d24df1a9ed2b453505b86ccd5d5bb4800b6d6ab3cf5b6730b63e51f3c7d9",
+      "protected_tokens": [
+        "&C"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSauronSoulCapture",
+      "source": "To activate, Sauron's health must be below 35%\\n\\nTarget enemy hero dies and fully heals Sauron\\nRecharge Time: 3m\\nLeft click on icon then left click on target area",
+      "source_hash": "e38223bad5827d929ca3188586a54fc6493cc08395e51cd2e6b8e5a70e273d2f",
+      "entry_hash": "9d916fab7750d21eec90b29ec7f030d4c706b591be605dcfe6a843651c3aaa5c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:SauronBombard",
+      "source": "Sauron Barrage (&V)",
+      "source_hash": "472741c80b8c4e021f1413d37dd15e712857f8a425b520bb1d4cabd8ab0304e2",
+      "entry_hash": "9c414c906aab73c122f9d1e4531badec324ab5aed1a4396c874c843ada54394b",
+      "protected_tokens": [
+        "&V"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSauronBombard",
+      "source": "Bombard target area with devastating artillery\\nRecharge Time: 3m\\n Left click icon then left click on target area",
+      "source_hash": "8cc3ff4ed255f1c03e4e83f8f897ae5c6991177079b3697f65b69882f7716944",
+      "entry_hash": "63f029bbcaeb2583f020fbdf2316a4c7ab764c83642d58a7162cef34455d227f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:CustomPillage",
+      "source": "Pillage",
+      "source_hash": "b437ad0a7c474af6400a9c2ce76bd1ebfb9cb3068db08403130bdd1c4c8c6259",
+      "entry_hash": "a25868ad2cdf8a234869cb035b5049a677a78bac5f6196284d216f5ef204259b",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:TooltipCustomPillage",
+      "source": "Allows all kills to earn resources\\nEffect Radius: Global\\nBounty Percentage: 35% (Stacks with other abilities)\\nDuration: Permanent\\nRecharge Time: Passive Power",
+      "source_hash": "4eb4bbd1c24dd16b8e77a75d077bbf2ebb671c5ea526dc247ec29c0ef8229b39",
+      "entry_hash": "c3081526462f1b5a9c2ac45c9ddb63a35e5a2f9428dbf732fcaf95026c379e5e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomCampKeepTacticsLvls",
+      "source": "Level up (&E)",
+      "source_hash": "eedc36d972901a5c78a6fd4bd714c966921311648784b825383ac2448dbcbb09",
+      "entry_hash": "bf333f7e8d02b9b4c83722e0f20ea5b500feacb440314a2ed6b7305a55f03666",
+      "protected_tokens": [
+        "&E"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseCustomCampKeepTacticsLvls",
+      "source": "Increases the citadel level by 1",
+      "source_hash": "a1c99643377f4eb08b397f6b43fba7d38dc73f2e3d71562145b51676f23f186f",
+      "entry_hash": "4a80876c53a87a86165d60c66f3feb232e0dd9a93d3b3f90b929c53ef503318b",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:SpecialAbilityGrantExpPoints",
+      "source": "We need more experience (&W)",
+      "source_hash": "955273fc8f55e649fea2e2d3fd7fdbfbb220afce9a57c020a345c67e1a5744f7",
+      "entry_hash": "c2852ddcc55e002c4e86b421751c34b86ac7bb918250a3c58dde69c1e255b332",
+      "protected_tokens": [
+        "&W"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityGrantExpPoints",
+      "source": "Gives Citadel 300 experience\\n Cooldown: 60s",
+      "source_hash": "0870843f782d291b3aebaf17bacec4e1e082268714d52aa6ad89405a7b3c1d53",
+      "entry_hash": "93576da5dc6ee90fa1a4bb6ef699ee733283ed22b9e424d0c95c7165d3a5f397",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic1",
+      "source": "Tactics 1 Level 1 (&D)",
+      "source_hash": "8059735ae01fc843cd0b91732d384e971727511dbdcc7ff9f87d0610a1008310",
+      "entry_hash": "6d07dbd95406ce5a40495ec28458e639484507537360983597d32399fd97b382",
+      "protected_tokens": [
+        "&D"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic4",
+      "source": "Tactics 1 Level 2 (&D)",
+      "source_hash": "01f80668d4c23ebadc7e0091ebe37209f28853b175f49933f557df2d7cb625b0",
+      "entry_hash": "aff556dcf9b25dd7fdfded093fbcc6450184703bda148bd642c05d59be857ee8",
+      "protected_tokens": [
+        "&D"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic7",
+      "source": "Tactics 1 Level 3 (&D)",
+      "source_hash": "f47564edb327d7ec724250e84ce23b76902ea5e4d282579d21e6e78e55290f38",
+      "entry_hash": "60fcec0b34b433123f2ac56de737b52ef9720438b0500b09be2eef7bfea57f6a",
+      "protected_tokens": [
+        "&D"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseCustomTactic7",
+      "source": "Gives +25% attack range and vision for troops (Does not affect allies)",
+      "source_hash": "e9870dc8da4b73224bd30769d69fc0845524d5efc76ca60809969c54b5eead39",
+      "entry_hash": "735846bcc8a561c2a6f1719970ecf5cfa89ec1376d8d87ba4c41493c823cfa3b",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic10",
+      "source": "Tactics 1 Level 4 (&D)",
+      "source_hash": "83263a0ff896e83060013108c216d20abd461c5acd9fd9aed20684c75e1fca40",
+      "entry_hash": "fffcd68ecf502c568220dbd31123793764f624eaccab90f0578e7b5f90ec6a2b",
+      "protected_tokens": [
+        "&D"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseCustomTactic10",
+      "source": "Gives +33% damage and armor for troops and heroes (Does not affect allies)",
+      "source_hash": "325a58d65209c9a02f93af6607a403536f88e8d361e5416d2b737b9248a23169",
+      "entry_hash": "2d0a42df8c7b02befa5b1e4df36a58d440e7ff80f32095fb7f915a03cc6ddf5a",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic2",
+      "source": "Tactics 2 Level 1 (&S)",
+      "source_hash": "ef498effde51425a6b96e2de1ace09e31fd5eb01b8a57ac7f3edac9e46c5ab1d",
+      "entry_hash": "e2eea73eebc4c986a03059c8a300f940398e176e9e8b1a1b26c71699f7afccda",
+      "protected_tokens": [
+        "&S"
+      ]
+    }
+  ],
+  "manifest_hash": "8f4eaac896632c9bf5037c2fb776c2ec08638be513f0a569c6e1a34f083882d5"
+}

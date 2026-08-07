@@ -1,0 +1,192 @@
+{
+  "schema_version": 3,
+  "batch_id": "8d1f0af703bd4677a3cc8092548ad8a8",
+  "worker": "rotwk-nemotron-all-1",
+  "created_at": "2026-08-06T08:04:48.000675+00:00",
+  "lease_expires_at": "2026-08-06T14:04:47.999396+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemotron-all-1-8d1f0af703bd.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SUBTITLE:BACO_08",
+      "source": "Cardolan, guardian of the ancient Barrow Downs,",
+      "source_hash": "ec7fb6b68b96a84192b8965a4bfc0209588c6b64cb7da2d8d4a005e67eb5dfbf",
+      "entry_hash": "a2413bd3d171918737bbeab10e6203168f34db6156240579d0dbae72beafac7a",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_09",
+      "source": "where the forefathers of the DÃºnedain lay entombed ?",
+      "source_hash": "245c5abecb51fe240dbe9be0b5aa7d08a921907a71df9ca5d83e62e6de26b7eb",
+      "entry_hash": "cf7892881817ee687e17e7309b67c79f2aa432914de68f00e4ab89896f1bdcf4",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM1E_01",
+      "source": "Now all of Angmar is united under the Iron Crown. Legions of orcs fight under the command of the Thrall Masters of Angmar.",
+      "source_hash": "e39bd04fad55786850327ea1e876129e8fc9eff6ab187a53a068e1bb879be605",
+      "entry_hash": "a5be09b4329bb734ee3dccf3ac89f3d31ba97a1d21a15f411523290b13d0029b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM1E_02",
+      "source": "The great fortress at Carn Dum continues to rise, it will make an ideal sanctum for the Witch-king to work his fell sorcery.",
+      "source_hash": "83f7d444574a11b70348a7568a06f93f51495214eb42baa1a08e6d3024edb865",
+      "entry_hash": "6b9cdcf1754af1df5c0ec4a06e6882189872d13e3f7961fd72dcafffb63e22db",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM1E_03",
+      "source": "The hammer is forged at last, ready to smite the heirs of Elendil and lay their kingdoms low.",
+      "source_hash": "8ae2a77d9a3ac2f9926dad3098997818efce774c8d8ed6c60958a607f35befe3",
+      "entry_hash": "d96d9908923ad505930544944d645ae0384eee3080dfbacf44a249d48254b77d",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM1O_01",
+      "source": "Before Arnor can be invaded, the Witch-king needs a symbol to unite Angmar?s proud and willful denizens.",
+      "source_hash": "cf9ba7f8d03eda75a3e4ce60d6275c21a8c501a5e09296452f4ebfc75fbdd406",
+      "entry_hash": "482b8db66a3cde8a12f9e5fdc24d4589e5235a5dda9da8da3d6f9674d004a4ff",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM1O_02",
+      "source": "Legends say that here in ages past loomed a great fortress of the ancient darkness, ",
+      "source_hash": "2dd0f5594d7a614c5ad710955871fd7e39a29f7c4c3ed1223437293e9ddb8801",
+      "entry_hash": "74cd35f70d829ea261d167e67ac3595ca723da948697a006fe048ea4ee244784",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM1O_03",
+      "source": "its ruins dark and silent in the mountains.",
+      "source_hash": "61f2e78d10ca5a8a67590bdb97808d10ba70ceae6ac4f3b076ab4b71e9948eaa",
+      "entry_hash": "9c02cdd04a0273226e761207c9971b28b63341f0d1ad13a6a14c11ca988b0c58",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM1O_04",
+      "source": "Rebuilding this bastion will secure the Iron Crown?s dominion over the Black Numenoreans and the northern troll tribes...",
+      "source_hash": "22d3e73a9aa1b44956577f570d008f14bd7f43e58a5ac7946807d2d4278f15a8",
+      "entry_hash": "5b9bf84b0e60bdb7bee328f05fbcedcc9169c93d60da3876a15b3fbdeac2c7a7",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM30_03",
+      "source": "They are led by Hwaldar, a Hillchief in secret league with Angmar.",
+      "source_hash": "faac8fb0fe83b1eb24ee93e450cf222fc620f221541e66912f527a583c754274",
+      "entry_hash": "83f82cf277f75a8487a7dc9b38b1ea831b5bbb883b7d214c1a7e889f1a2f914a",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM30_04",
+      "source": "Moving to crush this resistance, Argeleb has Hwaldar seized, and moves into Rhudaur.",
+      "source_hash": "56668716db9d5651ece4d2ea376a6b90d1634fc9663088b30acdc51c79b3868d",
+      "entry_hash": "cfd4e93d14026925625df4d6bdbfd3dd10634708d0cfa7220f816f7eb3c9ea0b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM30_07",
+      "source": "and he will seize it with both hands.",
+      "source_hash": "da1ae25a11e0ed7a13ea8c23f25917fff24675c7bd816ff28803dfa917aee559",
+      "entry_hash": "236965a392383641885d96eca6ad3853eebd5bb08a186958d1676c328f7c1912",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM3E_01",
+      "source": "King Argeleb is slain,",
+      "source_hash": "c6dea25dd436ced503a8074c1c3ad24e96d6f4cf4d7cbc27111650cf95ebcdac",
+      "entry_hash": "7d561433fd1ef9a5f38a7cfa889d5b29e7e45e7561b902491517e09151e19b81",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM3E_02",
+      "source": "his hope for a unified North Kingdom shattered with his pride in the ruins of Rhudaur.",
+      "source_hash": "18ecac9050037446323c3df55586fa54310a553ab429812ad734cb2f77a55536",
+      "entry_hash": "3278950bb93054bd3b28c832ce0dbd5507d68b29db00b035b5dafd834c24644b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM3E_03",
+      "source": "Hwaldar takes his place as a leading commander serving the Iron Crown,",
+      "source_hash": "7e2ed7877ae774c14a1f64620903896eb3fd3e6788b1b78637987a2d90764357",
+      "entry_hash": "d1d7ef5247ef18c98e3d4509711d3f097dbb9c1fb9931032419809def43d65bd",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM3E_04",
+      "source": "while his people provide more minions for the Thrall Masters.",
+      "source_hash": "87be78c2f02240f310e491cb0788d0a730b52bb19b481ff99c2f731594bd7d47",
+      "entry_hash": "f2859e5ac08a1d4ea1fb5fa2683de591b07fd11aa973c7e07456a62c0238509e",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM3E_05",
+      "source": "But despite their wounds, the DÃºnedain are not without power.",
+      "source_hash": "c217f9d07b4ec11a2c50e50461bb8924ea4a60c1bf0cae8c4959c5737db32323",
+      "entry_hash": "2d7b4b3761a6d4d7ee58d0501269ff810cecd26210eefa6eea4c0ae1d941947d",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM3E_06",
+      "source": "The fortified Weather Hills and fortress at Amon SÃ»l stand as a shield protecting Fornost and the heart of Arnor?",
+      "source_hash": "a5ad9432d5d5422b916bf7d0f89f9699abf04c2a4e6d7f0d715515744392f3f4",
+      "entry_hash": "d875c7deb228d311f5cf506b1262f7ad57f0b5b5817075f57bdc34a72a5ae45b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM3O_01",
+      "source": "In the face of this gathering storm, King Argeleb of Arthedain reclaims the throne of all Arnor.",
+      "source_hash": "1c2687a4fc608c42b9a8eba8d3482e4a75d209130d22e865e48816aa25f7033d",
+      "entry_hash": "03eadbdd5d56e37f4a3eb91d7df8d015aad9dafc893e0cf06ff6f2e98cb21e35",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM3O_02",
+      "source": "Cardolan does not oppose him, but one faction of the Hillmen of Rhudaur begin to rebel.",
+      "source_hash": "379708f2d53bd89e1d7ba10a189143a065ca18690deca38de11b9f411179a858",
+      "entry_hash": "7422af50e02cbc187c88a1170bcdcfbc3648a6c2f38a1647ad0e03c5779c2c9c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM3O_05",
+      "source": "But Angmar, its power ready, advances into the weakest of the DÃºnedain realms.",
+      "source_hash": "321b9700eca0c3f96add495b016afff3f8b46c3747ea7d28cd68754192e9fbe7",
+      "entry_hash": "32dbf5f78c3ea128625017d23dc922640daa81b8c1acdefbfb1b5d3e9f091dff",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM3O_06",
+      "source": "Thus one man?s lust for power has given the Witch-king an opportunity?",
+      "source_hash": "c7e9d782eb124af310bcced99d5fbfa1cbc03a2643b5337f4698cc464f1ecc96",
+      "entry_hash": "4ac762ee038eea5ee6d0ebea04dc7f0f99d7d5fab09d35113c7f84d9295812f6",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM4E_01",
+      "source": "Amon SÃ»l is laid to ruin.",
+      "source_hash": "4bdf3f43076a26cc6bc55eb5d8b6aae3581a1bc55e08b6a2f8158a0a2db08859",
+      "entry_hash": "74f7b2d9d15eda8e8dcf09f5da022a744c3380bca1fdd7acf38635fe6c14c308",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM4E_02",
+      "source": "With its garrison reduced, the great bastion of the north could not withstand Angmar?s rage.",
+      "source_hash": "e1531bb6a96cdcba22ef7ae8c367148c4206c144a5f4fb818c5891829225f5b3",
+      "entry_hash": "608f2208f2b07648be31088942f081c5382b0c87e3a9d164149a1bbac7820b97",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM4E_03",
+      "source": "But Angmar?s victory is not complete;",
+      "source_hash": "2bfa450ba9fccdbab91c606530dd29e860f0035abf1d634cc232f6ea7f5b9055",
+      "entry_hash": "743d95cb3673c07a8789b2fad4dec58d5b4f0262a2112800a36ba6971b428976",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "083e0bf22348a8834bf0701e57173a7be2214a08e9cafca5762d4cdc2a771a42"
+}

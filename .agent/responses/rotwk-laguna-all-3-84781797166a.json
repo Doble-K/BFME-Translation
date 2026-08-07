@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "84781797166a4b31bab0f3e3f49b587e",
+  "worker": "rotwk-laguna-all-3",
+  "translations": [
+    {
+      "id": "BANNERUI:ElvenLorienArcher",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:ElvenLorienArchers",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:ElvenMithlondSentry",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:ElvenMithlondSentries",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:ElvenMirkwoodArcher",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:ElvenMirkwoodArchers",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:ElvenNoldorWarrior",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:ElvenNoldorWarriors",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_ElvenNoldorWarriorHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_ElvenNoldorWarriorHordePlural",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_NoldorWarriorHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ElvenNoldorWarriorHorde",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:ElvenRivendellLancer",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:ElvenRivendellLancers",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ElvenRivendellArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ElvenRivendellArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ElvenEnt",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ElvenEnt",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_Treebeard",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_Structure_DwarvenHallOfWarriors",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_Structure_DwarvenFortress",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:DwarvenGuardian",
+      "translation": ""
+    },
+    {
+      "id": "BANNERUI:DwarvenGuardians",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenGuardianHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenGuardianHordePlural",
+      "translation": ""
+    }
+  ]
+}

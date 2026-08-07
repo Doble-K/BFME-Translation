@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "b250c88f5342471eafcef324e43fef35",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "Map:MAPMPNorthernWaste/Desc",
+      "translation": "También conocida como Forodwaith, el Yermo del Norte era una vasta y fría región en el extremo norte de la Tierra Media, más allá de las Montañas de Angmar, el Monte Gundabad y las Ered Mithrin.\\n\\nTamaño: 500 x 500\\nGuaridas: 4x Guarida de Troll, 4x Guarida de Huargo\\nEstructuras Neutrales: 1x Fuego de Señales, 2x Posada, 2x Puesto Avanzado"
+    },
+    {
+      "id": "Map:MAPMPNorthernWasteII",
+      "translation": "Desierto del Norte II"
+    },
+    {
+      "id": "Map:MAPMPNorthernWasteII/Desc",
+      "translation": "También conocida como Forodwaith, el Desierto del Norte fue una vasta y fría región situada en el extremo norte de la Tierra Media, más allá de las Montañas de Angmar, el Monte Gundabad y las Ered Mithrin.\\n\\nTamaño: 500 x 500\\nGuaridas: 4x Guarida de Troll, 4x Guarida de Warg\\nEstructuras Neutrales: 1x Fuego de Señales, 2x Posada, 1x Puesto Avanzado"
+    },
+    {
+      "id": "Map:MAPMPUmbarPeninsula",
+      "translation": "Península de Umbar"
+    },
+    {
+      "id": "Map:MAPMPUmbarPeninsula/Desc",
+      "translation": "Una península al noroeste de la Ciudad de los Corsarios.\\n\\nTamaño: 500 x 500\\nGuaridas: 3x Guarida de Troll, 1x Guarida de Espectro de Túmulo, 2x Guarida de Warg\\nEstructuras Neutrales: 1x Fuego de Señales, 2x Posada, 1x Puesto Avanzado"
+    },
+    {
+      "id": "Map:MAPMPSouthMirkwood",
+      "translation": "Bosque Negro del Sur"
+    },
+    {
+      "id": "Map:MAPMPSouthMirkwood/Desc",
+      "translation": "Una región oscura y montañosa en el sur del Bosque Negro.\\n\\nTamaño: 400 x 400\\nGuaridas: 2x Guarida de Araña, 2x Guarida de Warg, 2x Guarida de Espectro de Túmulo"
+    },
+    {
+      "id": "Map:MAPMPSeaofNurnen",
+      "translation": "Mar de Núrnen"
+    },
+    {
+      "id": "Map:MAPMPSeaofNurnen/Desc",
+      "translation": "Las tierras alrededor del Mar de Núrnen son exuberantes y prósperas. Aquí, lejos de los humos de Orodruin, innumerables hombres trabajan los campos para los ejércitos del Señor Oscuro.\\n\\nTamaño: 500 x 400\\nGuaridas: 2x Guarida de Warg, 2x Guarida de Espectro\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPBree",
+      "translation": "Bree"
+    },
+    {
+      "id": "Map:MAPMPBree/Desc",
+      "translation": "Una aldea de Hombres y Hobbits, situada al este de la Comarca y al sur de Fornost, en Eriador.\\n\\nTamaño: 500 x 500\\nGuaridas: 4x Guarida de Warg\\nEstructuras Neutrales: 1x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPBeleriand",
+      "translation": "Beleriand"
+    },
+    {
+      "id": "Map:MAPMPBeleriand/Desc",
+      "translation": "Al final de la Primera Edad de la Tierra Media, Beleriand fue destruida en la Guerra de la Cólera por los Maiar, contra Morgoth. Cuando los habitantes huyeron, gran parte de Beleriand se hundió en el mar. Las almas que quedaron atrás aún libran su batalla por la supremacía de las tierras sumergidas.\\n\\nTamaño: 400 x 400\\nGuaridas: 3x Guarida de Troll, 3x Guarida de Warg\\nEstructuras Neutrales: 3x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPEavesofFangorn",
+      "translation": "Lindes de Fangorn"
+    },
+    {
+      "id": "Map:MAPMPEavesofFangorn/Desc",
+      "translation": "Las Lindes de Fangorn son un área dentro del este de Rohan. Es un remanente del que fuera el gran Bosque de Fangorn.\\n\\nTamaño: 421 x 360\\nGuaridas: 3x Guarida de Troll, 3x Guarida de Warg\\nEstructuras Neutrales: 3x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPForlond",
+      "translation": "Forlond"
+    },
+    {
+      "id": "Map:MAPMPForlond/Desc",
+      "translation": "Forlond era un puerto que se alzaba en la costa norte del Golfo de Lune, en la tierra élfica de Forlindon. Tenía una contraparte en la costa sur: el Harlond. Forlond se ubicaba en la desembocadura de un río sin nombre que atravesaba Forlindon, a unas doscientas millas al noroeste de los Puertos Grises.\\n\\nTamaño: 450 x 450\\nGuaridas: 5x Guarida de Troll"
+    },
+    {
+      "id": "Map:MAPMPHillsofEvendim",
+      "translation": "Colinas de Evendim"
+    },
+    {
+      "id": "Map:MAPMPHillsofEvendim/Desc",
+      "translation": "Las Colinas de Evendim, o Emyn Uial en sindarin, eran una serie de colinas en el norte de Eriador.\\n\\nTamaño: 500 x 550\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Araña, 1x Guarida de Warg\\nEstructuras Neutrales: 2x Puesto Avanzado, 2x Posada, 1x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPIcebayofForochel",
+      "translation": "Bahía de Hielo de Forochel"
+    }
+  ]
+}

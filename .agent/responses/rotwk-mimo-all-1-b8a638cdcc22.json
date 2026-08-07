@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "b8a638cdcc2243adb968e666b5945334",
+  "worker": "rotwk-mimo-all-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:TooltipEnableCEContents",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityDwarvenVigilance",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorHeavyArmorPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorFireStonesPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorBasicTrainingPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIronOreUpgradePurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildSiegeMaterialsUpgradePurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressBannersPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressHouseOfHealingPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressBoilingOilPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipEnableCEContentsPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeGondorHeavyArmorPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeGondorFireStonesPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeGondorForgedBladesPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeGondorFireArrowsPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeGondorBasicTrainingPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeRohanBasicTrainingPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeSentryTowerFireArrowsPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenBasicTrainingPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElderRacesBasicTrainingPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorForgedBladesPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenForgedBladesPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseUpgradeElvenSilverthornArrowsBattleTowerPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseUpgradeElvenSilverthornArrowsPurchased",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenSilverthornArrowsPurchased",
+      "translation": ""
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "b454aa7c66274d51bd100a4b69ce1b08",
+  "worker": "rotwk-mimo-loop",
+  "translations": [
+    {
+      "id": "OBJECT:ElvenSentryTowerDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 75 (Estructural) y 20 (Magia) \\n Alcance del arco: 250 \\n Alcance de visión: 300 \\n Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s"
+    },
+    {
+      "id": "OBJECT:ErgionForgeDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 75 (Estructural) y 20 (Magia) \\n Alcance del arco: 250 \\n Alcance de visión: 300 \\n Nivel 2 Velocidad de reparación de asedio: 4% /2s \\n Nivel 3 Velocidad de reparación de asedio: 6% /2s \\n Radio: 200 \\n Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s"
+    },
+    {
+      "id": "OBJECT:ElvenWallHubDescription",
+      "translation": "Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s \\n Radio de construcción de muro: 1000"
+    },
+    {
+      "id": "OBJECT:ElvenFortressDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 120 (Estructural) y 20 (Magia) \\n Alcance del arco: 250 \\n Alcance de visión: 800 \\n Retraso de reparación: 2m \\n Velocidad de reparación: 0.3%/s \\n Aumenta el límite de Puntos de mando en 100"
+    },
+    {
+      "id": "OBJECT:ElvenWallHubExpansionDescription",
+      "translation": "Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s \\n Radio de construcción de muro: 1000"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructElvenWatchtowerExpansion",
+      "translation": "Torre de flechas defensiva que dispara a unidades enemigas cercanas \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "OBJECT:ElvenArrowTowerExpansionDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 120 (Estructural) y 20 (Magia) \\n Alcance del arco: 250 \\n Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructElvenVigilantEntExpansion",
+      "translation": "Ent estacionario que lanza rocas a unidades enemigas \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "OBJECT:VigilantEntExpansionStructure",
+      "translation": "Tipo de daño: Asedio \\n Velocidad de ataque a distancia: 4.55s \\n Radio de daño por salpicadura de rocas: 50 \\n Velocidad de movimiento: 0 \\n Alcance de lanzamiento de rocas: 625 \\n Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipConstructDwarvenMineShaft",
+      "translation": "Genera recursos según el terreno disponible\\nProporciona acceso a la red de túneles \\n Aumenta el límite de Puntos de mando en 50 \\n La producción de recursos se reduce cuando la estructura está dañada \\n\\n Tiempo de construcción: 15s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenBarracks",
+      "translation": "Entrena Guardias, Falanges y Zelotes\\n Investiga mejoras de Portador de Estandarte y Martillos de Asedio \\n\\n Tiempo de construcción: 25s"
+    },
+    {
+      "id": "OBJECT:DwarvenBarracksDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 105 (Estructural) \\n Alcance del hacha: 250 \\n Alcance de visión: 300 \\n Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s \\n Nivel 2: +10% más rápido de producción \\n Nivel 3: +25% más rápido de producción"
+    },
+    {
+      "id": "CONTROLBAR:TooltipConstructDwarvenArcheryRange",
+      "translation": "Entrena Lanzadores de Hachas y Hombres de Dale \\n Investiga mejoras de Flechas de Fuego \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "OBJECT:DwarvenArcheryRangeDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 75 (Estructural) y 20 (Llama) \\n Alcance del arco: 250 \\n Alcance de visión: 300 \\n Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s \\n Nivel 2: +10% más rápido de producción \\n Nivel 3: +25% más rápido de producción"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenForgeWorks",
+      "translation": "Construye y repara Carros de Batalla, Demoledores y Catapultas \\n Investiga mejoras de unidades Enanas \\n\\n Tiempo de construcción: 40s"
+    },
+    {
+      "id": "OBJECT:DwarvenForgeWorksDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 105 (Estructural) \\n Alcance del hacha: 250 \\n Alcance de visión: 300 \\n Nivel 2 Velocidad de reparación de asedio: 4% /2s \\n Nivel 3 Velocidad de reparación de asedio: 6% /2s \\n Radio: 200 \\n Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s \\n Nivel 2: +10% más rápido de producción \\n Nivel 3: +25% más rápido de producción"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenHearth",
+      "translation": "Los aliados cerca del fogón obtienen \\n +50% de Daño y +50% de Armadura \\n No se acumula \\n Proporciona detección de sigilo cercana \\n Reduce el costo de unidades mecánicas"
+    },
+    {
+      "id": "OBJECT:DwarvenSentryTowerDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 105 (Estructural) \\n Alcance del hacha: 250 \\n Alcance de visión: 650 \\n Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s"
+    },
+    {
+      "id": "OBJECT:DwarvenStatueDescription",
+      "translation": "Los aliados cerca de la estatua obtienen \\n +50% de Daño, +50% de Armadura, \\n y ganan experiencia el doble de rápido \\n No se acumula \\n Aumenta el límite de Puntos de mando en 10"
+    },
+    {
+      "id": "OBJECT:DwarvenFortressDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 150 (Estructural) \\n Alcance del hacha: 250 \\n Alcance de visión: 800 \\n Retraso de reparación: 2m \\n Velocidad de reparación: 0.3%/s \\n Aumenta el límite de Puntos de mando en 100"
+    },
+    {
+      "id": "OBJECT:DwarvenCitadelDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 150 (Estructural) \\n Alcance del hacha: 250 \\n Alcance de visión: 350 \\n Retraso de reparación: 1m \\n Proporciona acceso a la red de túneles \\n Aumenta el límite de Puntos de mando en 100"
+    },
+    {
+      "id": "OBJECT:DwarvenWallHubDescription",
+      "translation": "Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s \\n Radio de construcción de muro: 1000"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenEreborTowerTowerExpansion",
+      "translation": "Construir expansión de Torre de Hachas \\n\\n Tiempo de construcción: 20s"
+    },
+    {
+      "id": "CONTROLBAR:DwarvenEreborTowerExpansionDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 105 (Estructural) \\n Alcance del hacha: 250 \\n Retraso de reparación: 1m \\n Velocidad de reparación: 0.4%/s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenCatapultExpansion",
+      "translation": "Arma defensiva de largo alcance \\n Beneficia de la mejora de Municiones Maestras \\n\\n Tiempo de construcción: 30s"
+    }
+  ]
+}

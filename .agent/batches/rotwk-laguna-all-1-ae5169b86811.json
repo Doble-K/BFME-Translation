@@ -1,0 +1,196 @@
+{
+  "schema_version": 3,
+  "batch_id": "ae5169b8681141efa9019dca0fce6bcd",
+  "worker": "rotwk-laguna-all-1",
+  "created_at": "2026-08-06T09:18:32.668843+00:00",
+  "lease_expires_at": "2026-08-06T15:18:32.667172+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-laguna-all-1-ae5169b86811.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SCRIPT:FORNOST_GOAL_6_COMPLETE",
+      "source": "The Elven counterattack has met its end",
+      "source_hash": "303fc35ee6366277523a214221d66c13d3389a3549e540e8a90ab8414ed795d6",
+      "entry_hash": "126ecd1ac228cb2c07ee8d4f1ffe51d68304765b5aaff9dc904436145d454990",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_7_COMPLETE",
+      "source": "The Army of Fornost lies in ruin",
+      "source_hash": "2efb35f2b0e0c62f9f9835bb272a212471a05f488d0236b66e5fdbdc103a867b",
+      "entry_hash": "848c55c4db2ed00e7c84744c748b6b691d196b815be2a6c74c3f45bdc1814e84",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:WITCHKING_ARRIVAL",
+      "source": "The Witch-king has arrived",
+      "source_hash": "921166c82bb9dce7cc49a7a8c870ca02c2bbad6d4ba2c63fa7005c4deafb17f0",
+      "entry_hash": "bd87c0249f68a9c87a88b4fce1046eed9ccf03b64f96e56dd77ce187542403fa",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurIntroText_01",
+      "source": "ANGMAR OFFICER: Before Hwaldar was captured, he secretly gathered supporters in the hills. \\n Even now our agents walk among them.",
+      "source_hash": "0e58f301c1c969a4869252e8bf748aefe0385203ea5075fb114bd70fac0045b8",
+      "entry_hash": "461fc61d105927e5a392abce02f11aea0274e70c98accf32ace939d19606b529",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurIntroText_02",
+      "source": "ANGMAR OFFICER: There are four villages of Rhudaur Hillmen in this area. We must find them and kill all who do not join us!",
+      "source_hash": "9d701b4c9d1178db12462501e4c0c516c9f5377e6ff154fba259899beeb78934",
+      "entry_hash": "51006c5e8c9073dc7cf592a117a00f68886a50c620a55b8d3f29cc1b3b92673d",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurIntroText_03",
+      "source": "ANGMAR OFFICER: If we free Hwaldar from Arnor's outpost in the south before\\nraising rebellion in the villages, more of the Hillmen will join us.",
+      "source_hash": "89bdd04fa80e33a16c9af29e26aea081626a2b13e012c097bd9c529f28bb489a",
+      "entry_hash": "51df917cf82b779fb516bc0f7af8de41b18a1ed85fe71a5a60bc9c0b70aff8a0",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurIntroText_04",
+      "source": "RHUDAUR HILLMAN: The Witch-king is here, and we stand with him!",
+      "source_hash": "13d24d61ac0fb1c4f5bd3b7a5d8632ca00ae5f31a9d1f43b9ce505442fd119b3",
+      "entry_hash": "2feade4bf6137c3953311ecb06e26536e19c7bd07516d1cf0cf855bbcbead253",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveText_01",
+      "source": "Raise rebellion amongst the Hillmen by clearing all four of their villages of warrior folk.",
+      "source_hash": "b453f396ffd208c7734be9fa2c9a057e7f085a0df23c1826cbe09ba59cf14bae",
+      "entry_hash": "0e03ffe15405c6310d9a861382d79f971586ed7b1d5bb193484cbf72925ac991",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveText_02",
+      "source": "Free Hwaldar from Arnor's clutches.",
+      "source_hash": "dc09a04d0171ec336a04aa5bf8e2003ab167051acf83f9cffcb4b5b0a73cc0f6",
+      "entry_hash": "0d1993b9f174568004fb75709b75d78890ecc41a5c5d51b4455bbf9e272f88c2",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveText_03",
+      "source": "Destroy the fortress of Arnor to the northwest.",
+      "source_hash": "8917672e44cf1d68a9eb25e644461a9f5f7c4d98f48d6ffa1ddfef55af957349",
+      "entry_hash": "d900edb0d8b670f30efd0100652d3c9c97ca7af1a1d7cab4e2080d8c99b7198c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveText_04",
+      "source": "Slay King Argeleb.",
+      "source_hash": "14224aba9c5ac50996fffe0bff92f3afbabd7db0dc6b8e50d4b43648b67eeac9",
+      "entry_hash": "e7e009d99d01998a7fcf5fddccedc3c4c964df2cb8378897b0c6e3b348f7badc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveText_05",
+      "source": "Destroy the fortress of Arnor to the southwest.",
+      "source_hash": "e5ebdd9af0421cfc34c8030f614493a90668f0d38f4bf7c999004918e753ad86",
+      "entry_hash": "a011345034a49014136cf7b644640d16e64470ae5f87f3f193b031eec1475de7",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurVillageCleared_01",
+      "source": "We have raised rebellion in one of the four hill villages. Three yet remain loyal to Arnor.",
+      "source_hash": "7c74d6fb29ef425973e9ac37f578a48e07bd047eb439d8b591a450627bdcd7e1",
+      "entry_hash": "3010c014592f0d59758cace1f4abfb970ca3769e0407bae1458b6fe251d772a4",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurVillageCleared_02",
+      "source": "We have raised rebellion in two of the four hill villages. Two still remain.",
+      "source_hash": "96cc2b210e618ffc178fadc3a3b38ed626589136f13657a898acbeeb583e97b1",
+      "entry_hash": "a59aa4da1b873856d59f29f9e8402104354be69a02885c57a6aa14adf156c155",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurVillageCleared_03",
+      "source": "We have raised rebellion in three of the four hill villages. Only one remains!",
+      "source_hash": "e1a30ed012baec756766ff2e5073e44a531ca8d80d0c015f525f6b02ed30bee5",
+      "entry_hash": "a1d0bb340224326b9a9932cc79f326d5219f9712a7b792caa7862adc4eb90ca9",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurBonusObjectiveText_01",
+      "source": "The rebellion is underway. To strengthen it, find and clear the remaining two villages of Hillman warriors loyal to Arnor.",
+      "source_hash": "221bf2ee5c7779954c58017ce564ff0b29bb18a16482aad45454d28645d452f0",
+      "entry_hash": "7d89462ab1ffef15e2fd3c1bc19fedc4544c04d67bb0898cd65c189722de9e0c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_01",
+      "source": "We have cleared Arnor's dogs from the last village! The Hillmen of Rhudaur have risen in rebellion against Arnor!",
+      "source_hash": "0e2f8a2421de1365fc41c5346cc7989186fe93734f4c2134b77cac0c4b24dcc8",
+      "entry_hash": "b8672f1fbfcd139a7674cef673e6401ab0591d886df0c36fcfb040a6c9a097de",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_02",
+      "source": "We have freed Hwaldar from his captivity.",
+      "source_hash": "e4d76ae408edaeb16f07029e19b9eabc1dc4486137a7fd77de85f0f8fa2d2a94",
+      "entry_hash": "0e7310a7c435dc60d67cf44f4aaacdb3e6467772efa6574da84fc4a37cf036c3",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_03",
+      "source": "We have destroyed the fortresses of Arnor here!",
+      "source_hash": "e926d1d8f4a969bec8d950877f46b9fefa80a00f06df648b4fecd776d9702a12",
+      "entry_hash": "23d045905102723bae56f73fe226a760319fefbe18bb397c6a35750bc5751554",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_04",
+      "source": "We have slain King Argeleb!",
+      "source_hash": "7ff66c7c62ace4e91b413c07a971f06aacaf4729a407800388853efaba61863c",
+      "entry_hash": "e6e45eb3b1311da541aa097a9c18e67b51d1586f4f370b885d6f574b843ffd8d",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_05",
+      "source": "We have destroyed the northwest fortress!",
+      "source_hash": "25184de0eed470e8efc4eaccab63c6c7d77cffaadd99b30441be8a8f40088a8b",
+      "entry_hash": "3abdff45fd46efb5307f39c2ba0ece64bdc746586013d2523cc208d27a913b12",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurObjectiveComplete_06",
+      "source": "We have destroyed the southwest fortress!",
+      "source_hash": "ba7f11644a09bc9acd321202a169da88bfe0adb830fc49d19b92ccd13f7f30e6",
+      "entry_hash": "88cc0a697ee6bb3b44974b774af2d4b9d142975665c8b7160d5a7ffa79d61846",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurBonusObjectiveComplete_01",
+      "source": "By clearing all the villages, we have removed all that remains of the Hillmen loyal to Arnor!",
+      "source_hash": "6688098cedcd97ba33fb685a7d085574d9de33be81113229c6c52f894cd3898b",
+      "entry_hash": "c2662d080ec77eab9027d657f5ccca420c68789f65493e4425a9ba487611ac21",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_01",
+      "source": "The Arnor forces in the strongholds nearby have been alerted to our presence.",
+      "source_hash": "8a08642676b1367b04244bfdc67fe3f97a571f03e7182540acf1527a1c43c6ec",
+      "entry_hash": "db5c0f57321a096045ac2cc2bc34ca1f9dd61f4067d10bfcedeb23718f571863",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_02",
+      "source": "More Thrall Masters have arrived. We can also build a base with our new Builders now. Prepare to fight!",
+      "source_hash": "1d360ecad85923511a0a743e8b582780c4768850145c1eae41807b8c22c2d5ed",
+      "entry_hash": "67b2956760507d19395b2a06725a63e220892cd8047e4918c069fc6dfb8abed2",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "5ea0afc4790d2741efffa3ed050baf4eadd9592495cf83ccf39a0371930d0859"
+}

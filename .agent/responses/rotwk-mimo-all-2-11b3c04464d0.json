@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "11b3c04464d04faeb836a9e44b8e72ee",
+  "worker": "rotwk-mimo-all-2",
+  "translations": [
+    {
+      "id": "TOOLTIP:ArnorBasicTrainingLackLevel2Barracks  ",
+      "translation": "Requiere Cuartel de Nivel 2"
+    },
+    {
+      "id": "Map:MAPMPGreyMountains6p",
+      "translation": "Montañas Grises"
+    },
+    {
+      "id": "Map:MAPMPGreyMountains6p/Desc",
+      "translation": "Una cadena montañosa al norte donde Goblins y Enanos han luchado durante muchas edades."
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWitchKingLeadership",
+      "translation": "Requiere Nivel 4 \\n Los aliados cerca del Rey Brujo obtienen \\n +33% Daño, +33% Armadura, \\n y obtienen Experiencia 50% más rápido\\n Habilidad pasiva"
+    },
+    {
+      "id": "GUI:LobbyRoom7",
+      "translation": "BT2DC ClanWars"
+    },
+    {
+      "id": "CLAN:ErrorClanMaxFourPlayers",
+      "translation": "Para jugar una partida de clan con más de cuatro jugadores, debes desmarcar la casilla de Clan Game y presentar un Informe Automático en Clanwars.cc después de que la partida haya terminado."
+    },
+    {
+      "id": "GUI:OlderReplayVersion",
+      "translation": "Esta repetición probablemente fue creada por un juego en otro idioma. Sin embargo, podría haber sido jugado en un parche diferente, en cuyo caso no funcionará correctamente. ¿Continuar la carga?"
+    },
+    {
+      "id": "APT:OlderReplayVersion",
+      "translation": "Esta repetición probablemente fue creada por un juego en otro idioma. Sin embargo, podría haber sido jugado en un parche diferente, en cuyo caso no funcionará correctamente. ¿Continuar la carga?"
+    },
+    {
+      "id": "STRATEGICHUD:TreasuryWarningPopUpMessage",
+      "translation": "Si continúas, las nuevas unidades que has construido en el juego RTS agotarán tu Tesoro cuando se añadan al mapa. No podrás construir nuevas unidades ni edificios en el mapa (incluidas Granjas) hasta que tu Tesoro no esté vacío.\\n\\nPodrías cancelar y disolver algunas unidades más, si puedes. (Los héroes no se pueden disolver.)"
+    },
+    {
+      "id": "GUI:HostLeft",
+      "translation": "El anfitrión ha abandonado la partida pero La Batalla por la Tierra Media continuará"
+    },
+    {
+      "id": "CONTROLBAR:PorterExtinguishFire",
+      "translation": "Apagar Fuego"
+    },
+    {
+      "id": "CONTROLBAR:EvacuateAll",
+      "translation": "E&vacuar Todo"
+    },
+    {
+      "id": "OBJECT:WargLairDescription",
+      "translation": "Permite entrenar Manadas de Warg"
+    },
+    {
+      "id": "CONTROLBAR:ConstructFireDrake",
+      "translation": "Draco de Fuego [&F]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEvilBombardShip",
+      "translation": "Nave corsaria equipada con catapulta de largo alcance\\nFuerte vs. Estructuras"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGoodBombardShip",
+      "translation": "Nave élfica equipada con una balista de largo alcance\\nFuerte vs. Estructuras"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipEarnurLeadership",
+      "translation": "Requiere Nivel 4 \\n Los aliados cerca de Earnur obtienen \\n +33% Daño, +33% Armadura, \\n y obtienen Experiencia 50% más rápido\\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleTowerGuardPorcupineToLineFormation",
+      "translation": "Las unidades regresan a la formación de línea estándar"
+    },
+    {
+      "id": "CONTROLBAR:SpecialAbilityWyrmReposition",
+      "translation": "&Reposicionar"
+    },
+    {
+      "id": "TOOLTIP:LackGondorBasicTraining",
+      "translation": "Investigar mejora en la Herrería para habilitar este equipo \\n Cuando se equipa, aumenta este batallón al Nivel 2 \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "OBJECT:GondorFighter",
+      "translation": "Soldado de Gondor"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleGFighterBlockToLineFormation",
+      "translation": "Las unidades regresan a la formación de línea estándar"
+    },
+    {
+      "id": "OBJECT:HordeGondorRanger",
+      "translation": "Rangers de Ithilien"
+    },
+    {
+      "id": "OBJECT:DunedainRanger",
+      "translation": "Ranger Dunedain"
+    },
+    {
+      "id": "OBJECT:HordeGondorKnightsofDol",
+      "translation": "Caballeros de Dol Amroth"
+    }
+  ]
+}

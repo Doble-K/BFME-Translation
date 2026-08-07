@@ -1,0 +1,336 @@
+{
+  "schema_version": 3,
+  "batch_id": "257c077514e945ddb656fe79f9b66299",
+  "worker": "rotwk-mimo-4",
+  "created_at": "2026-08-06T06:29:29.517600+00:00",
+  "lease_expires_at": "2026-08-06T12:29:29.516190+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-4-257c077514e9.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyAngmarBasicTraining",
+      "source": "Allows hordes to purchase the Banner Carrier upgrade \\n Increases a horde to Level 2 \\n \\n Research Time: 30s",
+      "source_hash": "4f9a6599d51a7ebdcbcd9243d643a4072fd2ae77e4d115772e03cca288ff7cf6",
+      "entry_hash": "25be6b561053bbacf33cbde230b0278eb06eca476aa30a0efc3d59f73b9257b5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarDarkRangerHorde",
+      "source": "Requires Level 3 Hall of King's Men \\nStrong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Longshot arrow volleys \\n Can stealth near trees \\n \\n Unit Type: Elite Archer \\n Recruit Time: 40s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "ae1e87e7a603acdd3388fb21ee2d302d8be11aac001a00178b4c0c153151f801",
+      "entry_hash": "fce608d8513c7872838a08aaa5db63b439c39da7f530ab5b43193a42cc507624",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarDireWolfHorde",
+      "source": "Strong vs. Pikemen \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "79663d7903a56863c1d757e14e9f456c8f2f02d5705a3b2c7d2f015bf8bbd0b1",
+      "entry_hash": "c9e61c751211937b309b8b8277befcd8cbed05672b80e0a8c5f2762751ba35cd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyAngmarSpikedCollars",
+      "source": "Allows Spiked Collars to be given to Dire Wolf Packs \\n When equipped, significantly reduces the amount of damage taken \\n \\n Research Time: Instant",
+      "source_hash": "55b42d48b22234f8814b103d0685e7b514bb8a8f6ac31224897383b112a4ad5f",
+      "entry_hash": "aa0beaa780272c52f17715e9d313ce988c6f28904d69fdce09a3da09b726c4b9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipBuildAngmarTrollSling",
+      "source": "Troll powered Siege weapon \\n Strong vs. Structures, Monsters, and Archers \\n \\n Unit Type: Siege \\n Recruit Time: 30s",
+      "source_hash": "080941430e833fc889681afd6ec791c84faebb9a300915f2664863feca33b42d",
+      "entry_hash": "a4df6e2ef3b49158cdc94eca42de3aba77ad310f8eab753f6c380dc74197b8df",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseTechnologyAngmarIceShot",
+      "source": "Allows Stone Throwers to purchase the Ice Shot upgrade \\n When equipped, significantly increases a Stone Thrower's damage \\n \\n Research Time: 30s",
+      "source_hash": "d9d77aec1afdd15945337eaec4a2b11c38f2bf6e052da470de87c7e1e9da97d0",
+      "entry_hash": "219522b304787e95ef7ace0b2cc96ab460f764a2cda37361a4ab02afdcfb9ad3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseTechnologyAngmarDarkIronBlades",
+      "source": "Allows hordes to purchase the Dark Iron Blades upgrade\\nWhen equipped, significantly increases the damage done by Melee Weapons \\n \\n Research Time: 30s",
+      "source_hash": "412224d5eb8be9edf1453ce13c0870b2645ef4bfe758a8b1cb4be52b9027d1de",
+      "entry_hash": "45e7992cd4c5a942c0ef9e233aee4a151609be175eeaf7bc841f765cb21586a0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseTechnologyAngmarDarkIronMail",
+      "source": "Allows hordes to purchase the Heavy Dark Iron Mail upgrade \\n  When equipped, significantly reduces the amount of damage taken \\n \\n Research Time: 30s",
+      "source_hash": "8dcaa6ac768698c3f7c67fb0b843bbc882b26b67ff4bf16dc01e75f8a27eada5",
+      "entry_hash": "e7e79c588193ba3237f7ae1145a83d8b5df068c28d6f31198c326157fef47885",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseTechnologyAngmarIceArrows",
+      "source": "Allows hordes to purchase the Ice Arrows upgrade \\n When equipped, significantly increases the damage done by Arrows \\n \\n Research Time: 30s",
+      "source_hash": "2e8a053113b8bef8a1f2b897fe1b019268e08c111a61d5ab7b59fd0a461fd04f",
+      "entry_hash": "dbd335f56416ccd447194a3784eaaf90377d1e7b7149dd6515726391b68c962f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeAngmarForgeWorksLevel3",
+      "source": "Allows Research of Dark Iron Blades and Dark Iron Mail \\n Increases siege weapon repair rate \\n +25% Faster Production Speed \\n Adds defensive Arrow Tower \\n \\n Upgrade Time: 45s",
+      "source_hash": "1e2f7de07684d6f94a86934fbb52a2f56be5ccb5af9431a555975c3afc1832c3",
+      "entry_hash": "9c0fd4aeed9dd76883b44fe4360ff8b7025fa842b580f8d91553e905540a2393",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTowerUpgradeAngmarIceArrows",
+      "source": "Upgrades this Tower with Ice Arrows \\n Significantly increases the damage done by Arrows \\n \\n Upgrade Time: 30s",
+      "source_hash": "7ec17a06ff2e87fe81397611c6c8dbc64fa4d4705b284e05d1d5d49f08afb31b",
+      "entry_hash": "2978db2f66aacb96f2dca77d3a9361f9bddd547ff38995480023e3f27132072b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarWildmanHorde",
+      "source": "Recruit rebels loyal to the traitor Hwaldar \\n Strong vs. Pikemen and Structures \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: 25s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "41d715ea1a4064afebdaf79c4be1549e8d2b084de21f77cd0b53467bd768600a",
+      "entry_hash": "a5de85838d3e716b28fad87d483097ccef46f7aaa787592f7c61a76273914814",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardUrukHai",
+      "source": "Strong vs. Pikemen \\n Able to switch formation for improved defensive capabilities \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "79b2302482a0c12bbde797f80bfe6e924c4f8cd8bd05cd99b630995a7d1e4ef8",
+      "entry_hash": "286a9243a53c39ed5f0d976018598d74be83b8bb8b6296680537a353da14d3e2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardPikemen",
+      "source": "Strong vs. Cavalry and Monsters \\n Able to switch formation to protect other units \\n \\n Unit Type: Basic Pikeman \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "e1e2452a225fb4648f51c2620e7185f66dde90a5228458902426e9a227339712",
+      "entry_hash": "a1afae2f25f4111998c8730e114ea751859d025c2300c5b75f445b4e4b25ff48",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardBerserkerHorde",
+      "source": "Strong vs. All Units \\n Requires Level 3 Uruk Pit\\n Only 3 hordes of Deathbringers are allowed at any time \\n \\n Unit Type: Mini Hero Swordsman \\n Recruit Time: 45s \\n Level 2: +5% Health, +5% Damage, 20/s Health Regeneration \\n Levels 3-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "620a24f80ee62739a98b5de8c035f17500fba75db140c98277ad2c67814d69b1",
+      "entry_hash": "2ff510f22e6cd4447cb2eac494c277f00c8be8c65e76ef788a5580812887f705",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeIsengardUrukPitLevel3",
+      "source": "Allows training of Uruk Deathbringers \\n +25% Faster Production Speed \\n \\n Upgrade Time: 45s",
+      "source_hash": "f4f6f25670ad22ddd7ffc79eca90d8e272d50febeac24e0381809583844acde5",
+      "entry_hash": "e260e7a7840c44287d8e162bb5af0a6006259df0a982ab14d1dd41364c5cd40e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardSiegeBallista",
+      "source": "Requires Level 2 Siege Works \\n Strong vs. Structures, Monsters, and Archers \\n Able to trample enemies \\n \\n Unit Type: Siege \\n Recruit Time: 40s",
+      "source_hash": "4d9c252085bf3aa326f57e4eb211780eef19e027668503d31e80efb4d27d9ab6",
+      "entry_hash": "af22188411bced2a6ae0373bf1dcf570944f2f6a615f32049cf365eb00a034ad",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardSiegeLadder",
+      "source": "Requires Level 2 Siege Works \\n Used by Uruk infantry to scale castle walls \\n \\n Unit Type: Siege \\n Recruit Time: 30s",
+      "source_hash": "c14e34f3b45da5948775dad8430ca068a8f74ee685f3859760479149b2da1c8e",
+      "entry_hash": "bd5a3ff2b6cb50c8825bfc5953fea5a7732eea2d48f55d6d0a9dccbf9d80c554",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeIsengardSiegeWorksLevel2",
+      "source": "Allows the construction of Siege Ballistae\\n Allows repairing of nearby siege weapons \\n +10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "a02e87f504ce730adf326ba28b683b3f5eadf8df2f37429e2750dfb9ec96f93c",
+      "entry_hash": "15a780b406b08695966aedad9ac88603cdba41a9c3d55f1fa28f5dd7a72b47f7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeIsengardSiegeWorksLevel3",
+      "source": "Allows the construction of the Explosive Mine \\n Increases siege weapon repair rate \\n +25% Faster Production Speed \\n Adds defensive Arrow Tower \\n \\n Upgrade Time: 30s",
+      "source_hash": "737e79447d2fb8de95ee7e8dc328f0200dae9c1ab71ac04476ac41c5f9e2737d",
+      "entry_hash": "ebd0959888396ff2642b4fd899e20d81d4796f7e5666d3da4877e0c94591e499",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardWargRider",
+      "source": "Requires Level 2 Warg Pit \\n Strong vs. Swordsmen and Archers \\n \\n Unit Type: Basic Cavalry \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "4eadebb9cc63b862797a5e763f09130894674c217cebdfb06cdf6f7f713c93ad",
+      "entry_hash": "5a1842383c0f1b3b54fda921bd778dc55b857c782bf566be820f20be651e50de",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeIsengardWargPitLevel2",
+      "source": "Allows training of Warg Riders \\n+10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "89b1e57b7cddcaf64e7226fb920ee3586f7b80930113136f21a172b2dcede22b",
+      "entry_hash": "6471e561e6fe93c7af8efe9dee2b53cd5d55809a9c13d86cc28b0463ce225ba1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeIsengardWargPitLevel3",
+      "source": "+25% Faster Production Speed \\n Adds defensive Arrow Tower \\n \\n Upgrade Time: 30s",
+      "source_hash": "ceb93d3684a09ddd852d7692d188b2272469db6703e0e3bb17a10d349a98c505",
+      "entry_hash": "d220dbf99dbdf207ba8ea12097d3d2c60e269154fe340f7b7a74d03d46a059b2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardWildmanAxeHorde",
+      "source": "Requires Level 2 Clan Steading \\n Strong vs. Pikemen and Archers \\n \\n Unit Type: Basic Archer \\n Recruit Time: 20s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "9b12effcb1e9fb0a648fc72ac1df398310b0bed7624e35165bd6ac3a71d0b5a9",
+      "entry_hash": "0ed4be98d6a400cf626f3bc86f8c9fdd0a646246e7e202b525375d3139a89d61",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardTorches",
+      "source": "Allows Wildmen to purchase the Torches upgrade \\n When equipped, increases the damage done by Melee attacks \\n \\n Research Time: Instant",
+      "source_hash": "2b7e1fe2b7b26edeaae87d77a9c45eb817d820f6cfaf365e28d4ce39fb77b901",
+      "entry_hash": "dcc80d58528ba3001ff6fa102b9089f3ae2ccba87a01d1ef04dcfc68e193b785",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "a9b00da380965667c3adcf053c05a3fb58cb2ecf58385a978e63284ce0e46453"
+}

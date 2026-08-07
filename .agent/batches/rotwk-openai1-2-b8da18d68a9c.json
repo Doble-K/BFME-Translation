@@ -1,0 +1,193 @@
+{
+  "schema_version": 3,
+  "batch_id": "b8da18d68a9c4cb0982ba3a9a0f77ab1",
+  "worker": "rotwk-openai1-2",
+  "created_at": "2026-08-05T19:54:48.266155+00:00",
+  "lease_expires_at": "2026-08-06T01:54:48.265031+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-openai1-2-b8da18d68a9c.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericCommandPointUpgrade5",
+      "source": "Increases command points by 100\\nUpgade Time: 50s",
+      "source_hash": "a39591eb1da4c038112bc9517a797cb4833c2d93fcee775047a8aaf04b2482b6",
+      "entry_hash": "52d5ba8adb2887eb9268a787aeb8c5750039b49ffa6312aba04155bbb07fe429",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericCommandPointUpgrade6",
+      "source": "Increases command points by 100\\nUpgade Time: 50s",
+      "source_hash": "e7b253f5166017510846b7bd2a20b01ffb3dbf2eab19e7bd86c393d76ddadb70",
+      "entry_hash": "92781df7fc48522de38f632b1a5c73623c45d381cf3ecac8f394495d096e18dc",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericCommandPointUpgrade7",
+      "source": "Increases command points by 150\\nUpgade Time: 50s",
+      "source_hash": "7f680d979ff0f4d50c3d9908e912f836cf47dbd1a49e0ec0bc8f3529be0772b8",
+      "entry_hash": "6885a5c0fc15e96ff9cff4d4fac76e034d621e5525f21b3d20621d592a998227",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericCommandPointUpgrade8",
+      "source": "Increases command points by 150\\nUpgade Time: 50s",
+      "source_hash": "704d96bd7eef24fc3df90f9153535e60598d147931a44790af8e773778ea0b4a",
+      "entry_hash": "cead3d547600b7b757ec7fd598e88fd7f5a71a9872a0377831be795770850838",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericCommandPointUpgrade9",
+      "source": "Increases command points by 200\\nUpgade Time: 50s",
+      "source_hash": "e73d8a7ac8fd7674cce8f8dd32c5da946aa70c4709914af7a3ccdaa31817ba6c",
+      "entry_hash": "965022b88f289c734a5b153845f99ac1018dbcd4c6daceffb9a3d7f27f3235df",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GetRichYourself",
+      "source": "We need more money (&W)",
+      "source_hash": "e0877bf178235c0ab6f7748d3dd1545f369003c6d3a0d609f5811d92c5bb7c0f",
+      "entry_hash": "83bf9166b66d2c59346e83ae4f51435fd27749ae7b429bccb4c52721e4f78a76",
+      "protected_tokens": [
+        "&W"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGetRichYourself",
+      "source": "Increases resource production by 900% for 6s\\nCooldown: 1m",
+      "source_hash": "7da0ba53b933144a0d0b5c56aa1ff1e1db987acc8806e0fd54432d0fd1495931",
+      "entry_hash": "0f1c8f27b002edd2a186ee788dcf28088bad6fc4e645b995c920edb7a88b44b4",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseGenericMoneyUpgrade1",
+      "source": "Increase income",
+      "source_hash": "3f4c96f3c672428be6845a1e98e7e524abd156c1e447f625f3fc06ae40ecdc82",
+      "entry_hash": "4f346dfee46f912eca06a9b0c96133a74136aeab7921d693c3f5391a1171ac9e",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade1",
+      "source": "Increase production permanently by +5\\nUpgade Time: 50s",
+      "source_hash": "a9ec825bc46c66761e81661eccde0d90f5f20569c4fcfcfc796a55a64bb4512b",
+      "entry_hash": "f9a5f516c5520019fee55d1163ddfe730533ab51fc0068f5abb70e7b41f02369",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade2",
+      "source": "Increase production permanently by +5\\nUpgade Time: 50s",
+      "source_hash": "f85e903c2b946a1d8d7568b4735225a58d7b893028d1c825cd64c026296df257",
+      "entry_hash": "ea3bc5d56ee78088e5d0f5d8a32808422edce7f47394d7d8b9f993c4ee349401",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade3",
+      "source": "Increase production permanently by +5\\nUpgade Time: 50s",
+      "source_hash": "d1e9911dca4796081f49fe3f0226d57727280e989f05fbc7b9a27805895b9cf9",
+      "entry_hash": "18f07cf3ccc9c6a75abaa785b5e2e89e668f5bd1a802f2e8ced90f17d336f905",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade4",
+      "source": "Increase production permanently by +5\\nUpgade Time: 50s",
+      "source_hash": "0524b30cbe0fd3899325901c56bd9cde78c81fc29a4a050cb6d8f24e85937111",
+      "entry_hash": "52028754d2f4d010d5e70c54ea2d302208a990001890470f20ed6b689c85be6d",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade5",
+      "source": "Increase production permanently by +10\\nUpgade Time: 50s",
+      "source_hash": "d44f17695e9a30f6418f432c7ba84496a4ba27095ac3418494a85380390be87c",
+      "entry_hash": "15391e564a944451d9ab4b2be482856f3790df0a9ef149b10883aaaec733fc21",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade6",
+      "source": "Increase production permanently by +10\\nUpgade Time: 50s",
+      "source_hash": "fcf3fd0c538547ed18bb9ef7eefedfd88025d048771b814090914276ef4ead14",
+      "entry_hash": "10dcf19c4168f5a6c229817db852e6f4c0bc6a9f82fc9af084af7109f60aa56b",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade7",
+      "source": "Increase production permanently by +10\\nUpgade Time: 50s",
+      "source_hash": "0da10615e232b9ba3a05efee027ca477fa631fe90a6ded035bce65b20ad4214e",
+      "entry_hash": "4e76e9b2b92a4ef9b58fa2f1725063d48e5800e2c953ce377294df5bcaf8788b",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade8",
+      "source": "Increase production permanently by +10\\nUpgade Time: 50s",
+      "source_hash": "e08ccb393551d1536a14260688a7ff902f7657be1ffd2f7b052fcdb375dfe25a",
+      "entry_hash": "336360f8c1c5a6755f3e993b6ee03316f22001fe4d912629c9a761d58f27a542",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade9",
+      "source": "Increase production permanently by +15\\nUpgade Time: 50s",
+      "source_hash": "7f9a7d31e0da3f1032d8e4b477087c808fe506a9ad5ea850a37a0fd3f6ac014f",
+      "entry_hash": "d0d5a737d38d854bbea59a9228e17264f068bf7fe753c5b373f344db987dbefc",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:SpecialAbilityGrantPowerPoints",
+      "source": "We need more Power Points (&W)",
+      "source_hash": "1e786f446f429d6f743f0e65795849fba8cccf0fe1a22229747cdc9c42d8ddca",
+      "entry_hash": "309176c1a55585e14d50fc4340c732edf37df4d6077e843243f9956fb5d08b4c",
+      "protected_tokens": [
+        "&W"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityGrantPowerPoints",
+      "source": "Getting Power Points\\n Cooldown: 60s",
+      "source_hash": "2c1d4dbaa68b8cd6f3bd191543ce79e42c4eb5ceeb0598cc2439c258c0fa18ae",
+      "entry_hash": "84a9b121a87eee322c0c6325569babeb8729189d6d9916e379ff52a8257340ad",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseGenericPowerPointUpgrade1",
+      "source": "Increase income",
+      "source_hash": "d1968e606e22b140f869d66395f6127e41e5ecf1e1e7ca0f65d57e5dc2897314",
+      "entry_hash": "d12703f5046615b6bc829fcb485bd7ad9d93f1629c241f40ed664e91c9c1fed1",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "2b50dadb157022cf0b9fa7541903b431259f4095bdcff844329564ee5f3f7e36"
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "c46050fc03fc45fdaedacfec58794cc1",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:TooltipFrozenLand",
+      "translation": "Congela un área del terreno y apaga todos los fuegos\\nTipo de modificador: Liderazgo y Hechizo\\nTodas las unidades aliadas ganan +25% de Daño, +25% de Armadura y ganan Experiencia 50% más rápido\\nLas unidades enemigas sufren -25% de Velocidad\\nSe acumula con Mejoras y Hechizos\\nRadio: 250\\nDuración: 5m\\nTiempo de recarga: 4m\\nClic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityChillSoul",
+      "translation": "Todos los enemigos cercanos sufren -25% de Velocidad y reciben daño leve con el tiempo\\nDaño: 2.5/s (Magia)\\nRadio: 75\\nHabilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorOrcFighterHordeShelobsLair",
+      "translation": "Fuerte contra Piqueros\\n\\nBonificación de Horda\\nTipo de modificador: Hechizo\\nLos Guerreros Orcos, Arqueros Orcos y Orcos Negros ganan +25% de daño cuando se reúnen en números de 100 o más\\nSe acumula con Mejoras, Liderazgo y otros Hechizos\\n\\nTipo de unidad: Espadachín\\nTiempo de reclutamiento: 22s\\nNivel 2: +10% Salud, +10% Daño\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorOrcFighterHorde",
+      "translation": "Fuerte contra Piqueros\\n\\nBonificación de Horda\\nTipo de modificador: Hechizo\\nLos Guerreros Orcos, Arqueros Orcos y Orcos Negros ganan +25% de daño cuando se reúnen en números de 100 o más\\nSe acumula con Mejoras, Liderazgo y otros Hechizos\\n\\nTipo de unidad: Espadachín Básico\\nTiempo de reclutamiento: 22s\\nNivel 2: +10% Salud, +10% Daño\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorOrcArcherHorde",
+      "translation": "Fuerte contra Espadachines y Piqueros\\n\\nBonificación de Horda\\nTipo de modificador: Hechizo\\nLos Guerreros Orcos, Arqueros Orcos y Orcos Negros ganan +25% de daño cuando se reúnen en números de 100 o más\\nSe acumula con Mejoras, Liderazgo y otros Hechizos\\n\\nTipo de unidad: Arquero Básico\\nTiempo de reclutamiento: 25s\\nNivel 2: +10% Salud, +10% Daño\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGoblinArcherHorde",
+      "translation": "Fuerte contra Espadachines y Piqueros\\nPuede disparar Flechas Envenenadas\\n\\nBonificación de Horda\\nTipo de modificador: Hechizo\\nLos Guerreros Goblin y Arqueros Goblin ganan +25% de daño cuando se reúnen en números de 100 o más\\nSe acumula con Mejoras, Liderazgo y otros Hechizos\\n\\nTipo de unidad: Arquero Básico\\nTiempo de reclutamiento: 30s\\nNivel 2: +10% Salud, +10% Daño\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:TooltipThrallMasterUpgradeOrcWarriors",
+      "translation": "Invoca Orcos de Gundabad para que te sirvan\\nFuerte contra Piqueros\\n\\nBonificación de Horda\\nTipo de modificador: Hechizo\\nLos Orcos de Gundabad ganan +25% de daño cuando se reúnen en números de 100 o más\\nSe acumula con Mejoras, Liderazgo y otros Hechizos\\n\\nTipo de unidad: Espadachín Básico\\nTiempo de reclutamiento: Instante\\nNivel 2: +10% Salud, +10% Daño\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipIndustry",
+      "translation": "La producción de recursos de la estructura seleccionada aumenta temporalmente en 150%\\nRadio: 100\\nDuración: 2m\\nTiempo de recarga: 3m\\nClic izquierdo en el icono y luego clic izquierdo en la estructura de recursos objetivo"
+    },
+    {
+      "id": "CONTROLBAR:TooltipDwarvenRiches",
+      "translation": "La producción de recursos de la estructura seleccionada aumenta temporalmente en 150%\\nRadio: 100\\nDuración: 2m\\nTiempo de recarga: 3m\\nClic izquierdo en el icono y luego clic izquierdo en la estructura de recursos objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleGFighterLineToBlockFormation",
+      "translation": "Los Soldados de Gondor ganan +25% de Armadura pero sufren -10% de Daño y -40% de Velocidad"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleIFighterLooseToBlockFormation",
+      "translation": "Los Uruk-hai ganan +25% de Armadura pero sufren -10% de Daño y -40% de Velocidad"
+    },
+    {
+      "id": "OBJECT:GondorMarketPlaceDescription",
+      "translation": "Alcance de visión: 160\\nRetraso de reparación: 1m\\nVelocidad de reparación: 0.4%/s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGrandHarvestUpgrade",
+      "translation": "Aumenta la producción de recursos de las Granjas en 12%\\n\\nTiempo de investigación: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGrandHarvestUpgradePurchased",
+      "translation": "Aumenta la producción de recursos de las Granjas en 12%\\n\\nTiempo de investigación: 45s\\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ActivateGrandHarvest",
+      "translation": "Gran Cosecha [&G]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipActivateGrandHarvest",
+      "translation": "Aumenta temporalmente la producción de recursos de las Granjas en 15%\\nDuración: 2m\\nTiempo de recarga: 3m\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSummonArmyoftheDead",
+      "translation": "Invoca al Ejército de los Muertos\\nCausa daño devastador a las unidades, pero es débil contra las estructuras\\nRápido y altamente resistente a la mayoría de los tipos de daño\\nDuración: 25s\\nTiempo de recarga: 12m\\nClic izquierdo en el icono y luego clic izquierdo en una ubicación transitable"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHaldirGoldenArrow",
+      "translation": "Requiere Nivel 8\\nUn ataque de alto daño que aturde a las unidades enemigas cercanas\\nSolo se puede usar con el arco equipado\\nDaño: 1000 (Magia) y 800 (Héroe a distancia)\\nRadio de aturdimiento: 300\\nDuración: 7s\\nAlcance del objetivo: 325\\nTiempo de recarga: 3m\\nClic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "TOOLTIP:Haldir",
+      "translation": "Tipo de daño: Héroe / Héroe a distancia\\nVelocidad de ataque cuerpo a cuerpo: 1.3s\\nVelocidad de ataque a distancia: 1.2-1.6s\\nRadio de daño en salpicadura: 10\\nVelocidad de movimiento: 60\\nAlcance de arco: 350\\nAlcance de visión: 500"
+    },
+    {
+      "id": "TOOLTIP:Thranduil",
+      "translation": "Tipo de daño: Héroe a distancia / Héroe\\nVelocidad de ataque a distancia: 1.5s\\nVelocidad de ataque cuerpo a cuerpo: 1s\\nVelocidad de movimiento: 60\\nAlcance de arco: 400\\nAlcance de visión: 575"
+    }
+  ]
+}

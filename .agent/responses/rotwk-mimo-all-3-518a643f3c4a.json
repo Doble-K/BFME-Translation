@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "518a643f3c4a4f6890a6fe84bdf5a9dd",
+  "worker": "rotwk-mimo-all-3",
+  "translations": [
+    {
+      "id": "Color:DarkPink",
+      "translation": "Rosa oscuro"
+    },
+    {
+      "id": "Color:DarkGreen",
+      "translation": "Verde oscuro"
+    },
+    {
+      "id": "Color:Lime",
+      "translation": "Lima"
+    },
+    {
+      "id": "Color:Cyan",
+      "translation": "Cian"
+    },
+    {
+      "id": "Color:Brown",
+      "translation": "Marrón"
+    },
+    {
+      "id": "Color:Violet",
+      "translation": "Violeta"
+    },
+    {
+      "id": "RULE:CommandPointFactor",
+      "translation": "Factor de Puntos de Mando y Modos de Juego"
+    },
+    {
+      "id": "OBJECT:RohanMeleeEnt",
+      "translation": "Corredor Ent"
+    },
+    {
+      "id": "CONTROLBAR:ConstructMeleeEnt",
+      "translation": "Ent Corredor [&R]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMeleeEnt",
+      "translation": "Fuerte contra Estructuras, Espadachines y Arqueros \\n \\n Tipo de Unidad: Monstruo \\n Tiempo de Reclutamiento: 35s \\n Nivel 2: +10% Salud, +10% Daño, 30/s Regeneración de Salud \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "UPGRADE:DwarvenFireArrowUpgrade",
+      "translation": "Comprar Flechas de Fuego"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFaramirMount",
+      "translation": "Requiere Nivel 3 \\n Cambiar entre montado y a pie \\n Haz clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFaramirKnightRanger",
+      "translation": "Cambiar entre modos de Caballero y Explorador \\n Haz clic izquierdo para activar"
+    },
+    {
+      "id": "TOOLTIP:LackDragonNest",
+      "translation": "Permite invocar un Drake de Fuego \\n Requiere la mejora del Nido de Dragones"
+    },
+    {
+      "id": "TOOLTIP:LackEagleNest",
+      "translation": "Permite invocar un Águila Gigante \\n Requiere la mejora del Nido de Águilas"
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeAngmarForgeWorksLevel2",
+      "translation": "Permite investigar Disparo de Hielo y Flechas de Hielo \\n Permite reparar armadas de asedio cercanas \\n +10% Velocidad de Producción más rápida"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUpgradeDwarvenForgeWorksLevel2",
+      "translation": "Permite construir Catapultas \\n Permite investigar Hojas Forjadas \\n Permite reparar armadas de asedio cercanas \\n +10% Velocidad de Producción más rápida"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUpgradeDwarvenForgeWorksLevel3",
+      "translation": "Permite investigar Mithril Mail y las mejoras de Disparo Ardiente \\n Aumenta la tasa de reparación de armadas de asedio \\n +25% Velocidad de Producción más rápida \\n Añade Torre de Hacha Defensiva"
+    },
+    {
+      "id": "TOOLTIP:LackLevel2TavernForgedBlades",
+      "translation": "Requiere Taberna de Nivel 2"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleSpiderRiderWeapons",
+      "translation": "Haz clic izquierdo para cambiar de arma"
+    },
+    {
+      "id": "TOOLTIP:LackLevel2HallOfKingsMen",
+      "translation": "Requiere Sala de los Hombres del Rey Nivel 2"
+    },
+    {
+      "id": "OBJECT:BarrowWight",
+      "translation": "Wight Mayor"
+    },
+    {
+      "id": "OBJECT:LesserBarrowWight",
+      "translation": "Wight Menor"
+    },
+    {
+      "id": "ToolTip:LackArcheryLevel1Range",
+      "translation": "Requiere la presencia de un Campo de Tiro con Arco"
+    },
+    {
+      "id": "ToolTip:LackDwarvenBasicTrainingForBattleWagons",
+      "translation": "Requiere investigar la mejora de Portaestandartes \\n \\n Tiempo de Mejora: 10s"
+    }
+  ]
+}

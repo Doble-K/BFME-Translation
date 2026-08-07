@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "27ddf581cbcc471a8b86a1fef9350ab0",
+  "worker": "rotwk-run2-1",
+  "translations": [
+    {
+      "id": "Map:MAPMPAnfalasII",
+      "translation": "Costas de Anfalas"
+    },
+    {
+      "id": "Map:MAPMPAnfalasII/Desc",
+      "translation": "Anfalas, o la Costa Larga, también conocida en Oestron como Langstrand o la Lonja, se encontraba entre los ríos Lefnui y Morthond, al sur de Pinnath Gelin. \\n\\n Tamaño: 360 x 390 \\n Guaridas: 2x Guarida de troll, 2x Guarida de espíritu de túmulo \\n Estructuras neutrales: 1x Posada, 1x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPAnorienII",
+      "translation": "Alto Anórien"
+    },
+    {
+      "id": "Map:MAPMPAnorienII/Desc",
+      "translation": "Un campo de batalla boscoso pequeño pero abierto, cerca de la frontera de Gondor con Rohan. \\n\\n Tamaño: 330 x 360 \\n Guaridas: 2x Guarida de huargo, 2x Guarida de troll \\n Estructuras neutrales: 1x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPBucklandII",
+      "translation": "Campos de Buckland"
+    },
+    {
+      "id": "Map:MAPMPBucklandII/Desc",
+      "translation": "La frontera oriental de la Comarca era el hogar de Merry Brandigamo. \\n\\n Tamaño: 330 x 360 \\n Guaridas: 4x Guarida de espíritu de túmulo, 2x Guarida de troll \\n Estructuras neutrales: 2x Puesto de avanzada, 2x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPRhudaurII",
+      "translation": "Alto Rhudaur"
+    },
+    {
+      "id": "Map:MAPMPRhudaurII/Desc",
+      "translation": "El terreno ondulado de Rhudaur siempre ha demostrado ser un campo de batalla propicio para los montañeses locales y sus enemigos invasores. \\n\\n Tamaño: 500 x 350 \\n Guaridas: \\n Estructuras neutrales: 2x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPIronHillsII",
+      "translation": "Montañas de Hierro centrales"
+    },
+    {
+      "id": "Map:MAPMPIronHillsII/Desc",
+      "translation": "Una región rica en minerales que es la fuente del río Redwater, nombre dado al río por las partículas de hierro rojizo que se encuentran en sus aguas. \\n\\n Tamaño: 600 x 535 \\n Guaridas: 7x Guarida de araña \\n Estructuras neutrales: 1x Puesto de avanzada, 1x Posada, 1x Fuego de señales, 2x Fortaleza"
+    },
+    {
+      "id": "Map:MAPMPIronHillsIII",
+      "translation": "Montañas de Hierro del norte"
+    },
+    {
+      "id": "Map:MAPMPIronHillsIII/Desc",
+      "translation": "Una cordillera montañosa situada en el norte de la Tierra Media. Es el reino de los Enanos del Pueblo de Durin. \\n\\n Tamaño: 498 x 398 \\n Guaridas: 8x Guarida de araña, 2x Guarida de draco de fuego, 4x Entorno destructible \\n Estructuras neutrales: 2x Puesto de avanzada, 2x Posada, 2x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPIronHillsIV",
+      "translation": "Montañas de Hierro del sur"
+    },
+    {
+      "id": "Map:MAPMPIronHillsIV/Desc",
+      "translation": "Una región rica en minerales que es la fuente del río Redwater, nombre dado al río por las partículas de hierro rojizo que se encuentran en sus aguas. \\n\\n Tamaño: 550 x 550 \\n Guaridas: 4x Guarida de araña, 2x Guarida de draco de fuego, 10x Entorno destructible \\n Estructuras neutrales: 4x Puesto de avanzada, 2x Posada, 2x Fuego de señales"
+    },
+    {
+      "id": "MAP:MAPMPIronHillsV",
+      "translation": "Afueras de las Montañas de Hierro"
+    },
+    {
+      "id": "MAP:MAPMPIronHillsV/Desc",
+      "translation": "Estas colinas, ricas en hierro, fueron mucho tiempo en manos de los Enanos y de Dáin Pie de Hierro. \\n\\n Tamaño: 600 x 600 \\n Guaridas: 8x Guarida de troll \\n Estructuras neutrales: 1x Puesto de avanzada"
+    },
+    {
+      "id": "Map:MAPMPMountGundabadII",
+      "translation": "Monte Gundabad central"
+    },
+    {
+      "id": "Map:MAPMPMountGundabadII/Desc",
+      "translation": "Los pasos helados del Monte Gundabad han sido escenario de innumerables batallas entre las tribus orcas locales y sus enemigos. \\n\\n Tamaño: 500 x 500 \\n Guaridas: 4x Guarida de goblin \\n Estructuras neutrales: 4x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarnaII",
+      "translation": "Tumbas inferiores de Karna"
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarnaII/Desc",
+      "translation": "Elegidos por su fertilidad y belleza, estos oasis sirven como lugares de enterramiento para los gobernantes del Lejano Harad. \\n\\n Tamaño: 360 x 380 \\n Guaridas: 2x Guarida de troll, 2x Guarida de espíritu de túmulo \\n Estructuras neutrales: 1x Fuego de señales"
+    }
+  ]
+}

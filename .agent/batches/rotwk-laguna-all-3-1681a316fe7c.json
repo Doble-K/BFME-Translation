@@ -1,0 +1,192 @@
+{
+  "schema_version": 3,
+  "batch_id": "1681a316fe7c4651b108c8e0c2fcdb3d",
+  "worker": "rotwk-laguna-all-3",
+  "created_at": "2026-08-06T08:19:55.095696+00:00",
+  "lease_expires_at": "2026-08-06T14:19:55.094396+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-laguna-all-3-1681a316fe7c.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_06",
+      "source": "Destroy the Mallorn Tree that sits in the shadow of the Tower of Amon Sul, which allows the fortress to call its Dunedain allies for aid.",
+      "source_hash": "6bc3f91ed42a33341e7bb04c15fbe03fd2e6be4a1a33f0648c00d200780ac0e6",
+      "entry_hash": "8a6ce86665b4c147003bbcc73eee91f0d651545fde0ccb108a2b6f4c2caf1c0c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_07",
+      "source": "Destroy the Mallorn Tree that grows in the lower fortress, for it can part the clouds and stun our forces, leaving them helpless.",
+      "source_hash": "92590b25727433eb43bf836d4655de4976da4d554317d8d3aba18a2beeaa81cd",
+      "entry_hash": "212fd5c160ad3c4536762dbc8d6c7c706181e51751d56e34b2d7797ac3e9f6a2",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_08",
+      "source": "Destroy the Mallorn Tree on the southwest road. Its miraculous power can restore the strength of damaged buildings.",
+      "source_hash": "3e8d0ab4e1fb50fdb4549d338922574c836a485996f757edadd8b341a5662cec",
+      "entry_hash": "3b9684183fecf66ba5fb58f911114014841d30bd5b9320ad5264b15b587d1cd1",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_01",
+      "source": "ANGMAR OFFICER: We've destroyed the central tower!",
+      "source_hash": "a9ad001e81d48ed26002070e08ba7fec6dc5ef16dbad3be34f85c1c4df13e8fb",
+      "entry_hash": "0323e5d9155c482dbccbab3695c5f9b69e413c24642525aee01b8d61dc077179",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_01-1",
+      "source": "ANGMAR OFFICER: 'Mighty' Amon Sul is fallen!",
+      "source_hash": "af6206d2d54b8ca8bb4990524ba1665ab348880a4aa0df9bdf1317bf47d384c9",
+      "entry_hash": "eea64af46f2a1d80b4e518d3485705e3908311e38b1284fe73cb4494341727b2",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_02",
+      "source": "We've destroyed one of the Mallorn trees!",
+      "source_hash": "d9277febc93b03d9c24d899a45cddf52b5b107241839c96cb3dd4412d6dad1a8",
+      "entry_hash": "1f8982cb489ccbc648a266d220dbc602ec2818c418013235c33be90d0c556b5e",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_03",
+      "source": "We've destroyed all of the Mallorn Trees!",
+      "source_hash": "628b8f7892d12ff17d30633b05735690e0bf2e9c5628f11531d1d9091785dc69",
+      "entry_hash": "50da4eb635e12e8ba076a063ab84073e3e8289657abce70cb7f18faddb47e54d",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_04",
+      "source": "The Witch-king has reached the apex of his power!",
+      "source_hash": "d044941dae5ffc3d7f85d495573df0a6e1873dfe72fd8037bed52e2c6b979a41",
+      "entry_hash": "13438cced97afa7d2961ad5b43c1cd7ed6989655f12c5dc920e18f3f757ef6bf",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_05",
+      "source": "Hwaldar has reached Level 6!",
+      "source_hash": "c2b329126436b2b8cecca52d5f0b8dd0fa8d45024cdf4cde1a077e2d8ed3bf4b",
+      "entry_hash": "3d22b7a499492860c7daaef283cd1c3ff4b7a22efc5a282a37c147d6cb8acf18",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_05-1",
+      "source": "Morgomir has reached Level 10!",
+      "source_hash": "8a962db0118811c1d033aaa74627f1935a21dab360a9507e7b92dbd55d9994e8",
+      "entry_hash": "f427c7bde120f04f509f2d463cc4fc972f3552a3bef1c545c73aeda21c97f278",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_06",
+      "source": "We have built a camp - now we must use it!",
+      "source_hash": "d44ef04d49af5a7807678ecc317c6b3b58f95792946e4380af0554349f8a9ddc",
+      "entry_hash": "2fe92627d85ddcbd2cf8e4205d77205e510604eba7b55745b6b4bbd32b1fe2e5",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_08",
+      "source": "We've destroyed the tree that burns us with the rays of the sun!",
+      "source_hash": "1912dbfb05ce4848fc1cb532b7ec4b4073db9121e191b5c54748171d78759ae6",
+      "entry_hash": "ccc65f24a618c0cd6efa02fce3c33f4784b1dec20158690eaeb5c413f7d508bf",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_09",
+      "source": "The tree that raises Elven forests to protect the enemy is no more!",
+      "source_hash": "56eb3ffc0cee7ba5f30f7ac8a2915e3d988f11144dee63cec93810ee6ee58048",
+      "entry_hash": "7ae8fbd44bf609c5abce9bd19c10d98bda793a17ae3651bfa4bffd630dea6e62",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_10",
+      "source": "They will call no longer for their Dunedain allies -- that tree is gone!",
+      "source_hash": "3cc76a0d5bb0819bedc7f8d968df943921d2c2bf38d0ccbb98f2b26cc8b81c97",
+      "entry_hash": "0f467627c35604369beed23f16093174731214f81594a4fbd68d5c66a988dcec",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_11",
+      "source": "The tree that parts the clouds and stuns our forces with sudden light lies in splinters!",
+      "source_hash": "9bad6ae3f6dd3c162ef90188073d64b000f293511d12cdabe1a7826131ec3bfa",
+      "entry_hash": "8a80eb6497db7da0735278f2ff6d3d5a53b04b5caeef956ecc7e189fea11bfba",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_12",
+      "source": "Ha! The tree they use to rebuild their destroyed buildings cannot rebuild itself!",
+      "source_hash": "079c37ff32a2442ffcbea06498d41472d3af363e88a1ccd45050f4d3006e7423",
+      "entry_hash": "96ed8f6105e1f5b9ed9d2f9134b47b45a2528975b480bba644c4a0e8ab1fcc7d",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_01",
+      "source": "We've breached the gate!",
+      "source_hash": "94434b260b21589107a31805c976f352619575c8c6e446d190e59a4f511b8304",
+      "entry_hash": "432a9553255283cd43c19fe5e412862858569bb9b7757f753918acb8a8e80fe3",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_02",
+      "source": "Be on guard! They strike at us with mystic forces!",
+      "source_hash": "edcedadb87a3ec79975e9a0a9c1acc03055f8a99a61c034197d9d83c94d88942",
+      "entry_hash": "c8d441a163431a85187ec33ec13bf8626480db3bf1ddddf716d415c2828bc54b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_03",
+      "source": "WITCH-KING: It seems they know how to use their trinket; but they channel its might through accursed Mallorn trees.",
+      "source_hash": "3fd4632ff93a1c5ff0c56c78fa4d0ff2fade976c86e7fbf41c4fe9f7617084ee",
+      "entry_hash": "b36e9195505747d5e5fe8ee8c9e58ace19d050b623d2bc1cf9c1a85fd5eda3f4",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_04",
+      "source": "WITCH-KING: Splinter the trees, and its power will wane.",
+      "source_hash": "8eb8f4bb8153996879a57a158fccf7c44bb45473700a29f39332a154a2a045ba",
+      "entry_hash": "104d265ac41c5bc0d991e7f51df7fe0af2f989902f4b555be1a8bda230b3941a",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_05",
+      "source": "We've destroyed another Mallorn tree!",
+      "source_hash": "9fc07950cafd194a84b309741b79c17ac7fec87c1f6b6037c9a1d51d6dbbb034",
+      "entry_hash": "1b135948a7b76dab36d368d77f1d3bcc771a309df3ca36fc8b62d22fd17c1085",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_06",
+      "source": "We will need a secure encampment to lay siege to this bastion. Build a Mill, a Dark Iron Forge, and a Hall of the King's Men.",
+      "source_hash": "fd185b616f95f7e8471faec795ec38148c96494c4ce69f70eaae3bbba972e9d2",
+      "entry_hash": "0b29eaa133bdfcb86244bfb1b2b9be8d1abbadae40296ef72515574a16c7c13b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_07",
+      "source": "Rangers in the swamps to the north pelt us with arrows! Kill them and their sport will cease!",
+      "source_hash": "79abd24d4bd0b33b4b0b1dfe99ae598b4b094bca0ab17091942554b2ec10934d",
+      "entry_hash": "098adf67c9cf671beaca7cfe7051df159d934a01472675b917b1ef6f71052833",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_08",
+      "source": "We must use our new Builders to rebuild our forces and strike back at Amon Sul!",
+      "source_hash": "9a217d559d28baf7eebb83e48620ec4e42a90bc69429170f5bedf20e712951f3",
+      "entry_hash": "2ec18488f38efb05ac0285db3a16cec91ed27acb5a4635706d92211fce0a4bff",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_09",
+      "source": "Morgomir now has the power of Ruin. With it he can reduce even the mightiest structures to dust.",
+      "source_hash": "cf52bbc500796d3b6ff334f7da608dc782618d9b22f93e73eb1bc9a16a174617",
+      "entry_hash": "185dba9f360629fcb304b21b62939ef23d3d02f4e40ebd6ddbe4ac1d15183e66",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "9361d540ecbc97c2157ba3f5e6679fe2b9ff54fdc35573525564e8ccf139fe72"
+}

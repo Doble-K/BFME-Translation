@@ -1,0 +1,230 @@
+{
+  "schema_version": 3,
+  "batch_id": "665bc94209f84c9097b50fe39fc78ed2",
+  "worker": "rotwk-ling-all-3",
+  "created_at": "2026-08-06T08:03:05.141069+00:00",
+  "lease_expires_at": "2026-08-06T14:03:05.139795+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-ling-all-3-665bc94209f8.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "OBJECT:WildSpiderlingHorde",
+      "source": "Spiderlings",
+      "source_hash": "1f6cb4d357bcf1c88df049e985fdb1ab31d64b6d9c2085ca3fd97858462d4854",
+      "entry_hash": "f0a101e215dc533c28fae5c84ba9e9a9897c5d4307ce74d89bf2c950c035084b",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:WildSpiderRider",
+      "source": "Goblin Spider Rider",
+      "source_hash": "384bad6776ee4b0dc717387f4465bdb5ba1ae5569187872f19cc450f888539ee",
+      "entry_hash": "cf75e5c45f04599f431e643896e25bcce50a27b2dec6fa865fa9cddd57930243",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:WildSpiderRiderHorde",
+      "source": "Goblin Spider Riders",
+      "source_hash": "ab4b804624e3008a0f6bc728fafeda50cc2e2ab05dc938cef8793ded15257214",
+      "entry_hash": "b5662959f1902e33aec330f40d355d08897cecb85044fb22edde42b5243b2b87",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:LackWildBasicTraining",
+      "source": "Research at Treasure Trove to enable this equipment \\n When equipped, increases this battalion to Level 2 \\n \\n Upgrade Time: 10s",
+      "source_hash": "f5f8b59d988dc8a8dc1b42222b2d115f5e1e7135e642004b8f05cc319d3b7b6d",
+      "entry_hash": "836373a4ecd09e6f52def6cbb7c90f24130676701d4e43c1ece978d46a3f018b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:BabyFireDrake",
+      "source": "Fire Drake Brood",
+      "source_hash": "a6c16ef58eab5f3fe713d4e01c482fb0cfea81eba30c8761915aa4306ff8594e",
+      "entry_hash": "4b0cd722ff6ff13b415eca4626113cd30a3da7e6d081a79c00d1d0c613643b41",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:HordeWildBabyDrake",
+      "source": "Fire Drake Brood Horde",
+      "source_hash": "35b4305c216f4a3b5f4dbc0da41d0996398b307399125a27bf5de776a1a2ce61",
+      "entry_hash": "84ef1c2f92d338552afd190ac4a179edabbde710d7269583fd52b4d74dfa158a",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:SummonSpiderlingAllies",
+      "source": "Summon Spider Allies",
+      "source_hash": "ba8853bb7e13e66e0b6add2ff9bcb2182c7ea19a1c0ff80145a5cf4efda779cd",
+      "entry_hash": "e78a0ce30027c81bfd2ecfca88a10c9453d1324199296edeb092e27390bf5fea",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:WildSpider  ",
+      "source": "Spider",
+      "source_hash": "53cc314ee6bd7f7e2dfbf9a3a6a85b3f8efe7f6d36ac1d101b7928e5437db251",
+      "entry_hash": "c83f6c787dcd78f6d9d81435dd50c931a091e03242de352cd3bb8876b2a634a9",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeAngmarDarkIronBlades",
+      "source": "Purchase Dark Iron B&lades",
+      "source_hash": "2b30b9dcb7d0d677039a2e2a55db83076d1ebb1930d87d76202908e21dbbefbe",
+      "entry_hash": "2d78e56666ffd88423f9cfc3426452e3aecd7869f099a0c10b35d36cd761c586",
+      "protected_tokens": [
+        "&l"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackAngmarDarkIronBlades",
+      "source": "Research this upgrade at the Dark Iron Forge \\n to enable this equipment \\n When equipped, increases the damage done by Melee Weapons \\n \\n Upgrade Time: 10s",
+      "source_hash": "98a0bef38d48530aabb2b471f111c979dfd0942aacccc2b0b02de2b5ca40334c",
+      "entry_hash": "9a515760612bfcd60c100dc279f089820cbde3e2643c0b7a835d336aa8f5edfa",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackAngmarDarkIronMail",
+      "source": "Research this upgrade at the Dark Iron Forge \\n to enable this equipment \\n When equipped, significantly reduces the amount of damage taken \\n \\n Upgrade Time: 10s",
+      "source_hash": "aaea783443e2024b28f43f9ee4f268077808cf155c2637449a2617b3f0fac67b",
+      "entry_hash": "863674d9acbdd19129370a09d3f6d3353b48da3df88cdb691cc751208df9bff1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:AngmarWolfRider",
+      "source": "Wolf Rider",
+      "source_hash": "6a12744155490969016e1fed2d3552671fb1b70dc47295df5b6741d5b1c44171",
+      "entry_hash": "70be612b349645e2d159e3a3e38a8d8c553d7c26e007b6f44e5fea56953ee32b",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:TooltipThrallMasterUpgradeWolfRiders_Fake  ",
+      "source": "Requires the presence of a Troll and Wolf Den",
+      "source_hash": "2b6be551a81b92042cd82951ba096f7171d3f0a6d10dcce56e0fb2d91aa791a5",
+      "entry_hash": "050a387316980da490ba444fb4c9ac2c0f566de616c741daa855ae62c480cf5f",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:AngmarDarkDunedain",
+      "source": "Black Numenorean",
+      "source_hash": "d7294f4e54b522cc3d81993d8fd3b95fa9afc3c672d795b588d383eacf5404ef",
+      "entry_hash": "d93849136087f91924378786155ab3f20faa1cb4ea7a31cddce0c00a332fb7f1",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:AngmarRanger",
+      "source": "Dark Ranger",
+      "source_hash": "73cc7659549d317bc31a1d1b2a17dc4c46f6ca53e0149c8f30fd6cd45fbe4ce0",
+      "entry_hash": "d9660ea6913bca81b3ecc0141458c4e540566db6203471d4fe9dab4a7cc6967e",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeAngmarIceArrows",
+      "source": "Purchase Ice Arro&ws",
+      "source_hash": "29c76b694196a925726b81eaae7fb332e73996a5cc15ce32c857a56ea8e59d6e",
+      "entry_hash": "eb13ca9e81e48ffea6b893d4ef25fca581be7812b8a299ab460f71642912ff3d",
+      "protected_tokens": [
+        "&w"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackAngmarIceArrows",
+      "source": "Research this upgrade at the Dark Iron Forge \\n to enable this equipment \\n When equipped, significantly increases the damage done by Arrows \\n \\n Upgrade Time: 10s",
+      "source_hash": "f900ce3d64cae51dfbf26c904b185148ba637c34ed03273c7b7632d081a76929",
+      "entry_hash": "10511f1dd8048303c0c727ff1b8bacf5baf3590bf8379a3f77da21c48b1f708e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeAngmarSpikedCollars",
+      "source": "Purchase Hea&vy Spiked Collars",
+      "source_hash": "5346e1dbb11c5e42eb720e9fb20633dcab80ea193acf7657337c0df1f3a93ea5",
+      "entry_hash": "f3ab36d91000abcb7476c3a5b4cebb47837618187f787854e92b96f1940b9b73",
+      "protected_tokens": [
+        "&v"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackAngmarSoulFreeze",
+      "source": "Research this upgrade at the Temple of Twilight to enable this power \\n \\n Upgrade Time: 10s",
+      "source_hash": "9eb1be52b98d518a6fb72689107cd22bd6e8c438aa21d53ed53823073ae2907c",
+      "entry_hash": "d6b29f03c57b783f78203b7ce48f87f7e1c294566495011983718a295135f4b5",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackAngmarCorpseRain",
+      "source": "Research this upgrade at the Temple of Twilight to enable this power \\n \\n Upgrade Time: 10s",
+      "source_hash": "b66eea3e9ce5bf2020916a4867217778e517438cf75ef21d15c60267509d2f67",
+      "entry_hash": "7011958afe6235f1c14732f7e2bce041f812133c3b7b4861130afea4b68ac12f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackAngmarWellOfSouls",
+      "source": "Research this upgrade at the Temple of Twilight to enable this power \\n \\n Upgrade Time: 10s",
+      "source_hash": "dce8b984597d9489dcb5e9543dd0778734a678411c8758ad68aaedf9ba539eee",
+      "entry_hash": "9ae1354cadd50e903457e58b1cf2bca772592d415488d4c0eb41c8037c7d4c7b",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackLevel2Den",
+      "source": "Requires Level 2 Troll and Wolf Den",
+      "source_hash": "63dfb28ca83662a96f95ca5dfd13438827273c2ec44815899b4aa1a6faf9f521",
+      "entry_hash": "85b465dccd311bb8f6fbb0bbd75943af2231f65d2619ebc7e3f2003ba0d1d984",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:LackLevel3Den  ",
+      "source": "Requires Level 3 Troll and Wolf Den",
+      "source_hash": "56a2d0b30d63adf4dcf9f0db9fd4849c362faa8bde3bea5b191beb14ffd68ddb",
+      "entry_hash": "e54abb3c3d25ee4aefc75031ebc11ae628910e3027500ce7d791f458f78a8663",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyAngmarIceShot",
+      "source": "Research &Ice Shot",
+      "source_hash": "a02522ee5b54ed4e7e8595673ce604eac00c1b9a2382773b15120dda45d60df2",
+      "entry_hash": "c9c8d17bae85d6c18689e2ac052f0139bd9d665cd9390e5962add77722199192",
+      "protected_tokens": [
+        "&I"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyAngmarDarkIronBlades",
+      "source": "Research Dark Iron B&lades",
+      "source_hash": "fe7f81cd3fbc15fdb7144ff07a6e1e0948fb7910c1cc57bbf11c6118e9301018",
+      "entry_hash": "011390f1bdfe5e00ffb21279861b824207cab3afe828bf587ba95795bbdd43d1",
+      "protected_tokens": [
+        "&l"
+      ]
+    }
+  ],
+  "manifest_hash": "669bdedfce4da2d452e6609b9ef8994a756bc11aed4cc10101babd222e8e389c"
+}

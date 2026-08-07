@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "4e81a7689ebd41b5bbb98a7ae59e4b41",
+  "worker": "rotwk-laguna-all-3",
+  "translations": [
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_HINT_04",
+      "translation": "Cuando el Palantir explotó, las piezas deben de haber caído en el área. Debemos recuperarlas antes de que lo hagan los de Arnor."
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_HINT_05",
+      "translation": "Un fragmento de Palantir ha sido encontrado por los de Arnor. Debemos recuperar los otros fragmentos antes de que lo hagan."
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_HINT_06",
+      "translation": "Nuestro Constructor ha llegado."
+    },
+    {
+      "id": " SCRIPT:RANGERS_ARRIVE_01",
+      "translation": "DARK RANGER: La fuerza de persecución debía estar aquí. Armemos el campamento y busquemos en el área."
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_COMP",
+      "translation": "Objetivo completado"
+    },
+    {
+      "id": "SCRIPT:RECOVER_SHARD_INTRO_02",
+      "translation": "DARK RANGER: Puedo sentir el poder en este objeto. Debemos llevarlo al Rey Brujo."
+    },
+    {
+      "id": "SCRIPT:RECOVER_SHARD_INTRO_01",
+      "translation": "MORGOMIR: Siento una muerte en este lugar."
+    },
+    {
+      "id": "SCRIPT:RECOVER_SHARD_INTRO_04",
+      "translation": "Debes recuperar todos los fragmentos en el área. No podemos permitir que Arnor recupere más."
+    },
+    {
+      "id": "SCRIPT:SHARD_COLLECT_01",
+      "translation": "Soldado de Arnor: Señor, aquí es donde los centinelas vieron caer uno de los objetos."
+    },
+    {
+      "id": "SCRIPT:SHARD_COLLECT_02",
+      "translation": "Oficial de Arnor: ¿Qué es? Recógalo y lo llevaremos de vuelta al puesto."
+    },
+    {
+      "id": "SCRIPT:SHARD_COLLECT_03",
+      "translation": "Oficial de Arnor: Despacharemos más patrullas para investigar las otras zonas después de regresar con el objeto."
+    },
+    {
+      "id": "SCRIPT:ARNORHASSHARD",
+      "translation": "Oficial de Angmar: ¡Arnor ha recuperado un fragmento!"
+    },
+    {
+      "id": "SCRIPT:ARNORSHARDCOUNTER",
+      "translation": "Contador de fragmentos de Arnor:"
+    },
+    {
+      "id": "SCRIPT:SHARD_RETURN_HINT",
+      "translation": "Envía la unidad que lleva el fragmento de vuelta a la fortaleza para depositarlo."
+    },
+    {
+      "id": "SCRIPT:SHARD_PICKED_UP_HINT",
+      "translation": "Devuelve el fragmento al área iluminada frente a tu fortaleza."
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_FAILED",
+      "translation": "¡El rey va demasiado adelantado! Hemos fallado."
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_1",
+      "translation": "MORGOMIR: No tenemos poder aquí. Debe de haber alguna razón."
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_2",
+      "translation": "MORGOMIR: Nuestra fuerza regresa."
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_3",
+      "translation": "MORGOMIR: Nuestros poderes vuelven a ser nuestros."
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_4",
+      "translation": "MORGOMIR: ¡Sí, uno más y volveremos a estar a toda fuerza!"
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_5",
+      "translation": "MORGOMIR: ¡Nuestros poderes están completos nuevamente!"
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_6",
+      "translation": "MORGOMIR: Siento una muerte en este lugar."
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_3_SHARDS_COLLECTED",
+      "translation": "Han recogido un tercer fragmento. ¡Debemos impedir que reclamen otro!"
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_DESTROY_BASE_AUDIO",
+      "translation": "Oficial de Angmar: Debemos destruir su base y recuperar los fragmentos que han tomado."
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWERS_RETURN",
+      "translation": "Algunos de tus poderes han regresado"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "schema_version": 3,
+  "batch_id": "8fc04e52c1de49f182e38ed4f0ed41d8",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T20:15:50.546204+00:00",
+  "lease_expires_at": "2026-08-06T02:15:50.544949+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-8fc04e52c1de.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipEregionForge",
+      "source": "Researches Elven unit upgrades \\n\\n Build Time: 45s",
+      "source_hash": "3eef4811810fe7f69698ac4ee77abe79a4cd72e51ef51df77e69824cfe9978a3",
+      "entry_hash": "5e3efa0193e104158645d94eb7d61aa0a1baa8832abe0c9306f18750d4aca43d",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipIsengardArmory",
+      "source": "Researches weapon and armor upgrades \\n\\n Build Time: 45s",
+      "source_hash": "11ac17724498f65b9eabc1de327ec82a20da7ab1a0008912865e66ecd34ba418",
+      "entry_hash": "c26c0135ce3285b7cc65ae783279c8fd374074a0d0e2186af730867352e35daa",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ConstructMenWallHubExpansion",
+      "source": "Allows the construction of walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "40e52da57b3f81917ad4cd5f0540eccc62779ab073b5e3871f4a8dc26a9bcef2",
+      "entry_hash": "51186aa86dbfb52aa9781dc025f6424cf19a34535dd2b1f7d4d3ddd3f479ff51",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDeadEye",
+      "source": "Requires Level 4\\n Thranduil gains +50% attack speed and increased damage and range \\n Damage: 300 (Hero) & 15 (Magic) \\n Duration: 20s \\n Range: 520 \\n Recharge Time: 2m \\n Left click to activate",
+      "source_hash": "0f04e96650b8a0c5c80d6e6cef3c85f71f316d14bc5b0825bb63397dd9d9904b",
+      "entry_hash": "1c39d3c31d07cfd37483886b97c3ba834560c14b4752d3084d39971831069a28",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGoblinKingPoisonedStinger",
+      "source": "Requires Level 6 \\n Targeted enemy takes heavy initial damage, then becomes poisoned for a short while \\n Can only use when mounted \\n Damage: 1000 (Hero) & 100/s (Poison) \\n Duration: 20s \\n Target Range: 11.5 \\n Recharge Time: 2m \\n Left click icon then lick click on target",
+      "source_hash": "3c3623f07fa8b9df7d4cd45f92c8321c557b1809ad0d335a2763e14717de7ced",
+      "entry_hash": "f3c039c4ba876804ff8d79527168ebe911e1639ed7df879cbc261e8a08e92b54",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipWhisperofDeath",
+      "source": "Requires Level 8 \\n Inflicts massive damage on a non-undead unit and partially restores Karsh's health \\n Damage: 1800 (Hero) & 775 (Magic) \\n Splash Damage Radius: 10 \\n Life Drain Multiplier: 5x \\n Target Range: 15 \\n Recharge Time: 2m 30s \\n Left click icon then left click on target unit",
+      "source_hash": "6843e37f6eb4e0473c14cdf229d18871868a73dbc08b90c162f0245f114f5535",
+      "entry_hash": "e0d923265c055526935b189b1f8219f23a94e76ba5186ef8d40da53f41ff8d69",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipBombard",
+      "source": "Bombard target area with devastating artillery\\nLeft click icon then left click on target area",
+      "source_hash": "a09eae953eecfb58622ad53167814181b4144e0d2acfcfb9888962f6c54f6cec",
+      "entry_hash": "001e329e7c60d97cfab0d43d51a7fe29b38756ab69456ac179cac0d51c45cd31",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpellBarrage",
+      "source": "Bombard target area with devastating artillery \\n Effective against units and structures \\n Damage: 5000 (Siege) \\n Radius: 200 \\n Recharge Time: 9m \\n Left click icon then left click on target area",
+      "source_hash": "a3f5d16b46423f78bf374dac77c6aca1418fa79f0fcf065cc3b5943141b8ebd2",
+      "entry_hash": "81442a2949dd7229543e5fe07f59596e85251604c411fd0025de69da19056a33",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenUndermineDescription ",
+      "source": "Vision Range: 250 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Increases Command Point limit by 75",
+      "source_hash": "5f69ac1d0218f7bbcc4a1f93b6632e8d3e62ae396e977ba1745ba98453f70490",
+      "entry_hash": "c0c4f0d172dace41c703acafcb24027fde13cbcb101095b4c6bc165d04054e56",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEmeraldIsletii",
+      "source": "Emerald Islet II",
+      "source_hash": "f88a6cfc351178caeda8ad71f0274c8f3ef7d021583e30bc85808922c47f5ac6",
+      "entry_hash": "fb5d9bc4c5faecc3f880f1cf5d6ae4eead95e64fe5f1fc94e7de335c0b496697",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPEmeraldIsletii/Desc",
+      "source": "One of many uncharted islands in the Sea of Umbar. \\n\\n Size: 500 x 450 \\n Lairs: 2x Drake Lair, 4x Warg Lair, 3x Troll Lair, 2x Goblin Lair \\n Neutral Structures: 1x Signal Fire, 2x Outpost",
+      "source_hash": "be76f77ffb27b55cc31cffa77f8e59a43c39ebe5ce0c21b4f9b3a102c850bf5a",
+      "entry_hash": "8ea268ebc0f681ad1de3f5efd389f475423525f5c68244ec6ccd560c87253c18",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipRoar",
+      "source": "Modifier Type: Active Debuff \\n Causes terror in nearby enemies \\n Fleeing enemies suffer -20% Damage and -20% Armor \\n Nullifies enemy Leadership \\n Radius: 200 \\n Terror Duration: 5s \\n Debuff Duration: 20s \\n Recharge Time: 3m \\n Left click to activate",
+      "source_hash": "4d159268246b86bdf48ec7ea5e20c08776967befb3e338b42481679109b14941",
+      "entry_hash": "b75a82fcbff97a9683ae8e681a1647c857c1b9d17a920a3cb4c0e36e67b3b741",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipThrallMasterUpgradeWolfRiders",
+      "source": "Summon Wolf Riders to serve you \\nStrong vs. Swordsmen and Archers\\nAdds 20 additional Command Points \\n \\n Unit Type: Basic Cavalry \\n Recruit Time: Instant \\n Level: 2 +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "9ce348f0fef8d68188554410758284f10b815e4176d810cdc2ca5b7be7e05ab2",
+      "entry_hash": "11dba10efba4c16dc96ccf4ec348d425e80df0d6b47ceb6576585c453dfb428c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipThrallMasterUpgradeWolfRiders202Campaign",
+      "source": "Summon Wolf Riders to serve you \\n from a nearby Troll and Wolf Den \\nStrong vs. Swordsmen and Archers\\nAdds 20 additional Command Points \\n \\n Unit Type: Basic Cavalry \\n Recruit Time: Instant \\n Level: 2 +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "e7cf7deeb02c2c281deb4294d7ee54cf496d948179f4d4485b1fa227fdaa4175",
+      "entry_hash": "57d8d68e76ef2a8adc535c677ac320e9231f88d4a2ef822515a5640a19db294c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipThrallMasterUpgradeRhudaurSpearmen",
+      "source": "Summon Rhudaur Spearmen to serve you \\nStrong vs. Cavalry and Monsters \\n \\n Unit Type: Basic Pikeman \\n Recruit Time: Instant \\n Level: 2 +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "ebdf2d96284f74cf49ea937b503e6ace56814ce27e41caa68a10514f673732cb",
+      "entry_hash": "1dba14ec6eeea127b3cf7d5215499a3a44e2f3dddda9049de290c042d5c343d2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipThrallMasterUpgradeRhudaurSlingers",
+      "source": "Summon Rhudaur Axe Throwers to serve you \\nStrong vs. Pikemen and Archers \\n \\n Unit Type: Basic Archer \\n Recruit Time: Instant \\n Level: 2 +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "d5aca254f5bd79e6b8d83da1fe13700140c5253222907527172864d50093ef7f",
+      "entry_hash": "0cc5fa15d5dacf2d3216bd55dff86579e693f8af0166cadc44be19e69a030799",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSonicSong",
+      "source": "A powerful attack that blasts back nearby enemies \\n Damage: 200 (Magic) \\n Splash Damage Radius: 110 \\n Target Range: 100 \\n Recharge Time: 20s \\n Left click icon then left click on target",
+      "source_hash": "a649420489597d5abdb669b527db64fe52e54fe955b84c78ef5a1e7af6acd2d5",
+      "entry_hash": "3d495a6ab64e3cb3b23ec94b24933e19a1b2a72f48c55a220d72f444cc17b508",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:InspiringPresence",
+      "source": "Inspiring Presence",
+      "source_hash": "4864822be102a3dcdfa85224296c031ea068a7eb4b6beea518471f995938eb3f",
+      "entry_hash": "3740e680b4f43ea017dc3340ad9372126b8bc18470f999fb4e5f9cf1cb3ab420",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipInspiringPresence",
+      "source": "Modifier Type: Leadership \\n Allies near Tom Bombadil gain +25% Damage, +25% Armor, and earn Experience 50% faster \\n Stacks with Buffs and Spells \\n Radius: 200 \\n Passive ability",
+      "source_hash": "73be48141e50a2251742f221693222ed74caa4b492c7000b65c4cb875d4b03d8",
+      "entry_hash": "fb118a1b4a6105c9bedfdcf1838534838e3c0a08628a8fb3b93a65f4ab8ff81c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPNorthernWaste",
+      "source": "Northern Waste",
+      "source_hash": "f5d3f96de4f38fedeb2f2040c6547a3a671abdb7977a832d295711c857542879",
+      "entry_hash": "18e8d02613e2cb1fb6c4a70b7ba363de8a3509b512622309a0cc72dc98bb8055",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "49646618afbcc37f5215cfa5f1d98a0001f9c707e5a5e6183786825e00901789"
+}

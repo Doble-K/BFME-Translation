@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "0e330107a549408b887e1684cb6affce",
+  "worker": "rotwk-deep-4",
+  "translations": [
+    {
+      "id": "CONTROLBAR:DwarvenCatapultExpansionDescription",
+      "translation": "Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardUrukPit",
+      "translation": "Entrena varios tipos de Uruk-hai \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "OBJECT:IsengardUrukPitDescription",
+      "translation": "Alcance de visión: 160 \\n Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s \\n Nivel 2: +10% de velocidad de producción \\n Nivel 3: +25% de velocidad de producción"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipIsengardSiegeWorks",
+      "translation": "Construye y repara armas de asedio de Isengard \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "OBJECT:IsengardSiegeWorksDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado / asedio: 75 (Estructural) y 20 (Fuego) \\n Alcance de arco: 250 \\n Alcance de visión: 300 \\n Nivel 2 Tasa de reparación de asedio: 4% /2s \\n Nivel 3 Tasa de reparación de asedio: 6% /2s \\n Radio: 200 \\n Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s \\n Nivel 2: +10% de velocidad de producción \\n Nivel 3: +25% de velocidad de producción"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipIsengardWargPit",
+      "translation": "Entrena manadas de huargos y jinetes de huargo \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "OBJECT:IsengardWargPitDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 75 (Estructural) y 20 (Fuego) \\n Alcance de arco: 250 \\n Alcance de visión: 300 \\n Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s \\n Nivel 2: +10% velocidad de producción \\n Nivel 3: +25% velocidad de producción"
+    },
+    {
+      "id": "OBJECT:IsengardArmoryDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 75 (Estructural) y 20 (Fuego) \\n Alcance de arco: 250 \\n Alcance de visión: 300 \\n Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s"
+    },
+    {
+      "id": "OBJECT:IsengardTavernDescription",
+      "translation": "Alcance de visión: 160 \\n Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s \\n Nivel 2: +10% de velocidad de producción \\n Nivel 3: +25% de velocidad de producción"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardWargSentry",
+      "translation": "Centinela con huargos defensivos que atacan a los enemigos cercanos \\n\\n Tiempo de construcción: 45s"
+    },
+    {
+      "id": "OBJECT:IsengardWargSentryDescription",
+      "translation": "Alcance de ataque del huargo: 250 \\n Alcance de visión: 300 \\n Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s \\n Tiempo de reaparición: 6s"
+    },
+    {
+      "id": "OBJECT:IsengardWallHubDescription",
+      "translation": "Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s \\n Radio de construcción de muros: 1000"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardTowerExpansion",
+      "translation": "Torre defensiva de flechas que ataca a los enemigos \\n\\n Tiempo de construcción: 20s"
+    },
+    {
+      "id": "CONTROLBAR:IsengardTowerExpansionDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 120 (Estructural) y 20 (Fuego) \\n Alcance de arco: 250 \\n Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardBallistaExpansion",
+      "translation": "Arma defensiva de largo alcance \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:IsengardBallistaExpansionDescription",
+      "translation": "Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s"
+    },
+    {
+      "id": "OBJECT:IsengardFortressDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 120 (Estructural) y 20 (Fuego) \\n Alcance de arco: 250 \\n Alcance de visión: 800 \\n Retraso de reparación: 2m \\n Tasa de reparación: 0.3%/s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFurnace",
+      "translation": "Genera recursos según el terreno disponible \\n Aumenta el límite de Puntos de mando en 50 \\n La producción de recursos se reduce cuando la estructura está dañada \\n\\n Tiempo de construcción: 15s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipSlaughterhouseUnpack",
+      "translation": "Genera recursos según el terreno disponible. Aumenta el límite de Puntos de mando \\n Reduce el costo de los Trolls y Mumakil"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSlaughterHouse",
+      "translation": "Genera recursos según el terreno disponible \\n Aumenta el límite de Puntos de mando en 50 \\n Permite que los orcos aliados sean licenciados para obtener experiencia adicional \\n La producción de recursos se reduce cuando la estructura está dañada \\n\\n Tiempo de construcción: 15s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLumberMill",
+      "translation": "Cosecha recursos de los árboles cercanos \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLumberMillDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 75 (Estructural) y 20 (Fuego) \\n Alcance de arco: 250 \\n Alcance de visión: 260 \\n Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s \\n Nivel 2: +25% producción, +25 Puntos de mando \\n Nivel 3: +20% producción, +25 Puntos de mando"
+    },
+    {
+      "id": "OBJECT:MordorOrcPitDescription",
+      "translation": "Alcance de visión: 160 \\n Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s \\n Nivel 2: +10% de velocidad de producción \\n Nivel 3: +25% de velocidad de producción"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMordorTrollCage",
+      "translation": "Entrena a los Trolls de montaña, tamborileros y de asalto \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipordorSiegeWorks",
+      "translation": "Construye y repara las armas de asedio de Mordor \\n\\n Tiempo de construcción: 30s"
+    }
+  ]
+}

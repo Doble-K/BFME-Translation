@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "c0e6b47c3aa948e1bafdad547493df14",
+  "worker": "rotwk-mimo-all-1",
+  "translations": [
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Hint_ObjectiveText_03",
+      "translation": "Mata al Capitán problemático y reclama su alma en la cúpula del túmulo real."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Hint_01-1",
+      "translation": "Se han colocado centinelas en todo el cementerio para alertar refuerzos de nuestra presencia. Desconfía de cualquier mensajero que intente invocar ayuda."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Hint_01-2",
+      "translation": "Desconfía de cualquier mensajero que intente invocar ayuda."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Hint_Captain_2nd",
+      "translation": "El Capitán sigiloso ha regresado. Protege tus túmulos con cuidado."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Hint_Captain_3rd",
+      "translation": "El Capitán Carthaen no se rendirá. Defiende a tus Hechiceros a toda costa."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_HintText_12",
+      "translation": "Dificultad Fácil"
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_HintText_13",
+      "translation": "Dificultad Media"
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_HintText_14",
+      "translation": "Dificultad Difícil"
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_BarrowAttack1",
+      "translation": "Nuestro túmulo está bajo ataque."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Intro_01-1",
+      "translation": "OFICIAL DE ANGMAR: Una vez más visitamos estas tumbas ancestrales..."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Intro_01-2",
+      "translation": "OFICIAL DE ANGMAR: ...esta vez para corromper las almas de los caídos y volver la tierra contra los últimos hijos de Arnor."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Intro_02-1",
+      "translation": "OFICIAL DE ANGMAR: Nuestros Hechiceros deben posarse sobre los túmulos para profanar las tumbas que hay debajo."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Intro_02-2",
+      "translation": "OFICIAL DE ANGMAR: Sin embargo, el tiempo es escaso."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Intro_02-3",
+      "translation": "OFICIAL DE ANGMAR: Necesitaremos mantener tantos túmulos como sea posible para completar el ritual antes de que el sol del nuevo día salga."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Help_01",
+      "translation": "¡Llama refuerzos!"
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Help_02",
+      "translation": "¡Envía la palabra - necesitamos más hombres!"
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Help_03",
+      "translation": "Estamos acorralados - ¡necesitamos ayuda!"
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_CarthaenSpawn_01",
+      "translation": "CAPITÁN CARTHAEN: Una vez deshonraste las almas de nuestros padres en estas tierras sagradas. \\n ¡No toleraré tu presencia abominable de nuevo!"
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_CarthaenFlee_01",
+      "translation": "CAPITÁN CARTHAEN: Debo reunir más fuerzas para purgar tu hedor de esta tierra."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_CarthaenSpawn_04",
+      "translation": "CAPITÁN CARTHAEN: ¡Vete, suciedad! No te dejaré profanar los espíritus de nuestros reyes."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_AngOff_CarthaenSpawn_04",
+      "translation": "OFICIAL DE ANGMAR: El Capitán de Arnor ha demostrado ser un adversario digno y persistente.\\nOlvídalos, los espíritus en descomposición de los patéticos reyes de Arnor.\\n¡Recompensemos al Capitán Carthaen completando el ritual con su alma en su lugar!"
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Carthaen_01",
+      "translation": "CAPITÁN CARTHAEN: No les temo. Solo pueden matarme."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_01",
+      "translation": "MORGOMIR: <Risas>"
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_02",
+      "translation": "MORGOMIR: Cuán perfecto es el castigo de este hombre."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_FinalCutScene_Morgomir_03",
+      "translation": "MORGOMIR: Su dedicación en la vida solo será igualada por su devoción después de la muerte."
+    }
+  ]
+}

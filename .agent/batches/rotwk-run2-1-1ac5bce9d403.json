@@ -1,0 +1,204 @@
+{
+  "schema_version": 3,
+  "batch_id": "1ac5bce9d40342c18f7a5bb82e10aba0",
+  "worker": "rotwk-run2-1",
+  "created_at": "2026-08-05T20:13:53.837927+00:00",
+  "lease_expires_at": "2026-08-06T02:13:53.836782+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-1-1ac5bce9d403.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipMordorSummonedBarricadeStealthDetection",
+      "source": "Detects stealthed units nearby the Summoned Barricade \\n Radius: 250 \\n Passive ability",
+      "source_hash": "68f7f7e0b10fbb1804baf355af5c9eb1eec240195a34c932a66e5ba057c15fdd",
+      "entry_hash": "078d7055a2bc66e1b6f4d355257fd2c5b86a3543ab8eabbc4ed653d9eff443b5",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenSentryTower",
+      "source": "Defensive tower that fires arrows at nearby enemy units \\n Can be garrisoned with ranged units for increased damage output \\n Building more than 2 towers increases build cost \\n\\n Build Time: 45s",
+      "source_hash": "a6c5c76419959a563c389873f26f10d016a73628950ac4a02501b47d3a9d794b",
+      "entry_hash": "36b357ec4efc2726171d44696210dea283f90b1a4dc4f364d5e112fc8d32f4f2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBattleTower",
+      "source": "Defensive tower that fires arrows at nearby enemy units \\n Can be garrisoned with ranged units for increased damage output \\n Building more than 2 towers increases build cost \\n\\n Build Time: 45s",
+      "source_hash": "f55987cfa190f3133bf18d47d438c11f79b185e99289ad3cc1a55332777ede92",
+      "entry_hash": "6d50141c34334b244e8a8f34a003969d6ebcbfccfbb13683cc2a2e3a27453a50",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenSentryTower",
+      "source": "Defensive tower that fires axes at nearby enemy units \\n Can be garrisoned with ranged units for increased damage output \\n Building more than 2 towers increases build cost \\n\\n Build Time: 45s",
+      "source_hash": "c5f8161214ef0a553cc0001a95e4c0b029dcb9cc923471e96dd8db9156226393",
+      "entry_hash": "5841d8fe460a739873e1434aa1c39eb5531db86da1eeda2c6e3cfc0bcea7f400",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructAngmarSentryTower",
+      "source": "Defensive tower that fires arrows at nearby enemy units \\n Can be garrisoned with ranged units for increased damage output \\n Building more than 2 towers increases build cost \\n\\n Build Time: 45s",
+      "source_hash": "7dbd93c50501e85670162e726e10c4a1a42ad1b96b16b20a26a58efc3e951b7c",
+      "entry_hash": "e890da0401d681d84fc8cb087fe8e304c3c0a82c60a39aded9a06c85e96bf481",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildSentryTower",
+      "source": "Defensive tower that fires arrows at nearby enemy units \\n Can be garrisoned with ranged units for increased damage output \\n Building more than 2 towers increases build cost \\n\\n Build Time: 45s",
+      "source_hash": "74cda603227261b0a4bdd4e4017fc2f8b9d662b4ff3849fbcae6afb8090ccd65",
+      "entry_hash": "c60e46f4086709c6fa7a0c698cef3f425d8e372b43ed09847337e37bf94a3864",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardBattleTower",
+      "source": "Defensive tower that fires arrows at nearby enemy units \\n Can be garrisoned with ranged units for increased damage output \\n Building more than 2 towers increases build cost \\n\\n Build Time: 45s",
+      "source_hash": "8e1ff12cf55b45a107a1c7dfdb9e6ab6c1f4b8e1d25ec719f9a35885390960c0",
+      "entry_hash": "128474a08a4c4c62822b911ab94ba3692316358520e8b594b18146808a001c46",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMordorBattleTower",
+      "source": "Defensive tower that fires arrows at nearby enemy units \\n Building more than 2 towers increases build cost \\n\\n Build Time: 45s",
+      "source_hash": "d8e8fd991f4daefa8e3aeafcafa33f65c9bdd0fe1b739fbfff653c5b88be04b0",
+      "entry_hash": "b44c4b178177b961f7be6bd05e7876f0f84f29a1803536d9fd10a168f60eff3a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:FortressExpansionPlotDescription",
+      "source": "Allows construction of various Fortress Expansions",
+      "source_hash": "2bfadb0624ef2725c012f29a8cdb592f7f8b8fc9fd93fb78efeef8bfb27c9490",
+      "entry_hash": "cef2a1cdcb231783e3a23228f7affd308d76cdc348f8ffe68dac0b68523a36b8",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:ElvenBuildingFoundation",
+      "source": "Fortress Expansion Plot",
+      "source_hash": "80303c0249c7e72a4d676a8c69740600f660afb08985520844836c78e77e18c2",
+      "entry_hash": "3b894aa1a1f72c880176215d7c00018bb54c916067361b5bd02e7cea9d32fd9c",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:MenBuildingFoundation",
+      "source": "Fortress Expansion Plot",
+      "source_hash": "c2d59dd527daba5002a1288a3ba7a94646e695eadb672076d71e8c48f949e449",
+      "entry_hash": "cc3d4aefb318c9756c1cc1cf585c35f8527327e6ea5f83f8318b517927582643",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:AngmarBuildingFoundation",
+      "source": "Fortress Expansion Plot",
+      "source_hash": "6e7aa4be3e96f80a6da653ffc2d24720b766ec094db2f9981de423dbd1fa1594",
+      "entry_hash": "fd8b1a9b5982e56ef9b1e9ffc3c4933959de6c53393e55091b2ff78c6216022f",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:DwarvenBuildingFoundation",
+      "source": "Fortress Expansion Plot",
+      "source_hash": "fd6ad933825e0613be694cdfbc5eacc36a479b2090f79f6eb58f21b1311b2edc",
+      "entry_hash": "5ca5b1c015220cdcece499d971edc2fe6ac68a7e235ed3f277fc5a9de7013777",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:WildBuildingFoundation",
+      "source": "Fortress Expansion Plot",
+      "source_hash": "b4d050c033da63acd726fc4cb48e4d837a8ef7fa152a29979f86357dbc0729c7",
+      "entry_hash": "df34c0823eee958ebfb4d2b423920862f5c9759d0a7e8445af471fef571a45af",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:IsengardBuildingFoundation",
+      "source": "Fortress Expansion Plot",
+      "source_hash": "68fcc3aa1b274ef268cd423bee4e039bf15f38655f909c4b7327dc1b7f3a5e87",
+      "entry_hash": "1eda4b99a26d574f2b572ff0cab757e96b8c174bb41fb9a3378c5051c91bb87a",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:MordorBuildingFoundation",
+      "source": "Fortress Expansion Plot",
+      "source_hash": "195f628294e04ec8842acc8c118ef6f577d2e3bf7bc89f87f77550e8874e2b90",
+      "entry_hash": "465b4da97fc413258c1602dc1c9b06368bc7246cb9ef948aba83576770e05691",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:DwarvenCatapultUpgrade",
+      "source": "&Replace Catapult",
+      "source_hash": "69e319721965cc82e703cc40c437be2a6819f285cf3824785b36e9099db36fb6",
+      "entry_hash": "a79bdc58ff2c8b2ba18fbbb73c955bf8cffb0285edba04d03812fc907f636924",
+      "protected_tokens": [
+        "&R"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDwarvenCatapultUpgrade",
+      "source": "Rebuilds the Catapult on the platform \\n\\n Build Time: 10s",
+      "source_hash": "3377314e6403af2bd9cb2b327f668888fea50a55c886548c788f78c9c71bc3a5",
+      "entry_hash": "b4d584ec3f609b0a83e424ad5552ecc1dc24afd256066d9f3177294522109d52",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardBallistaUpgrade",
+      "source": "&Replace Ballista",
+      "source_hash": "22dea5fb0d31d5b669129cff3d89d884277d81af4eb13a0b166946e3f4809175",
+      "entry_hash": "668db3a10cb1fdecb1593b7bceaf7d9f304cfb93628b59e670da6b2bd58cf5fe",
+      "protected_tokens": [
+        "&R"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipIsengardBallistaUpgrade",
+      "source": "Rebuilds the Ballista on the platform \\n\\n Build Time: 10s",
+      "source_hash": "e1ff09bd83c933952cd657d932c359e1bd9bdfa85857c7cc5ff2c460e8f02532",
+      "entry_hash": "b96d68403532f155f666442fbf1514a5c09028ffef633f3c31a7bd6aa600e598",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "83a3bc1bb777eee2e8a44d23c62f2b23768abab098b1aab1da1514015d92ea3b"
+}

@@ -1,0 +1,263 @@
+{
+  "schema_version": 3,
+  "batch_id": "b643c8e781704927b12d50fba14ef4c0",
+  "worker": "rotwk-run2-1",
+  "created_at": "2026-08-05T20:14:26.336541+00:00",
+  "lease_expires_at": "2026-08-06T02:14:26.335307+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-1-b643c8e78170.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "TOOLTIP:Legolas",
+      "source": "Damage Type: Hero Ranged / Hero \\n Ranged Attack Speed: 1s \\n Melee Attack Speed: 1s \\n Melee Splash Damage Radius: 15 \\n Movement Speed: 60 \\n Bow Range: 380 \\n Vision Range: 500",
+      "source_hash": "e90686893e4ff23fca0272a87c9af1bfc4b721ef7634e33215f275e47d7407ab",
+      "entry_hash": "f8ba6c232e1040ae9f451e9550b9b24fb78b5c77f3b7222b53aeb3a04500bc4d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenGuardianHorde",
+      "source": "Strong vs. Pikemen \\n Able to charge at enemies for improved speed and combat performance \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: 28s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "3800debe6916751cee31c39f40d836e58338f653d646566a13372a142884f272",
+      "entry_hash": "45895393b362215646c05d4cdc657771b1bc0abb4f76ecda1d9301fdf3495a1b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:OrcArchers",
+      "source": "Damage Type: Pierce \\n Health: 125 \\n Ranged Damage: 25 (Pierce) \\n Upgraded Ranged Damage: 30 (Pierce) & 10 (Flame) \\n Ranged Attack Speed: 1.5-2s \\n Movement Speed: 50 \\n Bow Range: 320 \\n Vision Range: 400",
+      "source_hash": "8c5510c8dc4c43c7e69bd8cfc4ec2fb725c6d5c80b1933cdd1ea74b871b95bbe",
+      "entry_hash": "c9e24ba4fd33e8a9069f5ded68de1678b2b28420fd3692993f672f60ef0a1e4d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipVolleyCorsairBomb",
+      "source": "Short range thrown explosives that starts a fire \\n Effective against structures and grouped units \\n Damage: 9 (Flame) \\n Splash Damage Radius: 15 \\n Target Radius: 60 \\n Target Range: 200 \\n Recharge Time: 45s \\n Left click icon then left click on target area",
+      "source_hash": "9f9b393f9d6f9e5057fae8094d6b854efeb793ab177dc653360a42304530b594",
+      "entry_hash": "ac6d88bf80797f03d639fa5f7f2ddc180e628696a3644fd0c4cf3ed1bf9b4e49",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFireBombs",
+      "source": "Short range thrown explosives that starts a fire \\n Effective against structures and grouped units \\n Left click to switch weapons",
+      "source_hash": "852a668016afd4d1f3dd8abb353a9e98d7986abe352326aeec3a8a0fb9bb990f",
+      "entry_hash": "3ae29ddd52c05a771bdec7adcad8c7df01d046b7610392136371cac7b1ce4839",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipKnife",
+      "source": "Powerful melee attack \\n Left click to switch weapons",
+      "source_hash": "516de255d746d3036303c134e09af30ba09f692912f4aa0bca10b42cf3ee730d",
+      "entry_hash": "3f8d9e632d67ce81b5b43c56661411145c1f80db9bd576de524e4da9ab40dc36",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorCorsairsOfUmbarHorde",
+      "source": "Strong vs. Pikemen and Structures \\n Able to alternate between Knives and Firebombs \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "773ce29a654a4791404667e93aa7581e2c95068fffd44c75c0a1a38886c0fb73",
+      "entry_hash": "8039b01dbc6e439c3aa499c39dbdee0adf7a7a9d037acc471f1254c18741f0e3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorCorsairsOfUmbarInnHorde",
+      "source": "Strong vs. Pikemen and Structures \\n Able to alternate between Knives and Firebombs \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: 40s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "e9ff8280f7ddc5b400898f2171c3f0e0146f3232968d5b1119b58675d322596d",
+      "entry_hash": "dad4eaeb271c30d7c07b7ff59068176a875e85b8f47b3c9c624c42091cd77d6f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:GoblinWarriors",
+      "source": "Damage Type: Slash \\n Health: 50 \\n Melee Damage: 13 (Slash) \\n Upgraded Melee Damage: 26 (Slash) \\n Melee Attack Speed: 0.76s \\n Movement Speed: 65 \\n Vision Range: 300",
+      "source_hash": "e9ddfc5b385f7ef8f71ea6d009d1c8c3a7fe49b5fa93cc09cc32f420f43bad70",
+      "entry_hash": "cf14832906a8f0babee6bfaff8975efee702510881f1cb2cfe2974d20843c57f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:GoblinArchers",
+      "source": "Damage Type: Pierce \\n Health: 100 \\n Ranged Damage: 25 (Pierce) \\n Upgraded Ranged Damage: 35 (Pierce) & 10 (Flame) \\n Ranged Attack Speed: 1.5-2s \\n Movement Speed: 65 \\n Bow Range: 300 \\n Vision Range: 500",
+      "source_hash": "152319b244eb0b25325eaa202369d0283b45dcb6fee926fa1cdb0de375f7e160",
+      "entry_hash": "7834752de3ef417efea8c855e2f13d9b58dd5019a92ce2949772fc741b78cf2c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPoisonArrows",
+      "source": "Poison tipped arrows that cause damage over time \\n Effective against Monsters and flying creatures \\n Can be fired from an extended range \\n Damage: 25 (Pierce) & 6/s (Poison) \\n Duration: 15s \\n Target Range: 375 \\n Recharge Time: 45s \\n Left click icon then left click on target",
+      "source_hash": "e6a0b8548bac9a6f9dbc81f537cd81a154699c6365d9c54a202979e6592ef1f2",
+      "entry_hash": "d53dc5378ae9ac36e5a2d34a9a671d4d4875da820d696f7366ba6fb3f3ef2172",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityWildShelobTunnel",
+      "source": "Requires Level 5 \\n Allows Shelob to tunnel under the ground and emerge at any unshrouded location \\n Damages enemies nearby the target location \\n Damage: 50 (Crush) \\n Splash Damage Radius: 55 \\n Target Range: Global \\n Recharge Time: 1m 15s \\n Left click icon then left click on target location",
+      "source_hash": "76eae28578bf195620be78b5133e972706a17756e1f8f49c10a236ba5c3ff4d9",
+      "entry_hash": "5587e48b1e7a1de82716b29a1d22be6cf85e0b0aa2d3d53cf699b4871e2c9130",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackClanSteadingLevel2Torches",
+      "source": "Requires Level 2 Clan Steading",
+      "source_hash": "1bcb0274611c5af7051cf03971c804029e12cb1805c5369100dcd2d1d3ef5d3a",
+      "entry_hash": "6c5e7738c087f708cb8f465627423c5796ed5789fe39adcc1e2278068fb4aad1",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:OutpostDescription",
+      "source": "Capture to generate extra resources \\n Increases Command Point limit by 25 \\n Resource Rate: 35 resources /10s \\n Vision Range: 160 \\n Capture Time: 15s",
+      "source_hash": "a659c28ee1c01645290d5dd9a344d23a23630b17d594342958ca7f477c01693e",
+      "entry_hash": "0e25144b140c2c0a3c8d92ff630edb10564f0d2e98983ca279150288f6a1761b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBattleWagonHearthStealthDetection",
+      "source": "Detects stealthed units nearby the Battle Wagon \\n Radius: 200 \\n Passive ability",
+      "source_hash": "5240de1e1c6fe66de88e5825f1916279e5c1dd17ed00ced10111c3c80e18f4d0",
+      "entry_hash": "0f5fe16001c87ee0d893303d452ae0a41b6bd1aaf174f5f76fb4ad418c85c0e2",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWellStealthDetection",
+      "source": "Detects stealthed units nearby the Well \\n Radius: 200 \\n Passive ability",
+      "source_hash": "b49eca0d05646d5f107edc4a8884463eeb63ec6d93672c84d2c2b82199f37ee4",
+      "entry_hash": "05b3cceb8317bc75a5895d2b535f1c348b595486f97bc36372ed6816d1e5316e",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMirrorStealthDetection",
+      "source": "Detects stealthed units nearby the Mirror of Galadriel \\n Radius: 200 \\n Passive ability",
+      "source_hash": "cb57da0ce687c6d8cd00ac92a36ae1e2abe5c0c0ee8632367d9e843394b872dd",
+      "entry_hash": "d6defee67f1ba4e7f5d528bd776a5971dfc1ef6ce5574e232c7ea71642608f55",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHearthStealthDetection",
+      "source": "Detects stealthed units nearby the Hearth \\n Radius: 200 \\n Passive ability",
+      "source_hash": "f69f3e64673178b20eb9e09ae8b76a5783f688875077bfc920ad6724cf20b4d1",
+      "entry_hash": "784cee9ed18441a437ba62bba8e35cf5941967dea571d98672c40df1414a9b0e",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMenLoneTowerStealthDetection",
+      "source": "Detects stealthed units nearby the Lone Tower \\n Radius: 250 \\n Passive ability",
+      "source_hash": "e53307c7559f577a9f86846f527bbfc9d703ee52337921c926bde3741ccda344",
+      "entry_hash": "db3a1bdb558c3969c645bf1cf778eb84f03d63b58274aceeaf38ce8a11548674",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDwarvenLoneTowerStealthDetection",
+      "source": "Detects stealthed units nearby the Lone Tower \\n Radius: 250 \\n Passive ability",
+      "source_hash": "c58cadd6b631c6f95d4df06d5867f4c2497a12109d789b398a4c9e04d6a55aa5",
+      "entry_hash": "93c977f372f6f9d6a13d3c9674b0053b32ef93e4d2725e7114ac26bdd3b444a9",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "f51c7b307a87ba7ee9ae521bf605fd6892d9ebf3b471e787e38ee36f3885f957"
+}

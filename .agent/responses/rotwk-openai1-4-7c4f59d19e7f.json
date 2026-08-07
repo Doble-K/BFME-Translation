@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "7c4f59d19e7f4fc6a2ed8a219a5fb486",
+  "worker": "rotwk-openai1-4",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroBountySection",
+      "translation": "Sección de mejoras de Bounty"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroExperienceSection",
+      "translation": "Mejoras de experiencia"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroExperienceSection",
+      "translation": "Sección de mejoras de experiencia"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroAuraSection",
+      "translation": "Mejoras de aura"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroAuraSection",
+      "translation": "Sección de mejoras de aura"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroStoreSecondSection",
+      "translation": "Otras mejoras"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroStoreSecondSection",
+      "translation": "Cambiar de sección"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroDamageBonus_1",
+      "translation": "Mejora de daño nivel 1"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroDamageBonus_1",
+      "translation": "Aumenta permanentemente el daño de los héroes en un 10% (No afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroDamageBonus_2",
+      "translation": "Mejora de daño nivel 2"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroDamageBonus_2",
+      "translation": "Aumenta permanentemente el daño de los héroes en un 15% (No afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroDamageBonus_3",
+      "translation": "Mejora de daño nivel 3"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroDamageBonus_3",
+      "translation": "Aumenta permanentemente el daño de los héroes en un 20% (No afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroDamageBonus_4",
+      "translation": "Mejora de daño nivel 4"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroDamageBonus_4",
+      "translation": "Aumenta permanentemente el daño de los héroes en un 25% (No afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroArmorBonus_1",
+      "translation": "Mejora de armadura nivel 1"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroArmorBonus_1",
+      "translation": "Aumenta permanentemente la armadura de los héroes en un 10% (No afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroArmorBonus_2",
+      "translation": "Mejora de armadura nivel 2"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroArmorBonus_2",
+      "translation": "Aumenta permanentemente la armadura de los héroes en un 15% (No afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroArmorBonus_3",
+      "translation": "Mejora de armadura nivel 3"
+    }
+  ]
+}

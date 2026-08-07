@@ -1,0 +1,212 @@
+{
+  "schema_version": 3,
+  "batch_id": "f45661cf79534bc0be7dfabd372fd628",
+  "worker": "rotwk-laguna-all-4",
+  "created_at": "2026-08-06T07:55:55.765488+00:00",
+  "lease_expires_at": "2026-08-06T13:55:55.764205+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-laguna-all-4-f45661cf7953.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BladeMaster",
+      "source": "Hero temporarily gains +200% Damage and +100% Armor",
+      "source_hash": "5c24ac79c7d0bb4129d44779d509f6c2d18017276212009f2c963ec110b13600",
+      "entry_hash": "f63428530a5e6b0ebb931b11e02ef67bf157f633b0892074838bf0e03a7f5918",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BladeMaster_Palantir",
+      "source": "Hero temporarily gains +200% Damage and +100% Armor \\n Left click to activate",
+      "source_hash": "b807fc9d146f1d052fce130e2e6c3f08daf184f40f3571eef9fd50109ebbd939",
+      "entry_hash": "b3ff3e9a698d8cd5f75fad6b46b7f6edb6308b075e3f844334d43b5567e3572c",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:CreateAHeroFamiliar",
+      "source": "Familiars",
+      "source_hash": "0c847d0aa95a43fa5e73532752f376f3bef9063c375a23e31017437f3fe50b68",
+      "entry_hash": "2bcdbee4c27500d87f6190d3c1ec3e16227523aa6103ce93adbfac067f55e285",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:TooltipCAH_SummonFamiliar_Level1",
+      "source": "Hero summons a flock of stationary birds that reveal the shroud and detect stealth",
+      "source_hash": "a9fc38a15f971c06cb1e8df0b88f298a5e0cbb1ec3945c0cba547519461fdae2",
+      "entry_hash": "c5b574dbee3cb9af7ba827d424590d1ea3dad3ab8a2ced5a79a46c2e94632e46",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:TooltipCAH_SummonFamiliar_Level1_Palantir",
+      "source": "Hero summons a flock of stationary birds that reveal the shroud and detect stealth \\n Left click icon then left click on pathable location",
+      "source_hash": "27a498d0503b3f0891c245fdcdd062f19f86271cb48277d2d7449cbd64e85ee1",
+      "entry_hash": "944f97e34299db8517844a18f89c008ee9183e70d5dbc290bc024ead2c2834e1",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCAH_SummonFamiliar_Level2",
+      "source": "Hero summons a flock of birds that reveal the shroud and detect stealth",
+      "source_hash": "5eb8f966e9c550f18bbb7c47008e814df75abda2ad38c6ee8ce010e1c72f56c7",
+      "entry_hash": "fd7635fcece1d6ff83537c6b99ef8f3e1a825a060498ff95ed81fce0d3f8c7d4",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:TooltipCAH_SummonFamiliar_Level2_Palantir",
+      "source": "Hero summons a flock of birds that reveal the shroud and detect stealth \\n Left click icon then left click on pathable location",
+      "source_hash": "d3408e4e20fb4977168a0159577317af45b5bb7bd917a9a6bc9bc648e16e3483",
+      "entry_hash": "567e53fdb15b0351beccab66e5bccc537798e427ced27ab90b8a884c1f98f7e7",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_A_TrueSight",
+      "source": "Reveals an area of the map",
+      "source_hash": "02f385ee771ba73e01cf281e0194085560ad5ec5b90eaab8e2ef1ce44267e66c",
+      "entry_hash": "4923a6ddc82dbdec6a7deb775457c432979336d7e20cf5b3df8c776c0630e37a",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:RohanSpearmen",
+      "source": "Rohan Spearman",
+      "source_hash": "95dee6dcaae6f44fbf1f841ed1978f450942282b8f62a6f0cdaa2dbf3e9cde6f",
+      "entry_hash": "78a52e1374b78a14726899a75544b56d460aac9fa361afcd6e2509ee52d2c3cd",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_RohanSpearmenHorde",
+      "source": "Unit Type: Basic Pikemen\\nStrong vs. Cavalry\\n",
+      "source_hash": "add3985fe70efdb4c616f215af37a502c6ea37c9ff6e5abb8c71ab9c8f1447b1",
+      "entry_hash": "40f01a42b214d2abcdfab0d8d6209be2306237e6ad66102b26da50d584ca9dd5",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_RohanSpearmenHorde",
+      "source": "\\nUnit Type: Basic Pikemen\\nStrong vs. Cavalry",
+      "source_hash": "104543951e7c7862fbd72f5d784fee59b900fdaa71e094656b3f109247cf9862",
+      "entry_hash": "4608b24e59720e3c5879580eafbb0121152c13ed706aac26ae1805593f3f2b4a",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "BANNERUI:DunedainRanger",
+      "source": "Dunedain Ranger",
+      "source_hash": "4309d67c113f970c0c0aea2b68d4f3d79a85dd620f818f5382806daacd7d4864",
+      "entry_hash": "b0acb872b555519e65ee7399482a03b775743e6f8b3f1f66a2c902bd23312633",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:DunedainRangers",
+      "source": "Dunedain Rangers",
+      "source_hash": "bd8090b9b43855377fd15176a31115b9289038a9937edb71c463d1e1882373b6",
+      "entry_hash": "0aa42095e444ff1e53400e81920235eb8ba502544455a3d8849f160c10c95aba",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_GondorRangerHordeDunedain",
+      "source": "Dunedain Ranger Battalion",
+      "source_hash": "7fbeda679ab6fd0acce10319aa874d4f0867f51fd11b7ff27f4e2a284915d43f",
+      "entry_hash": "44590422340856a87a693ede311dbaabd418fb26d13af9ca9b46027b7e61bad1",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_GondorRangerHordeDunedainPlural",
+      "source": "Dunedain Ranger Battalions",
+      "source_hash": "2f83d1330130eb35c8b0862206aed74ec2c85b133a0ec13e78491703df8ec82f",
+      "entry_hash": "68a9cf5780354a31ca3b88c1bcd2123328b9466626d160476efbe4324b55d5d3",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_GondorTrebuchet",
+      "source": "Unit Type: Siege\\nStrong vs. Structures and Archers\\n",
+      "source_hash": "b8efcbd3b5a30b16bb48b0b7e7784d89a6c456ed4328dd4d925da211c97da27b",
+      "entry_hash": "ef79f4ab5494818a262eac1e9ecbb14ab777a5a812082a3e873b3fb7f40a46ff",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_GondorTrebuchet",
+      "source": "\\nUnit Type: Siege\\nStrong vs. Structures and Archers",
+      "source_hash": "68ce3713a75bfca86e0a95f206a9e267ab372916543fff2a66c6684118a2a35e",
+      "entry_hash": "be1fb82983060e7e4c3c95234902d901123518dc2bee5512f168bc71a5c7e12c",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "BANNERUI:KnightOfDol",
+      "source": "Knight of Dol Amroth",
+      "source_hash": "eceda43daaf5320e19eab431e76a549629bb603cc963809adb7d22bc78969506",
+      "entry_hash": "cbc037fb1682a521724b49b0f709f56310c13f83561236ee8f80eca2cc5e6770",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:KnightsOfDol",
+      "source": "Knights of Dol Amroth",
+      "source_hash": "4e7b4bb74c2317c65f760718600670d28cc1a4501c6d7e9c8ee43ce3ac6efade",
+      "entry_hash": "f86cbcc5f7151d55bdf03883248dda662fde2e7f630f4238a88cff9dfd3e8bba",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_GondorKnightsofDolHorde",
+      "source": "Knights of Dol Amroth Battalion",
+      "source_hash": "33d3ee7110838f35435f762bb295d56b189efdf0533ab63c12d57a8d57aeb006",
+      "entry_hash": "f098829498508f2613b54af3bb10ea619bb69208769018f0ba9468dc97fa445a",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_GondorKnightsofDolHordePlural",
+      "source": "Knights of Dol Amroth Battalions",
+      "source_hash": "77c1a284f1f3bad56c50a78bbbcc12ff618bbde1dcbcf810e21ef8b24424c24c",
+      "entry_hash": "2e594bb6d8dc6491c758454620686023fd57dd8112de845563c535123a9b2d7e",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_GondorKnightsofDolHorde",
+      "source": "Unit Type: Hero Cavalry\\nWeak vs. Pikemen",
+      "source_hash": "fe64d19f504c225968f5192542cd48a33a177f49e5a5e2096ea12a32866d7410",
+      "entry_hash": "485d1b2e827d43eab7d0b564a5fac3269b549686cd4038116c7442ce6eb26b6f",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_Structure_ElvenFortress",
+      "source": "Fortress",
+      "source_hash": "d8e627a9c054596b0b91440bfba0b1ffb1b7c8067c44b9a03ad5189f1b0ccf34",
+      "entry_hash": "1f843e76efc8dd28837823dd250b461839e7fbded10f0ff8852b884aa7645c2e",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:ElvenLorienWarrior",
+      "source": "Lorien Warrior",
+      "source_hash": "db085efebcf32408a1b50ffdf0f10d556c73778cc945b9e7394ba4fc5581d52f",
+      "entry_hash": "dd597d142432bb4f5ef5af65a8dcb7deb9e39f3c81311f703ff49c4972ff6b2b",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:ElvenLorienWarriors",
+      "source": "Lorien Warriors",
+      "source_hash": "5d8660f7b9208ca0d972d8186886cfb46c124866e3c8344cb4e88c154e531f3b",
+      "entry_hash": "f3040156beeb27448c662381381b1c6c554536754ab56cf7e0fa081854683174",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "dae90c65b7ee89961ad9b2b51f8378a920f8b4fedff9b9de4908760fdf5863a4"
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "1681a316fe7c4651b108c8e0c2fcdb3d",
+  "worker": "rotwk-laguna-all-3",
+  "translations": [
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_06",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_07",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_08",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_01",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_01-1",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_02",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_03",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_04",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_05",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_05-1",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_06",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_08",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_09",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_10",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_11",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveComplete_12",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_01",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_02",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_03",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_04",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_05",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_06",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_07",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_08",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_09",
+      "translation": ""
+    }
+  ]
+}

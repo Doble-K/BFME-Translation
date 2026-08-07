@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "5c97e52a8886424198e05883459f9eb0",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:TooltipWkTerribleFury",
+      "translation": "Requiere Nivel 6\\nCausa miedo en los enemigos cercanos\\nNo puede ser cancelado por hechizos de inmunidad al Miedo y al Terror\\nRadio: 200\\nDuración: 5s\\nTiempo de recarga: 3m\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:TooltipTerribleFury",
+      "translation": "Causa miedo en los enemigos cercanos\\nNo puede ser cancelado por hechizos de inmunidad al Miedo y al Terror\\nRadio: 200\\nDuración: 5s\\nTiempo de recarga: 3m\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityBalrogScream",
+      "translation": "Grita para asustar a los enemigos cercanos\\nNo puede ser cancelado por hechizos de inmunidad al Miedo y al Terror\\nRadio: 250\\nDuración: 5s\\nTiempo de recarga: 30s\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorBlackOrcHordeInn",
+      "translation": "Fuerte contra Piqueros\\n\\nBonificación de Horda\\nTipo de modificador: Hechizo\\nTodos los Orcos Negros ganan +25% de daño cuando se reúnen en números de 100 o más\\nSe acumula con Mejoras, Liderazgo y otros Hechizos\\n\\nTipo de unidad: Espadachín de Élite\\nTiempo de reclutamiento: 45s\\nNivel 2: +10% Salud, +10% Daño\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipZerkSlayer",
+      "translation": "Requiere Nivel 5\\nLos Fanáticos ganan +50% de Daño, +20% de velocidad de movimiento y atacan el doble de rápido\\nDesactiva el Lanzamiento de Hacha mientras esté activa\\nRadio de daño en salpicadura: 10\\nDuración: 20s\\nTiempo de recarga: 3m\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityGrabPassenger",
+      "translation": "Recoge un árbol o una roca para usarla como arma\\nRadio de búsqueda de árboles: 600"
+    },
+    {
+      "id": "ThingTemplate:IronHillsRockyOutcropping01",
+      "translation": "Afloramiento Rocoso de las Colinas de Hierro 1"
+    },
+    {
+      "id": "ThingTemplate:IronHillsRockyOutcropping02",
+      "translation": "Afloramiento Rocoso de las Colinas de Hierro 2"
+    },
+    {
+      "id": "ThingTemplate:IronHillsRockyOutcropping03",
+      "translation": "Afloramiento Rocoso de las Colinas de Hierro 3"
+    },
+    {
+      "id": "ThingTemplate:IronHillsRockyOutcropping04",
+      "translation": "Afloramiento Rocoso de las Colinas de Hierro 4"
+    },
+    {
+      "id": "VALUE:ThirdX",
+      "translation": "Equipos Aleatorios (MJ)"
+    },
+    {
+      "id": "VALUE:8X",
+      "translation": "Mayor FPS (UJ)"
+    },
+    {
+      "id": "VALUE:HalfX",
+      "translation": "Modo Constructor del Caos"
+    },
+    {
+      "id": "CONTROLBAR:EntStomp",
+      "translation": "Pisotón [&t]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipEntStomp",
+      "translation": "Ataque de tierra que causa daño adicional e impacto de metales\\nDaño: 200 (Fuerza)\\nRadio de daño en salpicadura: 70\\nTiempo de recarga: 1m\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressGorgorothSpire",
+      "translation": "Permite que la Fortaleza lance una bola de fuego gigante\\nAumenta el rango de visión de la Fortaleza\\nAlcance de visión: 2080\\n\\nTiempo de mejora: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressGorgorothSpirePurchased",
+      "translation": "Permite que la Fortaleza lance una bola de fuego gigante\\nAumenta el rango de visión de la Fortaleza\\nAlcance de visión: 2080\\n\\nTiempo de mejora: 45s\\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressSanctum",
+      "translation": "Construye el Sanctum del Rey Brujo, que lanza trozos de hielo\\nAumenta el rango de visión de la Fortaleza\\nAlcance de visión: 2080\\n\\nTiempo de mejora: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressSanctumPurchased",
+      "translation": "Construye el Sanctum del Rey Brujo, que lanza trozos de hielo\\nAumenta el rango de visión de la Fortaleza\\nAlcance de visión: 2080\\n\\nTiempo de mejora: 45s\\n\\nEsta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressIvoryTower",
+      "translation": "Proporciona el Poder de Visión del Palantir\\nAumenta el rango de visión de la Fortaleza\\nAlcance de visión: 2080\\n\\nTiempo de mejora: 45s"
+    }
+  ]
+}

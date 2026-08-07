@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "6b89471aafcb45cbb2ab6aa45266691c",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "Map:MAPMPPlateauofGorgoroth",
+      "translation": "Meseta de Gorgoroth"
+    },
+    {
+      "id": "Map:MAPMPPlateauofGorgoroth/Desc",
+      "translation": "Una región mortal y estéril cubierta de ceniza y humos\\n\\nTamaño: 500 x 500\\nEstructuras Neutrales: 2x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPSirannon",
+      "translation": "Sirannon"
+    },
+    {
+      "id": "Map:MAPMPSirannon/Desc",
+      "translation": "Este río, en otro tiempo turbulento, fluye desde las Puertas de Durin hasta Ost-in-Edhil, la ciudad élfica en ruinas de Eregion.\\n\\nTamaño: 350 x 350\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Warg\\nEstructuras Neutrales: 1x Posada"
+    },
+    {
+      "id": "Map:MAPMPFirienDale",
+      "translation": "Valle de Firien"
+    },
+    {
+      "id": "Map:MAPMPFirienDale/Desc",
+      "translation": "Una profunda hendidura que separa la colina de Halifirien de su espolón de las Montañas Blancas, el nacimiento del Arroyo Mering.\\n\\nTamaño: 410 x 315\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPMeringStream",
+      "translation": "Arroyo Mering"
+    },
+    {
+      "id": "Map:MAPMPMeringStream/Desc",
+      "translation": "El Arroyo Mering era conocido por ser una de las fronteras entre los reinos de Gondor y Rohan. El arroyo nace en el Valle de Firien, fluye a través del bosque de Firien y se dobla hacia el este a través de las marismas del Fenmarch.\\n\\nTamaño: 380 x 340\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Warg\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPSouthHollin",
+      "translation": "Hollin del Sur"
+    },
+    {
+      "id": "Map:MAPMPSouthHollin/desc",
+      "translation": "Hollin fue un reino de los Noldor en Eriador durante la Segunda Edad, ubicado cerca de los Muros de Moria, bajo la sombra de las Montañas Nubladas. Fue el único reino Noldorin duradero fuera de Lindon.\\n\\nTamaño: 500 x 460\\nGuaridas: 2x Guarida de Warg, 4x Guarida de Goblin\\nEstructuras Neutrales: 1x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPBamfurlong",
+      "translation": "Bamfurlong"
+    },
+    {
+      "id": "Map:MAPMPBamfurlong/Desc",
+      "translation": "Bamfurlong era una granja en la región pantanosa de la Marisma, en la parte oriental de la Comarca. Era el hogar del Granjero Maggot, que vivía sobre el suelo en lugar de en una tradicional madriguera de hobbit.\\n\\nTamaño: 352 x 352\\nGuaridas: 2x Guarida de Troll, 4x Guarida de Warg"
+    },
+    {
+      "id": "Map:MAPMPCanyonsofKhand",
+      "translation": "Cañones de Khand"
+    },
+    {
+      "id": "Map:MAPMPCanyonsofKhand/Desc",
+      "translation": "Khand era el nombre de una tierra situada al sur de Mordor y al este de Cerca de Harad. Se sabe poco sobre Khand o su gente, pero se decía que era una tierra seca y estéril.\\n\\nTamaño: 500 x 500\\nGuaridas: 2x Guarida de Draco\\nEstructuras Neutrales: 2x Posada, 1x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPIronMountains",
+      "translation": "Montañas de Hierro"
+    },
+    {
+      "id": "Map:MAPMPIronMountains/Desc",
+      "translation": "Las Montañas de Hierro, también conocidas como Ered Engrin y las Montañas de Hierro, eran una inmensa cadena montañosa en la parte norte de la Tierra Media.\\n\\nTamaño: 400 x 400\\nGuaridas: 4x Guarida de Warg, 2x Guarida de Goblin\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPLastBridge",
+      "translation": "Último Puente"
+    },
+    {
+      "id": "Map:MAPMPLastBridge/Desc",
+      "translation": "El Último Puente era un antiguo puente de piedra que llevaba el Camino del Este sobre el río Hoarwell, unas cien millas al este de Cima del Viento y aproximadamente la misma distancia al oeste de Rivendel.\\n\\nTamaño: 325 x 400\\nGuaridas: 2x Guarida de Troll, 4x Guarida de Warg\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPSlopesoftheLonelyMountain",
+      "translation": "Laderas de la Montaña Solitaria"
+    },
+    {
+      "id": "Map:MAPMPSlopesoftheLonelyMountain/desc",
+      "translation": "La Batalla de los Cinco Ejércitos tuvo lugar en este valle, ubicado entre la Montaña Solitaria y Valle.\\n\\nTamaño: 600 x 500\\nGuaridas: 2x Guarida de Troll"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "da7ae0fd32d64c989add4253bcb8b9c8",
+  "worker": "rotwk-laguna-all-2",
+  "translations": [
+    {
+      "id": "SCRIPT:ANGAmonSulHintText_10",
+      "translation": "Destruye todos los Árboles Mallorn que alimentan los ataques mágicos de Amon Sul. Mira tu pantalla de Objetivos para recordar dónde y qué son."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulCloudBreakTreeVO",
+      "translation": "OFICIAL DE ANGMAR: Este Árbol Mallorn permite al Palantir de Amon Sul separar las nubes, aturdir a los súbditos de la oscuridad."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulElvenWoodTreeVO",
+      "translation": "OFICIAL DE ANGMAR: El Palantir de Amon Sul puede canalizar el poder de la naturaleza con este árbol,\\ncreando exuberantes bosques elfos para proteger las fuerzas de la luz."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulDunedainTreeVO",
+      "translation": "OFICIAL DE ANGMAR: Los defensores de la fortaleza pueden usar este Árbol Mallorn para llamar a sus aliados Dunedain en busca de ayuda."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulRebuildTreeVO",
+      "translation": "OFICIAL DE ANGMAR: El Palantir de Amon Sul usa este Árbol Mallorn para reparar milagrosamente los daños a los edificios."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulSunflareTreeVO",
+      "translation": "OFICIAL DE ANGMAR: El más poderoso de los dones Mallorn, este árbol permite al Palantir de Amon Sul\\ndirigir la furia del sol mismo contra cualquiera que se atreva a amenazar la fortaleza."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulCloudBreakTreeTooltip",
+      "translation": "Este Árbol Mallorn otorga el poder Rompe-nubes a los defensores de Amon Sul"
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulElvenWoodTreeTooltip",
+      "translation": "Este Árbol Mallorn otorga el poder Bosque Elfo a los defensores de Amon Sul"
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulDunedainTreeTooltip",
+      "translation": "Este Árbol Mallorn otorga el poder Invocar Dunedain a los defensores de Amon Sul"
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulRebuildTreeTooltip",
+      "translation": "Este Árbol Mallorn otorga el poder Reconstruir a los defensores de Amon Sul"
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulSunflareTreeTooltip",
+      "translation": "Este Árbol Mallorn otorga el poder Destello Solar a los defensores de Amon Sul"
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulSunflareIntroText",
+      "translation": "\\nEste árbol alimenta el ataque Destello Solar de la fortaleza."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulRebuildIntroText",
+      "translation": "\\nEste árbol permite a la fortaleza usar el poder Reconstruir en sus edificios."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulCloudBreakIntroText",
+      "translation": "\\nEste árbol separa las nubes y aturde a nuestras tropas."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulDunedainIntroText",
+      "translation": "\\nEste árbol invoca refuerzos de rangers Dunedain."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulElvenWoodIntroText",
+      "translation": "\\nEste árbol genera bosques elfos para ayudar a los defensores de la fortaleza."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulSunflareTimer",
+      "translation": "Ataque Destello Solar de Amon Sul:"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarIntroText_01",
+      "translation": "REY BRUJO: Aquí, entre estas cumbres oscuras, construiremos una fortaleza para traer ruina al Reino del Norte."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarIntroText_02",
+      "translation": "REY BRUJO: Hay una gran maldad en este lugar... especialmente los Númenóreanos Negros,\\n cuyas lealtades oscuras y fervor por el dominio debemos reavivar."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarIntroText_03",
+      "translation": "REY BRUJO: ¿Qué es esto? ¿Un Troll guerrero que lucha como un espadachín entrenado? ¡Sí que haría un sirviente útil!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveText_01",
+      "translation": "El Rey Brujo debe sobrevivir."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveText_02",
+      "translation": "Morgomir debe sobrevivir."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveText_03",
+      "translation": "Ayuda al misterioso Troll guerrero a derrotar a sus atacantes."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveText_04",
+      "translation": "Rogash debe sobrevivir."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveText_05",
+      "translation": "Lleva a Rogash a la meseta de los Trolls de Nieve."
+    }
+  ]
+}

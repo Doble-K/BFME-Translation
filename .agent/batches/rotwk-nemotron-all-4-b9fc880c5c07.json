@@ -1,0 +1,198 @@
+{
+  "schema_version": 3,
+  "batch_id": "b9fc880c5c07461e941e0db7b55a828a",
+  "worker": "rotwk-nemotron-all-4",
+  "created_at": "2026-08-06T09:18:24.356912+00:00",
+  "lease_expires_at": "2026-08-06T15:18:24.355605+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemotron-all-4-b9fc880c5c07.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_03",
+      "source": "Rhudaur has sent for aid, and our spies report the pretender King Argeleb is on the march. His army will arrive on the north road.",
+      "source_hash": "f5741ce233cc7ac849907571478bd643b1fef29da9a06ea20bc502e56b21a773",
+      "entry_hash": "1133e4d335f9b8624de1b82ae75147bf2121f1f6105b86a5948edc01689be1bd",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_04",
+      "source": "The Black King is here and we stand with him!",
+      "source_hash": "16e96eda5c131909d2ee7a1e0f26ac1101f79f6d185393470aec4a06b632a6b3",
+      "entry_hash": "5d7c5ba57587c75664af3a8ef8d7f6eb42c23f28ab868202f4d87bf7c4f8d831",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_05",
+      "source": "There is an Arnor outpost near this village, to the south. We should investigate.",
+      "source_hash": "10f96568b5dad9092a4b961a906a070bc064db1179d3e4f204f7f41075ea9a0d",
+      "entry_hash": "6b2db4a4b71dccf8a4215a1d2d0de45990d2296e78c3c0bca595ee7689d65f28",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_06",
+      "source": "We have cleared this village of all but Hwaldar's supporters.",
+      "source_hash": "e7874662702420b319c18cc9e2fa1e2fea1a6b38180db503d44b8b576fabf7a1",
+      "entry_hash": "2ee67180c5c2b6472b3a787d71a7018d547a9db93c46ce3d76eb3b60b917f933",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_07",
+      "source": "Thrall Masters can summon different types of units to swell the ranks of Angmar. But beware: if the Thrall Master is killed, the entire unit will break!",
+      "source_hash": "c9f22995b7e268b557916f2e960a62ce3db436d24800a8ba25b539575debb3e9",
+      "entry_hash": "697e6e9fb440f298683c39e594745a5c4099a2aa227d1bd91895a77501feedca",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_08",
+      "source": "More Thrall Masters have arrived to do battle against Arnor. They can now summon rebel Rhudaur Hillmen!",
+      "source_hash": "fbcbb3888d4015734bd1d9651628ad22bea14cab9ad929230af2270acb82d956",
+      "entry_hash": "6090cd0a6371a1d59b2c0257711f3a865726b28072e31ec8aa1b546dc9ac3468",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_09",
+      "source": "Thanks to our great efforts in raising the rebellion, a large number of rebel Hillmen have come to join our ranks!",
+      "source_hash": "1b48ae5120b9ffcab8bcd15c56c611a5de8f72c0bed0d3dda54b6f16b7ebcbbb",
+      "entry_hash": "f8a0a6a3af4bea05da6451c59faf1529765cd430ae8444de09a4f6ced50b2d29",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_10",
+      "source": "ANGMAR OFFICER: Now that the Hillmen have risen against Arnor, it is time for the final conquest of Rhudaur.",
+      "source_hash": "2cbeb2d608543d2295d1a69610024ae1b3f4bb3b095a5c6eacfcd6e04bed32c7",
+      "entry_hash": "7a899a1a5a590af04aa842cbf49ad57ee70a79a0531accc869e13a12f7c7e3e5",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_11",
+      "source": "King Argeleb of Arthedain has arrived to help the men of Arnor! Let the ravens feast on his flesh!",
+      "source_hash": "1492307be19a19ad1e8340f3478a14e0ba61a9754da660f1feda9b7c8ef7b152",
+      "entry_hash": "b6d1ddf2570a7caf466df33c0cd3c7482217d4b820f62938c22a950669ac9c1b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_13",
+      "source": "We have destroyed one of Arnor's fortresses!",
+      "source_hash": "cd3d0743d6b8a626cc5e7d9a51ee7fe3a92144d9b398a6cbd67d55a528635057",
+      "entry_hash": "dcbd82462d7cdc954f37c8350802de942b0d55b947dd1b631918efe4da590fee",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_14",
+      "source": "Hwaldar is held captive in one of the towers in this outpost! Destroy his prison to free him!",
+      "source_hash": "f4267ceb559317fda39777a5dafa7943477aca80c00dd915a3719f18b4cd585b",
+      "entry_hash": "05f8b1bfb2e0fbbd6d0f186d80507251a26c1aa231eae27dc7d54f8716918774",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_15",
+      "source": "ANGMAR OFFICER: We have Thrall Masters to summon hordes of rebel Hillmen to our ranks. \\n Now build an outpost and raise an army to lay waste to this land!",
+      "source_hash": "dd3157285d1af278e7ad20465488c07017a5bb2ff7c63625443dbac3dd4d2259",
+      "entry_hash": "ba55a5660a7d9b60a6f749f3a03b360dcf0d8d9038ca676cf2982bc3667028a2",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_16",
+      "source": "ANGMAR OFFICER: The two strongholds to the west are all that remain in our way!",
+      "source_hash": "a1957c6173543d56b3a7d5b0e32b8c4ecc36e618fc8d1c762bdb7e9cfb36347c",
+      "entry_hash": "36874093a926d261715c421155070833ee15fa3de79fd6ae800695e1a78c88b2",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_17",
+      "source": "ANGMAR OFFICER: Be cautious: if we venture too close to the Arnor fortresses to the west, \\nthey may become aware of us before we are ready!",
+      "source_hash": "38bbd30e7bc298d5a420086897478c4e662e9c157b66b57e83619a273c22eedb",
+      "entry_hash": "85bc694c0d656bc364808cd9c9ca07e3f335c0956106ca7e894a3493d73897d9",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_18",
+      "source": "Hwaldar Hillchief is free! Death to the Dunedain!",
+      "source_hash": "da4058d60dfeeabc4739c19e6989f1cc8eeef4ae6e9ce290c9a143a9ab1496aa",
+      "entry_hash": "ccfca85bcd2b98b22b342a8c5883e69fcf089d8ab54c2c33d1dc869abe0956fc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_19",
+      "source": "KING ARGELEB: Men of the North Kingdom! This day we shatter the upstart of Angmar \\n and restore the glory of the Dunedain! To battle, and victory!",
+      "source_hash": "e97af612d734dcf9c11217760911e718475e800a6023bf8a2a294d28c2ba34f4",
+      "entry_hash": "260ff2183708e35c89b8f4ff0bf13df12a2a0434ca4d09f57ec903f649a1714a",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_20",
+      "source": "Evil shall never reign in Rhudaur! Death to Hwaldar and his dark master!",
+      "source_hash": "0ca8829db296de4ba12361273c8e64855cd9c684644966aaf10dc50296acba1d",
+      "entry_hash": "96d7c81344e299fd2823c9552a13d3185e46d9c557e6aecf055fe0490ab9f540",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_21",
+      "source": "We have cleared these loyalist scum from their homes.",
+      "source_hash": "021bdbf37443b844734409fd88521bdab2614ddb8bb7e62d8168016ef6600706",
+      "entry_hash": "7603782a32f93ea119c2976cc80d9e92e2fd5f2e05842f1528f301af63e45fdf",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_22",
+      "source": "This village has joined us to a man!",
+      "source_hash": "4006a22c7c50a076b8b39064e5a78e438aac9076c4e7d0d6541abef11abd31ea",
+      "entry_hash": "af15a635f0ad7f98f96fb9eac6091eaffc7dcc894b585e13cf1f38394cb59dfe",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGRhudaurHintText_23",
+      "source": "More Hillmen have come to our banner!",
+      "source_hash": "9ccdb26a8dd4f6e061dc49914542d2a936fb9f3bc92938884c2ce31e3fb38bee",
+      "entry_hash": "b8f614d83a337ce36c9e046bb9b1c8121030df570374db1a1fb48fd665f9e731",
+      "protected_tokens": []
+    },
+    {
+      "id": "APT:NewWOTRIntroHeading",
+      "source": "NEW FEATURES",
+      "source_hash": "00271f16bfcd19fe41067d9d7a8825566168fd22043aeaf540afbaa2d87d8fe6",
+      "entry_hash": "6d46c12246d26449b3754be150e78b92bdacec57b64df79a23d916071e93bb14",
+      "protected_tokens": []
+    },
+    {
+      "id": "APT:NewWOTRIntroText",
+      "source": "Welcome to the updated War of the Ring mode. The strategy game of conquest and confrontation across Middle-earth now contains the following new features:",
+      "source_hash": "d66e81bf0c049e76d56840476487b810d7e0651eddff9f5b0e632d554528d55f",
+      "entry_hash": "fb551ca013fe0061afd6dfd0bad52fb976e371d5c323f59b62accf2519476ca1",
+      "protected_tokens": []
+    },
+    {
+      "id": "APT:NewWOTRFeature1",
+      "source": "Two Historical Scenarios",
+      "source_hash": "8b95e27eac7caf37657f7bc7d1f27ae92071e9d7c23dd74fd7feadddf2a7b87d",
+      "entry_hash": "80bb75b96b624c38f20dce3fde6b508d0a3c9b3b6a5ecd98560d97d53d5f856a",
+      "protected_tokens": []
+    },
+    {
+      "id": "APT:NewWOTRFeature1Desc",
+      "source": "Wage campaigns from the Lord of the Rings trilogy.",
+      "source_hash": "878e458133b0430516b5852ecf34843de0453dc4b0c247a09764c7dc870974e8",
+      "entry_hash": "6cf2ed837bce3abaf64d7b29467054cf903194a544ce435c90223cabb552b08e",
+      "protected_tokens": []
+    },
+    {
+      "id": "APT:NewWOTRFeature2",
+      "source": "Persistent Units",
+      "source_hash": "34e48198572913e72452c52199662cdca6d6ce386bcaecf65bc4d0a95ac177dd",
+      "entry_hash": "1611a3c32f4c6af811e6d139e8f213593d264e98f4d5797fb646829523e74b12",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "a3a6e0452b685d3a6082244f0ce2c648012cebc0d766991ca0a272783c5a31b4"
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "557812f42e104dbf832ca5d3c7e53f36",
+  "worker": "rotwk-run3-1",
+  "translations": [
+    {
+      "id": "RW:Balrog",
+      "translation": ""
+    },
+    {
+      "id": "RW:RecruitBalrog",
+      "translation": ""
+    },
+    {
+      "id": "RW:Galadriel",
+      "translation": ""
+    },
+    {
+      "id": "RW:RecruitGaladriel",
+      "translation": ""
+    },
+    {
+      "id": "RW:SauronLabel",
+      "translation": ""
+    },
+    {
+      "id": "RW:RecruitSauron",
+      "translation": ""
+    },
+    {
+      "id": "RW:NewDevastation",
+      "translation": ""
+    },
+    {
+      "id": "RW:ComeToMe",
+      "translation": ""
+    },
+    {
+      "id": "Describe:ComeToMe",
+      "translation": ""
+    },
+    {
+      "id": "RW:FireWave",
+      "translation": ""
+    },
+    {
+      "id": "Describe:FireWave",
+      "translation": ""
+    },
+    {
+      "id": "RW:BarbedArrows",
+      "translation": ""
+    },
+    {
+      "id": "Describe:BarbedArrows",
+      "translation": ""
+    },
+    {
+      "id": "Describe:ElvenCloakThranduil",
+      "translation": ""
+    },
+    {
+      "id": "Describe:WildWalk",
+      "translation": ""
+    },
+    {
+      "id": "Describe:ThornofVengeance",
+      "translation": ""
+    },
+    {
+      "id": "RW:GoldenArrows",
+      "translation": ""
+    },
+    {
+      "id": "Describe:GoldenArrows",
+      "translation": ""
+    },
+    {
+      "id": "Describe:Elendil",
+      "translation": ""
+    },
+    {
+      "id": "Describe:BladeMaster",
+      "translation": ""
+    }
+  ]
+}

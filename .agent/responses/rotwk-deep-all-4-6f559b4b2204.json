@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "6f559b4b220449c3a73a59ba1afdeb91",
+  "worker": "rotwk-deep-all-4",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenHeavyArmorPurchased",
+      "translation": "Permite a los batallones comprar la mejora de Armadura Élfica \\n Cuando se equipa, reduce significativamente la cantidad de daño recibido \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenHeavyArmorPurchased",
+      "translation": "Mejora este batallón con Armadura Élfica \\n Reduce significativamente la cantidad de daño recibido \\n \\n Tiempo de mejora: 10s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeRohirrimShieldsPurchased",
+      "translation": "Equipa este batallón con Escudos de Rohirrim \\n Reduce ligeramente la cantidad de daño recibido \\n \\n Tiempo de mejora: 10s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressEnchantedAnvilPurchased",
+      "translation": "Reduce el costo de las mejoras de unidades élficas: \\n 1 fortaleza con Yunque = 17% más barato \\n 2 fortalezas con Yunque = 21% más barato \\n 3 fortalezas con Yunque = 25% más barato \\n 4 fortalezas con Yunque = 29% más barato \\n 5 fortalezas con Yunque = 33% más barato \\n \\n Tiempo de mejora: 15s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressBlessedMistPurchased",
+      "translation": "Los aliados cercanos quedan camuflados \\n Tipo de modificador: Penalización pasiva \\n Las unidades enemigas cercanas sufren -20% de Daño y -20% de Armadura \\n No se acumula con otras Penalizaciones \\n Radio: 300 \\n \\n Tiempo de mejora: 15s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressCrystalMoatPurchased",
+      "translation": "Reduce la vulnerabilidad cuerpo a cuerpo de la Fortaleza \\n \\n Tiempo de mejora: 15s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressMysticFountainsPurchased",
+      "translation": "Cura rápidamente a los aliados cercanos y reabastece los batallones de unidades \\n No se acumula con otras estructuras de curación \\n Los héroes reviven un 15% más rápido en esta Fortaleza \\n Ritmo de curación: 6% /2s \\n Radio: 300 \\n \\n Tiempo de mejora: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressEaglesNestPurchased",
+      "translation": "Permite invocar un Águila Gigante \\n Proporciona curación para las Águilas Gigantes \\n Se acumula con la autocuración \\n Ritmo de curación: 1.8% /2s \\n Radio: 300 \\n \\n Tiempo de mejora: 20s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenMithrilMailPurchased",
+      "translation": "Permite a los batallones y a los Demoledores comprar la mejora de Cota de Mithril \\n Cuando se equipa, reduce significativamente la cantidad de daño recibido \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenMithrilMailPurchased",
+      "translation": "Mejora este batallón con Cota de Mithril \\n Reduce significativamente la cantidad de daño recibido \\n \\n Tiempo de mejora: 10s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenFlamingShotPurchased",
+      "translation": "Permite a las catapultas comprar la mejora de Disparo Flameante \\n Cuando se equipa, aumenta significativamente el daño causado por las Catapultas \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFlamingShotPurchased",
+      "translation": "Mejora esta Catapulta de las Colinas de Hierro con Disparos Flameantes \\n Cuando se equipa, aumenta significativamente el daño de la Catapulta \\n \\n Tiempo de mejora: 10s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenSiegeHammerPurchased",
+      "translation": "Mejora este batallón con Martillos de Asedio \\n Aumenta ligeramente el daño causado a las unidades y permite daño en área \\n Aumenta significativamente el daño causado a las Estructuras \\n No se puede combinar con Hojas Forjadas \\n \\n Tiempo de mejora: 10s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenForgedBladesPurchased",
+      "translation": "Mejora este batallón con Hojas Forjadas \\n Aumenta el daño causado por las Armas Cuerpo a Cuerpo y las Hachas Lanzadas \\n No se puede combinar con Martillos de Asedio \\n \\n Tiempo de mejora: 10s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenForgedBladesPurchased",
+      "translation": "Permite a los batallones comprar la mejora de Hojas Forjadas \\n Cuando se equipa, aumenta el daño causado por las Armas Cuerpo a Cuerpo y las Hachas Lanzadas \\n No se puede combinar con Martillos de Asedio \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyRohanFireArrowsPurchased",
+      "translation": "Permite a los batallones de arqueros comprar la mejora de Flechas de Fuego \\n Cuando se equipa, aumenta significativamente el daño causado por las Flechas \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenBasicTrainingPurchased",
+      "translation": "Permite a los batallones comprar la mejora de Portaestandarte \\n Aumenta un batallón al Nivel 2 \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenTrainingPurchased",
+      "translation": "Aumenta este batallón al Nivel 2 \\n Solo se puede equipar en el Nivel 1 \\n \\n Tiempo de mejora: 10s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressBannersPurchased",
+      "translation": "Tipo de modificador: Liderazgo \\n Los aliados cerca de la Fortaleza ganan +25% de Daño, +25% de Armadura y ganan Experiencia un 50% más rápido \\n Se acumula con Potenciadores y Hechizos \\n\\nReduce el costo de los Héroes en un 10% \\n Reduce el tiempo de reclutamiento de los Héroes en un 10% \\n Reduce el costo de los constructores en un 20% \\n Radio: 300 \\n \\n Tiempo de mejora: 15s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressSiegeKegsPurchased",
+      "translation": "Cura rápidamente a los aliados cercanos y rellena los batallones de unidades \\n No se acumula con otras estructuras de curación \\n Añade 1000 de salud a la Fortaleza \\n Ritmo de curación: 6% /2s \\n Radio: 300 \\n \\n Tiempo de mejora: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressOilCasksPurchased",
+      "translation": "Permite a la Fortaleza lanzar barriles de aceite explosivo para dañar a los enemigos cercanos \\n \\n Tiempo de mejora: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeSentryTowerForgedBladesPurchased",
+      "translation": "Mejora esta Torre de Batalla con Hojas Forjadas \\n Aumenta el daño causado por las Hachas \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardBasicTrainingPurchased",
+      "translation": "Permite a las hordas comprar la mejora de Portaestandarte \\n Aumenta una horda al Nivel 2 \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardBasicTrainingPurchased",
+      "translation": "Aumenta esta horda al Nivel 2 \\n Solo se puede equipar en el Nivel 1 \\n \\n Tiempo de mejora: 10s \\n \\n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardForgedBladesPurchased",
+      "translation": "Permite a las hordas comprar la mejora de Hojas Forjadas \\n Cuando se equipa, aumenta el daño causado por las Armas Cuerpo a Cuerpo \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido comprada"
+    }
+  ]
+}

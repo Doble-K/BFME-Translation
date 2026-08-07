@@ -1,0 +1,203 @@
+{
+  "schema_version": 3,
+  "batch_id": "6b89471aafcb45cbb2ab6aa45266691c",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T20:18:31.863583+00:00",
+  "lease_expires_at": "2026-08-06T02:18:31.862444+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-6b89471aafcb.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPPlateauofGorgoroth",
+      "source": "Plateau of Gorgoroth",
+      "source_hash": "5e11d83075397ef0bf8b495c3101913b783052390db7265106c66db703230132",
+      "entry_hash": "4895d2eb00c47cf42f40ef27c043ef7cb38068284bfc073aceadb2e1339db8aa",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPPlateauofGorgoroth/Desc",
+      "source": "A deadly, barren region covered in ash and fumes \\n\\n Size: 500 x 500 \\n Neutral structures: 2x Signal Fire",
+      "source_hash": "09433c65f384e0f3729074ff45ec82e2fef21540f846fa6722b1aae58dffbc93",
+      "entry_hash": "53fe606d639626db419551a4f5580971294d44ae7e9cc7b0ca8d69cba0c58748",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPSirannon",
+      "source": "Sirannon",
+      "source_hash": "c767ab44cade9bf4c831dbd8d6cbecade3534c328b74b5953f33f0f3179e59f2",
+      "entry_hash": "ac55a0c55f0e670c4ba54aa7b3f82876466a6b88442460c690e4bb5f08134977",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPSirannon/Desc",
+      "source": "This once tumultuous river flows from the Gates of Durin to Ost-in-Edhil, the ruined elf city of Eregion. \\n\\n Size: 350 x 350 \\n Lairs: 2x Troll Lair, 2x War Lair \\n Neutral Structures: 1x Inn",
+      "source_hash": "f2a4ab7dd80b4ec7dce6ba9e7486838d5d324d7664579c493cd875541d54974c",
+      "entry_hash": "7d0dea043ea09ce6176fcea5b87483c15d8f0765c5860b530eb3bf6c3cfe656b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPFirienDale",
+      "source": "Firien Dale",
+      "source_hash": "edc6bbc3241caf4eff6d8aa6f6664402dff9f87df264174c06df9574e64080e1",
+      "entry_hash": "4f088be55d7f3462bab545da861401f95aacf76b32e9ace5b111b29db64e132d",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPFirienDale/Desc",
+      "source": "A deep cleft separating the Halifirien hill from its spur of the White Mountains, the source of the Mering Stream. \\n\\n Size: 410 x 315 \\n Neutral Structures: 2x Inn",
+      "source_hash": "8710220e3d144f3b864c39299ba1c7c59e8b6a22c1cfed64d76b48c71d00dd4f",
+      "entry_hash": "5d3b0e431077ea2afa4594b6a45856135ec1d76e8c0c80748214b964bf4b7dcd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPMeringStream",
+      "source": "Mering Stream",
+      "source_hash": "aefe4eecb56824d53949c5f75b189128e3fea80193b91f0159ecff160f4b2670",
+      "entry_hash": "44d32826f4337812c8f7291abefc6f914dcf499a38a33f5f02d137593715c54e",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPMeringStream/Desc",
+      "source": "The Mering Stream was known for being one of borders between the kingdoms of Gondor and Rohan. The stream rises in the Firien-Dale, flows through the Firien wood and bends eastward through the marshes of the Fenmarch. \\n\\n Size: 380 x 340 \\n Lairs: 2x Troll Lair, 2x Warg Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "cb332fbc05899876b17ba646576aa1dcc641dad9181197940f5b9106a7617f92",
+      "entry_hash": "9b443d6c08e3234ce36f959615c2d3a432ae37348a97607c63b88d78352c0367",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPSouthHollin",
+      "source": "South Hollin",
+      "source_hash": "828390c42d1b86a89368389cce60411d875236eebf908e553c5d30c727056222",
+      "entry_hash": "87bd3b90a9f34f701d5263eac36ab3479d3e1c3936a97ce924d9c34b57b755b9",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPSouthHollin/desc",
+      "source": "Hollin was a realm of the Noldor in Eriador during the Second Age, located near the Walls of Moria, under the shadow of the Misty Mountains. It was the only lasting Noldorin realm outside Lindon. \\n\\n Size: 500 x 460 \\n Lairs: 2x Warg Lair, 4x Goblin Lair \\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "9430b80dfed82b2f14004d916605131f3169620a72311eabff7e6b0382b4a83d",
+      "entry_hash": "857778f54e9318cc782d9a381dd97f1c677908f70b4f65899195ae93b94f51c7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPBamfurlong",
+      "source": "Bamfurlong",
+      "source_hash": "520a65ed17c314b174a247bac2a704447d318b967ce9df1e5745aa555a188a34",
+      "entry_hash": "a5a442d6c587ec32335229ca647fa031a755508fbe482b0ff786c0491f0b3b57",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPBamfurlong/Desc",
+      "source": "Bamfurlong was a farm in the boggy region of the Marish in the eastern Shire. It was the home of Farmer Maggot, who lived above ground rather than in a traditional Hobbit-hole. \\n\\n Size: 352 x 352 \\n Lairs: 2x Troll Lair, 4x Warg Lair",
+      "source_hash": "c93360d04db37758f108e04b58e74c352126baf89ff96a892bc3134a6da93463",
+      "entry_hash": "8516596498bbddafed91511d2891940ef502bdb4c823f24bf13bbd53f9533d4b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPCanyonsofKhand",
+      "source": "Canyons of Khand",
+      "source_hash": "8ee830412a607cfb6bb5e5f4f39484be49a6d83b92409734159a4618b2076262",
+      "entry_hash": "8d799410134cdc4eb75da11a117880f33c53e060992ab74ee29ed03b500e43f5",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPCanyonsofKhand/Desc",
+      "source": "Khand was the name of a land which lay to the south of Mordor and the east of Near Harad. Little is known about Khand or its people, but it was said to be a dry and barren land. \\n\\n Size: 500 x 500 \\n Lairs: 2x Drake Lair \\n Neutral Structures: 2x Inn, 1x Signal Fire",
+      "source_hash": "1f2c48e9dc16ff77733b87ae0ff19e66e9b68847fbe692a912c2e7d789dccdf5",
+      "entry_hash": "ad75ba6cd935b6e42e98ad512270cf030b97467ee49fb15ab5b67be984f26e73",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPIronMountains",
+      "source": "Iron Mountains",
+      "source_hash": "dbda7de649b8a592b8c307c7868345b3960bc64781c839bc80e9573653387cfd",
+      "entry_hash": "f98f92a2739092fa5a11a396c198823b2a2b9ff740edb2063bb04476c7801809",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPIronMountains/Desc",
+      "source": "The Iron Mountains, also known as Ered Engrin and the Mountains of Iron, were an immense mountain range in the northern part of Middle-earth. \\n\\n Size: 400 x 400 \\n Lairs: 4x Warg Lair, 2x Goblin Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "6ba5bfed01e4481e8a464bbb8fbc887f29ca0d1c3b6060a386f58d90647586d0",
+      "entry_hash": "32b57079ce2a6c4e43610b81bf7b607ef71cdd69748f7f6eed78d9f8b0a96b41",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPLastBridge",
+      "source": "Last Bridge",
+      "source_hash": "b137fdc58289edf3b3de2dd904f125f706d58bb2541010c609e8cbdd6b9d1691",
+      "entry_hash": "b3e63ab9b9eaa424ecc19750c92d13724bea1c1f9fbb193fc71fd425d7a0b108",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPLastBridge/Desc",
+      "source": "The Last Bridge was an ancient stone bridge that carried the East Road over the River Hoarwell, about a hundred miles east of Weathertop and roughly the same distance west of Rivendell. \\n\\n Size: 325 x 400 \\n Lairs: 2x Troll Lair, 4x Warg Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "a0e45443491aa061131c6e821b6746952cf107cac084895dc2813b0de2295226",
+      "entry_hash": "438d4f7354fbd970c7f2600887b0abce3e14fc4b03e78344fa5470956f5132d1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPSlopesoftheLonelyMountain",
+      "source": "Slopes of the Lonely Mountain",
+      "source_hash": "c887008f0c41ef045c792223d1ff309b66610f4b069922da0109785e2f302bdb",
+      "entry_hash": "f570d8c1dcc614bd07314e3e2c72246c0d8224430a554d616a7edbcd4d47b983",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPSlopesoftheLonelyMountain/desc",
+      "source": "The Battle of the five Armies took place in this valley, located between the Lonely Mountain and Dale. \\n\\n Size: 600 x 500 \\n Lairs: 2x Troll Lair",
+      "source_hash": "4698a218ced0022c5457ab4675a3f764977d71e45a17023ee75e853451a830d5",
+      "entry_hash": "cdf48d06765c877d6b5392bb5544f7390638e346211c81aa76178cbd7634fc90",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "f0990809eeb7c0e46f6d85cd24695f198488e26e2ac0ee5f4da4a99c98468522"
+}

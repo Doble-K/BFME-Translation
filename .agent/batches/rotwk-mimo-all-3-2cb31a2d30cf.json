@@ -1,0 +1,197 @@
+{
+  "schema_version": 3,
+  "batch_id": "2cb31a2d30cf4b9e93b2ebe6b4f00b0f",
+  "worker": "rotwk-mimo-all-3",
+  "created_at": "2026-08-06T07:59:43.214676+00:00",
+  "lease_expires_at": "2026-08-06T13:59:43.213420+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-all-3-2cb31a2d30cf.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SUBTITLE:BAM9O_04",
+      "source": "But the Dunedain will not fall easily.",
+      "source_hash": "84e67d495783e3098b3ddf6e216b89332281a4ffb9b65f68127730529fbb3827",
+      "entry_hash": "c6a95416f130fde1e6ebca2f72bb605c1c92336a589d7608938253667cce18f7",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM9O_05",
+      "source": "They have gathered all of their host and all of their allies for this battle.",
+      "source_hash": "72201fcd746d926bff79bc52ce5f8d0387be9b1e7a2bce8bc2a3e18e5218f436",
+      "entry_hash": "cc7f47454a156b32565b6c59e1fef2bcfa517261d7dc61742f71e96e11649c50",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BAM9O_06",
+      "source": "The last and decisive battle for the North is about to begin....",
+      "source_hash": "96b9c16499b10d2ce9be7c6c2ebbb7bc2056ffa3993e1920ed56177e6245c71a",
+      "entry_hash": "10cd5df358ef9273a433d9b2a55337089fb8683cd678338f4fc2442f2d76369a",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC10_01",
+      "source": "The sharp spires of Mount Gundabad house several loosely allied tribes of orcs,",
+      "source_hash": "b525087fac8fd212c87e26ce45fa31767346c42d3b2fac6446faebe8fe92866c",
+      "entry_hash": "a85245f29d6fa5456808aa7baefca2834723685559a33b9a247eaff29fcab5fc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC10_02",
+      "source": "who dominate the scattered snow troll and goblin clans.",
+      "source_hash": "2a70e75f09e7de6ea28cfc19a90eea810e719b5621c0aa44381efd45a57f25d8",
+      "entry_hash": "40b4aad495e11d677f4a1560be0a95da0b7d37134513782f6313af8d567b5152",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC10_03",
+      "source": "In order for the Witch-king to defeat the realms of Arnor, he needs the blood and iron of Gundabad.",
+      "source_hash": "30b1df8413cdda6c2859486965a15ba9106b0b997feaa2318482243144edc666",
+      "entry_hash": "fb5c55119bad76e710822e8bb4d67b23d895b8c138df577b8613c3c500f24986",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC11_01",
+      "source": "But Angmar needs sword arms, not corpses.",
+      "source_hash": "190040b69b3a659ca0fb96219de6c5b2c23bd367ff8535ea5bdc1b580a137002",
+      "entry_hash": "540bb19ce7c294f7fe792aac7c10f114405b7dc25ad400d7f72d16fd227b7cee",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC11_02",
+      "source": "Therefore, he will win by guile that which force would destroy.",
+      "source_hash": "0c92067008a8934101ac770186d0956febe92156b11e9d777dd5a6ec46bc9141",
+      "entry_hash": "51ebacc2fc17f633b7e1255b1fe8417f48d5241169e957ff729db3399f97bc19",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC12_01",
+      "source": "A blade in the dark forces a gathering of the tribes to compete for the crown?",
+      "source_hash": "df3c17b1c384192bcd62af60bc3cb382bd9a8f06b9b45b30fb06ae895dee5884",
+      "entry_hash": "cd493b6b11429f5fd3fadd8b59329c0f4f5eae2d1958c9fe0399c69edd42cb8b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC13_01",
+      "source": "To this gathering, the Witch-king sends his most fearsome lieutenant, Rogash, Troll of the North,",
+      "source_hash": "e88833f3f6d5636fd505da773a42aebfa46ba8962990b70ea367134d17f26171",
+      "entry_hash": "0deaef7098060313e3acfeb740a29fedcb997083dcef736da638faaeb38ec6b7",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC13_02",
+      "source": "to ensure that the orcs of Gundabad will heed the orders of the Iron Crown?",
+      "source_hash": "fb5d1479fff9330b747bf8c7fc93ed4099b0c83b313ee9e9c62b5712e71b996e",
+      "entry_hash": "ab7520f72943bf8f6aea663e62a53b6da49e0a5628b98afe2803c82bf68dca5f",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC14_01",
+      "source": " Through the power and savagery of Rogash, Mount Gundabad has yielded.",
+      "source_hash": "b04a6e92e11482459fc5c3da89cce92e85fb3f54991c725a9bb399f383a58238",
+      "entry_hash": "631ccca0dfb2689980e4f09ecf4d845babc18e94a851b76ee945aad8de17b480",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC14_02",
+      "source": "Now, legions of orcs fight under the command of the Thrall Masters of Angmar.",
+      "source_hash": "327442d4bc1f61f81342e1e0c05afe1e36f543924e5cecba4f00d1e021fbffd7",
+      "entry_hash": "d00168e5b2830b00e2b2fbd0e5f45d2858923b2592cd20ac9e0742a0c3512505",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:CAC14_03",
+      "source": "The hammer is forged at last, ready to smite the heirs of Elendil and lay their kingdoms low?",
+      "source_hash": "dc58cf9ce14a7bd66ce1df8543a40abdea5210f63420da84664e5376eefca8d8",
+      "entry_hash": "dba869c559ec08dbe78479c6b29e00fed341776d91e245d98d29e43bb8fb5f87",
+      "protected_tokens": []
+    },
+    {
+      "id": "WOTR:TerritoryCommandCapExceeded",
+      "source": "Territory command cap exceeded",
+      "source_hash": "b2579b51f13af1edf9a750c37c9b8d22d19ccf35f87929e65c606c66abfe0e8c",
+      "entry_hash": "3304db0e405e01e31c8c6df086e0b2b281d5f51e04ae040c3c8ef0611caebb5e",
+      "protected_tokens": []
+    },
+    {
+      "id": "APT:buttonName",
+      "source": " ",
+      "source_hash": "fb013b66000c944bf28e8206176e73b33b0fe8f2755401ee703d647e9f07cc99",
+      "entry_hash": "a4671c0545449b7b5c35089950b3ed3399b2073b2191eebbb17c0e9eb9e158f5",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_MordorHaradrimRiderHorde",
+      "source": "\\nUnit Type: Basic Cavalry\\nStrong vs. Archers",
+      "source_hash": "32592767aad951ca7db5e41759e1ea982ee26e17c1efa8065bbc5e37d7b8be0a",
+      "entry_hash": "99e00fa4fcd32883305d030f903d86e3a2259b091c0800df3bb7d15f65c2946a",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "BANNERUI:IsengardWildmenAxe",
+      "source": "Wildmen Axe Throwers",
+      "source_hash": "d7b07f3e5b4b8a5f8455474ea9ddc383e60e0bc2922ced3860370f1af021edb6",
+      "entry_hash": "71dfea702eeb89b754c6425367c1debe7e2c6e0bbf7d72894f90f0f889fa313b",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:GondorEarnurHotkey",
+      "source": "&Earnur",
+      "source_hash": "91c2a8c113d7b8ab3b092e9c5b34353ff36d3367bc255754752e3a11c1d980f7",
+      "entry_hash": "2102fc409e5b6bc5bb2bd1317499b501123a315f48c168c17d05af172c7770c1",
+      "protected_tokens": [
+        "&E"
+      ]
+    },
+    {
+      "id": "OBJECT:GondorEarnurRevive",
+      "source": "Revive the fallen Hero, Earnur",
+      "source_hash": "28a2ddf9cbd27383a1550d15e90b277bd89bf6d8dd4fb7c7b925b94397d15d35",
+      "entry_hash": "6ed79293e21c5bba29ab597bcd43fd12e0e1d25148036142d84649f0f03f4f78",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:IsengardWargPack",
+      "source": "Warg Pack",
+      "source_hash": "86b170fe61cde601d380c2d165f4b7959372890c9a12c24ce676d2e5e5c3cec2",
+      "entry_hash": "a9bc5502d43a5af7d8469a3683d266bd22973734a5d9343f440c7b3ffdb73cac",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:WitchKingDescription",
+      "source": "Utterly ruthless in battle, all enemies know to fear the mighty Witch-king of Angmar.",
+      "source_hash": "969f1a72d1e72aa815fad113e4916eb5585554a49a710f59e9d6f857dc7b8141",
+      "entry_hash": "d5d51cd62b9a6e868f0c45360d1c79f24f3e1defc0c377acfc7d3040d3993372",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:LackLevel2SpiderPit",
+      "source": "Requires Level 2 Spider Pit",
+      "source_hash": "5d37e35132d24cf6e3944b006a229e4201f011603588cb01b2eddc0308be67d4",
+      "entry_hash": "b1ba35279227fee29b11073295a1ac23130c93c02d547f3ac49183f48d568f02",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:DolGuldurPrisonDescription",
+      "source": "Generates extra resources",
+      "source_hash": "4ca89a3a03252a14dd26f72f39bfb58fe29747b2323f312cba8684d7f862d3a8",
+      "entry_hash": "24a2b63e5496bc8d2490fc0083981069d9ddb6e754f0ec835301b0993718412b",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:MenBasicTrainingLackLevel2Barracks  ",
+      "source": "Requires Level 2 Barracks",
+      "source_hash": "f1cc07a519c9700b4add8778b14975dfe163436788e1ac86172c0df3e0c137f2",
+      "entry_hash": "0fd64f29ed9ea5ef97d59aa47f15913182aee8a697d86ee0266d877fb3a808b4",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "72bfc27b6a36db045c159237f4f845a06c9b7ae4109925b1b4a0ff87990700aa"
+}

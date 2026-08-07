@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "1ac5bce9d40342c18f7a5bb82e10aba0",
+  "worker": "rotwk-run2-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipMordorSummonedBarricadeStealthDetection",
+      "translation": "Detecta unidades ocultas cerca de la Barricada Invocada \\n Radio: 250 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenSentryTower",
+      "translation": "Torre defensiva que dispara flechas a las unidades enemigas cercanas \\n Puede albergar unidades a distancia para aumentar el daño infligido \\n Construir más de 2 torres aumenta el coste de construcción \\n\\n Tiempo de construcción: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBattleTower",
+      "translation": "Torre defensiva que dispara flechas a las unidades enemigas cercanas \\n Puede albergar unidades a distancia para aumentar el daño infligido \\n Construir más de 2 torres aumenta el coste de construcción \\n\\n Tiempo de construcción: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenSentryTower",
+      "translation": "Torre defensiva que dispara hachas a las unidades enemigas cercanas \\n Puede albergar unidades a distancia para aumentar el daño infligido \\n Construir más de 2 torres aumenta el coste de construcción \\n\\n Tiempo de construcción: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructAngmarSentryTower",
+      "translation": "Torre defensiva que dispara flechas a las unidades enemigas cercanas \\n Puede albergar unidades a distancia para aumentar el daño infligido \\n Construir más de 2 torres aumenta el coste de construcción \\n\\n Tiempo de construcción: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildSentryTower",
+      "translation": "Torre defensiva que dispara flechas a las unidades enemigas cercanas \\n Puede albergar unidades a distancia para aumentar el daño infligido \\n Construir más de 2 torres aumenta el coste de construcción \\n\\n Tiempo de construcción: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardBattleTower",
+      "translation": "Torre defensiva que dispara flechas a las unidades enemigas cercanas \\n Puede albergar unidades a distancia para aumentar el daño infligido \\n Construir más de 2 torres aumenta el coste de construcción \\n\\n Tiempo de construcción: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMordorBattleTower",
+      "translation": "Torre defensiva que dispara flechas a las unidades enemigas cercanas \\n Construir más de 2 torres aumenta el coste de construcción \\n\\n Tiempo de construcción: 45s"
+    },
+    {
+      "id": "OBJECT:FortressExpansionPlotDescription",
+      "translation": "Permite la construcción de varias Expansiones de Fortaleza"
+    },
+    {
+      "id": "OBJECT:ElvenBuildingFoundation",
+      "translation": "Solar de Expansión de Fortaleza"
+    },
+    {
+      "id": "OBJECT:MenBuildingFoundation",
+      "translation": "Solar de Expansión de Fortaleza"
+    },
+    {
+      "id": "OBJECT:AngmarBuildingFoundation",
+      "translation": "Solar de Expansión de Fortaleza"
+    },
+    {
+      "id": "OBJECT:DwarvenBuildingFoundation",
+      "translation": "Solar de Expansión de Fortaleza"
+    },
+    {
+      "id": "OBJECT:WildBuildingFoundation",
+      "translation": "Solar de Expansión de Fortaleza"
+    },
+    {
+      "id": "OBJECT:IsengardBuildingFoundation",
+      "translation": "Solar de Expansión de Fortaleza"
+    },
+    {
+      "id": "OBJECT:MordorBuildingFoundation",
+      "translation": "Solar de Expansión de Fortaleza"
+    },
+    {
+      "id": "CONTROLBAR:DwarvenCatapultUpgrade",
+      "translation": "Reemplazar Catapulta [&R]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDwarvenCatapultUpgrade",
+      "translation": "Reconstruye la Catapulta en la plataforma \\n\\n Tiempo de construcción: 10s"
+    },
+    {
+      "id": "CONTROLBAR:IsengardBallistaUpgrade",
+      "translation": "Reemplazar Ballista [&R]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipIsengardBallistaUpgrade",
+      "translation": "Reconstruye la Ballista en la plataforma \\n\\n Tiempo de construcción: 10s"
+    }
+  ]
+}

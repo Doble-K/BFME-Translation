@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "f5d73ae3ac33492d8c28815bf2b4bc19",
+  "worker": "rotwk-nemo-4",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildGandalf",
+      "translation": "Recluta al Mago armado con un arsenal de poderosos poderes mágicos \\n \\n Tipo de unidad: Héroe de nivel 5 \\n Tiempo de reclutamiento: 55s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:GandalfTheWhiteRecruit",
+      "translation": "Recluta al Mago armado con un arsenal de poderosos poderes mágicos \\n \\n Tipo de unidad: Héroe de nivel 5 \\n Tiempo de reclutamiento: 55s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:GandalfTheWhiteRevive",
+      "translation": "Revive al Héroe caído, Gandalf \\n \\n Tipo de unidad: Héroe de nivel 5 \\n Tiempo de resurrección: 1m x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:HaldirRecruit",
+      "translation": "Recluta al ágil defensor de Lothlórien \\n \\n Tipo de unidad: Héroe de nivel 2 \\n Tiempo de reclutamiento: 40s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:HaldirRevive",
+      "translation": "Revive al Héroe caído, Haldir \\n \\n Tipo de unidad: Héroe de nivel 2 \\n Tiempo de resurrección: 45s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ElrondRecruit",
+      "translation": "Recluta al líder de Rivendel \\n \\n Tipo de unidad: Héroe de nivel 4 \\n Tiempo de reclutamiento: 50s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ElrondRevive",
+      "translation": "Revive al Héroe caído, Elrond \\n \\n Tipo de unidad: Héroe de nivel 4 \\n Tiempo de resurrección: 55s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ArwenRecruit",
+      "translation": "Recluta a la hija de Elrond \\n \\n Tipo de unidad: Héroe de nivel 1 \\n Tiempo de reclutamiento: 35s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ArwenRevive",
+      "translation": "Revive a la Héroe caída, Arwen \\n \\n Tipo de unidad: Héroe de nivel 1 \\n Tiempo de resurrección: 40s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildThranduil",
+      "translation": "Recluta al líder de los Elfos del Bosque Negro \\n \\n Tipo de unidad: Héroe de nivel 4 \\n Tiempo de reclutamiento: 50s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ElvenThranduilRecruit",
+      "translation": "Recluta al líder de los Elfos del Bosque Negro \\n \\n Tipo de unidad: Héroe de nivel 4 \\n Tiempo de reclutamiento: 50s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ElvenThranduilRevive",
+      "translation": "Revive al Héroe caído, Thranduil \\n \\n Tipo de unidad: Héroe de nivel 4 \\n Tiempo de resurrección: 55s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGlorfindel",
+      "translation": "Recluta al Señor Elfo que porta armadura plateada \\n \\n Tipo de unidad: Héroe de nivel 2 \\n Tiempo de reclutamiento: 40s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ElvenGlorfindelRecruit",
+      "translation": "Recluta al Señor Elfo que porta armadura plateada \\n \\n Tipo de unidad: Héroe de nivel 2 \\n Tiempo de reclutamiento: 40s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ElvenGlorfindelRevive",
+      "translation": "Revive al Héroe caído, Glorfindel \\n \\n Tipo de unidad: Héroe de nivel 2 \\n Tiempo de resurrección: 45s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildLegolas",
+      "translation": "Recluta al Príncipe de los Elfos del Bosque Negro \\n \\n Tipo de unidad: Héroe de nivel 4 \\n Tiempo de reclutamiento: 50s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:RohanLegolasRecruit",
+      "translation": "Recluta al Príncipe de los Elfos del Bosque Negro \\n \\n Tipo de unidad: Héroe de nivel 4 \\n Tiempo de reclutamiento: 50s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:RohanLegolasRevive",
+      "translation": "Revive al Héroe caído, Legolas \\n \\n Tipo de unidad: Héroe de nivel 4 \\n Tiempo de resurrección: 55s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:GaladrielRevive",
+      "translation": "Revive a la Héroe caída, Galadriel \\n \\n Tipo de unidad: Héroe del Anillo \\n Tiempo de resurrección: 3m \\n Regeneración de salud: 30/s"
+    },
+    {
+      "id": "CONTROLBAR:DwarvenCaptainofDaleRecruit",
+      "translation": "Recluta a Brand, el Rey de Valle \\n \\n Tipo de unidad: Héroe de nivel 2 \\n Tiempo de reclutamiento: 40s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:DwarvenCaptainofDaleRevive",
+      "translation": "Revive al Rey Brand \\n \\n Tipo de unidad: Héroe de nivel 2 \\n Tiempo de resurrección: 45s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDain",
+      "translation": "Recluta al Rey de Erebor \\n \\n Tipo de unidad: Héroe de nivel 3 \\n Tiempo de reclutamiento: 45s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:DwarvenDainRecruit",
+      "translation": "Recluta al Rey de Erebor \\n \\n Tipo de unidad: Héroe de nivel 3 \\n Tiempo de reclutamiento: 45s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:DwarvenDainRevive",
+      "translation": "Revive al Héroe caído, el Rey Dain \\n \\n Tipo de unidad: Héroe de nivel 3 \\n Tiempo de resurrección: 50s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:GloinRecruit",
+      "translation": "Recluta al padre de Gimli \\n \\n Tipo de unidad: Héroe de nivel 2 \\n Tiempo de reclutamiento: 40s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    }
+  ]
+}

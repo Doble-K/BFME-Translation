@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "45ea6776cea34ba28fba938769eade89",
+  "worker": "rotwk-deep-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenGreenPastureLevel2Upgrade",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenGreenPastureLevel3Upgrade",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseUpgradeElvenSilverthornArrowsBattleTower",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenBasicTraining",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenHeavyArmor",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenForgedBlades",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenSilverthornArrows",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildRohanPeasant",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenPhalanxHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenZerkerHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUpgradeDwarvenBarracksLevel2",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUpgradeDwarvenBarracksLevel3",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenBasicTraining",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenAxeThrowerHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenMenOfDaleHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyRohanFireArrows",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenArcheryRangeLevel2Upgrade",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenArcheryRangeLevel3Upgrade",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenBattleWagon",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenCatapult",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenForgedBlades",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenMithrilMail",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenFlamingShot",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeSentryTowerForgedBlades",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarDarkDunedainHorde",
+      "translation": ""
+    }
+  ]
+}

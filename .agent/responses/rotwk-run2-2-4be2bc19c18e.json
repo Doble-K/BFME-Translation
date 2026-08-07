@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "4be2bc19c18e4c11a53e625e1afab909",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "Map:MAPMPTrollfells",
+      "translation": "Montes de los Trolls"
+    },
+    {
+      "id": "Map:MAPMPTrollfells/Desc",
+      "translation": "Los Montes de los Trolls, también conocidos como Las Ettenmoors, eran una región de tierras altas de Eriador, al oeste de las Montañas Nubladas. Este territorio accidentado alberga a muchas criaturas salvajes.\\n\\nTamaño: 400 x 340\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Warg\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPTwilitShores",
+      "translation": "Costas Crepusculares"
+    },
+    {
+      "id": "Map:MAPMPTwilitShores/Desc",
+      "translation": "Perdidas en los mares de Tol Eressea, se dice que las islas Crepusculares eran casi innavegables para los hombres mortales\\n\\nTamaño: 600 x 600\\nGuaridas: 2x Guarida de Draco, 2x Guarida de Troll, 2x Guarida de Espectro de Túmulo\\nEstructuras Neutrales: 2x Posada, 2x Fuego de Señales, 4x Puesto Avanzado, 6x Astillero"
+    },
+    {
+      "id": "Map:MAPMPCardolanHighlands",
+      "translation": "Tierras Altas de Cardolan"
+    },
+    {
+      "id": "Map:MAPMPCardolanHighlands/Desc",
+      "translation": "Cardolan era un reino que alguna vez formó parte del Reino Dúnedain de Arnor. Las fronteras de Cardolan se extendían desde el río Brandivino al oeste, el río Hoarwell al este y el río Greyflood al sur.\\n\\nTamaño: 378 x 378\\nGuaridas: 1x Guarida de Troll, 2x Guarida de Espectro de Túmulo, 2x Guarida de Warg\\nEstructuras Neutrales: 2x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPOldFord",
+      "translation": "Antiguo Vado"
+    },
+    {
+      "id": "Map:MAPMPOldFord/Desc",
+      "translation": "El Antiguo Vado era el punto donde el Camino del Bosque Viejo cruzaba el río Anduin, unas cuarenta millas río abajo del Carrock. En tiempos antiguos, un puente de piedra cruzaba el río aquí, pero para el final de la Tercera Edad, el puente había desaparecido hacía mucho tiempo y el cruce no era más que un simple vado.\\n\\nTamaño: 500 x 500\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Araña, 2x Guarida de Goblin, 6x Guarida de Warg\\nEstructuras Neutrales: 4x Posada, 2x Fuego de Señales, 2x Puesto Avanzado"
+    },
+    {
+      "id": "Map:MAPMPGladdenRiver",
+      "translation": "Río Gladden"
+    },
+    {
+      "id": "Map:MAPMPGladdenRiver/Desc",
+      "translation": "El Gladden, también llamado Río de Agua de Oro por los Elfos, era un corto pero importante río de los Valles del Anduin.\\n\\nTamaño: 378 x 342\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Warg\\nEstructuras Neutrales:"
+    },
+    {
+      "id": "Map:MAPMPPazghar",
+      "translation": "Pazghar"
+    },
+    {
+      "id": "Map:MAPMPPazghar/Desc",
+      "translation": "El Oasis de Pazghar, la gran ciudad del Este de Harad\\n\\nTamaño: 490 x 490\\nGuaridas: 8x Guarida de Araña, 5x Guarida de Warg\\nEstructuras Neutrales: 1x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPBrandyHillsCanyon",
+      "translation": "Cañón de las Colinas del Brandivino"
+    },
+    {
+      "id": "Map:MAPMPBrandyHillsCanyon/Desc",
+      "translation": "Esta es un área al norte de Buckland, a lo largo de los límites orientales del río Brandivino, hasta el Brandywood. La Isla de Girdley es el único punto de interés nombrado de estas colinas, aunque están salpicadas de pequeñas ruinas arnorianas. Se pueden ver jóvenes cazadores cazando osos y jabalíes que se refugian en esas ruinas.\\n\\nTamaño: 500 x 500\\nGuaridas: 1x Guarida de Espectro de Túmulo\\nEstructuras Neutrales: 1x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPWoodmenTown",
+      "translation": "Pueblo de los Leñadores"
+    },
+    {
+      "id": "Map:MAPMPWoodmenTown/Desc",
+      "translation": "El asentamiento más antiguo de los Leñadores fue fundado por el pueblo de Balthi hace mucho tiempo. Él trajo la Lámpara de la oscuridad, y la luz de la Lámpara siempre ha protegido a Pueblo de los Leñadores y a sus habitantes. El pueblo se recoge en las orillas del Río Encantado, que bloquea los ataques desde el este. Los Leñadores también usan el río para viajar de un lado a otro entre Pueblo de los Leñadores y el Salón del Bosque.\\n\\nTamaño: 404 x 404\\nGuaridas: 2x Guarida de Warg\\nEstructuras Neutrales: 1x Fuego de Señales"
+    },
+    {
+      "id": "MAP:MapMPHaradOasisii",
+      "translation": "Oasis del Sur de Harad"
+    },
+    {
+      "id": "MAP:MapMPHaradOasisii/Desc",
+      "translation": "Harad era el nombre de las inmensas tierras al sur de Gondor y Mordor. Estaba habitada por muchas tribus diferentes llamadas haradrim.\\n\\nTamaño: 500 x 500\\nGuaridas: 8x Guarida de Goblin, 4x Guarida de Troll\\nEstructuras Neutrales: 4x Puesto Avanzado"
+    },
+    {
+      "id": "Map:MAPMPAnfalas",
+      "translation": "Anfalas"
+    },
+    {
+      "id": "Map:MAPMPAnfalas/Desc",
+      "translation": "La sección costera occidental de Gondor, poblada por pequeños pueblos de pastores y pescadores.\\n\\nTamaño: 450 x 450\\nGuaridas: 4x Guarida de Warg, 2x Guarida de Troll\\nEstructuras Neutrales: 2x Posada"
+    }
+  ]
+}

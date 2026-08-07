@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "cd2c9072b1fa429ab51d0d91289975ca",
+  "worker": "rotwk-laguna-all-1",
+  "translations": [
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveText_06",
+      "translation": "Mata a los Númenorios Oscuros que vigilan en la meseta de los Trolls de la Nieve."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveText_07",
+      "translation": "Someja a los Númenorios Oscuros en las montañas, y trae los Trolls y Wargs restantes a nuestro estandarte."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveText_08",
+      "translation": "Localiza y despeja tres sitios de fortaleza."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveText_09",
+      "translation": "Evita que el contraataque de los Númenorios Oscuros destruya ninguna de tus fortalezas."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarNewObjectiveText_01",
+      "translation": "Ayuda al misterioso guerrero Troll a derrotar a sus atacantes."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarNewObjectiveText_02",
+      "translation": "Ayuda al misterioso guerrero Troll a derrotar a sus atacantes, pero perdona a los Guardabosques; pueden resultar útiles."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarNewObjectiveText_03",
+      "translation": "Cuando encontremos nuevos edificios, nuestros Constructores pueden construir más de ellos. Construye una Guarida, un Molino y una Forja de Hierro Oscuro cuando los descubramos."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarBonusObjectiveText_04",
+      "translation": "Construye una Guarida, un Molino y una Forja de Hierro Oscuro, una vez que los hayas descubierto."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarBonusObjectiveText_01",
+      "translation": "El Rey Brujo debe alcanzar el Nivel 3."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarBonusObjectiveText_02",
+      "translation": "Morgomir debe alcanzar el Nivel 3."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarBonusObjectiveText_03",
+      "translation": "Rogash debe alcanzar el Nivel 4."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveComplete_01",
+      "translation": "¡Los Númenorios Oscuros vienen a destruir nuestras fortalezas! Si alguna fortaleza cae, ¡todo está perdido! Usa tus recursos para mejorar las fortalezas y reclutar nuevas tropas para resistir el ataque."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveComplete_02",
+      "translation": "Hemos 'persuadido' a todos los Trolls del valle para que marchen con nosotros. Podemos reclutarlos en la Guarida al final del valle."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarObjectiveComplete_03",
+      "translation": "Hemos rechazado los ataques de los Númenorios Oscuros, y ahora se inclinan ante nuestra voluntad. ¡Esta es solo la primera de muchas victorias!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarBonusObjectiveComplete_01",
+      "translation": "El Rey Brujo ha alcanzado el Nivel 3."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarBonusObjectiveComplete_02",
+      "translation": "Morgomir ha alcanzado el Nivel 3."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarBonusObjectiveComplete_03",
+      "translation": "Rogash ha alcanzado el Nivel 4."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarBonusObjectiveComplete_04",
+      "translation": "¡Hemos dominado la construcción de las nuevas estructuras que descubrimos en este valle!"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_01",
+      "translation": "REY BRUXO: Patético. El Señor Oscuro escupiría sobre lo que veo ante mí.\\nAhora recordarán su causa, y sus flechas volarán hacia el corazón de Arnor, donde siempre deberían haber sido dirigidas."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_02",
+      "translation": "REY BRUXO: Troll del Norte. ¿Qué te trae a este lugar?"
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_03",
+      "translation": "ROGASH: Vienes a matar a Hombres de rostro de hierro, que viven en viejas ruinas hacia el norte, mantén a los Trolls luchando contra otros Trolls.\\nRogash reúne a los Trolls, toma oro y carne de los Hombres en tierras verdes."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_04",
+      "translation": "REY BRUXO: Tu destino está a mi lado, Rogash, no escrabulleándote por migajas. Trae a tus hermanos a mi estandarte,\\ny habrá oro para agarrar, carne para devorar, y sangre para manchar tus hojas sin fin."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_05",
+      "translation": "ROGASH: ¡Dejen de luchar YA!\\nNuevo amo habla."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_06",
+      "translation": "REY BRUXO: Los Hombres los provocan a luchar entre ustedes.\\nMas si tienen sed de la sangre de los Hombres, entonces es la sangre de los Hombres la que tendrán."
+    },
+    {
+      "id": "SCRIPT:ANGAngmarVOText_07",
+      "translation": "OFICIAL DE ANGMAR: Ahora debemos construir nuestras fortalezas. Debemos llegar a los tres sitios de construcción, y despejarlos de cualquier oposición."
+    }
+  ]
+}

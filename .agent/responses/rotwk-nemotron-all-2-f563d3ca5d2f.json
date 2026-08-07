@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "f563d3ca5d2f4041b5fb6839265a33b6",
+  "worker": "rotwk-nemotron-all-2",
+  "translations": [
+    {
+      "id": "Map:MAPMPRohanII",
+      "translation": "Rohan II"
+    },
+    {
+      "id": "Map:MAPMPRohanII/Desc",
+      "translation": "Un gran reino en la Tierra Media gobernado por el Rey Théoden. Es el hogar de los Rohirrim, los mejores jinetes de la Tierra Media.\\n\\n Tamaño: 300 x 300\\n Guaridas: 2x Guarida de Huargo, 2x Guarida de Troll\\n Estructuras neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPRohanFortifications",
+      "translation": "Fortificaciones de Rohan"
+    },
+    {
+      "id": "Map:MAPMPRohanFortifications/Desc",
+      "translation": "Rohan es una pradera habitada por los Rohirrim. Antes y durante la Batalla del Cuerno de Helm tuvieron que luchar contra los Dunlendinos, hombres emparentados con la Casa de Haleth.\\n\\n Tamaño: 360 x 380\\n Guaridas: 2x Guarida de Araña, 2x Guarida de Troll, 2x Puertas Destructibles\\n Estructuras neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPStaddle",
+      "translation": "Staddle"
+    },
+    {
+      "id": "Map:MAPMPStaddle/Desc",
+      "translation": "Una aldea en la Tierra de Bree, ubicada en el lado sureste de la Colina de Bree.\\n\\n Tamaño: 498 x 518\\n Guaridas: 4x Guarida de Huargo, 4x Guarida de Troll\\n Estructuras neutrales: 2x Posada, 2x Hoguera de Señales"
+    },
+    {
+      "id": "Map:MAPMPStonewainCanyon",
+      "translation": "Cañón Stonewain"
+    },
+    {
+      "id": "Map:MAPMPStonewainCanyon/Desc",
+      "translation": "El Cañón Stonewain es un camino que se hizo en días antiguos por los Hombres de Gondor. Théoden usó el viejo cañón como ruta para llegar a Gondor en ayuda de los Hombres de Minas Tirith.\\n\\n Tamaño: 550 x 460\\n Guaridas: 8x Guarida de Troll, 3x Guarida de Draco de Fuego\\n Estructuras neutrales: 4x Puesto Avanzado, 1x Posada, 2x Hoguera de Señales"
+    },
+    {
+      "id": "Map:MAPMPStonewainValley",
+      "translation": "Valle Stonewain"
+    },
+    {
+      "id": "Map:MAPMPStonewainValley/Desc",
+      "translation": "Este valle se hizo en los días antiguos por los Hombres como ruta desde las canteras bajo Nardol hasta Minas Anor.\\n\\n Tamaño: 550 x 250\\n Guaridas: 4x Guarida de Troll, 2x Guarida de Draco de Fuego\\n Estructuras neutrales: 2x Puesto Avanzado, 1x Hoguera de Señales"
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarna",
+      "translation": "Tumbas de Karna"
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarna/Desc",
+      "translation": "Elegidos por su fertilidad y belleza, estos oasis sirven como lugares de enterramiento para los gobernantes de Lejano Harad.\\n\\n Tamaño: 380 x 380\\n Guaridas: 4x Guarida de Goblin, 2x Guarida de Troll\\n Estructuras neutrales: 2x Posada, 1x Hoguera de Señales"
+    },
+    {
+      "id": "Map:MAPMPTyrnGorthad",
+      "translation": "Tyrn Gorthad"
+    },
+    {
+      "id": "Map:MAPMPTyrnGorthad/Desc",
+      "translation": "Más conocido como los Túmulos, los antiguos cementerios de los reyes de Arnor fueron corrompidos con espíritus malignos por el Rey Brujo.\\n\\n Tamaño: 370 x 320\\n Guaridas: 7x Guarida de Espectro de Túmulo\\n Estructuras neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPUmbar",
+      "translation": "Umbar"
+    },
+    {
+      "id": "Map:MAPMPUmbar/Desc",
+      "translation": "Este gran cabo está en manos de los Númenóreanos Negros, que desde hace tiempo han tenido rencillas con los Hombres de Gondor.\\n\\n Tamaño: 310 x 317\\n Guaridas: 2x Guarida de Araña, 2x Guarida de Espectro de Túmulo\\n Estructuras neutrales: 1x Posada, 1x Hoguera de Señales, 4x Astillero"
+    },
+    {
+      "id": "Map:MAPMPWeathertop",
+      "translation": "Weathertop"
+    },
+    {
+      "id": "Map:MAPMPWeathertop/Desc",
+      "translation": "La antigua Torre de Amon Sûl fue construida por el Reino del Norte para albergar uno de sus tres Palantíri. Destruida por los ejércitos de Angmar, ahora todo lo que queda es un anillo de piedra rota.\\n\\n Tamaño: 450 x 415\\n Guaridas: 8x Guarida de Troll\\n Estructuras neutrales: 4x Posada, 4x Torre"
+    },
+    {
+      "id": "Map:MAPMPWestfold",
+      "translation": "Westfold"
+    },
+    {
+      "id": "Map:MAPMPWestmarch",
+      "translation": "Westmarch"
+    },
+    {
+      "id": "Map:MAPMPWestmarch/Desc",
+      "translation": "Una tierra de praderas y colinas, entre las Colinas de la Torre y la Comarca.\\n\\n Tamaño: 500 x 350\\n Guaridas: 4x Guarida de Troll\\n Estructuras neutrales: 4x Posada, 1x Hoguera de Señales"
+    },
+    {
+      "id": "Map:MAPMPWildsOfForochel",
+      "translation": "Tierras Salvajes de Forochel"
+    },
+    {
+      "id": "Map:MAPMPWildsOfForochel/Desc",
+      "translation": "Una región salvaje y traicionera de Forochel apenas habitada por pequeñas tribus de Hombres del Norte.\\n\\n Tamaño: 500 x 500\\n Guaridas: 5x Guarida de Huargo, 5x Guarida de Troll\\n Estructuras neutrales: 1x Hoguera de Señales"
+    },
+    {
+      "id": "Map:MAPMPWitheredHeath",
+      "translation": "Yermo Marchito"
+    },
+    {
+      "id": "Map:MAPMPWitheredHeath/Desc",
+      "translation": "Esta región desolada en las Montañas Grises es temida por muchos como criadero de dragones.\\n\\n Tamaño: 400 x 550\\n Guaridas: 2x Guarida de Goblin, 2x Guarida de Draco de Fuego\\n Estructuras neutrales: 2x Posada, 2x Hoguera de Señales"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schema_version": 3,
+  "batch_id": "27ddf581cbcc471a8b86a1fef9350ab0",
+  "worker": "rotwk-run2-1",
+  "created_at": "2026-08-05T20:16:49.085314+00:00",
+  "lease_expires_at": "2026-08-06T02:16:49.084190+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-1-27ddf581cbcc.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPAnfalasII",
+      "source": "Anfalas Shores",
+      "source_hash": "932e11c24a93aab6bbf22066281fd79c57964d503f24362ec834d04eac2885a3",
+      "entry_hash": "019b6acc0ff23c3100b83f435cd40f06f377ecd17a4930f31b5f12834c881f52",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPAnfalasII/Desc",
+      "source": "The Anfalas, or Long Shore, also known in Westron as the Langstrand or the Strand, lay between the rivers Lefnui and Morthond, south of the Pinnath Gelin.\\n\\n Size: 360 x 390\\n Lairs: 2x Troll Lair, 2x Barrow Wight Lair\\n Neutral Structures: 1x Inn, 1x Signal Fire",
+      "source_hash": "3fddf2df4f255fe7728ff82c4a085c27f14358ba0859058695b166d16a3ec753",
+      "entry_hash": "4a2d139e4ab9362d3e581ab69162f9847ac76fc8644d93f055ec7c690059a46f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPAnorienII",
+      "source": "Upper Anorien",
+      "source_hash": "cd8241ca174f413158f06bff53a5e1e3b5219f83bd3eb99b0c24afe48c70906a",
+      "entry_hash": "b0ca217410d7c7ffbe7df40fb2e23724c310fd94bcef82df0411cf2afa535fb5",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPAnorienII/Desc",
+      "source": "A small yet open forest battlefield close to Gondor's border with Rohan.\\n\\n Size: 330 x 360\\n Lairs: 2x Warg Lair, 2x Troll Lair\\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "48370e87af51a473b5993ed242065b968e8849227624f7e9e28d5dd19d04bbb9",
+      "entry_hash": "1ee6acdb4f52cb700ad1353f5a66a2b6d7c17bb03b75a276fabf6fa4e2102eae",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPBucklandII",
+      "source": "Buckland Fields",
+      "source_hash": "02b2430325b82cb77b382dd1c0e352fd270a90a43e767cd313d396a6973c2176",
+      "entry_hash": "f60fe5b4b336df7516d0d1e7021961256570809a9ee8fb6678a0abfd919a80dd",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPBucklandII/Desc",
+      "source": "The Eastern border of the Shire was home of Merry Brandybuck.\\n\\n Size: 330 x 360\\n Lairs: 4x Barrow Wight Lair, 2x Troll Lair\\n Neutral Structures: 2x Outpost, 2x Signal Fire",
+      "source_hash": "714e5f4ee4f10ff2367e430248eb00f177c23adbdff37bbb5bef7016bbbd469b",
+      "entry_hash": "e7ca6556a29e9f3097bf04ada9269aacc5bd09de2001e1187368178ab40d891e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPRhudaurII",
+      "source": "Upper Rhudaur",
+      "source_hash": "1cec7396b17ec36e163bc3667a0eca5c1a9fe26d7e4faf8208a806b516f36f15",
+      "entry_hash": "ca72065d1018055efcc52798a2d1213f3f00c878052933334a0368a8cdc0a5a4",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPRhudaurII/Desc",
+      "source": "The rolling terrain of Rhudaur has always proved to be a ready battleground for the local hillmen and their invading enemies.\\n\\n Size: 500 x 350\\n Lairs:\\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "f9f7d2e07f25fe1ea660b8c82026f34c8024a32b30ce78d2aba9fa4c7426ccc4",
+      "entry_hash": "05ca5b0a29f8d8b8232ad3bde79ed5a1596974ca5dd323df586e34d0a64b92ae",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPIronHillsII",
+      "source": "Central Iron Hills",
+      "source_hash": "227ef0025e4fca61f200969db5a4498987c110e4b977c7524ba357c99614768d",
+      "entry_hash": "3cc332e43089d85ff30ccec2b4f086ad6f6eb654543ac6b3d591d98b76e10fa0",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPIronHillsII/Desc",
+      "source": "A mineral rich region which is the source of the River Redwater, the name given to the river for the reddish iron particles found in its water.\\n\\n Size: 600 x 535\\n Lairs: 7x Spider Lair\\n Neutral Structures: 1x Outpost, 1x Inn, 1x Signal Fire, 2x Fortress",
+      "source_hash": "f718fc6d93c3790787a03154478ef18537ce1ee96189e6e059051125fb6d4052",
+      "entry_hash": "fb46178b1bf32d9fc530790b9f60681a597eb7e6cdedb27c257f3f09ce91670e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPIronHillsIII",
+      "source": "North Iron Hills",
+      "source_hash": "7fcfe6c921269e7dd7ff3a58b727dafba9b8147cb6d703858a41b5d03a57c156",
+      "entry_hash": "432da82c621bec592c3f68a7dc45d150b32d552eb34bb67326312bff1897afa6",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPIronHillsIII/Desc",
+      "source": "A range of mountains located in northern Middle-earth. It is the realm of the Dwarves of Durin's Folk.\\n\\n Size: 498 x 398\\n Lairs: 8x Spider Lair, 2x Fire Drake Lair, 4x Destructible Environment\\n Neutral Structures: 2x Outpost, 2x Inn, 2x Signal Fire",
+      "source_hash": "96c301c1923b71d01e4949266eb7c292561ccd735705952c1604a224a5290f8e",
+      "entry_hash": "a88d9e6085daf7fda6143cc0034ebd559db61f863b2bb4481094ed2b91fa284e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPIronHillsIV",
+      "source": "Lower Iron Hills",
+      "source_hash": "fad374e6adc420f680f55bd587cfd5ee4e1546ff40d54bd7a11f7e489462fa98",
+      "entry_hash": "59783ed1bed8f7f3f62218aaaf8aec1db4ef4590a3f183b880c637b8b5f75898",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPIronHillsIV/Desc",
+      "source": "A mineral rich region which is the source of the River Redwater, the name given to the river for the reddish iron particles found in its water.\\n\\n Size: 550 x 550\\n Lairs: 4x Spider Lair, 2x Fire Drake Lair, 10x Destructible Environment\\n Neutral Structures: 4x Outpost, 2x Inn, 2x Signal Fire",
+      "source_hash": "48eefe7f0f1d487b06c831a200500b301b3a34d8c4626be87e162510c3c5b1d9",
+      "entry_hash": "9425b6813a5cbb6279c1ea7bd5f29d06fe0e9f3c89866ca9a83637e0fd9c9ac1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "MAP:MAPMPIronHillsV",
+      "source": "Iron Hills Outskirts",
+      "source_hash": "a754c9d3560cee8f18863dcb6aa6c55d118710d6146e7af5422b9fa2ef87593e",
+      "entry_hash": "767aa1f6503a8c12afd0cdf396a9c206dc35e1c9fd0d0dbc2bd0330a9295b901",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MAPMPIronHillsV/Desc",
+      "source": "These hills, rich in Iron, were long held by the Dwarves and Dain Ironfoot.\\n\\n Size: 600 x 600\\n Lairs: 8x Troll Lair\\n Neutral Structures: 1x Outpost",
+      "source_hash": "f169bdeda41904910389b6604c620b4706638451c598ec529ca3736a09a6f740",
+      "entry_hash": "41aa6aad5244ccac54d98bb88a56a6c69f0388ee108f387e44cf6c220d167287",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPMountGundabadII",
+      "source": "Central Mount Gundabad",
+      "source_hash": "2f0a08a534a70e33c951447e5d34701e39b043169a19f41b24b3159a6dbf333e",
+      "entry_hash": "546e4603b6a0413a5b891112ef696b8c1efda709516074502fa46bb3388604cb",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPMountGundabadII/Desc",
+      "source": "The icy passages of Mount Gundabad have seen countless battles between the local Orc tribes and their foes.\\n\\n Size: 500 x 500\\n Lairs: 4x Goblin Lair\\n Neutral Structures: 4x Signal Fire",
+      "source_hash": "63398aff5b5c299f4022d6a0e94578c9004f88bb528ca6c2a84594ec89b396cd",
+      "entry_hash": "d0d4ca90e5a6bcb95e69c4f63cb136483babb6ff60a98544ded5b79e80517435",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarnaII",
+      "source": "Lower Tombs of Karna",
+      "source_hash": "14458fc1b3c26a3117d9a9be268fd188ce72672f275d63c611bdcee76b4d4780",
+      "entry_hash": "35a818b6e3f8d99806a22fd4e073139be592aeb914fe6ef17f77e142a6a78854",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarnaII/Desc",
+      "source": "Chosen for their fertility and beauty, these oasis spots serve as gravesites for the rulers of Far Harad.\\n\\n Size: 360 x 380\\n Lairs: 2x Troll Lair, 2x Barrow Wight Lair\\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "a9f0ceebff2ecad8e9a090b827449fe70ffc2dcdb589b5820d1d3712704a943c",
+      "entry_hash": "c83e10cf2532704d24203f4db071063ff75cb6d86adf50e4d4e674f0c04b1f72",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "148fafa8599fcb65e55cc2bbb4f68ef962c36a89293db542f757bdabaceeedb3"
+}

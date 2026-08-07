@@ -1,0 +1,363 @@
+{
+  "schema_version": 3,
+  "batch_id": "dd133693ed4e40a2b3508486f03227a4",
+  "worker": "rotwk-mimo-loop",
+  "created_at": "2026-08-06T06:51:22.516899+00:00",
+  "lease_expires_at": "2026-08-06T12:51:22.515482+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-loop-dd133693ed4e.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipSmite",
+      "source": "Powerful ranged attack against a single target \\n Deals great damage to flying units \\n Damage: 600 (Hero) \\n Target Range: 300 \\n Recharge Time: 1m \\n Left click icon then left click on target",
+      "source_hash": "e6c7c7d6f66432779bbd4be3919fe15d8c6285564674aa0ae1e36902a470ba71",
+      "entry_hash": "48459e99f3cc390bbbacb48a5e2b1e7b5aab3006a67283a935d62e3fdd2d4e4b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDisguise",
+      "source": "Requires Level 3 \\n Disguise as a normal Rohirrim \\n Eowyn becomes stealthed when nearby Rohirrim \\n Will reveal herself and deal +200% damage to a single target with first spear strike \\n Duration: Persistent \\n Recharge Time: 30s \\n Left click to activate",
+      "source_hash": "526cc3ed4f285be48aa3c51d46c9e769637ed63e8e26b7a8d6198953931b5738",
+      "entry_hash": "3aa7a2afd495e25fb48fea6bc56df46891fcc0f526be830ba47e2eb04b30fcc6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipShieldMaiden",
+      "source": "Requires Level 5 \\n Eowyn gains +100% Armor \\n Duration: 45s \\n Recharge Time: 2m \\n Left click to activate",
+      "source_hash": "2a6926e2286b19775f383431f1bbd1930a7a26baafda2c7805895dcce86e2551",
+      "entry_hash": "00bf0a39f2d65062d98dd0010f6a451750a75a61b8dfb2ec3c23cf2fcda9f38f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipKingsFavor",
+      "source": "Requires Level 4 \\n Targeted units gain excellent Experience \\n Experience Yield: 115 XP \\n Target Radius: 150 \\n Target Range: 200 \\n Recharge Time: 2m 30s \\n Left click icon then left click on target units",
+      "source_hash": "422753cc38de62da90e66bd7babf503fb687273e30d8bcdc1e98815624197582",
+      "entry_hash": "fa937ec3ce8464e5fe287a401e544e50147bbb4aa49628ad579bb2f903207332",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGloriousCharge",
+      "source": "Requires Level 6 \\n Modifier Type: Spell \\n Theoden and nearby cavalry gain +300% Armor \\n Stacks with Leadership and Spells \\n No force can slow this charge \\n Theoden must be mounted to use ability \\n Radius: 200 \\n Duration: 20s \\n Recharge Time: 4m \\n Left click to activate",
+      "source_hash": "16e75e65b2d3651d60237df56308814a5b3a86748392ec7f94143c89b0d06492",
+      "entry_hash": "452f083fb5b65591f5c879535ff56f38731d9bfce3205d65afa48b4548daa729",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCaptainofGondor",
+      "source": "Requires Level 4 \\n Give targeted units moderate Experience \\n Experience Yield: 80 XP \\n Target Radius: 150 \\n Target Range: 200 \\n Recharge Time: 2m 30s \\n Left click icon then left click on target units",
+      "source_hash": "9f7e5af8e1fbbb0896e14acadc0248539575bd3f8a92b93c1b0e7ccf02b5cfe6",
+      "entry_hash": "245662ed0d53a8010aad5fda6a30c12debc2a032588842da379ebb68fc14fbe3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLastStand",
+      "source": "When low on health, Boromir gains +33% Armor and +33% Damage \\n Duration: Variable \\n Passive ability",
+      "source_hash": "e534f23ba92d6148ee3c1e67bdf395fd07d0e956b87019695f4ec39e303a4a1c",
+      "entry_hash": "91ee5237afa6aace5b0886843c835202d65e83e94a76d337b789bb19d29df1aa",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHornofGondor",
+      "source": "Requires Level 2 \\n Modifier Type: Passive Debuff \\n Enemy units within a large radius are briefly stunned and suffer -20% Damage and -20% Armor \\n Does not stack with other Debuffs \\n Stun effect unlocked at Level 5 \\n Debuff Radius: 350 \\n Stun Radius: 275 \\n Debuff Duration: 20s \\n Stun Duration: 5s \\n Recharge Time: 1m 15s \\n Left click to activate",
+      "source_hash": "1d03600fe7dd9801c6939791c69f091c0360ee04bd178c3ecadef0b02a97569d",
+      "entry_hash": "bf17b6a6ec3fea7c656d1765c870b62d4c37d980772ba4ce77078a72d2b6060a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCaptainofGondorBoromir",
+      "source": "Requires Level 4 \\n Give targeted units good Experience \\n Experience Yield: 90 XP \\n Target Radius: 150 \\n Target Range: 200 \\n Recharge Time: 2m 30s \\n Left click icon then left click on target units",
+      "source_hash": "2db9e0cefd42057e638f67fb08fe6c0798a488efda41c36984858eb3a3a40c43",
+      "entry_hash": "347ba4c3e8104a3136cf6e56065548b0567aa80bb9b38c749ef97f03f4e0da6b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipAthelas",
+      "source": "Gradually heals nearby friendly Heroes \\n Heal Amount: 100/s Health \\n Radius: 200 \\n Duration 10s \\n Recharge Time: 1m 30s \\n Left click to activate",
+      "source_hash": "de1004fd4008b19cc6e6485a18894521bb35c01d19d4350d54e9e5b2cb160d96",
+      "entry_hash": "66794051c95773ec6acaf0a4426660cdcb40c385fabb1e9f7caaaadae03b0127",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipBladeMaster",
+      "source": "Requires Level 2 \\n Aragorn temporarily gains +100% Damage and +100% Armor \\n Splash Damage Radius: 10 \\n Duration: 30s \\n Recharge Time: 2m \\n Left click to activate",
+      "source_hash": "69eb0c018255795a674593c02862954067616a2d3c02ab70c2e0b03e08bdbbb8",
+      "entry_hash": "f68b04ebf52500d3d8ea66958c76a9edc7361804f8229991fa8d0c5c67661414",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipElendil",
+      "source": "Requires Level 6 \\n Modifier Type: Active Debuff \\n Causes nearby enemy units to flee \\n Fleeing enemies suffer -20% Damage and -20% Armor \\n Nullifies enemy Leadership \\n Radius: 200 \\n Terror Duration: 5s \\n Debuff Duration: 20s \\n Recharge Time: 2m \\n Left click to activate",
+      "source_hash": "a863c052f957f267c51e080312cadadc17832ee9c6088da0bd823ffe824d34b4",
+      "entry_hash": "babc07c5a02efcf4b44e2a9e79b862e9461d11be9a3f36523d3a96a09e0f9ae1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipOathbreakers",
+      "source": "Requires Level 10 \\n Summons the Army of the Dead \\n Duration: 30s \\n Recharge Time: 5m \\n Left click icon then left click on pathable location",
+      "source_hash": "0fc5ad0c35087c32750d92de34319a8dd7b41e531f986b4d6ecf9b198fd0c85b",
+      "entry_hash": "fd7261621a6e51fa39fad88ab53a5e09f42d6c143d85c19578e00117e964a752",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWizardBlast",
+      "source": "Close range attack that blasts back enemies \\n Damage: 750 (Magic) \\n Splash Damage Radius: 110 \\n Target Range: 100 \\n Recharge Time: 45s \\n Left click icon then left click on target",
+      "source_hash": "a843dfde7a56801dc7eb6f2eb30e8ffbfe97545068206871049ede274ad9bc89",
+      "entry_hash": "a517a9bc6589610dd3cbf749e9ecfca68a25b3136b520185c541b225d526436c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLightningSword",
+      "source": "Requires Level 2 \\n Shoots out lightning bolts from Gandalf's sword \\n Damage: 275 (Magic) & 60 (Flame) \\n Target Radius: 120 \\n Splash Damage Radius: 15 \\n Target Range: 300 \\n Total Bolts: 11 \\n Recharge Time: 2m \\n Left click icon then left click on target",
+      "source_hash": "89b32a9824da602ae851d2d54fdee44b9966190b5bfa0db8713ed0161c5ae6d7",
+      "entry_hash": "52a8aed1f4b13cfd3ea6cdd3970c9c61d499a791ab01baca87acbc5619aad6ee",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWordofPower",
+      "source": "Requires Level 10 \\n Sends out a shockwave that kills surrounding enemies \\n Damage: 1500 (Magic) \\n Radius: 250 \\n Recharge Time: 6m \\n Left click to activate",
+      "source_hash": "29e00e29bf62af8529a2a891e99b92b8fb1def3636d700cd0fb67238cc3437d8",
+      "entry_hash": "fb2c4df8f3d5657d746483378f191052236c85f4151a58f46d2e08f83977b637",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMenLongShotAbility",
+      "source": "Requires Level 2 \\n The rangers bombard an area with a volley of arrows \\n Damage: 250 (Pierce) \\n Target Radius: 80 \\n Target Range: 1000 \\n Recharge Time: 2m \\n Left click icon then left click on target area",
+      "source_hash": "e2559f028f8c127ded22e5ff8399a9f0985b2b932249fbece14befd88e365208",
+      "entry_hash": "21c47ea33b4bb33361821da5eb0784a093f20fc3731a581f569d605fe72642f8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMenLongShotAbilitySummoned",
+      "source": "The rangers bombard an area with a volley of arrows \\n Damage: 250 (Pierce) \\n Target Radius: 80 \\n Target Range: 1000 \\n Recharge Time: 2m \\n Left click icon then left click on target area",
+      "source_hash": "6ffcc61782605f3a2c8aa98aa8809583572f3499795de56da241d048904b4730",
+      "entry_hash": "259615234fcd607dc8b58d3c0748a120d8946556a2b1ed41e17c38800d0b241a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipElvenGrace",
+      "source": "Requires Level 2 \\n Gradually heals nearby friendly Heroes \\n Heal Amount: 100/s Health \\n Radius: 200 \\n Duration 10s \\n Recharge Time: 1m 30s \\n Left click to activate",
+      "source_hash": "2b244f7f314faf746057edfddf2ee1b510f6bbdef98aa3227946cdc4529433fd",
+      "entry_hash": "3e26f272e69ebe4c8474b6b1d84b5a4edf8de696e82eb346664600f38c7611f2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPersonalFlood",
+      "source": "Requires Level 4 \\n Summons a flood that will damage enemies and put out fires \\n Level 4 Damage: 80/s (Siege) \\n Level 7 Damage: 240/s (Siege) \\n Level 10 Damage: 480/s (Siege) \\n Target Radius: 100 \\n Target Range: 150 \\n Recharge Time: 3m \\n Left click icon then left click on target",
+      "source_hash": "e9a57453977e8746beef42e1aff2754adce5ce766ccf533170ee820f43307364",
+      "entry_hash": "324ee3ec4338900462a0621dca8c92ea1eec87235f6f8fa500d8356b3806e6a3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGlorfindelBladeOfPurity ",
+      "source": "Requires Level 3 \\n Glorfindel gains \\n +100% Damage and +50% Armor \\n Can only use when dismounted \\n Splash Damage Radius: 10 \\n Duration: 30s \\n Recharge Time: 2m \\n Left click to activate",
+      "source_hash": "d0cef9e738ee6c975022b1a2983b480676b4877ca52fdd03fdb35613ed0980fe",
+      "entry_hash": "905a262c0c90c05e956b971d4c7e799063358a84c8abd9804efad329c87b9862",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGlorfindelWindRider",
+      "source": "Requires Level 6 \\n Glorfindel gains +40% Speed and +100% Armor, and glides past enemies like the wind when mounted \\n Speed: 154 \\n Duration: 30s \\n Recharge Time: 2m \\n Left click to activate",
+      "source_hash": "1a6d8b691d3b66895587f40704f8f2e3a70dd7e0fd588ca2a58d89ac89cf2a1c",
+      "entry_hash": "9d324429ce9934a3e5cc880f04049b47414aaf2a8c22fb209e5d25fd8dba54d1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipElrondAthelas",
+      "source": "Requires Level 3 \\n Gradually heals nearby friendly units \\n Heal Amount: 100/s Health \\n Radius: 200 \\n Duration 10s \\n Recharge Time: 1m 30s \\n Left click to activate",
+      "source_hash": "b77fa60c8222ae18d77274e934814071c75e7ee9e24f37237217e177a5f80822",
+      "entry_hash": "3f6f76ffb8e81732b9f25a317c859c37d4e89b2fb7c7afdd574759be2b7e95cb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipElvenCloakThranduil",
+      "source": "Allows Thranduil to stealth while standing still \\n Duration: Persistent \\n Passive ability",
+      "source_hash": "4adaecc6b972f3d6101ce600ceb9bd0ab34b9ad7d14d637cf5a6c7e45ab39034",
+      "entry_hash": "427abbb613c796e873c63da4e095b99b922e24719ce1f25f3130c66baab597b3",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipThornofVengeance",
+      "source": "Requires Level 10 \\n An extremely powerful single shot attack that deals splash damage \\n Damage: 1700 (Magic) & 2000 (Hero) \\n Splash Damage Radius: 35 \\n Target Range: 375 \\n Recharge Time: 4m \\n Left click icon then left click on target",
+      "source_hash": "a69b1ae5e7184e0dc7dd560107d1b021581687c9e92818d8b1fe7e2ead8143df",
+      "entry_hash": "2785709446a6c46aa4bd688f67cd344d65b3241c93813d352fadcc96d46943fb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "42631472c3e645a77cb63a174c1b1d465488689d969c26a18b68796941895ffe"
+}

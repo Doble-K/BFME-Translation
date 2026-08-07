@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "03012908cc554bd2a1aac05e9a947df4",
+  "worker": "rotwk-run4-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipRecruitTreebeard",
+      "translation": "Requiere Asamblea de Ents de nivel 3 \\n Recluta al líder de los Ents \\n Fuerte contra Estructuras, Espadachines y Arqueros \\n Aumenta la Velocidad y la Armadura de los Ents cercanos \\n \\n Tipo de unidad: Héroe de nivel 2 \\n Tiempo de reclutamiento: 1m \\n Regeneración de Salud: 50/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipReviveTreebeard",
+      "translation": "Requiere Asamblea de Ents de nivel 3 \\n Revive al líder de los Ents \\n Fuerte contra Estructuras, Espadachines y Arqueros \\n Aumenta la Velocidad y la Armadura de los Ents cercanos \\n \\n Tipo de unidad: Héroe de nivel 2 \\n Tiempo de revivificación: 45s x 1.075 por nivel adicional ganado \\n Regeneración de Salud: 50/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEnt",
+      "translation": "Requiere Asamblea de Ents de nivel 2 \\n Ent ofensivo de largo alcance \\n Fuerte contra Estructuras, Espadachines y Arqueros \\n \\n Tipo de unidad: Monstruo de élite \\n Tiempo de reclutamiento: 45s \\n Nivel 2: +10% Salud, +10% Daño, Regeneración de Salud: 40/s \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEntAshMelee",
+      "translation": "Ent ágil de combate cuerpo a cuerpo \\n Fuerte contra Espadachines y Caballería \\n Puede ocultarse cerca de los árboles \\n \\n Tipo de unidad: Monstruo básico \\n Tiempo de reclutamiento: 40s \\n Nivel 2: +10% Salud, +10% Daño, Regeneración de Salud: 40/s \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSummonSpiderlings",
+      "translation": "Invoca a un grupo de Arañas jóvenes con Sacos de veneno \\n Efectivas contra Espadachines, Caballería y Estructuras \\n Duración de la invocación: 1m 15s \\n Tiempo de recarga: 6m \\n Haz clic izquierdo en el ícono y luego clic izquierdo en una ubicación transitable"
+    },
+    {
+      "id": "CONTROLBAR:CreateAHeroRecruit",
+      "translation": "Recluta a tu héroe personalizado de Crea un Héroe \\n Tipo de unidad: Héroe personalizado"
+    },
+    {
+      "id": "CONTROLBAR:CreateAHeroRevive",
+      "translation": "Revive a tu héroe personalizado de Crea un Héroe \\n Tipo de unidad: Héroe personalizado"
+    },
+    {
+      "id": "CONTROLBAR:CreateAHeroHotkey",
+      "translation": "Crea un Héroe [&C]"
+    },
+    {
+      "id": "VALUE:100X",
+      "translation": "100X"
+    },
+    {
+      "id": "CONTROLBAR:ToggleBlackRiderDeltaFormation",
+      "translation": "Formación Delta [&m]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleBlackRiderLineToDeltaFormation",
+      "translation": "Los Jinetes Negros regresan a sus posiciones iniciales \\n Sin bonificación"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleBlackRiderDeltaToLineFormation",
+      "translation": "Los Jinetes Negros se despliegan en una formación amplia \\n Los miembros de la Horda ganan +10% Daño, pero sufren -10% Armadura"
+    },
+    {
+      "id": "Map:MAPMPPelennorFields",
+      "translation": "Campos del Pelennor"
+    },
+    {
+      "id": "Map:MAPMPPelennorFields/Desc",
+      "translation": "Los Campos del Pelennor son una gran llanura abierta que rodea Minas Tirith. Una de las mayores batallas de la Guerra del Anillo tuvo lugar aquí.\\n\\n Tamaño: 500 x 500\\n Guaridas: 4x Guarida de trasgos, 2x Guarida de espectros de túmulos\\n Estructuras neutrales: 4x Puesto avanzado, 2x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPPelennorFieldsOutskirts",
+      "translation": "Afueras de los Campos del Pelennor"
+    },
+    {
+      "id": "Map:MAPMPPelennorFieldsOutskirts/Desc",
+      "translation": "El punto más septentrional de los Campos del Pelennor, donde se puede encontrar una pequeña formación de colinas.\\n\\n Tamaño: 500 x 500\\n Guaridas: 4x Guarida de trolls, 4x Guarida de huargos, 2x Guarida de espectros, 2x Guarida de trasgos \\n Estructuras neutrales: 4x Puesto avanzado, 2x Fuego de señales"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorRangerHordeForGoodIthilien",
+      "translation": "Requiere Campo de tiro con arco de nivel 2 \\n Tipo de unidad: Arquero de élite \\n Fuerte contra Espadachines, Piqueros y Monstruos \\n Puede disparar descargas de flechas de largo alcance \\n Puede ocultarse cerca de los árboles"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_GondorRangerHorde",
+      "translation": "Tipo de unidad: Arquero de élite\\nFuerte contra Espadachines, Piqueros y Monstruos \\n Puede disparar descargas de flechas de largo alcance \\n Puede ocultarse cerca de los árboles\\n"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_GondorRangerHorde",
+      "translation": "\\nTipo de unidad: Arquero de élite\\nFuerte contra Espadachines, Piqueros y Monstruos \\n Puede disparar descargas de flechas de largo alcance \\n Puede ocultarse cerca de los árboles"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorRangerSummonedHorde",
+      "translation": "Tipo de unidad: Arquero de élite \\n Fuerte contra Espadachines, Piqueros y Monstruos \\n Puede disparar descargas de flechas de largo alcance \\n Puede ocultarse cerca de los árboles"
+    }
+  ]
+}

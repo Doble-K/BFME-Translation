@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "ba33e603ccfc4a508fcb7a8d88bbe4d4",
+  "worker": "rotwk-mimo-all-4",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipToggleStanceBattle",
+      "translation": "Atajo: F \\n Esta es la postura por defecto de las unidades \\n Sin bonificación \\n Las unidades adquirirán enemigos automáticamente dentro de un rango medio"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleStanceAggressive",
+      "translation": "Atajo: D \\n Espadachines: +25% Daño, -15% Armadura \\n Arqueros: +20% Daño, -15% Armadura \\n Lanceros: +25% Daño, -15% Armadura \\n Caballería: +25% Daño, -15% Armadura \\n Héroes: +10% Daño, -15% Armadura \\n Monstruos: +10% Daño, -15% Armadura \\n Asedio: +15% Alcance, +20% Alcance de Visión, -20% Armadura\\n Barcos: +10% Alcance, +15% Alcance de Visión, -15% Armadura \\n\\n Las unidades adquirirán enemigos automáticamente cuando los avistén"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleStanceHoldGround",
+      "translation": "Atajo: G \\n Espadachines: +33% Armadura, -15% Daño \\n Arqueros: +20% Armadura, -10% Daño \\n Lanceros: +25% Armadura, -15% Daño \\n Caballería: +33% Armadura, -15% Daño, -15% Velocidad \\n Héroes: +10% Armadura, -20% Daño, -10% Velocidad \\n Monstruos: +10% Armadura, -20% Daño \\n Asedio: +10% Armadura, -15% Alcance, -10% Alcance de Visión \\n Barcos: +10% Armadura, -10% Alcance, -5% Alcance de Visión \\n\\n Las unidades no adquirirán enemigos automáticamente"
+    },
+    {
+      "id": "CONTROLBAR:AngmarBlizzard",
+      "translation": "Ventisca"
+    },
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyAngmarDeathMasks",
+      "translation": "Investigar Máscaras de la Muerte"
+    },
+    {
+      "id": "CONTROLBAR:NecromancerDeathMask",
+      "translation": "Comprar Máscaras de la Muerte &M"
+    },
+    {
+      "id": "UPGRADE:AngmarDeathMasks",
+      "translation": "Máscaras de la Muerte"
+    },
+    {
+      "id": "GUI:Slaughter_Discount",
+      "translation": "Descomisionar \\n Bono %d%%"
+    },
+    {
+      "id": "MAP:MapMPRingofIsengard",
+      "translation": "Anillo de Isengard"
+    },
+    {
+      "id": "MAP:MapMPRingofIsengard/Desc",
+      "translation": "Isengard, también conocido como Angrenost, era una gran fortaleza ubicada dentro de un valle en el extremo sur de las Montañas Brumosas cerca del Paso de Rohan. En el centro del Anillo de Isengard se alzaba la torre de piedra Orthanc.\\n\\n Tamaño: 500 x 500\\n Guaridas: Ninguna\\n Estructuras Neutrales: 1x Faro de Señal (Orthanc), 4x Puesto"
+    },
+    {
+      "id": "MAP:MapMPIslesofJoy",
+      "translation": "Islas de la Alegría"
+    },
+    {
+      "id": "MAP:MapMPIslesofJoy/Desc",
+      "translation": "Un grupo de islas idílicas en el Mar de Harlindon. Se dice que traen alegría y fortuna a cualquiera que viaje a sus costas.\\n\\n Tamaño: 600 x 600\\n Guaridas: 2x Guarida de Trolls, 8x Guarida de Goblins\\n Estructuras Neutrales: 2x Posada 2x Faro de Señal, 4x Astillero"
+    },
+    {
+      "id": "MAP:MapMPSouthfarthing",
+      "translation": "Southfarthing"
+    },
+    {
+      "id": "MAP:MapMPSouthfarthing/Desc",
+      "translation": "Como una área rural, fértil y ligeramente más cálida de la Comarca, el Southfarthing fue el sitio de gran parte de la producción de Hierba de Pipa.\\n\\n Tamaño: 446 x 446\\n Guaridas: 2x Guarida de Trolls, 4x Guarida de Wargs\\n Estructuras Neutrales: 1x Posada, 2x Faro de Señal"
+    },
+    {
+      "id": "Map:MapMPFirienForest",
+      "translation": "Bosque Firien"
+    },
+    {
+      "id": "Map:MapMPFirienForest/Desc",
+      "translation": "El bosque Firien es un bosque de robles ubicado al pie de las Montañas Blancas, bordeando el Arroyo Mering y Eastfold.\\n\\n Tamaño: 420 x 399\\n Guaridas: 4x Guarida de Wargs\\n Estructuras Neutrales: 1x Faro de Señal"
+    },
+    {
+      "id": "Map:MapMPCarnenMire",
+      "translation": "Pantano de Carnen"
+    },
+    {
+      "id": "Map:MapMPCarnenMire/Desc",
+      "translation": "El río Carnen nació en las Colinas de Hierro y estaba al este de la Montaña Solitaria. Fluyó hacia el sur antes de desembocar en el río Running, que estaba a unas 250 millas númenóreas al sur. Este río, a su vez, fluyó por la tierra de Dorwinion y hacia el Mar de Rhun.\\n\\n Tamaño: 375 x 325\\n Guaridas: 2x Guarida de Dragones, 2x Guarida de Wargs, 2x Guarida de Trolls,\\n Estructuras Neutrales: 1x Faro de Señal"
+    },
+    {
+      "id": "Map:MapMPRhudaur",
+      "translation": "Colinas de Rhudaur"
+    },
+    {
+      "id": "Map:MapMPRhudaur/Desc",
+      "translation": "Rhudaur era el Reino Oriental de Arnor y estaba mayormente poblado por los nativos Hill-men. Bajo su líder Hwaldar se unieron al Rey Brujo en su guerra contra los Dunedain.\\n\\n Tamaño: 400 x 340\\n Guaridas: 2x Guarida de Trolls 2x Guarida de Wargs\\n Estructuras Neutrales: 2x Faro de Señal"
+    },
+    {
+      "id": "MAP:MapMPNurnII",
+      "translation": "Nurn"
+    },
+    {
+      "id": "MAP:MapMPNurnII/Desc",
+      "translation": "Las tierras del sur de Mordor que rodean un gran mar interior.\\n\\n Tamaño: 500 x 500\\n Guaridas: 8x Guarida de Trolls, 4x Guarida de Goblins, 2x Guarida de Dragones\\n Estructuras Neutrales: 4x Puesto, 1x Faro de Señal, 2x Posada"
+    },
+    {
+      "id": "ToolTip:AngmarDeathMasks",
+      "translation": "Máscaras de la Muerte"
+    },
+    {
+      "id": "Color:Grey",
+      "translation": "Gris"
+    },
+    {
+      "id": "Color:White",
+      "translation": "Blanco"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "0dfd73635e7a4573927fefb7604274b1",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "MAP:MapMPEntwood",
+      "translation": "Entwood"
+    },
+    {
+      "id": "MAP:MapMPEntwood/Desc",
+      "translation": "Llamado así por los Rohirrim, el Entwood era conocido por ser la última morada de los Ents y los Huorns.\\n\\nTamaño: 600 x 530\\nGuaridas: 2x Guarida de Troll, 4x Guarida de Warg, 4x Guarida de Goblin"
+    },
+    {
+      "id": "MAP:MapMPErechIII",
+      "translation": "Erech III"
+    },
+    {
+      "id": "MAP:MapMPErechIII/Desc",
+      "translation": "Una llanura en las Tierras Exteriores de Gondor que se extendía contra las Montañas Blancas, cerca del Valle Blackroot.\\n\\nTamaño: 390 x 355\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Araña, 2x Guarida de Warg, 2x Guarida de Goblin"
+    },
+    {
+      "id": "Map:MAPMPErynRhun",
+      "translation": "Eryn Rhun"
+    },
+    {
+      "id": "Map:MAPMPErynRhun/Desc",
+      "translation": "Eryn Rhun significa Bosque Oriental, usado para referirse a la misteriosa región boscosa al este del mar de Rhun, irrigada por las desembocaduras de los ríos de las Montañas Rojas.\\n\\nTamaño: 432 x 432\\nGuaridas: 4x Guarida de Troll Neutral Structures: 1x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPLossarnach",
+      "translation": "Lossarnach"
+    },
+    {
+      "id": "Map:MAPMPLossarnach/Desc",
+      "translation": "Lossarnach, también llamado Valle de las Flores, era una región fértil y un feudo en el sur de Gondor. Ubicada al suroeste de Minas Tirith y directamente al este de Lebennin, estaba poblada por muchos refugiados de Ithilien y Osgiliath.\\n\\nTamaño: 370 x 337\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Warg, 2x Guarida de Goblin"
+    },
+    {
+      "id": "Map:MAPMPWestEmnet",
+      "translation": "Emnet del Oeste"
+    },
+    {
+      "id": "Map:MAPMPWestEmnet/Desc",
+      "translation": "Tierras cubiertas de hierba de Rohan, situadas entre el Entaguas y el río Isen.\\n\\nTamaño: 313 x 385\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Warg, 2x Guarida de Goblin\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPAmonHen",
+      "translation": "Amon Hen"
+    },
+    {
+      "id": "Map:MAPMPAmonHen/Desc",
+      "translation": "Una colina en las Emyn Muil, al oeste de Nen Hithoel. En su cima se encontraba el Asiento de la Vista, una estructura en ruinas a finales de la Tercera Edad.\\n\\nTamaño: 390 x 415\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Warg\\nEstructuras Neutrales: 2x Posada, 2x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPChetwood",
+      "translation": "Bosque Chet"
+    },
+    {
+      "id": "Map:MAPMPChetwood/Desc",
+      "translation": "Este bosque situado al este de Bree estaba bordeado por las marismas de Midgewater al este y el Gran Camino del Este al sur. Aragorn guio a los hobbits a través de este bosque en su camino a Rivendel.\\n\\nTamaño: 360 x 325\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Warg\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPColdfells",
+      "translation": "Montes Fríos"
+    },
+    {
+      "id": "Map:MAPMPColdfells/Desc",
+      "translation": "Antaño parte del reino de Rhudaur, estas colinas son ahora salvajes y peligrosas. Muchos trolls acechan en la zona.\\n\\nTamaño: 450 x 450\\nGuaridas: Troll x5\\nEstructuras Neutrales: 1x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPDimrilldale",
+      "translation": "Valle de Dimrill"
+    },
+    {
+      "id": "Map:MAPMPDimrilldale/Desc",
+      "translation": "Este valle al este de Moria fue el campo de batalla final de la Guerra de los Enanos y los Orcos.\\n\\nTamaño: 420 x 350\\nGuaridas: 2x Guarida de Goblin"
+    },
+    {
+      "id": "Map:MAPMPEredlithui",
+      "translation": "Ered Lithui"
+    },
+    {
+      "id": "Map:MAPMPEredlithui/Desc",
+      "translation": "Las Ered Lithui, o Montañas de Ceniza, forman la frontera norte de Mordor. El camino que corre hacia el este a lo largo de ellas es usado exclusivamente por los Hombres del Este leales al Gran Ojo.\\n\\nTamaño: 420 x 375\\nGuaridas: 2x Guarida de Goblin"
+    }
+  ]
+}

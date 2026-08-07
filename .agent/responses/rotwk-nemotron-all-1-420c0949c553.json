@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "420c0949c553486baf30e1f42a6f444d",
+  "worker": "rotwk-nemotron-all-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:DwarvenCaptainofDale",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:DwarvenCaptainofDaleHotkey",
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:DwarvenCaptainofDale",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildWildTreasureTroveLevel3Upgrade",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityDwarvenDemolisherDeploy",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:EnableCEContents",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:DaleBeastSlayerArrow",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorHaradrimHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorHaradrimArcherHorde_Inn  ",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorArcher",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenMenOfDaleInnHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_GoblinArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_GoblinArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildCorsairShip",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEvilShip",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGoodShip",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildArnorRangerHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildArnorRangerHordeForGoodIthilien",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ArnorArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ArnorArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ArnorRangerHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ArnorRangerHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_GondorArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_GondorArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ElvenLorienArcherHorde",
+      "translation": ""
+    }
+  ]
+}

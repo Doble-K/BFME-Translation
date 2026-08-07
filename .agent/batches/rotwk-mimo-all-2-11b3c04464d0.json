@@ -1,0 +1,219 @@
+{
+  "schema_version": 3,
+  "batch_id": "11b3c04464d04faeb836a9e44b8e72ee",
+  "worker": "rotwk-mimo-all-2",
+  "created_at": "2026-08-06T07:59:37.318279+00:00",
+  "lease_expires_at": "2026-08-06T13:59:37.316982+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-all-2-11b3c04464d0.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "TOOLTIP:ArnorBasicTrainingLackLevel2Barracks  ",
+      "source": "Requires Level 2 Barracks",
+      "source_hash": "fa2e216d0fe36bc7e7b2022dcd97d919513e6a638681f59921ee20a54b22f633",
+      "entry_hash": "62fd4c919909e4a4bca9a048f1c43f30468e0b1f03312ad78579b5fc094f318f",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPGreyMountains6p",
+      "source": "Grey Mountains",
+      "source_hash": "13381bdd5ea3c7c0380b2377216e384206023062bb02035520d6c0f2d09c6459",
+      "entry_hash": "073b4821218458e595b8a5e46de867598d96057e83cb9ce2f09cce3eb2657ee4",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPGreyMountains6p/Desc",
+      "source": "A northern range of mountains where Goblins and Dwarves have battled for many ages.",
+      "source_hash": "9446428160f52ccf7931c1d781b245dba465b59b0a901bf78c82b0854f401a08",
+      "entry_hash": "d001c96b877a346f66d192b239c0818c87cf390a3b65b0bfced93a3e199a9869",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWitchKingLeadership",
+      "source": "Requires Level 4 \\n Allies near the Witch-King gain \\n +33% Damage, +33% Armor, \\n and earn Experience 50% faster\\n Passive ability",
+      "source_hash": "1ea5fd32bcc7f779631242d079322a338b05ec647594e3640a257248a379e6c9",
+      "entry_hash": "9afa40af6ffbee56c5ce5f9a71456b36a60db9eaf53348ee4a575fb0ff43dfde",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "GUI:LobbyRoom7",
+      "source": "BT2DC ClanWars",
+      "source_hash": "aa9ac6f09c282f54001c023ed1f3c78ce01564e80833c3e5f92df5e2b05f6ee3",
+      "entry_hash": "5def7b17e320124832b41e2c29351e92177dba5ae5f977657eeb54cd2987e979",
+      "protected_tokens": []
+    },
+    {
+      "id": "CLAN:ErrorClanMaxFourPlayers",
+      "source": "To play a clan match with over four players, you must uncheck the Clan Game box and file an Auto Report on Clanwars.cc after the game has been completed.",
+      "source_hash": "4d84dec7c9da0ba01c39e0705ae04fe6cf6cb532166142fea606b50e8611cf68",
+      "entry_hash": "85fc17f6285435d7d3f2059a862bb4af245aed66896b36e641df55db44faff65",
+      "protected_tokens": []
+    },
+    {
+      "id": "GUI:OlderReplayVersion",
+      "source": "This replay was probably created by a non-English game. However, it might have been played on a different patch, in which case it will not work properly.  Continue to load?",
+      "source_hash": "3c7c118d2e95840e8bd557a13abfb20270485399951d61fe8affedf44d1eb5ff",
+      "entry_hash": "484fdf633e791a470d16a2c31a47cbda1b338e8a875a5d91244cc143e6f77136",
+      "protected_tokens": []
+    },
+    {
+      "id": "APT:OlderReplayVersion",
+      "source": "This replay was probably created by a non-English game. However, it might have been played on a different patch, in which case it will not work properly.  Continue to load?",
+      "source_hash": "67cebd58a99183b9002d08aaee1170cc6d8799955b469d896331137f53349485",
+      "entry_hash": "e2225d09e4721eeff4eb6ed657f03a6e3bb7259eaede8d47ffcd49575e7c7179",
+      "protected_tokens": []
+    },
+    {
+      "id": "STRATEGICHUD:TreasuryWarningPopUpMessage",
+      "source": "If you continue, the new units you have built in the RTS game will exhaust your Treasury when they are added to the map. You will not be able to build any new units or buildings on the map (including Farms) until your Treasury is no longer empty.\\n\\nYou might want to cancel and disband some more units, if you can. (Heroes cannot be disbanded.)",
+      "source_hash": "2bcb8374f38be3311975a33f0d8215c3ce6d669e99c271bc8e6060a6600b7698",
+      "entry_hash": "83c92c77e545b64f3f416ac28884438c2837ba9cf2aacc9fe4e72c5fbd4f89eb",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "GUI:HostLeft",
+      "source": "The host has left the game but The Battle for Middle-earth will continue",
+      "source_hash": "1426b9eaf51ce814a0cb4182f352c23c48733db1fb3ae5797ad2473ea2db6344",
+      "entry_hash": "dcb70b6701f13641a9d2bfc5a45a4193f3f95a071ac4969fd7fd334387b6d85d",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PorterExtinguishFire",
+      "source": "Extinguish Fire",
+      "source_hash": "af64a01516229664f40a7f76151a075e324f6bd8b313e11efe2a6a9ba231b290",
+      "entry_hash": "54254c7919ee858f9902154399bf94e1bf047fe913a1625c992dbe6a04c3f0bb",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:EvacuateAll",
+      "source": "E&vacuate All",
+      "source_hash": "3cb582929b859daa60b7d470b6dc8050516bea73d6745beb1466fc7c0501a547",
+      "entry_hash": "66b5444ebbc68596bb931ccff379473d856d98e3c41923e188a9828327e6daa7",
+      "protected_tokens": [
+        "&v"
+      ]
+    },
+    {
+      "id": "OBJECT:WargLairDescription",
+      "source": "Allows training of Warg Packs",
+      "source_hash": "7d25e5099006a7eab7703036a65dfae50ca13a5021d53b9a5c29d4dfb857832e",
+      "entry_hash": "fc4fd40b86095489ec63c14995510d487eaf1415a040a1f4d1f6fd7a6edb0c54",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ConstructFireDrake",
+      "source": "&Fire Drake",
+      "source_hash": "8417bb55299be833a4025bfc9e380675c0212c2eb450bf10f77a0ce85e82cdae",
+      "entry_hash": "7aaeaa7ef072abe1438832982306d4824ff2dea14c0dc2e63485f32f9b82dfe8",
+      "protected_tokens": [
+        "&F"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEvilBombardShip",
+      "source": "Corsair ship equipped with long range catapult\\nStrong vs. Structures",
+      "source_hash": "30b61fa5ddca4b775f434a3b7abd36073a00eba019d8be8067d0f073a2dbbc3a",
+      "entry_hash": "9939bd51e8c44a0c671bb259dd419dd684bf43bef751bfd3c0ae7c4176c8525a",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGoodBombardShip",
+      "source": "Elven ship equipped with a long range ballista\\nStrong vs. Structures",
+      "source_hash": "0de494e8057da4ac651a1b8857491f2dfdd9212a587b0a8410c5807f2defc25c",
+      "entry_hash": "09bd3777624c03d2d67760c785ece02b0210910f35db2d1d2f68f68474ef6cc1",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipEarnurLeadership",
+      "source": "Requires Level 4 \\n Allies near Earnur gain \\n +33% Damage, +33% Armor, \\n and earn Experience 50% faster\\nPassive ability",
+      "source_hash": "56207aea16f61fc10437b10e4fe5dcf0c825272c095de41459a97f42eefa57b9",
+      "entry_hash": "6f7a3a0904ec3a4d8385e25a5a1d38fa1e84b2e37859850432d5dcfe453be49f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleTowerGuardPorcupineToLineFormation",
+      "source": "The units return to standard line formation",
+      "source_hash": "97c9b98ebcea0e30e844a4282f83495accdd75aaf03b7b3e604e72235c8bd6fd",
+      "entry_hash": "712fb5e7ebab841fd624ecb79b01d9f6f5321aaf4bcc63c47bfdd9ad88d03b84",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:SpecialAbilityWyrmReposition",
+      "source": "&Reposition",
+      "source_hash": "1ed76e237593fc70a236e36435bde5678a19e779e84f7c66c3aaad9f8e0e0106",
+      "entry_hash": "48981ea1d79585d718997a924abf7c66b00ec683871842157c82daed075bb482",
+      "protected_tokens": [
+        "&R"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackGondorBasicTraining",
+      "source": "Research upgrade at Blacksmith to enable this equipment \\n When equipped, increases this battalion to Level 2 \\n \\n Upgrade Time: 10s",
+      "source_hash": "246fb05328f1aafc5b505a8b082114b68af3e333ebed1828c8abb64f2f01f344",
+      "entry_hash": "6c1b9ec45dbfd2b25f4240dd7b681ffeca8f42969152183984353d6ef63ed320",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:GondorFighter",
+      "source": "Gondor Soldier",
+      "source_hash": "43f817a4238114e0aa77ab32b65e31dfcff6fff2c9a91bae3bba076a1ceb368f",
+      "entry_hash": "77a2aa5b25f52de52f6a206d88df05b51abbe397bfc31d8dd969df99a657d1d6",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleGFighterBlockToLineFormation",
+      "source": "The units return to standard line formation",
+      "source_hash": "b55a9b1a64e61b6fae0889b0b9c133e243c056bae62e2074a4888f93523e6e9a",
+      "entry_hash": "ad835856fe9180ddc59bff67de5ce67f925721ff157d3ce034647256772a4f14",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:HordeGondorRanger",
+      "source": "Ithilien Rangers",
+      "source_hash": "a2b5aea594188e855cec7a7a49852d56072b56ee5de46875e3df6d7bdf2147f9",
+      "entry_hash": "499909e3a40955ce0733ecf4e02f16d8c1dc609deff41732f57e2b004d315c3a",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:DunedainRanger",
+      "source": "Dunedain Ranger",
+      "source_hash": "e32a978f5cd6b26cdc69d36222f213908b07ab5454a7cc71b102f8e6bb297452",
+      "entry_hash": "43fc3f9a9892f2a95a6706de5f4ca96746e0af93120c3476961f3cff2d25c35b",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:HordeGondorKnightsofDol",
+      "source": "Knights of Dol Amroth",
+      "source_hash": "0e76a07d58838fdec853e7ae974fccd1676fd6cf1e0dd053f76a56d2360ed953",
+      "entry_hash": "a53f709782e17c17fd451edb1a1d90d7343651f9c466d1fa1715dd3478d32b8c",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "12e14b63e764bce6be4c4adb76ab7f63c61a156f6f534aea3d3655ed2975aa39"
+}

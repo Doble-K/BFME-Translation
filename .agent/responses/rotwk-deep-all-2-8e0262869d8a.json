@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "8e0262869d8a4047a1e241ea1f524692",
+  "worker": "rotwk-deep-all-2",
+  "translations": [
+    {
+      "id": "SCRIPT:CARNDUMOPEN",
+      "translation": "OFICIAL DE ANGMAR: Señor del terror, pronto la fortaleza de Carn Dum será sitiada por el ejército de Elfos y Hombres."
+    },
+    {
+      "id": "SCRIPT:CARNDUMOPEN2",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOPEN3",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ROGASHARRIVES",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOBJECTIVE1",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOBJECTIVE2",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOBJECTIVE2PT2",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOBJECTIVE3",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUM_SECONDATTACK",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUM_THIRDATTACK",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUM_FOURTHATTACK",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GETROGASH",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ROGASHTIMER",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:RETAKEAREA",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:REBUILDAREA",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CDRETAKEOBJ",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CDREBUILDOBJ",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLOFINDELSPEEKS",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLOFINDALSPEEKS2",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLOFINDELLEAVES",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLORFINDELCLOSE",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLORFINDELARRIVES",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARN_DUM_LINDON_ELVES_ARRIVE",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLOFINDELOBJ",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLORFINDELOBJHINT",
+      "translation": ""
+    }
+  ]
+}

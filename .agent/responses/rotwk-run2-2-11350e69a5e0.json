@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "11350e69a5e04914801db0cba1d9cb56",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "Describe:Slayer",
+      "translation": "Requiere Nivel 6 \\n Gimli obtiene +50% de daño y \\n mayor velocidad de ataque y movimiento"
+    },
+    {
+      "id": "Describe:Smash",
+      "translation": "Requiere Nivel 10 \\n Provoca un terremoto alrededor de la ubicación de Gimli"
+    },
+    {
+      "id": "Describe:MorgulCorruption",
+      "translation": "Requiere Nivel 4 \\n Drena salud del enemigo objetivo y causa parálisis temporal \\n El enemigo objetivo se convertirá en un espectro al morir"
+    },
+    {
+      "id": "CONTROLBAR:ANazgulCrippleTip2",
+      "translation": "Nivel requerido: 2\\n\\nAturde a los Héroes durante 30 segundos."
+    },
+    {
+      "id": "CONTROLBAR:MorgulArrowTip",
+      "translation": "La Flecha de Morgul"
+    },
+    {
+      "id": "CONTROLBAR:MorgulArrowTip2",
+      "translation": "Nivel requerido: 4\\n\\nConvierte Unidades en no muertas en un área pequeña.\\nPuede usarse en Héroes, pero no los aturde."
+    },
+    {
+      "id": "CONTROLBAR:ANazgulBMTip",
+      "translation": "Maestro de Flechas del Nazgûl Arquero"
+    },
+    {
+      "id": "CONTROLBAR:ANazgulBMTip2",
+      "translation": "Nivel requerido: 5\\n\\n60% más de Daño, mayor radio de daño en área, 100% de Armadura, 15% de cadencia de fuego, 10% de Velocidad y resistencia al retroceso.\\nDuración: 60 segundos."
+    },
+    {
+      "id": "CONTROLBAR:ANazgulArrowRainTip",
+      "translation": "La Lluvia de Morgul"
+    },
+    {
+      "id": "CONTROLBAR:ANazgulArrowRainTip2",
+      "translation": "Nivel requerido: 6\\n\\nMúltiples flechas en el área seleccionada."
+    },
+    {
+      "id": "CONTROLBAR:ANazgulArrowVortexTip",
+      "translation": "El Vórtice de Flechas"
+    },
+    {
+      "id": "CONTROLBAR:ANazgulArrowVortexTip2",
+      "translation": "Nivel requerido: 8\\n\\nCrea un vórtice en un área mediana."
+    },
+    {
+      "id": "CONTROLBAR:ANazgulArrowWOPTip",
+      "translation": "El Vórtice de Proyectiles"
+    },
+    {
+      "id": "CONTROLBAR:ANazgulArrowWOPTip2",
+      "translation": "Nivel requerido: 10\\n\\nCrea un vórtice en un área grande."
+    },
+    {
+      "id": "CONTROLBAR:MenLoneTowerSentinels",
+      "translation": "Centinelas de la Torre [&r]"
+    },
+    {
+      "id": "CONTROLBAR:DwarvenLoneTowerSentinels",
+      "translation": "Centinelas de la Torre [&r]"
+    },
+    {
+      "id": "CONTROLBAR:LoneTowerFieldSupplies",
+      "translation": "Suministros de Campo [&F]"
+    },
+    {
+      "id": "CONTROLBAR:LoneTowerFlamingMunitions",
+      "translation": "Flechas de Fuego [&w]"
+    },
+    {
+      "id": "CONTROLBAR:LoneTowerMasterworkMunitions",
+      "translation": "Hojas Forjadas [&l]"
+    },
+    {
+      "id": "CONTROLBAR:LoneTowerNumenorStonework",
+      "translation": "Cantería Reforzada [&t]"
+    }
+  ]
+}

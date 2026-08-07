@@ -1,0 +1,196 @@
+{
+  "schema_version": 3,
+  "batch_id": "2a76e2f6c5ed41bc81b93b1b42274c93",
+  "worker": "rotwk-mimo-all-3",
+  "created_at": "2026-08-06T08:12:45.817527+00:00",
+  "lease_expires_at": "2026-08-06T14:12:45.816244+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-all-3-2a76e2f6c5ed.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SCRIPT:ANGAngmarEndCineText_03",
+      "source": "WITCH-KING: You are broken, but I will re-forge you into a blade worthy of the Iron Crown.",
+      "source_hash": "41a09226880d9b94934cfc51d7dc87f928a67521f82d3d323d60348d78770857",
+      "entry_hash": "92404a8f9f437cb9ca670eed2960663ec866cb968008ed67c375184db25bf7e5",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAngmarDebugText_12",
+      "source": "Easy Difficulty",
+      "source_hash": "4d79fabf69a80ca7d9d738a7525f89690bda9afa580cc53b2ec9989b555bc37a",
+      "entry_hash": "de9c54bd2e4b5c2a49a9f19c964f4beb5debe43c74281cb17ed8095dd2b176d0",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAngmarDebugText_13",
+      "source": "Medium Difficulty",
+      "source_hash": "7ed09737080968207dc65a2fb111f30392423c7b17695896914e530997c480f9",
+      "entry_hash": "ba6e0ed7f41e3d7b1dc4f9d54bcee31eb9a17a17b439edecb6e908fe4900effc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAngmarDebugText_14",
+      "source": "Hard Difficulty",
+      "source_hash": "ebe492095eb7441a5a4ffebb601000fab88a2a7abddd9cfc1c199db73466adea",
+      "entry_hash": "f24bf11a8ae1d6bc792d3777174ae8256a68ec7ae8277445451c3003bdd36b08",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAngmarDebugText_15",
+      "source": "NumPlayerFortresses:",
+      "source_hash": "e7a25c791e70481f2a6914adfdc1e4f31b8d7fd797c99ab1a17f35bc6e805681",
+      "entry_hash": "350c566450067e82cd99ca0900763c259db2f312855bf96e6aada56fecdcae50",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAngmarCounterattackTimer",
+      "source": "Counterattack arrives in:",
+      "source_hash": "fe96371fc1ea243d02878f33852ce506ffe6c2bebf79d56aee201b2ab7d55f9f",
+      "entry_hash": "f4bda7c9bdb0c35f0d1cb1167e91466555723f8fe091d5933a67dfdc9d09d2fb",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAngmarPlayerLostFortress",
+      "source": "The Black Numenoreans have destroyed one of our fortresses! We must flee, for all is lost!",
+      "source_hash": "62d05954b27d5ecfe9aa4aefda511fc2c774d0193bd4fe5d130c34c9e5a77401",
+      "entry_hash": "a9639b0bdda2f989b64754cb9fd5efaa22f6169593d4151e59b7f1177934973c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGAngmarWKDead",
+      "source": "The Witch-king has fallen in battle! Flee, for all is lost!",
+      "source_hash": "26e263abe9b5d3070c62d4b97ade4f31482af0b45195cea6306a5ed376c0c00b",
+      "entry_hash": "4b84dbb46a5f2f43de25a0747f92bc3a146dfdc7c67ee840179190cbfa617c27",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsIntroText_01",
+      "source": "ANGMAR OFFICER: Here, among the graves of Arnor's fathers, we must goad the Men of Cardolan\\naway from their walls and onto the field, where we can destroy them.",
+      "source_hash": "283d2d7fd5415d86dbe0da4ba221e816286a6e01af313a97575f08e789ec3854",
+      "entry_hash": "1bedf9d4a70e398b783f3d568bf09c3291f9da0b13f09fb9b908e4aeb21b0a32",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsIntroText_02",
+      "source": "ANGMAR OFFICER: The barrow of Cardolan's kings lies to the southwest. Hwaldar must stand atop it!",
+      "source_hash": "f6cdfec1a63d3eec849f15f78ff9b9bbe148fa5f7b64eb38f1a2e5b796a17507",
+      "entry_hash": "afb8c367634b2d808e42c1ab18e812844986783c671e76963c5e6a00e3c3ee81",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsIntroText_021",
+      "source": "ANGMAR OFFICER: We cannot bring our entire host at once, or the Prince may lose his nerve.\\nMore troops will arrive during the battle to help you hold the royal barrow.",
+      "source_hash": "6e329ec5d152e412a89a4d48e2d65bd5f4bad6148290f091345c093a3b45b5ac",
+      "entry_hash": "33362c093f62ccb6133ddfdfdca79e411c9f1a76fef1749d126f99d735292396",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsIntroText_03",
+      "source": "Get Hwaldar to the top of the royal barrow of Cardolan, and hold it until the Prince of Cardolan risks himself in battle.",
+      "source_hash": "0cc6e6b5be04697b30c2f2f982cb85bcc401f398f9fc0bc91325dd268e79d5e8",
+      "entry_hash": "385ee92da7056c559aa565530bfcae64a55fdaa90d32d76bf2bd344b64223c3c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsObjectiveText_01",
+      "source": "Get Hwaldar to the top of the royal barrow of Cardolan.",
+      "source_hash": "3450af35479ea4d0f2e2de51ae2e960b039446a920c4305539bff23d59ef832b",
+      "entry_hash": "4460f0abe68e2590d7e359184e4da5d9cfbf1b796d83ddaa2785205f4f860dbe",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsObjectiveText_02",
+      "source": "Repel Cardolan's initial attacks.",
+      "source_hash": "54ffe66b8a18de8e7faf23fb8fd7fa077176282692ac51bbacdd04b95512d403",
+      "entry_hash": "841073a5ddfb25d0b4b7443613e77240da4be993ce465931a00ce7ae1d13eae1",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsObjectiveText_03",
+      "source": "Defeat the Cardolani vanguard.",
+      "source_hash": "4e44b37dac7d1d8ea2913a4ef98cd84a942ce150d14103fac1292d2f5d80d3e2",
+      "entry_hash": "d72c4146ffd797dd53cec029831be9678b38812334079162fc842545d82f7de4",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsObjectiveText_04",
+      "source": "Slay the Prince of Cardolan and destroy his army.",
+      "source_hash": "8d6d0a9667824169e0e86d4ec487b7cd5e9802a2fe9dd9ebed9d6bba7182fe53",
+      "entry_hash": "ec32aebecff47fb9ecd3278a1a66ae30d0df4de4b04e95feefe37c40249b2eb9",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsObjectiveText_05",
+      "source": "Hold the royal barrow until we have goaded the Prince of Cardolan into showing himself on the Barrow-downs.",
+      "source_hash": "edcf1c6e3b0f251c7d0de5ef4702c3a374eee38adeeaa2e69aec44878e32342a",
+      "entry_hash": "ecf7f6dc726e35dbc680104aed6b9d7acfe9e917b697b6034858af29952cf7dc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsBonusObjectiveText_01",
+      "source": "Slay the Rangers of Arnor who stand watch on the barrows, to clear the way for your reinforcements.",
+      "source_hash": "5956343171dfe2cf5a9e228e6cf8232ffb75767f5f902e2be512339c6dbebf46",
+      "entry_hash": "1932a5f1bb12556e0180454ca30df856c9e29560018aca3f776c258e3cbce348",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsObjectiveComplete_01",
+      "source": "Hwaldar stands atop the royal barrow. The Men of Cardolan cannot long abide this challenge.",
+      "source_hash": "696f9fc369954c7d33463f5a18e60d5bc8e1d9283dd012bcc9a54541e3b60e8e",
+      "entry_hash": "b4ed27b7d1f1d580953e2b07f925e19e41f2eb77fbe7379a324cd8187c51f9ae",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsObjectiveComplete_02",
+      "source": "We have held the barrow against Cardolan's first pitiful attacks. Now they will send more forces to the slaughter, just as the Witch-king planned!",
+      "source_hash": "c4cb4862f0625cc317fb6b9ebe0786ecdfa7a20c7f8c0e5d724be03f2e8b9598",
+      "entry_hash": "2e8144a86826219df7f8690b36f125ba154954f45f7f63748e5161ee25b85dd5",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsObjectiveComplete_03",
+      "source": "We have held off the Cardolani vanguard! The Prince has taken up our challenge, and comes fast to the field!",
+      "source_hash": "bbfc63364eb35eac9add358717ae8705094ab4d866ac0de3cb039cc54b57f870",
+      "entry_hash": "bd6a9e7f357399e1c638a43f33af8db44472c7fef7d5eff9afaef88f1a19bf51",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsObjectiveComplete_04",
+      "source": "The Prince lies slain; all Cardolan now lies open to us!",
+      "source_hash": "99b65aa493e5ce9a27075fffbe8948a8ae1a3ee1949738d89c04e0d7aa1abd95",
+      "entry_hash": "cf4dff85b64507b532380bc9a7fa9ba25914808a6b9a9b9998a7bdcff6b5b007",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsBonusObjectiveComplete_01",
+      "source": "We have cleared out the Rangers who guarded the barrows. They will not nip at our reinforcements' heels now.",
+      "source_hash": "fe7de73fcc92424476c6529837747bda25902e2b72e226fb70db2dd6b47f9a37",
+      "entry_hash": "912f4370653c8756771419901199dcba39dafbdfefac57e90b4448d59e307198",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_01",
+      "source": "Rangers of Arnor lurk amongst the barrows, on guard against those who would plunder or desecrate their 'hallowed' ground. They will disrupt our reinforcements if we do not slay them!",
+      "source_hash": "5882640c60521ff24e6c4c8f12997b2566936277de070a29ee0e4957ecb33f70",
+      "entry_hash": "b5157d80968b89a2774d0ad0af54add03cbf6861e190fe16f591e02d6720a153",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_02",
+      "source": "Now our forces must hold the royal barrow against all attempts to retake it.",
+      "source_hash": "9b28500c54cbaac59004ad7788f9f5abe6a9ddc8c98a829490fac75c61e8487b",
+      "entry_hash": "f2423358275e7b88fcf7726a9e17c83d8a0215305d00ce9cede4445ff7fa25e4",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "02f65cf664f0b95d2b17e5af15e1cd211dc834f2ad31626c48513f04d7d4e392"
+}

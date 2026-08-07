@@ -1,0 +1,213 @@
+{
+  "schema_version": 3,
+  "batch_id": "97f8d522581044249a03dadf27ff697f",
+  "worker": "rotwk-mimo-all-4",
+  "created_at": "2026-08-06T07:55:46.157695+00:00",
+  "lease_expires_at": "2026-08-06T13:55:46.156439+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-all-4-97f8d5225810.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "BANNERUI:DwarvenPhalanx",
+      "source": "Phalanx",
+      "source_hash": "377254cebe23abd13728a71be1b680c0249d05bea1b1aaf1c05e771d50c6dd64",
+      "entry_hash": "5fdde40420938ae4d1ccb160cf4567cc1c48450f36896daafd47ec47612fcbad",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:PluralDwarvenPhalanx",
+      "source": "Phalanx",
+      "source_hash": "cd9e7cd7058bb686c6a008aa231b5cda4057c3e8e97ab66cec86a3ec8b3afb7f",
+      "entry_hash": "6b46d9978dab2b67c567c910b5e48d989fa487ee5cc870e0428986d6c3cd4a53",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenPhalanxHorde",
+      "source": "Phalanx Battalion",
+      "source_hash": "f0408aaad87b3b379ace303612efc33485ace6567d1a9167d5377263a51dd33a",
+      "entry_hash": "bd41c58cc6aaf2a707dcc5e75d05787c1443acfc3b43672e3d472fac692f1520",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenPhalanxHordePlural",
+      "source": "Phalanx Battalions",
+      "source_hash": "51fa8ef8a2563d3e4341c6e013fcaf0f3cc410aa58c429e7e6a73797e74bbaeb",
+      "entry_hash": "7c31e47a9aa5db3385f6007a3cd1738de0064e6b14bcc2daeffea47018ee8268",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_DwarvenPhalanxHorde",
+      "source": "Unit Type: Elite Pikemen\\nStrong vs. Cavalry\\n",
+      "source_hash": "bc799713dfb73ad773ed1d2cd8aa1a7c4649cd6cde925ec61ce65e10479eb80c",
+      "entry_hash": "f3a67f2066f8a4e8d9bbaa3125e5e2f2b652ae25b52093380c2f4a05011e1a3f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_DwarvenPhalanxHorde",
+      "source": "\\nUnit Type: Elite Pikemen\\nStrong vs. Cavalry",
+      "source_hash": "4a154d8e0125a415f67ccc2874fd7387613cdab199868e4737b19628b871ccdf",
+      "entry_hash": "6feaa95687a0bbe901e32d74c4a125bf9003c1f7825713502512d01f35b26491",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "BANNERUI:DwarvenZerker",
+      "source": "Dwarven Zealot",
+      "source_hash": "e000a3a55bb976218318e975ac51496dd8693d4d37944db3730d3bf082d23d83",
+      "entry_hash": "eb3a566e84ab49a5fdb81688c712fd0adb4f485181e78c13bca355bfda0bba11",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:DwarvenZerkers",
+      "source": "Dwarven Zealots",
+      "source_hash": "76dd1181cb52fb3b03865acbdac3b16a7c1375cbf2853f1c94e3027139c5fcce",
+      "entry_hash": "797fa564d3106abe6e2069a2358a6c95f0d67329d0fce5b2bfce11289c850773",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenZerkerHorde",
+      "source": "Dwarven Zealot Battalion",
+      "source_hash": "4a564230d08042a5bf13d980cad068fd47a1ebd9ac14bed99322217ae21125c8",
+      "entry_hash": "ea293eb742a2be2f665e67753f66d20c8c8e39f59ed62bfe7c5f5ab7b5a1bebd",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenZerkerHordePlural",
+      "source": "Dwarven Zealot Battalions",
+      "source_hash": "c952cf93ca5ce4d871eabbf5883ea5391b1486076fef087378fdf244aa1add91",
+      "entry_hash": "2065d612163e6fd226aa0c3756b2fc4ef49d806033758fd6acfd2a661e529961",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_DwarvenZerkerHorde",
+      "source": "\\nUnit Type: Hero Infantry\\nStrong vs. All",
+      "source_hash": "29bf7e150bef56ddbebbad054c13cf19a43425fc93d20e58c2e0ee7bdb60d2a7",
+      "entry_hash": "fab8a90ad6caddbb2f84b823b5a05cb880ab25ffcb3d57426b0cf784bec71c08",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "BANNERUI:DwarvenAxeThrower",
+      "source": "Axe Thrower",
+      "source_hash": "e03a776070582efb9d2532f122b118f4021658798983cb3e1d2e8848c617c761",
+      "entry_hash": "a19ae2cb7d3f419f3d51723b476ada00cdf6c6d8066568881e0345232eb32c15",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:DwarvenAxeThrowers",
+      "source": "Axe Throwers",
+      "source_hash": "757555144bbfe420e1d4b8573434989a9f31d66e02e8c7b907910812955c4500",
+      "entry_hash": "453c26c53d8c02c9d19d4b9410ab0ebda61c2a8fbe0be054587d764ea5d0d66e",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenAxeThrowerHorde",
+      "source": "Axe Thrower Battalion",
+      "source_hash": "5dcc9a608e78afb3c3e529e7b1dbeb47bf65149f1c94e7189d175779b8679baf",
+      "entry_hash": "10d07be034476d62deba70ade239e14c85555199928932affa4bbeadcf221dfd",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenAxeThrowerHordePlural",
+      "source": "Axe Thrower Battalions",
+      "source_hash": "5322ba878ea29d75b8d7fc9a00a526caf2db450ebc627febce988e62474fb456",
+      "entry_hash": "f6b74080a31c8f231d04cc56703c8e01083ba58198d319cb725f56e899cc8490",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:DwarvenBattleWagon",
+      "source": "Battlewagon",
+      "source_hash": "ffd1f8b5b8c8672fa2da1812d5883047df8688b915e2b486e08dec1dd6c84d7e",
+      "entry_hash": "00ad43ab5d0e3be2922b4cbfd3df304211da68f1fb1e4879c688412c54dc8566",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:DwarvenBattleWagons",
+      "source": "Battlewagons",
+      "source_hash": "d008b328eabd5862da0c631e90137d0d8fb73b92351920011776ce370eca5549",
+      "entry_hash": "c990c8fafaa669f06ca80dadaf1e7a78ceb3a000527f9a1ddedb960089085196",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenBattleWagon",
+      "source": "Battlewagon",
+      "source_hash": "0ebd43307957bbf286b80c671184e3352e7d7c3bb10a399e97786ec0641b2b87",
+      "entry_hash": "b806982fdba108648f1a4368c212ae4ef94d08f0cb3cf76526698bbb94ae649d",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenBattleWagonPlural",
+      "source": "Battlewagons",
+      "source_hash": "7326dfab49d8926218dbb8f0c444bd12c272e0ba821c64a26babaf6d5ee1bc35",
+      "entry_hash": "191838d6a1e2e61273ae983dcaa657c82c25420c00b3af31f05d8b66113353e9",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_DwarvenBattleWagon",
+      "source": "Unit Type: Basic Cavalry\\nStrong vs. Archers and Swordsmen\\n",
+      "source_hash": "0e0fec59095f0ed3f4827c90b11df2bbb51b5c0ef422fac27c6656c33a792d78",
+      "entry_hash": "e33a6460683cae9bfb9419ed8863f555fcb440b14e9746dc96e3d7e16d5a0f93",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_DwarvenBattleWagon",
+      "source": "\\nUnit Type: Basic Cavalry\\nStrong vs. Archers and Swordsmen",
+      "source_hash": "b2562a3608eb1661a01c350da072a605de7cea1684186416f513ca1df93f496a",
+      "entry_hash": "e8ceaa6c71f4e1f8500e2fa3c64e347789ca3aa337ac8929733b371cf8e8c4db",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_DwarvenCatapult",
+      "source": "Unit Type: Siege\\nStrong vs. Structures and Archers\\n",
+      "source_hash": "ad1b2c191a9e283e1e86e61a507fd7bfb0268ddb72c400c927f4cb5e179a7e03",
+      "entry_hash": "919b898d11efe01046cc0be1fdf9b8b4cacf4bb2fce923ba1f865df842a2ac96",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_DwarvenCatapult",
+      "source": "\\nUnit Type: Siege\\nStrong vs. Structures and Archers",
+      "source_hash": "fa0f4e021fd06c21a83aea3f1765c97148f422cda629d004788f4262b22d0225",
+      "entry_hash": "63e8ed586db7d37c66c0d96457b9649d224968e7a4e87d30d7c82e1a9fc75c34",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_Structure_IsengardFortress",
+      "source": "Fortress",
+      "source_hash": "7004c9e974258c3b5509e5ef0c7822b6997623afb0b5ab6b9e82eed011af84e2",
+      "entry_hash": "097b9e5ded7202c56960c6661e46e5756ba1dc3072a06a68c63c8a0b819b0c3c",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_IsengardFighterHorde",
+      "source": "Uruk-hai Horde",
+      "source_hash": "41f206d3178e09645e9d2315b0c6abfc46f7c91a17fb7e90ee55b4ff4466d31a",
+      "entry_hash": "b636ee1289e464b88c18933e72f914e72e0776da10125f3cb89f56dc06679a90",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "1da6d5394f1103e13189749d1c735b8d5fa3da5c6f621e21ed26021f6aec7760"
+}

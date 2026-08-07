@@ -1,0 +1,223 @@
+{
+  "schema_version": 3,
+  "batch_id": "d2a5d36826534cf2b2bcdaceb858798d",
+  "worker": "rotwk-run3-2",
+  "created_at": "2026-08-05T20:00:56.183552+00:00",
+  "lease_expires_at": "2026-08-06T02:00:56.182366+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run3-2-d2a5d3682653.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipConstructMordorBarricadeExpansion",
+      "source": "Defensive tower with several Orc Archers stationed on top \\n\\n Build Time: 20s",
+      "source_hash": "c192bbc33a7edb99e995a28a02ae121c9a73e2cdb8be728c0300bcec2f464f6a",
+      "entry_hash": "19d65e8eadeeb33802baf55c487bafc072b7a79a92ec5e55b787edacd6582cea",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_MenWallUpgradeToPosternGate",
+      "source": "Allows friendly units to pass through the wall \\n Invisible to enemies \\n\\n Build Time: 15s",
+      "source_hash": "fb695e89f2f285bb10918a3084e515eee75a7e51c0567c550aa315af90875461",
+      "entry_hash": "0316c58815b1063c21a0e674377aec9e08646cfca9bfee272713ded4f15d2511",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorWallUpgradeToPosternGate",
+      "source": "Allows friendly units to pass through the wall \\n Invisible to enemies \\n\\n Build Time: 15s",
+      "source_hash": "63f47cde3f683cdf5a97d31a9513444b53dfade6f89eb3cde529f81b87d5e4ee",
+      "entry_hash": "2b6bbd48f5208e0f4d975b917f7ea58db864d6e839299cdaf5e782aec5ea9632",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_MenWallUpgradeToTower",
+      "source": "Fires arrows at enemy troops \\n\\n Build Time: 20s",
+      "source_hash": "d758c21f7b2fd479b70f8b7b8ad6d31ec7c9f048750a1c7bf4a6b125ba737167",
+      "entry_hash": "a099752acb2f7be477201cd9c0f28256508ba8fd49dd8e4075a2b3ed645edd3a",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorWallUpgradeToTower",
+      "source": "Fires arrows at enemy troops \\n\\n Build Time: 20s",
+      "source_hash": "c62067a21a46432464ecba05e40441fc9335d6131282eaa97d4ae4f89ef5c264",
+      "entry_hash": "b3918bb9aebb567c32759b3fbf07888ead747f78f43273a18b081c6dddcbadf5",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_MenWallUpgradeToTrebuchet",
+      "source": "Long range defensive weapon \\n\\n Build Time: 30s",
+      "source_hash": "9e5329a1976f86938dc1a26edf5c3cc0d86610b25d9d8d1ff0efb721f0ce61c6",
+      "entry_hash": "0e077d0714a03c13f9de5bc1c291d93407afc319709f38e0eb5ba3148e842d3a",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorWallUpgradeToTrebuchet",
+      "source": "Long range defensive weapon \\n\\n Build Time: 30s",
+      "source_hash": "b90d088e9322002563b6e4e4edde2548d98b10e993c019f8c222ee9b007c6684",
+      "entry_hash": "451948b5a8759c77b5d1ec54f5055bded741ca3e10e44244c0d1aac0cae9701f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_MenWallUpgradeToHub",
+      "source": "Allows construction of additional walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "5fb8994c14b7243aba0c60426d9254a9fa74e8c5ebbb3d7642414ba9eb959f3e",
+      "entry_hash": "009ef1100c08fc26e8fa5791efebb4914cdbf8f8020cd70dc4409e915db17ca0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorWallUpgradeToHub",
+      "source": "Allows construction of additional walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "82494f052006ca4c72573f556bbe0831bcd0910e00e85664a9f9d6bb83a89bd3",
+      "entry_hash": "242bfbc771db0dd634658073bcca6791067c396c4c8821e960cc2c0393e32e2a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_MenWallUpgradeToRegularGate",
+      "source": "Primary defensive gate that can be opened and closed \\n\\n Build Time: 30s",
+      "source_hash": "62fae1882fcdd8e65067df4db4eec191930b4b0c8b26d90c5ed7a68574e65872",
+      "entry_hash": "b268c557e5f0b98fff657865b2e46c334ed0fb5c4bf27598f5f1ada8882fdda4",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorWallUpgradeToRegularGate",
+      "source": "Primary defensive gate that can be opened and closed \\n\\n Build Time: 30s",
+      "source_hash": "6ebbe60c7f7ae80d1664a4c00850565a821122d84faa0aa36464bc7602afefed",
+      "entry_hash": "fbc244e9525cb3b33c334efaf2367069ce25743a19b3f12262610f155f7c806f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_GondorCastleWallHub_BeginWallSpan",
+      "source": "Left click and drag to construct a Wall \\n\\n Build Time: 20s",
+      "source_hash": "7126fa099252af49e5761093d71257a0335d93d11d41f946e57d957d16a9202a",
+      "entry_hash": "5568d08eb8237df1f43d6a0b44f361c31728f22427a9024de22346dfa351da59",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorCastleWallHub_BeginWallSpan",
+      "source": "Left click and drag to construct a Wall \\n\\n Build Time: 20s",
+      "source_hash": "3cac5cfb92b43ce1cdc0b9938f05ff165309638fe929f3e74b6903b3faca77ae",
+      "entry_hash": "cf30f4e871cfd3b610b031b2a3a75a3d126430032ae640b7c71b056404f15921",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToHub",
+      "source": "Allows construction of additional walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "3fc7da4ea5608a179a6008440f7c39511d7248e8df5b4889f782192e726e82c3",
+      "entry_hash": "b95d02ef30fb2c2b9b1a45d4cd55b35833070a030bec1d3286d8bcedb894e254",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToCatapult",
+      "source": "Long range defensive weapon \\n\\n Build Time: 30s",
+      "source_hash": "376bddf3f1018de48cfd8f41bdbf15827b072cd07d7fbc1f56b88019be48bb20",
+      "entry_hash": "fb6558f0e88dfa35f705f33fadabb2241ac68a97f281ca5ef2fc4939ca013557",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToTower",
+      "source": "Fires axes at nearby enemy units \\n\\n Build Time: 20s",
+      "source_hash": "bde15e81d05a0afb60767a8d02f2384567149cc9ebd9ba85a6dc04b98b316650",
+      "entry_hash": "44fd2e3a6eed0d4c67c4a952123e33750114e685cb5f280d85709ea320278186",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenCastleWallHub_BeginWallSpan",
+      "source": "Left click and drag to construct a Wall \\n\\n Build Time: 20s",
+      "source_hash": "4a2794344b108bcba069ed858f288a2213c7cf3fa71971ccf8fe5872c1e8e658",
+      "entry_hash": "d1f8c2bf843f6d7bafba65858a3037142fbf1fe1117657267c6c2716995cb733",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToPosternGate",
+      "source": "Allows friendly units pass through the wall \\n Invisible to enemies \\n\\n Build Time: 15s",
+      "source_hash": "6579e9595fa0da722faa5b038691da9a1ffe3a373e93e3afbcb7517dc3e83074",
+      "entry_hash": "315148e954d12cd23982ad91238e4d7b5369cfa13d0e090caefd61e7b9bb0365",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToRegularGate",
+      "source": "Primary defensive gate that can be opened and closed \\n\\n Build Time: 30s",
+      "source_hash": "8484a82b46eab7469cda265bf8d2c904fc84e2c0191f35b3a6a198c78a6d0427",
+      "entry_hash": "b62e00dbd7050d2670f3ab754899782e17ea75da35602ee78f9772eda5be1df0",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_ElvenWallUpgradeToRegularGate",
+      "source": "Primary defensive gate that can be opened and closed \\n\\n Build Time: 30s",
+      "source_hash": "1133a529673f11185d4eafcdbaa78a60b2cd37c0d4d940330e50691957d0a7a6",
+      "entry_hash": "1fcf19eddfc16b173977d9f306a2bc1fd449d7fc6ce19e9034075edfdf0eed7f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "8a3b95b3dd20497ac464f1b0b0cda3ca9ad570ffba926ea3d2e5a5ba9557b66c"
+}

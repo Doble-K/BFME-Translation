@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "5e402324e3bb4c1dbb1a450656df21f1",
+  "worker": "rotwk-laguna-all-3",
+  "translations": [
+    {
+      "id": "LW:DisplayNameMountGundabad",
+      "translation": "Montaña de Gundabad"
+    },
+    {
+      "id": "LW:TerritoryNorthernWaste",
+      "translation": "Forodwaith"
+    },
+    {
+      "id": "CONTROLBAR:LW_Hero_Rogash",
+      "translation": "Rogash"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_Rogash",
+      "translation": "Tipo de unidad: Líder del ejército de héroes\n"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_Rogash",
+      "translation": "Tipo de unidad: Líder del ejército de héroes"
+    },
+    {
+      "id": "CONTROLBAR:LW_Hero_Morgramir",
+      "translation": "Morgomir"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_Morgramir",
+      "translation": "Tipo de unidad: Líder del ejército de héroes\n"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_Morgramir",
+      "translation": "Tipo de unidad: Líder del ejército de héroes"
+    },
+    {
+      "id": "CONTROLBAR:LW_Hero_Hwaldar",
+      "translation": "Hwaldar"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_Hwaldar",
+      "translation": "Tipo de unidad: Líder del ejército de héroes\n"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_Hwaldar",
+      "translation": "Tipo de unidad: Líder del ejército de héroes"
+    },
+    {
+      "id": "CONTROLBAR:LW_Hero_Karsh",
+      "translation": "Karsh"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_Karsh",
+      "translation": "Tipo de unidad: Héroe\n"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_Karsh",
+      "translation": ""
+    },
+    {
+      "id": "CreateAHero:SubClassName_SnowTroll",
+      "translation": ""
+    },
+    {
+      "id": "CreateAHero:SubClassDesc_SnowTroll",
+      "translation": ""
+    },
+    {
+      "id": "CreateAHero:SubClassName_HillTroll",
+      "translation": ""
+    },
+    {
+      "id": "CreateAHero:SubClassDesc_HillTroll",
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:HordeIsengardBerserker",
+      "translation": ""
+    },
+    {
+      "id": "CAH:Command_CreateAHero_TrollLeap_Level1_Name",
+      "translation": ""
+    },
+    {
+      "id": "CAH:Command_CreateAHero_TrollLeap_Level2_Name",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_DominateTroll_Level1",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:CAH_DominateTroll_Level1",
+      "translation": ""
+    },
+    {
+      "id": "CAH:Command_CreateAHero_SpecialAbilityDominateTroll_Level1_Name",
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:MallornSunFlare",
+      "translation": ""
+    }
+  ]
+}

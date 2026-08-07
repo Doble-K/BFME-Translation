@@ -1,0 +1,252 @@
+{
+  "schema_version": 3,
+  "batch_id": "6bddcae9d41c41d28909e20a9f293b2a",
+  "worker": "rotwk-nemotron-all-1",
+  "created_at": "2026-08-06T07:55:11.429863+00:00",
+  "lease_expires_at": "2026-08-06T13:55:11.428553+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemotron-all-1-6bddcae9d41c.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPWold",
+      "source": "Wold",
+      "source_hash": "2e4162d2abe7a1eb3893d58b18f26cfb054859539eb9f256900448115311c277",
+      "entry_hash": "f23d43e32fdae2caca15617f7cb9a2bb688737fde13d5074a36a8f9b7069eeac",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPWold/Desc",
+      "source": "The Wold is the northernmost and least populated part of Rohan. It is a grassy upland plain lying between Fangorn Forest and the Anduin, bordered to the north by the Limlight.\\n\\n Size: 500 x 500\\n Lairs: 8x Warg Lair\\n Neutral Structures: 4x Outpost, 1x Signal Fire",
+      "source_hash": "420a3761c558197fe01f6f8410c4bcbcf4c47e3dcb0076eb66b04921b37f58c8",
+      "entry_hash": "458cc0a9cf69e3f1e879fda049e20afda1d8ec1d338cdb0bdbe318ffb3726989",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPWoodyEnd",
+      "source": "Woody End",
+      "source_hash": "20590c69ded9c14547768418df1f1dd00a4300cef5cdc406d1167b4dd604f01c",
+      "entry_hash": "a78ae508f033efd7a8e155f8eb5d60e9ecb2a59ce72a4df3ae9f6f628d6b8774",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPWoodyEnd/Desc",
+      "source": "Woody End was an upland wooded region of the Eastfarthing of the Shire, lying between the Green Hill Country on the west and the Marish on the east.\\n\\n Size: 580 x 480\\n Lairs: 4x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Outpost, 2x Signal Fire, 1x Tower",
+      "source_hash": "c5533c66592d2af05b5bf7988be48cb66e421e0baaa01d416d19057f1f948b8b",
+      "entry_hash": "c2779558b0d4bfd05edc3861bd5553b42c0fc42a07b7f4254a5a34afe43f7563",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORANGAmonSul",
+      "source": "Amon Sul",
+      "source_hash": "d51937a42fd373d43fdcb29a39338adeae4585a7ca43aa6db9cc9ba5d0a16874",
+      "entry_hash": "1a12d29b53a14de5e84db77da43db06154254e235c2d35d7540c929373906fff",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORANGAmonSul/Desc",
+      "source": "The fortress on the windy hill of Amon Sul housed a palantir until the fortress was destroyed by the Witch-king's army. Later it came to be known as Weathertop.\\n\\n Size: 325 x 275\\n Lairs:\\n Neutral Structures: 1x Outpost, 1x Signal Fire",
+      "source_hash": "84028c512f2063a5ab91b061ff80492953c1fb6b1dda96d659f790f4e3e3f225",
+      "entry_hash": "17ea09eb66a4e2b9963970f7caa3eaedf84a8a95da0e9beaefef5831d66272dd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORANGAngmar",
+      "source": "Angmar",
+      "source_hash": "82a6618490f5cc1b6c9f8cd07f259d5e1bcb5593dc40266f74d9ae4736a38530",
+      "entry_hash": "85c1914cb2307b82c273e19241e358b7403b92f93d08f13b2357452d4a739a16",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORANGAngmar/Desc",
+      "source": "The icy northern home of Black Numenoreans, Trolls, and Wolves.\\n\\n Size: 350 x 350\\n Lairs: 2x Troll Lair\\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "0fbecc927416535275df1493204c931027d5a4b367c8f1c574aa041dd3603d0e",
+      "entry_hash": "167dedc843ac7f516442d3045db43e7ab2f911a79b055b965506d35fdc9801cc",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORANGBarrowDowns",
+      "source": "Barrow Downs",
+      "source_hash": "e50fb1b667d478fb64302d4dcdbe3a283e67843198e6dcfa9ad63f49fbc7d1ae",
+      "entry_hash": "82615f4fd9eb2eebd48dbbf9136d265e2dad95f3811a6c66d87470df0cb66047",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORANGBarrowDowns/Desc",
+      "source": "The ancient burial grounds of the kings of Arnor.\\n\\n Size: 400 x 350\\n Lairs: 4x Barrow Wight Lair\\n Neutral Structures: 1x Inn",
+      "source_hash": "b09179ed4f110a715143069aabe34d4b9b14f86117efb57191b22c3d4572f21d",
+      "entry_hash": "4244c28160ff8a12f88ea8585e849bcc0af4072f97f063465dfedc9ac803d092",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORANGCarnDum",
+      "source": "Carn Dum",
+      "source_hash": "eab7be93049f99e32cdde0232fe858d1a7d44aa3f794689af981012c71d2bf4f",
+      "entry_hash": "a48175c5b2b5db6ea42660700568df99200a0e5660f068748e5099c102a76a50",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORANGCarnDum/Desc",
+      "source": "The fortress city built by the Witch-king of Angmar.\\n\\n Size: 400 x 500\\n Lairs:\\n Neutral Structures: 2x Inn, 1x Signal Fire, Fortress",
+      "source_hash": "a2a3705dc061ecd606413531b80a3354226e712bbbf996e3af298473d64e7295",
+      "entry_hash": "d3a3e8ee4ca952418976e4b0670b0dc59eddad9a69d24cdaaf3d5e68fa47c4a9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORANGFornost",
+      "source": "Fornost",
+      "source_hash": "fdd70f61b7ec7660033521a2ca56d7ea702f6d391e5e344d5dc51fd6d2d6aac4",
+      "entry_hash": "b185a48226e1842c14b8eba4f4a8ad3fa5b521c382724a13914971587195e365",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORANGFornost/Desc",
+      "source": "The capital city of Arthedain, the northern realm of Arnor. After its destruction it became known as Deadman's Dike and was visited only by Rangers.\\n\\n Size: 300 x 450\\n Lairs:\\n Neutral Structures: 2x Inn, 2x Signal Fire, Fortress",
+      "source_hash": "5e936709774cc4811b9016f2b760468c23741f56069c1a82514f2f1a3c3db58f",
+      "entry_hash": "8306018537467ca844ecb72a15ebcb8bd5a7bd45c970f8c0d3b08eebc8b4b033",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORANGGundabad",
+      "source": "Mount Gundabad",
+      "source_hash": "688ca4a87a9c858091a28c926e20d5fa65563df84a43beaa839c2a87f3b826ba",
+      "entry_hash": "b9885b0b3787e66585de65c63a4c38b9cbf230fea03e65b610f87af1bd264316",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORANGGundabad/Desc",
+      "source": "A mountain at the northern end of the Misty Mountains that is a breeding ground for Orcs.\\n\\n Size: 500 x 500\\n Lairs: 6x Goblin Lair, 1x Spider Lair\\n Neutral Structures: 1x Inn, 1x Signal Fire",
+      "source_hash": "aa7ec2c2bc8c0f83e7fbdfc51eeafab6d8f7c6b95f022a365ae621ad388c1019",
+      "entry_hash": "9a6bfba2e1871526e99538a205f170262187d4cd0612d44ee9af6e786e6da7a9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORANGNorthDowns",
+      "source": "North Downs",
+      "source_hash": "75a980e2f9852d6b6bffbb3b40e0ae6b69225facad98870913fa32208b8c4193",
+      "entry_hash": "cc7c9ac7ad5df3ad124c8fe65bd46de7d01aeeda76d3aaac9fe91ae14c194b2b",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORANGNorthDowns/Desc",
+      "source": "A hilly region of Arnor found to the north of Bree and Amon Sul.\\n\\n Size: 500 x 350\\n Lairs: 1x Troll Lair\\n Neutral Structures: 1x Outpost, 1x Inn",
+      "source_hash": "aa6022cc8e73bacbe6a9280a447501a74789a0a892357747195f80ad8f590419",
+      "entry_hash": "3cb3bf103f83b9038aa6f94adc1a0a3c3c81cddf83b8656db2ba0c3553c2b1ad",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORANGRhudaur",
+      "source": "Rhudaur",
+      "source_hash": "cb9dca5837ec0fb6b6aebd56e578904ef82b96c883121ab381b183ab8d4915c9",
+      "entry_hash": "d195b861935c10312c5e2cdf23f52c53e8ba651cd92bd5a37d3105b009b4a8cf",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORANGRhudaur/Desc",
+      "source": "The hilly eastern kingdom of Arnor, home to tribes of hillmen.\\n\\n Size: 500 x 450\\n Lairs:\\n Neutral Structures: 1x Outpost, 1x Inn",
+      "source_hash": "94bfa763e7479f14c2a969b37da17fcd6da6a9faec031985731e26d85ff15b87",
+      "entry_hash": "f480943f3efb413930c890c5d1e44ef601f35b80ffa8b9b3f493340569cbb17b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORArnor",
+      "source": "Arnor",
+      "source_hash": "4ac4edd14dc1d2343ec2166c2dacda1926ef275a6768a1a8308c3be73b15b866",
+      "entry_hash": "c68b283f6dce40c2453b25015d42d187426f426b19fd15ce21feda872c2c9306",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORArnor/Desc",
+      "source": "This was once the realm of the Great North Kingdom of Men.\\n\\n Size: 400 x 425\\n Lairs: 2x Troll Lair\\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "061883c4923b6a85a68606b40ccbaa629e4f2aff9665ec9a67780b48a6e0d560",
+      "entry_hash": "595ca2c4e9f872e1221bdffcbae5ee3e873b556a8702c9d9f473bafe13413809",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORBelfalas",
+      "source": "Belfalas",
+      "source_hash": "497fb8398485eccce54ae05cc3c4392a5d2c99e5c39cbf8b04edd063345e7066",
+      "entry_hash": "5f27f1c502e261e5985ef9e9ba3231ecff33db0fb17004c690131596b69d013b",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORBelfalas/Desc",
+      "source": "The eastern coastal section of Gondor that stretches from the mouth of the great river Anduin to the citadel city of Dol Amroth.\\n\\n Size: 500 x 500\\n Lairs: 3x Goblin Lair, 3x Barrow Wight Lair\\n Neutral Structures: 4x Inn, 1x Signal Fire, 4x Shipwright, 1x Tower",
+      "source_hash": "2b21281f049076d8f1f3719cefa1ce5a5e9bed5a7669d78fb3cd5479dbdd17dd",
+      "entry_hash": "fffd076ebdaf90a96942e82ef6374081dc79fd99b4a8b5a46be3325d787857a4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORBlackGate",
+      "source": "Black Gate",
+      "source_hash": "26f99400517372539de10fcfb169944248ebbd740f906a50c850de0dc2ff41bd",
+      "entry_hash": "1388d7519f42cc74e03cb2a976652cf8e56636a38a0157e063d207f314828a26",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "81336e9ed1648c7c95d445d16060c5d93d6d328dccd80b055625f49fc6c9011f"
+}

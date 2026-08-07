@@ -1,0 +1,389 @@
+{
+  "schema_version": 3,
+  "batch_id": "f5d73ae3ac33492d8c28815bf2b4bc19",
+  "worker": "rotwk-nemo-4",
+  "created_at": "2026-08-06T06:41:14.104975+00:00",
+  "lease_expires_at": "2026-08-06T12:41:14.103518+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemo-4-f5d73ae3ac33.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildGandalf",
+      "source": "Recruit the Wizard armed with an arsenal of mighty magical powers \\n \\n Unit Type: Tier 5 Hero \\n Recruit Time: 55s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "c578438b9fd43273621390b49752c78e95abeffb1d8f86bc54cd7450d45bdf68",
+      "entry_hash": "21db53e2fe9ba7e0d6538ab98f9c8923bbd8fff792f3a57978caa71dced163b2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GandalfTheWhiteRecruit",
+      "source": "Recruit the Wizard armed with an arsenal of mighty magical powers \\n \\n Unit Type: Tier 5 Hero \\n Recruit Time: 55s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "8eefaa21202bccc77aa422e5bf7505cde3d9b508a069ef8c5ca2801bb3411f22",
+      "entry_hash": "4e33703ab6fa51f475fd03c4ff6196a1804a06b7e366f9a63e21a68cf75c1b8b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GandalfTheWhiteRevive",
+      "source": "Revive the fallen Hero, Gandalf \\n \\n Unit Type: Tier 5 Hero \\n Revive Time: 1m x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "50888e0abb64ee9bb3f79bb40f369c4c05c3e7a4ae927a650c0ae9ad4aa90d7d",
+      "entry_hash": "bfd09ee4642c489e86546a2a3cffd1ae2352cb7fe7c2a62a403bd7c52e671a37",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:HaldirRecruit",
+      "source": "Recruit the agile defender of Lothlorien \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "b0c4d1d18d8e75f067e8edc1b369dd93d86d78c00d299323eb4da48667ab3e8a",
+      "entry_hash": "2344c1b3350628a27a709827ebbf3bad5b02a0d31ba0ba0ac0e303a4db9675da",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:HaldirRevive",
+      "source": "Revive the fallen Hero, Haldir \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "75df7122a066ec537a8e2efa3df110137b399eefbc7ecf217d5b13c88f1bb495",
+      "entry_hash": "73cdd606100cf5b4d92f02dbec39df22efeae542f21b11b55fb1e49e8612f113",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ElrondRecruit",
+      "source": "Recruit the leader of Rivendell \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "4e2ad654a469ea573016674161a3ea2e5b0bf0f8db2866c0ff7411d967a4b6e2",
+      "entry_hash": "43d4cdea5f698d44d4817e4fec1f87e315ba1c04bb5c22ac6eeedda46dc13970",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ElrondRevive",
+      "source": "Revive the fallen Hero, Elrond \\n \\n Unit Type: Tier 4 Hero \\n Revive Time: 55s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "4728519810440912caeadc0206ba77d6fd35ef0ffe63e0607720daafc9046867",
+      "entry_hash": "0d7ea2c59f975cce672674285097cbf8a9c0d75cb6d327be75eafc41e55ac8d1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ArwenRecruit",
+      "source": "Recruit the daughter of Elrond \\n \\n Unit Type: Tier 1 Hero \\n Recruit Time: 35s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "cfd142b94d6c8c5b7abde0baa2680f86d79b8c8bc1065b8002c71716a681ed71",
+      "entry_hash": "a408a73a3bedef2d800af991a5e9ac361d03d70873d4e6ae157753ca6fccd11a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ArwenRevive",
+      "source": "Revive the fallen Hero, Arwen \\n \\n Unit Type: Tier 1 Hero \\n Revive Time: 40s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "3d3e07284cfb2f8e4afd2ec1cb68252f4ba0a05b40969fee06fb05b68838e3cb",
+      "entry_hash": "f8dd2df0dd8967639db1693678450cf2ca7c9b5b106ae71a6367fe8849d4292b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildThranduil",
+      "source": "Recruit the leader of the Mirkwood Elves \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "29080175527ba3e591a03665fa69b744bc606a098ad04a69e6e6fd26697f49df",
+      "entry_hash": "79b7ee50c3ccba999159511ee97aa44c8747ce44473dee70ffb42e8e9bd174a3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ElvenThranduilRecruit",
+      "source": "Recruit the leader of the Mirkwood Elves \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "7d2a006a426a4f336cba497e2cca7282355f735d748fbf0998cec2de3232109e",
+      "entry_hash": "3e54771c9ae7f388122576287c5e28776c4711972f172abd93cf918a7b27fc17",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ElvenThranduilRevive",
+      "source": "Revive the fallen Hero, Thranduil \\n \\n Unit Type: Tier 4 Hero \\n Revive Time: 55s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "1fe7740d70b8f3bbae744117f032ffe9fba22b4ce2082059d2dd3aac8dca09cb",
+      "entry_hash": "6f0dfc8f1d715c282275962ccc7542ee156d137bb64c081f1c7d9aaf48f21422",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGlorfindel",
+      "source": "Recruit the Elf Lord bearing silver armor \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "5a433e76ad81a53ea2d8741f7cb0dcaf2ba8b2466ed0250f2fcac70eca418a91",
+      "entry_hash": "be2eeb342e8cb802b7117e1390127054af903fd5dba49d91c97ab6509df1453d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ElvenGlorfindelRecruit",
+      "source": "Recruit the Elf Lord bearing silver armor \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "15512d6d1c169293e2ea40ebe00c46c5f0843e0517f016f2bb0185fce9df16f3",
+      "entry_hash": "7706fcb0fa81a44c3e693087e1d0362482d284943dfb6989d3720e4b15a82e00",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ElvenGlorfindelRevive",
+      "source": "Revive the fallen Hero, Glorfindel \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "131974b3ee4c0347890fab0dd7b16d00703fdec7466f6c97f5480050b5ab9e27",
+      "entry_hash": "9436117c4fa9aca790d2201d618364cf46a779fd5c22908d29e9ea5b235dde82",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildLegolas",
+      "source": "Recruit the Prince of the Mirkwood Elves \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "2eca03374e8fb6a1c4c4a34d64dcce7c55b0426311deda9cb2ac2e17c1df1930",
+      "entry_hash": "d76c87bdbfa9ab3f57249ebd3bfd8ab2d5147b864e4b6b9f39acc9914c5fffa5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:RohanLegolasRecruit",
+      "source": "Recruit the Prince of the Mirkwood Elves \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "6393eec649eaa861ec7f980e8fd76679f451c17a97ad3b61d676fd839797fd42",
+      "entry_hash": "a4c0d5a1459da83a757597bec93426b02d7f2edd4daa4b2a0eaec387946720e4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:RohanLegolasRevive",
+      "source": "Revive the fallen Hero, Legolas \\n \\n Unit Type: Tier 4 Hero \\n Revive Time: 55s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "6b8ea560943cefa24c26a63503da834d3827bfa2bc512fa7796c462532b5cc4a",
+      "entry_hash": "dcc548e92f01de08b74c1b063d7e026952d72463d92bf5c5a3af4fcfc6919757",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GaladrielRevive",
+      "source": "Revive the fallen Hero, Galadriel \\n \\n Unit Type: Ring Hero \\n Revive Time: 3m \\n Health Regeneration: 30/s",
+      "source_hash": "31a33cbb117536e395d24903775abc4e13c4b92989c1e3f818e84bdc34d5ac36",
+      "entry_hash": "8633896807d201261da5bcf5c441cf59f9d8226c9646bcbcd5527dc75406eff8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:DwarvenCaptainofDaleRecruit",
+      "source": "Recruit Brand, the King of Dale \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "c6b64c804f4c1f3dfd17cb86030c8b02c2044e45c22a3880505eb0d6e7168489",
+      "entry_hash": "76ef871073febac66b1481cabeb6f6edac6018327798d876116e3fdf6a9e8677",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:DwarvenCaptainofDaleRevive",
+      "source": "Revive King Brand \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "2d6159774fceaab287278444b01abfaec373e3b65f8fdb6c61d169b53d2b98ac",
+      "entry_hash": "a67bd1d12229201020201a30253ac8d33b3b22c99fbd1e1ed3b6cbe02eca07e6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDain",
+      "source": "Recruit the King of Erebor \\n \\n Unit Type: Tier 3 Hero \\n Recruit Time: 45s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "64938ceb86c658c65dbcfb983cfde94924b9eb0452a4d12573fec5e9c3c71e5c",
+      "entry_hash": "136c07f0e3366d59d7bfd724dcfd3a38a27b8bdf32474a420fc65628a152cba9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:DwarvenDainRecruit",
+      "source": "Recruit the King of Erebor \\n \\n Unit Type: Tier 3 Hero \\n Recruit Time: 45s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "4454cecbc457ea18d7b6926bfb2519e45245c61e7fabe1fc10655407ff916b8f",
+      "entry_hash": "264a9c14327f8a6580722baab4e79b72c820d327ed67ad5981ca07f013571149",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:DwarvenDainRevive",
+      "source": "Revive the fallen Hero, King Dain \\n \\n Unit Type: Tier 3 Hero \\n Revive Time: 50s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "e5e7d282b5841951ec2f622bc5ba06346f38792a77350cf82870b967e7ec1aaa",
+      "entry_hash": "084edbd61a71e6294d5e8eef6a5f0e9c52adb3ef538ff3f80019a4f4e50111f2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GloinRecruit",
+      "source": "Recruit the father of Gimli \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "7443bedc2297eee5d60b592a3ec4cfa846c7adcf4d71977415afc887fbb8bec7",
+      "entry_hash": "b64fb41945c12d06f0fde13317bbb7d4cc006e489eee36250dd9df1bb7bf3ba3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "e17d4fe97927299da3ce451ed6f622d8da85d1c2cc4ff65338de016a39585f46"
+}

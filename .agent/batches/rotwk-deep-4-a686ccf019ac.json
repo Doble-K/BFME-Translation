@@ -1,0 +1,334 @@
+{
+  "schema_version": 3,
+  "batch_id": "a686ccf019ac49a7a839eac7672f4b07",
+  "worker": "rotwk-deep-4",
+  "created_at": "2026-08-06T06:30:19.630488+00:00",
+  "lease_expires_at": "2026-08-06T12:30:19.629079+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-deep-4-a686ccf019ac.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorStableLevel2Upgrade",
+      "source": "Allows training of Rohirrim\\n+10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "224f7a0a9230818a6446072c41db2923e485ce15115410b186b18f8be88c4ee6",
+      "entry_hash": "d5948981f2fb89d89afb0b350b9a599eaf88f89528cc27ba536bbf7052ef85a2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorStableLevel3Upgrade",
+      "source": "Allows training of Knights of Dol Amroth\\n+25% Faster Production Speed\\nAdds defensive Arrow Tower \\n \\n Upgrade Time: 50s",
+      "source_hash": "afb9eec05a3a52f8f74304232eb7e13142dd7b64669382bd5479b09c9341153f",
+      "entry_hash": "bb0bad76296d9da9f933b11c749e52017589064f9e8b8240625970b08948ecd0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorKnightHorde",
+      "source": "Strong vs. Swordsmen and Archers \\n \\n Unit Type: Basic Cavalry \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "b8746d4f07c677ac5e81440de528de4df55264bb3c2630d3b00586bf05740d7a",
+      "entry_hash": "37209938daa6869ab73a61b69508f4e7a8ea196e68bd2f2bfeb21864c3fcfe15",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildRohanRohirrimHorde",
+      "source": "Requires Level 2 Stables \\n Can switch between Bow and Spear \\n Strong vs. Swordsmen and Archers \\n \\n Unit Type: Elite Cavalry \\n Recruit Time: 35s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "f595e21970ad86b9d3c692ea9cf6a433a2b647c88bdc7601d7af87c3284af886",
+      "entry_hash": "8b34c8278683a3584cebe6a253105549d035e9af4f3d512752e660d943de3cf3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorKnightsofDolHorde",
+      "source": "Strong vs. All Units except Pikemen \\n Requires Level 3 Stables \\n Only 3 battalions of Knights are allowed at any time \\n \\n Unit Type: Mini Hero Cavalry \\n Recruit Time: 45s \\n Level 2: +5% Health, +5% Damage, 20/s Health Regeneration \\n Levels 3-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "2b4e03e0542a3c7c267ae58bf9be78cd008266a3b26ec2989b02ab5e4a9c687e",
+      "entry_hash": "03042ad2ed1519d67be75fa376671934221d0c90c46da77df7ec7f17613b28f7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorTrebuchet",
+      "source": "Strong vs. Structures, Monsters, and Archers \\n \\n Unit Type: Siege \\n Recruit Time: 30s",
+      "source_hash": "1871bd13bf912963e9a149188df418eaba2166e07edf0a4acfb782a4d43054b3",
+      "entry_hash": "c43138aebdb928b5951d72c7bd09729c646a6ed762f4e6d2b162c06f276f1bc3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorWorkshopLevel2Upgrade",
+      "source": "Allows research of the Fire Stones upgrade\\n Allows repairing of nearby siege weapons \\n +10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "0ffcc5bc2d2ec503619234da8bdf5735b3ff9c55739f2c8a95adaf7dbee36c71",
+      "entry_hash": "0e17f56f97a49be2d7feee6d082e5b402ebf869fec8808362d769de83196c7e3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorWorkshopLevel3Upgrade",
+      "source": "Increases siege weapon repair rate \\n +25% Faster Production Speed\\nAdds defensive Arrow Tower \\n \\n Upgrade Time: 30s",
+      "source_hash": "fb228896de8353fdf9cee35be5c1325ebe26f4347dab48b86ebfceed3c17bbe1",
+      "entry_hash": "d34c9da13c97ecccaaaa977266b56f57d6ba4308165116e6f6d751a6dfd39922",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorFireStones",
+      "source": "Allows Trebuchets to purchase the Fire Stones upgrade \\n When equipped, significantly increases the damage done by Trebuchets \\n \\n Research Time: 30s",
+      "source_hash": "d6bf3fdbd6ee5eb8ccf1f968653ea72a99f1a3a04d17893129d9c2d4088e9b16",
+      "entry_hash": "98a28420c2b95fac3b319c5918bfd4c90776c7f94c88c38393fc029f57ee6774",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorBasicTraining",
+      "source": "Allows battalions to purchase the Banner Carrier upgrade \\n Increases a battalion to Level 2 \\n \\n Research Time: 30s",
+      "source_hash": "0877c3c4f64c6b71cdd45d13db24dbcf770424a1a79033ccd82668b6da47bc22",
+      "entry_hash": "fc0e6084a990c2e3001ec7b688ac6b34c8bbc1e8c32c88634bec394b3657ed6c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorForgedBlades",
+      "source": "Allows battalions to purchase the Forged Blades upgrade \\n When equipped, increases the damage done by Melee Weapons \\n \\n Research Time: 30s",
+      "source_hash": "773e168a4d03689046c40d4d160dd7a364d669d755dd57e2a28855396e26909f",
+      "entry_hash": "4fb70c27da3ff6416a3b895c56c358752e71402611d7eecd9cf9a3e9e56a7269",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorHeavyArmor",
+      "source": "Allows battalions to purchase the Heavy Armor upgrade \\n When equipped, significantly reduces the amount of damage taken \\n \\n Research Time: 30s",
+      "source_hash": "898a608b8a2fb4e530f8a6c15ace7576a373a7e5793beb12c97cf5d7f1b62959",
+      "entry_hash": "9efc08f492285a940d1e9c6dae4019b3eacd21ef07649a05caafb4e195f2f009",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorForgeLevel2Upgrade",
+      "source": "Allows research of Forged Blades \\n \\n Research Time: 30s",
+      "source_hash": "1a119eaa027f5b3aa86ea79dceaae64eda4bed47cfe0586b768761be2b586c16",
+      "entry_hash": "c0d4632a308d18ad249588613983990a21dd7156cfd7ed1bc27c309bcba19b6f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorForgeLevel3Upgrade",
+      "source": "Allows research of Heavy Armor \\n Adds defensive Arrow Tower \\n \\n Research Time: 30s",
+      "source_hash": "b27f37c0fb7506114a1513f7b5560f0d96f4b0ba898f1ce72a9304ae6080f820",
+      "entry_hash": "de6145af008bd5fc90994b40df7185d7987b8602e42044bf77fd0dfec54db5d1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildSiegeMaterialsUpgrade",
+      "source": "Destroyed structures refund 50% of cost \\n Player must maintain a Marketplace to benefit from this upgrade \\n \\n Research Time: 45s",
+      "source_hash": "70a23422ce3bdfe67e3a896f53a4d7de8d612cb1448f09f8c2ce16387b976a53",
+      "entry_hash": "a72310db1ad7e02cb881e98168e09d1a51652e7809dcf9bd1ac9a00644e00143",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIronOreUpgrade",
+      "source": "Reduces the cost of Forged Blades and Heavy Armor upgrades by 25% \\n \\n Research Time: 45s",
+      "source_hash": "51689019530d68c85d5b0ff820d26cc747779142cc575f65dfcd446dfc6caac9",
+      "entry_hash": "fc9054d8c5af60b50cfe12e1805f96d9b57f435bc26e1a4e8b26416b788cfb6e",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeSentryTowerFireArrows",
+      "source": "Upgrades this Tower with Fire Arrows \\n Increases damage done by Arrows \\n \\n Upgrade Time: 30s",
+      "source_hash": "5e23f73328187d013accc561e554e746a96ac3afa3148a7435a993c0c03b18de",
+      "entry_hash": "c4025cfc8f888873ccda15433259c53212daf0cf53294479d811817f4b8b5a1c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenLorienWarriorHordeWithNoPrerequisites",
+      "source": "Strong vs. Pikemen \\n Can stealth near trees \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: 25s \\n Level: 2: +10% Health, +10% Damage, 6 /2s Health Regeneration \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "339e56a3a6b20f98ae3c3705cccf1d2e0335aab298efa29d97b2df7d2bc85210",
+      "entry_hash": "22b74a3aa59a95c35aa5830ccdb7533bcd731990ad1edd910baa77b9af1d50ab",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenLorienArcherHordeWithNoPrerequisites",
+      "source": "Strong vs. Swordsmen and Pikemen \\n Can stealth near trees \\n \\n Unit Type: Basic Archer \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage, 6 /2s Health Regeneration \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "7f6d8cdc8caf9c14f3f46ea5e0454852148be8607bcf2997e2da85a3ae5c8619",
+      "entry_hash": "e1a11b298f10237e0ebf1358ebcc22ba7ba0aec4a8e52e724c6afe605ea14fa3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenMithlondSentryHorde",
+      "source": "Strong vs. Cavalry and Monsters \\n Able to switch formation to protect other units \\n \\n Unit Type: Basic Pikeman \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage, 6 /2s Health Regeneration \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "249ca0e835664456d582eff129ddbf318fa25a141cb486832890106c5d879fc0",
+      "entry_hash": "07d263705eaddaeaa28f437907ccf683d274c83229d079856cecbbe5c86b3574",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildNoldorWarriorHorde ",
+      "source": "Strong vs. All Units\\nRequires Level 3 Barracks\\nOnly 3 battalions of Noldor Warriors are allowed at any time \\n \\n Unit Type: Mini Hero Archer \\n Recruit Time: 45s \\n Level 2: +5% Health, +5% Damage, 20/s Health Regeneration \\n Levels 3-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "bea5bb06f2458de2b84a23db98205c8455017ef4832607cc1e3e5262be80e291",
+      "entry_hash": "d1b5073f113e047d6415b5e7a115d116bba7953d2dc8dc6693365f1c07c09e93",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenBarracksLevel2",
+      "source": "Allows training of Mirkwood Archers \\n +10% Faster Production Speed  \\n \\n Upgrade Time: 30s",
+      "source_hash": "d876dbea5bfba05bb62062b7b2e91c5065aea5a9223070c49670730e235cdb52",
+      "entry_hash": "7186320135d793608bf941791efe2be117badb81628d1687a828bef9cef7a551",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenBarracksLevel3",
+      "source": "Allows training of Noldor Warriors \\n +25% Faster Production Speed \\n Adds defensive Arrow Tower \\n \\n Upgrade Time: 1m",
+      "source_hash": "ab35327d3ac705e0e491eff29249b2c8925cfbd6b032a15be02a5824ba568d11",
+      "entry_hash": "369fabaedb896be25b989da4fd15d047926d9cc910c491fb8dccd87bfcaf8048",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenRivendellLancers",
+      "source": "Strong vs. Swordsmen and Archers \\n \\n Unit Type: Basic Cavalry \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage, 6 /2s Health Regeneration \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "a50c0f2964cba774253121796d3be6e081a0bf8581ca9d9836c42e6a33d5b1ee",
+      "entry_hash": "9373e8fc0929864e7a262ba8fb84b99b3e836f5dff117ec017280e2082811529",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenRivendellArchers",
+      "source": "Requires Level 2 Green Pasture \\n \\n Strong vs. Swordsmen, Archers, and Cavalry \\n \\n Unit Type: Basic Cavalry \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage, 6 /2s Health Regeneration \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "edb689757116ac6b7fb74337e9617aad9a989fbf128e45ba3628ba77a347cfcd",
+      "entry_hash": "8a3cb53952cee5dd46f4f5d067347ff27e56614729e97530b9bc5e8d35509f76",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "d4526236f809a2362617e9bb97c5dfa2d4c86ee03dca8a83c0958c99836fc738"
+}

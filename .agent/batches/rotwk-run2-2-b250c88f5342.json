@@ -1,0 +1,205 @@
+{
+  "schema_version": 3,
+  "batch_id": "b250c88f5342471eafcef324e43fef35",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T20:15:20.224577+00:00",
+  "lease_expires_at": "2026-08-06T02:15:20.223385+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-b250c88f5342.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPNorthernWaste/Desc",
+      "source": "Also known as Forodwaith, the Northern Waste was a vast, cold region in the far north end of Middle-earth, beyond the Mountains of Angmar, Mount Gundabad, and the Ered Mithrin. \\n\\n Size: 500 x 500 \\n Lairs: 4x Troll Lair, 4x Warg Lair \\n Neutral Structures: 1x Signal Fire, 2x Inn, 2x Outpost",
+      "source_hash": "069554289ea4d76340bd07035e74504d9a0b73be88f3991df2c531c3076e25bf",
+      "entry_hash": "9b01222ad0eac0596c4b7dcab7dddd19255166c071c9bf69cef225055ce29169",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPNorthernWasteII",
+      "source": "Northern Waste II",
+      "source_hash": "6402b8b1f0033bdd024e48b7d4ec69c7fb93d1fd4e03b618e5dea76cd72f97c9",
+      "entry_hash": "5bb7608c09cb270410311728801dfef852c9b3c1c1ac5736dea71e1288c84f55",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPNorthernWasteII/Desc",
+      "source": "Also known as Forodwaith, the Northern Waste was a vast, cold region in the far north end of Middle-earth, beyond the Mountains of Angmar, Mount Gundabad, and the Ered Mithrin. \\n\\n Size: 500 x 500 \\n Lairs: 4x Troll Lair, 4x Warg Lair \\n Neutral Structures: 1x Signal Fire, 2x Inn, 1x Outpost",
+      "source_hash": "72dabfc8ce2369a04e81dfbcd9b4371091092ebf65dc22e7184bde989e0367c0",
+      "entry_hash": "01b25684ac170e1e7fa12d3cfe9f4646597b658656ad45bbec26aaaedf9bda48",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPUmbarPeninsula",
+      "source": "Umbar Peninsula",
+      "source_hash": "284cf0fb6486ff7e8b0d060c9fa98af6fd2ea0f4e513e2b98ed6f91b29893c62",
+      "entry_hash": "5d8f55c2d150caa7d431d33833aaebf2905b5f26e90f3f33143c92f553e5bc86",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPUmbarPeninsula/Desc",
+      "source": "A peninsula north-west of the City of the Corsairs. \\n\\n Size: 500 x 500 \\n Lairs: 3x Troll Lair, 1x Barrow Wight Lair, 2x Warg Lair \\n Neutral Structures: 1x Signal Fire, 2x Inn, 1x Outpost",
+      "source_hash": "e5ce71f49746ccb4d6d18492ea1161da1fb70aadccbfe0cd2ac56dda8664faeb",
+      "entry_hash": "427ec6b39b422fddd1eee72c1d21cd60c695161c2ffc9ca8d75668658f91ee4a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPSouthMirkwood",
+      "source": "South Mirkwood",
+      "source_hash": "b30e13beea63a82c13a085ff6afa3215a167775899f54e4f48be5010c5e30f77",
+      "entry_hash": "06572f9e691e77cd12d3aaf9b034f485cf8fefa78ef80fee11ef30b3701d75ef",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPSouthMirkwood/Desc",
+      "source": "A dark, hilly region in the south of Mirkwood. \\n\\n Size: 400 x 400 \\n Lairs: 2x Spider Lair, 2x Warg Lair, 2x Barrow Wight Lair",
+      "source_hash": "f964cf548e0858a412c2f81549f74776dce9a741aac6d65aa7c68cf55234dd95",
+      "entry_hash": "65a53bee6fb543eb32e58b3e9d0aa0470b86d82116c3a7c789c82f7480d08e32",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPSeaofNurnen",
+      "source": "Sea of Nurnen",
+      "source_hash": "14e4916349c5dc51e3b6e4b1ac8ba5ee95c44940867deebd105236ad63c0ea50",
+      "entry_hash": "ec661cf303a3597742582ac559693dd7aeb841436a13abc6fae2357a058c8f5f",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPSeaofNurnen/Desc",
+      "source": "The lands around the Sea of Nurnen are lush and thriving. It is here, far from the smokes of Orodruin, where countless men work the fields for the armies of the Dark Lord.\\n\\n Size: 500 x 400\\n Lairs: 2x Warg Lair, 2x Wight Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "598c4bc994e2cdd5d2e9fb5a3964420c2480bb63ab3c21373d4517600f7165d0",
+      "entry_hash": "a028468b998915379a8720babeb2f7b5908e376dfbcaaf94523fe5407c21914c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPBree",
+      "source": "Bree",
+      "source_hash": "11eac4a8281aced1826cf9d415087b7078d6bf9d1b2e2761dbbd76ec376c3c2c",
+      "entry_hash": "69c46294e8524f49f974f25a2a6ea2f07a9097af0adc456b26530d9a6a115881",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPBree/Desc",
+      "source": "A village of Men and Hobbits, located east of the Shire and south of Fornost in Eriador.\\n\\n Size: 500 x 500 \\n Lairs: 4x Warg Lair \\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "186bc7aff2393697c47e6f9f1ae22ba1f81db6439b022d291e8c902ea0e2cd24",
+      "entry_hash": "a9eeb0caef7068a9fc18eafae064c32bdf4a9f05bbfda2d8c98c683c25008f3b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPBeleriand",
+      "source": "Beleriand",
+      "source_hash": "9782a9a04711516c25e455a5e3f662d27ed1ea362f93aed86277509764bd82f0",
+      "entry_hash": "e19fa98d9129b9264a68544a43de27d840db1e4a615c3978c4bad3e02641e994",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPBeleriand/Desc",
+      "source": "At the end of the First Age of Middle-earth, Beleriand was broken in the War of Wrath by the the Maiar, against Morgoth. As the inhabitants fled much of Beleriand sank in the sea. The left behind souls still fight their battle for supremancy of the sunken lands.\\n\\n Size: 400 x 400 \\n Lairs: 3x Troll Lair, 3x Warg Lair \\n Neutral Structures: 3x Signal Fire",
+      "source_hash": "3913fa5b17496beb87b36b73605c889263f9a490841113fdb37ad78f5b361eef",
+      "entry_hash": "c96dcde4d20ab9165c49c2f915072b15ccb808770c3979575db244e4456f0323",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEavesofFangorn",
+      "source": "Eaves of Fangorn",
+      "source_hash": "a1d4b8cd3fdf8b6839e375dca27f59bd11729355eeb9eaa5dfe6d8a77560c81b",
+      "entry_hash": "6451e00ad6caa55f0cf4b673f27468634c53ec59a7438c201c842e4849235abb",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPEavesofFangorn/Desc",
+      "source": "The Eaves of Fangorn is an area within East Rohan. It is a remnant of the once great Fangorn Forest. \\n\\n Size: 421 x 360 \\n Lairs: 3x Troll Lair, 3x Warg Lair \\n Neutral Structures: 3x Signal Fire",
+      "source_hash": "ec7b9ce32b0d8f41daebf0e67ea873908bcc14a3b9791cf9c0d001b7ce64522c",
+      "entry_hash": "5a77be981b9c13ba9313086b0e8212428fb9324ca72b514edff0e5c9a269315a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPForlond",
+      "source": "Forlond",
+      "source_hash": "84e3e6466bdd2dc5e7a36fb70dabb46ebcbb16503d683ea9e5eefb468d6c1c9a",
+      "entry_hash": "a971130c8f41fe36c7098013c4d445b69a21166ef614441132303ff66cfa0eb1",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPForlond/Desc",
+      "source": "Forlond was a harbour that lay on the northern shore of the Gulf of Lune, in the Elvish land of Forlindon. It had a counterpart on the southern shore: the Harlond. Forlond was located at the mouth of an unnamed river that traversed Forlindon, some two hundred miles to the northwest of the Grey Havens. \\n\\n Size: 450 x 450 \\n Lairs: 5x Troll Lair",
+      "source_hash": "e1446c7a7d0dfa1702b1911a114b80e0e56b1dd0e9628446448a22d33c34afdb",
+      "entry_hash": "cd7d4b907c7c37ec3a0c00c616134c86c3ccace512f2580849faf98e8048d56d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPHillsofEvendim",
+      "source": "Hills of Evendim",
+      "source_hash": "eb7fb68b6b748e09d1d314bdbc22b3ab62ff5c9db9fe7e7c5df3ac461ae2e4ec",
+      "entry_hash": "36b03c95cb1af829cc77b01435039588ddcb06e9c378d7195d8f68c7c9cdf05b",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPHillsofEvendim/Desc",
+      "source": "The Hills of Evendim, or Emyn Uial in Sindarin, were a series of hills in northern Eriador. \\n\\n Size: 500 x 550 \\n Lairs: 2x Troll Lair, 2x Spider Lair, 1x Warg Lair \\n Neutral Structures: 2x Outpost, 2x Inn, 1x Signal Fire",
+      "source_hash": "d33b2d426c149b4a9cec28dea444c06bf2b051f17d1aed8ae99047f55e025c61",
+      "entry_hash": "44ef2d0d7840c7f33ca90c0c697d481a73e45ac1ac5dafa7de22c1846db1a645",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPIcebayofForochel",
+      "source": "Icebay of Forochel",
+      "source_hash": "f7ac0fa93d221bf5172e860954014cf1d3d6e770f4e229fd0b8cb3fd57a12154",
+      "entry_hash": "484a8276655c3df0a841c0003e3383604cec68cdbb30086019981b167780c215",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "19c994c4385e3af586fb56f753271bf59ad6a3c78af6e4422dd86bb089b27c69"
+}

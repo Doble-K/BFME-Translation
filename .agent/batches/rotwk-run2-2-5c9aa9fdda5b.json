@@ -1,0 +1,230 @@
+{
+  "schema_version": 3,
+  "batch_id": "5c9aa9fdda5b4a2d94778f3a8dfd60ba",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T19:58:45.909584+00:00",
+  "lease_expires_at": "2026-08-06T01:58:45.908401+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-5c9aa9fdda5b.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFireArrowsPurchased",
+      "source": "Upgrades this horde with Flaming Bolts \\n Significantly increases the damage done by Boltd \\n Increases horde attack range by 10% \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "e49e86f5e6dc2d83cd2217d85300e2d6d1cbe6df14662a391d1879c2aae8e031",
+      "entry_hash": "6f1137f6afbfc5ac41b5e9c905021481654ededa75ef5eea2a2dc5fa88c314e6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackIsengardFireArrows",
+      "source": "Research upgrade at Armory to enable this equipment \\n When equipped, significantly increases the damage done by Bolts \\n Increases horde attack range by 10% \\n \\n Upgrade Time: 10s",
+      "source_hash": "de8857a9e61cfee1bf93037abf99f1dfc8b478a896ab15007a0c8a9fca4f80b9",
+      "entry_hash": "4bbd313c700d324be6b748cea71189db6abd124f8c1145a5ed66aa95af21682d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipNecroBlackIce",
+      "source": "Modifier Type: Spell \\n Targeted enemy units suffer -25% Speed \\n Stacks with Buffs, Leadership, and other Spells \\n Extinguishes fires \\n Target Radius: 150 \\n Duration: 20s \\n Target Range: 400 \\n Acolytes Sacrificed: 1 \\n Left click icon then left click on target area",
+      "source_hash": "3c6edc0bc3b1b64a44c7776e6ee0d9a58dc5ac41eea50227915a8ca420578a45",
+      "entry_hash": "358c5a09b1f89e1551c3270eeda0d12219b179ec5687f44f8e7311a00c487403",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMirkwoodArcherHiddenHunter",
+      "source": "Unleash a volley of arrows that deal +100% damage \\n Disables cloak \\n Recharge Time: 45s",
+      "source_hash": "d318932682350be82f8ca127b84040fabea567c4ab426c10ef82a0eab23147a2",
+      "entry_hash": "c3988c13f9ec9ab1875ee688ba13692d862142743843115a2029f69a1a2a0ebd",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipElvenCloakMirkwoodArcher",
+      "source": "Allows Mirkwood Archers to immediately escape combat by stealthing \\n Remains stealthed temporarily while moving or standing still \\n While stealthed, Mirkwood Archers can unleash a volley of arrows that deal +100% damage \\n Firing disables cloak \\n Duration: 30s \\n Recharge Time: 45s \\n Left click to activate",
+      "source_hash": "d6e4f8f6b28c39711b17c889eb97a82522a6cc6c7bc96cedf97e3b0c0a686cd8",
+      "entry_hash": "a3b9ee69266e709e8944f4cc44c2dc5613e3b0f68e9019f0f571d9e14c128465",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipAvalanche",
+      "source": "Summons an avalanche that deals massive damage to enemy units and structures and puts out fires\\n Modifier Type: Spell \\n Enemy units that pass through the snowfield suffer -25% Speed \\n Stacks with Buffs, Leadership, and other Spells \\n Damage: 6400 (Hero) & 4000 (Frost) & 3200 (Crush) \\n Radius: 200 \\n Recharge Time: 12m \\n Left click icon then left click on target area",
+      "source_hash": "79b11335679eb2f93da56958f6d9fc0adae9b0346505c65e02fb625324e82f9c",
+      "entry_hash": "4636cdb9ed35f9f3b3019ee60b3bd3df4dac1bcf6da13bc88f01fdcaa3f69fd0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEphelduath",
+      "source": "Ephel Duath",
+      "source_hash": "271fdfa2e1a998ee5cbbc513328fb9cdde2caf73f6083a3ccd91c1609ec4aae0",
+      "entry_hash": "237ef5708d01e14e572aac9fed85b4124f92920fd3c8e44d711e74368255790f",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPEphelduath/Desc",
+      "source": "The Ephel Duath, or the Mountains of Shadow, were a range of mountains that guarded Mordor's western and southern borders. \\n\\n Size: 375 x 375 \\n Lairs: 2x Troll Lair, 2x Spider Lair, 2x Goblin Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "f3759c32975c380d05507f87f1100ceeb74410c3c43a32973d54e19891120fb6",
+      "entry_hash": "452aa30105b9805cfa608b694c35a0a808e1d2c9b17c0dea1247625907b40225",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPNearHarad",
+      "source": "Near Harad",
+      "source_hash": "4a708d232fa47fcd2a3cff479ae172258ac43cefff35b21e7c959fc60ee981b9",
+      "entry_hash": "a77a96970ff3c5dc2cb7baf8b5a8ae2016f0866258f2823f28d92f0c33b2f62e",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPNearHarad/Desc",
+      "source": "Near Harad was an indefinite region of Harad that lay to the south of Gondor and Mordor, beyond the River Harnen. \\n\\n Size: 370 x 315 \\n Lairs: 2x Troll Lair, 2x Warg Lair, 2x Goblin Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "b8ae469457be7ef13d959da3d1e70d220695fcb12397462b01f3f1d4396e7876",
+      "entry_hash": "db146a238249e7483c3a20b3a364cb3906fe3c05a096997e4643145a8eb291a1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPRiverNimrodel",
+      "source": "River Nimrodel",
+      "source_hash": "caab13123ce00d41a7f30cf3105e84e5e0d6e221a128dac63fe14b21d76d36cf",
+      "entry_hash": "e2143869b657af759605c852466ba1e730014f2421df0429435ba7068b91678b",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPRiverNimrodel/Desc",
+      "source": "Nimrodel was the small river that rose in the eastern foothills of the Misty Mountains, and flowed east to meet the Celebrant on the western borders of Lothlorien. \\n\\n Size: 386 x 320 \\n Lairs: 2x Troll Lair, 2x Spider Lair, 2x Warg Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "0387817e237af025e37b4a57fe4a3785951cbb4e66f87e03b2079a564e50503b",
+      "entry_hash": "41b782ceebea54af30c0664be7762f1b26a0c0e1776ce17dcc93f58d320c777e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPSuperTestArena",
+      "source": "*Test Map: Super Test Arena",
+      "source_hash": "38d65a34c2a1307903e0777f8bdb47f934f8198b7bcc34bbe40004b2eddcab87",
+      "entry_hash": "66a0955cebb6d676afd6b10cc82d627e34e5f4c9f1b9c959026e65156a4ca216",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPSuperTestArena/Desc",
+      "source": "Patch 2.02 all-purpose testing map with instant recruit and spell recharge timers. \\n\\n Size: 500 x 500 \\n Lairs: 4x Drake Lair, 4x Troll Lair, 4x Barrow Wight Lair, 4x Spider Lair, 4x Warg Lair, 4x Goblin Lair \\n Neutral Structures: 4x Inn, 4x Signal Fire, 4x Shipwright",
+      "source_hash": "0b509ac058ef6e28c76975cf3eb20800a51fff91acdfb0704485bb372949b261",
+      "entry_hash": "b2337796a54481152de43ea110fddbdeb35d0ae53a712aa36f69758503571cae",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEmeraldIslet",
+      "source": "Emerald Islet",
+      "source_hash": "7120ca6a3dc0181dd79a5103acd384510b7b9fa0f51bdbfc5fc17a12f96458ef",
+      "entry_hash": "46c77a7b02e6e8f412f9f218ae0e208265e6a18eb7a48f543a9b9b7a85dfcf08",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPEmeraldIslet/Desc",
+      "source": "One of many uncharted islands in the Sea of Umbar. \\n\\n Size: 500 x 450 \\n Lairs: 2x Spider Lair, 2x Goblin Lair",
+      "source_hash": "c27e6f53c861734a4e25503044d6b67813224e95c20e78e475424d63bf0c6ba4",
+      "entry_hash": "a16dbb788ac61a79358db9d25dde40f2742451b9af2846246880eaacf8d6e54c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORBucklandII",
+      "source": "Buckland II",
+      "source_hash": "737f67ac52c0dd1bc633c5e4bbc974566054644006b497b9ed191b70b76b948f",
+      "entry_hash": "4098a56b76e58b6949689e9033c6bd000d5e3e3c17226abab73ead0103e5fb58",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORBucklandII/Desc",
+      "source": "The Eastern border of the Shire was the home of Merry Brandybuck. \\n\\n Size: 400 x 395\\n Lairs: 2x Troll Lair, 2x Spider Lair\\n Neutral Structures: 1x Inn, 2x Signal Fire",
+      "source_hash": "3e4778bb13a1e2c55862aecf0b1d2478016f58ea9ff8b29621f7a6db876bc1ac",
+      "entry_hash": "ea830d24f90e7d62bd1d914f696deb3f9b96bd6a2939d1506c69384ebbad17f6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPFenmarch",
+      "source": "Fenmarch",
+      "source_hash": "4195e9d31b00b78f7338114e32a39eb54e761f7d5d1b19099bc61201f30ad661",
+      "entry_hash": "b054eb0c7c6dead5ff7046d25e6b4e0a0d6f3b17a49a4ceaf8ddb8ebc364a791",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPFenmarch/Desc",
+      "source": "The Fenmarch was a marshy border-land along the Mering Stream in the east of Rohan. \\n\\n Size: 380 x 330 \\n Lairs: 2x Troll Lair, 2x Spider Lair, 2x Goblin Lair \\n Neutral Structures: 2x Inn, 2x Signal Fire",
+      "source_hash": "edf2759685c14e163fae05dce88134cb09efbe570b7ee61ab179bc818705c62d",
+      "entry_hash": "bcdb5374fff6dc21047b3105481447aaca35bcb593ecbcdeb34fe7413f3a37df",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "6970508e52141a773df4b755cbd254ff6c87553db4835f15b462b3a5a9d5b83c"
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": 3,
+  "batch_id": "e783c60c448846a683d82440ccdb5c21",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T19:45:17.461197+00:00",
+  "lease_expires_at": "2026-08-06T01:45:17.459935+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-e783c60c4488.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorTrollCageLevel2",
+      "source": "Allows training of the Drummer Troll \\n Allows healing of nearby Mordor Trolls \\n +10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "e25493512254a9a64163ca7ea7655159eeff9ff59c65bbe118768040c34d3fec",
+      "entry_hash": "1173c90807880af499d85249b3031975a9b84ed0456959d6754ecef7b802cf06",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorTrollCageLevel3",
+      "source": "Allows training of the Attack Troll \\n Increases healing rate for Mordor Trolls \\n +25% Faster Production Speed \\n \\n Upgrade Time: 1m",
+      "source_hash": "bb157ed9e833601c349f3dc4eceef27d097985eb07263ab7627c03da8cd0a7fb",
+      "entry_hash": "55781b33b047fc5c452b2ce72d50ed02cede24883ab7b1a168fed1718bdc57bc",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPMouthsoftheEntwash",
+      "source": "Mouths of the Entwash",
+      "source_hash": "e78f33e90cfe49b020f64154b2f99bb93acbe4e5546d3d71968fb7a9aba2a176",
+      "entry_hash": "d7182d492ff6514de68b5e96a7c20795bfc673881461baca0152b85636f005c1",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPMouthsoftheEntwash/Desc",
+      "source": "The wet, marshy land where the Entwash River flows into the Anduin. \\n\\n Size: 550 x 500 \\n Lairs: 1x Troll Lair, 5x Warg Lair \\n Neutral Structures: 1x Outpost, 2x Signal Fire",
+      "source_hash": "fe3f21bcca22eca598596b0c063ec18f53dd0688ac1b9338b00db9c7adfd3d3e",
+      "entry_hash": "7276d339360d3865bd5abc54e50e1e0b8aa279bac27b961ba920c9bb88a1704b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarBarracksLevel2Upgrade",
+      "source": "Allows training of Black Numenoreans \\n Automatically researches of the Death Masks upgrade \\n Allows research of Banner Carriers \\n+10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "ea17a79451f91c005613856f83c23b6ea49855861af79f9358430ad2b6c571d0",
+      "entry_hash": "1ec5c381f72d899660ad08dd3760bfba82fc62ada992826c5161ee9cbda88a95",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeIsengardTavernLevel2",
+      "source": "Allows training of Wildmen Axe Throwers \\n Automatically researches the Torches upgrade \\n +10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "9dd750b40472f9422f52c628becc7a70ce5cb6e71666684b2a1da334bbc8795d",
+      "entry_hash": "1ed859ba6d7557d9162c7a82eacf262fd61ccc0206e74b3c272ddb3f0a33c6eb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipAngmarDen",
+      "source": "Trains Dire Wolves, Snow Trolls,\\nand Hill Trolls \\n Researches the Heavy Spiked Collars upgrade \\n Required to summon Wolf Riders \\n\\n Build Time: 30s",
+      "source_hash": "97f8b76e8894e2180c1661510e9e79c2fc640a1e519aa8aa16e19c2aa530e4e9",
+      "entry_hash": "06c39c339d7b17f81e284343fce841a78f502b7adc89ef1fb04748c4db3f3b49",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildWildSpiderPit",
+      "source": "Trains Spiderlings and Goblin Spider Riders \\n Researches the Venom Sacs upgrade \\n\\n Build Time: 30s",
+      "source_hash": "0e6a0552c137009502cd1bb48689d37bdbfbd276331039a4ef269f59302022e4",
+      "entry_hash": "7c0ca86fae4b7c2542d76f7d49f1e9572594224c521ffafb2873c1b6e7020549",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMenArcheryRange",
+      "source": "Trains Gondor Archers and Ithilien Rangers \\n Researches Fire Arrows upgrade \\n\\n Build Time: 25s",
+      "source_hash": "7971b370676db5e6ef41af63c9be2c381dd3d00b3f2b49a4b9b75f49b2b6970e",
+      "entry_hash": "6cf219184d1a3babfd7a1b5a4a69415fa5954ebc6c90f673f2ee03560a706861",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenStable",
+      "source": "Trains Men Cavalry \\n\\n Build Time: 30s",
+      "source_hash": "e7387064a15e74a1ce1ddc8e619900b9312544e947b5e79c1b89def5d0521e85",
+      "entry_hash": "4048fcdad345d2f9d01377e55b62986dd09792a746ae76d1a1a3fe689dc3f3a2",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGreenPasture",
+      "source": "Trains Elven Cavalry \\n\\n Build Time: 30s",
+      "source_hash": "601aab23d6fcc62e5141092601314b4ba83795e86e73ff8fcedaeb1128019674",
+      "entry_hash": "54873605659daf07a5f451c5f11e5831f323e59752ec868198761eb325921321",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBattleWagonUpgradeMenOfDale",
+      "source": "Adds several Men of Dale to the Battlewagon \\n Strong vs. Infantry, Cavalry and Monsters \\n \\n Upgrade Time: 10s",
+      "source_hash": "93e4963a605b7d169b06947d6d87fe9751b0282c9b8ff57a46f9595ac198c5f0",
+      "entry_hash": "c1934f02a4fdcc6b5bab164a0adaf31745a994225f6aa33b38df27b6df912feb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBattleWagonUpgradeAxeThrowers",
+      "source": "Adds several Axe Throwers to the Battlewagon \\n Strong vs. Archers, Pikemen and Structures \\n \\n Upgrade Time: 10s",
+      "source_hash": "8c61852af1ee365c4a6c6fa2ae593283d0044b774013f5b8d00d9413e2c02f01",
+      "entry_hash": "df519deb91328ed365fd8b233f96579cf5741bfd4ff7a72ce538c5fb719a9158",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBattleWagonUpgradeHearth",
+      "source": "Heals nearby allies and slowly replenishes unit battalions \\n Allied units are only healed when not in combat \\n Allows the Battlewagon to auto-heal \\n Detects stealth \\n Heal Amount: 20 /2s \\n Radius: 150 \\n \\n Upgrade Time: 10s",
+      "source_hash": "e44e15eae9afc65a32d53a3aec88c06a884ac7388e12218eaaacbf8a92218240",
+      "entry_hash": "b4b9b8c069db00e249c72d24288daa229f09c07ccb2246fafee48d57736b4e19",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipNecroCorpseRain",
+      "source": "Cast on units and structures to deal heavy damage \\n Units become uncontrollably afraid and are badly poisoned \\n Damage: 300 (Siege) & 100/s (Poison) \\n Target Radius: 100 \\n Poison Duration: 20s \\n Target Range: 400 \\n Acolytes Sacrificed: 5 \\n Left click icon then left click on target area",
+      "source_hash": "30728806801b7b85761879bb765cf993275e3f7321b0a02d56901bcdc95e4315",
+      "entry_hash": "da44535dd377ed0e9ae7e45dc073293e051576abb97853c7559cf4d6d2628f63",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:CalltheHorde",
+      "source": "Call the Horde",
+      "source_hash": "279baee9eb3a604a8821264c268808a64c374439d91e60d36d6f01b5a7ee2fbf",
+      "entry_hash": "ecf159f31bfe1a71b74d84afada0add8b5197baddc28d916589dbc2be2e1646a",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCalltheHorde",
+      "source": "Allows Orcs and captured Lair Goblins to recruit instantly \\n Temporarily increases player Command Point limit by 250 \\n Duration: 35s \\n Recharge Time: 6m \\n Left click to activate",
+      "source_hash": "4f4dd8d45dd606579deadc2a63f6022216aa4d0229bf47dce114e2ea4a99576d",
+      "entry_hash": "ca866e93c56589a5b8d2006024d58e33a452533bb3c6353a371533a6ba83e956",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorFireArrows",
+      "source": "Allows battalions to purchase the Fire Arrows upgrade \\n When equipped, significantly increases the damage done by Arrows \\n \\n Research Time: 30s",
+      "source_hash": "c2a05538c5d6c3a117be78e7bd115423c9e64b1a5baab8a0f7f7dd9181455803",
+      "entry_hash": "b57084c8cd4c3fb3e9e1541c289d16e74341d95d3ada65d0504633422dd0c727",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorFireArrowsPurchased",
+      "source": "Allows battalions to purchase the Fire Arrows upgrade \\n When equipped, significantly increases the damage done by Arrows \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "42c4a0ff75b0a00eaf42bb8bd18b5ed88f40e2ae3a5748ddcf32fb17b113675f",
+      "entry_hash": "28c137261074e95a264f9043d6eadbc8c49df0e3be8a4a8c20dd1c35fa3727d1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEregionForgeLevel2",
+      "source": "Allows research of Forged Blades \\n +10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "d729ecba4354de62e829f70b11b72109fd4ec6553fe3c74e5214fa1c7595cbdb",
+      "entry_hash": "7eec72fd8c40b60a36df75acc10d0ec78097ed6736fb6fd7b25d7036057b6700",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "caf5e10fb8db3d7efa33ad44117fd7aa942c44ef350a81167bd467d98ebf89a4"
+}

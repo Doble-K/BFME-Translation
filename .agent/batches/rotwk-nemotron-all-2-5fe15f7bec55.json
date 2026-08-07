@@ -1,0 +1,192 @@
+{
+  "schema_version": 3,
+  "batch_id": "5fe15f7bec554f69896963e6a3243fde",
+  "worker": "rotwk-nemotron-all-2",
+  "created_at": "2026-08-06T08:04:49.707669+00:00",
+  "lease_expires_at": "2026-08-06T14:04:49.706408+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemotron-all-2-5fe15f7bec55.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SUBTITLE:BABME_06",
+      "source": "Earnur struck out to chase him down, But I then realized his power.",
+      "source_hash": "e292a0a9a5ed2d5b09ef405377df01770b954ec306302775b558e39adce5daad",
+      "entry_hash": "b862f27b099485977a0f7d0239d53480639d127a040240ea3cb83a27db24c62a",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BABME_07",
+      "source": "We thought him but a powerful Black NÃºmenorean, but he is Nazgul, First of the Nine, most fell servant of the Dark Lord Sauron.",
+      "source_hash": "2d33417f995c320ac6118a3972d93c62b8f65d3345f671e3ed9ed69154c3532b",
+      "entry_hash": "2f491a573dadba1c23eeaa775439097008b7667b015b0850c33d18ff16849d24",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BABME_08",
+      "source": "I put up my hand, and called out to Earnur: 'Do not pursue him! He will not return to these lands'.",
+      "source_hash": "a703afa86811312cf5a52fc53abdea204d00d95526c0c99aa70b89152a8c84c3",
+      "entry_hash": "745b15dd90e93e0fc2d57b52638becd589e78e06cf639323487a3f262d4fabfa",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BABME_09",
+      "source": "'Far off yet is his doom, and not by the hand of man shall he fall?.",
+      "source_hash": "b07bfb22e03cce282afcf82985f84bb40fe0fa563864ac5a8150ec91d3be4b1e",
+      "entry_hash": "0b000c736846fbd8490ca32ad5c2a0d63b55ffbe2f459e4ce9de775087c0efa3",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BABMO_01",
+      "source": "After the Witch-king?s bloody, final triumph over Arnor, the kingdom of Gondor can look away no more,",
+      "source_hash": "78ac12df2d213cef268521c7b66cbafee98fa3aad30f25447f59d525fe3f96be",
+      "entry_hash": "2580875cf17e5638cb337a23ecb392d98b75e9ad82fae76283edfaf085e03880",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BABMO_02",
+      "source": "lest the Iron Crown dominate all the lands of the West. Elves and Men come together to drive Evil from the north forever.",
+      "source_hash": "847712e655ad57aea1e29e1b37fef778cbd77f387a2cdf212b4d777504ad20c7",
+      "entry_hash": "72c69a46baa87ad3a36d870a7e50b1741de3f6d2f06f67ed92c54b65abc7b8bc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BABMO_03",
+      "source": "Earnur of Gondor would lead the Men. The Elves call for Glorfindel, Elf-lord of Rivendell and Gondolin, to lead them.",
+      "source_hash": "6e6834ad3d198ba1a96b174d32c462a7f5bb09aa9b7d927d1ee0ceb5b341e5a3",
+      "entry_hash": "d5f6925fe06ae9facf05a29049045aaaace34a35db432bd5605589b42e372a37",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BABMO_04",
+      "source": "And so it is, at the will of my people, that I change  from storyteller to blade-bearer once more.",
+      "source_hash": "b3231d36e205e860caa8c7e5036ff4f9a8f4fcff1590b1460a4763299f210ba6",
+      "entry_hash": "2d150b8e565f176226fedc24ef68111feed333757236fe23b8ff71fc4c68cbf2",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BABMO_05",
+      "source": "I ride, Elrond at my side, under Earnur?s banner. Elves and Men together will drive evil from the North forever.",
+      "source_hash": "cd98709cf8cd240395f7c7ad13c8e9cfff12075e9f81396baebc76a07a4312ec",
+      "entry_hash": "55c12f28f3a49008c024cc3463d31eac4e23ed4b29620ee967bc51b85da27d11",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BABMO_06",
+      "source": "We will not merely push the Witch-king back to his lair of Carn DÃ»m as we had foolishly done before.",
+      "source_hash": "3274e14d9a6c2157e009e83576425be242ee022729f92b9902738473b6be3adb",
+      "entry_hash": "c481c4a9d7840ada21e2c33046b74e1a8bb80ed184f79fee88afedcecb337939",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BABMO_07",
+      "source": "We intend the total destruction of Angmar; and this time, it will be so.",
+      "source_hash": "f5999f5c86897058c9f1c29aebe3958a98f1dd8d8ee208150bf6faadfd64e283",
+      "entry_hash": "a14c25e01c014b4c0651d7a39b30ed03e1f96e51761edb2ceb865c35e9974757",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_01",
+      "source": "Middle-earth enjoyed a thousand years of peace after the Ring was lost and the death of Isildur",
+      "source_hash": "a6a1ab8617ea3ecd7415ba8310eeac8f5a215f27070c020aed7f8d3e1ee6d32e",
+      "entry_hash": "3045aec602c43cd761c06e73b6013d2411800e6c7daa181c42dfc675053a75ef",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_010",
+      "source": "?and Arthedain, the most powerful of the Northern realms,",
+      "source_hash": "02b30f19efa47bb45007a08ebb44567600e3140191cda34b36303f016c03435a",
+      "entry_hash": "b43f36d51e5b0986d685f42b287ec05dabfae97cb74ba9c2889d9b8786d3821f",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_011",
+      "source": "still ruled by Isildur?s heirs from the capital of Fornost.",
+      "source_hash": "eb0a60a53432a1b9106d0c0afb02f100e23f12e93492f807745c09f302f56f0e",
+      "entry_hash": "8a64516d7ec3caba1b70958fd200f04510470088abb818649917b46d34687396",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_012",
+      "source": "It was during the reign of the eighth King of Arthedain that evil began to multiply in Angmar,",
+      "source_hash": "8ee30b7549033bcb4f558a34f042662c6eebaa69a34250daba0ee8dd3a02db79",
+      "entry_hash": "ecc291aeed2d88752a66dec7141b97327d0777ea825be10f44ce5677284298ff",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_013",
+      "source": "a twisted, frozen land that lay North beyond the Ettenmoors, and home of the Black NÃºmenoreans.",
+      "source_hash": "2ab1815f07d69df319f6163ec0bc7572aa88e43b1d38f8094f4c15fbecb0571b",
+      "entry_hash": "204e9fca10e91862040c0e1feeed07e9d3848799c0cd8ee41f32075ae3a8c39d",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_014",
+      "source": "Among them a sorcerer of great power arose, known only as the Witch-king...",
+      "source_hash": "c3c577ae6cf3ffc60f6256d7326a0729a745794723f2b84c70891fd36f3586d0",
+      "entry_hash": "e9c5a4d890a4a3a58092fb2d0ae716a00cea16c62abb9567ce8f1b53ab3ab868",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_015",
+      "source": "He has taken up his Iron Crown for a single purpose:",
+      "source_hash": "17a2d46a6a754202b54c21f3dd61c88d0a5c38b50f7a0722737ec4a5fccd6be0",
+      "entry_hash": "92086b5e7ab6dc0cbf94f000bd882f605e7696aee296fc1533dc17131c4da534",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_016",
+      "source": "to destroy the DÃºnedain and their kingdom of Arnor ?",
+      "source_hash": "a85ffb47896f2239b99f976dac95fda525d8f5b8c799782cd0a46fec9a1eb892",
+      "entry_hash": "a93f4237b296daaabccd8e4bc46e68d4964c4b9f4a1b95fc253fbca3f6958089",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_02",
+      "source": "but Sauron was not dead, only cast to the shadows.",
+      "source_hash": "dabbbde5b781399ab1c5649eb2e55d732c82046137f99d08b824b4d019b83a6b",
+      "entry_hash": "58537e1c102e19553549ba74d3123f9c369c4f97ebabbd5424afead831d0cf13",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_03",
+      "source": " In time, evil once more began to move?",
+      "source_hash": "8d60516448fb82867121fdeb08600064b422519efa123b23e4625c19751cfd16",
+      "entry_hash": "1189e622ae7f58fd435ca59dd9feb49b8273eeba7bed03cf10f37c2247a0217e",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_04",
+      "source": "Arnor: The North Kingdom of Men, ruled by the heirs of Isildur.",
+      "source_hash": "f42b11fa713578a71f006d80bc9692ef8ce986c93607f28bd4e4cc373dd6e509",
+      "entry_hash": "f033ab26af1b6363863040f3a00a78988dd7c0f9d2807c59af6944fe53f0d24b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_05",
+      "source": "This land of passion and promise is waylaid by men?s inability to set aside petty differences;",
+      "source_hash": "d0a0b0ca447ed9d1e1de236316f4945e2243ccbb928fe45e0875cb6926f7ebe8",
+      "entry_hash": "4ab64d79fa25ac04658d0563bc05f701754e97937f4e0df1bb0e7f33fa544815",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_06",
+      "source": "and so it was that civil strife weakened the DÃºnedain and broke the land into three realms:",
+      "source_hash": "f7cfd4181f02f46cb79c944fd6f29686d7ce1ad8c22ba53ca2673980467fb834",
+      "entry_hash": "ff85fc9cc0d3fd988fe3fa825b4280d69d1d58601e95a874e4b548fadb62480e",
+      "protected_tokens": []
+    },
+    {
+      "id": "SUBTITLE:BACO_07",
+      "source": "Rhudaur, the smallest and weakest of the DÃºnedain kingships?",
+      "source_hash": "9cb3c9bab6bffeaf13fa9d99193bf7d5a3929c8d56463ee7fed61d02d6df1f14",
+      "entry_hash": "6a78ced00480c0176d1828edb0862f32c8ce086f88df895dd8c4d0cc09a82f36",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "4e8128783a63d5068668efcb24d46882614e7139807e237556b537ffbd6141aa"
+}

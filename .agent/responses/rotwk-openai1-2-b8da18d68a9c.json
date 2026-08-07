@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "b8da18d68a9c4cb0982ba3a9a0f77ab1",
+  "worker": "rotwk-openai1-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericCommandPointUpgrade5",
+      "translation": "Aumenta los puntos de mando en 100\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericCommandPointUpgrade6",
+      "translation": "Aumenta los puntos de mando en 100\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericCommandPointUpgrade7",
+      "translation": "Aumenta los puntos de mando en 150\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericCommandPointUpgrade8",
+      "translation": "Aumenta los puntos de mando en 150\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericCommandPointUpgrade9",
+      "translation": "Aumenta los puntos de mando en 200\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:GetRichYourself",
+      "translation": "¡Necesitamos más dinero! [&W]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGetRichYourself",
+      "translation": "Aumenta la producción en un 900% durante 6 s\\nTiempo de recarga: 1 min"
+    },
+    {
+      "id": "CONTROLBAR:PurchaseGenericMoneyUpgrade1",
+      "translation": "Aumentar ingresos"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade1",
+      "translation": "Aumenta permanentemente la producción en +5\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade2",
+      "translation": "Aumenta permanentemente la producción en +5\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade3",
+      "translation": "Aumenta permanentemente la producción en +5\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade4",
+      "translation": "Aumenta permanentemente la producción en +5\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade5",
+      "translation": "Aumenta permanentemente la producción en +10\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade6",
+      "translation": "Aumenta permanentemente la producción en +10\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade7",
+      "translation": "Aumenta permanentemente la producción en +10\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade8",
+      "translation": "Aumenta permanentemente la producción en +10\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchasePurchaseGenericMoneyUpgrade9",
+      "translation": "Aumenta permanentemente la producción en +15\\nTiempo de mejora: 50 s"
+    },
+    {
+      "id": "CONTROLBAR:SpecialAbilityGrantPowerPoints",
+      "translation": "¡Necesitamos más puntos de poder! [&W]"
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityGrantPowerPoints",
+      "translation": "Obtención de puntos de poder\\nTiempo de recarga: 60 s"
+    },
+    {
+      "id": "CONTROLBAR:PurchaseGenericPowerPointUpgrade1",
+      "translation": "Aumentar ingresos"
+    }
+  ]
+}

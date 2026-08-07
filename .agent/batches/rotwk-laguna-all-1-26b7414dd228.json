@@ -1,0 +1,211 @@
+{
+  "schema_version": 3,
+  "batch_id": "26b7414dd2284bf59db2b9b27bd9d972",
+  "worker": "rotwk-laguna-all-1",
+  "created_at": "2026-08-06T07:03:38.684661+00:00",
+  "lease_expires_at": "2026-08-06T13:03:38.683430+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-laguna-all-1-26b7414dd228.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "OBJECT:MordorSoldierOfRhun",
+      "source": "Soldier of Rhun",
+      "source_hash": "026e0999711989a860378da02eb9ddf8a47665221119da5a4552afeee7dd3e6a",
+      "entry_hash": "6ff3b768aecbc88c1439867fcb4e59af99745fb86298e5abf8d522a9e03c3e89",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:BattleWagonUpgradeBannerCarrier",
+      "source": "Upgrade with Ba&nner Carrier",
+      "source_hash": "e26882d149fd0ffcbd201581026d03160ea664669a0b4f5f4907f68e2393519b",
+      "entry_hash": "cc9060f15f62f01762822530da1210f338c6b22422181a7233e997dd5f3d74ae",
+      "protected_tokens": [
+        "&n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:BattleWagonUpgradeMenOfDale",
+      "source": "Upgrade with Men of Da&le",
+      "source_hash": "336981616321e91f31907c1be8f81ea5d8bad0fa196a7139c6c1381356f640d2",
+      "entry_hash": "1b951fca755c0ee2a27fc5e1437f8d51cd7ffb164e03daea4df7c533ad5efd4f",
+      "protected_tokens": [
+        "&l"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:Elendil",
+      "source": "E&lendil",
+      "source_hash": "c73fe2a81d77a55017fdd6206f93813b8a9b45ea41bc44f68b9091393020abec",
+      "entry_hash": "e3d44daa6d6bba09284de9606eee867e54f6c859216eea48436620cdacca68a7",
+      "protected_tokens": [
+        "&l"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:SpecialAbilityIronHillsCatapultOilBarrels",
+      "source": "Oil Barre&ls",
+      "source_hash": "7a81000a56bd18ed05f170e97373d78dd95a2bee689b8503e84e1a9d93a9fa42",
+      "entry_hash": "d9dd6cea5cede56880a8e5ee68d4a1069d4bfdc8312faf753a7ddd12abeb1c5a",
+      "protected_tokens": [
+        "&l"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:Shadowfax",
+      "source": "&Mount / Dismount Shadowfax",
+      "source_hash": "d8fca57c57f3290d0c011f953b82781c21cbe8545f27888b575467365a01889f",
+      "entry_hash": "b131c4f1b70557de71f7bf3489cec91bd8edbdd0b710429538c5fe22d9ea680b",
+      "protected_tokens": [
+        "&M"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipShadowfax",
+      "source": "Requires Level 4 \\n Left click to switch between \\n mounted and on foot",
+      "source_hash": "9ac4101cf265468ab67c608cbed832f372f66bed61e4232887f5bb02d9615e3b",
+      "entry_hash": "f3c9d099c4586ca10f261a670095abf49aa8ce13ea70fe1252d427befcb07f2a",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackLevel3BlacksmithHeavyArmor",
+      "source": "Requires Level 3 Blacksmith",
+      "source_hash": "661a9b6763d820becf3f099d3968f0ebeb60f6c57fa70ef5837bd355096adb5b",
+      "entry_hash": "afecc9dd1206bbbeaa0a882ebe8b2375c90bfd80101451c7009def1a4e394e80",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:LackIsengardHeavyArmorTech",
+      "source": "Requires Level 3 Armory",
+      "source_hash": "892773a7a0070c847c04a8aa53f75adc97bf66c25d48591ff1ef4bd286e8c0a1",
+      "entry_hash": "e34b80e4370b012a4fb38980322304dae485f0178d5aba0d288df7650d067f12",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:LackIsengardFireArrowsTech",
+      "source": "Requires Level 2 Armory",
+      "source_hash": "353ba68f6c6bec1e5b97fe5e91a963adc9bb293195335821448fa6f5656c5af6",
+      "entry_hash": "6d784fb898da3c24a79f60dc2b389d666ee20de82ae47ab0962f0011d354604e",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:LackLevel3TavernHeavyArmor",
+      "source": "Requires Level 3 Tavern",
+      "source_hash": "f0b1249578d1c52bb4f6a66e5fb003b9d709c1a902e37ff5924462835486c7d5",
+      "entry_hash": "a80a85e1fcfc292e630eaead82730cae6a4c99cf3d898c016ffb0644a49cf3fc",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PassiveGrandHarvestUpgrade",
+      "source": "Grand Harvest",
+      "source_hash": "558f03245158fa1f9a9351c368b0dac26a5fc38dfb55f97690fbdb7167831bf0",
+      "entry_hash": "227bf5d89a8ec13c561ea6bac35f941d5b305e6141d812a235805b9237afbefd",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:FryingPan",
+      "source": "F&rying Pan",
+      "source_hash": "ef488f0a470b0fc26fb37e872bacb080e4769b327799a3f0b46a8ca0cd447ca9",
+      "entry_hash": "e247ed781b14ed51dee7b0e97b05c34e6f2ee9c77ea2b7a88d3461d020da370d",
+      "protected_tokens": [
+        "&r"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToggleWitchkingWeapons",
+      "source": "&Toggle Weapon",
+      "source_hash": "ad95e48dca5f250ed712efbe0c70f87661286ff0703a6abf2a142a46c222bba6",
+      "entry_hash": "d00d5b5cbb465d581234a39b2a266a2944cb633c9dbaa7f025b0439fa1f148b7",
+      "protected_tokens": [
+        "&T"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ShelobWebbing",
+      "source": "&Webbing",
+      "source_hash": "39ef7a79e886f4d0264ffebc052e53d2d91cd7dc06a31aade65beb1fb4a389a0",
+      "entry_hash": "88c13aac1f8509f8aa5876be3dcaa252c594d0759d1b7a4df75780b0658d708c",
+      "protected_tokens": [
+        "&W"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MenLoneTowerStealthDetection",
+      "source": "Watchful Eyes",
+      "source_hash": "d68d73102cf230db26b6bddafda8149da3c482a536cae6a8825b0d1df4b3b918",
+      "entry_hash": "e6e3899f904b1cf909cf8ec4fa92e7f1f3ee35a724c05b5e9c8cb1330530b035",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:DwarvenLoneTowerStealthDetection",
+      "source": "Watchful Eyes",
+      "source_hash": "520359c024274f22a3add681246905554c8d5c84664791c08ce9eeebcc4f3897",
+      "entry_hash": "2ef0d7939ed450954af22de00cf6911ee37c1518832d0ff7e4176113ec52b3ff",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:MordorSummonedBarricadeStealthDetection",
+      "source": "Watchful Eyes",
+      "source_hash": "c6498655e121e0328a91db0bdd4a3e6ad5b47f0ba104f0eec8296655c6245ebb",
+      "entry_hash": "f3cf4e9e5f74aae00d467bcab9b312436be0ed32ffd70d2d47c8728fccd37dc3",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:MenLoneTowerFlamingMunitions",
+      "source": "Flaming Munitions",
+      "source_hash": "23eeb68b5edd7f9ce7941dbf7a0e854f014608553248bee450d22663ce354b97",
+      "entry_hash": "66aae62070c56239f604f4ac4f120e71ebc24e8395a398e22985fa0d4c987256",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:DwarvenLoneTowerMasterworkMunitions",
+      "source": "Masterwork Munitions",
+      "source_hash": "45c17f09fd51e40edf377826a4b70e2469ac4cafa6338906e43b95af504f135c",
+      "entry_hash": "0e2c0340184eafc7217b6428554322c20d225112658cab8e3c1444c0ad3d0dff",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:MordorSummonedBarricadeFlamingMunitions",
+      "source": "Flaming Munitions",
+      "source_hash": "462d980209d1fa85d6fff2acc797dc7f25cdd0046d45574a5ac2803218ea9596",
+      "entry_hash": "0d11786fcf9e3929be252e52a13d43edea99ed179460dc64d81e304b58ef559d",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:MenLoneTowerNumenorStonework",
+      "source": "Numenor Stonework",
+      "source_hash": "58e40231aa120d84eedc137e443f4e77a84cbd6be6e1d53b39dd4c0111c99beb",
+      "entry_hash": "2abd0af2468bdfe69cfb9d61c7b49b6ed3a7e01453d72c8c3c877196102b3daa",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:DwarvenLoneTowerDwarvenStonework",
+      "source": "Dwarven Stonework",
+      "source_hash": "9414172ca3cdb5fb57c9fc2a12cbe7ded8325f3f89d7a024ea68f9321490fd30",
+      "entry_hash": "fa3fb0ec4e8e6d2a4a173d999f5b95faea8ba8c7ad5db8f956d3766124fcf5fc",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:BattleWagonHearthStealthDetection",
+      "source": "Revealer",
+      "source_hash": "61d489464423ae8d1a83e400d61871cc1ea867d7b3c275f2948d777340a7f6bb",
+      "entry_hash": "4c8ab06fe047f948fd04a248de22bef1deda73aa0b952c3e704d88dff32d6da7",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:WellStealthDetection",
+      "source": "Revealer",
+      "source_hash": "43f6c43d8a78784858d424a1f89d97a9a73a19f34e7caaf420f17952f86e469f",
+      "entry_hash": "5d6acd66476391cbf23329539c42a5eed2a7243cf05e1ac54a1f419e39dd13d1",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "051a6893809625c0cae03c9ba085cac1c405be98e9a28fecf0aeac95bd458798"
+}

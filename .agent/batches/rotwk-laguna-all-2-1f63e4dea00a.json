@@ -1,0 +1,254 @@
+{
+  "schema_version": 3,
+  "batch_id": "1f63e4dea00a49b593d4b811731065ed",
+  "worker": "rotwk-laguna-all-2",
+  "created_at": "2026-08-06T07:03:45.217232+00:00",
+  "lease_expires_at": "2026-08-06T13:03:45.215854+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-laguna-all-2-1f63e4dea00a.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPWORMinasTirith/Desc",
+      "source": "The City of the Kings lies at the Easternmost edge of the White Mountains. Beyond its walls are The Pelennor Fields, where the great battle between Good and Evil took place during the War of the Ring.\\n\\n Size: 352 x 352\\n Lairs: 4x Goblin Lair\\n Neutral Structures: 2x Outpost, 1x Inn, 2x Signal Fire, Fortress",
+      "source_hash": "25e6639f2d343bae23a3a1b81a1dac10be9242d6c10203e7e831ada626657e02",
+      "entry_hash": "d01b8dbb2e83661617fe7fae4564faf2bda19395d4a6414c6f16b68ab01fa07d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORMinhiriath",
+      "source": "Minhiriath",
+      "source_hash": "3bfbbc8731c7b7036a3c2799a4f89c62a5725dc099aeccebc2d3ebd11c523f55",
+      "entry_hash": "c68bfba72e92b5c4a627f78abbe3d11018bf91cdbd18e08c48d48c929a80f01d",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORMinhiriath/Desc",
+      "source": "This Southern part of Eriador lies between the Brandywine River and the Greyflood.\\n\\n Size: 430 x 430\\n Lairs: 2x Barrow Wight Lair\\n Neutral Structures: 2x Outpost, 2x Signal Fire",
+      "source_hash": "e244834b7db66c96900d73b049152d239ec65fcc490618029963a0104953bbb0",
+      "entry_hash": "b7dc15a69edddcfb13d55bacf0d703ff6c6c0c25d6da77bb7c9560550912f273",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORMirkwood",
+      "source": "Mirkwood",
+      "source_hash": "fd148b99fdf2b662986ad40941de0ec5bb46286ab723e18d31b26144582b280a",
+      "entry_hash": "a34f110fe1c171aa91e7f8278beda169db631a61f36e25f312d5fc566ca751b6",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORMirkwood/Desc",
+      "source": "This great forest is the home of the Wood-elves lead by King Thranduil, father of Legolas.\\n\\n Size: 500 x 500\\n Lairs: 8x Spider Lair\\n Neutral Structures: 2x Outpost",
+      "source_hash": "d91aeac77ea9a2292ec190744289076c9be2af966d43df7747c8ded4d5da24c4",
+      "entry_hash": "abcc83bb744300942b3db617fe086eefea04301cac3273e7a182b06f667330dc",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORMordor",
+      "source": "Mordor",
+      "source_hash": "04cf184de735ce937f4f99ce2f78f514d3b342d33b294bcae2ad9fdc982fce86",
+      "entry_hash": "88fe8b72f3d5ef1407aee77686596400d3e39a738f631c4790eea9e340a9878c",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORMordor/Desc",
+      "source": "This inhospitable landscape is the realm of the Dark Lord Sauron. In this region also lies Mount Doom where the One Ring was created and eventually destroyed.\\n\\n Size: 500 x 500\\n Lairs: 2x Goblin Lair, 4x Troll Lair, 2x Fire Drake Lair\\n Neutral Structures: 4x Shipwright",
+      "source_hash": "7827ec6a18e89e6a6d57c27321b653ef4a106ea46cff60c1beee69ada5b06b9e",
+      "entry_hash": "1f20c66c4fe9beb2f7437ec973998125b585ca3460c5f61c3765b849c0f45c32",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORMountDoom",
+      "source": "Mount Doom",
+      "source_hash": "8a9f4fe7701525c564f8e768f0de541097fefba639ed79bcf35c60624c4abbb4",
+      "entry_hash": "0330d77b246c2ee2db61024efa16da8f162ece984c0777f5572127bab67976a8",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORMountDoom/Desc",
+      "source": "In this volcano, the One Ring was forged by Sauron. Here the One Ring was eventually destroyed by the Hobbit Frodo Baggins.\\n\\n Size: 500 x 500\\n Lairs: 6x Goblin Lair, 1x Troll Lair, 2x Fire Drake Lair\\n Neutral Structures: 2x Outpost, 2x Inn, 2x Signal Fire",
+      "source_hash": "81fcac6390e2d03699f1734a30cc8c92b6ad78b7156cc8de4f23355b7d28a323",
+      "entry_hash": "cdb6eb67539c77b08cb8a4771a3d700ef9782d430f1377e0b187612691e93b2c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWOROsgiliath",
+      "source": "Osgiliath",
+      "source_hash": "0887d419bec85f96cf7d5ac04b3dc013dc844a18ff5296a065d7da1477bb30fc",
+      "entry_hash": "e4ac5fe5ba4540bd3ad9a2adebfe985f8888002b90e9ee927b88edb8af0fb62c",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWOROsgiliath/Desc",
+      "source": "This Gondor city is the last line of defense between Mordor and Minas Tirith. The Anduin River runs through the center of the city.\\n\\n Size: 320 x 360\\n Lairs: 6x Goblin Lair\\n Neutral Structures: 5x Outpost, 3x Inn, 14x Tower",
+      "source_hash": "2a7c01a6432d750fee71d210e7f4a5195b72e0c345fbb96431bd4a3c6c564d62",
+      "entry_hash": "c87d6d9e14f58fa2aa2bd75b347d8654957e7545385435e51e39f9a9955ad067",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORRedhornPass",
+      "source": "Redhorn Pass",
+      "source_hash": "5662908f7069cadff54c75235350d951640832fcb4deffce11de9a97e93bec81",
+      "entry_hash": "7d83d0d4d6c96d59978f0c100d7ff16cf1afc2d5954c54337ba80cc84a296020",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORRedhornPass/Desc",
+      "source": "Redhorn is the great peak in the central Misty Mountains also known as Caradhras. The Fellowship attempted to use this difficult pass during the War of the Ring.\\n\\n Size: 455 x 375\\n Lairs: 3x Goblin Lair, 3x Troll Lair\\n Neutral Structures: 1x Outpost, 1x Inn, 1x Signal Fire",
+      "source_hash": "2e779f827b7fd8aa871bdc9608992784f763ad15e947cd5afa5163edde2119d9",
+      "entry_hash": "1658bc4ef342ccea3c496a95d66cc37c8b76940312b0cf7ef707bee58cfa9546",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORRhun",
+      "source": "Rhun",
+      "source_hash": "d2488b9cf774454e4b78739a85a6a9c3137d10a15bb4b661e5e45837ff4f8573",
+      "entry_hash": "9826936cdcdde9b76eedabbb3f15a7f5f45d8c1fd2bdd2a41f448642e6ab80d9",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORRhun/Desc",
+      "source": "The mysterious Eastern lands of Middle-earth, around the Sea of Rhun.\\n\\n Size: 500 x 500\\n Lairs: 6x Troll Lair\\n Neutral Structures: 2x Outpost, 4x Inn, 2x Signal Fire",
+      "source_hash": "8c9019150c25c3c292b24e8ad1f803dc7f80a7f9a397d4fa3334591147a107d3",
+      "entry_hash": "a1b695c2076a7b3155f62b0aa3804da8f747a7608ff66fc80770e593535bb949",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORRivendell",
+      "source": "Rivendell",
+      "source_hash": "49a235e6c357f3d724169fbabcb8476facad44f68360820600028db4f11943cc",
+      "entry_hash": "23df24e6e11e8ca158a9d813d1286e702af373d650dfbb90230e6dcb3ad04e10",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORRivendell/Desc",
+      "source": "Rivendell is the hidden sanctuary for the Elves of Eriador. The centerpiece of this city is the House of Elrond.\\n\\n Size: 420 x 420\\n Lairs: 2x Warg Lair\\n Neutral Structures: 1x Outpost, 1x Inn, 1x Signal Fire, 10x Tower, Fortress",
+      "source_hash": "93ed38fbac814525a3f2d8aa39287935ea1c75fe3466417657ad703de63eff40",
+      "entry_hash": "da479f7804379ff45022a9c7523e378d68b0ce05fbd7303572bf5c8e75be90e0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORRohan",
+      "source": "Rohan",
+      "source_hash": "a6767664f8a5564ad536aa23d1f2a16c269f71e52623167b602ee14888a74cc5",
+      "entry_hash": "67f4b188d23e5c85cf617f034ca7cbf8968841fad5072319a645720df76b5376",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORRohan/Desc",
+      "source": "A great kingdom in Middle-earth ruled by King Theoden. It is the home of the Rohirrim, the finest horsemen of Middle-earth.\\n\\n Size: 300 x 300\\n Lairs: 4x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Outpost, 2x Signal Fire, 2x Tower",
+      "source_hash": "be8a09ce5417513fe3f1f409c72ae8637e970a291ce8a6b58dbe88ad053528a0",
+      "entry_hash": "1ce5b15bf1cb2aa87f6c81f6e27b1af7cd175a348e31e4e0e1da1319c6c77a52",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORShire",
+      "source": "Shire",
+      "source_hash": "7ae5507af95b6c6d9aef6f8df4c785d6ecb092fb43fd92aabc340a9604d0844b",
+      "entry_hash": "23d64ddab866c4f41007082fc731d806535324ed99b63f413e15b913322dcec8",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORShire/Desc",
+      "source": "A green, peaceful land. Home of the Hobbits of Middle-earth.\\n\\n Size: 500 x 500\\n Lairs: 8x Warg Lair\\n Neutral Structures: 4x Outpost, 2x Signal Fire, 1x Inn",
+      "source_hash": "6209e9771bb68e66989ed0e5a30dac51abed4d6b76e672ef0f1cf0bc99b33c30",
+      "entry_hash": "0697d2930074cb73cce12cf0f4180366d180e8db00a2cef8a01a5085d7c0a90a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORTowerHills",
+      "source": "Tower Hills",
+      "source_hash": "02a54138a8ce0632a12d44e18cd5230b8c94190dad8cf7b81a345fb06578130c",
+      "entry_hash": "0aba93b9048301a144d5b962f9d677af859b0d45416a112b9e6b101c5508998a",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORTowerHills/Desc",
+      "source": "These hills are the home of the ancient Elven towers that held the Elendil Stone, the last of the Palantiri of the North.\\n\\n Size: 400 x 400\\n Lairs: 4x Goblin Lair, 4x Warg Lair\\n Neutral Structures: 1x Outpost, 2x Signal Fire, 8x Tower",
+      "source_hash": "358fbcba608803fb8188c5a5b7e2f5e17a5c567c296b00d0721a5d1e65a8f7be",
+      "entry_hash": "17052b7a9c163a8fa3e132e4dba500067d3653ad5e94c0dfe362654014f9f4df",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MenLongShotAbilitySummoned",
+      "source": "Longsho&t",
+      "source_hash": "aaddc95c780fd7dad96011a4e2c2d1dbf73745417ebcc2be7676562b18197aa7",
+      "entry_hash": "0dfcaa99704f2901c955acf8186461a7d6b9c7b64135ac380c8e8c56d0f20f03",
+      "protected_tokens": [
+        "&t"
+      ]
+    },
+    {
+      "id": "APT:CEFeatures",
+      "source": "Collector's Edition Features ",
+      "source_hash": "a40690636d961c104f75780c91976e5fe2865ec068b07c3a75bbd24e92b78c11",
+      "entry_hash": "5531c3e3a2268ae6ceaf046664fb3fca10e23f37221d695212b1a2c8b5e98c3b",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "9c1e75ead38364d856adb9ed9bfc220b4300b3803a027f614093a70dc1f51bc2"
+}

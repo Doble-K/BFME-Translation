@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "399c908b05694cc4ba39fd24e4199a5b",
+  "worker": "rotwk-ling-all-2",
+  "translations": [
+    {
+      "id": "APT:NewWOTRFeature2Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature3",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature3Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature4",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature4Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature5",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature5Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature6",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature6Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature7",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature7Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature8",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewWOTRFeature8Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:DoNotShowAgain",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHIntroHeading",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHIntroText",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHFeature1",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHFeature1Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHFeature2",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHFeature2Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHFeature3",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHFeature3Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHFeature4",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHFeature4Desc",
+      "translation": ""
+    },
+    {
+      "id": "APT:NewCAHFeature5",
+      "translation": ""
+    }
+  ]
+}

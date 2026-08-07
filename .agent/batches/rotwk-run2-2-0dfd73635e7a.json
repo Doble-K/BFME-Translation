@@ -1,0 +1,201 @@
+{
+  "schema_version": 3,
+  "batch_id": "0dfd73635e7a4573927fefb7604274b1",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T20:18:56.049192+00:00",
+  "lease_expires_at": "2026-08-06T02:18:56.048037+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-0dfd73635e7a.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "MAP:MapMPEntwood",
+      "source": "Entwood",
+      "source_hash": "6fc057490fdbaf18375c13735138d01aaf09a98c85b24ea5d4766a41c8dc0489",
+      "entry_hash": "29505dd513d70e2d933f779e81de5aea2468a396e58c3f02928ed45c5d0022c4",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MapMPEntwood/Desc",
+      "source": "Given its name by the Rohirrim, the Entwood was known for being the last habitation of the Ents and Huorns. \\n\\n Size: 600 x 530 \\n Lairs: 2x Troll Lair, 4x Warg Lair, 4x Goblin Lair",
+      "source_hash": "8f41e1bad3d06a3c4dc6037ea09d1233ed9cb9ab0fcc4927a269cdf06751d1c6",
+      "entry_hash": "584c85acbe9bc52ab7ed04d88e1b00166454e1e099a8c105ef4f3a42d1081185",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "MAP:MapMPErechIII",
+      "source": "Erech III",
+      "source_hash": "1870f4e42cb3ff0303ee123128cda1b2363a0abe791852e7f334714ba7dd3ffd",
+      "entry_hash": "d0df10613e2fa438f7da6ff86dfdecf993489f314f43cee5a873e2540ceac879",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MapMPErechIII/Desc",
+      "source": "A plain in the Outlands of Gondor which lay against the White Mountains, close to the Blackroot Vale. \\n\\n Size: 390 x 355 \\n Lairs: 2x Troll Lair, 2x Spider Lair, Lair 2x Warg Lair, 2x Goblin Lair",
+      "source_hash": "4f011c7278a3f1e6d9f960c75ec94610563020840192d491bc37b3014ccca670",
+      "entry_hash": "d24792ccdd442a14d7f5c002f5cf0b0c0f5b540613bba3d0f0b2d07a62bb94b4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPErynRhun",
+      "source": "Eryn Rhun",
+      "source_hash": "e082b241c4392f6cdb04bf8f1572a138bb82f5123fca0a77ce83e1e259c45f06",
+      "entry_hash": "e730dbe2f697377b3ee87f3768f020dc9d5e7a279d34207dfaff32b196f8d232",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPErynRhun/Desc",
+      "source": "Eryn Rhun means Eastern Forest, used to reference the mysterious woody region at the east of the sea of Rhun, irrigated by the mouths of the rivers from the Red Mountains. \\n\\n Size: 432 x 432 \\n Lairs: 4x Troll Lair Neutral Structures: 1x Signal Fire",
+      "source_hash": "eac7bef16d74147467271ed2d25354df3be6f66b82e799a10c5eba4b2f501973",
+      "entry_hash": "16136028993f48bd1a54b7992c892cb38989b9505d5ba907a4a428085b8a8e1f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPLossarnach",
+      "source": "Lossarnach",
+      "source_hash": "975b82a1e070a15a193aed1e2b9c5191691ca3f1e5c6eb0ea2f0cc56b5dc3224",
+      "entry_hash": "ccc0d27438ac0720ca7d714b6a64772bec78ed1141663e0e2e8d7f8162ed9f38",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPLossarnach/Desc",
+      "source": "Lossarnach, also named Vale of Flowers, was a fertile region and fiefdom in the Southern Gondor. Located southwest of Minas Tirith and directly east of Lebennin, it was populated by many refugees from Ithilien and Osgiliath. \\n\\n Size: 370 x 337 \\n Lairs: 2x Troll Lair, 2x Warg Lair, 2x goblin Lair",
+      "source_hash": "d1ab4563c76ee688cb29d16e1a64f8eba20b027417801d3e65df3a4613e0d14e",
+      "entry_hash": "2b5d88cc76358f5ec48bf2216dd2fcd10de90b354fed758ebaea7e4c4f14082e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPWestEmnet",
+      "source": "West Emnet",
+      "source_hash": "de6e7afe8c302222797ed63e594ec334533868e4268797888162f0da01c7dc8d",
+      "entry_hash": "4d0588cdcbad5bf0aba6f7c13a3b076d4e067ced13cf9b5d9b654d93808f2f76",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPWestEmnet/Desc",
+      "source": "Grassy lands of Rohan, lying between the Entwash and the Isen River.\\n\\n Size: 313 x 385\\n Lairs: 2x Troll Lair, 2x Warg Lair, 2x Goblin Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "369d5a2a1295708a7081293d5624da931ccf7ec5576ca005209e278055ced595",
+      "entry_hash": "9865ffec9fde7ddb72e9b77a8abab6796c4113353dd02374353849e87f4776c2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPAmonHen",
+      "source": "Amon Hen",
+      "source_hash": "1781d366ec0e7fcbb867e61de561d6be125d7ba0e528e055a61a63139a264c3c",
+      "entry_hash": "2e6cfbbd41538d0b821c99ec1181d1ade72b7106e033b33e1695757e0d8f8475",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPAmonHen/Desc",
+      "source": "A hill in the Emyn Muil at Nen Hithoel's west. At its summit was the Seat of Seeing, a ruined structure by the late Third Age. \\n\\n Size: 390 x 415 \\n Lairs: 2x Troll Lair, 2x Warg Lair \\n Neutral Structures: 2x Inn, 2x Signal Fire",
+      "source_hash": "f37fb15b1cfde5a87136fc4f57069bf874a2ddb72050b36ec02ca104898f01c9",
+      "entry_hash": "8a50aa789300e7d1b8988ba5ad24ae68dffb0a94330e3d48a5a4882627eabb31",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPChetwood",
+      "source": "Chetwood",
+      "source_hash": "7dc242ee2b062d2450a8cea10a2f5afe92e33783be5127932b8d7282599effe2",
+      "entry_hash": "adf9c93a54ab7eb747fb84077abd03edcb880fc8273e37f877a6c575080cfdf8",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPChetwood/Desc",
+      "source": "This forest situated east of Bree was bordered by the Midgewater marshes to the east, and the Great Eastern Road to the south. Aragorn led the hobbits through this forest on their way to Rivendell. \\n\\n Size: 360 x 325 \\n Lairs: 2x Troll Lair, 2x Warg Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "742aa666fe531724909ee7202f5bbc34151db8e070451c9ffa5ce2127ea43d49",
+      "entry_hash": "ea1369bc9f1f9c670c03919d8dab8b28d0e8c13dd524ace97328710356b67d4e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPColdfells",
+      "source": "Coldfells",
+      "source_hash": "f124dc708cf67402eb9d61dda996c83d5706421e2046e48882cd403bb44064e4",
+      "entry_hash": "4c0afe825869abb86dab018cf20ec21833cc3e7a9289c6c17192a7516ce5f700",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPColdfells/Desc",
+      "source": "Once part of the kingdom of Rhudaur, these hills are now wild and dangerous. Many trolls lurk in the area. \\n\\n Size: 450 x 450 \\n Lairs: Troll x5 \\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "613a54f19ef338381ad9e8480dc5727e0eabf625bfbcfa5bfb09afe62344038b",
+      "entry_hash": "1a4e9c7bbb337c1da1b1bfc16d638d07372665b569b1ec22f4781f9b43cb286f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPDimrilldale",
+      "source": "Dimrill Dale",
+      "source_hash": "e682b1b24952b31b75bf58edb1eb066b229f90be503d5acb8a23f66ec445bab0",
+      "entry_hash": "ca1b82a0ba82314d51f1743bb3f4d3e241d452a4ccdb3ae0b521fe2a90c69a5e",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPDimrilldale/Desc",
+      "source": "This valley east of Moria was the final battleground of the War of the Dwarves and Orcs. \\n\\n Size: 420 x 350 \\n Lairs: 2x Goblin Lair",
+      "source_hash": "b101842645fbcde0ac8d19a66486f61121db0d1d9fc3a27345c04006c59ec038",
+      "entry_hash": "34a6d1f1251cb3677a7b2936fbdaff83da00025e5e9aba49810b6a28f06ab86e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEredlithui",
+      "source": "Ered Lithui",
+      "source_hash": "f8bedc10486ab59d0f46b876e6501188762a1fa7cf118f5145f778a193140184",
+      "entry_hash": "f243a240918b38f768eca6f579af0bcba280f4b246e6197d3a7d2caa6fd3bc80",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPEredlithui/Desc",
+      "source": "Ered Lithui or the Mountains of Ash form the northern border of Mordor. The road that runs east along them is used exclusively by Easterlings loyal to the Great Eye. \\n\\n Size: 420 x 375 \\n Lairs: 2x Goblin Lair",
+      "source_hash": "020a5e4ef8f0aef03cfa8f07a6abf43eb2776904b03d9cd7e3ebd0d321ac2e03",
+      "entry_hash": "48f538e0e014327056110fb9c24e443b9e7852bfff9214cbbfbd708ba308205e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "8a789230a210b83dac9bcbed164cee9081bf6c031ba818fcc80c669e379fd724"
+}

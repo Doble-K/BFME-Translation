@@ -12,6 +12,7 @@ import subprocess
 import sys
 import tempfile
 import threading
+import uuid
 from pathlib import Path
 
 from tools.localization.extract import extract_str
@@ -28,7 +29,7 @@ from opencode_farm import (
     load_farm_config,
     load_farm_config_with_runtime_fallback,
 )
-from project import load_project
+from project import load_project, resolve_project_path
 
 
 AUTO_ID_PREFIXES = ("LETTER:", "NUMBER:")
@@ -1770,6 +1771,341 @@ def launch_gui():
     root.mainloop()
 
 
+# ---------------------------------------------------------------------------
+# Bulk translate: constants, registry, validation, plan, and execution
+# ---------------------------------------------------------------------------
+
+WORKER_MIN = 4
+WORKER_MAX = 8
+BATCH_SIZE_MIN = 20
+BATCH_SIZE_MAX = 100
+
+ALLOWED_MODELS_PATH = ROOT / "config" / "allowed_models.json"
+
+
+def load_allowed_models():
+    """Load the allowed_models.json registry."""
+    with ALLOWED_MODELS_PATH.open(encoding="utf-8") as registry_file:
+        return json.load(registry_file)
+
+
+def validate_model(model):
+    """Validate that *model* is in the allowed registry.
+
+    Returns ``(model, tier)`` on success.  Raises ``ValueError`` when the
+    model is unknown or is a premium model that requires explicit
+    confirmation and none was given.
+    """
+    if not isinstance(model, str) or not model:
+        raise ValueError("modelo no permitido")
+    registry = load_allowed_models()
+    entry = registry["models"].get(model)
+    if entry is None:
+        raise ValueError(f"modelo no permitido: {model}")
+    tier = entry.get("tier", "unknown")
+    if tier == "premium" and not entry.get("require_confirmation"):
+        raise ValueError(
+            f"el modelo {model} requiere confirmación explícita"
+        )
+    return model, tier
+
+
+def validate_workers(count):
+    """Validate worker count is within the allowed range."""
+    if not isinstance(count, int) or not WORKER_MIN <= count <= WORKER_MAX:
+        raise ValueError(
+            f"workers debe estar entre {WORKER_MIN} y {WORKER_MAX}"
+        )
+    return count
+
+
+def validate_batch_size(count):
+    """Validate per-worker batch size is within the allowed range."""
+    if not isinstance(count, int) or not BATCH_SIZE_MIN <= count <= BATCH_SIZE_MAX:
+        raise ValueError(
+            f"per-worker-count debe estar entre {BATCH_SIZE_MIN} y {BATCH_SIZE_MAX}"
+        )
+    return count
+
+
+def derive_bulk_profile(real_profile, temp_dir, run_id, model, workers, count):
+    """Create an isolated farm profile for a bulk translation run.
+
+    The derived profile uses exactly one coordinator with *run_id* as prefix
+    and *model* as the model, overriding whatever the real profile contained.
+    Returns the path to the written profile JSON.
+    """
+    derived = {
+        "project": real_profile.get("project"),
+        "workers": workers,
+        "count": count,
+        "max_restarts": real_profile.get("max_restarts", 0),
+        "poll_seconds": real_profile.get("poll_seconds", 5),
+        "coordinators": [{"prefix": run_id, "model": model}],
+    }
+    profile_path = Path(temp_dir) / f"derived-farm-{run_id}.json"
+    with profile_path.open("w", encoding="utf-8", newline="\n") as profile_file:
+        json.dump(derived, profile_file, ensure_ascii=False, indent=2)
+        profile_file.write("\n")
+    return profile_path
+
+
+def create_temp_farm_profile(real_profile, temp_dir, prefix, model, workers, count):
+    """Legacy wrapper around :func:`derive_bulk_profile`."""
+    return derive_bulk_profile(real_profile, temp_dir, prefix, model, workers, count)
+
+
+def build_translate_plan(project_file, farm_file, model, workers, count):
+    """Build an explicit execution plan for bulk translation.
+
+    The plan is mode-independent: it contains every field needed by any
+    execution mode (dry-run, no-save, yes).  The plan derives a single
+    coordinator with the requested *model* and ignores the original profile's
+    coordinators.
+    """
+    model, tier = validate_model(model)
+    workers = validate_workers(workers)
+    count = validate_batch_size(count)
+
+    project_path = Path(project_file).resolve()
+    project = load_project(project_path)
+    catalog_path = resolve_project_path(project, "catalog")
+
+    farm_data = json.loads(Path(farm_file).read_text(encoding="utf-8"))
+
+    return {
+        "project_file": project_path,
+        "project_name": project["name"],
+        "catalog_path": catalog_path,
+        "language": project["language"],
+        "model": model,
+        "tier": tier,
+        "workers": workers,
+        "per_worker_count": count,
+        "total_entries": workers * count,
+        "coordinators": [{"prefix": "bulk-run", "model": model}],
+        "farm_file": Path(farm_file).resolve(),
+        "farm_data": farm_data,
+    }
+
+
+def validate_isolated_catalog(catalog_path):
+    """Validate the structural integrity of an isolated catalog.
+
+    Returns a list of human-readable error strings.  An empty list means the
+    catalog is structurally valid.
+    """
+    errors = []
+    try:
+        with Path(catalog_path).open(encoding="utf-8") as catalog_file:
+            data = json.load(catalog_file)
+    except (OSError, json.JSONDecodeError) as error:
+        errors.append(f"error al leer catálogo: {error}")
+        return errors
+
+    if "entries" not in data:
+        errors.append("catálogo no contiene campo 'entries'")
+    return errors
+
+
+def cleanup_temp_farm_runtime(temp_dir, prefix):
+    """Remove temporary farm runtime files under *temp_dir*.
+
+    Only the ``.agent/`` directory is removed; other artifacts (catalog
+    clones, logs, responses) are preserved.
+    """
+    agent_dir = Path(temp_dir) / ".agent"
+    if agent_dir.exists():
+        shutil.rmtree(agent_dir)
+
+
+# ── Mode execution policies ─────────────────────────────────────────────
+
+
+def execute_translate_dry_run(project_file, farm_file, model, workers, count):
+    """Dry-run: validate inputs, build plan, show effective plan.
+
+    No files are created, no workers started, no models called.
+    """
+    plan = build_translate_plan(project_file, farm_file, model, workers, count)
+
+    print(f"[dry-run] Perfil bulk derivado")
+    print(f"  Proyecto: {plan['project_name']}")
+    print(f"  Idioma: {plan['language']}")
+    print(f"  Modelo: {plan['model']} (tier: {plan['tier']})")
+    print(f"  Workers: {plan['workers']}")
+    print(f"  Entradas por worker: {plan['per_worker_count']}")
+    print(f"  Capacidad total: {plan['total_entries']}")
+    print(f"  Coordinadores derivados:")
+    for coord in plan["coordinators"]:
+        print(f"    - prefix={coord['prefix']} model={coord['model']}")
+    print(f"  [dry-run] Sin efectos secundarios.")
+    return 0
+
+
+def execute_translate_no_save(project_file, farm_file, model, workers, count):
+    """No-save: isolated lifecycle with artifacts preserved.
+
+    Creates a persistent isolated directory (never a TemporaryDirectory that
+    deletes on exit), clones the catalog, runs the farm synchronously (not
+    detached), validates the clone, then cleans up only runtime/lease files.
+    The catalog clone, logs, and results remain on disk for review.
+    """
+    plan = build_translate_plan(project_file, farm_file, model, workers, count)
+
+    # Persistent isolated directory – NOT a TemporaryDirectory
+    run_id = f"nosave-{uuid.uuid4().hex[:8]}"
+    isolated_base = ROOT / ".agent" / f"bulk-{run_id}"
+    isolated_base.mkdir(parents=True, exist_ok=True)
+
+    try:
+        # 1. Clone catalog
+        isolated_catalog = isolated_base / "catalog.json"
+        shutil.copy2(plan["catalog_path"], isolated_catalog)
+
+        # 2. Create derived project pointing to the cloned catalog
+        isolated_project = isolated_base / "project.json"
+        project_data = json.loads(
+            Path(project_file).read_text(encoding="utf-8")
+        )
+        project_data["catalog"] = str(isolated_catalog)
+        with isolated_project.open("w", encoding="utf-8", newline="\n") as pf:
+            json.dump(project_data, pf, ensure_ascii=False, indent=2)
+            pf.write("\n")
+
+        # 3. Derive farm profile pointing to isolated project
+        derived_profile = derive_bulk_profile(
+            plan["farm_data"], isolated_base, run_id,
+            plan["model"], workers, count,
+        )
+        derived_data = json.loads(
+            derived_profile.read_text(encoding="utf-8")
+        )
+        derived_data["project"] = str(isolated_project)
+        with derived_profile.open("w", encoding="utf-8", newline="\n") as df:
+            json.dump(derived_data, df, ensure_ascii=False, indent=2)
+            df.write("\n")
+
+        # 4. Run farm synchronously (NOT detached) and wait for lifecycle
+        command = [
+            sys.executable,
+            str(LOCALIZATION_TOOLS / "opencode_farm.py"),
+            "start",
+            "--config",
+            str(derived_profile),
+        ]
+        result = subprocess.run(
+            command, cwd=ROOT, capture_output=True, text=True,
+        )
+        if result.returncode != 0:
+            return result.returncode
+
+        # 5. Validate the isolated catalog
+        errors = validate_isolated_catalog(isolated_catalog)
+        if errors:
+            for error in errors:
+                print(f"Error de validación: {error}", file=sys.stderr)
+            return 1
+
+        # 6. Clean up only runtime/lease files; preserve catalog & logs
+        cleanup_temp_farm_runtime(isolated_base, run_id)
+
+        print(f"Resultados no-save en: {isolated_base}")
+        return 0
+    except Exception:
+        # On failure clean up runtime files but keep any partial results
+        cleanup_temp_farm_runtime(isolated_base, run_id)
+        raise
+
+
+def execute_translate_yes(project_file, farm_file, model, workers, count):
+    """Yes: use derived profile on real catalog, normal persistence.
+
+    Runs the farm synchronously on the real catalog.  The derived profile
+    overrides the model, workers, and coordinator while the catalog and
+    project remain the originals.  Results persist through the normal farm
+    flow.
+    """
+    plan = build_translate_plan(project_file, farm_file, model, workers, count)
+
+    run_id = f"yes-{uuid.uuid4().hex[:8]}"
+    runtime_dir = ROOT / ".agent"
+    runtime_dir.mkdir(parents=True, exist_ok=True)
+
+    # Derive farm profile with exactly one coordinator and the requested model
+    derived_profile = derive_bulk_profile(
+        plan["farm_data"], runtime_dir, run_id,
+        plan["model"], workers, count,
+    )
+
+    # Run farm synchronously (NOT detached)
+    command = [
+        sys.executable,
+        str(LOCALIZATION_TOOLS / "opencode_farm.py"),
+        "start",
+        "--config",
+        str(derived_profile),
+    ]
+    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+    return result.returncode
+
+
+def run_bulk_translate(args):
+    """Entry point for ``--translate`` mode.  Validates arguments, builds
+    the execution plan, and dispatches to the selected mode policy.
+    """
+    mode_count = sum([args.dry_run, args.no_save, args.yes])
+    if mode_count == 0:
+        print("Error: indique un modo (--dry-run, --no-save, o --yes)", file=sys.stderr)
+        return 1
+    if mode_count > 1:
+        print(
+            "Error: solo puede indicar un modo de ejecución",
+            file=sys.stderr,
+        )
+        return 1
+
+    if not args.model:
+        print("Error: modelo requerido", file=sys.stderr)
+        return 1
+
+    try:
+        if args.dry_run:
+            return execute_translate_dry_run(
+                args.project,
+                args.farm_profile,
+                args.model,
+                args.workers,
+                args.per_worker_count,
+            )
+        if args.no_save:
+            return execute_translate_no_save(
+                args.project,
+                args.farm_profile,
+                args.model,
+                args.workers,
+                args.per_worker_count,
+            )
+        if args.yes:
+            return execute_translate_yes(
+                args.project,
+                args.farm_profile,
+                args.model,
+                args.workers,
+                args.per_worker_count,
+            )
+    except (
+        OSError,
+        RuntimeError,
+        ValueError,
+        json.JSONDecodeError,
+        subprocess.CalledProcessError,
+    ) as error:
+        print(f"Error: {error}", file=sys.stderr)
+        return 1
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(description="Gandalf project initialization wizard.")
     parser.add_argument("input", nargs="?", help="Extracted source JSON for non-interactive mode")
@@ -1792,8 +2128,20 @@ def main():
     )
     parser.add_argument("--source-language", help="Override detected source language")
     parser.add_argument("--target-language", help="Override target language")
+    # Bulk translate mode
+    parser.add_argument("--translate", action="store_true", help="Run bulk translation")
+    parser.add_argument("--project", help="Project configuration JSON for --translate")
+    parser.add_argument("--farm-profile", help="Farm profile JSON for --translate")
+    parser.add_argument("--model", help="Model for translation (required for --translate)")
+    parser.add_argument("--workers", type=int, help="Number of workers (4-8)")
+    parser.add_argument("--per-worker-count", type=int, help="Entries per worker (20-100)")
+    parser.add_argument("--dry-run", action="store_true", help="Show plan without side effects")
+    parser.add_argument("--no-save", action="store_true", help="Isolated run, preserve artifacts")
+    parser.add_argument("--yes", action="store_true", help="Execute on real catalog")
     args = parser.parse_args()
     try:
+        if args.translate:
+            return run_bulk_translate(args)
         if args.gui:
             launch_gui()
             return 0

@@ -1,0 +1,213 @@
+{
+  "schema_version": 3,
+  "batch_id": "1a50ee18007e4bdc89be7a366bd05513",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T20:16:44.539130+00:00",
+  "lease_expires_at": "2026-08-06T02:16:44.537962+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-1a50ee18007e.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPTombsOfKarnaIII",
+      "source": "Upper Tombs of Karna",
+      "source_hash": "fff14f0220b8183436d9ab8bc054d0a2bdd59b6973f7ff15de350f00685c2eaa",
+      "entry_hash": "2a6d57849589e6a3fc2701441599cce970106d585aa232ba97f5453debade25f",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarnaIII/Desc",
+      "source": "Chosen for their fertility and beauty, these oasis spots serve as gravesites for the rulers of Far Harad.\\n\\n Size: 500 x 480\\n Lairs: 2x Warg Lair\\n Neutral Structures: 1x Outpost, 2x Signal Fire",
+      "source_hash": "c22e7fb4bf1561ef931e6bce8b5df69c2ca03123aeeff2a667a6363230e2bf15",
+      "entry_hash": "184bd0ea05b21327e014af1c926c62c4ecedcbe099e558dfa5fc6c09988955e3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarnaIV",
+      "source": "Central Tombs of Karna",
+      "source_hash": "695a6520dad197ce1cac34fea183ed16cd6ad0f1d2567b72a6073c4cb22e4fcd",
+      "entry_hash": "551073dd69833e0b061a0e955b8134ee06c6a48ffb3edee7b15629895602b51f",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarnaIV/Desc",
+      "source": "Chosen for their fertility and beauty, these oasis spots serve as gravesites for the rulers of Far Harad.\\n\\n Size: 550 x 550\\n Lairs: 16x Spider Lair, 2x Troll Lair\\n Neutral Structures: 4x Outpost, 1x Inn, 2x Signal Fire",
+      "source_hash": "855c7f968eed5f5cb0ccce8d5f9cbee7a368e0a9bdf8aecf810345bfca61b890",
+      "entry_hash": "3a0725d5213f66aeb15b4e5007be6456d2e8986ad25b7d1c81565cfb57bebe69",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "MAP:MAPMPEastfoldII",
+      "source": "Eastfold Plains",
+      "source_hash": "b87fc78a08f79b0967fa1772ba4ef0b74addb6d9f36694a424ad8af04e73e670",
+      "entry_hash": "f286ea266114117df1f630b030c3a0f0208e719b28122285817a874e27cffac9",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MAPMPEastfoldII/Desc",
+      "source": "The eastern lands of Rohan, bordering Gondor.\\n\\n Size: 455 x 390\\n Lairs: 6x Goblin Lair, 2x Troll Lair\\n Neutral Structures: 1x Outpost",
+      "source_hash": "bfaf36e72e85b0def009a6ba38e3df1d51f23cff8fdaa6831b6016f3dbba96ed",
+      "entry_hash": "fcaddbc9f1ee2c40580eca1776a5e1bcbe86f37d38dac975ae4920264cf71b4f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPTowerHillsII",
+      "source": "Upper Tower Hills",
+      "source_hash": "59229e069990f7e241662c8e7c78eaa90b7da8f9e472270da40d11896c5ff06d",
+      "entry_hash": "5f85e9e4548669e0e6c97e8af5e5099b62620b22b84473f00e0dbd6e2ed4b398",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPTowerHillsII/Desc",
+      "source": "These hills are the home of the ancient Elven towers that held the Elendil Stone, the last of the Palantiri of the North.\\n\\n Size: 315 x 375\\n Lairs: 2x Goblin Lair, 2x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Inn, 2x Tower",
+      "source_hash": "8a429bf1f45ece5c056fd389ba7f25747770e2ea3b7eaa0ea6579a881ca160ce",
+      "entry_hash": "a0d66d0f39c695fa59ce9f2f356d8080dbb3701290f05f665346cd50f4ac359d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPGapOfRohanII",
+      "source": "South Gap of Rohan",
+      "source_hash": "9193b298c58da168c67ca5d32331872a187987d3178e7f0e967bc2c2f0029a29",
+      "entry_hash": "836c2f8bf421b8681030d53112454d03633212fd1a3dbdc485ca81b036b9c334",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPGapOfRohanII/Desc",
+      "source": "The only large and easily traversable pass between the Misty Mountains and the White Mountains.\\n\\n Size: 330 x 500\\n Lairs: 4x Troll Lair, 2x Goblin Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "3dbf6438ef15a1e4d75a84083506875da21be69fc60410d01da11120a5501ed9",
+      "entry_hash": "9ededca8aace55d7e644227670cd61b74174970270ad69fa3534fcbb363551c4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPLebenninII",
+      "source": "Upper Lebennin",
+      "source_hash": "a1b110c7f932a8e74920ba205d3985e6ac3b35c6f90977e5c3cd6b5fdb3a441a",
+      "entry_hash": "2ffc8435763d09985c09093c0cf30efe1dfb5dfd797927d451446e8cc126c49f",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPLebenninII/Desc",
+      "source": "Lebennin is a region between the south of White Mountains and the Anduin delta. Known as the land of the five rivers, it is one of the most faithful fiefs of Gondor, whose wide green meadows are filled with tall grasses and flowers. \\n\\n Size: 428 x 428 \\n Lairs: 4x Warg Lair \\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "4890e40f285afe0a0502a13649a3ec524d8ef18978f3615cf3aea122154d314c",
+      "entry_hash": "400ef14995fb1e6098661e12c17bd618defd7db2f2242059d3492790da21fae5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "MAP:MapMPDeadMarshesII",
+      "source": "Lower Dead Marshes",
+      "source_hash": "e7f6a6deb0d675bd25522b61dfbc16aea9cce699a9f5853f043d5e3a436077c0",
+      "entry_hash": "033eb2b36c45e8e1e251b8c68d19b92bad7d4b52bd461c1931fe6d4ca34f4098",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MapMPDeadMarshesII/Desc",
+      "source": "A haunted swampland, lying just outside Mordor. Gollum led Frodo and Sam through these lands on their way to Mount Doom.\\n\\n Size: 500 x 450\\n Lairs: 4x Barrow Wight Lair, 6x Goblin Lair\\n Neutral Structures:  2x Outpost, 2x Signal Fire",
+      "source_hash": "57313049ca67c90b3702aedea054a6ed59cccebcd51a506e48ce223a391ab137",
+      "entry_hash": "0f7889d62afa97c37952e3866c228883b657912bffc8249e97e8cd817ee5c09a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:SpecialAbilityShieldBubble",
+      "source": "Shield B&ubble",
+      "source_hash": "f972c4e1cbcbabbd6a6146327207422e1a7faa0d5b6d03657bbb0f3d703f2968",
+      "entry_hash": "96d21614d77ebc8d7532fc26f89c5aedfd30e5543a5df54280101e3c66adb4d5",
+      "protected_tokens": [
+        "&u"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityShieldBubble",
+      "source": "Creates a magical shield around Gandalf\\n Temporarily grants +300% Armor and resistance to knockback attacks \\n Can only use while dismounted",
+      "source_hash": "c52e3369bb51379dad3eeda57af359c9ae5b2b1182c4f8a04428de652d4e2c95",
+      "entry_hash": "85cc2df69040e9279cc666b4e01055ad81f534d2e5d4a6487c19c1e5057ba9b2",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:MordorTavernDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed \\n\\n 2 Taverns = 10% cheaper unit upgrades \\n 3 Taverns = 15% cheaper unit upgrades",
+      "source_hash": "8543b656e29c98b1dbaa3e4afd1f17b2f5765fb3e4546e6c8d0977a915eb81ec",
+      "entry_hash": "5736767b41285d7eecc5c892d267d72be592dc9ff6fc8aee24cecbad29183d19",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEastfarthingHills",
+      "source": "Eastfarthing Hills",
+      "source_hash": "aca4e5d1da072106b1562a23fec80780be72a2fea0d135acb96da5524b655e6c",
+      "entry_hash": "eb48125e85acc7d29d7408a2fd287efe4ac87e37c397c8449fb8f64947a40df3",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPEastfarthingHills/Desc",
+      "source": "The Eastfarthing was one of the four Farthings of the Shire. Its westernmost point was the Three-Farthing Stone, its eastern border was the Brandywine River, and its southern border was the River Shirebourn. \\n\\n Size: 500 x 500 \\n Lairs: 2x Troll Lair, 4x Warg Lair, 2x Goblin Lair \\n Neutral Structures: 4x Inn , 1x Signal Fire",
+      "source_hash": "62e1872941ad0dcee0570231b1a55236a26a138416df3dfb33f9bb95bf89f9cf",
+      "entry_hash": "c9feca8e0bfa82f9a0874f32addea1d2e393f84b95d7e198385d8b77fcd2eeba",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEastEmnetPlains",
+      "source": "East Emnet Plains",
+      "source_hash": "154b5dadc696116a6ba5e1e054d3e3909352770e2d857e63b6dc241f89dae836",
+      "entry_hash": "9e43a88fbe659ecf823468bb0bbeee839daaf8b29e92b7ce07e3de76c658258c",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "ba701bdcd9ae9acf7fa2068ddbcef47aa02392daa609b1ab572d89aefea5a557"
+}

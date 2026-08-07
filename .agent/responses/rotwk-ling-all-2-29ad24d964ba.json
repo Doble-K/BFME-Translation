@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "29ad24d964ba410bbeef4397b543c5d3",
+  "worker": "rotwk-ling-all-2",
+  "translations": [
+    {
+      "id": "Map:MAPMPHollin",
+      "translation": "Hollin"
+    },
+    {
+      "id": "Map:MAPMPIslandsofValinor",
+      "translation": "Islas de Valinor"
+    },
+    {
+      "id": "Map:MAPMPIslandsofValinor/Desc",
+      "translation": "Un pequeño grupo de islas en las costas de las Tierras Inmortales.\\n\\n Tamaño: 600 x 530\\n Guaridas: 2x Guarida de Trolls\\n Estructuras Neutrales: 2x Puesto de Avanzada, 2x Fuego Señalizador, 4x Astillero, 2x Torre"
+    },
+    {
+      "id": "Map:MAPMPIthilienHills",
+      "translation": "Colinas de Ithilien"
+    },
+    {
+      "id": "Map:MAPMPIthilienHills/Desc",
+      "translation": "Una pequeña cadena de colinas en el centro de Ithilien, la provincia más oriental de Gondor.\\n\\n Tamaño: 500 x 450\\n Guaridas: 2x Guarida de Huargos, 2x Guarida de Trolls\\n Estructuras Neutrales: 2x Puesto de Avanzada, 2x Fuego Señalizador"
+    },
+    {
+      "id": "Map:MAPMPLorienPlateau",
+      "translation": "Meseta de Lórien"
+    },
+    {
+      "id": "Map:MAPMPLorienPlateau/Desc",
+      "translation": "Una zona de tierras altas en los Bosques de Lothlórien, el reino forestal más hermoso de los Elfos que quedan en Tierra Media.\\n\\n Tamaño: 550 x 550\\n Guaridas: 4x Guarida de Huargos, 2x Guarida de Trolls\\n Estructuras Neutrales: 2x Puesto de Avanzada, 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPMithlondValley",
+      "translation": "Valle de Mithlond"
+    },
+    {
+      "id": "Map:MAPMPMithlondValley/Desc",
+      "translation": "Un asentamiento periférico de los Puertos Grises, construido en un gran valle que se origina en los Ered Lindon.\\n\\n Tamaño: 450 x 500\\n Guaridas: 4x Guarida de Huargos, 2x Guarida de Trolls\\n Estructuras Neutrales: 1x Puesto de Avanzada, 2x Fuego Señalizador"
+    },
+    {
+      "id": "Map:MAPMPNanduhirion",
+      "translation": "Nanduhirion"
+    },
+    {
+      "id": "Map:MAPMPNanduhirion/Desc",
+      "translation": "Este valle fue el escenario de la batalla decisiva en la Guerra de los Enanos y los Orcos.\\n\\n Tamaño: 550 x 450\\n Guaridas: 2x Guarida de Goblines, 4x Guarida de Trolls, 2x Guarida de Dragones de Fuego\\n Estructuras Neutrales: 4x Puesto de Avanzada, 1x Posada, 2x Fuego Señalizador"
+    },
+    {
+      "id": "Map:MAPMPNevrast",
+      "translation": "Nevrast"
+    },
+    {
+      "id": "Map:MAPMPNevrast/Desc",
+      "translation": "Una tierra resguardada en la costa oeste de Tierra Media, ubicada entre Hithlum al norte-noreste y Beleriand Occidental al sur.\\n\\n Tamaño: 500 x 500\\n Guaridas: 8x Guarida de Goblines\\n Estructuras Neutrales: 1x Fuego Señalizador"
+    },
+    {
+      "id": "Map:MAPMPOldBrownLands",
+      "translation": "Antiguas Tierras Pardas"
+    },
+    {
+      "id": "Map:MAPMPOldBrownLands/Desc",
+      "translation": "Tierras al este del río Anduin quemadas por Sauron al final de la Segunda Edad. Antiguo hogar fértil de las Esposas de Ents, esta zona ha estado desolada desde las batallas de la Última Alianza.\\n\\n Tamaño: 500 x 500\\n Guaridas: 10x Guarida de Goblines\\n Estructuras Neutrales:"
+    },
+    {
+      "id": "Map:MAPMPOldForest",
+      "translation": "Bosque Viejo"
+    },
+    {
+      "id": "Map:MAPMPOldForest/Desc",
+      "translation": "Ubicado entre los límites de Bolsen y Breeland, el Bosque Viejo oculta gran misterio y peligro bajo su oscuro dosel.\\n\\n Tamaño: 360 x 310\\n Guaridas: 4x Guarida de Arañas, 2x Guarida de Espíritus de Tumbas\\n Estructuras Neutrales: 2x Fuego Señalizador"
+    },
+    {
+      "id": "Map:MAPMPPathsOfTheDead",
+      "translation": "Senderos de los Muertos"
+    },
+    {
+      "id": "Map:MAPMPPathsOfTheDead/Desc",
+      "translation": "Un pasaje cavado a través de las Montañas Blancas que corre desde Dwimorberg en el norte hasta el Valle de Morthond en el sur.\\n\\n Tamaño: 230 x 390\\n Guaridas:\\n Estructuras Neutrales:"
+    },
+    {
+      "id": "Map:MAPMPPlainsofRohan",
+      "translation": "Llanuras de Rohan"
+    },
+    {
+      "id": "Map:MAPMPPlainsOfRohan/Desc",
+      "translation": "Entre el Desfiladero de Rohan y los límites de Gondor se extienden las vastas llanuras de Riddermark, hogar de los grandes señores de los caballos de Tierra Media.\\n\\n Tamaño: 350 x 375\\n Guaridas: 4x Guarida de Huargos, 2x Guarida de Trolls\\n Estructuras Neutrales: 2x Posada, 2x Fuego Señalizador"
+    },
+    {
+      "id": "Map:MAPMPRedDesertofKhand",
+      "translation": "Desierto Rojo de Khand"
+    },
+    {
+      "id": "Map:MAPMPRedDesertofKhand/Desc",
+      "translation": "Una tierra desértica roja que se extendía al sureste de Mordor y al este de Harad Cercano.\\n\\n Tamaño: 440 x 440\\n Guaridas: 2x Guarida de Goblines, 2x Guarida de Trolls\\n Estructuras Neutrales: 2x Posada, 2x Fuego Señalizador"
+    },
+    {
+      "id": "Map:mapmpRingloRiver",
+      "translation": "Río Ringlo"
+    },
+    {
+      "id": "Map:mapmpRingloRiver/Desc",
+      "translation": "Un río sinuoso en las regiones centrales de Gondor que sirvió como límite entre Anfalas al oeste y Belfalas al este.\\n\\n Tamaño: 500 x 450\\n Guaridas: 4x Guarida de Huargos, 2x Guarida de Trolls\\n Estructuras Neutrales: 1x Puesto de Avanzada, 1x Posada"
+    }
+  ]
+}

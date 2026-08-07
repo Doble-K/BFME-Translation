@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "batch_id": "f381bf9ebc9a489aafe879f32d9b0d94",
+  "worker": "rotwk-run1-7",
+  "created_at": "2026-08-05T19:28:29.091714+00:00",
+  "lease_expires_at": "2026-08-06T01:28:29.088018+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "instructions": "Translate source into the target language. Fill only translation. Do not change any other field.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:TooltipNecroFellStrength",
+      "source": "Drains enemy units of strength \\n Modifier Type: Spell and Active Debuff \\n Targeted enemy units take slight damage and briefly suffer -20% Damage and -20% Armor \\n Nearby friendly units gain\\n+25% Damage and +25% Armor \\n Nullifies enemy Leadership \\n Stacks with Buffs, Leadership, and other Spells \\n Does not stack with other Debuffs \\n Damage: 10 (Frost) \\n Target Radius: 75 \\n Duration: 30s \\n Target Range: 400 \\n Recharge Time: 20s \\n Acolytes Sacrificed: 2 \\n Left click icon then left click on target area",
+      "source_hash": "2223dba02153b78d669287ceb883eea7e347aa874726735071fc158d6d8cffdb",
+      "entry_hash": "94ca45865cc4f97013138a9c5bccc54e97c9aeb26862a3ad97c0826c0b4f145d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ],
+      "translation": "Drena la fuerza de las unidades enemigas \\n Tipo de modificador: Hechizo y debilitamiento activo \\n Las unidades enemigas objetivo reciben un daño leve y sufren brevemente -20% de Daño y -20% de Armadura \\n Las unidades amigas cercanas ganan\\n+25% de Daño y +25% de Armadura \\n Anula el Liderazgo enemigo \\n Se acumula con atributos positivos, Liderazgo y otros Hechizos \\n No se acumula con otros debilitamientos \\n Daño: 10 (Escarcha) \\n Radio del objetivo: 75 \\n Duración: 30s \\n Alcance del objetivo: 400 \\n Tiempo de recarga: 20s \\n Acolitos sacrificados: 2 \\n Haga clic en el icono y luego haga clic en el area objetivo"
+    }
+  ],
+  "manifest_hash": "2b6fddc5085226674a2e2394cc9ab0ed58607fbbfdf85765c1a4966c7c837de3"
+}

@@ -1,0 +1,279 @@
+{
+  "schema_version": 3,
+  "batch_id": "5d520db1bca64e92abe93a62ddbda208",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T20:05:22.111759+00:00",
+  "lease_expires_at": "2026-08-06T02:05:22.110559+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-5d520db1bca6.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildArnorArcherHorde",
+      "source": "Unit Type: Elite Archer \\n Strong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Longshot arrow volleys \\n Can stealth near trees",
+      "source_hash": "06d2797d387b4b90e127f8f7026e3e246a19750672db637e00a80240edc291f2",
+      "entry_hash": "fef53f6dbb19264b9dc8a0091106d68991fe2643432b93fa59c2a62449622bd1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarDarkRangerHorde_Inn  ",
+      "source": "Unit Type: Elite Archer \\n Strong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Longshot arrow volleys \\n Can stealth near trees",
+      "source_hash": "87da6db4401d8ff6a536f62cc336c8086762daad21360fba929035409c56e4a0",
+      "entry_hash": "eda901c1f6df360a71cb97717dbc7f93f139416ead7058f6de7ac4b0788b0449",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_AngmarDarkRangerHorde",
+      "source": "Unit Type: Elite Archers\\nStrong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Longshot arrow volleys \\n Can stealth near trees\\n",
+      "source_hash": "800c94dc1c252b612481abb06b4e669a6b62f0605b2b6fcaba91f29121901b5c",
+      "entry_hash": "b7dae52bea52202b8ba79a458b99304d9dc72628798fcc5312865f9e648bd5b1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_AngmarDarkRangerHorde",
+      "source": "\\nUnit Type: Elite Archers\\nStrong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Longshot arrow volleys \\n Can stealth near trees",
+      "source_hash": "05977c4b557518a2f3cf491fb2fcc42e7c29ff23e122fdc4bdd9ee8c4ebb298a",
+      "entry_hash": "80f38659fe24322e4a57fcf262fb5652d325526ae790a244198abe8ed779c12d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:ShipWrightDescription",
+      "source": "Capture to build and repair ships \\n Heal Rate: 4% /2s \\n Heal Radius: 300 \\n Vision Range: 160 \\n Capture Time: 15s",
+      "source_hash": "816bcde3a9a119acd5fb5eb9491f0274ef178b5db21ac139c708feb5fd61b853",
+      "entry_hash": "d92b088d2fd6bee26657c5a7a9d57c65442a7a20c32640b69fd6b64c187c49ee",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Corsairs",
+      "source": "Damage Type: Slash \\n Health: 270 \\n Melee Damage: 50 (Slash) \\n Upgraded Melee Damage: 100 (Slash) \\n Firebomb Damage: 35 (Flame) \\n Firebomb Splash Damage Radius: 15 \\n Melee Attack Speed: 1.5s \\n Firebomb Attack Speed: 3.4s \\n Movement Speed: 60 \\n Firebomb Range: 275 \\n Vision Range: 300",
+      "source_hash": "934ee1710a54f711dad5e0925c2dcabd8073b82f87dc548e390d4b91ffcd72ee",
+      "entry_hash": "e8c0e86d359080538450b7d4109ad7c25113778a3f00e5554890bf5c8c25edc4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMordorMumakilPen",
+      "source": "Trains Mumakil \\n\\n Build Time: 30s",
+      "source_hash": "951d195a392a606a43edf66df1a49d6d1ed65b8e2d0b4a1d5cadf3b735bbacb8",
+      "entry_hash": "463e7bb2ccd4f7e6c16bdd3204b4d2adcb4e0738c2f253b497960ff24c4f9f5c",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorMumakil",
+      "source": "Strong vs. Swordsmen, Cavalry, and Structures \\n \\n Unit Type: Elite Monster \\n Recruit Time: 1m 10s \\n Level: 2: +10% Health, +10% Damage, 120/s Health Regeneration \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "4138ecfe4b9aa2f66102dc1dc51d9134bfe5c525432a8d8ef12945d46bc06049",
+      "entry_hash": "d7d3d37573947c55c75f3532be88263a901b502290efd78fd04c0df0daa49661",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTameTheBeast",
+      "source": "Requires Level 2 \\n Target Cavalry gain superior Experience \\n Experience Yield: 120 XP \\n Target Radius: 150 \\n Target Range: 200 \\n Recharge Time: 2m \\n Left click icon then left click on target units",
+      "source_hash": "5e3713ce36daa7b091d9fa5e0bd3ec03f7f21243b716842e18a76f2b4e67ae8e",
+      "entry_hash": "8c80119b554c3822967553f6c361e2b34da90b4bc86dd74b84de2a5b7d5ccc6f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:BlackOrcs",
+      "source": "Damage Type: Slash \\n Health: 270 \\n Melee Damage: 60 (Slash) \\n Upgraded Melee Damage: 120 (Slash) \\n Melee Attack Speed: 1.63s \\n Movement Speed: 50 \\n Vision Range: 400",
+      "source_hash": "0ac1959ab4f4efa2d92326c3cd3364d2883f20f75313f659815fed6e7d4774ef",
+      "entry_hash": "0c8fb549f10cb6127a4f82bd432c3e16a3e6f54412d405176e14804f09994846",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorBlackOrcHorde",
+      "source": "Requires Level 2 Orc Pit \\n Strong vs. Pikemen \\n\\n Horde Bonus \\n Modifier Type: Spell \\n Orc Warriors, Orc Archers and Black Orcs gain +25% damage when gathered in numbers of 100 or more \\n Stacks with Buffs, Leadership, and other Spells \\n \\n Unit Type: Elite Swordsman \\n Recruit Time: 28s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "de8b22e73e6b385c7a58693bacc4242348c8f8f66c377deca56ac3ae41e7d196",
+      "entry_hash": "f84536d80029946fb08bad264226acb36062f1b9a711215f4fea1f07b348b570",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:WildmenofDunland",
+      "source": "Damage Type: Slash \\n Health: 150 \\n Melee Damage: 40 (Slash) \\n Upgraded Melee Damage: 40 (Slash) & 13 (Flame) \\n Garrisoned Ranged Damage: 40 (Force) \\n Upgraded Garrisoned Ranged Damage: 40 (Force) & 40 (Flame) \\n Melee Attack Speed: 1.35s \\n Movement Speed: 55 \\n Vision Range: 400",
+      "source_hash": "40e9a2efa038c56f82f4fac5cff26fc00f7fcf2eaf22c162c23082a9e5b976a5",
+      "entry_hash": "fad2a7715361ec1d58c62a3f6dc75ab467d64ec74ad825eb44a086c49cf1207f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:AngmarHallofTwilightDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Frost) \\n Bow Range: 250 \\n Vision Range: 300 \\n Level 2 Heal Rate: 4% /2s \\n Level 3 Heal Rate: 6% /2s \\n Radius: 200 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "6ed6238ecc00caac27d754e28b32990e1c5220f34128a2041fc080bf3dcf9082",
+      "entry_hash": "b0eea64648e26c4b0f19c53f37fda9ba6bc2cc99b75e459f53e81e984cea4468",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarHallofTwilightLevel2Upgrade",
+      "source": "Allows Well of Souls specialization for Sorcerers \\n Allows healing of nearby Sorcerers and Barrow Wights \\n +10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "22e873b20bd417bcf85fe33b24204f1d0e1accb567bb7bf64f3cd7f5d8be8234",
+      "entry_hash": "4302f4f6e76b65009a16081b8839444d2189623555b709bbc7c066371d209664",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipBuildAngmarHallofTwilightLevel3Upgrade",
+      "source": "Allows Corpse Rain specialization for Sorcerers \\n Increases healing rate for Sorcerers and Barrow Wights \\n Adds a defensive arrow tower \\n +25% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "62a5845ba21e7ef58bf66c7a98c1b4a34d2f8791cc8803ff832bab50a0695ad2",
+      "entry_hash": "d2c715c76bf14692cfcc8c84e6b47984d2e06230b9862f3a94a3ad070d164c33",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenWallHub",
+      "source": "Allows the construction of walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "8024c2497e959df89b5e87d2dc3832b75753a846e06fbd8495f05adb5486f5e0",
+      "entry_hash": "0c6faf04eb578d480fe7ebcc02d1eb66505179dcd3d31266a7e6ffa348c06288",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenWallHubExpansion",
+      "source": "Allows the construction of walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "ef022d780bf7f8b761d4f0d38a0f247a8d8c58384bc872860e8d5c8115b4be53",
+      "entry_hash": "e6af372df3e7fb190e200dd7dfd70b3eabb60beb14635657f03cb8646a622fe3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructElvenWallHub",
+      "source": "Allows the construction of walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "3174e00258d256124954af22ecc6f0d90698dac448ade5f54e10116747e9cd8b",
+      "entry_hash": "a2455225ecac30e5e0e712e2748b21c6fb14136bcdee205e3388ca2e19dcd6b5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ConstructElvenWallHubExpansion",
+      "source": "Allows the construction of walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "ac24257f24e8acab6dea6b75fdc0d9c0d6dd36800ca999695554912eaad9dc72",
+      "entry_hash": "3aa7903ba92c5e422e04c6323dbc87ba0b3c7b9aa5dee3124900c4045dbaaf41",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_ConstructDwarvenWallHubExpansion",
+      "source": "Allows the construction of walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "940fa4b61c88868f1ad04dbf6a193bd0896763094debcaa451d5dcdeb36c5f02",
+      "entry_hash": "1e2ea34586345c21a489e4b018efe74e4bf8d6471e45d4d9b9563515c9e56b35",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "d4f3a5756d2934b1afa898b28e34727cc606b65b3e29f2acb0bc2b9240d3f1b8"
+}

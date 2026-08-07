@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "ba28ea2877de484abc48b80310216e04",
+  "worker": "rotwk-ling-all-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:WildGoblinKingRecruit",
+      "translation": "Reclutar al líder de los Goblins \\n \\n Tipo de unidad: Héroe de Nivel 2 \\n Tiempo de reclutamiento: 40s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:WildGoblinKingRevive",
+      "translation": "Revivir al héroe caído, El Rey Goblin \\n \\n Tipo de unidad: Héroe de Nivel 2 \\n Tiempo de revivir: 45s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ShelobRecruit",
+      "translation": "Reclutar la araña del paso de Cirith Ungol \\n \\n Tipo de unidad: Héroe de Nivel 4 \\n Tiempo de reclutamiento: 50s \\n Regeneración de salud: 50/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ShelobRevive",
+      "translation": "Revivir al héroe caído, Shelob \\n \\n Tipo de unidad: Héroe de Nivel 4 \\n Tiempo de revivir: 55s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 50/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:WildDrogothRecruit",
+      "translation": "Reclutar al dragón acorazado de las Tierras Marchitas \\n \\n Tipo de unidad: Héroe de Nivel 5 \\n Tiempo de reclutamiento: 55s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:WildDrogothRevive",
+      "translation": "Revivir al héroe caído, Drogoth \\n \\n Tipo de unidad: Héroe de Nivel 5 \\n Tiempo de revivir: 1m x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:MordorGothmogRecruit",
+      "translation": "Reclutar al teniente de Minas Morgul \\n \\n Tipo de unidad: Héroe de Nivel 2 \\n Tiempo de reclutamiento: 40s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:MordorGothmogRevive",
+      "translation": "Revivir al héroe caído, Gothmog \\n \\n Tipo de unidad: Héroe de Nivel 2 \\n Tiempo de revivir: 45s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:MordorMouthofSauronRecruit",
+      "translation": "Reclutar al mensajero del Señor Oscuro \\n \\n Tipo de unidad: Héroe de Nivel 2 \\n Tiempo de reclutamiento: 40s \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:MordorMouthOfSauronRevive",
+      "translation": "Revivir al héroe caído, Boca de Sauron \\n \\n Tipo de unidad: Héroe de Nivel 2 \\n Tiempo de revivir: 45s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 30/s \\n Niveles 2-5: +5% Salud, +5% Daño \\n Niveles 6-9: +5% Salud, +4% Daño \\n Nivel 10: +5% Salud, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:MordorWitchKingOnFellBeastRecruit",
+      "translation": "Reclutar al líder de los Nazgûl \\n \\n Tipo de unidad: Héroe de Nivel 5 \\n Tiempo de reclutamiento: 55s \\n Regeneración de salud: 45/s \\n Nivel 2: +5% Armadura, +5% Daño \\n Niveles 3-5: +4% Armadura, +5% Daño \\n Niveles 6-9: +3% Armadura, +4% Daño \\n Nivel 10: +2% Armadura, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:MordorWitchKingOnFellBeastRevive",
+      "translation": "Revivir al héroe caído, El Rey Brujo \\n \\n Tipo de unidad: Héroe de Nivel 5 \\n Tiempo de revivir: 1m x 1.075 por nivel adicional ganado \\n Regeneración de salud: 45/s \\n Nivel 2: +5% Armadura, +5% Daño \\n Niveles 3-5: +4% Armadura, +5% Daño \\n Niveles 6-9: +3% Armadura, +4% Daño \\n Nivel 10: +2% Armadura, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:MordorKhamulRecruit",
+      "translation": "Reclutar a la Sombra del Este \\n \\n Tipo de unidad: Héroe de Nivel 4 \\n Tiempo de reclutamiento: 50s \\n Regeneración de salud: 45/s \\n Nivel 2: +5% Armadura, +5% Daño \\n Niveles 3-5: +4% Armadura, +5% Daño \\n Niveles 6-9: +3% Armadura, +4% Daño \\n Nivel 10: +2% Armadura, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:MordorKhamulRevive",
+      "translation": "Revivir a Khamul \\n \\n Tipo de unidad: Héroe de Nivel 4 \\n Tiempo de revivir: 55s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 45/s \\n Nivel 2: +5% Armadura, +5% Daño \\n Niveles 3-5: +4% Armadura, +5% Daño \\n Niveles 6-9: +3% Armadura, +4% Daño \\n Nivel 10: +2% Armadura, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:MordorMorgomirRecruit",
+      "translation": "Reclutar a Morgomir \\n \\n Tipo de unidad: Héroe de Nivel 4 \\n Tiempo de reclutamiento: 50s \\n Regeneración de salud: 45/s \\n Nivel 2: +5% Armadura, +5% Daño \\n Niveles 3-5: +4% Armadura, +5% Daño \\n Niveles 6-9: +3% Armadura, +4% Daño \\n Nivel 10: +2% Armadura, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:MordorMorgomirRevive",
+      "translation": "Revivir a Morgomir \\n \\n Tipo de unidad: Héroe de Nivel 4 \\n Tiempo de revivir: 55s x 1.075 por nivel adicional ganado \\n Regeneración de salud: 45/s \\n Nivel 2: +5% Armadura, +5% Daño \\n Niveles 3-5: +4% Armadura, +5% Daño \\n Niveles 6-9: +3% Armadura, +4% Daño \\n Nivel 10: +2% Armadura, +3% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorFighterHorde",
+      "translation": "Fuerte contra Lanceros \\n Puede cambiar de formación para mejorar las capacidades defensivas \\n \\n Tipo de unidad: Espadachín Básico \\n Tiempo de reclutamiento: 25s \\n Nivel 2: +10% Salud, +10% Daño \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildRohanSpearmenHorde",
+      "translation": "Fuerte contra Caballería y Monstruos \\n Puede cambiar de formación para proteger a otras unidades \\n \\n Tipo de unidad: Lancero Básico \\n Tiempo de reclutamiento: 20s \\n Nivel 2: +10% Salud, +10% Daño \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorShieldGuardHorde",
+      "translation": "Requiere Cuartel de Nivel 2 \\n Fuerte contra Caballería y Monstruos \\n Puede cambiar de formación para proteger a otras unidades \\n \\n Tipo de unidad: Lancero Élite \\n Tiempo de reclutamiento: 30s \\n Nivel 2: +10% Salud, +10% Daño \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorArcherHorde",
+      "translation": "Fuerte contra Espadachines y Lanceros \\n \\n Tipo de unidad: Arquero Básico \\n Tiempo de reclutamiento: 30s \\n Nivel 2: +10% Salud, +10% Daño \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorRangerHorde",
+      "translation": "Requiere Arquería de Nivel 2 \\n Fuerte contra Espadachines, Lanceros y Monstruos \\n Puede lanzar voladas de flechas certeras \\n Puede ocultarse cerca de árboles \\n \\n Tipo de unidad: Arquero Élite \\n Tiempo de reclutamiento: 30s \\n Nivel 2: +10% Salud, +10% Daño \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorBarracksLevel2Upgrade",
+      "translation": "Permite el entrenamiento de Guardias de Torre \\n +10% Más velocidad de producción \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorBarracksLevel3Upgrade",
+      "translation": "+25% Más velocidad de producción \\n Agrega Torre de Flechas defensiva \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorArcheryRangeLevel2Upgrade",
+      "translation": "Permite el entrenamiento de Rangers de Ithilien \\n +10% Más velocidad de producción \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorArcheryRangeLevel3Upgrade",
+      "translation": "Permite la compra de la Mejora de Flechas de Fuego \\n+25% Más velocidad de producción \\nAgrega Torre de Flechas defensiva \\n \\n Tiempo de mejora: 50s"
+    }
+  ]
+}

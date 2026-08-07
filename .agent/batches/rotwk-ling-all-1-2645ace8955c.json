@@ -1,0 +1,329 @@
+{
+  "schema_version": 3,
+  "batch_id": "2645ace8955c4db6af20cc7e0b452f5c",
+  "worker": "rotwk-ling-all-1",
+  "created_at": "2026-08-06T07:00:07.574090+00:00",
+  "lease_expires_at": "2026-08-06T13:00:07.572679+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-ling-all-1-2645ace8955c.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenGreenPastureLevel2Upgrade",
+      "source": "Allows training of Lindon Horse Archers \\n+10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "2a4fe8e1d24433c1458c908bc76336db2bc8c11813c945997bc42babf6523f6a",
+      "entry_hash": "c477e2d497cdf692d7d1ca3626ddda05a47d4f608bb0a31b1930fe108b2b69d1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildElvenGreenPastureLevel3Upgrade",
+      "source": "+25% Faster Production Speed \\n Adds defensive Arrow Tower \\n \\n Upgrade Time: 30s",
+      "source_hash": "c281772db155045918c9997ad2637745b383e69d81c4f2fb2285466f8ac257c1",
+      "entry_hash": "bc001eb3693c221fb42f25e07bc591a0fd53a1f7eda7cd5679c5ee3590d72a42",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseUpgradeElvenSilverthornArrowsBattleTower",
+      "source": "Upgrade this Battle Tower with Silverthorn Arrows \\n Increases damage done by Arrows \\n \\n Upgrade Time: 30s",
+      "source_hash": "437996421da50a3b3885aef62f63ecf2880e0909f94775e0f6da1969bf8d1f6c",
+      "entry_hash": "3877e9d1d2b6658d7d76588351849810bca9235f08366fd5602df5c045c2728b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenBasicTraining",
+      "source": "Allows battalions to purchase the Banner Carrier upgrade \\n Increases a battalion to Level 2 \\n \\n Research Time: 30s",
+      "source_hash": "f5390dc4f781396d88d1093bc3686455d9459c78ceb889fe39610596991b2858",
+      "entry_hash": "c6c3a1463d6ba73ded5d5e6eb09c4471f5d8730fb61ae6864e6760ad4fd600c8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenHeavyArmor",
+      "source": "Allows battalions to purchase the Elven Armor upgrade \\n When equipped, significantly reduces the amount of damage taken \\n \\n Research Time: 30s",
+      "source_hash": "7c95fccc2b06d80cfbd418b6cb01e31867bc210ba04d1aec6eaf6e9048862af3",
+      "entry_hash": "fe47e835dc4bf8ab5cc1330d2506cffd4070fe769e8c28cd1b0ed8cf310efe3c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenForgedBlades",
+      "source": "Upgrades this battalion with Forged Blades \\n When equipped, increases the damage done by Melee Weapons \\n \\n Upgrade Time: 10s",
+      "source_hash": "bbada1a25c684aca7d10f69053fb935af3c9d459216b1587ab113430145da9e3",
+      "entry_hash": "1329eef8257c4cbc3a6c4c05faca8a2699c97ec4760b2363efe2800caa8d4392",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenSilverthornArrows",
+      "source": "Allows battalions to purchase the Silverthorn Arrows upgrade \\n When equipped, significantly increases the damage done by Arrows \\n \\n Research Time: 30s",
+      "source_hash": "ebc343e58ae58b98147126961a3163082e7bf1d1610ff43591291ce82d55bb53",
+      "entry_hash": "aa4567ada80ce99a89fc6fe379ee60320ee28d01cefe89d2db2260f5cfc81307",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildRohanPeasant",
+      "source": "Draft valiant citizens of the Riddermark to defend Middle-earth \\n Strong vs. Pikemen \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: 25s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "ee83260ce11a993766655d9e1539894861365bf6fa192f4eb9a71010cfd92d8a",
+      "entry_hash": "a78c05e30457032718f91623fc0bd4c78c5e02e7af296a54a934f30110ba45c6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenPhalanxHorde",
+      "source": "Strong vs. Cavalry and Monsters \\n Able to switch formation to protect other units \\n \\n Unit Type: Basic Pikeman \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage\"",
+      "source_hash": "642fb449db94491537dbb1fe4ed4e48dcee981463ee63cf7b1a1ecfcf070960b",
+      "entry_hash": "5e8099dd5e53d3ae9413ed623a48e9afb50316f799679c638a55cd7e7b50ff4c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenZerkerHorde",
+      "source": "Strong vs. All Units \\n Requires Level 3 Hall of Warriors \\n Only 3 battalions of Zealots are allowed at any time \\n \\n Unit Type: Mini Hero Swordsman \\n Recruit Time: 40s \\n Level 2: +5% Health, +5% Damage, 20/s Health Regeneration \\n Levels 3-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "92e63b8451fdbf801fe189acb91f1e1adcf7deeca58b5965580a431c7988c933",
+      "entry_hash": "53456edcfd0685a55c734cfac93b522057d350cdc63651c735f1584b767fc79f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUpgradeDwarvenBarracksLevel2",
+      "source": "+10% Faster Production Speed\\n Allows research of Banner Carriers and Siege Hammers \\n \\n  Upgrade Time: 30s",
+      "source_hash": "f8fd25e02a5c081bad6ab6f5858fd9649bb447dc0b2b109f08d4886dd377d8c3",
+      "entry_hash": "d5cd6b470c46b9fa27cdaaf2e9a6bdd7e0174f714ad52f37ac027440b16686ba",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUpgradeDwarvenBarracksLevel3",
+      "source": "+25% Faster Production Speed \\n Allows training of Dwarven Zealots \\n Adds Defensive Axe Tower \\n \\n  Upgrade Time: 1m",
+      "source_hash": "87665873139325cc6bcc2f85ffa6505f57f3bd1691521c44cd3572ae3e7aa1e3",
+      "entry_hash": "82b3af59e811f7edb315ce35650a8d5fe0baa5460650aecc1749e6949b46d269",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenBasicTraining",
+      "source": "Allows battalions to purchase the Banner Carrier upgrade \\n Increases a battalion to Level 2 \\n \\n  Research Time: 30s",
+      "source_hash": "c84c8b4f404cd171769939e0e0caaae2d610924a8e18723adaeaec2bb6096bde",
+      "entry_hash": "ce7df23ee34bd882a213f42cb7900b87d151958990fc2946bbe44fa809b282e9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenAxeThrowerHorde",
+      "source": "Strong vs. Pikemen and Archers \\n \\n Unit Type: Basic Archer \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "059e864fa02dc524c60b20b962276f1f9e8badd734139214cd61e556936f82e3",
+      "entry_hash": "06924b820fe9b3874f945cc9dd2758f08268d0157debc7d1908e7da20a34ece4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenMenOfDaleHorde",
+      "source": "Requires Level 2 Archery Range \\n Strong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Black Arrows \\n \\n Unit Type: Elite Archer \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "b3b54e7d755a46db23075c51ea86cd04138a5eb0c4e8e085c8d9b06af6d7dfae",
+      "entry_hash": "f50fe4f87a4043bf1b5fabe6db0dfdf9b4e6a04422a0963a7f5960657a81468f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyRohanFireArrows",
+      "source": "Allows archer battalions to purchase the Fire Arrows upgrade \\n When equipped, significantly increases the damage done by Arrows \\n \\n Research Time: 30s",
+      "source_hash": "548e0b40f9bdc4f754dfa929d4d3f7b78711740b8202f572315d2b5738661b7d",
+      "entry_hash": "471347c7e1372ac4481667a99ae042b65252008ab23fcd162558d2164e434ac0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenArcheryRangeLevel2Upgrade",
+      "source": "+10% Faster Production Speed \\n Allows training of the Men of Dale \\n \\n Upgrade Time: 30s",
+      "source_hash": "d00264f30dd8a5d398b0b20c3a4996383e71e27d9439afce3682760140bc50ab",
+      "entry_hash": "1838fcbb447ffd8ac5d87e0af5e49ef9396b5eccbb9509d5c2eda36f1fbdd90a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenArcheryRangeLevel3Upgrade",
+      "source": "+25% Faster Production Speed \\n Allows research of Fire Arrows \\n Adds defensive Arrow Tower \\n \\n Upgrade Time: 1m",
+      "source_hash": "3f7b1fda6a15421ff32ee02c58a203e0973699275208df80dab1757c97afc675",
+      "entry_hash": "cbe323df8c79efa9f2fbaac6bfc15fe8b4e986c00cbf1706bb3dace259fef2e4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenBattleWagon",
+      "source": "Strong vs. Swordsmen and Archers \\n Can be upgraded with various improvements \\n \\n Unit Type: Basic Cavalry \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Level 3: +10% Health, +9% Damage, 30/s Health Regeneration \\n Level 4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "ef3ae96f1c5c3b5bf29b1e96db0138dcf2bb371b4b76ef727fb762386f01f802",
+      "entry_hash": "a7129637365c1d2db105cc774bc50833c8ccde611aa17a4886efe34f7dcc7545",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenCatapult",
+      "source": "Requires Level 2 Forge Works \\n Strong vs. Structures, Monsters, and Archers \\n Fires two shots at once \\n \\n Unit Type: Siege \\n Recruit Time: 30s",
+      "source_hash": "fde8c46af55114836151db6b07e9dc1bf09f6355a9eac47e660dc550bf829af0",
+      "entry_hash": "74f35c5c896c0db98404af597998e7a5062e315d72a30f3efd39a5429177e7ba",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenForgedBlades",
+      "source": "Allows battalions to purchase the Forged Blades upgrade \\n When equipped, increases the damage done by Melee Weapons and Thrown Axes \\n Cannot be combined with Siege Hammers \\n \\n Research Time: 30s",
+      "source_hash": "e9521cd3401d6ef0d589e3a01edd006e5fd66b2db84579f6d2aaa2818228f061",
+      "entry_hash": "0130e0c1b8956e3120dad97edb5c6648c454195862f0b7bca8b8ef657537914a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenMithrilMail",
+      "source": "Allows battalions and Demolishers to purchase the Mithril Mail upgrade \\n When equipped, significantly reduces the amount of damage taken \\n \\n Research Time: 30s",
+      "source_hash": "71ba3f23bc23216271815e7c997eefa0d58a6f66381d1ccdab0d8263f857de62",
+      "entry_hash": "55bb3310c8e7e25a055729dda8a386735b5d171c2a8290f6c1c8652cc536b070",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyDwarvenFlamingShot",
+      "source": "Allows catapults to purchase the Flaming Shot upgrade \\n When equipped, significantly increases the damage done by Catapults \\n \\n Research Time: 30s",
+      "source_hash": "637e0e29e165799dacd2c4647c55b95c9573fad1140bf696220e8a54a1aa0e54",
+      "entry_hash": "73467a85bcb900b57a96f77fc5275ee6255b8ab17157ca106676224220fced82",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeSentryTowerForgedBlades",
+      "source": "Upgrade this Battle Tower with Forged Blades \\n Increases damage done by Axes \\n \\n Upgrade Time: 30s",
+      "source_hash": "500db56860dcfd10596f03af92306d830f0638ffd7b972fb430976a085592f49",
+      "entry_hash": "e2f31036407c360dcafdf6187f6636e1919b0686dc2d7219b96a19eb77dd0835",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarDarkDunedainHorde",
+      "source": "Requires Level 2 Hall of King's Men \\n Able to charge at enemies for improved speed and combat performance \\n Strong vs. Pikemen \\n \\n Unit Type: Elite Swordsman \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "1cf1cb5a30f27ef875d5ce34cec7d47e076e65f362dd9aeb3ce828a7e8d9d270",
+      "entry_hash": "a82b2f589388ae6cb9eff7a4a6bc5502fdb03dcc56b2040769c4a3cf9ee354c6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "b911142acddd0dc402576824a0658a67c949f683e924e30a3192f1fa9db8d160"
+}

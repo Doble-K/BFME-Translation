@@ -1,0 +1,210 @@
+{
+  "schema_version": 3,
+  "batch_id": "26700069c9c64520937e23779bcdc650",
+  "worker": "rotwk-run3-1",
+  "created_at": "2026-08-05T20:00:55.799185+00:00",
+  "lease_expires_at": "2026-08-06T02:00:55.798030+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run3-1-26700069c9c6.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:Command_ElvenCastleWallHub_BeginWallSpan",
+      "source": "Build Wall",
+      "source_hash": "56895b2e9bd5c40ba79676b190eedc0082f2f6fc1d2a3e9e81b9c80c774c71c1",
+      "entry_hash": "bf81099f15e8d2e0b4fb257af4be4ca8e51c1ebdda6050ba7e1dec2f75e4aca5",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_ElvenCastleWallHub_BeginWallSpan",
+      "source": "Left click and drag to construct a Wall \\n\\n Build Time: 20s",
+      "source_hash": "c0385587b00f1193cbe7e0fdbe815d62f22727a68a849d52a5a34938d5667a8d",
+      "entry_hash": "2b779ecdce288d12cb1ca37d3c4313ef1981be61f9ae5f036ce900b6751faafe",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_ElvenWallUpgradeToHub",
+      "source": "Allows construction of additional walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "3b960c77acfdb60f684c1d9e8ac1583d6d3f75acf18db802a6524b540339a351",
+      "entry_hash": "11c40fac71e1489392d680cb7e7ecda25633190c6d32907bfc50d3c1e5e4a9f6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ConstructArnorWallHubExpansion",
+      "source": "Allows construction of additional walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "85b9c34a2e10515a41c2ca9e57e9cc3a3c2d9b69eb5de1c03f058ad27cfb76e2",
+      "entry_hash": "26672d01aec3706af40bf2bc460ab2037d3cd80ff66939098b8e9ed9afd03076",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:ElvenCastleWallHubExpansionDescription",
+      "source": "Allows the construction of walls",
+      "source_hash": "c9a24bf1bcc3c686f585759e9091a91d2436a7ec19ad878a354282f17df2fa33",
+      "entry_hash": "6462fc763ccf21c771706a6ed6d45327ca04f5d973d01d56f8588e735f07601b",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_IsengardWallUpgradeToHub",
+      "source": "Allows construction of additional walls \\n Wall Build Radius: 1000 \\n\\n Build Time: 35s",
+      "source_hash": "0057bcb492812067c1e65fe76a1f3554327a4e9d89b30265150e2bf3e2e24d99",
+      "entry_hash": "cbd1a21f21b4a5f477ba53ebfdf6b19de29de6ff05a4c9404d35d73df24778fd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_IsengardCastleWallHub_BeginWallSpan",
+      "source": "Left click and drag to construct a Wall \\n\\n Build Time: 20s",
+      "source_hash": "f5b409ef70ef09c6f51c862531fde7e53327f3f28da92e8a51ecd960e84c8063",
+      "entry_hash": "c770ca85fa79675a18e1c001ceaa4169e2f3a16c6312d14569901e0c550e080b",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_IsengardWallUpgradeToRegularGate",
+      "source": "Primary defensive gate that can be opened and closed \\n\\n Build Time: 30s",
+      "source_hash": "6b3a46d4228973bdd05cbd79ab052ee6eb816404f1684a7394e0e91c20149e66",
+      "entry_hash": "9f23cfdf0d3114ecaa2c809829844a27164ea8d104bae860e2888e345ddc08ab",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_AngmarWallUpgradeToRegularGate",
+      "source": "Primary defensive gate that can be opened and closed \\n\\n Build Time: 30s",
+      "source_hash": "f4f7361fd9211baffb7467a7093a430ce732206018c676975035c75e5c7ad633",
+      "entry_hash": "87c948b9e4c808b933b41b137fd85fe47cbc95ce1dde1ff591bd539164828f66",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_AngmarWallUpgradeToCatapult",
+      "source": "Adds a Troll Stone Thrower to the wall \\n\\n Build Time: 30s",
+      "source_hash": "73c782e0262a3ed0c3a6bba01ce6aee373ca5db9d95e3825ed7de29ffc07cadd",
+      "entry_hash": "e079dd9333c4177a8fde66d78bd6911e2628945c30a2cff1e2d085387e868b7e",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:Command_AngmarCastleWallHub_BeginWallSpan",
+      "source": "Build Wall",
+      "source_hash": "c5f434f16f307fabc960ea4f596752e6cfa415082f0aaea10177b73f21ba8309",
+      "entry_hash": "62305c13cd194506a209f288b6c2520a255b44b85bc0f6f3ded808772d58d080",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_AngmarCastleWallHub_BeginWallSpan",
+      "source": "Left click and drag to construct a Wall \\n\\n Build Time: 20s",
+      "source_hash": "1bcf6fc4c5c90b5dd014748b874153f24187a06e439864b6e66af25f8bedaee7",
+      "entry_hash": "d2ad6f57c40a29c2bdf5934de06d3373c5a53c07035dc6422329ca5b52e969d8",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_AngmarWallUpgradeToHub",
+      "source": "Left click and drag to construct a Wall \\n\\n Build Time: 20s",
+      "source_hash": "447f61ce4be276d4fcc9788cae537e3815fa34565f214cc187ff081ab54f4510",
+      "entry_hash": "dae619a207070af64b6d91d4688bbf5e596c5a6744b6b6a8001ad5c13b2ee132",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_AngmarWallUpgradeToTower",
+      "source": "Fires arrows at enemy troops \\n\\n Build Time: 20s",
+      "source_hash": "60eb46ef5f83837ee6c65b616635d9d553260b4a00adbc855341a5ff14c02b6a",
+      "entry_hash": "2af194004977db3f14f4680c9d0811a307d2d4db36d1b645f402cc4e43acbb4c",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_AngmarWallUpgradeToPosternGate",
+      "source": "Allows friendly units to pass through the wall \\n Invisible to enemies \\n\\n Build Time: 15s",
+      "source_hash": "4eb0416e9fbe6124c43844ec361c5b9879db20bac35daae346e046b1f1216010",
+      "entry_hash": "f69aca999180a1f4fa14fa53ebc528b1bdfdfbc516d39b77d58cb26c7d165eda",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:ToolTipWallSegmentDescription",
+      "source": "Vision Range: 160 \\n Repair Delay: 1m",
+      "source_hash": "e8e7240eb57ea8b9d4aacacdfe180746b16c57aef38241474be6448d783917e3",
+      "entry_hash": "889eac2f4a7bd716ad6ed43772d49b05019cb465d2d791d5e80c795cbda52ea8",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:ToolTipWallArrowTowerDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 120 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m",
+      "source_hash": "6c9e0a009a5430b9906c1bc560c47f86feb881d7bea99acd1d504c024115676f",
+      "entry_hash": "6fd3f5b703e6725da81a42fff58e40c633f995dd6215f4a40909b5635e5e7822",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:TooltipCatapultWallExpansionStructureDescription",
+      "source": "Vision Range: 160 \\n Repair Delay: 1m",
+      "source_hash": "0fa26e0074509b2aa0198f137e4f16ea3116c5e8e68467165f3bfe73f880dcee",
+      "entry_hash": "275c4616b3457d2beb16fcbd4a525f2eaafb688add3671dcef87e71c7b539c68",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:TooltipPosternGateStructureDescription",
+      "source": "Vision Range: 160 \\n Repair Delay: 1m",
+      "source_hash": "7860c41cda82ad154fb66a7aa5f0955b5bc721390b335f978939b49b177b7c0e",
+      "entry_hash": "7b17c3ea484f128d9533c14f08f8566c48a83edfdaf38bd2ae9a82c3577db4f3",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:TooltipWallGateStructureDescription",
+      "source": "Vision Range: 160 \\n Repair Delay: 1m",
+      "source_hash": "689c98b39baf78f934033b0908444d0760a5b1552279a879c5cbb6b768ea32fa",
+      "entry_hash": "92628ad300b38efd5ea988adaeffe02207b3ba1fcfec3571d3ed4b9dec8d87ba",
+      "protected_tokens": [
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "5679bf13ed683031ac8aeaca28f583f24319c4d4fd3c3699fc19229ca4be0a16"
+}

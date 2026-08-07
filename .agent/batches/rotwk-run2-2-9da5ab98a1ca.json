@@ -1,0 +1,247 @@
+{
+  "schema_version": 3,
+  "batch_id": "9da5ab98a1ca452fae7eb7011c9290e7",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T19:48:32.914723+00:00",
+  "lease_expires_at": "2026-08-06T01:48:32.913554+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-9da5ab98a1ca.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:LoneTowerDwarvenStonework",
+      "source": "Strengthened S&tonework",
+      "source_hash": "cde796cbb9adffb63a331e15951a0fe0f7989caf9fed722044bbfa2b1de4ee43",
+      "entry_hash": "c6ee71354e1e08779c0ea06fb8c8e8f67a709dbe836fa3764caccf723083c9bf",
+      "protected_tokens": [
+        "&t"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:BarricadeOrcFireMunitions",
+      "source": "Fire Arro&ws",
+      "source_hash": "d4e2d6b0dfde33055ef37717ef84eed9424b2cf2c8f99398b882bd8a08823370",
+      "entry_hash": "77ff559cebf87d1116491285d3b49dd981dfbdb75b38e85fb315d51dd23d3257",
+      "protected_tokens": [
+        "&w"
+      ]
+    },
+    {
+      "id": "Upgrade:FortressExpansionSelectionCompleted",
+      "source": "Constructing Fortress Expansion",
+      "source_hash": "927b46edc8fe5e745916a9d480bdb5a5e26d5b06844e88e33c930201ddf0fe97",
+      "entry_hash": "73d93627d9425ae7289e85a418986aae26ad4e43a249559a36d1de7c941987ba",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerFlamingMunitions",
+      "source": "Upgrades the Lone Tower with Fire damage, increasing damage output \\n \\n Upgrade Time: 30s",
+      "source_hash": "875be20794f69f1d9986a472ae221f10996ba4a5e78fbef6d56250b9eff24872",
+      "entry_hash": "54391fa56342cb043b0c6762c9dad306aed2c5fd9174e54e37b7a142e5f8e52e",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerFlamingMunitionsPurchased",
+      "source": "Upgrades the Lone Tower with Fire damage, increasing damage output \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "96fe9c0601604d8affd727a8023094b9082a6616ee8a03d41e1a667673ef82e3",
+      "entry_hash": "f3f60a7ad2720d4bfe57ba8f13b6b739d058236188b0d4928aba7fdef4d8c75e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerMasterworkMunitions",
+      "source": "Upgrades the Lone Tower with Forged Blades, increasing damage output \\n \\n Upgrade Time: 30s",
+      "source_hash": "6c354d7d76f46088b516f40a0ec0c830ade697d9b39604467d64dde5eb0c12c7",
+      "entry_hash": "b65b16e52e5cb8007a631f8a6e49f3a920a81ae69bae5aa32ee56cf12aa676a1",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerMasterworkMunitionsPurchased",
+      "source": "Upgrades the Lone Tower with Forged Blades, increasing damage output \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "e9ea854dcdc0d38d3a4c9c502761ee81fef5360c4355618be796ed899a8ce821",
+      "entry_hash": "eea6cca68af902230f4ee8729b16431c58457fa86cce80a74a8f264478fba9d5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerNumenorStonework",
+      "source": "Upgrades the Lone Tower with +33% Armor \\n \\n Upgrade Time: 30s",
+      "source_hash": "49c779a6c67cb81b04a514a3b202ee492e415416c3fc346660cd2a71f2329276",
+      "entry_hash": "12f7dca71d0e982586d1f873b0babd5eb6880ad327799d656db93e2ead72b8e1",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerNumenorStoneworkPurchased",
+      "source": "Upgrades the Lone Tower with +33% Armor \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "cddbdd316868ae3f3bf5266edf470a71e670e8f358599130532c783457b7cd8c",
+      "entry_hash": "87eb71b5d673d652c5100f105afce3128abc547444ca93deb590ecd235fea82c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerDwarvenStonework",
+      "source": "Upgrades the Lone Tower with +33% Armor \\n \\n Upgrade Time: 30s",
+      "source_hash": "4d1d0db650d7970868bb9df21a25355068d77dc22a0241c123a8c051f551c605",
+      "entry_hash": "4eb02061535469b59fab10b7939b186e666107c0b6dd0516166bb452a1ae78ea",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerDwarvenStoneworkPurchased",
+      "source": "Upgrades the Lone Tower with +33% Armor \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "4858a78e413ac1018d645dc2485c640f971ccf11ab4eae53ffbc2f964f098828",
+      "entry_hash": "11d087f98c1743ce0e7eaa6e144ee71532fa5e53e3c653ed1cfe5451d2cf4779",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipBarricadeOrcFireMunitions",
+      "source": "Upgrades the Orc Archers on the Barricade with Fire damage, increasing damage output \\n \\n Upgrade Time: 30s",
+      "source_hash": "137054a8ff5819681e5b15921917a20985adcaadc4b2656dfdfb39b58db4abc0",
+      "entry_hash": "8a4e639e5b6580f4b875993208ae3f3ecdaccf28a6e9019a387756e4330ac896",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipBarricadeOrcFireMunitionsPurchased",
+      "source": "Upgrades the Orc Archers on the Barricade with Fire damage, increasing damage output \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "d296c4e8f5bc4ae7f341903cadf8b6d304e1de4abd259e0af5377eff7115cd44",
+      "entry_hash": "93d3087e38b4fd5ab3a96659606c271d5b6842e6625d474146ba2f81b5f5164d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:MenLoneTowerDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 100 (Structural) & 20 (Flame) \\n Ranged Attack Speed: 1.5-2s \\n Bow Range: 280 \\n Vision Range: 650 \\n Guards Attack Range: 250 \\n Respawn Time: 5s \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "82707d7dd719998d9ce0e446e51bad1376915a4103927df4d4c77a28da682ed2",
+      "entry_hash": "752d32a8521441c046841efc4c72373373759ae9fa612c424c88230c68b37610",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenLoneTowerDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 140 (Structural) \\n Ranged Attack Speed: 1.5-2s \\n Axe Range: 280 \\n Vision Range: 650 \\n Guards Attack Range: 250 \\n Respawn Time: 5s \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "c815c1c3ab2b46ce15b17c6291f105baf03fb9fea47792a0ff80798ca477e847",
+      "entry_hash": "fb4cdd26ba09c27ad6b35ced6bbdcdb7f8e4d5fd74e53fd1cbd62e54ea4cda63",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:MordorBarricadeDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 200 (Structural) & 50 (Flame) \\n Ranged Attack Speed: 1.5-2s \\n Bow Range: 320 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "0ea21f995a4b862c08df208ea554a585435f1d558715d0bd823378b795280f50",
+      "entry_hash": "91128c2e4a54ab9ac24460a7b6cf22cb79e8f7aa1813dca3fbdcbd4adad1c15f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:MordorBarricadeExpansionDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 200 (Structural) & 50 (Flame) \\n Ranged Attack Speed: 1.5-2s \\n Bow Range: 320 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "0ca438395b2856c3583bb2e6c980a6f1716e691beee0e6abcd08c7a4387d2382",
+      "entry_hash": "1e2dd87d7456e184998924d9ad954dcc0f9c7df6115fc309c543f82c8b325f66",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressOrcfireMunitions",
+      "source": "Upgrades all Arrow Tower Expansions and Ballista Expansions with Fire damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Armories \\n \\n Upgrade Time: 30s",
+      "source_hash": "b558cbf5b5d006596bf45e269cd8dde57a281831750f07693ed585252e4974cb",
+      "entry_hash": "7a422c58826ee4126d9ebc05247610e734fa5a9672dd06b9630523de1d4ee9fa",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressOrcfireMunitionsPurchased",
+      "source": "Upgrades all Arrow Tower Expansions and Ballista Expansions with Fire damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Armories \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "82604e89a55aad973f09924c30653c13043566005909c6a79a7708eb2a8949aa",
+      "entry_hash": "e61fad7880a4c50c30cf383f2b3b799ac89ccaaab7d4151bd74c9c0aaeb97c6d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeSentryTowerFlamingBolts",
+      "source": "Upgrades this Tower with Flaming Bolts \\n Increases damage done by Bolts \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "e04feeea4c0612ccafc61c72a2353f44da63c4a20f9a5f0c3720040198e100ed",
+      "entry_hash": "dbee72049e910bad1388c2cd6c22da723a64b3717a6cbb02f6c7941541eb90e7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "687fb09b85881675d7ba2c1e14ab0e6ec259a04bf4f3860239c9713a907a3587"
+}

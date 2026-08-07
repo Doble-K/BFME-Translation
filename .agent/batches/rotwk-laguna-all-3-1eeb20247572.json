@@ -1,0 +1,252 @@
+{
+  "schema_version": 3,
+  "batch_id": "1eeb202475724bb5a3df865c9cd19b94",
+  "worker": "rotwk-laguna-all-3",
+  "created_at": "2026-08-06T07:03:53.326583+00:00",
+  "lease_expires_at": "2026-08-06T13:03:53.325153+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-laguna-all-3-1eeb20247572.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPWORForlindon/Desc",
+      "source": "The Northern part of the Elf lands of Lindon are bordered by the Blue Mountains and the Great Sea.\\n\\n Size: 400 x 400\\n Lairs: 7x Goblin Lair, 1x Warg Lair 2x Fire Drake Lair\\n Neutral Structures: 2x Outpost, 1x Signal Fire, 3x Shipwright",
+      "source_hash": "f3605256cae8ce03e683bcb16d70646febf32743a931d227e8b579dbcd3fec17",
+      "entry_hash": "4eba4321081a73f8b115201d87a5cc6cc32651801eddb99f713f40ec22ad1373",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORForodwaith",
+      "source": "Forodwaith",
+      "source_hash": "aafced8a87d02d97344b901edf940faa23a4041648ed0b768c161f953f110b0e",
+      "entry_hash": "48e1f3fda8284b2cebee4135f7df0a79f177fe6dd714e5830e48eac46e34d67a",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORForodwaith/Desc",
+      "source": "The northern wastelands that stretch north and east from the Ice Bay of Forochel.\\n\\n Size: 430 x 450\\n Lairs: 4x Troll Lair\\n Neutral Structures: 1x Inn, 2x Signal Fire, 4x Tower",
+      "source_hash": "b29aa7bd59ccd620ee0799d8ff4c59a4c788f0fc98d66bee67992e24e9387b52",
+      "entry_hash": "9c69ed727fc68a5497f828eea60838273860f253abf2f7a2a7050f3264862245",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORGapofRohan",
+      "source": "Gap of Rohan",
+      "source_hash": "271e16a1ad949f3f26622fc46cd1e835b22013763fff95706280c6dbdee141b3",
+      "entry_hash": "f9f77de6bf5fd1d4f030af691200cf94ab16eea5e5125df9dafe0ff44018e953",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWorGreyHavens",
+      "source": "Grey Havens",
+      "source_hash": "5c076f9a153738a27c6b499c661452e1e4088d398332ef00461bb08a66f91a6c",
+      "entry_hash": "950b94a80a5786b03129699fc0c1d378856058c1169edc6ef2cf749858cb45a0",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORGreyHavens/Desc",
+      "source": "The Elven harbor from which the Elves of Middle-earth would pass to the West.\\n\\n Size: 500 x 500\\n Lairs: 2x Troll Lair\\n Neutral Structures: 6x Shipwright, 8x Tower",
+      "source_hash": "231197d8b27a5c55590fac464c9dd9f7469e0da81dd8ebd7360ae90c3bd3de08",
+      "entry_hash": "d269afb88183c5679abadd3434c88f52494aaa6938cfacc5573ed7244f8aa573",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORHarad",
+      "source": "Harad",
+      "source_hash": "672b2d93f6cd756665beb6a01a1c7cd52f8c53830228d7751a6060d536a92d6f",
+      "entry_hash": "eb4ab0773b8a6d0133a87f5baa499357a52ebd05cc050e0ada78d826849862ce",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORHarad/Desc",
+      "source": "A barren, desert land that lies south of Mordor. It is the homeland of the Haradrim warriors.\\n\\n Size: 400 x 400\\n Lairs: 7x Goblin Lair\\n Neutral Structures: 2x Inn, 1x Signal Fire",
+      "source_hash": "b82fc3095ba127d7cf960cfa92b16e000e6c0c59d18256c7d2d7d11fbf3a5454",
+      "entry_hash": "3a91741520a5ec7a2fa3f6f3c20c035e2b221080934c33256e8e620165159530",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORHarlindon",
+      "source": "Harlindon",
+      "source_hash": "91e1cd7ed40b52f4318b092c138511c241178d3f8c59c293b4fab76a90116deb",
+      "entry_hash": "359d5c7d1517cc6b92bb498ef610e91e5db268f85f9a21391ac4ee61061c51ec",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORHarlindon/Desc",
+      "source": "These Elvish lands are the southern parts of Lindon, lying between the Blue Mountains and the Great Sea.\\n\\n Size: 500 x 500\\n Lairs: 4x Goblin Lair\\n Neutral Structures: 1x Outpost, 2x Inn, 1x Signal Fire, 3x Shipwright, 2x Tower",
+      "source_hash": "e3902655377ac60970228851b8e7fc176c9dcc633762df486ca90a42a67861e2",
+      "entry_hash": "ac610fd314cad1d8fddfd09687d11bfef30de986353de91d13bfe032129c6214",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORHelmsDeep",
+      "source": "Helm's Deep",
+      "source_hash": "36d5365125b39476f95a6b0caa680f76683fe869e62f525ebc3d7a88797a88f8",
+      "entry_hash": "6d0d551608a8dff929adf858e4f7cc367361de7f39849b42e5ca59dc77d41cb3",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORHelmsDeep/Desc",
+      "source": "This aged stronghold is the site of one of the key battles in the War of the Ring. No enemy had ever defeated the defenders of the walls of the Hornburg.\\n\\n Size: 400 x 400\\n Lairs:\\n Neutral Structures: 3x Outpost, Fortress",
+      "source_hash": "328ccb6e20d95a629f0e6879de45412d4b975e4a5756347844988c4ff0c44ee1",
+      "entry_hash": "15abbf971956f4d65394a2e6581658722ea04c3c2e946873a268ab8864ed3777",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORHighPass",
+      "source": "High Pass",
+      "source_hash": "68455196640630d55e2b2500ac13c52ebc1fd508a0580bdb9226bd298939f05f",
+      "entry_hash": "bf548d1ee67832b06b9043278f8bb061075d3173a603961b063e938c7f732c47",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORHighPass/Desc",
+      "source": "A narrow and dangerous pass through the Misty Mountains east of Rivendell.\\n\\n Size: 400 x 400\\n Lairs: 3x Goblin Lair, 3x Spider Lair, 2x Troll Lair\\n Neutral Structures: 1x Outpost, 1x Signal Fire",
+      "source_hash": "b4968052e2152f6d5c4af08fbd8ad7aa8c65babaedf1906c2301ed7951cba27b",
+      "entry_hash": "af812ec78192d0fc1ff6b25286645eecdf167f2425b788288161f65b627d58a0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORIsengard",
+      "source": "Isengard",
+      "source_hash": "a02e8b17f02425ad9a1bd2fc14165c694e875c62c097ffdbb7fb3fc0e19f1ac6",
+      "entry_hash": "3dbfb0d7e9074425f2dd39d883dcc098123a5f70e431c6e5c4042f1692d5870d",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORIsengard/Desc",
+      "source": "Originally a fortress of Gondor, Isengard was occupied by the corrupted wizard Saruman during the War of the Ring.\\n\\n Size: 400 x 250\\n Lairs: 3x Warg Lair\\n Neutral Structures: 2x Outpost, Fortress",
+      "source_hash": "f1c5aa0e0ad2c277d19d977d2667878f989dbedb7d6819b68a276987f4ac9e85",
+      "entry_hash": "8c244104a8b0821069075529591cff34efe805825f485022f7baf9d02b011426",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORIthilien",
+      "source": "Ithilien",
+      "source_hash": "6659a5ebb14c0c462954579ad0612703d54d6bd495c31a0ed01d4623516b7400",
+      "entry_hash": "1aee60cdfabcd4978ff4fd78cfe4818b2a0fae9d04dbc2c7cc714fcf7356c8d1",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORIthilien/Desc",
+      "source": "The fertile, wooded lands that lie between the mountains of Mordor and Gondor.\\n\\n Size: 300 x 350\\n Lairs: 4x Goblin Lair, 1x Troll Lair\\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "69ab17925734c44d043fa8c61bb74438450fe6f7c26b7e7af7472b8783d595f5",
+      "entry_hash": "5fbd5e19885647b8969fe379858dfcbcc445fe1914ddf044f5c592aaf8cf6180",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORLorien",
+      "source": "Lorien",
+      "source_hash": "343d41337bf6d0d8b74c041cac20db8603f257094c1b49e66a5afb1439a8dac5",
+      "entry_hash": "e656c1304285ade185bab26755467809c54cd6ce7fd6a1e82e538e104a9ac396",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORLorien/Desc",
+      "source": "This forest, also known as the Golden Wood for its Mallorn Trees, is the home of Galadriel and Celeborn of the Elves.\\n\\n Size: 400 x 300\\n Lairs: 3x Goblin Lair\\n Neutral Structures: 2x Outpost",
+      "source_hash": "faba89ef148f29988ac3713284bea9a04c802edb9bd5bdde979408b4b6375e76",
+      "entry_hash": "8aee22e3391fbd6291ce586c0529f4be9e8dd86d83adf510947b67e6e9f1679e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORLostriand",
+      "source": "Lostriand",
+      "source_hash": "20f559e8b6f7592b1aea525aea3540df609de7ab017fb4404d8e72f2706d0d46",
+      "entry_hash": "b312e8984f305870abf5593a6bc82e4c5682bc59e9cff4b4ede6c35847af6019",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORLostriand/Desc",
+      "source": "Lands found between Amon Sul and Rivendell that are dominated by the Weather Hills.\\n\\n Size: 500 x 500\\n Lairs: 2x Barrow Wight Lair\\n Neutral Structures: 2x Outpost, 2x Signal Fire",
+      "source_hash": "1fdc1214f0455fc57a9a1342a44de8f7566f8c949260502c99ee6256fe320be0",
+      "entry_hash": "2976bbc076b522f01757b7bf811c6f1dfa76e1ab4422a071f743ac837e9e9421",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORMinasMorgul",
+      "source": "Minas Morgul",
+      "source_hash": "bd039292eb743bcc3bc9f038ab016aae0d18fa23a9be0bcf1202738c67bb3ade",
+      "entry_hash": "69148efef9ba80889c2b7bb8ce2c76c09e6c6261994322192289f06ab3e99bfb",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORMinasMorgul/Desc",
+      "source": "Also known as the Tower of Sorcery, this dark fortress was held by the leader of the Ringwraiths during the War of the Ring.\\n\\n Size: 450 x 450\\n Lairs: 2x Goblin Lair\\n Neutral Structures: 3x Outpost, 1x Signal Fire, Fortress",
+      "source_hash": "d57682ec34a0a3a287cfa269bb4e9e8fde323a86765e57cfccfe1ed3a3a69734",
+      "entry_hash": "34cd9d3b9c4315f42162c31f00cb40fa0bc3a2cb539ee234cefd8c9da8555d49",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORMinasTirith",
+      "source": "Minas Tirith",
+      "source_hash": "9580abb55a0f482133ce5f2d80b995327eeaa562d56f20a28bd396ef5a764cf1",
+      "entry_hash": "5ce8680b78a0f62403a30c083f3237f80253e4ec5f270dd12de7d98345b4d433",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "d85e5e08b6967c51a7ca3257438b4d89a17ee088b08d6e698d8e38b0d1878e60"
+}

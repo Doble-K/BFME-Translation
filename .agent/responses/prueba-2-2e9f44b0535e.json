@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "2e9f44b0535e45d89f4810a966c8f72a",
+  "worker": "prueba-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenDormitory",
+      "translation": "Estructura defensiva guarnecible\\nLas unidades guarnecidas ganan +20 % de alcance de ataque y obtienen un 20 % más de experiencia por cada baja\\nCura y otorga experiencia pasiva a todas las unidades guarnecidas\\nAumenta el valor de baja de las unidades\\nAumenta el límite de puntos de mando en 50\\n\\nTiempo de construcción: 10 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenHallExpansion",
+      "translation": "Estructura defensiva guarnecible\\nLas unidades guarnecidas ganan +20 % de alcance de ataque y obtienen un 20 % más de experiencia por cada baja\\nCura y otorga experiencia pasiva a todas las unidades guarnecidas\\nAumenta el valor de baja de las unidades\\nAumenta el límite de puntos de mando en 50\\n\\nTiempo de construcción: 10 s"
+    },
+    {
+      "id": "CONTROLBAR:DwarvenHallExpansionDescription",
+      "translation": "Curación de guarnecidos: 10/s\\nRetraso de reparación: 1 min\\nVelocidad de reparación: 0,4 %/s\\nLas unidades guarnecidas ganan +20 % de alcance de ataque y obtienen un 20 % más de experiencia por cada baja\\nCura y otorga experiencia pasiva a todas las unidades guarnecidas\\nAumenta el valor de baja de las unidades\\nAumenta el límite de puntos de mando en 50"
+    },
+    {
+      "id": "TOOLTIP:AngmarWitchKing",
+      "translation": "Tipo de daño: Héroe\\nDaño aplastante: 160 (Aplastante)\\nVelocidad de ataque cuerpo a cuerpo: 2,25 s\\nRadio de daño de salpicadura: 30\\nVelocidad de movimiento: 60\\nVelocidad de movimiento montado: 90\\nAlcance de visión: 300\\n\\nRefleja un pequeño porcentaje de todo el daño absorbido"
+    },
+    {
+      "id": "CONTROLBAR:TooltipIsengardTavern",
+      "translation": "Recluta Hombres Salvajes y Lanzadores de Hacha Hombres Salvajes\\nInvestiga la mejora de Antorchas\\n\\nTiempo de construcción: 30 s"
+    },
+    {
+      "id": "TOOLTIP:GundabadOrcs",
+      "translation": "Tipo de daño: Tajo\\nSalud: 120\\nDaño cuerpo a cuerpo: 32 (Tajo)\\nVelocidad de ataque cuerpo a cuerpo: 1,5 s\\nVelocidad de movimiento: 55\\nAlcance de visión: 400"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildRohanElvenWarriorHorde",
+      "translation": "Recluta ágiles guerreros de Lothlórien expertos con arco y espada\\nFuerte contra espadachines, lanceros y monstruos\\nPueden ocultarse cerca de los árboles\\n\\nTipo de unidad: Arquero de élite\\nTiempo de reclutamiento: 40 s\\nNivel 2: +10 % de salud, +10 % de daño, regeneración de salud 6/2 s\\nNiveles 3-4: +10 % de salud, +9 % de daño\\nNivel 5: +10 % de salud, +8 % de daño"
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeAngmarDenLevel2",
+      "translation": "Permite el entrenamiento de Trolls de las Colinas\\n+10 % de velocidad de producción más rápida\\n\\nTiempo de mejora: 20 s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeAngmarDenLevel3",
+      "translation": "Permite el entrenamiento de Trolls de las Nieves\\n+25 % de velocidad de producción más rápida\\nAñade una torre de arqueros defensiva\\n\\nTiempo de mejora: 20 s"
+    },
+    {
+      "id": "TOOLTIP:HillTrolls",
+      "translation": "Tipo de daño: Especialista\\nSalud: 800\\nDaño cuerpo a cuerpo: 120 (Especialista)\\nDaño cuerpo a cuerpo mejorado: 240 (Especialista)\\nDaño de venganza aplastante: 500\\nDaño de venganza aplastante mejorado: 750\\nVelocidad de ataque cuerpo a cuerpo: 1,5 s\\nVelocidad de movimiento: 55\\nAlcance de visión: 300"
+    },
+    {
+      "id": "CONTROLBAR:ToggleKnightsofDolAmrothLineFormation",
+      "translation": "Formación en línea [&m]"
+    },
+    {
+      "id": "CONTROLBAR:ToggleKnightsofDolAmrothWedgeFormation",
+      "translation": "Formación en cuña [&m]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleKnightsofDolAmrothLineToWedgeFormation",
+      "translation": "Los Caballeros de Dol Amroth se despliegan en una formación amplia\\nLos miembros del batallón ganan +10 % de daño, pero sufren -10 % de armadura"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleKnightsofDolAmrothWedgeToLineFormation",
+      "translation": "Los Caballeros de Dol Amroth vuelven a sus posiciones iniciales\\nSin bonificación"
+    },
+    {
+      "id": "TOOLTIP:GalahdrimWarriors",
+      "translation": "Tipo de daño: Perforante / Tajo\\nSalud: 200\\nDaño a distancia: 70 (Perforante)\\nDaño a distancia mejorado: 80 (Perforante) y 25 (Magia)\\nDaño cuerpo a cuerpo: 80 (Tajo)\\nDaño cuerpo a cuerpo mejorado: 160 (Tajo)\\nVelocidad de ataque a distancia: 1,25-2 s\\nVelocidad de ataque cuerpo a cuerpo: 1,7 s\\nVelocidad de movimiento: 55\\nAlcance del arco: 350\\nAlcance de visión: 500"
+    },
+    {
+      "id": "CONTROLBAR:TooltipArrowVolley",
+      "translation": "Lanza varias ráfagas de flechas a cualquier parte del mapa\\nIncendia el área objetivo, causando daño de fuego temporal a los enemigos cercanos\\nDaño: 600 (Perforante) y 6/s (Llama)\\nRadio: 100\\nDuración del fuego: 30 s\\nTiempo de recarga: 3 min 30 s\\nHaz clic izquierdo en el icono y luego haz clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipKnifeFighter",
+      "translation": "Requiere nivel 4\\nAlterna entre cuchillo y arco\\nLegolas gana +50 % de armadura cuando tiene el cuchillo equipado\\nHaz clic izquierdo para cambiar de arma"
+    },
+    {
+      "id": "TOOLTIP:RohanPeasants",
+      "translation": "Tipo de daño: Tajo\\nSalud: 150\\nDaño cuerpo a cuerpo: 45 (Tajo)\\nDaño cuerpo a cuerpo mejorado: 90 (Tajo)\\nVelocidad de ataque cuerpo a cuerpo: 1,6 s\\nVelocidad de movimiento: 50\\nAlcance de visión: 175"
+    },
+    {
+      "id": "TOOLTIP:KnightsofDolAmroth",
+      "translation": "Tipo de daño: Héroe\\nSalud: 800\\nDaño cuerpo a cuerpo: 180 (Héroe)\\nDaño aplastante: 200 (Aplastante)\\nVelocidad de ataque cuerpo a cuerpo: 1,5 s\\nVelocidad de movimiento: 110\\nAlcance de visión: 300"
+    },
+    {
+      "id": "CONTROLBAR:TooltipKnightsofDolAmrothHorseShoes",
+      "translation": "Requiere nivel 2\\nReduce temporalmente la desaceleración por aplastamiento en un 75 %, lo que permite aplastar más unidades\\nDuración: 20 s\\nTiempo de recarga: 1 min 15 s\\nHaz clic izquierdo para activar"
+    }
+  ]
+}

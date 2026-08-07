@@ -1,0 +1,207 @@
+{
+  "schema_version": 3,
+  "batch_id": "4be2bc19c18e4c11a53e625e1afab909",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T20:17:26.225948+00:00",
+  "lease_expires_at": "2026-08-06T02:17:26.224802+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-4be2bc19c18e.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPTrollfells",
+      "source": "Troll-fells",
+      "source_hash": "a649587acd0471f0db58389c2a0c74e7f05d66173214683b604a672d5e9ea7c9",
+      "entry_hash": "050a13d7774d4085d74862be730a44f24532d60b14f08fd7815bfeb9de57f025",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPTrollfells/Desc",
+      "source": "The Troll-fells, otherwise known as The Ettenmoors, were a highland region of Eriador, which was west of the Misty Mountains. This rugged territory is home to many wild creatures. \\n\\n Size: 400 x 340 \\n Lairs: 2x Troll Lair, 2x Warg Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "5372101033c3df9b1bb78a4c9bd8cbe96005c31771284eaf381d03ba30433a98",
+      "entry_hash": "c4bb2fc54bf8127e26373e1002b0952caf098e2bb9917c1470a0017107b6bdff",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPTwilitShores",
+      "source": "Twilit Shores",
+      "source_hash": "40970db23b42eee180066bd490846ce0948c9a51338347e0b987c6570e9afe57",
+      "entry_hash": "678fb6c6626d836fe3a028cbb698e1468dae1f71490b14a7d3e19dd2e9487f2d",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPTwilitShores/Desc",
+      "source": "Lost in the seas of Tol Eressea, the Twilit isles have been said to be nearly unnavigable by mortal men \\n\\n Size: 600 x 600 \\n Lairs: 2x Drake Lair, 2x Troll Lair, 2x Barrow Wight Lair \\n Neutral Structures: 2x Inn, 2x Signal Fire, 4x Outpost, 6x Shipwright",
+      "source_hash": "0e7437f613c4cefa133d8ea041c56edc9d1385fc6fcdae9d9dc330844fd813eb",
+      "entry_hash": "ae0f04992bcbc941abf316537527c88ebf479df76191cd3169dbc696abb49f62",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPCardolanHighlands",
+      "source": "Cardolan Highlands",
+      "source_hash": "8512d3528175a674e16e01d433d92b873c8e0eecc816faf3f212728f0d754127",
+      "entry_hash": "dfa1d93ceb185ffb8b31a161993cb4ffc83a425f8fefb52a2f8c4406a3209c0a",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPCardolanHighlands/Desc",
+      "source": "Cardolan was a realm once part of the Dunedain Kingdom of Arnor. The borders of Cardolan extended from the River Brandywine to the west, the River Hoarwell to the east, and the River Greyflood to the south. \\n\\n Size: 378 x 378 \\n Lairs: 1x Troll Lair, 2x Barrow Wight Lair, 2x Warg Lair \\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "fe7f69b05423ba40a5563b4629d79a91e2300121c9997f37614bb883ccde3889",
+      "entry_hash": "3f2cefdfca9cc76d3e5819f9969b0587cc1a9b2626057293b2a26d724c3a7afb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPOldFord",
+      "source": "Old Ford",
+      "source_hash": "130810a01959f44599594e384b45c428acb72879d119a7bf3ea65d7492d28a9c",
+      "entry_hash": "6000ef34d7e54717432ae5b1d3badb27a03eaa240bcf0a951fe418964d0d56cb",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPOldFord/Desc",
+      "source": "The Old Ford was the point where the Old Forest Road crossed the River Anduin, about forty miles downriver from the Carrock. In older times, the river was crossed by a stone bridge here, but by the end of the Third Age, the bridge had long since disappeared, and the crossing was no more than a simple ford. \\n\\n Size: 500 x 500 \\n Lairs: 2x Troll Lair, 2x Spider Lair, 2x Goblin Lair, 6x Warg Lair \\n Neutral Structures: 4x Inn, 2x Signal Fire, 2x Outpost",
+      "source_hash": "85d1e816653be274f136774e0f7ebedf0f385e3d3e74eb230fe57adc4e9fbd48",
+      "entry_hash": "4f5dd3d8e3f68c24dd140fea8660dd306865c7ad3e353de88dbe582568c84d22",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPGladdenRiver",
+      "source": "Gladden River",
+      "source_hash": "81eb4dae478d994d89b735cf1376c9b8c4c72a2b2edeffbb516b312ae15dfb08",
+      "entry_hash": "13c262d97eeca24b40355f0bc68ce34fb63c36a8487e24bc56c9f1ec822b4305",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPGladdenRiver/Desc",
+      "source": "The Gladden, also referred to as River Goldwater by the Elves, was a short but important river of the Vales of Anduin. \\n\\n Size: 378 x 342 \\n Lairs: 2x Troll Lair, 2x Warg Lair \\n Neutral Structures:",
+      "source_hash": "88bc30b3f244556775b774323e910a6711aec44704e0f3ff58e3718ad96c54c0",
+      "entry_hash": "34b74eea3549336fe8f72bc8ce00ddc05be1dc6e37cd5fb02a7ee13d0ef8373b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPPazghar",
+      "source": "Pazghar",
+      "source_hash": "d9a8f9275dcea790c9a88b0e0624a4e623b2234cc87636a5592133b608a69560",
+      "entry_hash": "b8868317438b9ca63f539cd4dfbbf843d4995302ce958b838486162778726061",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPPazghar/Desc",
+      "source": "The Oasis of Pazghar, the great city of East Harad \\n\\n Size: 490 x 490 \\n Lairs: 8x Spider Lair, 5x Warg Lair \\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "2348f6ffe206686ebce27217a07827691867ec024b3558c02b17a868431dc2c6",
+      "entry_hash": "c43ba7a4a9cae20a971bb7e4cb48c1a0a14eb6b9d6f3d25bfb7d9e661328c4f0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPBrandyHillsCanyon",
+      "source": "Brandy Hills Canyon",
+      "source_hash": "726ceeb282cb7c9e7b048b53c4855bd5ec5e10d69c79a298b032e5756a7c2e92",
+      "entry_hash": "ab4089c86157641a32b7b872a969098b5c8bd6f84c25ca186e38251945baacb5",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPBrandyHillsCanyon/Desc",
+      "source": "This is an area north of Buckland along the eastern shores of Brandywine River until the Brandywood. Girdley Island is the only named point of interest of these hills though they are dotted by small Arnorian ruins. Some young hunters may be seen hunting bears and boars taking shelter in those ruins. \\n\\n Size: 500 x 500 \\n Lairs: 1x Barrow Wight Lair \\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "02326ce30b1686c017a2521057d7e6ba39e15ad4ccc38e4bf3cd8690242f62a4",
+      "entry_hash": "918d820729e23415e5188fbfabc9739a8a8595155383070250375a8fcb7f0bc3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPWoodmenTown",
+      "source": "Woodmen Town",
+      "source_hash": "afbb0cdd60cc953f85c46772599f2c4e5572fce2e415c203eb68b8d839b8cb58",
+      "entry_hash": "98b3e3633ea5b008daf69ebb9a7ec03f0dc06e3ed8bb7c5ddc9c94dfb6fe2a02",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPWoodmenTown/Desc",
+      "source": "The oldest settlement of the Woodmen was founded by the folk of Balthi long ago. He brought the Lamp out of the darkness, and the light of the Lamp has ever protected Woodmen-town and its inhabitants. The town nestles on the banks of the Enchanted River, which blocks attacks from the east. The Woodmen also use the river to travel back and forth between Woodmen-town and Woodland Hall. \\n\\n Size: 404 x 404 \\n Lairs: 2x Warg Lair \\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "7c24ee46550c6891d2912bdc273040df256ba90bdc50a12810a0e153250ccf91",
+      "entry_hash": "05b02d20610eff57467094f3a137c5ae0cfe4287424c65c6eab5388136864e23",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "MAP:MapMPHaradOasisii",
+      "source": "South Harad Oasis",
+      "source_hash": "3f31f98b9de539b29a109fbe02ccce206d6a16b412ac2a6d80a0ed6ac3bde934",
+      "entry_hash": "5b0a5d9149e94834df03a4111ce7fc3b3185d7dceb4f0e4f5f230427639beb39",
+      "protected_tokens": []
+    },
+    {
+      "id": "MAP:MapMPHaradOasisii/Desc",
+      "source": "Harad was the name of the immense lands to the South of Gondor and Mordor. It was inhabited by many different tribes called Haradrim.\\n\\n Size: 500x500\\n Lairs: 8x Goblin Lair, 4x Troll Lair\\n Neutral Structures: 4x Outposts",
+      "source_hash": "551a4c33861d1d4eaa56ba81be7ee0c35ac0c2d31ca8fe6fda0f1b5cfe1dc895",
+      "entry_hash": "b7109727536ab03efa3d961115b63e9ad0521cd08a4fdf89d269522f38784af4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPAnfalas",
+      "source": "Anfalas",
+      "source_hash": "82772d5c2f74b8fb0884e411ce0cc30108db54115625e5644f2a51636be19586",
+      "entry_hash": "5a795a13ad42fbf746bd9588279a270320c2539f6b8e95581fa0be8b51468cd1",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPAnfalas/Desc",
+      "source": "The western coastal section of Gondor populated by small villages of herdsmen and fishermen.\\n\\n Size: 450 x 450\\n Lairs: 4x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "9083f453a05d4f5bc3d57009b03217967e8ac6535244bd6eaaaa657a0e8fbff7",
+      "entry_hash": "3e13cbdbc66fd2645b8454ea3c508efb5cfe5c0e5e74733fa6d3482704596849",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "bff0e23cf9e1e0f7177cc38b96211aae080ec9a9cc31a025c09f4735d8c37179"
+}

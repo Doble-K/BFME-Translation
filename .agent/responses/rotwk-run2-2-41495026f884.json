@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "41495026f884400dafe89c930fefd6a6",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "HA:Pause_3",
+      "translation": "30 oleadas - buen trabajo \\n Recibe una gran suma de dinero \\n ¡Buena suerte!"
+    },
+    {
+      "id": "HA:Pause_4",
+      "translation": "33 oleadas - buen trabajo \\n ¡La dama de Lothlórien se acerca! \\n ¡Buena suerte!"
+    },
+    {
+      "id": "HA:Pause_5",
+      "translation": "34 oleadas - buen trabajo \\n Queda una oleada, pero el señor oscuro en persona se aproxima"
+    },
+    {
+      "id": "MapIntro:01",
+      "translation": "¡Bienvenido a Ring Wars! \\n Adaptado para RotWK por Puzzler33"
+    },
+    {
+      "id": "MapIntro:02",
+      "translation": "Primero, compra una unidad en esta cascada"
+    },
+    {
+      "id": "MapIntro:03",
+      "translation": "¡Genial! \\n Ahora guarnece la unidad en esta torre"
+    },
+    {
+      "id": "MapIntro:04",
+      "translation": "La horda de unidades aparecerá en tu base cada pocos segundos"
+    },
+    {
+      "id": "MapIntro:05",
+      "translation": "También puedes revivir a poderosos héroes en la fortaleza"
+    },
+    {
+      "id": "MapIntro:06",
+      "translation": "¡Consigue tu victoria destruyendo todas las fortalezas enemigas!"
+    },
+    {
+      "id": "RW:PoolLvl_2",
+      "translation": "¡Un jugador ha mejorado su estanque al nivel 2!"
+    },
+    {
+      "id": "RW:PoolLvl_3",
+      "translation": "¡Un jugador ha mejorado su estanque al nivel 3!"
+    },
+    {
+      "id": "RW:PoolLvl_4",
+      "translation": "¡Un jugador ha mejorado su estanque al nivel 4!"
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeForbiddenPool",
+      "translation": "Mejorar el Estanque Prohibido"
+    },
+    {
+      "id": "UPGRADED:ForbiddenPool",
+      "translation": "Estanque Prohibido"
+    },
+    {
+      "id": "UPGRADE:ForbiddenPool",
+      "translation": "Otorga acceso a unidades expertas"
+    },
+    {
+      "id": "UPGRADE:ForbiddenPool2",
+      "translation": "Otorga acceso a unidades de élite"
+    },
+    {
+      "id": "UPGRADE:ForbiddenPool3",
+      "translation": "Otorga acceso a unidades superiores"
+    },
+    {
+      "id": "RW:Melee",
+      "translation": "Unidades cuerpo a cuerpo"
+    },
+    {
+      "id": "RW:ChooseMelee",
+      "translation": "Muestra las unidades que atacan a corta distancia"
+    },
+    {
+      "id": "RW:Archers",
+      "translation": "Unidades a distancia"
+    }
+  ]
+}

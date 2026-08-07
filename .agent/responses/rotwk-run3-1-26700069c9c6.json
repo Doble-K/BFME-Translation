@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "26700069c9c64520937e23779bcdc650",
+  "worker": "rotwk-run3-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:Command_ElvenCastleWallHub_BeginWallSpan",
+      "translation": "Construir muro"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_ElvenCastleWallHub_BeginWallSpan",
+      "translation": "Haz clic izquierdo y arrastra para construir un muro \\n\\n Tiempo de construcción: 20 s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_ElvenWallUpgradeToHub",
+      "translation": "Permite la construcción de muros adicionales \\n Radio de construcción de muro: 1000 \\n\\n Tiempo de construcción: 35 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ConstructArnorWallHubExpansion",
+      "translation": "Permite la construcción de muros adicionales \\n Radio de construcción de muro: 1000 \\n\\n Tiempo de construcción: 35 s"
+    },
+    {
+      "id": "OBJECT:ElvenCastleWallHubExpansionDescription",
+      "translation": "Permite la construcción de muros"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_IsengardWallUpgradeToHub",
+      "translation": "Permite la construcción de muros adicionales \\n Radio de construcción de muro: 1000 \\n\\n Tiempo de construcción: 35 s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_IsengardCastleWallHub_BeginWallSpan",
+      "translation": "Haz clic izquierdo y arrastra para construir un muro \\n\\n Tiempo de construcción: 20 s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_IsengardWallUpgradeToRegularGate",
+      "translation": "Puerta defensiva principal que puede abrirse y cerrarse \\n\\n Tiempo de construcción: 30 s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_AngmarWallUpgradeToRegularGate",
+      "translation": "Puerta defensiva principal que puede abrirse y cerrarse \\n\\n Tiempo de construcción: 30 s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_AngmarWallUpgradeToCatapult",
+      "translation": "Añade un lanzapiedras Troll al muro \\n\\n Tiempo de construcción: 30 s"
+    },
+    {
+      "id": "CONTROLBAR:Command_AngmarCastleWallHub_BeginWallSpan",
+      "translation": "Construir muro"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_AngmarCastleWallHub_BeginWallSpan",
+      "translation": "Haz clic izquierdo y arrastra para construir un muro \\n\\n Tiempo de construcción: 20 s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_AngmarWallUpgradeToHub",
+      "translation": "Haz clic izquierdo y arrastra para construir un muro \\n\\n Tiempo de construcción: 20 s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_AngmarWallUpgradeToTower",
+      "translation": "Dispara flechas a las tropas enemigas \\n\\n Tiempo de construcción: 20 s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_AngmarWallUpgradeToPosternGate",
+      "translation": "Permite que las unidades aliadas pasen a través del muro \\n Invisible para los enemigos \\n\\n Tiempo de construcción: 15 s"
+    },
+    {
+      "id": "OBJECT:ToolTipWallSegmentDescription",
+      "translation": "Rango de visión: 160 \\n Retraso de reparación: 1 m"
+    },
+    {
+      "id": "OBJECT:ToolTipWallArrowTowerDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño de alcance mejorado: 120 (Estructural) & 20 (Fuego) \\n Rango de arco: 250 \\n Rango de visión: 300 \\n Retraso de reparación: 1 m"
+    },
+    {
+      "id": "OBJECT:TooltipCatapultWallExpansionStructureDescription",
+      "translation": "Rango de visión: 160 \\n Retraso de reparación: 1 m"
+    },
+    {
+      "id": "OBJECT:TooltipPosternGateStructureDescription",
+      "translation": "Rango de visión: 160 \\n Retraso de reparación: 1 m"
+    },
+    {
+      "id": "OBJECT:TooltipWallGateStructureDescription",
+      "translation": "Rango de visión: 160 \\n Retraso de reparación: 1 m"
+    }
+  ]
+}

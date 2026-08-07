@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "18713fdff76a4b83b9b1c7adf8dac6fc",
+  "worker": "rotwk-mimo-loop",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipFryingPan",
+      "translation": "Ataque cuerpo a cuerpo poderoso que inflige daño por salpicadura \\n Daño: 500 (Héroe) \\n Radio de daño por salpicadura: 20 \\n Alcance del objetivo: 20 \\n Tiempo de recarga: 30s \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDamrodLeadership",
+      "translation": "Requiere Nivel 4 \\n Tipo de modificador: Liderazgo \\n Los aliados cerca de Damrod obtienen +33% de Daño, +33% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipEomerLeadership",
+      "translation": "Tipo de modificador: Liderazgo \\n La caballería aliada cerca de Eomer obtiene +25% de Daño, +25% de Armadura, y gana Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTheodenLeadership",
+      "translation": "Tipo de modificador: Liderazgo \\n Los aliados cerca de Théoden obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFaramirLeadership",
+      "translation": "Requiere Nivel 5 \\n Tipo de modificador: Liderazgo \\n Los aliados cerca de Faramir obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBoromirLeadership",
+      "translation": "Requiere Nivel 5 \\n Tipo de modificador: Liderazgo \\n Los aliados cerca de Boromir obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipAragornLeadership",
+      "translation": "Requiere Nivel 4 \\n Tipo de modificador: Liderazgo \\n Los aliados cerca de Aragorn obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:TooltipElrondLeadership",
+      "translation": "Tipo de modificador: Liderazgo \\n Los aliados cerca de Elrond obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTreeBeardLeadership  ",
+      "translation": "Tipo de modificador: Hechizo \\n Los Ents aliados cerca de Treebeard obtienen +50% de Armadura y +15% de Velocidad \\n Se acumula con Mejoras, Liderazgo y otros Hechizos \\n Radio: 300 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDainLeadership",
+      "translation": "Tipo de modificador: Liderazgo \\n Los aliados cerca del Rey Dain obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGoblinKingBattleFrenzy",
+      "translation": "Requiere Nivel 4 \\n Tipo de modificador: Liderazgo \\n Los aliados cerca del Rey Goblin obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:DescriptionConstructMordorDrummerTrolls",
+      "translation": "Tipo de modificador: Liderazgo \\n Los aliados cerca del Troll Tambobero obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGBloodHunt",
+      "translation": "Requiere Nivel 3 \\n Tipo de modificador: Liderazgo \\n Los Wargs y Jinetes de Warg aliados cerca de Sharku obtienen +25% de Daño, +25% de Armadura y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLurtzLeadership",
+      "translation": "Requiere Nivel 5 \\n Tipo de modificador: Liderazgo \\n Los aliados cerca de Lurtz obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHwaldarLeadership",
+      "translation": "Tipo de modificador: Liderazgo \\n Los Lanceros de Rhudaur, Lanzadores de Hachas y Hombres de Colina aliados cerca de Hwaldar obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:TooltipKnightsofDolInspiration",
+      "translation": "Requiere Nivel 2 \\n Tipo de modificador: Liderazgo \\n Los Caballeros de Gondor y Rohirrim cercanos obtienen \\n +25% de Daño, +25% de Armadura \\n y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHaldirLeadership",
+      "translation": "Requiere Nivel 5 \\n Tipo de modificador: Liderazgo \\n Los aliados cerca de Haldir obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGothmogDayoftheOrc",
+      "translation": "Tipo de modificador: Liderazgo \\n Los Orcos cerca de Gothmog obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCreateAHeroLeadership",
+      "translation": "Tipo de modificador: Liderazgo \\n Los aliados cerca del Héroe obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCreateAHeroLeadership_Palantir",
+      "translation": "Tipo de modificador: Liderazgo \\n Los aliados cerca del Héroe obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressBanners",
+      "translation": "Tipo de modificador: Liderazgo \\n Los aliados cerca de la Fortaleza obtienen +25% de Daño, +25% de Armadura, y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n\\nReduce el costo de Héroes en 10% \\n Reduce el tiempo de reclutamiento de Héroes en 10% \\n Reduce el costo de constructores en 20% \\n Radio: 300 \\n \\n Tiempo de mejora: 15s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressHouseOfHealing",
+      "translation": "Cura rápidamente a los aliados cercanos y reabastece los batallones de unidades \\n No se acumula con otras estructuras de curación \\n Reduce el costo de revivir Héroes en 20% \\n Velocidad de curación: 6% /2s \\n Radio: 300 \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressBoilingOil",
+      "translation": "Permite a la Fortaleza verter aceite hirviendo sobre las tropas enemigas cercanas \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFireWeaponMenFortressBoilingOil",
+      "translation": "Libera aceite hirviendo que quemará a los enemigos alrededor de la Fortaleza \\n Daño: 600 (Llama) \\n Radio: 250 \\n Tiempo de recarga: 30s \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:TooltipIvoryTowerVision",
+      "translation": "Revela todo el velo por 30 segundos \\n Detecta unidades ocultas \\n Radio: Global \\n Duración: 30s \\n Tiempo de recarga: 3m"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "schema_version": 3,
+  "batch_id": "5938a8330ec6407e8b58006f5888931f",
+  "worker": "rotwk-openai1-2",
+  "created_at": "2026-08-05T19:59:16.695293+00:00",
+  "lease_expires_at": "2026-08-06T01:59:16.693957+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-openai1-2-5938a8330ec6.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeSummonedStructureFlamingMunitions  ",
+      "source": "Upgrades all Axe Tower Expansions with Forged Blades and Catapult Expansions with Fire damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Forge Works \\n \\n Upgrade Time: 30s",
+      "source_hash": "6922131e8dec8496176648553b8770059f909c59576488f6fd9a25d5cc45956b",
+      "entry_hash": "792ebb630a01141412844484e755801078502aed947a648793881b1b404d276f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressIronPlating",
+      "source": "Upgrades the Fortress and all Walls with +67% Armor \\n Prerequisite to Wizard's Tower \\n \\n Upgrade Time: 30s",
+      "source_hash": "0ffa6bf862196a22c3b398af4734e9ae19634f8acbb470c00759ff98a51a4833",
+      "entry_hash": "b457ef9d2584c11015e2e0ab4c2878ef33a2855ecc91004d0313748904e10d92",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressIronPlatingPurchased",
+      "source": "Upgrades the Fortress and all Walls with +67% Armor \\n Prerequisite to Wizard's Tower \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "67e203a1bb01f85c6a74f857fde4c806cf124ca17413487b811c0df7b1c7705e",
+      "entry_hash": "91242e326474b80d9fce973ffbcd9e79945edd2add3687794e19596bb5c3aac5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressFireArrows",
+      "source": "Upgrades all Barricade Expansions with Fire damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Taverns \\n \\n Upgrade Time: 30s",
+      "source_hash": "5a3f55e40d644424230283ab2fe30b525cae0a811ceaf2103d71c078bf53fde6",
+      "entry_hash": "164dc6cd4f836ec1e0772e80b0d903c68102afa11f2cdcdf29842ebcfb12389e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressFireArrowsPurchased",
+      "source": "Upgrades all Barricade Expansions with Fire damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Taverns \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "50e0d0e3294d3d4f2c328db6f21b68a0b9638428c7cb46034c9136040500e56d",
+      "entry_hash": "76b402182c11e0be0fb2c8eed2362cc6f61a21d0487688dca94791a4caec84a0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressMorgulSorcery",
+      "source": "Upgrades the Fortress with +67% Armor \\n Prerequisite to summoning of the Black Riders and construction of the Gorgoroth Spire \\n \\n Upgrade Time: 30s",
+      "source_hash": "14850cc74176bc78e745537425e3cab88dbae2e5e75a46604059e76c1ab023b1",
+      "entry_hash": "a916752681ddd4acd52af8fa7fd53d3f7686398e2d38b58c53e01eed4777710c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressMorgulSorceryPurchased",
+      "source": "Upgrades the Fortress with +67% Armor \\n Prerequisite to summoning of the Black Riders and construction of the Gorgoroth Spire \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "d40d67283f5f17d401b63b1b463188cee4f2df0cf4765e801abcefbb44dddb2a",
+      "entry_hash": "b5564f63ff0e8bb00260becda3124643aabde5f4f5e44f7f0347a296156ea2ac",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressFireArrows",
+      "source": "Upgrades Arrow Den Expansions with Fire damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Treasure Troves \\n \\n Upgrade Time: 30s",
+      "source_hash": "07f641072aa7f97298c0cf01da78746ef1120dd778750b8f9602d18ecfa9df4d",
+      "entry_hash": "e4dda207a741bf0e13bd44b302ba1f9dba4166145e190ab7a12f6212e4424f3d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressFireArrowsPurchased",
+      "source": "Upgrades Arrow Den Expansions with Fire damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Treasure Troves \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "d0d5860da4780691ef3551ad80289665d5d33137557f76f41a679152adc19d1a",
+      "entry_hash": "37d01f042d78f0729ff1f4230fd56233c228ce70b0ab4293fc3828fc4bda3d10",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressWebCocoonPurchased",
+      "source": "Upgrades the Fortress with +67% Armor \\n Prerequisite to Dragon's Nest \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "c59402e2d63f3b2370c141446f4d0d3b18810b7f8752bd4894282c0ea4cf6a14",
+      "entry_hash": "3c0a47bba773c69db922838a1202f32eed155e0af96bc5657c9e05446922a4d8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressWebCocoon",
+      "source": "Upgrades the Fortress with +67% Armor \\n Prerequisite to Dragon's Nest \\n \\n Upgrade Time: 30s",
+      "source_hash": "c41090facf4ab253c66a3d881380156d1d13d564722d051a1d60b37cb1079a25",
+      "entry_hash": "daecc94f1917957fd52661ce48eb620e65dd6bfe2dac5930d24ed293c37d9f8b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressIceMunitions",
+      "source": "Upgrades all Battle Tower Expansions and Stone Thrower Expansions with Ice damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Dark Iron Forges \\n \\n Upgrade Time: 30s",
+      "source_hash": "0ea3cf9220cb2e7448b3ca8a2613c4a4e4ddb989123baca736df62ee93e7aec8",
+      "entry_hash": "5d641147dc8ea4876dbfcda6a0c4d8b6c90b57087700d0b69dfd49cce6ed5409",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressIceMunitionsPurchased",
+      "source": "Upgrades all Battle Tower Expansions and Stone Thrower Expansions with Frost damage \\n Applies upgrade to all Production Buildings, Resource Buildings, and Dark Iron Forges \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "f4518bbc2dd10357cbdfe80c78f3c9c5d13218b4ea34c553a5ce909a1fbda1ab",
+      "entry_hash": "96eb49e19365e61bcea35019422bc82f080e29ef44c2f5668c7518ebe3fe6a4f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressIceWallsPurchased",
+      "source": "Upgrades the Fortress and all Walls with +67% Armor \\n Prerequisite for the Witch-king's Sanctum \\n \\n Upgrade Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "8d008549da82c5a12955389f77dfed8360e5b6722ce1b677815e624a5eace68c",
+      "entry_hash": "7e8ce7eb2d45994ca9f49ed2fa8e83f0cd9f865e3ca46fdf6221490379e3055a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressIceWalls",
+      "source": "Upgrades the Fortress and all Walls with +67% Armor \\n Prerequisite for the Witch-king's Sanctum \\n \\n Upgrade Time: 30s",
+      "source_hash": "fd66279ef76f6627e5dff0d5f3bfc8e86daf51d9bbd4234cea2a05060221e8a0",
+      "entry_hash": "6cc4859d930b34604df50f4161d36830c32b7eb0722225c3c30359d34d11e215",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyIsengardFireArrows",
+      "source": "Research Flaming Bol&ts",
+      "source_hash": "acf84a920ad9730b21c7c87f75b40c57b81fd49ac1931cbfeaa539d1290b8a52",
+      "entry_hash": "3badd67d7ff00e08be6a8cd6daf740d631cb40f20d12f3c6aba31a8c6155c753",
+      "protected_tokens": [
+        "&t"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardFireArrows",
+      "source": "Allows hordes to purchase the Flaming Bolts upgrade \\n When equipped, significantly increases the damage done by Bolts \\n Increases horde attack range by 10% \\n \\n Research Time: 30s",
+      "source_hash": "1f003f1219fb675337c309300959bccc8bd2f1cd41cc3ac38154d60a1d094196",
+      "entry_hash": "f9f2dfed3198095672af16e3e270de30917a723233c1e7ffbe2aae1a7c46796c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardFireArrowsPurchased",
+      "source": "Allows hordes to purchase the Flaming Bolts upgrade \\n When equipped, significantly increases the damage done by Bolts \\n Increases horde attack range by 10% \\n \\n Research Time: 30s \\n \\n This upgrade has already been purchased",
+      "source_hash": "6f0ad8b1bb11e35a3a7d427191c2a71642e98ee30d1a7a31d02d30514bc637ba",
+      "entry_hash": "c19ffcc1f8730692cd6f9c2569b7ad04f46efb3777fa62c663575f9302c2bf74",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:IsengardFlamingBoltsUpgrade",
+      "source": "Purchase Flaming Bol&ts",
+      "source_hash": "d152f5083c22b853cb87b5662ee7721f79d4d8d7a12d2bdcc3a787aafa6b0c8d",
+      "entry_hash": "153a01626730b81048907dd221c6b484495db31cf10cc601aba0e909a7859835",
+      "protected_tokens": [
+        "&t"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFireArrows",
+      "source": "Upgrades this horde with Flaming Bolts \\n Significantly increases the damage done by Bolts \\n Increases horde attack range by 10% \\n \\n Upgrade Time: 10s",
+      "source_hash": "21d0c1e75bf05991e9f12aa771b1140b261dca026e9257281b6f7e01a1558f91",
+      "entry_hash": "691ef214b0397089f04ac7d73ff2fd95e34ca99e6e83746fbdd2d56398d112b1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "1bd85da6c4b212c3d2d42a7e34394f935176568518058bf6e313d34fa233a266"
+}

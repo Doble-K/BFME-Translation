@@ -1,0 +1,313 @@
+{
+  "schema_version": 3,
+  "batch_id": "3ca90eeb4d21477795f321ea25a79f82",
+  "worker": "rotwk-mimo-3",
+  "created_at": "2026-08-06T06:29:24.707409+00:00",
+  "lease_expires_at": "2026-08-06T12:29:24.706055+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-3-3ca90eeb4d21.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:TooltipUpgradeIsengardTavernLevel3",
+      "source": "+25% Faster Production Speed \\n \\n Upgrade Time: 20s",
+      "source_hash": "45fc9a581e9d47df25fad225b3e8ca723e1da01328c028a3751eca981bfd611b",
+      "entry_hash": "e089c36fa6cf2054ee0158fc991d6718000b72feae88ceb58671ca177f57e204",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardBasicTraining",
+      "source": "Allows hordes to purchase the Banner Carrier upgrade \\n Increases a horde to Level 2 \\n \\n Research Time: 30s",
+      "source_hash": "fd16d38d11b9c72c849b2fc8a775845fa4fb5869e5128cb4211a0d16466129ca",
+      "entry_hash": "cc63e2977ebae09d410edf4a03cfb0972fa0da2021ddaace040fc55b3384b708",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardForgedBlades",
+      "source": "Allows hordes to purchase the Forged Blades upgrade \\n When equipped, increases the damage done by Melee Weapons \\n \\n Research Time: 30s",
+      "source_hash": "5e13f6145814e24cadc93518807058a62aaa8a19ee612e046c1fd7c5a6fbba4d",
+      "entry_hash": "96370190159ace73a00c28350f29b8f29640964c15bdaaf98d36104e99eb87a9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyIsengardHeavyArmor",
+      "source": "Allows hordes to purchase the Heavy Armor upgrade \\n When equipped, significantly reduces the amount of damage taken \\n \\n Research Time: 30s",
+      "source_hash": "dd9e3d86aa9e34873de4cf3dbcc573f6baa6e1f0a0ba7935db501646f3f37b7a",
+      "entry_hash": "bad80975973b399acf89253c7cc647862037ccb387031d0be1d43d1f3906a224",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardArmoryLevel2",
+      "source": "Allows research of Fire Arrows and Forged Blades \\n \\n Upgrade Time: 30s",
+      "source_hash": "e5cfdc51640bc726986a74d02e0a37ca61e2592d9ebd2844e485fbc5c0d927fb",
+      "entry_hash": "a130e45c990bc3cfa7587619b260d7c2d9d78ba716cfc64d1ed5b57e6b528195",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIsengardArmoryLevel3",
+      "source": "Allows research of Heavy Armor \\n Adds defensive Arrow Tower \\n \\n Upgrade Time: 1m",
+      "source_hash": "c44025e17316c35c66f1d2d9771693a3a04e8d5f143986cace0afe2af537ef82",
+      "entry_hash": "1dcf9cb5cbee84160a67c98ce3b87da83f6c775e032e6d8701cd9841c5581e87",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorOrcPitLevel3",
+      "source": "+25% Faster Production Speed \\n \\n Upgrade Time: 20s",
+      "source_hash": "11ee27bf8a15402d1534c64a6bd93b493bebd31268b8926f5dafaab27a25724d",
+      "entry_hash": "48a4e2df9e802838b0bcb23a7a86b7d355af247da078c89c3cd3ea39cb7d7c35",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorEasterlingHorde",
+      "source": "Strong vs. Cavalry and Monsters \\n Able to switch formation to protect other units \\n \\n Unit Type: Basic Pikeman \\n Recruit Time: 25s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "85107f16c2eb7dd38da13d1774461ca4a1c13d0b1e9dc9b70facf0d1cf2774de",
+      "entry_hash": "c5c49d74188aeb769a3d8a17698101b549ffe2cd7dc3eb0a1d51d28db5cd9973",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorHaradrimRiderHorde",
+      "source": "Requires Level 2 Haradrim Palace \\n Strong vs. Archers and Swordsmen \\n \\n Unit Type: Basic Cavalry \\n Recruit Time: 35s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "df8173f7027ad17a6dd32b1aa8a656abb8b603c048a37a29cf618aa0ea22a0ba",
+      "entry_hash": "97fab74ea0f1bb324a918efb7bf60ba8e1a634fcf759c2c87bc8e71014118263",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorHaradrimPalaceLevel2",
+      "source": "Allows training of Haradrim Lancers\\n +10% Faster Production Speed \\n \\n Upgrade Time: 20s",
+      "source_hash": "a4ea685f6b50adcba113794469b4b139b8278ba27760f705ce2f67f6a84d0519",
+      "entry_hash": "ac248b94ac414c0519cdee25f9f1919ce1688561dfeddc25f92753e03039f19d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorHaradrimPalaceLevel3",
+      "source": "Allows training of Haradrim Archers \\n +25% Faster Production Speed \\n Adds defensive Arrow Tower \\n \\n Upgrade Time: 45s",
+      "source_hash": "32363d69628b83fda3d8cec8ec0a08b7a5d666db1bc9424686cd5d09e1a076f5",
+      "entry_hash": "cb64945b9b67a58df7367dacebff50e322fa4bbb3a582cdb02d35e0bf3d7e8e4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorCatapult",
+      "source": "Requires Level 2 Great Siege Works \\n Strong vs. Structures, Monsters, and Archers \\n \\n Unit Type: Siege \\n Recruit Time: 30s",
+      "source_hash": "163ac48aeb00c60f15db92468c233367e8008da3140e9faed4e2053e13fd6947",
+      "entry_hash": "9357e8a056280d0100f94ec13d918107a5eb52a557a8ec7aef7b38d5d254acfc",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorSiegeTower",
+      "source": "Requires Level 2 Great Siege Works \\n Allows infantry units to scale castle walls \\n Able to trample enemies \\n \\n Unit Type: Siege \\n Recruit Time: 1m",
+      "source_hash": "e996f66dc968d1d38d7ac2da503b47742354b00f3a58a12a38b42969ab3877d9",
+      "entry_hash": "5136616ce752a369c209943b76aa24dcaac625cea714c2ff6cc2a43a5d115455",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorSiegeWorksLevel2",
+      "source": "Allows construction of the Catapult \\n Allows repairing of nearby siege weapons \\n +10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "711ab5129ac972d4757651999d7a0735c0a8a6b4e731266cc2f0aeb9e88d9dc3",
+      "entry_hash": "381e44e6f1df1e88bff857d45b79f191863fe5c834f69e45f260682a64972356",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorSiegeWorksLevel3",
+      "source": "Increases siege weapon repair rate \\n+25% Faster Production Speed \\n \\n Upgrade Time: 20s",
+      "source_hash": "0245271bbcb7ef22bf8d3e2c1af833d92ec819a6b031c7f7f336a8ced874d5e5",
+      "entry_hash": "4403b877f2e0cbb8245f98b28042b130ff9421e13073e70a0187eb9ec9685f9a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyMordorBasicTraining",
+      "source": "Allows hordes to purchase the Banner Carrier upgrade \\n Increases a horde to Level 2 \\n \\n Research Time: 30s",
+      "source_hash": "39ea6e3fc6a1abb7679abdb71ac82cb5c25d722c1f4ebc20a60e7a6ba1d482d0",
+      "entry_hash": "2dc3b9551213de2ff0709ecc807ba9d83c68dd1edacabb850790397ddcf0ec61",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyMordorFireArrows",
+      "source": "Allows hordes to purchase the Fire Arrows upgrade \\n When equipped, significantly increases the damage done by Arrows \\n \\n Research Time: 30s",
+      "source_hash": "1a00c56ba8d52162978284770cb3d98a55b592cf445c0ee29a23da5f1bc90522",
+      "entry_hash": "6dd6c28252c59a03d837a5ecf528cdcd072e24fddd1673b1ceca5e4b14eb411b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyMordorForgedBlades",
+      "source": "Allows hordes to purchase the Forged Blades upgrade \\n When equipped, increases the damage done by Melee Weapons \\n \\n Research Time: 30s",
+      "source_hash": "dc9efd67b6609a095ca42947e6e6c9db9cb6ab257368bee294cfc48e6f37b13b",
+      "entry_hash": "82891536b02970ab34f52d3c88365bc30b9e9f7383da9c1441bcf034452c24a2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyMordorHeavyArmor",
+      "source": "Allows hordes to purchase the Heavy Armor upgrade \\n When equipped, significantly reduces the amount of damage taken \\n \\n Research Time: 30s",
+      "source_hash": "b929e04691529e991815fb16144d8935204b38eadb1bf3f4723418fda2a728c9",
+      "entry_hash": "45f33cb3fe95b4ee0d9070b49399d11f91a8fffa9acdca6f30f311bdbc786bb1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorTavernLevel2",
+      "source": "Allows research of Fire Arrows and Forged Blades \\n +10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "c906c62d6a1549d09f9dbea1302b2a7e94b90763ed60d5daa50407b4f48f7418",
+      "entry_hash": "abf3cc99bb4494838f3942739a14eba6619f54ed9cbca9055dacaceb772e2caf",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorTavernLevel3",
+      "source": "Allows research of Heavy Armor \\n Adds defensive Arrow Tower \\n +25% Faster Production Speed \\n \\n Upgrade Time: 1m",
+      "source_hash": "690ec0122fefd10db0b836429191a63b916bc97e42fa7cce00f7cd4f3cf2ee09",
+      "entry_hash": "ea08f240757142fef05c17525f091b0251cab4acce2ac655f7744db1184551ef",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorHaradrimLancerHorde",
+      "source": "Recruit ranged spearmen from Harad \\n Strong vs. Cavalry and Monsters \\n Able to switch formation for improved combat performance \\n \\n Unit Type: Basic Pikeman \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "01e2e62c5b5abb4b307a6f80694db5a31cbe6fcf311558550765984e09fea4be",
+      "entry_hash": "0ec6dc30b64f6de123287c03dcb58a0e50e706369b03e1a07ad14c872cdc1e6f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildWildCaveLevel2Upgrade",
+      "source": "+10% Faster Production Speed \\n \\n Upgrade Time: 20s",
+      "source_hash": "f3a70b2ff034b0e0f1a342c66614a68c612947e8b1add8ad35ed452659fe3e30",
+      "entry_hash": "920987f6e69700c162060cca190f0521b59250fb9a6cd34209787cd62b4a80d0",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildWildCaveLevel3Upgrade",
+      "source": "+25% Faster Production Speed\\nAdds defensive Arrow Tower \\n \\n Upgrade Time: 30s",
+      "source_hash": "f5ec1fb8bc52fde5458b70c2b4a94c8dcdeb49562b62eecca8c83face5ddcb54",
+      "entry_hash": "9c2eaf700bb5672ffa4498ace8b113b23f312f90fc2e8673abe60bdf76957028",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWildBabyDrakeHorde",
+      "source": "Requires Level 3 Fissure \\n Strong vs. All Units except Archers \\n Only 2 packs of Drake Broods are allowed at any time \\n \\n Unit Type: Mini Hero Cavalry \\n Recruit Time: 45s \\n Level 2: +5% Health, +5% Damage, 20/s Health Regeneration \\n Levels 3-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "e799c873138c27c5b3ea65185edf9a28ab03a7e33dfd7ae0c31eac5c6287b073",
+      "entry_hash": "b31af94da27cc7b63f51ae4003f713ce4ed99574598ba40759326c0c721e88bf",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "177a8a955f7041d4998093b178852dcf06838439a2820a23f7318c7b0dc32843"
+}

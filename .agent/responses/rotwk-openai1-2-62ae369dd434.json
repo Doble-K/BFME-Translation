@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "62ae369dd4344433a3d685b669449461",
+  "worker": "rotwk-openai1-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroAttackSpeedBonus_1",
+      "translation": "Aumenta permanentemente la velocidad de ataque de los héroes en un 15% (no afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroAttackSpeedBonus_2",
+      "translation": "Mejora de velocidad de ataque nivel 2"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroAttackSpeedBonus_2",
+      "translation": "Aumenta permanentemente la velocidad de ataque de los héroes en un 20% (no afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroAttackSpeedBonus_3",
+      "translation": "Mejora de velocidad de ataque nivel 3"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroAttackSpeedBonus_3",
+      "translation": "Aumenta permanentemente la velocidad de ataque de los héroes en un 25% (no afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroAttackSpeedBonus_4",
+      "translation": "Mejora de velocidad de ataque nivel 4"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroAttackSpeedBonus_4",
+      "translation": "Aumenta permanentemente la velocidad de ataque de los héroes en un 30% (no afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroMovementSpeedBonus_1",
+      "translation": "Mejora de velocidad de movimiento nivel 1"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroMovementSpeedBonus_1",
+      "translation": "Aumenta permanentemente la velocidad de movimiento de los héroes en un 3% (no afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroMovementSpeedBonus_2",
+      "translation": "Mejora de velocidad de movimiento nivel 2"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroMovementSpeedBonus_2",
+      "translation": "Aumenta permanentemente la velocidad de movimiento de los héroes en un 6% (no afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroMovementSpeedBonus_3",
+      "translation": "Mejora de velocidad de movimiento nivel 3"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroMovementSpeedBonus_3",
+      "translation": "Aumenta permanentemente la velocidad de movimiento de los héroes en un 9% (no afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroMovementSpeedBonus_4",
+      "translation": "Mejora de velocidad de movimiento nivel 4"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroMovementSpeedBonus_4",
+      "translation": "Aumenta permanentemente la velocidad de movimiento de los héroes en un 12% (no afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroAutoHealBonus_1",
+      "translation": "Mejora de curación automática nivel 1"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroAutoHealBonus_1",
+      "translation": "Aumenta permanentemente la curación automática de los héroes en +10 PV (no afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroAutoHealBonus_2",
+      "translation": "Mejora de curación automática nivel 2"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroAutoHealBonus_2",
+      "translation": "Aumenta permanentemente la curación automática de los héroes en +15 PV (no afecta a los aliados)"
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroAutoHealBonus_3",
+      "translation": "Mejora de curación automática nivel 3"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "a260a75cb5424f72b7e003214ddc40fe",
+  "worker": "rotwk-deep-all-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseechnologyWildHeavyArmorPurchased",
+      "translation": "Permite que las hordas compren la Armadura de Desecho \\n Reduce significativamente la cantidad de daño recibido \\n \\n Tiempo de investigación: 30 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressBatCloudPurchased",
+      "translation": "Aumenta el rango de visión de la Fortaleza y proporciona detección de sigilo \\n Rango de visión: 1760 \\n Radio de detección de sigilo: 800 \\n \\n Tiempo de mejora: 15 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressDragonNestPurchased",
+      "translation": "Permite invocar un Dragón de Fuego\\n Proporciona curación para Drogoth y los Dragones de Fuego \\n Se acumula con la curación automática \\n \\n Tasa de curación: 1.8% /2 s \\n Radio: 300 \\n \\n Tiempo de mejora: 20 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressRazorSpinesPurchased",
+      "translation": "Tipo de Modificador: Hechizo \\n Las unidades enemigas adyacentes a la Fortaleza sufren daño con el tiempo y pierden un -33% de Velocidad y un -33% de Ritmo de Ataque \\n Daño: 20/s (Fuerza) \\n Radio: 150 \\n Duración de la penalización de Velocidad y Ritmo de Ataque: 10 s \\n \\n Tiempo de mejora: 15 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTowerUpgradeAngmarIceArrowsPurchased",
+      "translation": "Mejora esta Torre con Flechas de Hielo \\n Aumenta significativamente el daño causado por las Flechas \\n \\n Tiempo de mejora: 10 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologySpiderVenomSacksPurchased",
+      "translation": "Permite que las hordas compren la mejora de Sacos de Veneno \\n Cuando se equipa, aumenta ligeramente el daño causado por los ataques cuerpo a cuerpo \\n Permite infligir veneno a los enemigos causando daño adicional con el tiempo \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseSpiderVenomSacksPurchased",
+      "translation": "Mejora esta horda con Sacos de Veneno \\n Cuando se equipa, aumenta ligeramente el daño causado por los ataques cuerpo a cuerpo \\n Permite infligir veneno a los enemigos causando daño adicional con el tiempo \\n \\n Tiempo de mejora: 10 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyAngmarBasicTrainingPurchased",
+      "translation": "Permite que las hordas compren la mejora de Portador de Estandarte \\n Sube una horda al Nivel 2 \\n \\n Tiempo de investigación: 30 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarDarkIronMailPurchased",
+      "translation": "Permite que las hordas compren la mejora de Armadura Pesada \\n Cuando se equipa, reduce significativamente la cantidad de daño recibido \\n \\n Tiempo de mejora: 10 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseTechnologyAngmarDarkIronMailPurchased",
+      "translation": "Permite que las hordas compren la mejora de Cota de Malla Pesada de Hierro Oscuro \\n Cuando se equipa, reduce significativamente la cantidad de daño recibido \\n \\n Tiempo de investigación: 30 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarSpikedCollarsPurchased",
+      "translation": "Mejora a esta manada de Lobos Terribles con los Collares de Púas Pesados \\n Cuando se equipan, reducen significativamente la cantidad de daño recibido \\n \\n Tiempo de mejora: 10 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyAngmarSpikedCollarsPurchased",
+      "translation": "Permite otorgar Collares de Púas a las Manadas de Lobos Terribles \\n Cuando se equipan, reducen significativamente la cantidad de daño recibido \\n \\n Tiempo de investigación: Instantáneo \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseTechnologyAngmarIceArrowsPurchased",
+      "translation": "Permite que las hordas compren la mejora de Flechas de Hielo \\n Cuando se equipa, aumenta significativamente el daño causado por las Flechas \\n \\n Tiempo de investigación: 30 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarIceArrowsPurchased",
+      "translation": "Mejora a esta horda con Flechas de Hielo \\n Aumenta significativamente el daño causado por las Flechas \\n \\n Tiempo de mejora: 10 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarDarkIronBladesPurchased",
+      "translation": "Permite que las hordas compren la mejora de Hojas de Hierro Oscuro \\n Cuando se equipa, aumenta el daño causado por las Armas Cuerpo a Cuerpo \\n \\n Tiempo de mejora: 10 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseTechnologyAngmarDarkIronBladesPurchased",
+      "translation": "Permite que las hordas compren la mejora de Hojas de Hierro Oscuro\\nCuando se equipa, aumenta significativamente el daño causado por las Armas Cuerpo a Cuerpo \\n \\n Tiempo de investigación: 30 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarIceShotPurchased",
+      "translation": "Mejora este Lanzapiedras con el Disparo de Hielo \\n Aumenta significativamente el daño causado \\n \\n Tiempo de mejora: 10 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseTechnologyAngmarIceShotPurchased",
+      "translation": "Permite que los Lanzapiedras compren la mejora de Disparo de Hielo \\n Cuando se equipa, aumenta significativamente el daño de un Lanzapiedras \\n \\n Tiempo de investigación: 30 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressBannersPurchased",
+      "translation": "Tipo de Modificador: Liderazgo \\n Los aliados cercanos a la Fortaleza ganan +25% de Daño, +25% de Armadura y ganan Experiencia un 50% más rápido \\n Se acumula con Mejoras y Hechizos \\n\\nReduce el costo de los héroes un 10% \\n Reduce el tiempo de reclutamiento de los héroes un 10% \\n Reduce el costo de los constructores un 20% \\n Radio: 300 \\n \\n Tiempo de mejora: 15 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressSpikesPurchased",
+      "translation": "Tipo de Modificador: Hechizo \\n Unidades enemigas adyacentes a la Fortaleza sufren daño con el tiempo y pierden un -33% de Velocidad y un -33% de Ritmo de Ataque \\n Daño: 20/s (Fuerza) \\n Radio: 150 \\n Duración de la penalización de Velocidad y Ritmo de Ataque: 10 s \\n \\n Tiempo de mejora: 15 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeRohanFireArrowsPurchased",
+      "translation": "Mejora este batallón con Flechas de Fuego \\n Aumenta significativamente el daño causado por las Flechas \\n \\n Tiempo de mejora: 10 s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "TOOLTIP:Eowyn",
+      "translation": "Tipo de Daño: Héroe \\n Daño de Aplastamiento: 160 (Aplastar) \\n Velocidad de ataque cuerpo a cuerpo: 1.23 s \\n Velocidad de movimiento: 50 \\n Velocidad montada: 100 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:Eomer",
+      "translation": "Tipo de Daño: Héroe \\n Daño de Aplastamiento: 160 (Aplastar) \\n Velocidad de ataque cuerpo a cuerpo: 1.14 s \\n Velocidad de movimiento: 50 \\n Velocidad montada: 100 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:Theoden",
+      "translation": "Tipo de Daño: Héroe \\n Daño de Aplastamiento: 160 (Aplastar) \\n Velocidad de ataque cuerpo a cuerpo: 1.4 s \\n Velocidad de movimiento: 50 \\n Velocidad montada: 100 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:Faramir",
+      "translation": "Tipo de Daño: Héroe / Héroe a Distancia \\n Daño de Aplastamiento: 160 (Aplastar) \\n Velocidad de ataque a distancia: 1.2-1.6 s \\n Velocidad de ataque cuerpo a cuerpo: 1.2 s \\n Velocidad de movimiento: 50 \\n Velocidad montada: 100 \\n Rango de Arco: 350 \\n Rango de visión: 500"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "schema_version": 3,
+  "batch_id": "826bc5a8f4704c2c896aa752cde4ea2d",
+  "worker": "rotwk-run2-1",
+  "created_at": "2026-08-05T20:16:17.165947+00:00",
+  "lease_expires_at": "2026-08-06T02:16:17.164758+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-1-826bc5a8f470.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPEastEmnetPlains/Desc",
+      "source": "The Eastemnet was a part of Rohan, and an area of wide, grassy plains found east of the river Entwash, between it and the Great River Anduin. \\n\\n Size: 450 x 450 \\n Lairs: 4x Troll Lair, 4x Warg Lair \\n Neutral Structures: 2x Inn , 1x Signal Fire",
+      "source_hash": "23ee24afefc4550d24fa3ee0bcdeb156b54b5c8e100638f7e46ef2414647680e",
+      "entry_hash": "1a38d9f532970aafe4e1da54ffe7b37d31f9361f5af81e027ea6febf0652a085",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPPinnathGelin",
+      "source": "Pinnath Gelin",
+      "source_hash": "ba476c1d82a80ca536c2c92b3d775c2c61ee0615f562a3b6b093ec4e4ced2061",
+      "entry_hash": "4e741867ef54118f8e4a6a2e2d12159f29b967d5485cfc698cf67e8bebb66003",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPPinnathGelin/Desc",
+      "source": "Pinnath Gelin or Green Hills was a fief in the far west of Gondor, bounded to the west by the River Lefnui, and to the east by the Morthond. \\n\\n Size: 400 x 460 \\n Lairs: 2x Troll Lair, 4x Warg Lair \\n Neutral Structures: 2x Inn , 1x Signal Fire",
+      "source_hash": "f5a8de96930ec2fed5fe3701102167044ad6cdddce03e2cdf0a089f5c27db678",
+      "entry_hash": "5948ace8aa9ca5ac6768db61e339adc6f7cc3255a8caa214ad74d5f6bb9f0bbd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPDorEnErnil",
+      "source": "Dor-en-Ernil",
+      "source_hash": "400d494709f67660dfcb53d2244abb34f54ffe2d396c83512d247cd3a1a2ffbe",
+      "entry_hash": "9e26bca1edb2d21f8c6ee757117a222b9524bfa2d9951c25f3b41b074debd229",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPDorEnErnil/Desc",
+      "source": "Though its boundaries are not clearly established, Dor-en-Ernil appears to have been part of - or perhaps synonymous with - the mountainous coastland fief known as Belfalas or the wider sense of Dol Amroth. \\n\\n Size: 550 x 570 \\n Lairs: 5x Troll Lair, 6x Warg Lair \\n Neutral Structures: 1x Inn",
+      "source_hash": "29d05d84a75f3a4618437d8f70c6fc774c9196443a0d9d03187c13e0cb1bb140",
+      "entry_hash": "c50eb8c17f640a7e6bf95446d2055599a0b246dbe102d460fe6cb75df1232b7c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "GUI:LobbyRoom4",
+      "source": "Patch 2.02",
+      "source_hash": "a5507b3ef180842f56494d50bf9e0ddd18fee0e2da4f347c004eb2acbdb9d950",
+      "entry_hash": "18945fba46d70f6e9c94f181035f55e2707b7f5e27772f52044bb750160de042",
+      "protected_tokens": []
+    },
+    {
+      "id": "GUI:CannotConnectToServserv",
+      "source": "The Lord of the Rings, The Rise of the Witch-king servers have been permanently shut down. Please visit the Patch 2.02 official Discord server @ discord.gg/XsD4fza to learn how to continue playing online with the GameReplays.org community.",
+      "source_hash": "de0f4580194d9f5cb96e5e71351fd9869f5e51961087a6cf00ad0dfca28334e5",
+      "entry_hash": "131cc4dcaf76f6ec48c9e33a8ebfe7efbbd5df3c2329d5e2d0ebb4ff35d50341",
+      "protected_tokens": []
+    },
+    {
+      "id": "GUI:GSGPDisconReason257",
+      "source": "The Lord of the Rings, The Rise of the Witch-king servers have been permanently shut down. Please visit the Patch 2.02 official Discord server @ discord.gg/XsD4fza to learn how to continue playing online with the GameReplays.org community.",
+      "source_hash": "dc661e503cf206ad54fc2e5c97afe0d41443bc2665ee41e7a3f492a6ca2f0b23",
+      "entry_hash": "6af105b7088dd7368a2f87311cef116cad593b6f9b0570195b409f113a9a00c2",
+      "protected_tokens": []
+    },
+    {
+      "id": "GUI:FirewallNoAdminMessage",
+      "source": "The game could not add itself to the Windows firewall application exemption list. Please run the game with admin privileges by clicking the \"Run as Administrator\" option from the game launch icon or executable",
+      "source_hash": "14a214991e1e8238b633bff29855aa6acb5b2ba87bcfce48cd2ad87dbdabbfbd",
+      "entry_hash": "d38983ea19490864626c38dcf912f85f05ffab1f4ad223cb1f9a1c92818f6197",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:SignalFireDescription",
+      "source": "Capture to reveal a large area of the shroud \\n Vision Range: 750 \\n Capture Time: 15s",
+      "source_hash": "651f58d59ed5cceea2fd720efa25bd30f6e6c7d06fe9c7558bf80c60b34093d6",
+      "entry_hash": "d82703b3eb62b539075c0f5c515e14a905fc8e7138adce0493954d74efb5ae04",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:InnTavernDescription",
+      "source": "Capture to recruit special faction units \\n Vision Range: 160 \\n Capture Time: 15s",
+      "source_hash": "3bf36032e0eaa7ef3fd621993bf2ecfcd424d12b5de844eaea6e9ceb5e8b5785",
+      "entry_hash": "fb6a39051fb4056e12136bc0c6357c3a68856fc2579109278b200e62f8eb2b0a",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSnowbind",
+      "source": "All structures within the area of effect become immune to damage \\n Enemy structures produce at half capacity, and Towers and Fortresses are disabled \\n Stops enemy structures and garrisoned units from firing \\n Extinguishes all nearby fires \\n Freeze Radius: 50 \\n Fire Extinguish Radius: 250 \\n Duration: 30s \\n Recharge Time: 3m \\n Left click icon then left click on target area",
+      "source_hash": "c51e0f3337b0c2dbaadb9960310bf31b28a16dc5addf10bd05124d0bc8c92d18",
+      "entry_hash": "2d38d2ada64ce04c61b123f5c538cedbc3ef384c5e95fc325338acf305afdbdd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBackstab",
+      "source": "Requires Level 5 \\n High damage melee attack that also poisons targeted enemy \\n Damage: 450 (Hero) & 100/s (Poison) \\n Duration: 20s \\n Target Range: 20 \\n Recharge Time: 1m 30s \\n Left click icon then left click on target",
+      "source_hash": "6ff78dd711997a1a6044dd8959f54e177f3f715f2fc9347cb60b92f7f3317979",
+      "entry_hash": "fbf3c415b2ff2becf400611173cd0ac0ab8c8f8b284ae7731929b7faccd03abc",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:Scavenger",
+      "source": "Scavenger",
+      "source_hash": "3516eb26d005e01bf45cf9b336291bddebb03a8916d07fabcd79d8c2e453218e",
+      "entry_hash": "4c0036530d8755d01e5b8fcbcf8dba53607f2f67ccf079bd1604988c17886c37",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipScavenger",
+      "source": "Allows all kills to earn resources \\n Effect Radius: Global \\n Bounty Percentage: 70% \\n Duration: Permanent \\n Recharge Time: Passive Power",
+      "source_hash": "343b103ee7257fa31e2fae89e026e4409a59c2174deba3a9c47a7a434b2f4de5",
+      "entry_hash": "25285128986ed2f7287e1482b46f978a1c2610c290f2975cb5a4ba6cbacd5d72",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityGoblinFighterPoisonedBlades",
+      "source": "Poisons targeted enemies causing damage over time \\n Damage: 6/s (Poison) \\n Ability Duration: 20s \\n Poison Duration: 15s \\n Recharge Time: 1m \\n Left click to activate",
+      "source_hash": "390b566dcc139dd380b3749bf8dd5ea2ed8c5128acfc950efa62dc43f0a0236d",
+      "entry_hash": "500fdef56c03061c9737440a18b25d50a51e94a34c6c92932b71de1ca215dc58",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:SpiderAllies",
+      "source": "Damage Type: Cavalry \\n Poison Damage: 6/s (Poison) \\n Poison Duration: 30s \\n Melee Attack Speed: 2.56s \\n Movement Speed: 105 \\n Vision Range: 300",
+      "source_hash": "563c9deff0da72cac078295c39d5a87a7603030db9d757fe9f01376684424528",
+      "entry_hash": "5d25740f42aeede398839bd9404cce05cc3fe598db68827e209417ccc7c5cbad",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMoveUnseen",
+      "source": "Requires Level 3 \\n Allows all targeted allies to become temporarily stealthed \\n Duration: 1m \\n Target Radius: 150 \\n Target Range: 300 \\n Recharge Time: 2m \\n Left click icon then left click on target units",
+      "source_hash": "d84654dc192cdb1901594cfd81a4b03c6061791d066778c43f01598460311732",
+      "entry_hash": "60f85b0277a840fdb12b7629b826b74fa35bc5e2b2943f614f5696610c5ed7e3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructAngmarForgeWorks",
+      "source": "Constructs and repairs Stone Throwers \\n Allows research of Angmar unit upgrades \\n\\n Build Time: 45s",
+      "source_hash": "9f7a0e115e98ef9d66d1fa341b771bb5fc643db6578ec6eca12f5541b9ff4598",
+      "entry_hash": "f4940797ca9f62940ae00c110f007333f075d5df7eb50aa9496aedd9e99130df",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenBlacksmith",
+      "source": "Researches Men of the West unit upgrades \\n\\n Build Time: 45s",
+      "source_hash": "533c4cab7c97c5c825d6aac6824a85543cd2fbb9b7abb5c963eeaa0bd25ffe30",
+      "entry_hash": "754671d81d46eda2153a3803b5520f525eb339d3f9b89846a50966c4e91db710",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "6b07365fe5283ae647df45dedb9e5b38c57d76f3366189b4e6ed2be49c3d86f4"
+}

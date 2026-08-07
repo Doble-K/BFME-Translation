@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "5c3318f091b047ac85369fc75120b7ac",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "TIOS:4",
+      "translation": "¡Sauron es un tonto! ¡Conquistaré la Tierra Media yo mismo!"
+    },
+    {
+      "id": "TIOS:5",
+      "translation": "Tu descanso termina en:"
+    },
+    {
+      "id": "TIOS:6",
+      "translation": "¡Este es tu fin! ¡La Tierra Media se sumergirá en la oscuridad!"
+    },
+    {
+      "id": "TIOS:7",
+      "translation": "¡Sauron encontró el anillo! Ahora viene a conquistar la Tierra Media"
+    },
+    {
+      "id": "TIOS:8",
+      "translation": "Sauron llega en:"
+    },
+    {
+      "id": "TIOS:9",
+      "translation": "¡Felicidades, lo has logrado! Tienes permitido matar a los Hobbits. ¡Buena suerte!"
+    },
+    {
+      "id": "TIOS:10",
+      "translation": "Los Hobbits llegan en:"
+    },
+    {
+      "id": "CustomGenericTimer:1",
+      "translation": "La oleada 1 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:2",
+      "translation": "La oleada 2 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:3",
+      "translation": "La oleada 3 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:4",
+      "translation": "La oleada 4 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:5",
+      "translation": "La oleada 5 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:6",
+      "translation": "La oleada 6 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:7",
+      "translation": "La oleada 7 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:8",
+      "translation": "La oleada 8 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:9",
+      "translation": "La oleada 9 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:10",
+      "translation": "La oleada 10 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:11",
+      "translation": "La oleada 11 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:12",
+      "translation": "La oleada 12 comienza en:"
+    },
+    {
+      "id": "CustomGenericTimer:13",
+      "translation": "La oleada 13 comienza en:"
+    }
+  ]
+}

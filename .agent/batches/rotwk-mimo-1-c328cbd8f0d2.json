@@ -1,0 +1,278 @@
+{
+  "schema_version": 3,
+  "batch_id": "c328cbd8f0d24d83a64119b7c6a5264c",
+  "worker": "rotwk-mimo-1",
+  "created_at": "2026-08-06T06:24:10.591026+00:00",
+  "lease_expires_at": "2026-08-06T12:24:10.589657+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-1-c328cbd8f0d2.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPWORDunland/Desc",
+      "source": "The Eastern regions of the Enedwaith, home of the Wild Men, sworn enemies of Rohan.\\n\\n Size: 450 x 450 \\n Neutral Structures: 2x Inn, 1x Ruined Tower",
+      "source_hash": "9315e92dedb81a3eb967744ea689e231b60dc3b8a956983027b122b045d20947",
+      "entry_hash": "30758ecbc2f938254679485ba1c19b2ec5846f1a1469ae2be81ee586fcf8eeb9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPWORIronHills",
+      "source": "Iron Hills",
+      "source_hash": "61eca963f1380eeb292bead4e5e58600c252caaa44833e7aa86c7fd96a5a840b",
+      "entry_hash": "9cd642ed4cfe98abda7ccba14bc10db2b6ec9cf368e1bedecaed71f28a4d2df3",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPWORIronHills/Desc",
+      "source": "These hills, rich in Iron, were long held by the Dwarves and Dain Ironfoot.\\n\\n Size: 368 x 338 \\n Lairs: 2x Troll Lair, 2x Spider Lair \\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "7c0e2ed15e805c9da54971298588b5e9fd03bf5acde57e52bb7e09665fd9de2b",
+      "entry_hash": "20ab5fcf92ca46d2f22f4b7601e39f148ea91f0070abd14c4074a31c9c17f3bc",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPNorthWold",
+      "source": "North Wold",
+      "source_hash": "5a8b116745d898379ec291dfb670b06b30341d8c3d19d921862a0e9a2c4fdef8",
+      "entry_hash": "37258e0b131eaa78a9f6240b6e26353f6ff724a34f6d3da8ed1a30c34b0169e7",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPNorthWold/Desc",
+      "source": "An old, desolate area to the north of the Summit of Amon Hen. \\n\\n Size: 460 x 460 \\n Lairs: 2x Warg Lair \\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "1ad95254100974f0aa1ceffd42b0d949a529339603d389da84036269b393faed",
+      "entry_hash": "3389ffc3ac0165236222c78eeebdd60e66794c2a9300f0f56729ce6f236df3d5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEmynSul",
+      "source": "Emyn Sul",
+      "source_hash": "3d4bb33b5af9b2762eda38ab77805c18cd3fda3f212943c65730c7aabf142599",
+      "entry_hash": "1d8976066054cde5bae378a35dc51be4dafde9cc55b7930e4cc45ae941172fef",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPEmynSul/Desc",
+      "source": "Otherwise known as Weather Hills, Emyn Sul was a hilly region north of the Great East Road between Bree and Mitheithel, at one time the boundry between Arthedain and Rhudaur. \\n \\n Size: 600 x 450 \\n Lairs: 2x Troll Lair , 2x Goblin Lair \\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "9d636337751642f8fe1f45ea1eca9bcda856b35f91a92760f76c1a30f26d77f7",
+      "entry_hash": "cea7681e3d98f45463f8b8678c4a10713bb8626dc41b6f4bca64bf4f6ede5341",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPBaranduin",
+      "source": "River Baranduin",
+      "source_hash": "1db9b59c4ec779b8944db0dc23542a4be539f5f498f79c5192a9d9f6111ce320",
+      "entry_hash": "ea2bc34f6f9baafb9c831c198600ae45bf96f9e8207f72c5b831d9b45e8d3e19",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPBaranduin/Desc",
+      "source": "The Baranduin River of Eriador is known by the Hobbits as the Brandywine River. It marks the the boundary between the known and the unknown. \\n\\n Size: 500 x 500 \\n Lairs: 2x Troll Lair, 4x Warg Lair \\n Neutral Structures:",
+      "source_hash": "518d5b6a204ee4a0ffb32f9c02cc64515cae3e7a5e97623678af84eff740dd68",
+      "entry_hash": "6597a44362cd977ce7498d8c897c8267e4cc2d1e11677b8d19eff2709e8b904a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:WildmenBuildingHouse5 ",
+      "source": "Wildmen Hut 5",
+      "source_hash": "463b5bdfe41331b2d05c5c6352ae0ec2bb4f7a9863e926c68f2f69f006a1d5ae",
+      "entry_hash": "ff2a74d93d779fb675462c8136cceab0ec81b89973979903fbf7a88d8d2fc957",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:WildmenBuildingHouse4",
+      "source": "Wildmen Hut 4",
+      "source_hash": "6da952b5223334daac14d922fad2124fec550a68b27acc78fe5e3190b9151d80",
+      "entry_hash": "6b82ae65ca4b43b99cebcf06de088a18ab28a7103a195c7eb8493244269aced3",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:WildmenBuildingHouse3",
+      "source": "Wildmen Hut 3",
+      "source_hash": "4be0bb4b29ffe9274eadeb3ab57777ae26b30f198e05e1e82ca7d04e61b17bda",
+      "entry_hash": "fdfd40a3bf01c10ae1faaa0ba01a266a6ec197c91f2268204958f18a6cbf95a1",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBloodthirstyMordorFighter",
+      "source": "Requires Level 2\\n Orc Warriors gain +15% Damage and earn Experience 25% faster \\nPassive ability",
+      "source_hash": "75fba09f3bb064176dbc3017d3f8a0fb466ada2dff00a9a9fd66e4b5ff3f1ab1",
+      "entry_hash": "e3bbd274f4cd5f0b8bd8bf784611c741f5db82d245009d6e9085b183359ae8e8",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBlackOrcBloodthirsty",
+      "source": "Requires Level 2\\n Black Orcs gain +15% Damage and earn Experience 25% faster\\nPassive ability",
+      "source_hash": "f124cec2e5515480b89d0a5b384d498959796ab721b59985aca1d506cd07e1ac",
+      "entry_hash": "4780040600e52dc55127690e375c392511530c13f130ff48e7489076fa7bbf07",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipIsengardBloodthirsty",
+      "source": "Requires Level 2\\n Uruk-hai gain +15% Damage and earn Experience 25% faster\\nPassive ability",
+      "source_hash": "1dfb0a89998f5b7e2a789b80be0f7164956ff261cff9c839632cacb6e33b4447",
+      "entry_hash": "6da919bb1d7700a5020179cd777cf0197f3feb4d629f2f032e35c19870426173",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipDarkRangerDeathMask",
+      "source": "Upgrades this horde with Death Masks \\n Modifier Type: Passive Debuff \\n When equipped, nearby enemy units suffer -20% Damage and -20% Armor \\n Does not stack with other Debuffs \\n \\n Upgrade Time: 10s",
+      "source_hash": "53d2b59a0a09c90b2114a98beac8a38672eba646574367a4596212b9520321e8",
+      "entry_hash": "325e855951d612389360ec8d8609e72bd75532aa621808a7f57f98d4eb7c94b5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipDarkRangerDeathMaskPurchased",
+      "source": "Upgrades this horde with Death Masks \\n Modifier Type: Passive Debuff \\n When equipped, nearby enemy units suffer -20% Damage and -20% Armor \\n Does not stack with other Debuffs \\n \\n Upgrade Time: 10s \\n \\n This upgrade has already been purchased",
+      "source_hash": "3dd7ad08dce2bf0d0deba4c220e6c54cf24fc903a1c2c18a866bf28fb29b987d",
+      "entry_hash": "662f859dd38c16f32aa323a1893079288316e07596b5ba677f94a06ec3321d16",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackAngmarDDDeathMasks",
+      "source": "Research upgrade at Hall of the Kings Men to enable this equipment \\n Modifier Type: Passive Debuff \\n When equipped, enemy units briefly suffer -20% Damage and -20% Armor when attacked directly \\n Does not stack with other Debuffs \\n \\n Upgrade Time: 10s",
+      "source_hash": "58a98cd4cc7b2e44c24e54b13f454bc1e664587833a07507aa217ad064ad33a0",
+      "entry_hash": "5318b79af479081753a872e8737bfd3c111a71160985ebc17a5277afe881f858",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackAngmarRangerDeathMasks",
+      "source": "Research upgrade at Hall of the Kings Men to enable this equipment \\n Modifier Type: Passive Debuff \\n When equipped, nearby enemy units suffer -20% Damage and -20% Armor \\n Does not stack with other Debuffs \\n Radius: 75 \\n \\n Upgrade Time: 10s",
+      "source_hash": "530be0262d1fab491bbe15062ea9cc0c9595497cf7695d4a46af9c955e8e1860",
+      "entry_hash": "9f1fc3f16a72b97acf410844e8d8d9a98f323a55596041a398a48aa34148f9f7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipNecromancerDeathMask",
+      "source": "Requires Level 3 \\n Modifier Type: Passive Debuff \\n Nearby enemy units suffer -20% Damage and -20% Armor \\n Does not stack with other Debuffs \\n Radius: 75 \\n Passive ability",
+      "source_hash": "513946a648e6f6fb3a10292f9394fbda2fc7859e5e84ac4ba40f35fb9c06c225",
+      "entry_hash": "8ee5edc71d1d9d44b7b21687421aefc142e13fb7cf374fab28e509a69f3ae57f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructArnorFarm",
+      "source": "Generates resources based on available terrain \\n Increases Command Point limit by 50 \\n Resource output is reduced when structure is damaged \\n\\n Build Time: 15s",
+      "source_hash": "e7b33de7d34aa5747487d9f26890c7e9d6959a55a238cfa638bb0bc205dcb18d",
+      "entry_hash": "dcf8affeb28623787cabea37876ef53f2638ccabe7a95e8d2297659c3f90b088",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:UnbearableLight",
+      "source": "Lady of Light",
+      "source_hash": "9491efe12835de7032675f3e74b40afef652fb054be7296a92aef336026a969d",
+      "entry_hash": "bf0685d662b117f587dee34aad9e311e498f4cfc5a682cb10dea25a634e52571",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUnbearableLight",
+      "source": "Modifier Type: Heavy Nullifier Debuff \\n Nearby enemy units suffer -33% Damage and -33% Armor, and earn Experience 50% slower \\nNullifies enemy Leadership \\n Takes precedence over other Debuffs \\n Radius: 300 \\n Passive ability",
+      "source_hash": "ef8a79ecc975552fe988bee22dacc6e8e1fcc72b671a1d67da9a2600e3d2c8e2",
+      "entry_hash": "1a4024fe07d3a0e0cf5a3d92ed5b4a14b755bd9ac0fcad331cee9bd23cab6e5b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GaladrielElvenGrace",
+      "source": "Elven G&race",
+      "source_hash": "4a2f79a978e4254fca31071e4daaf619325b76907d1f10400ab5bd05f17088d4",
+      "entry_hash": "a175bd65e1d1ffca09b67c126b5514533f49e4a446c8c08a83520dcb47413a9c",
+      "protected_tokens": [
+        "&r"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGaladrielElvenGrace",
+      "source": "Rapidly heals all allies in a stationary position and replaces 3 fallen units per battalion \\n Grants immunity to Fear and Terror \\n Heal Amount: 267/s \\n Radius: 350 \\n Duration: 30s \\n Recharge Time: 3m 30s \\n Left click to activate",
+      "source_hash": "d9f9fd5b3fd23faaa9b2f826a0d3d3271d3f448f87a48a3e54fb246ef94382ae",
+      "entry_hash": "6a0797ddc259b8409d699a081bda72f608a3f8d9a970fa7f4c7980ccf5fd18d8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "4a14b7391743c542bb26f0526738b6281fc2004946d94491123c187b28c80712"
+}

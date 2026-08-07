@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "bf8aa0a6451647dbaa1bdb217bcc109c",
+  "worker": "rotwk-nemotron-all-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:DwarvenCaptainofDale",
+      "translation": "Rey Brand"
+    },
+    {
+      "id": "CONTROLBAR:DwarvenCaptainofDaleHotkey",
+      "translation": "Rey Brand [&K]"
+    },
+    {
+      "id": "OBJECT:DwarvenCaptainofDale",
+      "translation": "Rey Brand"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildWildTreasureTroveLevel3Upgrade",
+      "translation": "Permite investigar la mejora Armadura Reciclada \\n +25% de velocidad de producción \\n Añade Torre de Flechas defensiva"
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityDwarvenDemolisherDeploy",
+      "translation": "El Demoledor se vuelve inmóvil pero gana +100% de armadura"
+    },
+    {
+      "id": "CONTROLBAR:EnableCEContents",
+      "translation": "Activar características de la Edición de Coleccionista"
+    },
+    {
+      "id": "CONTROLBAR:DaleBeastSlayerArrow",
+      "translation": "Flecha Destructora de Bestias [&y]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorHaradrimHorde",
+      "translation": "Fuerte contra Infantería y Monstruos"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorHaradrimArcherHorde_Inn  ",
+      "translation": "Fuerte contra Infantería y Monstruos \n Puede disparar Flechas con Púas"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildMordorArcher",
+      "translation": "Fuerte contra Infantería"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildDwarvenMenOfDaleInnHorde",
+      "translation": "Fuerte contra Infantería y Monstruos \n Puede disparar Flechas Negras"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_GoblinArcherHorde",
+      "translation": "Tipo de unidad: Arquero Básico\nFuerte contra Infantería\n Puede disparar Flechas Venenosas\n"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_GoblinArcherHorde",
+      "translation": "\nTipo de unidad: Arquero Básico\nFuerte contra Infantería\n Puede disparar Flechas Venenosas"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildCorsairShip",
+      "translation": "Barco Corsario guarnecido con arqueros \n Fuerte contra Barcos de Asedio"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEvilShip",
+      "translation": "Barco Corsario guarnecido con arqueros \n Fuerte contra Barcos de Asedio"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGoodShip",
+      "translation": "Barco Élfico guarnecido con arqueros \n Fuerte contra Barcos de Asedio"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildArnorRangerHorde",
+      "translation": "Requiere Campo de Tiro Nivel 2 \n Fuerte contra Infantería y Monstruos \n Puede disparar salvas de Flechas de Largo Alcance"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildArnorRangerHordeForGoodIthilien",
+      "translation": "Fuerte contra Infantería y Monstruos \n Puede disparar salvas de Flechas de Largo Alcance"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ArnorArcherHorde",
+      "translation": "Tipo de unidad: Arquero Básico\nFuerte contra Infantería y Monstruos \n Puede disparar salvas de Flechas de Largo Alcance\n"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ArnorArcherHorde",
+      "translation": "\nTipo de unidad: Arquero Básico\nFuerte contra Infantería y Monstruos \n Puede disparar salvas de Flechas de Largo Alcance"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ArnorRangerHorde",
+      "translation": "Tipo de unidad: Arquero de Élite\nFuerte contra Infantería y Monstruos \n Puede disparar salvas de Flechas de Largo Alcance\n"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ArnorRangerHorde",
+      "translation": "\nTipo de unidad: Arquero de Élite\nFuerte contra Infantería y Monstruos \n Puede disparar salvas de Flechas de Largo Alcance"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_GondorArcherHorde",
+      "translation": "Tipo de unidad: Arquero Básico\nFuerte contra Infantería\n"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_GondorArcherHorde",
+      "translation": "\nTipo de unidad: Arquero Básico\nFuerte contra Infantería"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ElvenLorienArcherHorde",
+      "translation": "Tipo de unidad: Arquero Básico\nFuerte contra Infantería \n Puede sigilar cerca de árboles\n"
+    }
+  ]
+}

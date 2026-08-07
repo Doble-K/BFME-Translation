@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "9da5ab98a1ca452fae7eb7011c9290e7",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:LoneTowerDwarvenStonework",
+      "translation": "Cantería Reforzada [&t]"
+    },
+    {
+      "id": "CONTROLBAR:BarricadeOrcFireMunitions",
+      "translation": "Flechas de Fuego [&w]"
+    },
+    {
+      "id": "Upgrade:FortressExpansionSelectionCompleted",
+      "translation": "Construyendo Expansión de Fortaleza"
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerFlamingMunitions",
+      "translation": "Mejora la Torre Solitaria con daño de Fuego, aumentando la producción de daño \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerFlamingMunitionsPurchased",
+      "translation": "Mejora la Torre Solitaria con daño de Fuego, aumentando la producción de daño \\n \\n Tiempo de mejora: 30s \\n \\n Esta mejora ya ha sido adquirida"
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerMasterworkMunitions",
+      "translation": "Mejora la Torre Solitaria con Hojas Forjadas, aumentando la producción de daño \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerMasterworkMunitionsPurchased",
+      "translation": "Mejora la Torre Solitaria con Hojas Forjadas, aumentando la producción de daño \\n \\n Tiempo de mejora: 30s \\n \\n Esta mejora ya ha sido adquirida"
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerNumenorStonework",
+      "translation": "Mejora la Torre Solitaria con +33% de Armadura \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerNumenorStoneworkPurchased",
+      "translation": "Mejora la Torre Solitaria con +33% de Armadura \\n \\n Tiempo de mejora: 30s \\n \\n Esta mejora ya ha sido adquirida"
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerDwarvenStonework",
+      "translation": "Mejora la Torre Solitaria con +33% de Armadura \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipLoneTowerDwarvenStoneworkPurchased",
+      "translation": "Mejora la Torre Solitaria con +33% de Armadura \\n \\n Tiempo de mejora: 30s \\n \\n Esta mejora ya ha sido adquirida"
+    },
+    {
+      "id": "CONTROLBAR:TooltipBarricadeOrcFireMunitions",
+      "translation": "Mejora a los Arqueros Orcos de la Barricada con daño de Fuego, aumentando la producción de daño \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipBarricadeOrcFireMunitionsPurchased",
+      "translation": "Mejora a los Arqueros Orcos de la Barricada con daño de Fuego, aumentando la producción de daño \\n \\n Tiempo de mejora: 30s \\n \\n Esta mejora ya ha sido adquirida"
+    },
+    {
+      "id": "OBJECT:MenLoneTowerDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 100 (Estructural) y 20 (Fuego) \\n Velocidad de ataque a distancia: 1.5-2s \\n Alcance de arco: 280 \\n Alcance de visión: 650 \\n Alcance de ataque de guardias: 250 \\n Tiempo de reaparición: 5s \\n Retraso de reparación: 1m \\n Tasa de reparación: 0.4%/s"
+    },
+    {
+      "id": "OBJECT:DwarvenLoneTowerDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 140 (Estructural) \\n Velocidad de ataque a distancia: 1.5-2s \\n Alcance de hacha: 280 \\n Alcance de visión: 650 \\n Alcance de ataque de guardias: 250 \\n Tiempo de reaparición: 5s \\n Retardo de reparación: 1m \\n Tasa de reparación: 0.4%/s"
+    },
+    {
+      "id": "OBJECT:MordorBarricadeDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 200 (Estructural) y 50 (Fuego) \\n Velocidad de ataque a distancia: 1.5-2s \\n Alcance de arco: 320 \\n Retardo de reparación: 1m \\n Tasa de reparación: 0.4%/s"
+    },
+    {
+      "id": "OBJECT:MordorBarricadeExpansionDescription",
+      "translation": "Tipo de daño: Estructural \\n Daño a distancia mejorado: 200 (Estructural) y 50 (Fuego) \\n Velocidad de ataque a distancia: 1.5-2s \\n Alcance de arco: 320 \\n Retardo de reparación: 1m \\n Tasa de reparación: 0.4%/s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressOrcfireMunitions",
+      "translation": "Mejora todas las Expansiones de Torre de Arqueros y Expansiones de Ballista con daño de Fuego \\n Aplica la mejora a todos los Edificios de Producción, Edificios de Recursos y Armerías \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressOrcfireMunitionsPurchased",
+      "translation": "Mejora todas las Expansiones de Torre de Arqueros y Expansiones de Ballista con daño de Fuego \\n Aplica la mejora a todos los Edificios de Producción, Edificios de Recursos y Armerías \\n \\n Tiempo de mejora: 30s \\n \\n Esta mejora ya ha sido adquirida"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeSentryTowerFlamingBolts",
+      "translation": "Mejora esta Torre con Virotes Flameantes \\n Aumenta el daño causado por los Virotes \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido adquirida"
+    }
+  ]
+}

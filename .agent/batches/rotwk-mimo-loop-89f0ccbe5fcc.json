@@ -1,0 +1,332 @@
+{
+  "schema_version": 3,
+  "batch_id": "89f0ccbe5fcc4482bd799014b31d65f1",
+  "worker": "rotwk-mimo-loop",
+  "created_at": "2026-08-06T06:52:23.036069+00:00",
+  "lease_expires_at": "2026-08-06T12:52:23.034720+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-loop-89f0ccbe5fcc.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "TOOLTIP:ShadeoftheWolf",
+      "source": "Damage Type: Hero / Frost \\n Crush Damage: 200 (Crush) \\n Melee Attack Speed: 2s \\n Splash Damage Radius: 70 \\n Movement Speed: 144 \\n Vision Range: 800",
+      "source_hash": "2dac0af7c2d794964034fe4c6fa5d2faeb0b313f22b31c19b3bbb06ec83cc040",
+      "entry_hash": "924ba0c3af8d909d49d8034588148ad1a50c64a305a014c57869ade58ce5d76e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:SummonedDragon",
+      "source": "Damage Type: Flame / Magic \\n Crush Damage: 200 (Crush) \\n Ranged Attack Speed: 5.74s \\n Splash Damage Radius: 150 \\n Movement Speed: 75 \\n Fire Breath Range: 37.5 \\n Vision Range: 400",
+      "source_hash": "d8dd62cf0b6a537d2dc6ef70436f449d15243ac59ca400a3971dc746081f46d9",
+      "entry_hash": "1d98a8f99af9c441cbe0c66a418194ddf37ed5c08f2d0302b93c1bd32bd85b56",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:DragonStrikeDragon",
+      "source": "Damage Type: Flame \\n Splash Damage Radius: 100 \\n Movement Speed: 200 \\n Vision Range: 600",
+      "source_hash": "124a75ce7372fb62dbec54db04289b509f286d8b942e0b43e97fc5f326633335",
+      "entry_hash": "7bf89e7c95b93031e05bc90f30c4de3f81f63e4de57eebb3ef8c491b8ace6f98",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Wyrm",
+      "source": "Damage Type: Flame \\n Ranged Attack Speed: 4.8s \\n Splash Damage Radius: 80 \\n Movement Speed: 0 \\n Fire Breath Range: 88 \\n Vision Range: 750",
+      "source_hash": "33c471a69b7aa3e50110612e95f9a2d06121be5c02b14653bc4f75d0a9704b59",
+      "entry_hash": "8b3dff04a057dab5429c837af8d7610bb1e1fe2319bdff3f3190a6ed4680df65",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Watcher",
+      "source": "Damage Type: Siege \\n Melee Attack Speed: 4-6s \\n Splash Damage Radius: 175 \\n Movement Speed: 0 \\n Melee Attack Range: 160 \\n Vision Range: 300",
+      "source_hash": "68334818b5078ded12c122c368ab31f752d5b0da76d040a8a3c2e3f5e4181669",
+      "entry_hash": "6903fbbbd239ef4f250c32c4c3b9e545a27b62a40753bd39329445816daddd36",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:GreaterWight",
+      "source": "Damage Type: Magic \\n Melee Attack Speed: 1.4s \\n Splash Damage Radius: 10 \\n Life Drain Multiplier: 0.35x \\n Movement Speed: 55 \\n Vision Range: 200",
+      "source_hash": "9538ea81a706a6865ed53557ba30ea1e866c09012007b0dad6655502e7aac819",
+      "entry_hash": "d7f2f435b87a051477716ea6f278fc61a9524b195d7705d3c3ac301250d3c133",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LesserWightSummoned",
+      "source": "Damage Type: Magic \\n Melee Attack Speed: 1.6s \\n Splash Damage Radius: 10 \\n Life Drain Multiplier: 0.15x \\n Movement Speed: 55 \\n Vision Range: 200",
+      "source_hash": "45ffca94e1b4a42c70d18b5e9e499cf986730a40728ecca539e0e490e8640a66",
+      "entry_hash": "631a6d2c20e5f45eec9cdc8ef1bad6a6e11bcc999067ee9a2c240e3a075d8166",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Frodo",
+      "source": "Damage Type: Hero / Hero Ranged \\n Melee Attack Speed: 1.4s \\n Ranged Attack Speed: 2.86s \\n Movement Speed: 50 \\n Rock Throw Range: 200 \\n Vision Range: 160",
+      "source_hash": "49c664bbf5bd678cab7eec0c62fb1a4306dd537c309880a8ee27cf87d3c3bb62",
+      "entry_hash": "df30908586c8f32457bf010ff1ac4ce3114c1bf3ede21cb4eb4cfb6b3e7bea80",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Sam",
+      "source": "Damage Type: Hero / Hero Ranged \\n Melee Attack Speed: 1.66s \\n Ranged Attack Speed: 3.8s \\n Movement Speed: 50 \\n Rock Throw Range: 200 \\n Vision Range: 160",
+      "source_hash": "df74719b1ed8303ee4215ac7ddc893746f773b817f6ed7d8b62d01a8a00c3dc6",
+      "entry_hash": "d7bf72616cad4c1422254709e07c6c8c5a4d45ec4aab220cfd45436acf7c9003",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Merry",
+      "source": "Damage Type: Hero / Hero Ranged \\n Melee Attack Speed: 1.66s \\n Ranged Attack Speed: 3.8s \\n Movement Speed: 50 \\n Rock Throw Range: 200 \\n Vision Range: 160",
+      "source_hash": "00faffe5e7985518a739ae0cd184d14a7205ffce4e030d0897e33f62ea28eff6",
+      "entry_hash": "d3f4665d4fe3127d2e0a55f65fe1ecb5688dec7ea4610458c7bd4e57b8a414da",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:Pippin",
+      "source": "Damage Type: Hero / Hero Ranged \\n Melee Attack Speed: 1.66s \\n Ranged Attack Speed: 3.8s \\n Movement Speed: 50 \\n Rock Throw Range: 200 \\n Vision Range: 160",
+      "source_hash": "cc8539c97a226aba7db0e91de8c236eeecff744891aca7437882e92b05cfbde7",
+      "entry_hash": "143c920721ac107c755781b158ae7899b0a451cd78b0c140d309180215abad01",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:TransportShipGood",
+      "source": "Movement Speed: 100 \\n Vision Range: 200",
+      "source_hash": "b0f3bd7eb0b3e553f52014635e43c75c6c9d15050c352fa3d7bfe7d43867adfc",
+      "entry_hash": "161579cc565dfd86f2e0e2a7236207d8964f86a943eb979f00fd637eb8d9be9c",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:TransportShipEvil",
+      "source": "Movement Speed: 100 \\n Vision Range: 200",
+      "source_hash": "5e2e155a9511c3b61ea214b36e3aa98de23473b5d7966c11958725d4c9772c53",
+      "entry_hash": "2c937cad68251388d4a7d65bc16ff07aee62fcac1a639fe8456750edd0f0f5dd",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:ArrowShipGood",
+      "source": "Damage Type: Magic \\n Ranged Attack Speed: 0.16s \\n Movement Speed: 100 \\n Bow Range: 350 \\n Vision Range: 600",
+      "source_hash": "098eb139863e951c0f6777155694ddbf601769f2219115acda7fb44953ca2dbf",
+      "entry_hash": "0a53968abca5cb8a7597b4a7a6b55ebfe0a9bcf984ca6ca902979a5756382d8a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:ArrowShipEvil",
+      "source": "Damage Type: Flame \\n Ranged Attack Speed: 0.16s \\n Movement Speed: 100 \\n Bow Range: 350 \\n Vision Range: 600",
+      "source_hash": "d20355c9cda5e4858b9c54881adfa91ebd04e5ec5915d63b6230fb9d423e9d61",
+      "entry_hash": "a4acf4134abf8381de54756297887ff83e321405451ff22709dbf01ed930b2e5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:BombardShipGood",
+      "source": "Damage Type: Siege \\n Ranged Attack Speed: 10s  \\n Splash Damage Radius: 50 \\n Movement Speed: 80 \\n Siege Range: 435 \\n Vision Range: 600",
+      "source_hash": "496ab0ac8403401cabdea69ce19295b51a87639dc48aba37e5a1cedce6675893",
+      "entry_hash": "3bd4a629cb06f844e90ba2adc9e2f0597f8b158d3c75053c2ef75c393326d633",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:BombardShipEvil",
+      "source": "Damage Type: Siege \\n Ranged Attack Speed: 10.26s \\n Splash Damage Radius: 50 \\n Movement Speed: 80 \\n Siege Range: 435 \\n Vision Range: 600",
+      "source_hash": "3a2e6a6a4294da08f443597c161a23926654b2f960e208f08567d2abc6b85a54",
+      "entry_hash": "7358455845e5e70e928dc6f5ac4b83cce72cfb7f862eb541891905a5842511f8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:StormShip",
+      "source": "Damage Type: Force \\n Splash Damage Radius: 185 \\n Movement Speed: 100 \\n Vision Range: 600",
+      "source_hash": "d3b8c84f429fd020afce052fde296b69c486837b46f269b59aab5158d8d96588",
+      "entry_hash": "a6735c164d7ce9ac888809bb49fac9cf406ded977cb9baa7745b4090ddb5effb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:DoomShip",
+      "source": "Damage Type: Force \\n Splash Damage Radius: 400 \\n Movement Speed: 100 \\n Vision Range: 600",
+      "source_hash": "2091a6a1092a90f5fb2dd0bcdb416a46f98dc618b3fecbd261836ceebc5d2f4f",
+      "entry_hash": "225ceafa1b520feea578ecdc73238ee024f78873eb3f58b1d2bf9b1b290ef11d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHeal",
+      "source": "Heals units and replaces 1 fallen unit per battalion \\n Heal Amount: 50% Health \\n Radius: 200 \\n Recharge Time: 3m \\n Left click icon then left click on target units",
+      "source_hash": "a0a40c13a9180817e25fe32204a2f9661b15690e04177c620701b233f383f31f",
+      "entry_hash": "c95f77ad76a51efe0e2cff4430361e3719dd6fdd65f7d378becde2a2bde9f50d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipRallyingCall",
+      "source": "Modifier Type: Buff \\n Targeted allies gain +33% Damage and +33% Armor \\n Stacks with Leadership and Spells \\n Radius: 125 \\n Duration: 1m \\n  Recharge Time: 3m \\n Left click icon then left click on target units",
+      "source_hash": "cc971261db4cfc857becb357be1faee46773b0b3b4eff86c453599a3d6e1b5ae",
+      "entry_hash": "1754c8fb93ed062f5536c25be522828e2a06d3303bd3018e0b41778762ffabac",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipRebuild",
+      "source": "Repairs structures \\n Repair Amount: 4000 Health \\n Radius: 100 \\n Recharge Time: 4m \\n Left click icon then left click on target structures",
+      "source_hash": "c95010ae6129bfc32072dbbed92db2da338ed8115179e3017058780d1d6e0700",
+      "entry_hash": "628d1dc90089308ad21c99650ebf675a75da3ceed51cb5e11420473c2a2eda65",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWarChant",
+      "source": "Modifier Type: Buff \\n Target allies gain +33% Damage and +33% Armor \\n Stacks with Leadership and Spells \\n Radius: 125 \\n Duration: 1m \\n Recharge Time: 3m \\n Left click icon then left click on target units",
+      "source_hash": "8c9d77dfa62dc7ae3eab5f62e702dbed751a6f88db75066825031d2a4d36174d",
+      "entry_hash": "7fc55ac8edc8b138c6ea8a3ab8735d5afd4874aa3243a86ea437a6ad7da94524",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipEyeofSauron",
+      "source": "Summons the Eye of Sauron \\n Reveals stealthed enemies \\n Modifier Type: Leadership \\n Allies gain +25% Damage, +25% Armor and earn Experience 50% faster \\n Stacks with Buffs and Spells \\n Vision & Leadership Radius: 200 & 150 \\n Duration: 1m \\n Recharge Time: 3m \\n Left click icon then left click on target area",
+      "source_hash": "48e6fe4192fa516e30e539a2d27c68506d1d4fa7c773aa8b109c8d1b7ed5d2e3",
+      "entry_hash": "700389f40e6a4b003ec5fd345cf2c90f394453458129090c43c5933d8592c9c0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipCrebain",
+      "source": "Reveals the shroud and detects stealthed units \\n Modifier Type: Passive Debuff \\n Nearby enemy units suffer -20% Damage and -20% Armor \\n Does not stack with other Debuffs \\n Vision & Debuff Radius: 200 \\n Duration: 1m \\n Recharge Time: 3m \\n Left click icon then left click on target area",
+      "source_hash": "3d10915dea62320fd77afdb30e874f0d11164dbbbe49c25e71710f3a48625690",
+      "entry_hash": "1e8ef940227d65e66549682a4be0427b2619f01f3463d3ac8a9a0068e59cb6e1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "0f65b2e7b4a1b33bab80024bfddca23df54378833d39c6cf467b62630a81b47d"
+}

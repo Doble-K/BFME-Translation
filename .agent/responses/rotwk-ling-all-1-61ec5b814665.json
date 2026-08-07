@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "61ec5b8146654f279f894dfe950c9a89",
+  "worker": "rotwk-ling-all-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipCAH_ThrowSpear_Level2_Palantir",
+      "translation": "Ataque a distancia que causa buen daño en un radio pequeño \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_ThrowSpear_Level3",
+      "translation": "Ataque a distancia que causa daño excelente en un radio pequeño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_ThrowSpear_Level3_Palantir",
+      "translation": "Ataque a distancia que causa daño excelente en un radio pequeño\\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level1",
+      "translation": "Lanza una bola de fuego que causa daño moderado"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level1_Palantir",
+      "translation": "Lanza una bola de fuego que causa daño moderado \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level2",
+      "translation": "Lanza una bola de fuego que causa buen daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level2_Palantir",
+      "translation": "Lanza una bola de fuego que causa buen daño\\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level3",
+      "translation": "Lanza una bola de fuego que causa daño excelente"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCAH_Fireball_Level3_Palantir",
+      "translation": "Lanza una bola de fuego que causa daño excelente\\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L1",
+      "translation": "Envía un rayo que causa daño moderado"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L1_Palantir",
+      "translation": "Envía un rayo que causa daño moderado \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L2",
+      "translation": "Envía un rayo que causa buen daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L2_Palantir",
+      "translation": "Envía un rayo que causa buen daño \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L3",
+      "translation": "Envía un rayo que causa daño excelente"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BallLightning_L3_Palantir",
+      "translation": "Envía un rayo que causa daño excelente \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConvertEnemy_L1",
+      "translation": "Convierte permanentemente unidades enemigas en un radio pequeño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConvertEnemy_L1_Palantir",
+      "translation": "Convierte permanentemente unidades enemigas en un radio pequeño \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en las unidades objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConvertEnemy_L2",
+      "translation": "Convierte permanentemente unidades enemigas en un radio grande"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConvertEnemy_L2_Palantir",
+      "translation": "Convierte permanentemente unidades enemigas en un radio grande \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en las unidades objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level1",
+      "translation": "El héroe puede convertir la lealtad de un solo batallón o horda"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level1_Palantir",
+      "translation": "El héroe puede convertir la lealtad de un solo batallón o horda \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level2",
+      "translation": "El héroe puede convertir la lealtad de unidades enemigas en un radio pequeño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level2_Palantir",
+      "translation": "El héroe puede convertir la lealtad de unidades enemigas en un radio pequeño \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level3_Palantir",
+      "translation": "El héroe puede convertir la lealtad de unidades enemigas en un radio grande \\n Haz clic izquierdo en el icono y luego haz clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Coerce_Level3",
+      "translation": "El héroe puede convertir la lealtad de unidades enemigas en un radio grande"
+    }
+  ]
+}

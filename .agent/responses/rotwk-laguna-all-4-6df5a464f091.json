@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "6df5a464f091437c9d58179a9f2321f1",
+  "worker": "rotwk-laguna-all-4",
+  "translations": [
+    {
+      "id": "OBJECT:MallornCloudBreak",
+      "translation": "Este Árbol Mallorn controla el Poder Rompiendo Nubes."
+    },
+    {
+      "id": "OBJECT:MallornRebuild",
+      "translation": "Este Árbol Mallorn controla el Poder Reconstruir."
+    },
+    {
+      "id": "OBJECT:MallornSummon",
+      "translation": "Este Árbol Mallorn controla el Poder Invocar Exploradores."
+    },
+    {
+      "id": "OBJECT:MallornElvenWood",
+      "translation": "Este Árbol Mallorn controla el Poder Bosque Élfico."
+    },
+    {
+      "id": "TOOLTIP:AngmarIceArrows",
+      "translation": "Flechas de Hielo"
+    },
+    {
+      "id": "LAN:TooFewPlayers",
+      "translation": "Este mapa debe tener al menos %d jugadores."
+    },
+    {
+      "id": "OBJECT:AmonSulTower",
+      "translation": "Torre de Arco"
+    },
+    {
+      "id": "OBJECT:AmonSulWall",
+      "translation": "Muro"
+    },
+    {
+      "id": "OBJECT:AngmarCastleWallTowerSmall",
+      "translation": "Torre de Batalla"
+    },
+    {
+      "id": "OBJECT:AngmarCastleWallCatapultSmall",
+      "translation": "Torre de Lanzapiedras de Troll"
+    },
+    {
+      "id": "OBJECT:AmonSulStronghold",
+      "translation": "Torre de Amon Sul"
+    },
+    {
+      "id": "APT:Logout",
+      "translation": "CERRAR SESIÓN"
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulIntroText_01",
+      "translation": "REY BRÚO: Mientras esta fortaleza permanece en pie, las tierras del oeste están a salvo de mi venganza."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulIntroText_02",
+      "translation": "HWALDAR: Entonces ya no permanecerá en pie, señor terrible."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulIntroText_03",
+      "translation": "REY BRÚO: Debemos atacar sin piedad. Los que se atreven defienden las murallas de Amon Sul con más que carne y acero."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulIntroText_03-1",
+      "translation": "OFICIAL DE ANGMAR: ¡Busquen refugio! ¡El sol mismo defiende estas murallas!"
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveText_01",
+      "translation": "Destruir la Torre de Amon Sul."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveText_02",
+      "translation": "Destruir todos los Árboles Mallorn que alimentan los ataques mágicos de Amon Sul."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveText_03",
+      "translation": "Destruir los cuatro Árboles Mallorn restantes."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulObjectiveText_04",
+      "translation": "Construir un Molino, una Forja de Hierro Oscuro y una Sala de los Hombres del Rey."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_01",
+      "translation": "El Rey Brúo debe alcanzar el Nivel 10."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_02",
+      "translation": "Hwaldar debe alcanzar el Nivel 6."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_03",
+      "translation": "Morgomir debe alcanzar el Nivel 10."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_04",
+      "translation": "Destruir el Árbol Mallorn más septentrional, que puede concentrar un Destello Solar poderoso contra nuestro ejército."
+    },
+    {
+      "id": "SCRIPT:ANGAmonSulBonusObjectiveText_05",
+      "translation": "Destruir el Árbol Mallorn en el pantano del noroeste, cuyo poder permite al Palantíri de Amon Sul crear bosques élficos exuberantes."
+    }
+  ]
+}

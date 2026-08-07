@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "8ead876bcc7f45dba0db1ab2d3028358",
+  "worker": "rotwk-deep-all-1",
+  "translations": [
+    {
+      "id": "TOOLTIP:MordorCatapultExpansion",
+      "translation": "Tipo de daño: Asedio / Fuego \\n Daño a distancia mejorado: 600 (Asedio) y 400 (Fuego) \\n Velocidad de ataque a distancia: 8.3s \\n Radio de daño en área: 50 \\n Velocidad de movimiento: 0 \\n Alcance de asedio: 525 \\n Rango de visión: 600"
+    },
+    {
+      "id": "TOOLTIP:HaradrimSpearmen",
+      "translation": "Tipo de daño: Especialista \\n Salud: 250 \\n Daño a distancia: 40 (Especialista) \\n Daño a distancia mejorado: 80 (Especialista) \\n Daño cuerpo a cuerpo: 40 (Especialista) \\n Daño cuerpo a cuerpo mejorado: 80 (Especialista) \\n Daño de represalia por aplastamiento: 250 \\n Daño de represalia por aplastamiento mejorado: 375 \\n Velocidad de ataque a distancia: 2.6s \\n Velocidad de ataque cuerpo a cuerpo: 2.6s \\n Velocidad de movimiento: 50 \\n Alcance de lanzamiento de lanza: 320 \\n Rango de visión: 350"
+    },
+    {
+      "id": "TOOLTIP:Laborer",
+      "translation": "Tipo de daño: Talar \\n Velocidad de ataque cuerpo a cuerpo: 1.26s \\n Velocidad de movimiento: 32 \\n Rango de visión: 25"
+    },
+    {
+      "id": "TOOLTIP:Azog",
+      "translation": "Tipo de daño: Héroe \\n Velocidad de ataque cuerpo a cuerpo: 1.6s \\n Velocidad de movimiento: 55 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:GoblinKing",
+      "translation": "Tipo de daño: Héroe \\n Daño de aplastamiento: 160 (Aplastamiento) \\n Velocidad de ataque cuerpo a cuerpo: 1.6s \\n Velocidad de movimiento: 55 \\n Velocidad de movimiento montado: 100 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:Drogoth",
+      "translation": "Tipo de daño: Asedio \\n Radio de daño en área: 40 \\n Velocidad de movimiento: 95 \\n Rango de visión: 600"
+    },
+    {
+      "id": "TOOLTIP:SpiderlingsExpansion",
+      "translation": "Tipo de daño: Caballería \\n Velocidad de ataque cuerpo a cuerpo: 2.56s \\n Velocidad de movimiento: 115 \\n Rango de visión: 175"
+    },
+    {
+      "id": "TOOLTIP:SpiderRiders",
+      "translation": "Tipo de daño: Caballería / Perforante \\n Salud: 700 \\n Daño cuerpo a cuerpo: 120 (Caballería) \\n Daño cuerpo a cuerpo mejorado: 210 (Caballería) \\n Daño a distancia: 45 (Perforante) \\n Daño a distancia mejorado: 45 (Perforante) y 30 (Fuego) \\n Daño de aplastamiento: 160 (Aplastamiento) \\n Daño de aplastamiento mejorado: 240 (Aplastamiento) \\n Velocidad de ataque cuerpo a cuerpo: 2.2s \\n Velocidad de ataque a distancia: 1.25-2s \\n Velocidad de movimiento: 90 \\n Alcance de arco: 400 \\n Rango de visión: 500"
+    },
+    {
+      "id": "TOOLTIP:HTSwordsmen",
+      "translation": "Tipo de daño: Corte \\n Salud: 650 \\n Daño cuerpo a cuerpo: 100 (Corte) \\n Daño cuerpo a cuerpo mejorado: 175 (Corte) \\n Velocidad de ataque cuerpo a cuerpo: 1.5s \\n Velocidad de movimiento: 50 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:MountainGiant",
+      "translation": "Tipo de daño: Asedio \\n Daño de aplastamiento: 1000 (Aplastamiento) \\n Radio de daño en área a distancia: 50 \\n Radio de daño en área cuerpo a cuerpo: 50 \\n Velocidad de ataque a distancia: 7.2s \\n Velocidad de ataque cuerpo a cuerpo: 1.6s \\n Velocidad de ataque cuerpo a cuerpo a estructuras: 5s \\n Velocidad de movimiento: 50 \\n Alcance de lanzamiento de rocas: 500 \\n Rango de visión: 600"
+    },
+    {
+      "id": "TOOLTIP:MountainGiantExpansion",
+      "translation": "Tipo de daño: Asedio \\n Radio de daño en área a distancia: 50 \\n Velocidad de ataque a distancia: 7.3s \\n Velocidad de movimiento: 0 \\n Alcance de lanzamiento de rocas: 600 \\n Rango de visión: 600"
+    },
+    {
+      "id": "TOOLTIP:Hwaldar",
+      "translation": "Tipo de daño: Héroe \\n Velocidad de ataque cuerpo a cuerpo: 1.6s \\n Velocidad de movimiento: 55 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:Morgomir",
+      "translation": "Tipo de daño: Héroe \\n Velocidad de ataque cuerpo a cuerpo: 1.5s \\n Velocidad de movimiento: 55 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:Karsh",
+      "translation": "Tipo de daño: Héroe / Magia \\n Velocidad de ataque cuerpo a cuerpo: 2.5s \\n Radio de daño en área: 10 \\n Multiplicador de drenaje de vida: 0.3x \\n Velocidad de movimiento: 55 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:Rogash",
+      "translation": "Tipo de daño: Héroe \\n Daño de aplastamiento: 40 (Aplastamiento) \\n Velocidad de ataque cuerpo a cuerpo: 2s \\n Radio de daño en área: 30 \\n Velocidad de movimiento: 60 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:RhudaurAxeThrowers",
+      "translation": "Tipo de daño: Corte \\n Salud: 150 \\n Daño a distancia: 38 (Corte) \\n Velocidad de ataque a distancia: 2.33s \\n Velocidad de movimiento: 55 \\n Alcance de lanzamiento de hachas: 275 \\n Rango de visión: 400"
+    },
+    {
+      "id": "TOOLTIP:BlackNumenorians",
+      "translation": "Tipo de daño: Corte \\n Salud: 520 \\n Daño cuerpo a cuerpo: 90 (Corte) \\n Daño cuerpo a cuerpo mejorado: 180 (Corte) \\n Velocidad de ataque cuerpo a cuerpo: 1.6s \\n Velocidad de movimiento: 50 \\n Rango de visión: 400"
+    },
+    {
+      "id": "TOOLTIP:DarkRangers",
+      "translation": "Tipo de daño: Perforante \\n Salud: 250 \\n Daño a distancia: 80 (Perforante) \\n Daño a distancia mejorado: 100 (Perforante) y 30 (Escarcha) \\n Daño cuerpo a cuerpo: 85 (Corte) \\n Velocidad de ataque a distancia: 1.5-2s \\n Velocidad de movimiento: 50 \\n Alcance de arco: 400 \\n Rango de visión: 500 \\n Radio de debilitamiento de Máscaras de la Muerte: 75"
+    },
+    {
+      "id": "TOOLTIP:DireWolves",
+      "translation": "Tipo de daño: Corte \\n Salud: 275 \\n Daño cuerpo a cuerpo: 65 (Corte) \\n Velocidad de ataque cuerpo a cuerpo: 1.8s \\n Velocidad de movimiento: 100 \\n Rango de visión: 400"
+    },
+    {
+      "id": "TOOLTIP:DireWolvesExpansion",
+      "translation": "Tipo de daño: Corte \\n Velocidad de ataque cuerpo a cuerpo: 1.8s \\n Velocidad de movimiento: 115 \\n Rango de visión: 175"
+    },
+    {
+      "id": "TOOLTIP:SnowTrolls",
+      "translation": "Tipo de daño: Caballería \\n Salud: 1000 \\n Daño cuerpo a cuerpo: 100 (Caballería) \\n Daño cuerpo a cuerpo mejorado: 175 (Caballería) \\n Daño de aplastamiento: 180 (Aplastamiento) \\n Daño de aplastamiento mejorado: 270 (Aplastamiento) \\n Velocidad de ataque cuerpo a cuerpo: 1.5s \\n Velocidad de movimiento: 85 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:StoneThrower",
+      "translation": "Tipo de daño: Asedio \\n Daño a distancia mejorado: 900 (Asedio) y 600 (Escarcha) \\n Velocidad de ataque a distancia: 8.66s \\n Radio de daño en área: 50 \\n Velocidad de movimiento: 40 \\n Alcance de asedio: 500 \\n Rango de visión: 600"
+    },
+    {
+      "id": "TOOLTIP:StoneThrowerExpansion",
+      "translation": "Tipo de daño: Asedio \\n Daño a distancia mejorado: 900 (Asedio) y 600 (Escarcha) \\n Velocidad de ataque a distancia: 8.66s \\n Radio de daño en área: 50 \\n Velocidad de movimiento: 0 \\n Alcance de asedio: 525 \\n Rango de visión: 600"
+    },
+    {
+      "id": "TOOLTIP:TomBombadil",
+      "translation": "Tipo de daño: Héroe \\n Daño de aplastamiento: 400 (Aplastamiento) \\n Velocidad de ataque cuerpo a cuerpo: 1.5s \\n Radio de daño en área: 50 \\n Velocidad de movimiento: 60 \\n Rango de visión: 300"
+    },
+    {
+      "id": "TOOLTIP:Balrog",
+      "translation": "Tipo de daño: Asedio / Fuego \\n Daño de aplastamiento: 200 (Aplastamiento) \\n Velocidad de ataque cuerpo a cuerpo: 2.8s \\n Radio de daño en área: 70 \\n Velocidad de ataque cuerpo a cuerpo a estructuras: 3.4s \\n Velocidad de movimiento: 50 \\n Rango de visión: 800"
+    }
+  ]
+}

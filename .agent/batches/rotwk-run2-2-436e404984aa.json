@@ -1,0 +1,181 @@
+{
+  "schema_version": 3,
+  "batch_id": "436e404984aa46a1947bbf35d9e21dc0",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T19:55:56.265254+00:00",
+  "lease_expires_at": "2026-08-06T01:55:56.264128+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-436e404984aa.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseCustomTactic2",
+      "source": "You can only choose 1 branch of tactics\\n\\nLevel 1: Gives -20% discount for mine upgrades and spawns a cart with gold near mine every minute, which you can sell in citadel (Does not affect allies)",
+      "source_hash": "ae8c083c582e63b67aaf90b1b28b8f99b753118a2ebcb543d0d4b9a4d422a561",
+      "entry_hash": "71670e28902f12df1d9e34269d888349b01c129ea115aa875f0719d0f7aca83a",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic5",
+      "source": "Tactics 2 Level 2 (&S)",
+      "source_hash": "2460b1cedc328105fd69cfef1721cc96157c6279c2793533b2f5f49716104f48",
+      "entry_hash": "f5cb6d53d6d545d9658a4d69682da51e5ef00816994bae4195b10cf600b63fa7",
+      "protected_tokens": [
+        "&S"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseCustomTactic5",
+      "source": "Increases the sale of troops in the citadel by +100% (Does not affect allies)",
+      "source_hash": "5f443a1718851ddf83f87f232e16898cbcfd125fa4099d5a63f5772aa1718512",
+      "entry_hash": "adbafbe3f2b3791487381ab551273708cd92ea41f3044d4571050e009fa21a8a",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic8",
+      "source": "Tactics 2 Level 3 (&S)",
+      "source_hash": "f53419ac49ea3e53eacffa770741198f2cce8822ec84f440058e66e58b873132",
+      "entry_hash": "2f7f987f51be32be71869823d3f2c38df0ee804490ccb2f13bc2c7c7a7306862",
+      "protected_tokens": [
+        "&S"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseCustomTactic8",
+      "source": "Gives -25% discount on all abilities from the ability store (Does not affect allies)",
+      "source_hash": "b414a55f2bb0bb103a6a0559f823e4d628431563925fd189b99c793cfcf57a6a",
+      "entry_hash": "80e7ddb542d8f1e253f2beb6fd4010cd09b38db84858ba9453b688fc4b08f2e5",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic11",
+      "source": "Tactics 2 Level 4 (&S)",
+      "source_hash": "bf29be67d30ca60673d47165c448d0806cbda9bf953d896b8d4c6e0c4ba9a294",
+      "entry_hash": "7e6d2abf3926c5c397cd44b3fcf568c36cefaa69ed462842f53f68f3a4a40663",
+      "protected_tokens": [
+        "&S"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseCustomTactic11",
+      "source": "Gives Citadel and Gate +2500 hp (Does not affect allies)",
+      "source_hash": "184233a0a2731f727e5c3c08b6bb9f77923aaba4bb6a258cd0f872b248f50b62",
+      "entry_hash": "0e8ea5b8d2379c3b4d87a749cde5e620a54dcee2d523e1b0622c547e15b7de3b",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic3",
+      "source": "Tactics 3 Level 1 (&A)",
+      "source_hash": "a9f153ff47564033dcc7ddc3d304b106fa56df13d9f2005311b9a3bb022bc66a",
+      "entry_hash": "bd2119cf68ca02fd4e95f9da406d488a70d92b4df874af7162aa2e9406aa393c",
+      "protected_tokens": [
+        "&A"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseCustomTactic3",
+      "source": "You can only choose 1 branch of tactics\\n\\nLevel 1: Gives 5 power points and -50% discount for powerpoint maker (Does not affect allies)",
+      "source_hash": "7068ac3d554410f3b568b464c15bb41d5f4dd0103660b5320304ed185bb604f3",
+      "entry_hash": "cbf3fd8567b8cb1f69d549e060558b1a36848578d4b93f5ee8db25df4f72d87f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic6",
+      "source": "Tactics 3 Level 2 (&A)",
+      "source_hash": "685c5ff721e426f9f713651c971ed1fcd1eb7a63b53ed46dacc7c5b874731d68",
+      "entry_hash": "c7f0835525e062e8db65ca7ec3b17b7a4f566b56463284656c9986fca4c58a2c",
+      "protected_tokens": [
+        "&A"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic9",
+      "source": "Tactics 3 Level 3 (&A)",
+      "source_hash": "e60875951e23eb00788a22cb30023ba2de15131fec65a609e22031bd8ad8358d",
+      "entry_hash": "d8f3285cd46237f962671b09dc97a4171da16aa50235936bddd019ffdcc70319",
+      "protected_tokens": [
+        "&A"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseCustomTactic9",
+      "source": "Gives 10 power points",
+      "source_hash": "a9ae4a0b8a1dc5d0887b09568ba847e1d36d169e513ce1f1e3435f6800b3102c",
+      "entry_hash": "68b1997ab3903e1f3db6fee7d13211c040f1fb28e5324c95964715e26df099cc",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseCustomTactic12",
+      "source": "Tactics 3 Level 4 (&A)",
+      "source_hash": "c0b31878a3f6305038658402c165cf178e34077f34f378a7f0f7f62a16d40cd8",
+      "entry_hash": "bd36dd144c8e4a942ba8f6b63799518b7540ea31cc944adaae99902b805f82f9",
+      "protected_tokens": [
+        "&A"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseCustomTactic12",
+      "source": "Gives 5 power points and -33% cooldown for spellbook",
+      "source_hash": "39b0a92668733706f5933ac144f4437170db4e1eb375120e0563a3e855ba062c",
+      "entry_hash": "b235857566b6884a437595f4ea616d9ad060a2fb02531c1845429ec3398998ab",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeMinasTirithGate",
+      "source": "Improve Gate",
+      "source_hash": "19830326d97ad7baf76944311d4f5938cd2580ce6c1bf1f74a6d9bce04c3fbbe",
+      "entry_hash": "642291e7172a52eeda43f75a8b36123aa6d778361a07f0acb8168d057552c78e",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMinasTirithGate",
+      "source": "Increases the gate's health points by 5000",
+      "source_hash": "ca3da6c82afa7fba9e691df434b8528e7537bc501152275e0f8e98bca15ddf1c",
+      "entry_hash": "e3565ab2bf42d13a5c402c74810ff14a187b45660091d52a03bde88ff0122c7b",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeMinasTirithWalls",
+      "source": "Improve Walls",
+      "source_hash": "bff50a11d795b78abbc6fefdeb7272f1ac15ee05c8ce66529f1a443780a86825",
+      "entry_hash": "6d13d75b9a54caef6fff92a34d2c5e8fd3d2cbf45ea8d6eaef0d08f00eda8f9c",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMinasTirithWalls",
+      "source": "Troops on the wall receive: 10% damage, 15% armor, 10% range and vision radius\\nWorks on everyone, including allies and enemies",
+      "source_hash": "71e40b35e8dd8a29bb3950e4a1f54da6798003af1b11dd47a5215cf31b09aba8",
+      "entry_hash": "79136269aa2b5703ac8226b0df54eecaf692c6eabdad194bf340ab52eebb375c",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeCustomNumenorStonework",
+      "source": "Provides +67% Armor to the Castle Citadel",
+      "source_hash": "d7e368a19ac32f18bcf5da7b2a303ea5bdef54fd6fb30a30001ebb951f86eb79",
+      "entry_hash": "20ab1b22ab1018bde40dc52596cc63309a6d56cc61348c552831bb027dceac52",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeCustomCastleLevel2",
+      "source": "Upgrade Castle to Level 2 (&E)",
+      "source_hash": "0daf0bce068242cb779d8fbfad770fb23cb6e3fe99f33c8a7513f54cf2e9b7fb",
+      "entry_hash": "2ce632b8f5d0a17653dcd38c024f1dcd49484eb77cf2412d1ee41b1d3bab1587",
+      "protected_tokens": [
+        "&E"
+      ]
+    }
+  ],
+  "manifest_hash": "6d15fe2f514839fc30e7c043e128b6072ca230b206b564ea4a5de47854590812"
+}

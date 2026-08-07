@@ -1,0 +1,210 @@
+{
+  "schema_version": 3,
+  "batch_id": "5589af31bc474ed9834d62eef227934e",
+  "worker": "rotwk-nemotron-all-3",
+  "created_at": "2026-08-06T08:10:13.306221+00:00",
+  "lease_expires_at": "2026-08-06T14:10:13.304943+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemotron-all-3-5589af31bc47.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "BANNERUI:ElvenLorienArcher",
+      "source": "Lorien Archer",
+      "source_hash": "18edcc2bb90d72ea6c18ec3cb7ad4f5c57cd97b9178f2d5e6093f921d9140d9e",
+      "entry_hash": "ab489cb7d254a8652afb5836bfbb29a7cc22efb3412fe6a8de26eb3077aac8b3",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:ElvenLorienArchers",
+      "source": "Lorien Archers",
+      "source_hash": "b4f00883b17d057bf4b3b6da9b317a34a5f73d84a3de1405d926dbf3fb3e892b",
+      "entry_hash": "452e4ffdb5ba0bd6e34bd15c529df9cea5e0f1072670a12650e9887e12ccaff3",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:ElvenMithlondSentry",
+      "source": "Mithlond Sentry",
+      "source_hash": "4288a3e801ae858556e0dd01be2d414c2d9e3005a386b5cfc032e50571a3f851",
+      "entry_hash": "2f5de3fe60a55314fed3e980543546146e57b30bcb70448f5463b294207a3c4c",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:ElvenMithlondSentries",
+      "source": "Mithlond Sentries",
+      "source_hash": "2448a45397ce82faa9df809f572538ab60759b7aeb78fae7b388555f891db898",
+      "entry_hash": "fbcf41e7e5254010707c7ffcf8d55276a607b9e0c4ae80f257bc451b2a3c0afd",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:ElvenMirkwoodArcher",
+      "source": "Mirkwood Archer",
+      "source_hash": "7332bd88cf3b44a59e009f51517932bbe8cd7a1e454c53759f37f00ed4f89b49",
+      "entry_hash": "9a4469b4bd5bc85a0b756dd3b1ff2b8d9a5b63dedc76e030365ea47ac55e20eb",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:ElvenMirkwoodArchers",
+      "source": "Mirkwood Archers",
+      "source_hash": "cb9b56133c93fccc92213ea36d9da69935cf6a0d702ebe861d2ef5fdd9cb02ee",
+      "entry_hash": "49be88952275eb835fb9e0ae5d4bc03dd3576af05ab2a16cebf2930a156e534b",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:ElvenNoldorWarrior",
+      "source": "Noldor Warrior",
+      "source_hash": "5e7c47aaf5dc2267c168f8fc74ec026289c858d4bf845cbf50cdb2cbb131f92e",
+      "entry_hash": "b385032add2ac391ec8fd0b3917d5fd692a992d9026008551b5e6e8431574ba5",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:ElvenNoldorWarriors",
+      "source": "Noldor Warriors",
+      "source_hash": "d659a62e63b8d596385a98c2479301b7a29320ba048b01b115076f16adac0a61",
+      "entry_hash": "cda3e4b8c55137696a29b36dae46726997935c22667e9dcb0b4c9be135ff2ce1",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_ElvenNoldorWarriorHorde",
+      "source": "Noldor Warrior Battalion",
+      "source_hash": "bac5a95ee6451f20f9ee124c0ef1e3704737ded28332fdaf83323955295b023b",
+      "entry_hash": "807d5e3ca9c84b8d1d046ae3a82b3648e868ed7d1f6939ab95e1bbb2d753f475",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_ElvenNoldorWarriorHordePlural",
+      "source": "Noldor Warrior Battalions",
+      "source_hash": "ac5ba426cde55cf175c053b3deb918380dfdbc233c23c0697c04cfa5c1e92215",
+      "entry_hash": "88e1162bbe18f4ae335c5309847627c785767f6a9e79ef81aa37d2130899c96a",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_NoldorWarriorHorde",
+      "source": "\\nUnit Type: Hero Infantry\\nStrong vs. All",
+      "source_hash": "139c2e10841897f0b53b3e003f9e16ce3f3bdc7c4537c5b0bd32f9d7c1d20f37",
+      "entry_hash": "3cf1e6a97a630df03f206453a0b0e7ca658a8a62721d391b994e29a8062d8c39",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ElvenNoldorWarriorHorde",
+      "source": "\\nUnit Type: Hero Infantry\\nStrong vs. All",
+      "source_hash": "308813bdb484f7a7aee54006236059ed0216549b11c82834269e3f7e1e42fd4c",
+      "entry_hash": "658f52183f9c5f0306526993d1a742427c805cabf1db15d47a32942fea2cbdfa",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "BANNERUI:ElvenRivendellLancer",
+      "source": "Rivendell Lancer",
+      "source_hash": "37c967963f508cb04cdbfd120d600d32bd3fe9b47822cbe6cee626d235d3420b",
+      "entry_hash": "58284806934c57c2a6155b3c18108a123322efd17078863dc92e63039a0a8745",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:ElvenRivendellLancers",
+      "source": "Rivendell Lancers",
+      "source_hash": "6c95917b25a90a30fa79d0eee9b7b252b87c2ce416f85aadecfc865f4a2070ef",
+      "entry_hash": "e7acbe1d2e16a309d4360ad7bc4f5ef987d39a4fe91b6bc3474afb085c7ebd11",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ElvenRivendellArcherHorde",
+      "source": "Unit Type: Basic Cavalry\\nStrong vs. Swordsmen, Archers, and Cavalry\\n",
+      "source_hash": "e351821dc09a1390300f30e304ac3d1bb8475ae057a6597f493bd1b25c5a274d",
+      "entry_hash": "a57d98e2605a43cf914006248f5cef9e403afab40d73148fab897fd995cccb05",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ElvenRivendellArcherHorde",
+      "source": "\\nUnit Type: Basic Cavalry\\nStrong vs. Swordsmen, Archers, and Cavalry",
+      "source_hash": "4ff96f13b5b1409bf7d4375d6c34e9da6e0d310a55018eb34ec46597d2629cd5",
+      "entry_hash": "f01c94975d0e2c1aa43474259068225dfa7d8d2a6edc39dc7b154e339ab56da4",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_ElvenEnt",
+      "source": "Unit Type: Siege\\nStrong vs. Swordsmen, Archers, Cavalry, and Structures\\n",
+      "source_hash": "814a419d5d7b1eef9ad19d72c5840c12f6f4986e19114bb7e22bba823d487277",
+      "entry_hash": "a8cacd72a5d20cbd296098ac06ee4f1129c39e4f0814176f3570242d778958fb",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ElvenEnt",
+      "source": "\\nUnit Type: Siege\\nStrong vs. Swordsmen, Archers, Cavalry, and Structures",
+      "source_hash": "bd077a95d5a1a52b9773be76c7acb6a5411f62d5695ba5da009ba29a7faa588f",
+      "entry_hash": "75cd04f40dc0c9abf16446e5764a2f83540e6fd1cd0771c31315d7c030380f40",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_Treebeard",
+      "source": "Unit Type: Siege Hero",
+      "source_hash": "7feb77ab5b36c339ffc1940bb2377043bdb52e11a7446aeeb3ca2260e8d11d34",
+      "entry_hash": "523f237a911dd89c1718ef82a8672d37b970984ce803c6c5d346589e64538730",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Structure_DwarvenHallOfWarriors",
+      "source": "Hall of Warriors",
+      "source_hash": "5bd6328d66adebadb25ad51a9b9de31240bd61ed79e4a88c90cdeaa2560c31e5",
+      "entry_hash": "17a4f83ceee78b2a9e34ed24a3114a0a66e08e5f1aace08497022d4468749fb0",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Structure_DwarvenFortress",
+      "source": "Fortress",
+      "source_hash": "4c390f70b9dda61d4d6452fa9174da4f3b9daeb85481558bac5baf6e1a309dfc",
+      "entry_hash": "89d01969e5fa6607ec998568f1f8389f594f2036948f46e0b9885535a4665b55",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:DwarvenGuardian",
+      "source": "Guardian",
+      "source_hash": "cbbc2f0b94c74614c2b3918ae2ce06495e8f73def02c490313f9139d6c8bd56a",
+      "entry_hash": "a825ce228bcd9c6caa4c6901f790f3a21df52f65dcc2852f403c400bc5bbd039",
+      "protected_tokens": []
+    },
+    {
+      "id": "BANNERUI:DwarvenGuardians",
+      "source": "Guardians",
+      "source_hash": "9514f04df1e0a1a8b3f1f67496ea45b6e6cbbdc5cbb00bbc7a904ccca5da00b1",
+      "entry_hash": "7182812f7631b8e80aeb850b3567a91e88c3959f8529e5906b7afd0908481b1a",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenGuardianHorde",
+      "source": "Guardian Battalion",
+      "source_hash": "099beeaf925ae5485f33dbef0a5269c5765efdfeb83680ed08aec08f92db1edc",
+      "entry_hash": "1fb330f4f973dcc6b49ea5b5d1cc25f406dbc9689469d161de4a587a9f6340a4",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_DwarvenGuardianHordePlural",
+      "source": "Guardian Battalions",
+      "source_hash": "7eb12ee7d2aaa9620827067a47cb60c1c624c15bf4c3b848f37a37a5ca5d0469",
+      "entry_hash": "2d240c3c1dcbd46dd35786ac97ab33ab7bf6eac217038fc9b3ff5b793447faef",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "c3a844a274696b81b6be2fad60451e2fe58ba274754d00cfd7ca3f2ab422c6c2"
+}

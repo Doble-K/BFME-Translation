@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "e783c60c448846a683d82440ccdb5c21",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorTrollCageLevel2",
+      "translation": "Permite entrenar al Troll Tamborilero \\n Permite curar a los Trolls de Mordor cercanos \\n +10% de velocidad de producción más rápida \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeMordorTrollCageLevel3",
+      "translation": "Permite entrenar al Troll de Asalto \\n Aumenta la velocidad de curación de los Trolls de Mordor \\n +25% de velocidad de producción más rápida \\n \\n Tiempo de mejora: 1m"
+    },
+    {
+      "id": "Map:MAPMPMouthsoftheEntwash",
+      "translation": "Bocas del Entaguas"
+    },
+    {
+      "id": "Map:MAPMPMouthsoftheEntwash/Desc",
+      "translation": "La tierra húmeda y pantanosa donde el río Entaguas desemboca en el Anduin. \\n\\n Tamaño: 550 x 500 \\n Guaridas: 1x Guarida de trolls, 5x Guarida de huargos \\n Estructuras neutrales: 1x Puesto de avanzada, 2x Señal antigua"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarBarracksLevel2Upgrade",
+      "translation": "Permite entrenar Númenóreanos Negros \\n Investiga automáticamente la mejora de Máscaras de la Muerte \\n Permite investigar Portaestandartes \\n+10% de velocidad de producción más rápida \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipUpgradeIsengardTavernLevel2",
+      "translation": "Permite entrenar a los Lanzadores de Hachas Salvajes \\n Investiga automáticamente la mejora de Antorchas \\n +10% de velocidad de producción más rápida \\n \\n Tiempo de mejora: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipAngmarDen",
+      "translation": "Entrena Lobos Salvajes, Trolls de las Nieves \\n y Trolls de las Colinas \\n Investiga la mejora de Collares de Púas Pesados \\n Requerido para invocar Jinetes de Lobos \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildWildSpiderPit",
+      "translation": "Entrena Crías de Araña y Jinetes Goblin de Arañas \\n Investiga la mejora de Sacos de Veneno \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMenArcheryRange",
+      "translation": "Entrena Arqueros de Gondor y Guardabosques de Ithilien \\n Investiga la mejora de Flechas de Fuego \\n\\n Tiempo de construcción: 25s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenStable",
+      "translation": "Entrena Caballería de los Hombres \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGreenPasture",
+      "translation": "Entrena Caballería Élfica \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBattleWagonUpgradeMenOfDale",
+      "translation": "Añade varios de los Hombres de Dale al Carro de Guerra \\n Fuerte contra infantería, caballería y monstruos \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBattleWagonUpgradeAxeThrowers",
+      "translation": "Añade varios Lanzadores de Hachas al Carro de Guerra \\n Fuerte contra arqueros, piqueros y estructuras \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBattleWagonUpgradeHearth",
+      "translation": "Cura a los aliados cercanos y repone lentamente los escuadrones de unidades \\n Las unidades aliadas solo se curan cuando no están en combate \\n Permite al Carro de Guerra auto-curarse \\n Detecta sigilo \\n Cantidad de curación: 20 /2s \\n Radio: 150 \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipNecroCorpseRain",
+      "translation": "Lánzalo sobre unidades y estructuras para infligir un daño grave \\n Las unidades se asustan sin control y quedan gravemente envenenadas \\n Daño: 300 (Asedio) y 100/s (Veneno) \\n Radio del objetivo: 100 \\n Duración del veneno: 20s \\n Alcance del objetivo: 400 \\n Acólitos sacrificados: 5 \\n Haz clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:CalltheHorde",
+      "translation": "Llamar a la Horda"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCalltheHorde",
+      "translation": "Permite que los Orcos y los Goblin de guaridas capturadas recluten al instante \\n Aumenta temporalmente el límite de puntos de mando del jugador en 250 \\n Duración: 35s \\n Tiempo de recarga: 6m \\n Haz clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorFireArrows",
+      "translation": "Permite a los batallones comprar la mejora Flechas de Fuego \\n Cuando está equipado, aumenta significativamente el daño causado por las Flechas \\n \\n Tiempo de investigación: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorFireArrowsPurchased",
+      "translation": "Permite a los batallones comprar la mejora Flechas de Fuego \\n Cuando está equipado, aumenta significativamente el daño causado por las Flechas \\n \\n Tiempo de investigación: 30s \\n \\n Esta mejora ya ha sido adquirida"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEregionForgeLevel2",
+      "translation": "Permite investigar Hojas Forjadas \\n +10% de velocidad de producción más rápida \\n \\n Tiempo de mejora: 30s"
+    }
+  ]
+}

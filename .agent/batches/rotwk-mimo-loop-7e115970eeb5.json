@@ -1,0 +1,346 @@
+{
+  "schema_version": 3,
+  "batch_id": "7e115970eeb5444c8b2d756a7f6350b1",
+  "worker": "rotwk-mimo-loop",
+  "created_at": "2026-08-06T06:46:39.296443+00:00",
+  "lease_expires_at": "2026-08-06T12:46:39.294976+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-loop-7e115970eeb5.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressBanners",
+      "source": "Modifier Type: Leadership \\n Allies near the Fortress gain +25% Damage, +25% Armor, and earn Experience 50% faster \\n Stacks with Buffs and Spells \\n\\nReduces Hero cost by 10% \\n Reduces Hero recruit time by 10% \\n Reduces the cost of builders by 20% \\n Radius: 300 \\n \\n Upgrade Time: 15s",
+      "source_hash": "4395d7a3737b8a9b24c3fcce4ca3fe5d73f16bbe64542ae918971f0da17ad370",
+      "entry_hash": "bee155b93b42821c272f3d7f0ff782ad28c2a0645d86ffe867cbbecf5264f24f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressSiegeKegs",
+      "source": "Rapidly heals nearby allies and replenishes unit battalions \\n Does not stack with other healing structures \\n Adds 1000 health to the Fortress \\n Heal Rate: 6% /2s \\n Radius: 300 \\n \\n Upgrade Time: 30s",
+      "source_hash": "3ced40a0f5a992eb69b949f413f2ba4bbe2ad121ee6aa351f1deaf441a5e7efe",
+      "entry_hash": "e2e517cd4cbd19e4bd26323b4606ec642efc1fa888fdec6ea855766e1bdf4b29",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressOilCasks",
+      "source": "Allows the Fortress to launch explosive oil casks to damage nearby enemies \\n \\n Upgrade Time: 30s",
+      "source_hash": "7ae30e2bc3afa7de26d396bd3acaee83ddce2528964f72278d6355316dba166b",
+      "entry_hash": "6fe1285a0405835be382782ba61154bc2923510cccde33aec701dd8918c0d88c",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFireWeaponDwarvenFortressOilCasks",
+      "source": "Drop explosive oil casks on nearby enemies \\n Damage: 600 (Flame) \\n Radius: 250 \\n Recharge Time: 30s \\n Left click to activate",
+      "source_hash": "5d649490dcf50ed070a52d67a914dc9d929917bc31c4fc48f76f477674692ea8",
+      "entry_hash": "80160e1789c12c54f979628d0c5f59796bd64b051ae7a3ffb4f645e161626202",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackMightyCatapultDwarvenStonework",
+      "source": "Requires the Dwarven Stonework upgrade \\n Constructs a Catapult on the top of the Fortress that delivers flaming barrages \\n Increases the Vision Range of the Fortress \\n \\n Upgrade Time: 45s",
+      "source_hash": "d70473a3bf2d92cfa3b019a18dee167388ed2180efce3d27d0ebe75a20bf8d2a",
+      "entry_hash": "0a62c0c200a64511f4092bb742548851ff2d1f19f56437ca5e4c48c66fc000cc",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressEnchantedAnvil",
+      "source": "Reduces the cost of Elven unit upgrades: \\n 1 fortress with Anvil = 17% cheaper \\n 2 fortresses with Anvil = 21% cheaper \\n 3 fortresses with Anvil = 25% cheaper \\n 4 fortresses with Anvil = 29% cheaper \\n 5 fortresses with Anvil = 33% cheaper \\n \\n Upgrade Time: 15s",
+      "source_hash": "92f0a89194143b127aa102383875379da8bc0a50c29692e1408b0e95272b67f3",
+      "entry_hash": "d1141cdeefd3fdeea5e909265ea57b2a1a994bc2e209a874d4453824e48ff5b1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressBlessedMist",
+      "source": "Nearby allies become camouflaged \\n Modifier Type: Passive Debuff \\n Nearby enemy units suffer -20% Damage and -20% Armor \\n Does not stack with other Debuffs \\n Radius: 300 \\n \\n Upgrade Time: 15s",
+      "source_hash": "ea4a344d80dcdebc396a1ddf022ffd9eb88d98a81a79e82f1fb554fe4ee60777",
+      "entry_hash": "8008b3349b218f073a9d938f722793694a5e5df55e0d4ce5a97393e152cd388f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressCrystalMoat",
+      "source": "Decreases the melee vulnerability of the Fortress \\n \\n Upgrade Time: 15s",
+      "source_hash": "ba521394105b928821f784c834602a93e53a8e4e9ff3ef1de50e9988cd8bb84b",
+      "entry_hash": "4c79d4421f2383cf1b7e96db1e7aada8bcf29487c663936a0db528419248da46",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressMysticFountains",
+      "source": "Rapidly heals nearby allies and replenishes unit battalions \\n Does not stack with other healing structures \\n Heroes revive 15% faster at this Fortress \\n Heal Rate: 6% /2s \\n Radius: 300 \\n \\n Upgrade Time: 30s",
+      "source_hash": "329309cef21796acc9c37ca848d96ceae620476d3721eaa02dfef58b5fe471e9",
+      "entry_hash": "52b7fd047ca30015cfe35b55736a61b1a081a07be1a4a37d607bd96af6ebd380",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenFortressEaglesNest",
+      "source": "Allows summoning of a Giant Eagle \\n Provides healing for Giant Eagles \\n Stacks with auto-heal \\n Heal Rate: 1.8% /2s \\n Radius: 300 \\n \\n Upgrade Time: 20s",
+      "source_hash": "473ba6c98c8a51cbdd7fccf5f25e8306d90066059c1897ca15d7be298fd59bed",
+      "entry_hash": "bf6abfe1ab988ffe34c44e18c89af433434fe2a804b07fdeff6b64085203a014",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackEagleNestEncasingVines",
+      "source": "Requires the Encasing Vines upgrade \\n Allows summoning of a Giant Eagle \\n Provides healing for Giant Eagles \\n Heal Rate: 1.8% /2s \\n Radius: 300 \\n \\n Upgrade Time: 20s",
+      "source_hash": "4a9f757734a33c2c7d92cbd5b2259e1f9833fcd212ea059ddb4dcb091ba1118a",
+      "entry_hash": "dce42dbb333841f13aba0ae03dd97c98594f6ff7b686ff9adf7decf2c4eb6093",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressBanners",
+      "source": "Modifier Type: Leadership \\n Allies near the Fortress gain +25% Damage, +25% Armor, and earn Experience 50% faster \\n Stacks with Buffs and Spells \\n\\nReduces Hero cost by 10% \\n Reduces Hero recruit time by 10% \\n Reduces the cost of builders by 20% \\n Radius: 300 \\n \\n Upgrade Time: 15s",
+      "source_hash": "730ad45ebb046d537f2caf12522dbb4243e052c7a02e275adb93361c1a38dc5c",
+      "entry_hash": "8391115458160fb016efb297eb486713eacbd6dc072d1c2a987b6ec7e453143a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarFortressSpikes",
+      "source": "Modifier Type: Spell \\n Enemy units adjacent to the Fortress take damage over time and suffer -33% Speed and -33% Rate of Attack \\n Damage: 20/s (Force) \\n Speed & Attack Rate Duration: 10s \\n Radius: 150 \\n \\n Upgrade Time: 15s",
+      "source_hash": "d87bf2f1c17a74b9a0bedf30ad0c4805cf9c798ebd3588db37e7f5acc3848cab",
+      "entry_hash": "2140d39218dd2f6eed503ce0a51bd7cccbefe110ae25539a0298339bac3cdb52",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackSanctumAngmarIceWalls",
+      "source": "Requires the Angmar Ice Wall upgrade \\n Constructs the Witch-king's Sanctum, which launches chunks of ice \\n \\n Upgrade Time: 45",
+      "source_hash": "3976773a12467e7b7878a44a626c3666624c30c42351b75bb24d8b349c19b191",
+      "entry_hash": "9e1e7bf325ec2efc1da653d4f8407a4314ef2f532975d076790ae974723c2325",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressBatCloud",
+      "source": "Increases the Vision Range of the Fortress and provides stealth detection \\n Vision Range: 1760 \\n Stealth Detection Radius: 800 \\n \\n Upgrade Time: 15s",
+      "source_hash": "25df4e8ff4f86039616548e2d69ddc01323a6a5bb8f293c06c60b8647df88683",
+      "entry_hash": "3d0bea278a7c33de56279e0bcae45ca9160ea6a33acff913c9d1ac3e5d151b1d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressDragonNest",
+      "source": "Allows summoning of a Fire Drake \\n Provides healing for Drogoth and Fire Drakes \\n Stacks with auto-heal \\n Heal Rate: 1.8% /2s \\n Radius: 300 \\n \\n Upgrade Time: 20s",
+      "source_hash": "5c5ca018d33505bd3d2a425c873bdde06be89de637ed2b217b95659f36ef68e6",
+      "entry_hash": "32b05dc11394492afe41e6cac8ad38968b1be080be43a3964aee3f3d7e7ac6d0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:LackDragonNestWebCocoon",
+      "source": "Requires the Web Cocoon upgrade \\n Allows summoning of the Fire Drake \\n Provides healing for Drogoth and Fire Drakes \\n Heal Rate: 1.8% /2s \\n Radius: 300 \\n \\n Upgrade Time: 20s",
+      "source_hash": "1cbbf4036216a54908fae78272c25544ad7d40da4a1d561fdcfea5ee1b812432",
+      "entry_hash": "f5f131f037e4e7717a794e9eaaa51270daaa6fca05b5fad872b0520d07db3c25",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeWildFortressRazorSpines",
+      "source": "Modifier Type: Spell \\n Enemy units adjacent to the Fortress take damage over time and suffer -33% Speed and -33% Rate of Attack \\n Damage: 20/s (Force) \\n Speed & Attack Rate Penalty Duration: 10s \\n Radius: 150 \\n \\n Upgrade Time: 15s",
+      "source_hash": "efb61ce57efdb6c53693571356ce7664de01dc46230197a9d04c39d7707e1c43",
+      "entry_hash": "fa8ba3c0754774256e2e790405a01b0d3b73d2e24bc347c71df0a9f9cdf96364",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressMurderOfCrows",
+      "source": "Increases the Vision Range of the Fortress and provides stealth detection \\n Vision Range: 1760 \\n Stealth Detection Radius: 800 \\n \\n Upgrade Time: 15s",
+      "source_hash": "a5323a69bf828fa7bce027a241fc771ef0b8ad964c18c0e3b9048f289dddd5f8",
+      "entry_hash": "532c7843dd6f1315894459269d63d3cb94b6b3f5a9dea895b0b047e0971a8b0f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressBurningForges",
+      "source": "Reduces the cost of Isengard unit Upgrades \\n 1  Fortress with forges = 33% cheaper \\n 2 Fortresses with forges = 41% cheaper \\n 3 Fortresses with forges = 49% cheaper \\n 4 Fortresses with forges = 58% cheaper \\n 5 Fortresses with forges = 67% cheaper \\n \\n Upgrade Time: 30s",
+      "source_hash": "b81d85844bfe7bb75315859716823854def2e084d9348dcd317930209392c07a",
+      "entry_hash": "195c1210f52c2070a80c9739d401fc4dbc6e8e87f5146f61beadeb53468dd84c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeIsengardFortressWizardsTower",
+      "source": "Casts several bolts of lightning at an area surrounding the Fortress \\n \\n Upgrade Time: 45s",
+      "source_hash": "82c612fb47bc08514803e3c240b2f97b768c2c0ca36cc27c347b4e29e986a93f",
+      "entry_hash": "904fd30a7ee79f10b8c7e3daf7536ce5738a371b863c8921bfd0cbf650339e62",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "ToolTip:LackIronPlating",
+      "source": "Requires the Iron Plating upgrade \\n Shoot several bolts of lightning that hit near the Fortress \\n \\n Upgrade Time: 45s",
+      "source_hash": "279ffe39db334ef9389eb6315f8ef67e266dacc9821c92718c4f86f60a3d9ac1",
+      "entry_hash": "6342a3af9cf792b17cd4eaff8b099b88ac8e8e117658e508539238f7631cef7c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressDoomPyres",
+      "source": "Modifier Type: Leadership \\n Allies near the Fortress gain +25% Damage, +25% Armor, and earn Experience 50% faster \\n Stacks with Buffs and Spells \\n\\nReduces Hero cost by 10% \\n Reduces Hero recruit time by 10% \\n Reduces the cost of builders by 20% \\n Radius: 300 \\n \\n Upgrade Time: 15s",
+      "source_hash": "7e5163449b4c929396fdd2f709961fbb1a62319bd8094532da01904cc7d560b3",
+      "entry_hash": "75719bc8b32ed1c78719775e90651bde21983c39221329974faf0374a8de93e6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMordorFortressMagmaCauldrons",
+      "source": "Allows the Fortress to pour burning lava on nearby enemy units \\n \\n Upgrade Time: 30s",
+      "source_hash": "1e0101bbfaef447b2004f0c0b9af6c855ed10441070ba2f5c75d8c94b0c162ee",
+      "entry_hash": "66ecf71c115d2ffa9be0c0e8110a2fb5cfe69aa00ec365a6c7c81b102be56aff",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFireWeaponMordorFortressMagmaCauldrons",
+      "source": "Pours burning lava on nearby enemy units \\n Damage: 600 (Flame) \\n Radius: 250 \\n Recharge Time: 30s \\n Left click to activate",
+      "source_hash": "0502ebd648d9d12e399b70222d9493144ef608761e6feac4173a7d761ae83dd1",
+      "entry_hash": "e53b3cce6ebd47c8813922e38b082dce9768f2e57d5cd577b4996cbab64507e2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "4c00c91bd9419bedf83cf97e60a8206d9a36f172b19201d557323df854a3dd7d"
+}

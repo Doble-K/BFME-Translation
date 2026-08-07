@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "b684ca540fa44d9f94f7c359c1af6952",
+  "worker": "rotwk-run2-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressIvoryTowerPurchased",
+      "translation": "Otorga el Poder de Visión del Palantir \\n Aumenta el alcance de visión de la Fortaleza \\n Alcance de visión: 2080 \\n \\n Tiempo de mejora: 45s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "TOOLTIP:LackIvoryTower",
+      "translation": "Requiere la mejora Mampostería Númenórea \\n Otorga el Poder de Visión del Palantir \\n Aumenta el alcance de visión de la fortaleza \\n Alcance de visión: 2080 \\n \\n Tiempo de mejora: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressMightyCatapult",
+      "translation": "Construye un Catapulta en la cima de la fortaleza que lanza descargas de fuego \\n Aumenta el alcance de visión de la fortaleza \\n Alcance de visión: 2080 \\n \\n Tiempo de mejora: 45s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFortressMightyCatapultPurchased",
+      "translation": "Construye un Catapulta en la cima de la fortaleza que lanza descargas de fuego \\n Aumenta el alcance de visión de la fortaleza \\n Alcance de visión: 2080 \\n \\n Tiempo de mejora: 45s \\n \\n Esta mejora ya se ha adquirido"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMordorPorter",
+      "translation": "Entrena un Constructor \\n Construye Edificios \\n Regeneración de salud: 5/s \\n \\n Tiempo de reclutamiento: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMenPorter",
+      "translation": "Entrena un Constructor \\n Construye Edificios \\n Regeneración de salud: 5/s \\n \\n Tiempo de reclutamiento: 30s"
+    },
+    {
+      "id": "CONTROLBAR:Tooltipconstructelvenporter",
+      "translation": "Entrena un Constructor \\n Construye Edificios \\n Regeneración de salud: 5/s \\n \\n Tiempo de reclutamiento: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenPorter",
+      "translation": "Entrena un Constructor \\n Construye Edificios \\n Regeneración de salud: 5/s \\n \\n Tiempo de reclutamiento: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructAngmarPorter",
+      "translation": "Entrena un Constructor \\n Construye Edificios \\n Regeneración de salud: 5/s \\n \\n Tiempo de reclutamiento: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructIsengardPorter",
+      "translation": "Entrena un Constructor \\n Construye Edificios \\n Regeneración de salud: 5/s \\n \\n Tiempo de reclutamiento: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildPorter",
+      "translation": "Entrena un Constructor \\n Construye Edificios \\n Regeneración de salud: 5/s \\n \\n Tiempo de reclutamiento: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructArnorPorter",
+      "translation": "Entrena un Constructor \\n Construye Edificios \\n Regeneración de salud: 5/s \\n \\n Tiempo de reclutamiento: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipThranduilWildWalk",
+      "translation": "Requiere nivel 2 \\n Permite a Thranduil ocultarse mientras se mueve o permanece quieto \\n También puede disparar mientras está oculto si está cerca de los árboles\\nHabilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildBarrowWight",
+      "translation": "Recluta un Espectro de Túmulo para luchar por tu bando \\n Fuerte contra Espadachines y Caballería \\n \\n Tipo de unidad: Espadachín de élite \\n Tiempo de reclutamiento: 15s \\n Nivel 2: +10% Salud, +10% Daño \\n Niveles 3-4: +10% Salud, +9% Daño \\n Nivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipThranduilHiddenHunter",
+      "translation": "Permite a Thranduil escapar inmediatamente del combate ocultándose \\n Permanece oculto temporalmente mientras se mueve o está quieto \\n Inflige +100% de daño con su primera flecha disparada mientras está oculto \\n Disparar desactiva la capa \\n Duración: 30s \\n Tiempo de recarga: 45s \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWoundingArrow",
+      "translation": "Requiere nivel 2 \\n Ataque a distancia único \\n Reduce temporalmente la velocidad de la unidad u horda objetivo en un 33% \\n Hace huir a los Monstruos objetivo \\n Solo se puede usar con arco equipado \\n Daño: 600 (Héroe a distancia) \\n Duración: 10s \\n Alcance objetivo: 350 \\n Tiempo de recarga: 45s \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:TooltipSummonTomBombadil",
+      "translation": "Invoca a Tom Bombadil \\n Héroe resistente que puede pisotear y empujar a los enemigos \\n Inflige daño adicional a Asedio y Monstruos \\n Duración: 45s \\n Tiempo de recarga: 6m \\n Clic izquierdo en el icono y luego clic izquierdo en una ubicación transitable"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilitySarumanFireball",
+      "translation": "Requiere nivel 2 \\n Lanza una bola de energía para golpear unidades y estructuras \\n Inflige daño adicional contra Monstruos \\n Daño: 350 (Magia) y 400 (Fuego) \\n Radio de daño de salpicadura: 30 \\n Alcance objetivo: 345 \\n Tiempo de recarga: 1m \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:DeployMine",
+      "translation": "Desplegar Mina [&M]"
+    },
+    {
+      "id": "CONTROLBAR:IsengardMineDetonate",
+      "translation": "Detonar Mina [&M]"
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "schema_version": 3,
+  "batch_id": "b454aa7c66274d51bd100a4b69ce1b08",
+  "worker": "rotwk-mimo-loop",
+  "created_at": "2026-08-06T06:45:11.983661+00:00",
+  "lease_expires_at": "2026-08-06T12:45:11.982305+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-loop-b454aa7c6627.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "OBJECT:ElvenSentryTowerDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Magic) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "83b21bbf38189eca768d83b17e4c073aa845dc5c6c681fb53aab31188a371d5e",
+      "entry_hash": "72810dda823c8c7787ddbdd9605291c3c1b485703a09bff6bba33cfa1105b1b0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:ErgionForgeDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Magic) \\n Bow Range: 250 \\n Vision Range: 300 \\n Level 2 Siege Repair Rate: 4% /2s \\n Level 3 Siege Repair Rate: 6% /2s \\n Radius: 200 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "5c8a85e50714ac9096a33c3977dfbd7cbaa75592c11530c703c6ad3c7179935a",
+      "entry_hash": "0441b871f686e0a68ec3b487ed55d5257776b1cf4edd865f92f088d4a714f0ce",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:ElvenWallHubDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Wall Build Radius: 1000",
+      "source_hash": "e9de62085cfd56ae5f373f9ec8e1c480a06130ded67d843f51abcd7e8a39032a",
+      "entry_hash": "1a4a44d96096723fcbaa0ab342ab46718fcf3e5e63c0f5e0f7c7bd79e4abc221",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:ElvenFortressDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 120 (Structural) & 20 (Magic) \\n Bow Range: 250 \\n Vision Range: 800 \\n Repair Delay: 2m \\n Repair Rate: 0.3%/s \\n Increases Command Point limit by 100",
+      "source_hash": "29a593ea007b18ad889e754c2f42520917e31dd3a68d3bb0967aa80ca68d5ba0",
+      "entry_hash": "ed404bcf105af1f2e7c84ef80fcb84c340e58b6e59fa9c16d880d1099c945119",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:ElvenWallHubExpansionDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Wall Build Radius: 1000",
+      "source_hash": "0b9d19d2003babb632e038b596f009391be0d023461a91932b363cb2ee5b0b94",
+      "entry_hash": "2b3ec9565076d9ef4318e1969e0e4e0078c293771d0f096bda564ca06437f0b2",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructElvenWatchtowerExpansion",
+      "source": "Defensive arrow tower that fires at nearby enemy units \\n\\n Build Time: 30s",
+      "source_hash": "d3739a034c9540b0268398b0f1f77670ea28ccf270b24c38138e500923dcf237",
+      "entry_hash": "ff98390131ac2407039a79bc52256f64ecb0df26412183648599c6c8c7303c99",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:ElvenArrowTowerExpansionDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 120 (Structural) & 20 (Magic) \\n Bow Range: 250 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "9c5a96179fceeeda784fc419d593db101ece3ff03aa30c4b22a409bfaa6c387d",
+      "entry_hash": "c430f2ea6a4e88737f6ffc84c228d795156c7531ca5ae022b8f255e9e66d3934",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructElvenVigilantEntExpansion",
+      "source": "Stationary Ent that throws rocks at enemy units \\n\\n Build Time: 30s",
+      "source_hash": "d7ac9cf1b0dd8d233bfb2864540ea34c21d4aeb6b9f5f305722dd4994e462e4f",
+      "entry_hash": "56eb0f98023a5f339cb083a503d25424f26e76150207214df4ed94b48d293813",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:VigilantEntExpansionStructure",
+      "source": "Damage Type: Siege \\n Ranged Attack Speed: 4.55s \\n Rock Splash Damage Radius: 50 \\n Movement Speed: 0 \\n Rock Throw Range: 625 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "7b1b789a082c500267a0998c384b6e34cac7530ef1d9f8a472d877d8effc1a38",
+      "entry_hash": "7d0c0395657df792ff4229cdb163f060972a4f9a32e1f1d5ec79b86e9491845c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipConstructDwarvenMineShaft",
+      "source": "Generates resources based on available terrain\\nProvides access to the tunnel network \\n Increases Command Point limit by 50 \\n Resource output is reduced when structure is damaged \\n\\n Build Time: 15s",
+      "source_hash": "6f45b05aefce24dc9e1597e8362307788c2c1084a2021e0fcea648df9b65d9db",
+      "entry_hash": "81a84b933d2bed8b0e55dc4f161f674fec8c6afb8ba8a686ec6ba1f6768466f0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenBarracks",
+      "source": "Trains Guardians, Phalanxes and Zealots\\n Researches Banner Carrier and Siege Hammers upgrades \\n\\n Build Time: 25s",
+      "source_hash": "1b266ea7cf97abdfbd046d128885580386ebcd51df0e16390393dfdcf5ec54b9",
+      "entry_hash": "9e969e54ae75c890dcad41e4e39f53fd759ad20a9707fb2eb64d22ada7918968",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenBarracksDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 105 (Structural) \\n Axe Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "17d204792439449f98da5ce1cecd796a461976c3d1f727a52c360b582c50e5e8",
+      "entry_hash": "034036ea4972f19904f153fa8cd2e3f5a56f340d24c64dc183e92dbcaee1d220",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipConstructDwarvenArcheryRange",
+      "source": "Trains Axe Throwers and Men of Dale \\n Researches Fire Arrows upgrade \\n\\n Build Time: 30s",
+      "source_hash": "abed53bf3484c972adc2654763415c7214ba411a8a64460ff03a4513785e0c98",
+      "entry_hash": "f218a04bbe414d4cd780eceee046620502dcf260a7ae89133e75a2e7ed94fe5c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenArcheryRangeDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "f32233eb0df49f4cd794c16a59bd67d8e0c134dc6774ba32815bc0b5f2f59299",
+      "entry_hash": "6e0f62f8c56500e478aac99f22b35a2153119a05b54e82d5243ff88cdf15a15e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenForgeWorks",
+      "source": "Constructs and repairs Battlewagons, Demolishers, and Catapults \\n Researches Dwarven unit upgrades \\n\\n Build Time: 40s",
+      "source_hash": "53a357d93a18a8ab6cc8a574e56526ec5b3fe96f4e00cb2c3d10d7cc5a464ced",
+      "entry_hash": "19d410e653da69b8c77db651fc0c2776aac860e7cce5ed90acf0456dfb204271",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenForgeWorksDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 105 (Structural) \\n Axe Range: 250 \\n Vision Range: 300 \\n Level 2 Siege Repair Rate: 4% /2s \\n Level 3 Siege Repair Rate: 6% /2s \\n Radius: 200 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "f231ea5bd25ff7449b6985620f3130da0fc35a43574513ffc5524612a23a0e41",
+      "entry_hash": "e423bd4d3d953c1d329da565c20d0be3e1ddbde73b958f6a7c20d7360fd8a936",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenHearth",
+      "source": "Allies near the hearth gain \\n +50% Damage and +50% Armor \\n Does not stack \\n Provides nearby stealth detection \\n Reduces the cost of machine units",
+      "source_hash": "e853426f5dadc805edd1b1c2e96846eab2e053a3ec0ea0a0d1c45223ff965301",
+      "entry_hash": "e59cc7127801705612f15dfe4ab249e820d0fa4995e190c0af2f24e405fb76ea",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenSentryTowerDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 105 (Structural) \\n Axe Range: 250 \\n Vision Range: 650 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "b37ba092f08d16dce2b692b81ed517579fee9a8d7ec2a1b6238cc1942f142f30",
+      "entry_hash": "70337915afe1ff0b015f030e3c2e5b30dce1ccb6d49f634e6bf54f2ac274efe6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenStatueDescription",
+      "source": "Allies near the statue gain \\n +50% Damage, +50% Armor, \\n and earn experience twice as fast \\n Does not stack \\n Increases Command Point limit by 10",
+      "source_hash": "47ced22cb9aad7067049c69f7bd55fe3624f64bb23c586b7cf945a335e7ce4ed",
+      "entry_hash": "0ad6596dc80c835cb62866d393b52926244c975718125a220f613cb1b1b06227",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenFortressDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 150 (Structural) \\n Axe Range: 250 \\n Vision Range: 800 \\n Repair Delay: 2m \\n Repair Rate: 0.3%/s \\n Increases Command Point limit by 100",
+      "source_hash": "75234219b3ef6ebb8407a2122841e809d2390e7acc5d0c01b94213367c780886",
+      "entry_hash": "f4b24e62f1f85fb0f2111c015f2a5ce73a5c98ad35a4ca2cbbef0d41ce1a3ccb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenCitadelDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 150 (Structural) \\n Axe Range: 250 \\n Vision Range: 350 \\n Repair Delay: 1m \\n Provides access to the tunnel network \\n Increases Command Point limit by 100",
+      "source_hash": "29aef2a17d7ccee1baca77e55b7fc3894bdebc309e32824965dfaa9447ad55a9",
+      "entry_hash": "3dbaec081e4a9d40c496e06e27ade4f7fd93dfe3fb76966e00da9cecd5604bfb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:DwarvenWallHubDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Wall Build Radius: 1000",
+      "source_hash": "c7e2fc7c915894ca7e01734b5505667b0204457dea8e68d3623d2f30bf1edad3",
+      "entry_hash": "2272f5aacc81bef8c08126081933cbf77b0f97c9d8a6c368962eb276c4058661",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenEreborTowerTowerExpansion",
+      "source": "Construct Axe Tower Expansion \\n\\n Build Time: 20s",
+      "source_hash": "b5e034572c769e1450d66a65f4b836169aa4ad82ac21f6d36964705ae23cec95",
+      "entry_hash": "03ba26ad820239ee9992558591f687521419f19e092417980f2223b99bf0eebc",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:DwarvenEreborTowerExpansionDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 105 (Structural) \\n Axe Range: 250 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "d6eb9a4824df35ee436139a7c0b00316ea4e8b8a8e0cbaf161781efb619eb248",
+      "entry_hash": "5a3cd82a9eae481e4694f782db1508fa0e8be00294467724772e999f60434c25",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructDwarvenCatapultExpansion",
+      "source": "Long range defensive weapon \\n Benefits from the Masterwork Munitions upgrade \\n\\n Build Time: 30s",
+      "source_hash": "0ec59b519ee56c38af5b27c68bf58981363785f6e1fde2d11e794da21ca8fcae",
+      "entry_hash": "7129bc3fafaaebc993d62734a7e4efe3b6e289ce8808ae97055790b00c18f226",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "7b51bd4c862006a5b3cac4a5a0aaa2002107cd79a2f0f31d97d71c9f66a89863"
+}

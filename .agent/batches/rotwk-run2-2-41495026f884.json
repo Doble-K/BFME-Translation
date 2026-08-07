@@ -1,0 +1,169 @@
+{
+  "schema_version": 3,
+  "batch_id": "41495026f884400dafe89c930fefd6a6",
+  "worker": "rotwk-run2-2",
+  "created_at": "2026-08-05T19:51:46.590910+00:00",
+  "lease_expires_at": "2026-08-06T01:51:46.589811+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-2-41495026f884.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "HA:Pause_3",
+      "source": "30 waves - good job \\n Take a large sum of money \\n Good luck!",
+      "source_hash": "2376a23c8a0b792efca941df944a4089e71689e4ed5e01921af950ac5aa17358",
+      "entry_hash": "1095140f0ebded417500c7660298e6e023a232b9ee4eb0ccc1508c20e3c29580",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "HA:Pause_4",
+      "source": "33 waves - good job \\n The lady of Lothlorien is coming! \\n Good luck!",
+      "source_hash": "2030b4c8d00df1606fdf99e49c7d890e6e38555fbeb5b5979672bfa022c5dce6",
+      "entry_hash": "ef5f14c253019ecfe905d00efb5e0d1432716ca007b47606298cb716fc90de82",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "HA:Pause_5",
+      "source": "34 waves, good job \\n 1 wave remaining, but the dark lord himself is coming!",
+      "source_hash": "d102401de7a36172c90181477c3340fc0d34727b2da801d59eeb9c39481b3029",
+      "entry_hash": "fdff2f459563d4280642cdeae9488922ee5bd81ebea38a4159380c1755c073a4",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "MapIntro:01",
+      "source": "Welcome to Ring Wars! \\n Adapted for RotWK by Puzzler33",
+      "source_hash": "08ec4d2686593d8a4851b15d7958235e48d5593373f12e2bb3aa16a50bf51f74",
+      "entry_hash": "20f9c1d150e3469a58b70b55737f8160c3e85808becb5841b6c9984550c303dd",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "MapIntro:02",
+      "source": "First, buy a unit from this waterfall",
+      "source_hash": "332924fecef05a75d3e24be1591d9ea1cbb7f14d04d4395eb9eda244f0624dfa",
+      "entry_hash": "0eb200f5a2eed66346d556cca4a1e9c7240d80fb1a10c8465a653ee7756d2e27",
+      "protected_tokens": []
+    },
+    {
+      "id": "MapIntro:03",
+      "source": "Great! \\n Now garrison the unit in this tower",
+      "source_hash": "589b346f6654c1d794f5d09f42a7dc63799a9537fc5e2b54dbd5740e6c3b31f4",
+      "entry_hash": "e99e59ee0e6daf06c5a178fe6024885f27811627f240ae48ee277a1953bdfca2",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "MapIntro:04",
+      "source": "The unit horde will spawn in your base every few seconds",
+      "source_hash": "a03a7ee81b7f66e4fcfff7f9d5f7a6dd0e6c27298127bfbd3847b02d07673f4f",
+      "entry_hash": "d2092cdb54ebc6babbd63edb3b674df99bfdd22ba87b8d1efc0e8b87e8dff9db",
+      "protected_tokens": []
+    },
+    {
+      "id": "MapIntro:05",
+      "source": "You can also revive powerful heroes at the fortress",
+      "source_hash": "5be08fa03fe19953bdcda7be2059cc9c68c85eb130083b260d5911039428b500",
+      "entry_hash": "1fa387dc4dc62291fb0f164cada945b4004769c50033329bc85561d2721f4d63",
+      "protected_tokens": []
+    },
+    {
+      "id": "MapIntro:06",
+      "source": "Win your victory by destroying all enemy fortresses!",
+      "source_hash": "398552f1edc167d76820bc11afb3ce0f8194a14a660b8439bb798cabfe65c2f8",
+      "entry_hash": "bf981e0ed2f79dd8aa2aefe03a22432837f717f2e1b6f88bcc76cce34ba1989d",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:PoolLvl_2",
+      "source": "A player has upgraded their pool to level 2!",
+      "source_hash": "a42e00762163fed4a1a9812857fa5fa0a06bfeec5cefcb7b8d48668e5dd97c58",
+      "entry_hash": "9051e4ba5e54dd9869cc87e4912c30262700a895be18e249f4c0dd356c871bb9",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:PoolLvl_3",
+      "source": "A player has upgraded their pool to level 3!",
+      "source_hash": "d91e3ae282673e4cbd07f409ec98ec6d8743ce5a4a76a25f87fa7d22db42bd4c",
+      "entry_hash": "6e1fa875afda11ddee9b995c2e4e4368298a0245427bba8bd9f7fedf96dc7109",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:PoolLvl_4",
+      "source": "A player has upgraded their pool to level 4!",
+      "source_hash": "18b0bb319c64e7fe95e6375812b8cd4fbc14ace7df1fd02ae6272d1eed29e60a",
+      "entry_hash": "de86a0a5013ad78f00d888cb9ce5d281b48b9fe15fc0383c657ccf263e603000",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeForbiddenPool",
+      "source": "Upgrade Forbidden Pool",
+      "source_hash": "e0d0c1877680de1b66198f4b30cea412577d7a6917c6cfce92443e41be13e146",
+      "entry_hash": "14ab57dbd7df6286f27d25b5a8c3e9011782fd15ec11df0e6f3951cf9c8dc8e8",
+      "protected_tokens": []
+    },
+    {
+      "id": "UPGRADED:ForbiddenPool",
+      "source": "Forbidden Pool",
+      "source_hash": "df8a87564c1a85e3b1ec7c0b7b848b5dff16ce264ea43646b4273b1b52ea314d",
+      "entry_hash": "faedf5d561f28b0bbd221afba10435177a0f4c543495d8a05c612be94993b286",
+      "protected_tokens": []
+    },
+    {
+      "id": "UPGRADE:ForbiddenPool",
+      "source": "Grants access to adept units",
+      "source_hash": "32c23cc99eba8cb4ccc35a475787c61c2f9f2fd5bddaf19613335319f4494f5f",
+      "entry_hash": "8ab9b9487edcb35cf58dec862f98eaddf03b49772fc1022e4194907d7b135732",
+      "protected_tokens": []
+    },
+    {
+      "id": "UPGRADE:ForbiddenPool2",
+      "source": "Grants access to elite units",
+      "source_hash": "57129ad1d475d1d907d3c072d7e1ffa069ac97e868841a022bae40f4c22fa6ed",
+      "entry_hash": "356beebbf43e97993046c5364869799c951aed401cbb6faa60d3fe519b446678",
+      "protected_tokens": []
+    },
+    {
+      "id": "UPGRADE:ForbiddenPool3",
+      "source": "Grants access to super units",
+      "source_hash": "623536f6f9557a66adf7869d2f0435e676949e260b04fe8e5d59cd50e0b0401a",
+      "entry_hash": "8523e202ab97daca891bbd5fa1d654943c4ecd248c846681b628c61beb6664f8",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:Melee",
+      "source": "Melee units",
+      "source_hash": "1b4dcf685ad9268cffa22f7fa51a9abde02a3a109bca04c4a90c84ea82401779",
+      "entry_hash": "f0e650860859db16a95cb18934485ecda4fe575d6c84d6d054dd69e591faa59d",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:ChooseMelee",
+      "source": "Show units which attack at close range",
+      "source_hash": "cbf14cf6803ed33b3ba1c3b1c3d20addfce594ac3df39307321996bd71e79422",
+      "entry_hash": "3dd43130a1b10db8eba00d5873fb4239eb999a55e23c2d988027886439564be6",
+      "protected_tokens": []
+    },
+    {
+      "id": "RW:Archers",
+      "source": "Ranged units",
+      "source_hash": "4cd27c75d846a8dc80881396a9c2e9026399426ed675cb790e5b2529954688bc",
+      "entry_hash": "dcf0819d184ee22a226723e17fa8774fae8e64bb536c16319eb271ae0a49a404",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "2b13320287208be13fe44f38ac56562282cc814498c37b288154f970bff0aa7a"
+}

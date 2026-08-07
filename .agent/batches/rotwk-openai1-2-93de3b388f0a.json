@@ -1,0 +1,157 @@
+{
+  "schema_version": 3,
+  "batch_id": "93de3b388f0a4426a93eefd7bdaea157",
+  "worker": "rotwk-openai1-2",
+  "created_at": "2026-08-05T19:58:32.955077+00:00",
+  "lease_expires_at": "2026-08-06T01:58:32.953995+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-openai1-2-93de3b388f0a.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "OBJECT:MoneyMaker",
+      "source": "Gold mine",
+      "source_hash": "c08301549c82153e6eab29f0dde57963efd365b5473adfd9633011671953f781",
+      "entry_hash": "fdd59ea1a1f726220e3ed74df6000c6b0e3b0aa4c7e11bcb0a565a86b5f366c6",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:MoneyMakerDescription",
+      "source": "Generates resources",
+      "source_hash": "85a9e8b46d445173b8dad22351fdea669a962ad2f28a5badca28ee9311d11071",
+      "entry_hash": "3a94789072cc1a3e7c5c1cc0c5d9168f4bec89e9650a214245db5bef24e41a90",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:PowerPointMaker",
+      "source": "White tree of power",
+      "source_hash": "290e8beb404add806cafeaece3267e7cc7f819598499e8b92ddd4a7c18092271",
+      "entry_hash": "02818155450d27fe2b3a780239352f4d1c1eb7eb0975f7bf23f9ac56a156bbe5",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:PowerPointMakerDescription",
+      "source": "Generates power points",
+      "source_hash": "dcade9300c63ad2f2d8024a8e2c4a017af2694161b0ee3cc30ae0e34f68a5710",
+      "entry_hash": "294438cc230fd4308b3cb14e9ac69d122caeec29c8a8a3f53c2bf2ac7b2906d9",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:CommandPointMaker",
+      "source": "Supply warehouse",
+      "source_hash": "278c4586c7a32254b8a675d2a198d3ff566a925fe137233c30171f2536d110c3",
+      "entry_hash": "111f8fd4baf4299a74f137fa9fcf303b19737c880c84fd0b80ff0017b2a4863e",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:CommandPointMakerDescription",
+      "source": "Allows to increase Command Points",
+      "source_hash": "8e155d7015ae32224b14e3d24dc92cb46b5efd9768e057c012f4e533a2443f90",
+      "entry_hash": "1e7484ab919d801370a61251df3c6f07c1d7e131d1ce38df0cd2c0b68d0aa865",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:MoneyMaker_V2Building",
+      "source": "Miners' Mine",
+      "source_hash": "2e5bf97f6dde69cb126e88fa76bf67c157467d75d7681bb0244b93c7ce8343c4",
+      "entry_hash": "dd652afd6e335532ea5bbd17bb8969bcfb9bb98924b96c6eb764af46ca0e83ff",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:MoneyMaker_V2BuildingDescription",
+      "source": "Allows to build dwarven miners and research upgrades",
+      "source_hash": "ec892ee75ff4391cba4e95e842dcb29e6e3945737216c70b3730bfd0fc704cd7",
+      "entry_hash": "3a711807b8cdcd132bfabcb843c006aad13d8124f166a353ed3072c49c97ac21",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:CustomOre",
+      "source": "Gold ore",
+      "source_hash": "2ce4b32b766ec19865d5816b00addd3145665de8eeed091cdc5613179d91049f",
+      "entry_hash": "27d2b4e0e0d36b699544ea78c184cb4198fb126522f50a309916ed34395431fc",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:CustomOreDescription",
+      "source": "X",
+      "source_hash": "9dba4d19e62910c92d039e14ed7af8b480367676f9e7715b765283942f5abc79",
+      "entry_hash": "55f97d09363fa9f613cef2fb6505208bdb8b65ab14f5efb585fadb843ca0156a",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:PowerPointMaker_v2Building",
+      "source": "Barad-dur",
+      "source_hash": "f897bd214dfcb92db35cf517a2149245e71bebe71e815c00b59cc8e9053be6ca",
+      "entry_hash": "b04631a3f6afdd797c4af8f1b56f8e0dc759815f0c82bfd1e71d2c563bb78175",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:PowerPointMaker_v2BuildingDescription",
+      "source": "X",
+      "source_hash": "3c236474bf425bfdea28fc31362d62cfcdec4da5f28ba780cb192aef4afc349d",
+      "entry_hash": "0d77c7335b6da6854cc129da8f34a0e487ffb7571b09009fb8638bdd6e763f05",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:AngmarWightMakerTower",
+      "source": "Tower of Necromancy",
+      "source_hash": "944fe1c58b45dcb39ce6c47bb89cdfbbe59175d0d96b885d5b0611a43e6a843e",
+      "entry_hash": "07ef52d0a4aba600f2f996950e28386708bbe6c25699cbbe5ab6bc46f1f44321",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:AngmarWightMakerTowerDescription",
+      "source": "X",
+      "source_hash": "3122d385b91ceba357e4f4034134f1dd6a25413f5d2ef56151687c2be33e989d",
+      "entry_hash": "269b99d55716fdfdd207eece62bb52876a6a24d9933586305b8e6f5ec3c8c7fe",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:GenericUpgradeMaker",
+      "source": "Universal forge",
+      "source_hash": "08b9ec01c3c1a429270906ece15aba599f5ae4485e1b4b9af45c1d6375a12fb1",
+      "entry_hash": "39cd49f2d71357f85ce3aeb0e12017cf7e9229d124c8b66c30b5ea8ab59796bc",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:GenericUpgradeMakerDescription",
+      "source": "Researches unit upgrades",
+      "source_hash": "3643d2e3b341a98592b0f1c451d4aaf459168b6fde43335dc37b5462fd95584c",
+      "entry_hash": "e97410972a8a1d89bac65daccfe90df7e9357b4f7b2606e43a9a46f8c48f94fe",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:CustomCampKeepTactics",
+      "source": "Ð¡itadel",
+      "source_hash": "d3151e536936ad8f241fa6bd7f4d44a35a11d41d9315fe46ad58f0729d2195a7",
+      "entry_hash": "bf7a7327194f1b67343583b2250c6613d313689aee78751920dc478acc3516f6",
+      "protected_tokens": []
+    },
+    {
+      "id": "UPGRADE:CustomGenericUpgrades",
+      "source": "X",
+      "source_hash": "d0de56142fb73c4de805f54516a87fff625bd6c25bc5e8c91fe912809680772b",
+      "entry_hash": "e43a4f0ec84c53dc843421ce90a6f1fbfbe296a207d93e71255ad620cf468083",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:mapmpthelaststand",
+      "source": "*Keep Defence: The Last Stand",
+      "source_hash": "cab37f5c4f1018e26356a9003f8a88ab3e04b8505d808602d9f2cc40b90a0420",
+      "entry_hash": "8370e3bcc5b9b249a418a2cf6ee9b501d4798c519e03fd7dda32fb348fff065c",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:mapmppuzzlersringwar",
+      "source": "*Fort Defence: Puzzler's Ring War",
+      "source_hash": "bdfb4d9866aaf63e3a078ded547bef05e1465e8b1ee03bfd8212fae37b2ff52d",
+      "entry_hash": "88057ed37df573ffcc19ec23a910ac7bda4fa5ba79e40471ab8e6ac4dcb826fc",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "62d8f3d74422f7e32aa52cd7cca2cc9b0784524453c7301c1e021e136daa74c5"
+}

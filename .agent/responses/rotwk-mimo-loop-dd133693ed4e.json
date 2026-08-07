@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "dd133693ed4e40a2b3508486f03227a4",
+  "worker": "rotwk-mimo-loop",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipSmite",
+      "translation": "Ataque a distancia poderoso contra un solo objetivo \\n Inflige gran daño a unidades voladoras \\n Daño: 600 (Héroe) \\n Alcance del objetivo: 300 \\n Tiempo de recarga: 1m \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDisguise",
+      "translation": "Requiere Nivel 3 \\n Disfrazarse como un Rohirrim normal \\n Eowyn se vuelve sigilosa cuando hay Rohirrim cercanos \\n Se revelará y hará +200% de daño a un solo objetivo con la primera lanza \\n Duración: Persistente \\n Tiempo de recarga: 30s \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipShieldMaiden",
+      "translation": "Requiere Nivel 5 \\n Eowyn obtiene +100% de Armadura \\n Duración: 45s \\n Tiempo de recarga: 2m \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipKingsFavor",
+      "translation": "Requiere Nivel 4 \\n Las unidades objetivo obtienen excelente Experiencia \\n Experiencia otorgada: 115 XP \\n Radio del objetivo: 150 \\n Alcance del objetivo: 200 \\n Tiempo de recarga: 2m 30s \\n Clic izquierdo en el icono y luego clic izquierdo en las unidades objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGloriousCharge",
+      "translation": "Requiere Nivel 6 \\n Tipo de modificador: Hechizo \\n Théoden y la caballería cercana obtienen +300% de Armadura \\n Se acumula con Liderazgo y Hechizos \\n Ninguna fuerza puede frenar esta carga \\n Théoden debe estar montado para usar la habilidad \\n Radio: 200 \\n Duración: 20s \\n Tiempo de recarga: 4m \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCaptainofGondor",
+      "translation": "Requiere Nivel 4 \\n Otorga experiencia moderada a las unidades objetivo \\n Experiencia otorgada: 80 XP \\n Radio del objetivo: 150 \\n Alcance del objetivo: 200 \\n Tiempo de recarga: 2m 30s \\n Clic izquierdo en el icono y luego clic izquierdo en las unidades objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLastStand",
+      "translation": "Cuando tiene poca salud, Boromir obtiene +33% de Armadura y +33% de Daño \\n Duración: Variable \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHornofGondor",
+      "translation": "Requiere Nivel 2 \\n Tipo de modificador: Debuff pasivo \\n Las unidades enemigas dentro de un gran radio quedan brevemente aturdidas y sufren -20% de Daño y -20% de Armadura \\n No se acumula con otros Debuffs \\n Efecto de aturdimiento desbloqueado en Nivel 5 \\n Radio del Debuff: 350 \\n Radio de aturdimiento: 275 \\n Duración del Debuff: 20s \\n Duración del aturdimiento: 5s \\n Tiempo de recarga: 1m 15s \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCaptainofGondorBoromir",
+      "translation": "Requiere Nivel 4 \\n Otorga buena Experiencia a las unidades objetivo \\n Experiencia otorgada: 90 XP \\n Radio del objetivo: 150 \\n Alcance del objetivo: 200 \\n Tiempo de recarga: 2m 30s \\n Clic izquierdo en el icono y luego clic izquierdo en las unidades objetivo"
+    },
+    {
+      "id": "CONTROLBAR:TooltipAthelas",
+      "translation": "Cura gradualmente a los héroes aliados cercanos \\n Cantidad de curación: 100/s de Salud \\n Radio: 200 \\n Duración 10s \\n Tiempo de recarga: 1m 30s \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:TooltipBladeMaster",
+      "translation": "Requiere Nivel 2 \\n Aragorn obtiene temporalmente +100% de Daño y +100% de Armadura \\n Radio de daño por salpicadura: 10 \\n Duración: 30s \\n Tiempo de recarga: 2m \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipElendil",
+      "translation": "Requiere Nivel 6 \\n Tipo de modificador: Debuff activo \\n Hace que las unidades enemigas cercanas huyan \\n Los enemigos en huida sufren -20% de Daño y -20% de Armadura \\n Nulifica el Liderazgo enemigo \\n Radio: 200 \\n Duración del Terror: 5s \\n Duración del Debuff: 20s \\n Tiempo de recarga: 2m \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipOathbreakers",
+      "translation": "Requiere Nivel 10 \\n Invoca al Ejército de los Muertos \\n Duración: 30s \\n Tiempo de recarga: 5m \\n Clic izquierdo en el icono y luego clic izquierdo en una ubicación transitable"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWizardBlast",
+      "translation": "Ataque de corto alcance que empuja a los enemigos \\n Daño: 750 (Magia) \\n Radio de daño por salpicadura: 110 \\n Alcance del objetivo: 100 \\n Tiempo de recarga: 45s \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLightningSword",
+      "translation": "Requiere Nivel 2 \\n Dispara rayos de la espada de Gandalf \\n Daño: 275 (Magia) y 60 (Llama) \\n Radio del objetivo: 120 \\n Radio de daño por salpicadura: 15 \\n Alcance del objetivo: 300 \\n Total de rayos: 11 \\n Tiempo de recarga: 2m \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWordofPower",
+      "translation": "Requiere Nivel 10 \\n Envía una onda de choque que mata a los enemigos circundantes \\n Daño: 1500 (Magia) \\n Radio: 250 \\n Tiempo de recarga: 6m \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMenLongShotAbility",
+      "translation": "Requiere Nivel 2 \\n Los exploradores bombardean un área con una lluvia de flechas \\n Daño: 250 (Perforación) \\n Radio del objetivo: 80 \\n Alcance del objetivo: 1000 \\n Tiempo de recarga: 2m \\n Clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMenLongShotAbilitySummoned",
+      "translation": "Los exploradores bombardean un área con una lluvia de flechas \\n Daño: 250 (Perforación) \\n Radio del objetivo: 80 \\n Alcance del objetivo: 1000 \\n Tiempo de recarga: 2m \\n Clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:TooltipElvenGrace",
+      "translation": "Requiere Nivel 2 \\n Cura gradualmente a los héroes aliados cercanos \\n Cantidad de curación: 100/s de Salud \\n Radio: 200 \\n Duración 10s \\n Tiempo de recarga: 1m 30s \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPersonalFlood",
+      "translation": "Requiere Nivel 4 \\n Invoca una inundación que dañará a los enemigos y apagará fuegos \\n Daño Nivel 4: 80/s (Asedio) \\n Daño Nivel 7: 240/s (Asedio) \\n Daño Nivel 10: 480/s (Asedio) \\n Radio del objetivo: 100 \\n Alcance del objetivo: 150 \\n Tiempo de recarga: 3m \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGlorfindelBladeOfPurity ",
+      "translation": "Requiere Nivel 3 \\n Glorfindel obtiene \\n +100% de Daño y +50% de Armadura \\n Solo se puede usar cuando está desmontado \\n Radio de daño por salpicadura: 10 \\n Duración: 30s \\n Tiempo de recarga: 2m \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGlorfindelWindRider",
+      "translation": "Requiere Nivel 6 \\n Glorfindel obtiene +40% de Velocidad y +100% de Armadura, y plana sobre los enemigos como el viento cuando está montado \\n Velocidad: 154 \\n Duración: 30s \\n Tiempo de recarga: 2m \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:TooltipElrondAthelas",
+      "translation": "Requiere Nivel 3 \\n Cura gradualmente a las unidades aliadas cercanas \\n Cantidad de curación: 100/s de Salud \\n Radio: 200 \\n Duración 10s \\n Tiempo de recarga: 1m 30s \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipElvenCloakThranduil",
+      "translation": "Permite a Thranduil ocultarse mientras está de pie \\n Duración: Persistente \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipThornofVengeance",
+      "translation": "Requiere Nivel 10 \\n Un ataque de un solo disparo extremadamente poderoso que inflige daño por salpicadura \\n Daño: 1700 (Magia) y 2000 (Héroe) \\n Radio de daño por salpicadura: 35 \\n Alcance del objetivo: 375 \\n Tiempo de recarga: 4m \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    }
+  ]
+}

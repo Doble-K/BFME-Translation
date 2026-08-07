@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "0497c7f69cf44b0796e910d04c87546a",
+  "worker": "rotwk-mimo-all-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:TooltipEnableCEContents",
+      "translation": "Activa las funciones especiales de la Edición Coleccionista de Rise of the Witch-king para tu facción en esta partida \n Las funciones especiales incluyen varios efectos gráficos y de audio únicos"
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityDwarvenVigilance",
+      "translation": "Triplica el Rango de Visión del Constructor \n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorHeavyArmorPurchased",
+      "translation": "Permite a los batallones comprar la mejora de Armadura Pesada \n Cuando está equipada, reduce significativamente la cantidad de daño recibido \n \n Tiempo de investigación: 30s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorFireStonesPurchased",
+      "translation": "Permite a los Trebuchets comprar la mejora de Piedras de Fuego \n Cuando está equipada, aumenta significativamente el daño causado por los Trebuchets \n \n Tiempo de investigación: 30s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorBasicTrainingPurchased",
+      "translation": "Permite a los batallones comprar la mejora de Portaestandarte \n Aumenta un batallón al Nivel 2 \n \n Tiempo de investigación: 30s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildIronOreUpgradePurchased",
+      "translation": "Reduce el costo de las mejoras Hojas Forjadas y Armadura Pesada en un 25% \n \n Tiempo de investigación: 45s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildSiegeMaterialsUpgradePurchased",
+      "translation": "Las estructuras destruidas reembolsan el 50% del costo \n El jugador debe mantener un Mercado para beneficiarse de esta mejora \n \n Tiempo de investigación: 45s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressBannersPurchased",
+      "translation": "Tipo de modificador: Liderazgo \n Los aliados cerca de la Fortaleza obtienen +25% de Daño, +25% de Armadura y ganan Experiencia un 50% más rápido \n Se acumula con Beneficios y Hechizos \n\nReduce el costo de los Héroes en un 10% \n Reduce el tiempo de reclutamiento de Héroes en un 10% \n Reduce el costo de los constructores en un 20% \n Radio: 300 \n \n Tiempo de mejora: 15s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressHouseOfHealingPurchased",
+      "translation": "Cura rápidamente a los aliados cercanos y reabastece los batallones de unidades \n No se acumula con otras estructuras de curación \n Reduce el costo de reanimación de Héroes en un 20% \n Tasa de curación: 6% /2s \n Radio: 300 \n \n Tiempo de mejora: 30s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeMenFortressBoilingOilPurchased",
+      "translation": "Permite a la Fortaleza verter aceite hirviente sobre las tropas enemigas cercanas \n \n Tiempo de mejora: 30s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:TooltipEnableCEContentsPurchased",
+      "translation": "Activa las funciones especiales de la Edición Coleccionista de Rise of the Witch-king para tu facción en esta partida \n Las funciones especiales incluyen varios efectos gráficos y de audio únicos \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeGondorHeavyArmorPurchased",
+      "translation": "Mejora este batallón con Armadura Pesada \n Reduce significativamente la cantidad de daño recibido \n \n Tiempo de mejora: 10s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeGondorFireStonesPurchased",
+      "translation": "Mejora este Trebuchet con Piedras de Fuego \n Aumenta significativamente el daño del Trebuchet \n \n Tiempo de mejora: 10s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeGondorForgedBladesPurchased",
+      "translation": "Mejora este batallón con Hojas Forjadas \n Aumenta el daño causado por las Armas Cuerpo a Cuerpo \n \n Tiempo de mejora: 10s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeGondorFireArrowsPurchased",
+      "translation": "Mejora este batallón con Flechas de Fuego \n Aumenta significativamente el daño causado por las Flechas \n \n Tiempo de mejora: 10s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeGondorBasicTrainingPurchased",
+      "translation": "Aumenta este batallón al Nivel 2 \n Solo se puede equipar en el Nivel 1 \n \n Tiempo de mejora: 10s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeRohanBasicTrainingPurchased",
+      "translation": "Aumenta una unidad al Nivel 2 \n Solo se puede equipar en el Nivel 1 \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeSentryTowerFireArrowsPurchased",
+      "translation": "Mejora esta Torre con Flechas de Fuego \n Aumenta el daño causado por las Flechas \n \n Tiempo de investigación: 30s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenBasicTrainingPurchased",
+      "translation": "Permite a los batallones comprar la mejora de Portaestandarte \n Aumenta un batallón al Nivel 2 \n \n Tiempo de investigación: 30s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElderRacesBasicTrainingPurchased",
+      "translation": "Aumenta este batallón al Nivel 2 \n Solo se puede equipar en el Nivel 1 \n \n Tiempo de mejora: 10s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyGondorForgedBladesPurchased",
+      "translation": "Permite a los batallones comprar la mejora de Hojas Forjadas \n Cuando está equipada, aumenta el daño causado por las Armas Cuerpo a Cuerpo \n \n Tiempo de investigación: 30s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeElvenForgedBladesPurchased",
+      "translation": "Mejora este batallón con Hojas Forjadas \n Cuando está equipada, aumenta el daño causado por las Armas Cuerpo a Cuerpo \n \n Tiempo de mejora: 10s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseUpgradeElvenSilverthornArrowsBattleTowerPurchased",
+      "translation": "Mejora esta Torre de Batalla con Flechas de Plata \n Aumenta el daño causado por las Flechas \n \n Tiempo de investigación: 30s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:TooltipPurchaseUpgradeElvenSilverthornArrowsPurchased",
+      "translation": "Mejora este batallón con Flechas de Plata \n Aumenta significativamente el daño causado por las Flechas \n \n Tiempo de mejora: 10s \n \n Esta mejora ya ha sido comprada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseTechnologyElvenSilverthornArrowsPurchased",
+      "translation": "Permite a los batallones comprar la mejora de Flechas de Plata \n Cuando está equipada, aumenta significativamente el daño causado por las Flechas \n \n Tiempo de investigación: 30s \n \n Esta mejora ya ha sido comprada"
+    }
+  ]
+}

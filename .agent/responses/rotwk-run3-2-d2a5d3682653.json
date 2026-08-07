@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "d2a5d36826534cf2b2bcdaceb858798d",
+  "worker": "rotwk-run3-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipConstructMordorBarricadeExpansion",
+      "translation": "Torre defensiva con varios Arqueros Orcos estacionados en la cima \\n\\n Tiempo de construcción: 20s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_MenWallUpgradeToPosternGate",
+      "translation": "Permite que las unidades aliadas atraviesen el muro \\n Invisible para los enemigos \\n\\n Tiempo de construcción: 15s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorWallUpgradeToPosternGate",
+      "translation": "Permite que las unidades aliadas atraviesen el muro \\n Invisible para los enemigos \\n\\n Tiempo de construcción: 15s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_MenWallUpgradeToTower",
+      "translation": "Dispara flechas contra las tropas enemigas \\n\\n Tiempo de construcción: 20s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorWallUpgradeToTower",
+      "translation": "Dispara flechas contra las tropas enemigas \\n\\n Tiempo de construcción: 20s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_MenWallUpgradeToTrebuchet",
+      "translation": "Arma defensiva de largo alcance \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorWallUpgradeToTrebuchet",
+      "translation": "Arma defensiva de largo alcance \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_MenWallUpgradeToHub",
+      "translation": "Permite la construcción de muros adicionales \\n Radio de construcción de muros: 1000 \\n\\n Tiempo de construcción: 35s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorWallUpgradeToHub",
+      "translation": "Permite la construcción de muros adicionales \\n Radio de construcción de muros: 1000 \\n\\n Tiempo de construcción: 35s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_MenWallUpgradeToRegularGate",
+      "translation": "Puerta defensiva principal que puede abrirse y cerrarse \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorWallUpgradeToRegularGate",
+      "translation": "Puerta defensiva principal que puede abrirse y cerrarse \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_GondorCastleWallHub_BeginWallSpan",
+      "translation": "Haz clic izquierdo y arrastra para construir un Muro \\n\\n Tiempo de construcción: 20s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCommand_ArnorCastleWallHub_BeginWallSpan",
+      "translation": "Haz clic izquierdo y arrastra para construir un Muro \\n\\n Tiempo de construcción: 20s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToHub",
+      "translation": "Permite la construcción de muros adicionales \\n Radio de construcción de muros: 1000 \\n\\n Tiempo de construcción: 35s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToCatapult",
+      "translation": "Arma defensiva de largo alcance \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToTower",
+      "translation": "Lanza hachas contra las unidades enemigas cercanas \\n\\n Tiempo de construcción: 20s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenCastleWallHub_BeginWallSpan",
+      "translation": "Haz clic izquierdo y arrastra para construir un Muro \\n\\n Tiempo de construcción: 20s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToPosternGate",
+      "translation": "Permite que las unidades aliadas atraviesen el muro \\n Invisible para los enemigos \\n\\n Tiempo de construcción: 15s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_DwarvenWallUpgradeToRegularGate",
+      "translation": "Puerta defensiva principal que puede abrirse y cerrarse \\n\\n Tiempo de construcción: 30s"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCommand_ElvenWallUpgradeToRegularGate",
+      "translation": "Puerta defensiva principal que puede abrirse y cerrarse \\n\\n Tiempo de construcción: 30s"
+    }
+  ]
+}

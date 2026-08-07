@@ -1,0 +1,192 @@
+{
+  "schema_version": 3,
+  "batch_id": "4e81a7689ebd41b5bbb98a7ae59e4b41",
+  "worker": "rotwk-laguna-all-3",
+  "created_at": "2026-08-06T08:10:44.120558+00:00",
+  "lease_expires_at": "2026-08-06T14:10:44.119241+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-laguna-all-3-4e81a7689ebd.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_HINT_04",
+      "source": "When the Palantir exploded, the pieces must have fallen in the area. We must retrieve them before the Arnorians do.",
+      "source_hash": "5a3b4b27baf764d79569d58b77c501324b0d362e4fdd36ccf9e90d20c4095237",
+      "entry_hash": "271c691a707796ac59e56da711a02f59964e34713b24bf8b06185a2bf667f32f",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_HINT_05",
+      "source": "A Palantir shard has been found by the Arnorians. We must retrieve the other shards before they do.",
+      "source_hash": "9f074225a17a0de290ba6c744fcedc574765cea3085bae5fd940c3effb602d11",
+      "entry_hash": "edc8f9a081eff1712ce533348b8c7687497741c420de6dc5d101dbc5d871c523",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_HINT_06",
+      "source": "Our Builder has arrived.",
+      "source_hash": "cff4695f48ae2e5c36ac046d90b0295652d9c181e362860b4dbcb990f51d1bed",
+      "entry_hash": "064476aa11d4cfa047bac388f273020f877012c455d6f19abe041e65df0e18c4",
+      "protected_tokens": []
+    },
+    {
+      "id": " SCRIPT:RANGERS_ARRIVE_01",
+      "source": "DARK RANGER: The pursuit force was supposed to be here. Let's set up camp and search the area.",
+      "source_hash": "4d1788a57f6a809162d01a943d173ea61d262cc61a7758f23e4c0c089a22ae7d",
+      "entry_hash": "6c152f552ea697e9d36a7d6e19263b92aca9c61fe3a016987d277d4fdcc85458",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_COMP",
+      "source": "Objective Complete",
+      "source_hash": "168eb3239d0414b08a27e7c9518f900eb753235a9a01ef62a55fcb218487f48b",
+      "entry_hash": "10923630d740a72d0b595ca9b6cebf9fe642c0f2e86849ba256d6e022057318d",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:RECOVER_SHARD_INTRO_02",
+      "source": "DARK RANGER: I can feel the power in this object. We must take it to the Witch-king.",
+      "source_hash": "7f6ea5ac33b9e5803194ff5cee6731d998668a5e7b2c8d35827e060c59fc917c",
+      "entry_hash": "98d314563fca3d67e569ca96d970e5f88184f79952b2e58d7ff23d022f94c4fc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:RECOVER_SHARD_INTRO_01",
+      "source": "MORGOMIR: I feel a deadness in this place.",
+      "source_hash": "d2cdc6f52fe4978da21bdf0b371a213a7f26afbed2bfcd2b0dc8ee45702477c3",
+      "entry_hash": "a94a353f808b6841fc226a329059d70515a6ae9dfed16c607ad133800427e0ed",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:RECOVER_SHARD_INTRO_04",
+      "source": "You are to retrieve all of the shards in the area. We cannot allow Arnor to retrieve any more.",
+      "source_hash": "1564a13c5472be569e8badcc3aff50412ce4b76c3a38040308d444aad31e33c8",
+      "entry_hash": "e85dc6967a3acb9818dd73290ae310fbcfa93f456adee32100ebebeca24aa249",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:SHARD_COLLECT_01",
+      "source": "ARNOR SOLDIER: Sir, this is where the lookouts saw one of the objects land.",
+      "source_hash": "b3018d86ca0f93bcb61dcd61af3d9d0974220c9f52dcb6b5fa3afcfdc749fcd9",
+      "entry_hash": "7dfb3601731b73762e252f63137e7fc503f360e724d68dba4555711e824f187b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:SHARD_COLLECT_02",
+      "source": "ARNOR OFFICER: What is it? Gather it up and we'll take it back to the outpost.",
+      "source_hash": "b9a47a172d1e0e6dd95f9e44c72858bcfcdf09fb0362c620d2dcaa10508c209f",
+      "entry_hash": "71250d27caafbfde471c81bc0c97232c2731cf25b72f904c6474504fe9971129",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:SHARD_COLLECT_03",
+      "source": "ARNOR OFFICER: We'll dispatch more patrols to investigate the other areas after we return with the object.",
+      "source_hash": "d00b56c14c858b5261b640b50306bbc5e41a339a8d7d4e799eca686bfd87aa49",
+      "entry_hash": "95e4f25a17f8ce592743387bce3aef5d56723f1a11664f7e84fbc1312bc95cdc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ARNORHASSHARD",
+      "source": "ANGMAR OFFICER: Arnor has recovered a shard!",
+      "source_hash": "17ecf6cfe2227ee65002ea199b53488bd6c0277c5cae81b58eaaee229d1aecd8",
+      "entry_hash": "9f8a126788ff2052a9af5162bbebcc7e4dc274a06fbab0f34848f16131b5a4af",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ARNORSHARDCOUNTER",
+      "source": "Arnor Shard Count:",
+      "source_hash": "ae7203110e62436c4a7154a937ffda4181e7f0ba8acb7a89a9d71a5d28bb8ba8",
+      "entry_hash": "a840b6b329c0cd78910f2c2346d84f6fc49a3bc1b10c928f6e4053db32069465",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:SHARD_RETURN_HINT",
+      "source": "Send the unit carrying the shard back to the fortress to drop it off.",
+      "source_hash": "026909bfce84b281999d8d2310e61b7f945d59542de140c21622b17137060c1e",
+      "entry_hash": "01f6a0619563228d7094a6dc89aa92b065b24715c1506210f50f74057c0f10e6",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:SHARD_PICKED_UP_HINT",
+      "source": "Return the shard to the lit area in front of your fortress.",
+      "source_hash": "81a645c93017199437c602651d971954ac934f67efa612bb91f8ef1baa1cec36",
+      "entry_hash": "fb001ea0e54f81142af2e05ea7382246a1d162fa9e1f501538deb3b9e0068f7f",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_FAILED",
+      "source": "The king is too far ahead of us! We have failed.",
+      "source_hash": "26d0087550269a8232bdb4e21909576cb2a758de893e04ed330f506325140e47",
+      "entry_hash": "081f9465b28d080bcad187e239acb772ec8d4dd08f17f43e9ff2b6d290c2fcd8",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_1",
+      "source": "MORGOMIR: We have no power here. There must be some reason.",
+      "source_hash": "241b6093baae406af6b3e848b5207e4b25e2bd95829ca167aa9973920546905c",
+      "entry_hash": "ec25e18f61f1d478f950dc9099948dbd9d618de8b7fb2cdeac093573150146c4",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_2",
+      "source": "MORGOMIR: Our strength returns.",
+      "source_hash": "251c765ad5909ddfb64c671d199c086a619825b9ca557568f62d82cbc5b59934",
+      "entry_hash": "01b5566cd7befedaa2124c5f52bf2a7630eac61f2ea709780031c183c2c02b34",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_3",
+      "source": "MORGOMIR: Our powers become ours once again.",
+      "source_hash": "845f2bf3c8797a81fea3467af4b30b5224c0ab3f52b23e135cb19dd130714b16",
+      "entry_hash": "5e9d882a17c56f2079882de77cab179f45aa80a9445794644af125e65fe87546",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_4",
+      "source": "MORGOMIR: Yes, one more and we shall once again be at full strength!",
+      "source_hash": "431d02e654b4ec782958205f247c94efdd729e2ec0d6bd9759efe6317980a9b4",
+      "entry_hash": "d69d5e9aa10e02419628fd8d5e28380b71bcca351735f710c0b8117846332c0b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_5",
+      "source": "MORGOMIR: Our powers are complete once again!",
+      "source_hash": "db6dd7f6af6ea38552abfbf3755ef729032c4a257e68e9831fd7293eb1d29dcc",
+      "entry_hash": "e0eeab6623b06f7d415e0e62cb71bee562816339ff3c76be5446b791d3e26662",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWER_6",
+      "source": "MORGOMIR: I feel a deadness in this place.",
+      "source_hash": "4a600e0b9775be6912087210fe7e178ad9215936edafa4f7641831ef2a5677aa",
+      "entry_hash": "9618a0930501a53f5742d8d35df6a10b7682ca4f4929a9ccb7bd1d3a8095f829",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_3_SHARDS_COLLECTED",
+      "source": "They have collected a third shard. We must prevent them from claiming another!",
+      "source_hash": "86f56568e4fc2566a35fce76a98f6b57f61ee83c002d6b7052fb784722d7c603",
+      "entry_hash": "c62e056abed6e76432beed9c8d4e01fae5e17dd7651aad74538f8f156a5e95e8",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_DESTROY_BASE_AUDIO",
+      "source": "ANGMAR OFFICER: We must destroy their base and recover the shards they have taken.",
+      "source_hash": "90399c3f60de9a66d32cee0eb0e42420f26f51e1f75bc1502e5f6fa17c2258d5",
+      "entry_hash": "c9dad1e77fa8f2273660f50a82265ee5ef8b7c1928a9884e12f2d660ed5d9432",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARK_EYE_POWERS_RETURN",
+      "source": "Some of your powers have returned",
+      "source_hash": "d6b1b86ce94f71980536696a40c4507908bc0e7200092669a7308ac330968496",
+      "entry_hash": "6604820ff18f39481a980ad7c864221fabd9d5ed238da18568647fa693e66ae2",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "d334f1a584e425166c7597b03d30d5dacfc05d838bdf51e5f6121480cb6ef01e"
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "69f71dfec010464ca10f441ac6260bff",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarThrallMaster",
+      "translation": "Capaz de invocar una variedad de unidades para que le sirvan\\n\\nTipo de unidad: Espadachín\\nTiempo de reclutamiento: 23s\\nNivel 2: +10% Salud, +10% Daño, 10/s Regeneración de Salud\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "TOOLTIP:RhudaurSpearmen",
+      "translation": "Tipo de daño: Especialista\\nSalud: 170\\nDaño cuerpo a cuerpo: 40 (Especialista)\\nDaño de venganza aplastante: 250\\nDaño de venganza aplastante mejorado: 375\\nVelocidad de ataque cuerpo a cuerpo: 1.5s\\nVelocidad de movimiento: 55\\nAlcance visual: 400"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildAngmarHillTrollHorde",
+      "translation": "Requiere Guarida de Trolls y Lobos de Nivel 2\\nFuerte contra Caballería y Monstruos\\nPuede cambiar de formación para proteger a otras unidades\\n\\nTipo de unidad: Piquero de Élite\\nTiempo de reclutamiento: 40s\\nNivel 2: +10% Salud, +10% Daño\\nNiveles 3-4: +10% Salud, +9% Daño\\nNivel 5: +10% Salud, +8% Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipElvenGifts",
+      "translation": "Los héroes ganan +50% de daño\\nAumenta la regeneración de salud del héroe en 10/s\\nPoder pasivo"
+    },
+    {
+      "id": "CONTROLBAR:FireArrowUpgrade",
+      "translation": "Comprar Flechas de Fuego [&w]"
+    },
+    {
+      "id": "Map:MAPMPFordsofBruinen",
+      "translation": "Vados del Bruinen"
+    },
+    {
+      "id": "Map:MAPMPFordsofBruinen/Desc",
+      "translation": "Los bosques de las tierras altas, formados mayormente por hayas, se extendían al oeste de Rivendel, donde fluye el río Bruinen, un lugar de caza favorito para los trolls que bajaban de las montañas para atacar a los viajeros de la gran carretera del oeste.\\n\\nTamaño: 385 x 320\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Huargo\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTrollFindTree",
+      "translation": "Encuentra un árbol para usarlo como arma\\nAumenta el radio de daño en salpicadura del Troll\\nRadio de búsqueda: 600\\nClic izquierdo para activar"
+    },
+    {
+      "id": "TOOLTIP:FortressFireDrake",
+      "translation": "Tipo de daño: Fuego\\nVelocidad de ataque a distancia: 3s\\nRadio de daño en salpicadura: 30\\nVelocidad de movimiento: 70\\nAlcance del aliento de fuego: 100\\nAlcance visual: 300"
+    },
+    {
+      "id": "TOOLTIP:GreaterWightSummoned",
+      "translation": "Tipo de daño: Magia\\nVelocidad de ataque cuerpo a cuerpo: 1.4s\\nRadio de daño en salpicadura: 10\\nMultiplicador de drenaje de vida: 0.35x\\nVelocidad de movimiento: 55\\nVelocidad de movimiento en carga: 70\\nAlcance visual: 200"
+    },
+    {
+      "id": "OBJECT:RohanArcher",
+      "translation": "Arquero Yeoman"
+    },
+    {
+      "id": "OBJECT:HordeRohanArcher",
+      "translation": "Arqueros Yeoman"
+    },
+    {
+      "id": "Map:MAPMPWestfold/desc",
+      "translation": "Una tierra rocosa y escasamente arbolada en la región occidental de Rohan.\\n\\nTamaño: 375 x 325\\nGuaridas: 4x Guarida de Huargo\\nEstructuras Neutrales: 2x Fuego de Señales"
+    },
+    {
+      "id": "Map:MapMPRuinsofDunland",
+      "translation": "Ruinas de Dunland"
+    },
+    {
+      "id": "Map:MapMPRuinsofDunland/Desc",
+      "translation": "Una región de Dunland marcada por los restos ardientes de un campamento dunlendino.\\n\\nTamaño: 380 x 380\\nGuaridas: 4x Campamento de Salvajes, 2x Guarida de Troll, 2x Guarida de Huargo\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPWestArthedain",
+      "translation": "Arthedain Occidental"
+    },
+    {
+      "id": "Map:MAPMPWestArthedain/Desc",
+      "translation": "Una exuberante región occidental en el reino de Arnor.\\n\\nTamaño: 380 x 340\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Goblin, 2x Guarida de Huargo\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPWestfarthing",
+      "translation": "Marca del Oeste"
+    },
+    {
+      "id": "Map:MAPMPWestfarthing/Desc",
+      "translation": "La Marca del Oeste era la marca más occidental y más poblada de la Comarca, y era el sitio de las poblaciones de Delagua, Tocoburgo y Hobbiton.\\n\\nTamaño: 375 x 365\\nGuaridas: 2x Guarida de Troll, 4x Guarida de Huargo, 2x Guarida de Goblin\\nEstructuras Neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPIsleofBalar",
+      "translation": "Isla de Balar"
+    }
+  ]
+}

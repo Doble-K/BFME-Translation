@@ -1,0 +1,252 @@
+{
+  "schema_version": 3,
+  "batch_id": "988d6e50421e42dbb57f4b229e0dcf18",
+  "worker": "rotwk-mimo-all-4",
+  "created_at": "2026-08-06T07:50:52.134691+00:00",
+  "lease_expires_at": "2026-08-06T13:50:52.133375+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-all-4-988d6e50421e.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPRohanII",
+      "source": "Rohan II",
+      "source_hash": "8d5697ba35768ac59789b5fce6c70a0d1980691efb86fd04ff4e2b9670c49cbf",
+      "entry_hash": "e4717cbf31a22e09b31f97fbe0f3b4beafc686f60189aa7ab3fbc78df26f8724",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPRohanII/Desc",
+      "source": "A great kingdom in Middle-earth ruled by King Theoden. It is the home of the Rohirrim, the finest horsemen of Middle-earth.\\n\\n Size: 300 x 300\\n Lairs: 2x Warg Lair, 2x Troll Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "3adc61bb69a89a14de22e2282c79e4fed0861b51613f4aa54d99f46fd200c0a4",
+      "entry_hash": "ea6e4622f2e7f00faca88d198324113747faa5b0c790de8deed754bb41603ad8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPRohanFortifications",
+      "source": "Rohan Fortifications",
+      "source_hash": "a0593969609920f0cb502f782c0024cabe4ac53caa9057c9d828ca26f2381422",
+      "entry_hash": "5f6cf8e23ea08710be11d329899c3c0306f24a308ed5b8af3c9370ad78a0cb53",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPRohanFortifications/Desc",
+      "source": "Rohan is a grassland inhabited by Rohirrim. Before and during the Battle of the Hornburg they had to fight with Dunlendings, men related to the House of Haleth.\\n\\n Size: 360 x 380\\n Lairs: 2x Spider Lair, 2x Troll Lair, 2x Destructible Gates\\n Neutral Structures: 2x Inn",
+      "source_hash": "73fa7bb653b5ad734256eea54fc5bf05cadf69c9462424c941df8e8c0012e5e5",
+      "entry_hash": "5289ead4fcf71e9227cc1b32c4fd0d25123742c018a4c47ad991c04cbc1ac8f4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPStaddle",
+      "source": "Staddle",
+      "source_hash": "8c8a84eb579fa0f3562069e9e0dd1982d84f588ab1e08ff0cfb84e5d675a2810",
+      "entry_hash": "c7f749812819fca32dc6e9837f62d0908b2144d26bd5eac03659c6cfe35b2435",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPStaddle/Desc",
+      "source": "A village in Bree Land, located on the southeastern side of Bree-hill.\\n\\n Size: 498 x 518\\n Lairs: 4x Warg Lair, 4x Troll Lair\\n Neutral Structures: 2x Inn, 2x Signal Fire",
+      "source_hash": "78c257df20f30bba5c31427e673873afcf168736b6f7153f69cb0650bd5ba67d",
+      "entry_hash": "3002e5e210a462ba886c9ff9d7b485a8c606d9f7c3f2c9d5b048cfae72426cdd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPStonewainCanyon",
+      "source": "Stonewain Canyon",
+      "source_hash": "208d5272c7b40e0493f7a4154394454270180c287b7a06ee6655049bf6e54038",
+      "entry_hash": "8b36ebd5b535031e7cd7ebfb5cea7142cb0400ab32055dac949e9ab25f9064c3",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPStonewainCanyon/Desc",
+      "source": "Stonewain Canyon is a road that had been made in ancient days by the Men of Gondor. Theoden used the old canyon as the route to reach Gondor to aid the Men of Minas Tirith.\\n\\n Size: 550 x 460\\n Lairs: 8x Troll Lair, 3x Fire Drake Lair\\n Neutral Structures: 4x Outpost, x Inn, 2x Signal Fire",
+      "source_hash": "5f13a2bb2290157a29899261c454f6de600625f2e7cc7013adb2f85baa2ffb60",
+      "entry_hash": "2cdae8c426552364c828b99beff9faa854aa899ac7668be08131f76bcbec81b9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPStonewainValley",
+      "source": "Stonewain Valley",
+      "source_hash": "88529d45ea375301574560d5c4a66622390f6c12ae4120238e91959322f141fe",
+      "entry_hash": "1a7f4ae0f199841284037ceafcea4fcdc7c3d04ebf68a60e1665a1008d7a4916",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPStonewainValley/Desc",
+      "source": "This valley was made in the Ancient days by Men as a route from the quarries beneath Nardol to Minas Anor.\\n\\n Size: 550 x 250\\n Lairs: 4x Troll Lair, 2x Fire Drake Lair\\n Neutral Structures: 2x Outpost, 1x Signal Fire",
+      "source_hash": "77d5a410c065b5672290086aa2232413f968ff0154d5920ffeb6b2651428d777",
+      "entry_hash": "36f65cb430d964d54ce4828de8e017afacb9afef509f3621926e785a72835c15",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarna",
+      "source": "Tombs of Karna",
+      "source_hash": "f779fbac12c23faf62277c66c6014a9883928f262e82bead9b3a2914e32a704b",
+      "entry_hash": "85b83369810ca200899eea07706a43caf2877472e1e07a959a0b410348e92332",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPTombsOfKarna/Desc",
+      "source": "Chosen for their fertility and beauty, these oasis spots serve as gravesites for the rulers of Far Harad.\\n\\n Size: 380 x 380\\n Lairs: 4x Goblin Lair, 2x Troll Lair\\n Neutral Structures: 2x Inn, 1x Signal Fire",
+      "source_hash": "2e3210c06e850b121ce1666e752fe01ce47be3f17200e7605ac68d0fc749bfa6",
+      "entry_hash": "ae0390b175f1b7a6e28f97e332f8f9d3c8bf7107acd5ed71727b159dd17c2a84",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPTyrnGorthad",
+      "source": "Tyrn Gorthad",
+      "source_hash": "4f562e6fd9748cbbda3a595ab3b7cb52b5cc560f71b06590ba08bbceac074f6d",
+      "entry_hash": "8ec5fa61265bed7dac73699b3dba86d2ea4575e8e290e90401af072bc89ba715",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPTyrnGorthad/Desc",
+      "source": "Better known as the Barrow-downs, the ancient burial grounds of the kings of Arnor were corrupted with evil spirits by the Witch-king.\\n\\n Size: 370 x 320\\n Lairs: 7x Barrow Wight Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "d4e9543b166fbebe7c82e0e8d58b46cedb01e06bfd4da646e5900faadfadce9b",
+      "entry_hash": "f273e2cd1cfe80f858d68ac5452b38595d430f3b8313433e52aa6681a6e7a757",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPUmbar",
+      "source": "Umbar",
+      "source_hash": "ddcf3a604d660100af0ceb4c4621b71f37b4fee03bc3cebd9b5eded435609f82",
+      "entry_hash": "d44e255092b7a2ae25c5b635d650c4e366ececfae50bc36c7b11ec77421a8549",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPUmbar/Desc",
+      "source": "This great cape is held by the Black Numenoreans who have long feuded with the Men of Gondor.\\n\\n Size: 310 x 317\\n Lairs: 2x Spider Lair, 2x Barrow Wight Lair\\n Neutral Structures: 1x Inn, 1x Signal Fire, 4x Shipwright",
+      "source_hash": "661352472ebae9de501d8a40775d04e60ce8504e05dac236af90e15c5bd668a4",
+      "entry_hash": "9db14d1f48221993684dbb074987805362e03b5dde3ae2c546545df448757ac3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPWeathertop",
+      "source": "Weathertop",
+      "source_hash": "7f1da6881f4ba4fb6b457b363df4db4633f2f6af23a2bb053d6a2779d0bc2906",
+      "entry_hash": "1510cb112dde13077246af527f853777c0f6b21ec0892203f34afaed7e76b0aa",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPWeathertop/Desc",
+      "source": "The ancient Tower of Amon Sul was built by the North Kingdom to hold one of their three Palantiri. Destroyed by the armies of Angmar, now all that remains is a ring of broken stonework.\\n\\n Size: 450 x 415\\n Lairs: 8x Troll Lair\\n Neutral Structures: 4x Inn, 4x Tower",
+      "source_hash": "2221ea686ead0bcd51779973e84f1eca38f6847e454cda55be144c7ca9810eee",
+      "entry_hash": "3a4656f93a6768b5413a145471450586964f595ce8733b67cc1b537e47ea0dcb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPWestfold",
+      "source": "Westfold",
+      "source_hash": "08355ff592f16ed23d61cd8c8b2b6e9915d7e49d6b633dcf24e41c20be84f388",
+      "entry_hash": "93c6024d001dd0d9d354aafbf7aac10894d8704c9c08149081c0dfb5044b1313",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPWestmarch",
+      "source": "Westmarch",
+      "source_hash": "fc244692a4e1795c6b1b4a2eaf18a3d01135756c65d7b245a4ae1742a88dfdbb",
+      "entry_hash": "3489cf4b1b8c2a3a4c2c07446797e7cc563a22b56ac2688acdaecb3f48552f13",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPWestmarch/Desc",
+      "source": "A land of meadows and rises, between the Tower Hills and the Shire.\\n\\n Size: 500 x 350\\n Lairs: 4x Troll Lair\\n Neutral Structures: 4x Inn, 1x Signal Fire",
+      "source_hash": "1433728360d128cf27bc6d5c9cea7696b1f5f816b0050f4b31812d322c268024",
+      "entry_hash": "1adf39a4a824dd06529e42b0324d1b61eb6023951bc506f60ca6f05be0c1e9fd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPWildsOfForochel",
+      "source": "Wilds of Forochel",
+      "source_hash": "6b95e42af9a202ab0202d4201efdf54140be26416bfda1236e4177cc007036f0",
+      "entry_hash": "d898fa0500c99a50251167cf343e3222c72838cbd016e17483e3e9ed4b99536d",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPWildsOfForochel/Desc",
+      "source": "A wild and treacherous region of Forochel scarcely inhabited by small northmen tribes.\\n\\n Size: 500 x 500\\n Lairs: 5x Warg Lair, 5x Troll Lair\\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "61a47290281e43236cc5ea0cbe941f73abe948fc4f98beec5f87e2467c2854e2",
+      "entry_hash": "d8147233c459605270357f21c72bd43b907a68656b06dab846d523e03b5d62ce",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPWitheredHeath",
+      "source": "Withered Heath",
+      "source_hash": "2976fad827144d06c605bc73b21f53dea31bc09fff776eaff83bf7de424de0c4",
+      "entry_hash": "5a7366b1c15116c7fc1f6828974d7aa321a5c0ef273ac1aedfa4d83b70dcd8e9",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPWitheredHeath/Desc",
+      "source": "This desolate region in the Grey Mountains is feared by many to be the breeding ground of dragons.\\n\\n Size: 400 x 550\\n Lairs: 2x Goblin Lair, 2x Fire Drake Lair\\n Neutral Structures: 2x Inn, 2x Signal Fire",
+      "source_hash": "cc52d469ec89bee3092842339cd30a67985f430246bfeda037b7ed8a783efcf4",
+      "entry_hash": "dee6b10b3812a62f5228acefafabcdc41f3d80e51f40727f7fccad5ce38a32c1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "890d750ac4a3d41f661ad83689af34ba2eb09814b88168d0d16b12e606f60985"
+}

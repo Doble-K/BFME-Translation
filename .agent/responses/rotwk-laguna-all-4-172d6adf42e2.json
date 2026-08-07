@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "172d6adf42e2481a8a1b545ca038827e",
+  "worker": "rotwk-laguna-all-4",
+  "translations": [
+    {
+      "id": "SCRIPT:CARNDUMOPEN",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOPEN2",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOPEN3",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ROGASHARRIVES",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOBJECTIVE1",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOBJECTIVE2",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOBJECTIVE2PT2",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUMOBJECTIVE3",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUM_SECONDATTACK",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUM_THIRDATTACK",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARNDUM_FOURTHATTACK",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GETROGASH",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:ROGASHTIMER",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:RETAKEAREA",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:REBUILDAREA",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CDRETAKEOBJ",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CDREBUILDOBJ",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLOFINDELSPEEKS",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLOFINDALSPEEKS2",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLOFINDELLEAVES",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLORFINDELCLOSE",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLORFINDELARRIVES",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:CARN_DUM_LINDON_ELVES_ARRIVE",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLOFINDELOBJ",
+      "translation": ""
+    },
+    {
+      "id": "SCRIPT:GLORFINDELOBJHINT",
+      "translation": ""
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "4423e49b4e9849fda3c4832aee9ee084",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericPowerPointUpgrade1",
+      "translation": "Aumenta la ganancia de experiencia en 1625 (1/4 de punto)\\n Tiempo de mejora: 50s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericPowerPointUpgrade8",
+      "translation": "Aumenta la ganancia de experiencia en 3250 (2/4 de punto)\\n Tiempo de mejora: 50s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseGenericPowerPointUpgrade9",
+      "translation": "Aumenta la ganancia de experiencia en 3250 (2/4 de punto)\\n Tiempo de mejora: 50s"
+    },
+    {
+      "id": "TLS:1",
+      "translation": "Aquí puedes ganar y aumentar la cantidad de recursos y puntos de poder que recibes"
+    },
+    {
+      "id": "TLS:2",
+      "translation": "Aquí puedes elegir uno de tres bonificaciones, comprar varias habilidades y subir el nivel de la ciudadela"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroDamageSection",
+      "translation": "Mejoras de Arma"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroDamageSection",
+      "translation": "Sección de Mejoras de Daño"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroArmorSection",
+      "translation": "Mejoras de Armadura"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroArmorSection",
+      "translation": "Sección de Mejoras de Armadura"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroRechargeSection",
+      "translation": "Mejoras de Tiempo de Recarga de Habilidades"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroRechargeSection",
+      "translation": "Sección de Mejoras de Tiempo de Recarga de Habilidades"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroAttackRangeSection",
+      "translation": "Mejoras de Alcance de Ataque"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroAttackRangeSection",
+      "translation": "Sección de Mejoras de Alcance de Ataque"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroAttackSpeedSection",
+      "translation": "Mejoras de Velocidad de Ataque"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroAttackSpeedSection",
+      "translation": "Sección de Mejoras de Velocidad de Ataque"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroMovementSpeedSection",
+      "translation": "Mejoras de Velocidad de Movimiento"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroMovementSpeedSection",
+      "translation": "Sección de Mejoras de Velocidad de Movimiento"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroAutoHealSection",
+      "translation": "Mejoras de Autocuración"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroAutoHealSection",
+      "translation": "Sección de Mejoras de Autocuración"
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroBountySection",
+      "translation": "Mejoras de Recompensa"
+    }
+  ]
+}

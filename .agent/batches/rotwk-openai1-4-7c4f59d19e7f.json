@@ -1,0 +1,157 @@
+{
+  "schema_version": 3,
+  "batch_id": "7c4f59d19e7f4fc6a2ed8a219a5fb486",
+  "worker": "rotwk-openai1-4",
+  "created_at": "2026-08-05T19:54:11.534536+00:00",
+  "lease_expires_at": "2026-08-06T01:54:11.533435+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-openai1-4-7c4f59d19e7f.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroBountySection",
+      "source": "Bounty Upgrades Section",
+      "source_hash": "1abe965de7ba5ec40faab8f96d2ea59849b8fbac36d7f519af4a7dc0864d3911",
+      "entry_hash": "358d2642e4caaba49ec914f251ec98bad66f39cfcc51ec34289750543129d7c9",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroExperienceSection",
+      "source": "Experience Upgrades",
+      "source_hash": "41b56e3430eb7dde7f43b979a32f497c66ab17f875cda6982742ba76bc1bc82b",
+      "entry_hash": "7cc3cc0a429e13fabaec19ec00def136574a206cd4032115e41c8a32e06e3770",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroExperienceSection",
+      "source": "Experience Upgrades Section",
+      "source_hash": "36ede7ad41c118ca01e85e780f583f997efe994faabd8a1740e3c6008695830e",
+      "entry_hash": "b5716ac23f5bf887286c4001f20efc4acc33e2c9862696fa83e3888697195faa",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroAuraSection",
+      "source": "Aura Upgrades",
+      "source_hash": "b99d97ef1dbb9fc728c3e19b6fd97d89b18e77f3d51c5838cb12ea029795e2e9",
+      "entry_hash": "0e60b93bd77e1f695c6653656af2cf63b2c249a1aa8341d1d45e1e2013dd3b74",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroAuraSection",
+      "source": "Aura Upgrades Section",
+      "source_hash": "cb1c2f5011f4bf08933a5fe8103397a20c8164661e061e0aedc4fe500485ab9e",
+      "entry_hash": "8dcf6390783ed217a064ddfd62c66a0a3e7368897fc97c02b3c93a34d458b593",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:SelectCustomHeroStoreSecondSection",
+      "source": "Other Updates",
+      "source_hash": "8f75ef42a4e04956de2b6fc31e7a1ae892e946d4c14863734ac133e6482c524f",
+      "entry_hash": "e1483349c8698aac79ce4fda72a7b3a4867b8c6508d6dc708ba4f444ecc17cfc",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSelectCustomHeroStoreSecondSection",
+      "source": "Switching Sections",
+      "source_hash": "eaab41a6018e6ca2df74fb990f9912993a95902a1e8a574f25c487bd6e34e923",
+      "entry_hash": "fea303fb42edf515450fd344c05542892e39d69527b392f8ba679c13b9899d62",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroDamageBonus_1",
+      "source": "Damage Upgrade Level 1",
+      "source_hash": "96265b3e55b49362873da2dec917be80bc07bc1f61202008cb0b1514006b0260",
+      "entry_hash": "64bd8f2003dc0b7ef77b2829d672bcf4a3b93deaf17f010b08ac0cdb2c8e6cf8",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroDamageBonus_1",
+      "source": "Permanently increases heroes' damage by 10% (Does not affect allies)",
+      "source_hash": "f5fc96bdd328ebb92be32e3a6e6ce6f0e60b647adabc35c1cc5a315025f1d4de",
+      "entry_hash": "b675858e11990d2457e8e2c1f75c4e9d8b0bf36bfac13e4186e2ba4e3ec9e604",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroDamageBonus_2",
+      "source": "Damage Upgrade Level 2",
+      "source_hash": "9ce7926d4dcd1fc0b13f4652ab7bd12fbd192462c375c389dfa4fb85047d93da",
+      "entry_hash": "39b849e67679cc3b23079f45976c9c9347aed23012bbfdb14356b69834bb5eaf",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroDamageBonus_2",
+      "source": "Permanently increases heroes' damage by 15% (Does not affect allies)",
+      "source_hash": "0e133bc4ec1d1c07d0df03c6a063796d1486d439c7d579acdcd249991698e677",
+      "entry_hash": "c912aced9676be345b298d7f38ccb28f527928b5a13aa4e37b987259dfe03ebd",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroDamageBonus_3",
+      "source": "Damage Upgrade Level 3",
+      "source_hash": "dc015556ace52f90ab78db7b2ddc2a50c844d908a49e0d6bc7074933d94e3cbd",
+      "entry_hash": "02307d8ba3555c5f2829ecd4d36704cc79283e57db454c193984e4a7b8da3028",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroDamageBonus_3",
+      "source": "Permanently increases heroes' damage by 20% (Does not affect allies)",
+      "source_hash": "0635427f92e4b5a265e839e13b3515bc55b366e0db947dc6c68614f63793f362",
+      "entry_hash": "0f25148a19b09ed31ca6b555889a179c39a4d99a711d33fbdd4bc1cb475288b2",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroDamageBonus_4",
+      "source": "Damage Upgrade Level 4",
+      "source_hash": "bd2e9a9ee418a9f3560a3a78242b61d9e2913f78ec3a7b75fea32a307ee4d479",
+      "entry_hash": "75d4d293ce7aefce5fae9aa63bfdbc570592b259f6eda4ae79fdfc96ad3adf15",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroDamageBonus_4",
+      "source": "Permanently increases heroes' damage by 25% (Does not affect allies)",
+      "source_hash": "baf63b01ed7dff3132e3cb25afe42ce90765566bfc9101f57017ee8a29935c64",
+      "entry_hash": "7945ec286d523ff040e31582b904bf35171ac2b8d8060929e9dd38bb2db0a4cb",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroArmorBonus_1",
+      "source": "Damage Upgrade Level 1",
+      "source_hash": "1ab5be5069e4b143059767881f6fc8ad112b395b0c92f238034ebb2f5652724c",
+      "entry_hash": "50bf7fac5f473dc645971c99d08ade61ee837e860ba7ba820bf7fc1ca145a39f",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroArmorBonus_1",
+      "source": "Permanently increases heroes' Armor by 10% (Does not affect allies)",
+      "source_hash": "0a09c886ac11144aaafef666ed4167106c94e25c4dce03e0db863ceab44d86bf",
+      "entry_hash": "0a009bb063b9e1bdd838c8f5d3beba472c95e6b3e062e312a739cc4576ac58b3",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroArmorBonus_2",
+      "source": "Damage Upgrade Level 2",
+      "source_hash": "248a023ae3fac13a23ddc6d16a729cd52512dbc84d578a9d8fff6db1337a33eb",
+      "entry_hash": "3d3adda4a6110c260cf1eeaefcbeb473c89dee9577caed07679940ca6a3b27dc",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroArmorBonus_2",
+      "source": "Permanently increases heroes' Armor by 15% (Does not affect allies)",
+      "source_hash": "07a9a8f75a7b100769f342625bafd30800b68ed679f0f68c416c59648c1fcc68",
+      "entry_hash": "0a735f66fa3c0a424977ad2536338fd70cbd3f03229a60fe0a8e0507c6ab0723",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroArmorBonus_3",
+      "source": "Damage Upgrade Level 3",
+      "source_hash": "ac9a83bd2ac9cfe09f3ebf36f5d2e57df999d932a512d425a8355cf9d788db93",
+      "entry_hash": "44ac2cf651d2d9a9dbcaf03f65bc15042a0340c47dbdcb5ff54c294d73acd9fc",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "f42ac11343d46fb2a6e6a664d22bf63345151fea9ed4f3a60c390ef4e0cbb1c6"
+}

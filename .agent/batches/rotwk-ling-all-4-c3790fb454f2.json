@@ -1,0 +1,252 @@
+{
+  "schema_version": 3,
+  "batch_id": "c3790fb454f244f69dd0232b833bdcf2",
+  "worker": "rotwk-ling-all-4",
+  "created_at": "2026-08-06T07:09:22.147857+00:00",
+  "lease_expires_at": "2026-08-06T13:09:22.146542+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-ling-all-4-c3790fb454f2.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "Map:MAPMPAnorien",
+      "source": "Anorien",
+      "source_hash": "f311f76a2fb96340b0adde6224328b67afa87901730d5dcb73a40048faaf6cd5",
+      "entry_hash": "e5b4b543ad439bf44ca478774d052ada18d98e114ca7fa967dc6fd4cd19fed2e",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPAnorien/Desc",
+      "source": "The northwestern territory of Gondor that forms the border between Gondor and Rohan.\\n\\n Size: 421 x 361\\n Lairs: 2x Warg Lair, 2x Troll Lair\\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "9506a07157450dbc39d3e88011d1d60ccc4484b2dba165fe0956077309eea18f",
+      "entry_hash": "62bb8e8e748939b8bcd3dd7ecfa0a175b6cbb8dccc701ef6f6a1a66586737494",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPArgonath",
+      "source": "Argonath",
+      "source_hash": "62f00561a48a74862c52efc291c9ce655ee6064e13a6532619289e1f416c62a8",
+      "entry_hash": "96eaf2f57c54bcd502344dd8628b9ebd517931b0e41e2e69ad57b59a57c40c78",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPArgonath/Desc",
+      "source": "The two mighty statues along the Anduin River were carved in the likeness of the Gondor Kings, Isildur and Anarion. They marked the northern border of Gondor.\\n\\n Size: 315 x 370\\n Lairs: 4x Goblin Lair, 2x Spider Lair\\n Neutral Structures: 2x Outpost, 2x Inn, 2x Signal Fire, 4x Tower",
+      "source_hash": "07ef5829d0603a4dac1ca60db04b4c1bfca3b783cbe639dff74fa6b35d586bd9",
+      "entry_hash": "dee69908641e5097f6a2356f8b82b3c38232600794acdaa8ef17a0ee86d39182",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPAzanulbizarValley",
+      "source": "Azanulbizar Valley",
+      "source_hash": "3ec7db901bd4b1f599fc679e62e8cbabc3fb6ea96672535debcccb6816aa7e48",
+      "entry_hash": "cde42cc61961c61cdbec2b2415097c61f1b8fe4ff47905afc251d40e45b277c2",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPAzanulbizarValley/Desc",
+      "source": "A great valley lying between the foothills of the mountains around the lake of Kheled-zaram. The final battle of the War of the Dwarves and Orcs took place here.\\n\\n Size: 370 x 380\\n Lairs: 4x Goblin Lair, 4x Troll Lair\\n Neutral Structures: 1x Outpost, 2x Inn",
+      "source_hash": "7ca41f2321647ad6719c01f7cd02190df6d6e561da33bb290cf9179d635f4012",
+      "entry_hash": "dac2b10f323aef716a40e9c6df6f7c8bf8697b8c121b88655c5f7b37c7b5a097",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPDale",
+      "source": "Dale",
+      "source_hash": "a8f368b80e8f52f6b6ae400f81a2e8372179ab1675e7661c5260f9eb24bb24ac",
+      "entry_hash": "2cb08fa6653e6cb75d0d5e7370299c1ccb4e4e41c8ce7d2631a181a38c15f01b",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPDale/Desc",
+      "source": "A flourishing city of Men located at the foot of the Lonely Mountain.\\n\\n Size: 360 x 400\\n Lairs: 4x Troll Lair\\n Neutral Structures: 1x Outpost, 2x Inn, 2x Signal Fire",
+      "source_hash": "2af4fad870debe8709a8d946e1f10cce8cf7d08e728cfcb64e5e9edbe1286c94",
+      "entry_hash": "b9344f60d614c24be9ee9081c4e429c4e87bb587fc279f073857e1807a8cdbef",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPDesertofRhun",
+      "source": "Desert of Rhun",
+      "source_hash": "0086c842195d0c3c6e97171daa2dac98f994737cb5f7f2b3a5908f727b43c248",
+      "entry_hash": "eda30b43a8265227b476bec39d0fc0d9d02f0462c6b6e6f0b21827244e142f45",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPDesertofRhun/Desc",
+      "source": "A vast desert lying to the south-east of Rhun. Many unprepared travellers lose their way attempting to traverse this rugged region. \\n\\n Size: 550 x 550\\n Lairs: 6x Goblin Lair\\n Neutral Structures: 2x Outpost, 2x Inn, 2x Signal Fire",
+      "source_hash": "a277eec53d2a8962340347af8b3abf884a819d822fc21fbb090be81f0490fed4",
+      "entry_hash": "eb97eabc7c26066ee99a45a3d686bdaaaf83c5a207d65baa6bef1e18ee8518ec",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPDruadanForest",
+      "source": "Druadan Forest",
+      "source_hash": "5baa1a33e4f28baf7d6e2b31c8663f04a2c96a5a4fd1b5d4492c888d343e0b9d",
+      "entry_hash": "5b0a340870362bd6f7c2cd45b168f49d3c1742295019522b22f8d8ea942bd2ea",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPDruadanForest/Desc",
+      "source": "The Druadan Forest is a pine forest in Gondor, located in Anorien, north of Minas Tirith. The forest is home to mysterious folk known as the Druedain, the Wild Men of the Woods.\\n\\n Size: 500 x 500\\n Lairs: 4x Spider Lair, 4x Troll Lair\\n Neutral Structures: 2x Outpost, 1x Signal Fire",
+      "source_hash": "4a495f5408871b1e1057553bc380100d73f28e7feea058e0dd999d35c5c03b3a",
+      "entry_hash": "441234f1bf2e894dd2d0ceee9db747d846c77111873b5f8c0c8165fe6085f72a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPDungeonsOfErebor",
+      "source": "Dungeons of Erebor",
+      "source_hash": "a0a58e0ef483ff004062f055d52ef8157f6226f6cc287401da26d7694615430c",
+      "entry_hash": "466db6eb057f027f9243f7b9968731e58b111ac0bd433abbe2e3b2bec4cd8fb8",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPDungeonsOfErebor/Desc",
+      "source": "A vast cavern within the Lonely Mountain where the Dwarves mine their riches and trade with the Men of Dale.\\n\\n Size: 500 x 500\\n Lairs: 2x Goblin Lair, 4x Troll Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "4279de94510716f035f3a8d708fa53c5155f3dbf711c0dd830dcf5082d81c906",
+      "entry_hash": "0318c6fcb391272419c1aff3e3089ab2c6cfbb53cf3037fb641ffaf0d4091e84",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEastBight",
+      "source": "East Bight",
+      "source_hash": "2acd9e3082097b7a6009e7f0f7019fdf57c12ef54dfdb41d886ea8668d3167aa",
+      "entry_hash": "9386b5c94cd1e9a964da3ee55717ab74ae09e5fac8dc1bc85b1ee11a23b4557f",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPEastBight/Desc",
+      "source": "The indentation on the eastern side of Mirkwood, caused by generations of forestry. Trees now grow sparsely in this area.\\n\\n Size: 200 x 300\\n Lairs:\\n Neutral Structures: 2x Outpost",
+      "source_hash": "d97097216eac2855958de8353440e96ddaede8a10e3160a301e849b3450295b0",
+      "entry_hash": "a6f84a3cec6d414a706a85ca1091cb03c3a93ad8fb40432698d8b9b7673676ec",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEmynArnen",
+      "source": "Emyn Arnen",
+      "source_hash": "25f2b1ede962594561dfca03e9b71a90d212e367d55002f921cf9bcb196a3d06",
+      "entry_hash": "d3d7f18ab6ca892baa3566aa59beb5ac4ba685f6c84402b0bf790cbe0eec656d",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPEmynArnen/Desc",
+      "source": "Green, lush lands in central Gondor, bordering the dark mountains that separate Gondor from Mordor in the east.\\n\\n Size: 400 x 500\\n Lairs: 2x Goblin Lair, 2x Troll Lair\\n Neutral Structures: 1x Signal Fire",
+      "source_hash": "5d45990bd88ecc83dad0c660fdbcc07e036ab1b090a5efd123da939c67a06325",
+      "entry_hash": "b91f20b24ef5f192fcf77a021c6f9168c9ba7d2ccc6484a668ba451718d77b36",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPErech",
+      "source": "Erech",
+      "source_hash": "863e5d3c67e018c5f9995e404ed4daffa73a61f61b2f7adacac8f261600c61ea",
+      "entry_hash": "77a423329407e6b8ecdd9c6bf0f74204dbd7d4abcd6bb7b09aa9a6f33ec50775",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPErech/Desc",
+      "source": "An ancient site at the feet of the White Mountains in Gondor. Erech was most famous for a huge Stone, said to have fallen from heaven, though, in fact, brought to Middle-earth by Isildur.\\n\\n Size: 350 x 350\\n Lairs: 2x Spider Lair, 2x Barrow Wight Lair\\n Neutral Structures: 2x Signal Fire",
+      "source_hash": "d8fa632695f84a5d2e3f72626c6782f9350ef67631dab9d7fb3d7770e01b9988",
+      "entry_hash": "ebb8a9c955f855172df24057058247ffab34bbef28cdc1b3daca2718b80e4a5f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPErechII",
+      "source": "Erech II",
+      "source_hash": "e53f9d7c4ab190e356beb82dab83a59d22b72679a860a9710db6d1445f3e53de",
+      "entry_hash": "0e314a85f248eb15ce3e0c3e2cedb7e425236102486d31eaa0f8cb67fb7dfa58",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPErechII/Desc",
+      "source": "A hill west of Minas Tirith, where in ages past the faithless King of the Mountains swore an oath of fealty to Isildur.\\n\\n Size: 320 x 320\\n Lairs: 2x Troll Lair, 2x Barrow Wight Lair\\n Neutral Structures: 2x Inn",
+      "source_hash": "71dff20621c936bebbda405608a1065e3c07271cacd46ddf9f5b8e7952c30337",
+      "entry_hash": "658015666830a56ada310e81b60c61d388eb6a8514236ebb7f81a21908fa0f9f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEredMithrin",
+      "source": "Ered Mithrin",
+      "source_hash": "4c75c3b45cd29975929dae80e400cf5cf39714046006888a325cdbc03e2e066f",
+      "entry_hash": "e43175abf9864ec5b49b3e9e4aeec5a344ae079de2a13c7d2098633dcd74af1e",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPEredMithrin/Desc",
+      "source": "Of old the Ered Mithrin had been mined and inhabited by Dwarves of Durin's Folk, but by the Third Age only one Dwarven stronghold remained, standing strong against raiding Dragons from the nearby Withered Heath.\\n\\n Size: 600 x 500\\n Lairs: 4x Warg Lair, 1x Troll Lair, 3x Fire Drake Lair, 1x Destructible Environment\\n Neutral Structures: 1x Outpost, 1x Inn, 1x Signal Fire, 2x Tower",
+      "source_hash": "6b7f7ae951e9f2840da01bd49f725dc8a29d66fc3e4cc21c7a141fea3fff7836",
+      "entry_hash": "3763dbe10140474b0fdaedb8639bc4badacf80427dabcca0b9142a5234c3f6b8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPEregion",
+      "source": "Eregion",
+      "source_hash": "8d4a1d27b419cdd25db622029c8ef540ed0115cc201ab9d723fe4ec48237dd7e",
+      "entry_hash": "192f38f509284269b9eb07029a290a6851f9d2d1484dc280e94d78051e219f5f",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "abe23af77d72ed548a41c8869e97b72769fde44072334386b709dae3e20f3906"
+}

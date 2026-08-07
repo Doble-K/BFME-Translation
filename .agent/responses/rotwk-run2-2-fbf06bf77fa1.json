@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "fbf06bf77fa14bacadf92efd135e8d7a",
+  "worker": "rotwk-run2-2",
+  "translations": [
+    {
+      "id": "Map:MAPMPLebennin",
+      "translation": "Lebennin"
+    },
+    {
+      "id": "Map:MAPMPLebennin/Desc",
+      "translation": "Esta exuberante tierra verde en el sur de Gondor se encuentra donde el río Anduin completa su viaje hacia la Bahía de Belfalas.\\n\\nTamaño: 425 x 500\\nGuaridas: 2x Guarida de Troll, 6x Guarida de Warg, 4x Guarida de Goblin\\nEstructuras Neutrales: 3x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPWestRohan",
+      "translation": "Rohan del Oeste"
+    },
+    {
+      "id": "Map:MAPMPWestRohan/Desc",
+      "translation": "Una región dentro de la tierra de Rohan. También llamada Westemnet, la región se extiende a lo largo de las montañas hasta el Abismo de Helm y hasta la Brecha de Rohan.\\n\\nTamaño: 600 x 600\\nGuaridas: 5x Guarida de Warg, 2x Guarida de Troll\\nEstructuras Neutrales: 1x Puesto Avanzado, 2x Posada, 2x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPBelfalasAbyss",
+      "translation": "Abismo de Belfalas"
+    },
+    {
+      "id": "Map:MAPMPBelfalasAbyss/Desc",
+      "translation": "Las maravillosas profundidades del Mar de Belfalas.\\n\\nTamaño: 380 x 360\\nGuaridas: 2x Guarida de Araña, 2x Guarida de Espectro"
+    },
+    {
+      "id": "Map:MAPMPBlackGateII",
+      "translation": "Puerta Negra II"
+    },
+    {
+      "id": "Map:MAPMPBlackGateII/Desc",
+      "translation": "La entrada norte a las tierras de Mordor y el lugar del enfrentamiento final entre el bien y el mal.\\n\\nTamaño: 400 x 400\\nGuaridas: 2x Guarida de Troll\\nEstructuras Neutrales: 2x Puesto Avanzado, 1x Posada, 2x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPBlackrootVale",
+      "translation": "Valle Blackroot"
+    },
+    {
+      "id": "Map:MAPMPBlackrootVale/Desc",
+      "translation": "El Valle Blackroot, conocido como Mornan en sindarin, era un valle de ricos pastizales por el que fluía el río Blackroot.\\n\\nTamaño: 600 x 600\\nGuaridas: 4x Guarida de Troll, 2x Guarida de Espectro\\nEstructuras Neutrales: 2x Puesto Avanzado, 2x Posada, 1x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPFarDowns",
+      "translation": "Llanuras Lejanas"
+    },
+    {
+      "id": "Map:MAPMPFarDowns/Desc",
+      "translation": "Las tierras de colinas que marcaban las antiguas fronteras occidentales de la Comarca, a cuarenta leguas al oeste del Puente del Brandivino.\\n\\nTamaño: 400 x 440\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Espectro\\nEstructuras Neutrales: 2x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPBrithombar",
+      "translation": "Brithombar"
+    },
+    {
+      "id": "Map:MAPMPBrithombar/Desc",
+      "translation": "Una bahía fértil en el oeste de Beleriand. Como todas las demás regiones de Beleriand excepto Ered Luin y Lindon, se hundió al final de la Primera Edad.\\n\\nTamaño: 400 x 400\\nGuaridas: 2x Guarida de Troll, 2x Guarida de Goblin\\nEstructuras Neutrales: 2x Puesto Avanzado, 2x Fuego de Señales"
+    },
+    {
+      "id": "Map:MAPMPBywater",
+      "translation": "Bywater"
+    },
+    {
+      "id": "Map:MAPMPBywater/Desc",
+      "translation": "Bywater era un pueblo en la Cuaderna Occidental de la Comarca, al norte del Camino del Este. Albergaba la posada del Dragón Verde y entre sus residentes se encontraban la Familia Cotton y el Viejo Noakes.\\n\\nTamaño: 375 x 375\\nGuaridas: 2x Guarida de Warg"
+    },
+    {
+      "id": "Map:MAPMPCapeofNightfall",
+      "translation": "Cabo del Anochecer"
+    },
+    {
+      "id": "Map:MAPMPCapeofNightfall/Desc",
+      "translation": "Como el mar en constante ascenso alejó a la gente de esta tierra desconocida de sus hogares cerca del res Flores rr, se trasladaron tierra adentro y construyeron una espectacular fortaleza en lo alto de las colinas.\\n\\nTamaño: 480 x 480\\nGuaridas: 4x Guarida de Araña, 2x Guarida de Warg, 2x Guarida de Espectro de Túmulo\\nPuesto Avanzado: 2x, 2x Fuego de Señales, 2x Astillero"
+    },
+    {
+      "id": "Map:MAPMPCirdansCove",
+      "translation": "Ensenada de Cirdan"
+    },
+    {
+      "id": "Map:MAPMPCirdansCove/Desc",
+      "translation": "El Santuario oculto de Cirdan en las orillas de Harlindon.\\n\\nTamaño: 400 x 412\\nGuaridas: 4x Guarida de Goblin\\nEstructuras Neutrales: 2x Fuego de Señales"
+    }
+  ]
+}

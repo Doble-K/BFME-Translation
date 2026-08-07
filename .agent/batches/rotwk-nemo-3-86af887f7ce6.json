@@ -1,0 +1,324 @@
+{
+  "schema_version": 3,
+  "batch_id": "86af887f7ce646c1a225894fc8179598",
+  "worker": "rotwk-nemo-3",
+  "created_at": "2026-08-06T06:42:18.928790+00:00",
+  "lease_expires_at": "2026-08-06T12:42:18.927418+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-nemo-3-86af887f7ce6.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "OBJECT:MordorGreatSiegeWorksDescription",
+      "source": "Vision Range: 160 \\n Level 2 Siege Repair Rate: 4% /2s \\n Level 3 Siege Repair Rate: 6% /2s \\n Radius: 200 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "01569a0f404f4f7da74ebc2091fbe0db97632c7079f6f88dd216eba9dbd2f646",
+      "entry_hash": "03184c9bd7ccca85ee04cdfc898f3826bd2f595dcaa7d12e594cc3c25311effa",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMordorHaradrimPalace",
+      "source": "Trains Easterlings and Haradrim \\n\\n Build Time: 30s",
+      "source_hash": "e32209a9453f32f5ac640feb012e6128276d263b2eae10e49fa8a965ca9e67a6",
+      "entry_hash": "d7199e7ccb28a9cf9c3ce672dc137b7888db483466392bdb7b7f5febad7ed945",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:MordorHaradrimPalaceDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "434246ad1cf4d93492a48eea979ecdb989cd119befd358657b4654e8512509bf",
+      "entry_hash": "a1de9816f05505921db7d2b1d6a1d23ea1b56847873fc2d7a7fe769d1596c447",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMordorTavern",
+      "source": "Trains Corsairs of Umbar \\n Allows research of Mordor unit upgrades \\n\\n Build Time: 30s \\n\\n 2 Taverns = 10% cheaper unit upgrades \\n 3 Taverns = 15% cheaper unit upgrades",
+      "source_hash": "bad44fce2cc0a92c2eab5f24df1a54f34dd80c9049e7caffdd878fa566782329",
+      "entry_hash": "22dd292262cc2cc38e4525b395e29e5e7ce2508fbc764f8a64e60eb7b2fdb666",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructMordorWallCatapultExpansion",
+      "source": "Long range defensive weapon \\n\\n Build Time: 30s",
+      "source_hash": "708489478e7cfb304894bea73039f93858956a027a6a1d6aa7964fa17e88131d",
+      "entry_hash": "3f9cdc00b5843f187c322ae0b49c5ea54b927997bb0bf6e0d9219e61ecc896db",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorWallCatapultExpansionDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "78c7d7b96b3037225c066d813a965fec2508e3063907c2ee03b4624f03662791",
+      "entry_hash": "cd551a79e5662dfba2d251000091e9da281f3eff66b9fc27d7c411b76d380076",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:MordorFortressDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 120 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 800 \\n Repair Delay: 2m \\n Repair Rate: 0.3%/s",
+      "source_hash": "b443e04b044139b490b9d5e0a967d750962499c70f3e335cef8c24356838c19f",
+      "entry_hash": "be5e8f4a0a32407cdff350dc680a3e36ab7f75b41f39ed38a929765de474d756",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:GoblinCaveDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "067219cc126f8c5484da59e728e121d2191ce515d1af332816cbb2e013c2a8a4",
+      "entry_hash": "d7d7abd35c3a942e6b19443adf804f6457f01297d41385138421649d16c17e7a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGoblinFissure",
+      "source": "Trains Half-Troll Marauders, Cave Trolls, and Mountain Giants \\n\\n Build Time: 30s",
+      "source_hash": "9cb332b82f2ff1bfbd425d0fc3879dc5d8189971590157461b1ffe16baef2066",
+      "entry_hash": "df86440c26cef12ce3dc6d11f1937059b9aa4231d57d342e409575529bcc2450",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildGoblinFissure",
+      "source": "Trains Half-Troll Marauders, Half-Troll Swordsmen, Cave Trolls, Giants, and Fire Drake Broods \\n\\n Build Time: 30s",
+      "source_hash": "c4015a97482891195a8fadca2b613356af5a751b4b377d1d4e0f240ab3b0473d",
+      "entry_hash": "6725017624592f485db3122f5f9bd02f11dde0ee0480156b40de6ce41096aead",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:WildFortressDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 120 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 800 \\n Repair Delay: 2m \\n Repair Rate: 0.3%/s",
+      "source_hash": "7b34c3756a412096768e2e7b7b5b833773ae3e98d230b581d4085c285456ee44",
+      "entry_hash": "584372a12ddc32f1a1ccfef8bf8b49aa87ab90c274d6c69e0f47670a30d05e1e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildMineShaft",
+      "source": "Generates resources based on available terrain\\nProvides access to the tunnel network \\n Increases Command Point limit 50 \\n Resource output is reduced when structure is damaged \\n\\n Build Time: 15s",
+      "source_hash": "7a7ca02455e6e9c5f8ddf2174d38e25e8b9b4c78695a765d0b84d70e1f4aea1d",
+      "entry_hash": "808271bdfbc7b54fa87cf074e78f7d6644747cea7c0f75d1edc5259bd03d3c2f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:WildSentryTowerDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 650 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "95c872dc84578d24d4c0dafd116329700e91499e3ec9cb47cfe719b1b0f4d841",
+      "entry_hash": "af91de6036da69edcdd93c57297cfea557a55d2d4d0b04dfaa0b954ee83d7600",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildTreasureTrove",
+      "source": "Researches weapon and armor upgrades \\n\\n Build Time: 45s",
+      "source_hash": "778bfa431eda2e6b29280abfa9ada49926ac85f112a2760ffa3bc611dbb15388",
+      "entry_hash": "3c0be8753e3d52a6da45850a18980013c186ebb73c2c7a6b9edcad151887557f",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:WildTreasureTroveDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Flame) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "e4c3f9e40f2c5d3933b0c5f1770a48d320e7119e70afcffd863b6b74193a31ab",
+      "entry_hash": "1b0c4957f3c448b75fb8ae28a7ad246469f7942c6dac9144c680aa858a5a14b4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildSpiderHolesExpansion",
+      "source": "Spiders will emerge and attack nearby enemy units \\n\\n Build Time: 10s",
+      "source_hash": "f117967979a0d2d472a749c7dc9c86a2ae7e8cc1643b9bf35125557d90aa3d64",
+      "entry_hash": "e21c12118ee39e0866eed5689c9826b003d0b629dae86f7f4b73c26922657d0c",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildGiantSentryExpansion",
+      "source": "A Giant that hurls rocks at enemy units \\n\\n Build Time: 30s",
+      "source_hash": "acef3f3416eabf0e03c58c176c5c9ceffb82a213adc892387bb71fbb111e345d",
+      "entry_hash": "ab248981783843f2254693cdd6cc1b779707525e2b755f3dbce7b95a2d55402d",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWildGiantSentryExpansionDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "85ff40eec07ebb077be823ac1d8c8ec7279d83995289d3ac0e752e86c9808d55",
+      "entry_hash": "44966916fcad4aaaf1ffc2abdd2039900f735b7efdee64a830dc432ac840d6f8",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructWildBurrowsExpansion",
+      "source": "Connects this Fortress to the tunnel network \\n Increases decommission value of units \\n Increases Command Point limit by 75 \\n\\n Build Time: 10s",
+      "source_hash": "798c2f0cb7463045ebcc463ef002881eb5e8918fab44f7e5e929d6796b7aaf12",
+      "entry_hash": "5a628972495fd1cb9decea0f6111a516f0e44a110cf42681f7329cba9b987b10",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:WildFortressBurrowsExpansionDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Connects this Fortress to the tunnel network \\n Increases decommission value of units \\n Increases Command Point limit by 75",
+      "source_hash": "75cba13508468921e13a4765faba3252f7ec4628de94b5c79bd4452d9a3aa9b8",
+      "entry_hash": "d1b5582aafd502ef8f71e9d530547476570a731f388f5875a39a9ef59d0dcfdf",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructAngmarBarracks",
+      "source": "Trains Thrall Masters, Black Numenoreans, and Dark Rangers \\n\\n Build Time: 30s",
+      "source_hash": "09fff6889f56af9d42107d5d07dfa42856758d7c595be65c81f206fb828d6a2a",
+      "entry_hash": "b42b502006d1c9f087d27b2392eedbcc3baefecf289026d01cf16b5a59039c32",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:AngmarBarracksDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Frost) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "de1298b1234674921349c86343c6af9057f5d882c3abc9752644efe00b945431",
+      "entry_hash": "dc001080a5dbfc3fe8ae79c5367bfe95c301ef0267b5a74a64bfdd10de3086e7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:AngmarDenDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Frost) \\n Bow Range: 250 \\n Vision Range: 300 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "868f128a0a3fcc71289eca9fb596255314f56bb73ca03d5b15fc22f232b3e4ec",
+      "entry_hash": "a174f44f9e44cc54ee49602910682350d4d25448b63b21021ad4688efd9f98e4",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:AngmarForgeWorksDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Frost) \\n Bow Range: 250 \\n Vision Range: 300 \\n Level 2 Siege Repair Rate: 4% /2s \\n Level 3 Siege Repair Rate: 6% /2s \\n Radius: 200 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Level 2: +10% Faster Production Speed \\n Level 3: +25% Faster Production Speed",
+      "source_hash": "9be8dfa60e4fda283ff5361ea768a5c2b14061921a06533eb224eea085dd713a",
+      "entry_hash": "ca64a0d0b1774e981d1578d899fbd0c02acc7c0b1f98fba2a1bd2792869af470",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:AngmarSentryTowerDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Frost) \\n Bow Range: 250 \\n Vision Range: 650 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "6868b10947ba33ec3061344edc98e4bcd441001bd659e5e179a270acc7ce68e8",
+      "entry_hash": "fc094d8b645e39dc9a8477ae54bb796e7c268cab5ba74aab826e23d9250d6870",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "966cb8577f38bcdb31f5000700915114b7297ae5a41e7e293d0b9ea386b5b589"
+}

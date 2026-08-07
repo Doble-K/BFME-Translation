@@ -1,0 +1,341 @@
+{
+  "schema_version": 3,
+  "batch_id": "9dde277360b74a9ea026ebd7cce102da",
+  "worker": "rotwk-deep-4",
+  "created_at": "2026-08-06T06:42:15.854943+00:00",
+  "lease_expires_at": "2026-08-06T12:42:15.853500+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-deep-4-9dde277360b7.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipConstructAngmarMill",
+      "source": "Generates resources based on available terrain \\n Increases Command Point limit by 50 \\n Resource output is reduced when structure is damaged \\n\\n Build Time: 15s",
+      "source_hash": "d2fe818824aa0404cd683497eafcc552c190fb480598c1f10f99780173518844",
+      "entry_hash": "dfe9c0e080cf8e6e175ba455edd94119b81ca40ec7ebedc6e637c19a5cf1ec23",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarFortressDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 120 (Structural) & 20 (Frost) \\n Bow Range: 250 \\n Vision Range: 800 \\n Repair Delay: 2m \\n Repair Rate: 0.3%/s \\n Increases Command Point limit by 100",
+      "source_hash": "fde82905f43b7ce52faa0aa0bc4adb93871c57de5c56f14cf22fc1b6cd0970d7",
+      "entry_hash": "13710713d57ce13d18b89c2d789be74799eeb18656ee71c52b9f50a89bc1bd7c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructAngmarStoneThrowerExpansion",
+      "source": "Long range defensive weapon \\n Benefits from the Ice Munitions upgrade \\n\\n Build Time: 30s",
+      "source_hash": "a3d1e4880f3f37e519c67f30f403a95359d819482bd5aed472bdc61a35a1f4c4",
+      "entry_hash": "1182a7cae2f7aac08157ffc4ef832133fbf3be93e354d3f47291fed0c748ca73",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarStoneThrowerExpansionDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "df83da083705547d465f393a70fe019ac0ec9bda77305908a4979dceba80dca0",
+      "entry_hash": "a69c102be2c09697e17396afe18a28465904b42933c33b1c4bb8822686372665",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipConstructAngmarBattleTowerExpansion",
+      "source": "Short range defensive tower \\n Benefits from the Ice Munitions upgrade \\n\\n Build Time: 20s",
+      "source_hash": "5bafc894017cc94ce12d662290e78baa3fcbcdda1c1f7abc5576581d37d0825d",
+      "entry_hash": "4a3a271fd1fabed2445fe51e452e85de7f54789884a913ade2493de31d1c6273",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarBattleTowerExpansionDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 120 (Structural) & 20 (Frost) \\n Bow Range: 250 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "7defb6d28fc2cde1c919b2a70e43b130740f5b6ddd894857d2279b4d29f0e415",
+      "entry_hash": "90d8ac51351ddead479324b1f1ba49062a35e4263e7691bae174bbb36af5c544",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarWallHubExpansionDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Wall Build Radius: 1000",
+      "source_hash": "a8b466f2862270f8891d735a2fa1d9d2e4ad49cb6b5132327aa0ef6b2417ba85",
+      "entry_hash": "948bd3f65b3a0e44298d842c9c569c1ff0d3775990e9cb930a4cd31a2ad95ee0",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:AngmarWallHubDescription",
+      "source": "Repair Delay: 1m \\n Repair Rate: 0.4%/s \\n Wall Build Radius: 1000",
+      "source_hash": "4494e69589e3bb0a27afcbdd0b5412a498a78340accbd2b669a9166d70d32aaa",
+      "entry_hash": "210842420b457352ad7119c6d83de1a49e0129462e63d6af9fa1a6cca53e97ba",
+      "protected_tokens": [
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMenLoneTowerFlamingMunitions",
+      "source": "Upgrades the Lone Tower with Fire Arrows if nearby the Fortress \\n Requires the Flaming Munitions upgrade from the Fortress \\n Upgrade Range: 1000 \\n Passive upgrade",
+      "source_hash": "dc60ffc35c9f54558acfb6e6ac5d68d48c1f85665327dadc405fd238d5e4b9ac",
+      "entry_hash": "072d6e361b6042fa1657be6b7c0bc79c3ea2c8aa8625b560e9c89921440012f9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDwarvenLoneTowerMasterworkMunitions",
+      "source": "Upgrades the Lone Tower with Forged Blades if nearby the Fortress \\n Requires the Masterwork Munitions upgrade from the Fortress \\n Upgrade Range: 1000 \\n Passive upgrade",
+      "source_hash": "380a9621fabaf6043844737661d27489c2cc3d1ac4b3443c65a82b6399168be6",
+      "entry_hash": "2f04291b0c0dedf9126e2fabbf81654e406ff09fc8f873707c6dd9cbad4647bb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMordorSummonedBarricadeOrcFireMunitions",
+      "source": "Upgrades the Summoned Barricade with Fire Arrows if nearby the Fortress \\n Requires the Flaming Munitions upgrade from the Fortress \\n Upgrade Range: 1000 \\n Passive upgrade",
+      "source_hash": "46b12a50fdd7c7294716be6e5fb9612fd5671b3817652f7ecfd9bba5ea956cc1",
+      "entry_hash": "3807b4001eb30730f934b3ccbdeb719f199957a79aecdb82797fab6241887db0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMenLoneTowerNumenorStonework",
+      "source": "Upgrades the Lone Tower with +67% Armor if nearby the Fortress \\n Requires the Numenor Stonework upgrade from the Fortress \\n Upgrade Range: 1000 \\n Passive upgrade",
+      "source_hash": "12aeb5eb1a57149bb153588f49b7ec2e1698434c77647f8db213539272aa3a43",
+      "entry_hash": "c61c90542dc665d1ff265102906d59c1cf0a800ce3ccad656688a8d8b1c51963",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDwarvenLoneTowerDwarvenStonework",
+      "source": "Upgrades the Lone Tower with +67% Armor if nearby the Fortress \\n Requires the Dwarven Stonework upgrade from the Fortress \\n Upgrade Range: 1000 \\n Passive upgrade",
+      "source_hash": "a71a70eaa383a6ae87eb23443340de0e5ca914932d87387505d950390aa9fd7c",
+      "entry_hash": "9cafb586160395937c3bfefdee613ac641103ff1616f9daf8166d492afede566",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:RohanEowynRecruit",
+      "source": "Recruit the Shield Maiden of Rohan \\n \\n Unit Type: Tier 1 Hero \\n Recruit Time: 35s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "9c468a6765c959fc4a23d5fa459186d9f841e888ce075b5b4b7256580e64765a",
+      "entry_hash": "2fd7934d7e4037d5753047e1727a1e2e79f7d928836fcc3ff23345e9300c4787",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:RohanEowynRevive",
+      "source": "Revive the fallen Hero, Eowyn \\n \\n Unit Type: Tier 1 Hero \\n Revive Time: 40s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "4c249b9265bbc1aff12645d7b0738c61c2e5c337f7772deab4493d389055409f",
+      "entry_hash": "1ac1c90b6350d538980826b28bf49b9732c2fb7f7a80688145e93a61b5d520a0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:RohanEomerRecruit",
+      "source": "Recruit the Leader of the outlawed Rohirrim \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "38d92ae3717da76837ef65d15c75e39a29585cfefcb2f6c02f1bdfd6ce53a085",
+      "entry_hash": "84e41f801beadf7f33b8eedf01476a719e72e5fd9e91a1f6ec65d5cae617eb41",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:RohanEomerRevive",
+      "source": "Revive the fallen Hero, Eomer \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "802cd2f6f717a289c1744ddb5777fed7e37d9cd136071c7ef31efffa1a65c19e",
+      "entry_hash": "0c39b761b60d84db208d3fe8b8e4dc3a5321bfb7934c17582f9a329e619e71bc",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:RohanTheodenRecruit",
+      "source": "Recruit the King of Rohan \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "4840cb3380c6ed5cf84150a21bca348f2ebdaaec512c480aae4d1dc76e42c51b",
+      "entry_hash": "0e36acf50843ccde0c0a867f08762297eb1cb9feade26ee88dbba572aba63e6b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:RohanTheodenRevive",
+      "source": "Revive the fallen Hero, Theoden \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "3a3e9772750f8166ba3f3a1595b56bea8eea13484b0ea9925dd3fe68bb4fb0c6",
+      "entry_hash": "56e4f45899c59a60dc499f399c15f9f85f707ef8583c4c46ca16c4c08d058c27",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GondorFaramirRecruit",
+      "source": "Recruit the versatile Captain of Gondor \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "f2871d92437fc342c672b235a71e5deb9a6d3e3fd8923587f81854b63d87abc9",
+      "entry_hash": "6c5bd87631f4781a34b342e9641c0640c12e4f0e3638f4dac2cb9e7cd83dd887",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GondorFaramirRevive",
+      "source": "Revive the fallen Hero, Faramir \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "0d88309959ed75359127f6493c89813e6a78c2df9847367fbbaed12f64602077",
+      "entry_hash": "54ed876c2598188e1dd513df8dd9c8ceb0aebcdc2d30b9c7045a2e544ac97260",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GondorBoromirRecruit",
+      "source": "Recruit one of the greatest Captains of Gondor \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "39f333dc8dce3e0fbb508f453a16fa7c85001cef4fcdcabd3a3f872b8cca3f07",
+      "entry_hash": "4e75aaef3c89c2040086a1a3ca781161d9d7da69b4d9f69997d77a318c4d13ce",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GondorBoromirRevive",
+      "source": "Revive the fallen Hero, Boromir \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "ca1524d6400dc2eef97f0c7f74bd074f7004e74f6c5bbe37447f94aef01aa183",
+      "entry_hash": "2dd46de948c43ebf16d815f1ee77239d39e5b3594a1c5a08ad248038e2c047fd",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GondorAragornRecruit",
+      "source": "Recruit the heir to the throne of Gondor \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "03584ef783fafcc797d6e4ebd219e4797b1b0d3858af2c69cf3f69cea88a281f",
+      "entry_hash": "f59edff78d14ec8e3d0900ae45a5d208306cb2f3cf3585c7b22a95685f9fe103",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:GondorAragornRevive",
+      "source": "Revive the fallen Hero, Aragorn \\n \\n Unit Type: Tier 4 Hero \\n Revive Time: 55s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "2561a50f28023f8ae49b1747d06565af3b5c376d3211616bb3042c91803e4e13",
+      "entry_hash": "401028ad15c23fde30b1377ca39b11118c632ac86575b66d225b833e34a68509",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "5927c2e59997cf1bf22787ad618caa5c34ecdf3f83750b8ebee7eaf89eab08dd"
+}

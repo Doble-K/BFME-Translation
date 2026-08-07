@@ -1,0 +1,192 @@
+{
+  "schema_version": 3,
+  "batch_id": "b70491503fdf4a7ebd20c2aa332cdc65",
+  "worker": "rotwk-laguna-all-2",
+  "created_at": "2026-08-06T09:18:38.749710+00:00",
+  "lease_expires_at": "2026-08-06T15:18:38.748454+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-laguna-all-2-b70491503fdf.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SCRIPT:FORNOST_BATTLE_END_EVIL",
+      "source": "ARNOR OFFICER: Retreat! Back to the city! Let them face the walls if they wish to come further!",
+      "source_hash": "1ab9127d9582a6a051cc0435783968e6273f92af1e9aee044133c443d120bc2b",
+      "entry_hash": "ace2c0cfcf83a67729fd44b910c5598933069648917df16cb89ce0060f63021f",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_ARCHERS_DEFENSE",
+      "source": "ARNOR OFFICER: We must hold the gate! Archers commence firing!",
+      "source_hash": "0cae81c33114456681aaf5872b743581c549e6d472ac6abdf10de463a7d00eb9",
+      "entry_hash": "2ca690efe75551b901087d3019909a9351f7833f6212cf7e25b6dcabb55992e0",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ELF_ATTACK_01",
+      "source": "Elves, we must stop this attack!",
+      "source_hash": "4dda47e7730d0701e159a8fc61b4abece1c4985fc239ac25e66072123d5f20a8",
+      "entry_hash": "b8100a891a329af3b77d3f310d4fc0fe0ac65c0b8904c1d9f3bed1ec1dfd2a48",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_HINT_BUILD",
+      "source": "Perhaps we underestimated man's persistence. Besiege the city and tear down its gates.",
+      "source_hash": "d85bcd0610adacba1b77cb131f14a03330face2c382ad9057c6310dfaf504ed2",
+      "entry_hash": "61e7376889370adcaaeef3a618d15c4cf2d534158fa0018bc57af9c3cc85a00d",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_HINT_BUILD_EVIL",
+      "source": "The army has been beaten - now only the city remains. Construct siege engines to destroy the gates of Fornost.",
+      "source_hash": "921a07baeaf59dc16b7649f712cdbc250d2e7b0fdcf9b02444362384974f4733",
+      "entry_hash": "ad5a4c0d3b775d245ebf8d2b9d05b1df485e552b3b006197cc2a02c1f31c901c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:HOBBIT_ATTACK",
+      "source": "ARNOR OFFICER: Hobbits! Arnor needs your assistance! Attack!",
+      "source_hash": "4eb132b8df89892a83b0a3eaf407f4c4207488e0057cd2a1fb8b3c6208b6f2a9",
+      "entry_hash": "fa3ce7833710e09eb6598b0a312c70f8c38cc5c03b240c7d1a4705fba9d6edfd",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:HOBBIT_ATTACK_HINT",
+      "source": "Crush the feeble Hobbit Counterattack",
+      "source_hash": "f7f1f5b62805ffdb791bd211f0adccfd4fadb7c22cb8f7a9e1f648d01990f304",
+      "entry_hash": "7f8b8cbc7bd8a3ff78878d0957307509396b96926300254bc06b1a7f0bc2df2b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ELF_ATTACK",
+      "source": "ELF OFFICER: Elves! Evil must not be allowed to triumph this day! Charge!",
+      "source_hash": "55e15c77095d31505fca2080596c803b479a1674dbb896374d9c2989603f7d55",
+      "entry_hash": "f0cffd40c75954abed06d9881145e104586b785588734f75fcf5b7c07e1c8dec",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ELF_ATTACK_HINT",
+      "source": "Stop the Elvish counterattack",
+      "source_hash": "d076205efae2f212fa1511dc8195ea79a4542fc23b1bde19761ebc5c0b4242d2",
+      "entry_hash": "6fdd8a22317f01ee865ec038e529ef4ba7844a7c608c2fc9098674f7fcc0d602",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ELF_CAMP_ATTACK",
+      "source": "Wipe the blight from this land!",
+      "source_hash": "bb86d3ec81eaed2634d24fbb10ac37f78d9a2bf95f2603c71605a72e7b061b79",
+      "entry_hash": "017db6c0b7cce3cd5e5560c4523cde8318f9fc3201fc7fd8cf05d46bfed61e4c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:PRINCE_RIDES_OUT",
+      "source": "ARVEDUI: Come my brothers! Ride out and vanquish this foe!",
+      "source_hash": "86c5223622db1d3365444478f5135759c1e3d2933afb8aed55b91519a5bb13db",
+      "entry_hash": "f2857d1375a1d6b00006c0519cca4279b69071e4e94694e7fa225e40dbd3e0ac",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:CAVALRY_WARNING",
+      "source": "ANGMAR OFFICER: Cavalry! Guard the flanks!",
+      "source_hash": "85c3d7895e010d6583ee1b6ac58ea20fc383571614efd0e3edf6bc729c3aa311",
+      "entry_hash": "2430bda056c93364c8036861d1ba3f33e9737658e9e820570d811d1ad4c70c0f",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_BLACKSMITH_HINT",
+      "source": "Those Blacksmiths are providing the enemy with upgraded armor and weapons. Destroy them to keep the enemy weaker.",
+      "source_hash": "15d1ec699eb765bb3052c7da37f01afe87380f945ad4eaee0a4b31f36a8f616e",
+      "entry_hash": "aadfa72b907cae48395cb898b0725064b313f861df9ab335c1f10d2e63d677e6",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_BLACKSMITH_DESTROYED",
+      "source": "Blacksmith Destroyed",
+      "source_hash": "bb0a25a3cdb2f958382985472da1a150cbc8093161f41139aea3919de1ac44fe",
+      "entry_hash": "c2da25309d5e333d7bdb94f9f68482ca90f20e482705903b1d5282f61c869056",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:SEE_FORNOST_BARRICADE",
+      "source": "You'll have to remove the barricade in order to get to the main gate.",
+      "source_hash": "a952b42b55869a319de1faf475e14e9442db7e389b353caaf8f8065096c1862d",
+      "entry_hash": "b1eb6dc7e2401cc673614bae04521dc6a0a9b43500a6a44b99679718ae59516f",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOSTOUTERBUILDINGS",
+      "source": "Destroy these buildings to give us some maneuvering room.",
+      "source_hash": "b2015861a79137cb2e0094e28ac32f793bcd1ab3503f96b59f9b4fee46d88f40",
+      "entry_hash": "52fb3fee40f5e7c8e8ea2beb3e6219312bcb7c6a4aa7bbec57c55e39045bc167",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_OBJ_COMPLETE",
+      "source": "Objective Complete",
+      "source_hash": "283fbd820c94b4276d0a22702ae0ada651e8f1c4f3bed18a3f415b8c1114a60a",
+      "entry_hash": "52d650d92a28ca6cf63129c653e03323b20bce009493c723c7061b22b4a0f8ff",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_CIVBUILDING_HINT",
+      "source": "Raze Fornost to the ground. Destroy the civilian buildings and collect whatever treasures they hold.",
+      "source_hash": "e55ea17337143690a479065b7706701ff6ebd8cb65473e8f5ae9765137d7b11c",
+      "entry_hash": "fab202d942ce1845714efff42c70bb6ba58cde243706638ff5e8854ecbdf32e3",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORGES_DESTROYED",
+      "source": "All of the Forges have been destroyed.",
+      "source_hash": "5303a08b1e174a897455a8ce79137389193e089df376b4eefb95420ee21f1907",
+      "entry_hash": "9736717c7d724ffc9dd17bb1fb1520c40a4b218616ad8f31bf4167f6b588c5cd",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:OUTER_BUILDINGS_CLEARED",
+      "source": "The outer area has been cleared.",
+      "source_hash": "cd5e29bb364ec4cd0d20ce6d5c46e3fcb7857651b536aeb3392422c081351cd3",
+      "entry_hash": "0b41cb42cac052d002f868993b6501aec24841661bd713c6ef90d42b237401ad",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_10_BUILDINGS_LEFT",
+      "source": "Destroy 10 more civilian buildings.",
+      "source_hash": "da3d27c8ef4fe385695938d10b0c2ba6e1ebc63484d7bdb2c7eb493781680b80",
+      "entry_hash": "b412f5daefd781cec3e410072ac78296b753d13d0949275612d61575d3637ed5",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_5_BUILDINGS_LEFT",
+      "source": "Destroy 5 more civilian buildings.",
+      "source_hash": "6aae27cb293c287977a9383624d7c0653003fa5695540c22c302b4f7de1c7fc9",
+      "entry_hash": "64b6325bd83473ebdbe39bcb3494d71b6975ca5cba879cc43960aba54e63bff3",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_3_COMPLETE",
+      "source": "The Citadel of Fornost has been destroyed!",
+      "source_hash": "de0cb9737cfaed917a593b6ed8d7fe83cfdb39cc8061bdbd2ed7ef5dd66464f4",
+      "entry_hash": "a1c0e095f1b573db5ff3d4a20c03e0e07a090fa6232c5b397926d4d99fa87973",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_4_COMPLETE",
+      "source": "The city has been razed",
+      "source_hash": "3f40c5715445e2b1043f7371ae806de2fd8470b3dbe10f62b6e863936966cc53",
+      "entry_hash": "0f24b7d100ed9ae20880b03d49caa77b8a61d41c3eb21b7fe14d98cd59dd371e",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:FORNOST_GOAL_5_COMPLETE",
+      "source": "The filthy Hobbits have been destroyed",
+      "source_hash": "082607b04eb934112f2ab6f81da2851b744a7e17e93ea800c9fc6093c754bc6d",
+      "entry_hash": "e328ebd022d089a7a8f14310d9515d7644c715d50c1979061e7a2b1cc5a4bd32",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "4d93ca986248ba72887a094c980dc3a07462534f51d6e217dfedadb63b83f46e"
+}

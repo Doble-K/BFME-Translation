@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "35742fb2427443ba84ad0e02c06e84d4",
+  "worker": "rotwk-ling-1",
+  "translations": [
+    {
+      "id": "CONTROLBAR:LW_ToolTip_ElvenLorienArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_DwarvenAxeThrowerHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_DwarvenAxeThrowerHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_DwarvenMenOfDaleHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_DwarvenMenOfDaleHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_IsengardUrukCrossbowHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_IsengardUrukCrossbowHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_IsengardWildmanAxeHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_IsengardWildmanAxeHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_MordorArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_MordorArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_MordorHaradrimArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_MordorHaradrimArcherHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:Knife",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_DwarfCharge_L1",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_DwarfCharge_L2",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_DwarfCharge_L3",
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:HordeRohanElves",
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:RohanElvenWarrior",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ConstructRohanElvenWarriorHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipExtinguishTorch",
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:MordorHaradrimSpearman",
+      "translation": ""
+    },
+    {
+      "id": "OBJECT:HordeHaradrimSpearmen",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ConstructMordorHaradrimLancerHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_MordorHaradrimLancerHorde",
+      "translation": ""
+    }
+  ]
+}

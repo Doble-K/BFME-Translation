@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "3a101bc89c40424a8f71a5f7f36c2cfc",
+  "worker": "rotwk-nemotron-all-2",
+  "translations": [
+    {
+      "id": "APT:NewCAHFeature5Desc",
+      "translation": "Más formas de demostrar que has creado al héroe más dominante de la Tierra Media."
+    },
+    {
+      "id": "GUI:DesyncText",
+      "translation": "El Señor de los Anillos, La Ascensión del Rey Brujo ha perdido la sincronización con los demás participantes y no puede continuar. Es posible que los otros jugadores hayan modificado sus versiones del juego. Por favor, salga del juego antes de intentar jugar de nuevo."
+    },
+    {
+      "id": "ToolTip:OnlineShell/OnlineLogin/GamespyShortcut",
+      "translation": "Haga clic aquí para visitar el sitio web de Gamespy de El Señor de los Anillos, La Ascensión del Rey Brujo, incluyendo las escaleras de torneo oficiales."
+    },
+    {
+      "id": "TOOLTIP:AngmarSpikedCollar",
+      "translation": "Collares con pinchos"
+    },
+    {
+      "id": "Stat:Killed_Morgomir_Count_Name",
+      "translation": "Morgomires Derrotados"
+    },
+    {
+      "id": "Stat:KILLED_KARSH_COUNT_Name",
+      "translation": "Karsh Derrotados"
+    },
+    {
+      "id": "Stat:Killed_Hwaldar_Count_Name",
+      "translation": "Hwaldar Derrotados"
+    },
+    {
+      "id": "Stat:Killed_Rogash_Count_Name",
+      "translation": "Rogash Derrotados"
+    },
+    {
+      "id": "Stat:Killed_Gothmog_Count_Name",
+      "translation": "Gothmog Derrotados"
+    },
+    {
+      "id": "Stat:ANGMAR_Infantry_Killed_Name",
+      "translation": "Infantería de Angmar Muerta"
+    },
+    {
+      "id": "Stat:Killed_AZOG_Count_Name",
+      "translation": "Azog Derrotados"
+    },
+    {
+      "id": "Stat:Killed_CAPTDALE_Count_Name",
+      "translation": "Capitanes de Valle Derrotados"
+    },
+    {
+      "id": "Award:Icebane_Name",
+      "translation": "Asesino de Esclavos"
+    },
+    {
+      "id": "Award:Icebane_Desc",
+      "translation": "El héroe ha matado a 1000 Esclavos del Rey Brujo"
+    },
+    {
+      "id": "CONTROLBAR:DaleSlamArrow",
+      "translation": "Disparo de Embestida [&m]"
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_RohanSpearmenHorde",
+      "translation": "Batallón de Lanceros de Rohan"
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_RohanSpearmenHordePlural",
+      "translation": "Batallones de Lanceros de Rohan"
+    },
+    {
+      "id": "BANNERUI:PluralRohanSpearmen",
+      "translation": "Lanceros de Rohan"
+    },
+    {
+      "id": "BANNERUI:ElvenRivendellArchers",
+      "translation": "Batallón de Arqueros a Caballo de Lindon"
+    },
+    {
+      "id": "BANNERUI:PluralElvenRivendellArchers",
+      "translation": "Batallones de Arqueros a Caballo de Lindon"
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_ElvenRivendellArcherHorde",
+      "translation": "Batallón de Arqueros a Caballo de Lindon"
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_ElvenRivendellArcherHordePlural",
+      "translation": "Batallones de Arqueros a Caballo de Lindon"
+    },
+    {
+      "id": "CONTROLBAR:LW_Unit_MordorBlackOrcHordePlural",
+      "translation": "Hordas de Guerreros Orcos Negros"
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_MordorHaradrimRiderHorde",
+      "translation": "Tipo de unidad: Caballería básica\\nFuerte contra arqueros\\n"
+    },
+    {
+      "id": "BANNERUI:MordorHaradrimRider",
+      "translation": "Horda de Lanceros Haradrim"
+    }
+  ]
+}

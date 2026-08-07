@@ -1,0 +1,157 @@
+{
+  "schema_version": 3,
+  "batch_id": "8286b270c77c45b7a7a47a79b11cc623",
+  "worker": "rotwk-openai1-3",
+  "created_at": "2026-08-05T19:54:09.569521+00:00",
+  "lease_expires_at": "2026-08-06T01:54:09.568446+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-openai1-3-8286b270c77c.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroAutoHealBonus_3",
+      "source": "Permanently increases heroes' autoheal by +20 HP (Does not affect allies)",
+      "source_hash": "45f7b22b45a2cd77af802857aef436866b190a36f50d20b0eed7ddac206c2e4d",
+      "entry_hash": "6dd17d489f3a0619be93febb918b674c82eca889814d8ba15316abb3f0559540",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroAutoHealBonus_4",
+      "source": "Autoheal Upgrade Level 4",
+      "source_hash": "32d657e9a1348cc2861ad7e6c595241b4e80db5407cb400d3a59d30f08e5f7a6",
+      "entry_hash": "3a872e0c1679d29a8f4fc61448275103e15255f71f71da4f2f45002f45321222",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroAutoHealBonus_4",
+      "source": "Permanently increases heroes' autoheal by +25 HP (Does not affect allies)",
+      "source_hash": "e704d41ecd75a9b5a837d227f2b9f752ba83f9965ed117fd927a04bb8de0819e",
+      "entry_hash": "e6b448b49affb814aab84f92518b29f9ac6fdd68e40b014897fbfb5372451174",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroBountyBonus_1",
+      "source": "Bounty Upgrade Level 1",
+      "source_hash": "a6fc931ad0575771afc855c39a89e3604570a62117681c7671af8bb718664dda",
+      "entry_hash": "8a987efc9df6075ee46e88d03792986329a2f12d31f30cf924a6be8055d0d139",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroBountyBonus_1",
+      "source": "Permanently increases heroes' bounty by +8% (Does not affect allies)",
+      "source_hash": "c6f4d5c2b1e3dd812770c7f3b133fe682e5dc59eb78f3812e61ee575cd62c8d3",
+      "entry_hash": "fa1b3c30e45aa12ac36200a0256eaa265b67c855438e701cabfcf985870e4d18",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroBountyBonus_2",
+      "source": "Bounty Upgrade Level 2",
+      "source_hash": "36735bb797476c0ee3863ba3b93775a9a2e021a40a65e2c4ada7b4748bdccaf8",
+      "entry_hash": "b4aff8bc4569d3c7464d54a7462e350db18f5c239fd5d975c9c3049389499453",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroBountyBonus_2",
+      "source": "Permanently increases heroes' bounty by +12% (Does not affect allies)",
+      "source_hash": "ad5c7eba01a4191fdf3d7c834c146abbc959b05c0133637d6c42a38b08ea4952",
+      "entry_hash": "c8916ac9de1c1c139259c3e410a166c94636e33093010516b9fd951be7bc3eba",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroBountyBonus_3",
+      "source": "Bounty Upgrade Level 3",
+      "source_hash": "dd54bd0cbd7df5fcf83d696aedaa778c89ba27fce4dbbd6b59d75201cd41651b",
+      "entry_hash": "e69da1813227190fc6b9916382f13fc5c2075f816c2c5ad1c623bbbf3cc655c7",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroBountyBonus_3",
+      "source": "Permanently increases heroes' bounty by +16% (Does not affect allies)",
+      "source_hash": "cc6b167e5b9702962be4584e1431c2820747c5caef97cc960878984e20d3b743",
+      "entry_hash": "d380cc394afba3c7536303eed635d15377923f047a70bd0a04ab6f633447b821",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroBountyBonus_4",
+      "source": "Bounty Upgrade Level 4",
+      "source_hash": "8fde141add5a916fb7f8da4c58570933deb4f4735bfa6e53883844c0a6e70e93",
+      "entry_hash": "08f8ab34fd0c70ba33920af84494ce54e0a3c1dbe71a28e834b14bab062a5f06",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroBountyBonus_4",
+      "source": "Permanently increases heroes' bounty by +20% (Does not affect allies)",
+      "source_hash": "b4a8b2b661009816ebfff1841934ef14ba1f3d5490823d257401556225ef734f",
+      "entry_hash": "dd675a36e929cd4ffdbcf25f45437f5b4b2c937625733d9a849d994fd21cc437",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroExperienceBonus_1",
+      "source": "Experience Upgrade Level 1",
+      "source_hash": "9deff74b2dc7cedd001ae0e198cad6ed63133f670900c408d453dc1aef9f9e9b",
+      "entry_hash": "6b1c26cf28f6f40f876bdf389c176e3e5d0a3644a49ea332b4fcce0ebe924f14",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroExperienceBonus_1",
+      "source": "Permanently increases heroes' experience by +15% (Does not affect allies)",
+      "source_hash": "95459b45db409234094697b1b86513cccc81fa8ae6ed61a5f2394a33a5e6170e",
+      "entry_hash": "4fd965ee86e9c076857dba01a80e99c2fd369987750e0b25b9c6458498dfc637",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroExperienceBonus_2",
+      "source": "Experience Upgrade Level 2",
+      "source_hash": "9a1fa79db3f9188bab4e5f0913a72956f1070d7eb7e88ef1b2a7f44c4f810314",
+      "entry_hash": "36b186a785e7cb0b41c81b7ecc8cd7c8619ca122a904b1ee52e211a754573e1a",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroExperienceBonus_2",
+      "source": "Permanently increases heroes' experience by +20% (Does not affect allies)",
+      "source_hash": "9cc652392a8dc6d9e3afa9440a2198a680e602dff626c7a1a55b401ba46e0fec",
+      "entry_hash": "4f83b1d995b45d30176ab03320ca435e2866286717443bf9ec842cf04c4d0390",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroExperienceBonus_3",
+      "source": "Experience Upgrade Level 3",
+      "source_hash": "57acadcc764fe664bbb61c79814f1720fbc75acb9bef87abce705b3ba42bb6b7",
+      "entry_hash": "5fae2752447e88e5c0d74502bc3e34d24ca869c56f1376eb4d709499b5603698",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroExperienceBonus_3",
+      "source": "Permanently increases heroes' experience by +25% (Does not affect allies)",
+      "source_hash": "76edce9ce6d12a1308c8f28dd2b77c96302000c0abb1fddc71e81bef7c66d56b",
+      "entry_hash": "76b897dd402501b63ce07129d1370528ccb313bf842ee40b57c763153801428f",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroExperienceBonus_4",
+      "source": "Experience Upgrade Level 4",
+      "source_hash": "fc0c7f85f4ba6e1172a91d8e2b2f01ab1ce5c133a4a3b90b2912efc33103071e",
+      "entry_hash": "a62ba122d8516b7808c2e1e059633192f5feb187f8c9f074a5da7a74049e11be",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomHeroExperienceBonus_4",
+      "source": "Permanently increases heroes' experience by +30% (Does not affect allies)",
+      "source_hash": "587eab951fff46b275b155f3757beda6e21c94e1f5a6632efb7e03fdaa301bff",
+      "entry_hash": "84d61901829f4bef0c8c6cb243cfdf8b92b33824a0c13ee6d917e822c4c227ba",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CustomHeroHealBonus_1",
+      "source": "Healing Aura",
+      "source_hash": "5540516dca85fa220bc0b0e743911ddb370e456ceb6b39cf06442f04eeeed702",
+      "entry_hash": "83c06f1b619b533aeba881d3394169d5a661e1c2e6a5624bc3637a19da95fa23",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "00683a40c2896d41357320df938dc14bb4e6c9fc6d75a731befd8c3455ba2e97"
+}

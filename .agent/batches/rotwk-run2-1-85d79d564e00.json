@@ -1,0 +1,252 @@
+{
+  "schema_version": 3,
+  "batch_id": "85d79d564e004f6d86923b3e78a38ca1",
+  "worker": "rotwk-run2-1",
+  "created_at": "2026-08-05T20:11:52.822574+00:00",
+  "lease_expires_at": "2026-08-06T02:11:52.821391+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run2-1-85d79d564e00.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "TOOLTIP:VigilantEntExpansion",
+      "source": "Damage Type: Siege \\n Ranged Attack Speed: 4.55s \\n Rock Splash Damage Radius: 50 \\n Movement Speed: 0 \\n Rock Throw Range: 625 \\n Vision Range: 650",
+      "source_hash": "8f3e1a1a903806f45a7accdcdb53d8bf199a559abbe5097273b2d319174c29c5",
+      "entry_hash": "a49ddf0fd94b9b2e876ded39925c23c27f2ecf9c9c2a6676fdd7a85334954f94",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ConstructEntAshMelee",
+      "source": "&Guardian Ent",
+      "source_hash": "ee0b89f11c127575443a41bba0d71a0353f021ff2601cd1fe69f4355c5d294e2",
+      "entry_hash": "04095e7c872e8cbb9b32aba4c49723f8d4b5bdfd4fb6eaa23f0375d2f4dda9e6",
+      "protected_tokens": [
+        "&G"
+      ]
+    },
+    {
+      "id": "OBJECT:RohanEntAshMelee",
+      "source": "Guardian Ent Ash",
+      "source_hash": "1d65292337e5de0939a4c33dd061544c4ea0f97427ed88a8403e06209d8e2aad",
+      "entry_hash": "281e691ce65102e98cf4baa6a9efc2f8083051dfab37844f1820a6107c170a88",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToggleBlackRiderLineFormation",
+      "source": "Line For&mation",
+      "source_hash": "ad768a32c2ee7e035c4dae9cc50c2fa4784d097fefa10dbfc599dbff13f5b6a1",
+      "entry_hash": "6762eb924bd646b538efecdf1ec224e4888096ac1f25dd7418a4dd17f31bb45d",
+      "protected_tokens": [
+        "&m"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ConstructEnt",
+      "source": "Siege E&nt",
+      "source_hash": "583f8a168cce9e83d1e462789659a7b315efe8eeee4ba6d49c583539428cd2e5",
+      "entry_hash": "fb6100a67f7c5d0ff4a74ca1324da32546bac5f5fc98efbacc56140f31139cc7",
+      "protected_tokens": [
+        "&n"
+      ]
+    },
+    {
+      "id": "OBJECT:RohanEntBirch",
+      "source": "Siege Ent Birch",
+      "source_hash": "c55e642a35c31155fa9479e212a535accbf71b6f07ec823b804ba51cf31c2b26",
+      "entry_hash": "0332cf147a3c0ccbcc50131f905afe89f91b16a84ae852bd2aa9cb4b850037cc",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:RohanEntFir",
+      "source": "Siege Ent Fir",
+      "source_hash": "bd9c697fea4aae8e3e7c3e96f7808035be8b9e1da4d4bd4fef1e72acb2586aa9",
+      "entry_hash": "cc0ae43a8aa9ed30dee2312b01d5e79877e454025a28bf6e7d6a290bc76170ba",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:RohanEntAsh",
+      "source": "Siege Ent Ash",
+      "source_hash": "ecc43bf372b77ff09b515f5e5e055c4fcf185bd7b82dc57138c51cccc986bb23",
+      "entry_hash": "5d57745cae59f6f9bad9427323fcb582dee076f160118775620e7a08d04d1b49",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:RohanEntOak",
+      "source": "Siege Ent Oak",
+      "source_hash": "b466fb7a421a6c2e3f2657e545a44619088eafad2e21131ee9dda11db7e1c804",
+      "entry_hash": "c1bad2b9c8100cdf7fb8b4348cf3e7efe9894dafbaa69bc6397bcafaf5309408",
+      "protected_tokens": []
+    },
+    {
+      "id": "TOOLTIP:GoblinCaveTroll",
+      "source": "Damage Type: Siege \\n Crush Damage: 30 (Crush) \\n Ranged Splash Damage Radius: 15 \\n Melee Splash Damage Radius: 60 \\n Melee Tree Splash Damage Radius: 50 \\n Ranged Attack Speed: 2.67s \\n Melee Attack Speed: 1.5s \\n Melee Structure Attack Speed: 2s \\n Melee Tree Attack Speed: 2.2s \\n Movement Speed: 60 \\n Rock Throw Range: 250 \\n Vision Range: 400",
+      "source_hash": "c281381e85cf6be957032108ca6dae5900effa5fc12b3e455aa024f6634e929e",
+      "entry_hash": "458f4d9ef043c9795acce4eba98d3440a186de0948a7a706ec78a59c35e790a9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "TOOLTIP:MordorMountainTroll",
+      "source": "Damage Type: Siege \\n Crush Damage: 30 (Crush) \\n Ranged Splash Damage Radius: 15 \\n Melee Splash Damage Radius: 60 \\n Melee Tree Splash Damage Radius: 50 \\n Ranged Attack Speed: 2.67s \\n Melee Attack Speed: 1.5s \\n Melee Structure Attack Speed: 2s \\n Melee Tree Attack Speed: 2.2s \\n Movement Speed: 60 \\n Rock Throw Range: 500 \\n Vision Range: 400",
+      "source_hash": "3ef26a6a1ca81dc72e7719ad36afe4aa756a50fe91914f76954adf260afdbd80",
+      "entry_hash": "e834259d19a61f4478317ab75599e115eae9f18d38eff427f938321025e0fe11",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTaint",
+      "source": "Taints an area of terrain \\n Modifier Type: Buff \\n All ally units gain +33% Damage and +33% Armor \\n Stacks with Leadership and Spells \\n Can only partially overlap other Taint Land or Elven Wood spells \\n Radius: 250 \\n Duration: 5m \\n Recharge Time: 6m \\n Left click icon then left click on target area",
+      "source_hash": "9bfef1cec0c270aa10016a2bf71583b7e41b018ff4cbc4184f16a2ea53601a52",
+      "entry_hash": "ba7f3c613a53bca301986f54eca36088d5b5f0a11be63f6ffbd9b7761d8f63ca",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTaintIsengard  ",
+      "source": "Taints an area of terrain \\n Modifier Type: Buff \\n All ally units gain +33% Damage and +33% Armor, and earn resources for kills \\n Stacks with Leadership and Spells \\n Can only partially overlap other Taint Land or Elven Wood spells \\n Radius: 250 \\n Bounty Percentage: 100% \\n Duration: 5m \\n Recharge Time: 4m \\n Left click icon then left click on target area",
+      "source_hash": "4c8b0807cb7492c7bde43f5c32bed39c275e7db0d23d5276c92982d199872c83",
+      "entry_hash": "d650f0ae855dad735789b9b4e675225d69566fd4f5954083e7586b974c81c9bf",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipElvenWood",
+      "source": "Creates lush terrain \\n Modifier Type: Buff \\n All ally units gain +33% Damage, +33% Armor and become immune to Fear and Terror \\n Stacks with Leadership and Spells \\n Can only partially overlap other Elven Wood or Taint Land spells \\n Radius: 250 \\n Duration: 5m \\n Recharge Time: 4m \\n Left click icon then left click on target area",
+      "source_hash": "7b68df939bc4574e0e86575bb6bc0871f3a109fea587424ffcd34ece09256923",
+      "entry_hash": "58b01e49357f21f1fe1b4b2023b7c627d6e92156129c0a63e230731c21ed58a6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityFireWhip",
+      "source": "Attacks with flaming whip to deal severe damage to units and structures \\n Damage: 3024 (Flame) & 3024 (Magic) \\n Target Radius: 210 \\n Target Range: 40 \\n Recharge Time: 15s \\n Left click icon then left click on target",
+      "source_hash": "c69100f9927ba7fd0fd119c8d1ebba5decfd6e9577965b00e600515518bc7506",
+      "entry_hash": "437b83dda5d9b855f7dd9b603f41ce0ef0802401bdf205412cc72e29167e5a5c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPGreenham",
+      "source": "Greenham",
+      "source_hash": "ea2f3c19376bafa00d9f594d80dab561762e1fec7a1898ca7c7e5e39f2b55f28",
+      "entry_hash": "a50387ec69176e822f0a3f59aa61bb5090db8e066a0642eb28c90b53768096a1",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPGreenham/Desc",
+      "source": "Greenham was a town of Gondor and the capital of the province of Lamedon. It was situated within a fenced field atop a small hill and lay along the river Ciril \\n \\n Size: 326x372 \\n Lairs: 2x Troll Lair , 2x Spider Lair , 2x Warg Lair \\n Neutral Structures: 2x Inn",
+      "source_hash": "a78e6c28014395e8360d27bd0fd620b0c578fcab55abbf2fa9fa19b35e404bef",
+      "entry_hash": "ac3fe1b543ab8edd5d693f92502cf7e917af73788efe892d99b16927b80b6b6b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipEntAllies",
+      "source": "Summons 3 Guardian Ents and a Siege Ent to the battlefield \\n Resistant to arrows and effective against structures \\n Duration: 1m 15s \\n Recharge Time: 9m \\n Left click icon then left click on pathable location",
+      "source_hash": "aebe29aba7e9fdc665692ce28c749a4fdd01aa183d495dce84999031c3a9fc4f",
+      "entry_hash": "594f2599f2dd35dbf53c77da3cb7589e158636fe0eaa4ff089eb2c457178e3b3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "OBJECT:ElvenBattleTowerDescription",
+      "source": "Damage Type: Structural \\n Upgraded Ranged Damage: 75 (Structural) & 20 (Magic) \\n Bow Range: 250 \\n Vision Range: 650 \\n Repair Delay: 1m \\n Repair Rate: 0.4%/s",
+      "source_hash": "e3189c6ecad96ef4368d37ae4386e6c9f2cc623044a4a2e50d6b8ebf2f83f33c",
+      "entry_hash": "14e6642a9076a0549fdeb0d92411ce22ac75648bb51b1064f3b8a5314d8dd22e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipHourOfTheWitchKing",
+      "source": "Requires Level 8 \\n Target enemies' special ability timers are reset to just used \\n Units near the Witch-king suffer uncontrollable fear \\n Target Radius: 250 \\n Fear Radius: 350 \\n Duration: 7s \\n Target Range: 300 \\n Recharge Time: 3m \\n Left click icon then left click on target area",
+      "source_hash": "b78b542162271c6ab7f51570921a76e9cd4fab443901bbb121572a2173e72f6f",
+      "entry_hash": "fd996e4f7abedf83ff709c064d4872f0cafb97c9145a63104e73fffa594ca42c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "ea2f61de239d79cf76bf21215ba8e695ed0fcc6368805d617dad6cc011fbbd79"
+}

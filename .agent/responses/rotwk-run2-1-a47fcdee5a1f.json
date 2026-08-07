@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "a47fcdee5a1f41b1833436600589e092",
+  "worker": "rotwk-run2-1",
+  "translations": [
+    {
+      "id": "Map:MAPMPNorthMirkwood",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPNorthMirkwood/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPMarshesofMidgewater",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPMarshesofMidgewater/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPSouthEnedwaith",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPSouthEnedwaith/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPHarnenOasis",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPHarnenOasis/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPSorrowIsles",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPSorrowIsles/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPWORDunland",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPWORDunland/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPWORIronHills",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPWORIronHills/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPNorthWold",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPNorthWold/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEmynSul",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPEmynSul/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPBaranduin",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPBaranduin/Desc",
+      "translation": ""
+    }
+  ]
+}

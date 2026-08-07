@@ -1,0 +1,192 @@
+{
+  "schema_version": 3,
+  "batch_id": "82d07a280fd54cbdaf9c604bef6d4940",
+  "worker": "rotwk-deep-all-1",
+  "created_at": "2026-08-06T08:11:29.992542+00:00",
+  "lease_expires_at": "2026-08-06T14:11:29.991234+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-deep-all-1-82d07a280fd5.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "SCRIPT:LULLHINT",
+      "source": "The Elves are reforming their ranks - we have time to rebuild!",
+      "source_hash": "52f8e2be010acc4b40489da5dcb50dee2b4bc7a20913e7723ddbb2fe416389c4",
+      "entry_hash": "31c216e577c09a6be30828cd3c40ead39c534126a622795d4b2e70590730c398",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:POSTERNHINT",
+      "source": "Use your postern gates to flank the enemy attacks",
+      "source_hash": "44d2549353c170d0b1c7632b4e00b66da7b20cc6d5b2b6ddd9251e4b97e12b19",
+      "entry_hash": "f605ce5342b625ebcdde501c699c37b659e02cf2bbd7f13fae60021ff7cb5b7b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ROGASHARRIVED",
+      "source": "Rogash has arrived to help you destroy the Elves' final attack. Look for him to the south.",
+      "source_hash": "d07a9c244f46d4ae677c139a6a3420d825a4e4a20eda53990f6c8ce6007ef994",
+      "entry_hash": "711dd49f67de5374966304aaf9eeff8d375d68df43a38353e2adf633e2afa121",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ROGASHNOTREADY",
+      "source": "Rogash is not in position yet. He will alert us as soon as he is ready.",
+      "source_hash": "beb21c5cbff470965f7cf5b0a1c7fa0dec965e0b0abc101362d0a45c6abf5ddc",
+      "entry_hash": "062c23eebcba58054d138ff1d9e2f55ba0db21f7369e0310878f38caac7e6b6b",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ROGASHALMOSTREADY",
+      "source": "Rogash is almost in position to attack the Elves. Be patient - he will be here soon!",
+      "source_hash": "d92aec8eff745d9c4f1b3436e6dda8e32898e223d2154d87463d207d46f93335",
+      "entry_hash": "5126e9b0e08e08ace6daadc3168dee5e122b87e04d9cca78e9c33d77cb715bb3",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:SIGNALFIRELIT",
+      "source": "The Signal Fire has been lit",
+      "source_hash": "0b5633d37af5f2a45eb55131d43b1cec9694618bc88e9af7be8717ddf7d95c07",
+      "entry_hash": "e811a4e6db13a75f8d4d300026f805fd97778e945fd9904107fd272d773ba524",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:ShardRecovered",
+      "source": "Palantir Shard Recovered",
+      "source_hash": "5534674bfa5b1cd4d5da7ea63d40ec3df460500bb96b3bc7e4e9f02bb2217e16",
+      "entry_hash": "d257b488f9e40c96c4277f1b2a5ded86dca3ced0fae8ad631a98ee12386c82d6",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:Shards_Collected",
+      "source": "Shards Collected:",
+      "source_hash": "7dd6d79a63502f2b04dd5311925aea623d85c3ef760643e6ae2017e6f08235f4",
+      "entry_hash": "54b0d63b0c54ec9785f3bd8d7ee408201d41a08d0340191863a88dc2f40e76d2",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:GOAL_DARKEYE_01",
+      "source": "Kill King Arveleg and retrieve the Palantir",
+      "source_hash": "500025df4bfb79f1c45a74d924edfa8333dedda053d290b97f114d666aa0887c",
+      "entry_hash": "406877bf945fdd02de00ecdc8c18e11485fe6e56c6506136bc1e75fcbd8e53c8",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:GOAL_DARKEYE_02",
+      "source": "Establish a Base in this region",
+      "source_hash": "5de4be6d6b57bc3332a375906e07eb11b7d387497cd02a2865351aaf69b59f40",
+      "entry_hash": "4c30b06567f8deb3a7effe2f09b142a76eebdcdd37f42f6bcf335dc56b2ae6bc",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:GOAL_DARKEYE_03",
+      "source": "Investigate the area and discover the fate of the Palantir",
+      "source_hash": "6ebb972bab1aaee12d29c70edfcb5e251248cf5db289f53d17ee6ed30ad4a60e",
+      "entry_hash": "d6e1dfcd651c9d0d55c314e17f1d8c229b2eeae451fc4353c86be8f1e42de26c",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:GOAL_DARKEYE_04",
+      "source": "Collect the 7 Palantir Shards",
+      "source_hash": "482f16f02faf6626245d6051bce7a3ccb762f9d43da93d9639094a6871fe3acc",
+      "entry_hash": "b9a4772e75a0dd27158bda6e33b3ded27e0ee294f138c9722e9ce11e53332153",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:GOAL_DARKEYE_05",
+      "source": "Destroy the entire Arnor outpost and retrieve any Shards they may have gathered",
+      "source_hash": "0331dd3e8b70908fe866fc7a7112554adde7d28ea6c5221a39cb06769342f834",
+      "entry_hash": "d6c0a3221f0e62001f057323a2bf130c5f5ee8aa4da1d4b2393a0c3563294997",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:GOAL_DARKEYE_06",
+      "source": "The Witch-king will be most displeased if the forces of Arnor secure 4 Shards. Do not allow this!",
+      "source_hash": "938e082b1ded2bcb636d8c1a8ea93e5c135f963efe909404debb824a7411e9db",
+      "entry_hash": "beb9c421f4be920ab131d0561ffeffa46d25cb86d2f2575e0dd8af57fb5289b6",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:GOAL_DARKEYE_06_ANNOUNCE",
+      "source": "Prevent Arnor from securing 4 shards in their outpost",
+      "source_hash": "36a1627a3ffab8896cf1133a1aca3b23efe4428cfab6e3b55c0037a066650b69",
+      "entry_hash": "fc5b33428f3a68a0e2d0faf97f6e217f610648743964c94378612fac2fb7c108",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:Prince_Line01",
+      "source": "KING ARVELEG: Quickly - they cannot be far behind. The Palantir must reach the safety of the outpost.",
+      "source_hash": "5edbfb0fc66f67e07672b6e2411841eac4aaf2df5394c9cf6dafed534800c378",
+      "entry_hash": "6c6db97a509e60245b4b9fc4a996689387b8c666a7d47d35225e0c1c6dabfe83",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:Prince_Line02",
+      "source": "ARNOR OFFICER: We will guard the road ahead to cover your retreat, sire.",
+      "source_hash": "9b3f2c0f026c2646251a41168c087a0b3c92d8715f7484a9d863fdfef6955724",
+      "entry_hash": "129bb350f22574070281e32cc263e6e13b7049f7894bc50895923de250e9d681",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:AngmarArrivalLine01",
+      "source": "ANGMAR OFFICER: They must have come this way. We must catch them before they reach the fortress just beyond the downs.",
+      "source_hash": "a41a632928816c4f2b411ec4263fdc16b9e89243e686dc13e517e49789861f4c",
+      "entry_hash": "5851f45e9d743dbf702e240ae47b00838772ed2309786581660b72747344fa50",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:AngmarArrivalLine02",
+      "source": "ANGMAR OFFICER: Their king cannot be allowed to reach the fortress alive!",
+      "source_hash": "d12d10953a8ae28423ff8bc5ba6d592afee8b9a3253e7a5a0530f75b71ed58e5",
+      "entry_hash": "dd5606b252c88739ba90cef56a28a7ef771b8bda567ae043dcf15deae41aa2a7",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:Palintirexplodes01",
+      "source": "KING ARVELEG: Foul creatures, I know what you seek - but you shall not have it!",
+      "source_hash": "c76153ba9dea9790e4c6064b610dd107d82ac8aca78173f60e4ea7948cd4dfda",
+      "entry_hash": "5c82be66f54b585d91f6905a77eb041709b8e0b2d6da7e4e0844056525fd7d74",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:Palintirexplodes02",
+      "source": "KING ARVELEG: Return to your master and tell him you have failed!",
+      "source_hash": "746979bb8ea4e0d6b41749d66130f8fa88521193ddcdea6494ac3f1c8cd69f4b",
+      "entry_hash": "27446710a44c4b3ddcbef4d8f0cb58d62ed267cb3b6385364f0538b907289113",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:Palintirexplodes03",
+      "source": "ANGMAR OFFICER: Noooooo!",
+      "source_hash": "45564e9dcf575c9cc30927a318a269efa54d0c37924e237e89a577226489e14f",
+      "entry_hash": "c72363f4867c177a30edf084565183000904ebcbf2028b65bf74edbb68c82fbd",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_HINT_01",
+      "source": "King Arveleg must be stopped before he reaches the Arnor fortress.",
+      "source_hash": "f610b91f540d9cd8f88af4b1494f50c5352a0b65dea2a29cea5b868c5c59f62a",
+      "entry_hash": "74de23626edf64e7acf6c6b55836f2813fcac80a0a377f7319073b6b288fdafd",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_HINT_02",
+      "source": "You must build a Fortress, a Hall of the King's Men and a Mill in order to establish a presence in this area.",
+      "source_hash": "69cf602679c56eb388a84fec58b9d72bf67094ea7259ee5e85c95d13c6527614",
+      "entry_hash": "ba0da034974edb3e8ffaf1035943cc6e2d71e43d380b2cf8fa30d13ec24b1509",
+      "protected_tokens": []
+    },
+    {
+      "id": "SCRIPT:DARKEYE_OBJ_HINT_03",
+      "source": "Investigate the area and discover the fate of the Palantir",
+      "source_hash": "959639b85996c305b55fb58ed79354fa0dbc1c623be73252b575768eb1e6aa27",
+      "entry_hash": "47bf376c4bff4cbfe192300bc9e219e38633e325dc87c91e0bc8abe7235ecb57",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "afe16e783ea07c7229047ad507543d91624f1ed3b3340b4463602277f5f52a8f"
+}

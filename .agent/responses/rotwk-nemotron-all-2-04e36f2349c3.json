@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "04e36f2349c34c0b8538c1544d95c0c1",
+  "worker": "rotwk-nemotron-all-2",
+  "translations": [
+    {
+      "id": "Map:MAPMPWold",
+      "translation": "La Llanura"
+    },
+    {
+      "id": "Map:MAPMPWold/Desc",
+      "translation": "La Llanura es la parte más septentrional y menos poblada de Rohan. Es una llanura herbosa elevada que se encuentra entre el Bosque de Fangorn y el Anduin, limitada al norte por el Limluz.\n\n Tamaño: 500 x 500\n Guaridas: 8x Guarida de Huargo\n Estructuras neutrales: 4x Puesto avanzado, 1x Hoguera de señal"
+    },
+    {
+      "id": "Map:MAPMPWoodyEnd",
+      "translation": "Bosque del Este"
+    },
+    {
+      "id": "Map:MAPMPWoodyEnd/Desc",
+      "translation": "Bosque del Este era una región boscosa y elevada de la Comarca del Este, situada entre la Tierra de las Colinas Verdes al oeste y la Marisma al este.\n\n Tamaño: 580 x 480\n Guaridas: 4x Guarida de Huargo, 2x Guarida de Troll\n Estructuras neutrales: 2x Puesto avanzado, 2x Hoguera de señal, 1x Torre"
+    },
+    {
+      "id": "Map:MAPWORANGAmonSul",
+      "translation": "Amon Sul"
+    },
+    {
+      "id": "Map:MAPWORANGAmonSul/Desc",
+      "translation": "La fortaleza en la colina ventosa de Amon Sul albergaba un palantir hasta que fue destruida por el ejército del Rey Brujo. Más tarde se la conoció como Cuathad.\n\n Tamaño: 325 x 275\n Guaridas:\n Estructuras neutrales: 1x Puesto avanzado, 1x Hoguera de señal"
+    },
+    {
+      "id": "Map:MAPWORANGAngmar",
+      "translation": "Angmar"
+    },
+    {
+      "id": "Map:MAPWORANGAngmar/Desc",
+      "translation": "El gélido hogar del norte de los Númenóreanos Negros, Trolls y Lobos.\n\n Tamaño: 350 x 350\n Guaridas: 2x Guarida de Troll\n Estructuras neutrales: 2x Hoguera de señal"
+    },
+    {
+      "id": "Map:MAPWORANGBarrowDowns",
+      "translation": "Los Túmulos"
+    },
+    {
+      "id": "Map:MAPWORANGBarrowDowns/Desc",
+      "translation": "Los antiguos terrenos de enterramiento de los reyes de Arnor.\n\n Tamaño: 400 x 350\n Guaridas: 4x Guarida de Espectro de Tumba\n Estructuras neutrales: 1x Posada"
+    },
+    {
+      "id": "Map:MAPWORANGCarnDum",
+      "translation": "Carn Dûm"
+    },
+    {
+      "id": "Map:MAPWORANGCarnDum/Desc",
+      "translation": "La ciudad fortaleza construida por el Rey Brujo de Angmar.\n\n Tamaño: 400 x 500\n Guaridas:\n Estructuras neutrales: 2x Posada, 1x Hoguera de señal, Fortaleza"
+    },
+    {
+      "id": "Map:MAPWORANGFornost",
+      "translation": "Fornost"
+    },
+    {
+      "id": "Map:MAPWORANGFornost/Desc",
+      "translation": "La ciudad capital de Arthedain, el reino septentrional de Arnor. Tras su destrucción pasó a ser conocida como Foso de los Muertos y solo era visitada por los Trasgos.\n\n Tamaño: 300 x 450\n Guaridas:\n Estructuras neutrales: 2x Posada, 2x Hoguera de señal, Fortaleza"
+    },
+    {
+      "id": "Map:MAPWORANGGundabad",
+      "translation": "Monte Gundabad"
+    },
+    {
+      "id": "Map:MAPWORANGGundabad/Desc",
+      "translation": "Una montaña en el extremo norte de las Montañas Nubladas que es un criadero de Orcos.\n\n Tamaño: 500 x 500\n Guaridas: 6x Guarida de Goblin, 1x Guarida de Araña\n Estructuras neutrales: 1x Posada, 1x Hoguera de señal"
+    },
+    {
+      "id": "Map:MAPWORANGNorthDowns",
+      "translation": "Colinas del Norte"
+    },
+    {
+      "id": "Map:MAPWORANGNorthDowns/Desc",
+      "translation": "Una región montañosa de Arnor situada al norte de Bree y Amon Sul.\n\n Tamaño: 500 x 350\n Guaridas: 1x Guarida de Troll\n Estructuras neutrales: 1x Puesto avanzado, 1x Posada"
+    },
+    {
+      "id": "Map:MAPWORANGRhudaur",
+      "translation": "Rhudaur"
+    },
+    {
+      "id": "Map:MAPWORANGRhudaur/Desc",
+      "translation": "El reino montañoso oriental de Arnor, hogar de tribus de hombres de las colinas.\n\n Tamaño: 500 x 450\n Guaridas:\n Estructuras neutrales: 1x Puesto avanzado, 1x Posada"
+    },
+    {
+      "id": "Map:MAPWORArnor",
+      "translation": "Arnor"
+    },
+    {
+      "id": "Map:MAPWORArnor/Desc",
+      "translation": "Este fue una vez el reino del Gran Reino del Norte de los Hombres.\n\n Tamaño: 400 x 425\n Guaridas: 2x Guarida de Troll\n Estructuras neutrales: 1x Hoguera de señal"
+    },
+    {
+      "id": "Map:MAPWORBelfalas",
+      "translation": "Belfalas"
+    },
+    {
+      "id": "Map:MAPWORBelfalas/Desc",
+      "translation": "La sección costera oriental de Gondor que se extiende desde la desembocadura del gran río Anduin hasta la ciudadela de Dol Amroth.\n\n Tamaño: 500 x 500\n Guaridas: 3x Guarida de Goblin, 3x Guarida de Espectro de Tumba\n Estructuras neutrales: 4x Posada, 1x Hoguera de señal, 4x Astillero, 1x Torre"
+    },
+    {
+      "id": "Map:MAPWORBlackGate",
+      "translation": "Puerta Negra"
+    }
+  ]
+}

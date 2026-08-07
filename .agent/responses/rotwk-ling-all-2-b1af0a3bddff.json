@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "b1af0a3bddff496d9b26a992910bda5a",
+  "worker": "rotwk-ling-all-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyAngmarIceArrows",
+      "translation": "Investar Arro&ws de Hielo"
+    },
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyAngmarIceArrowsForBattleTower",
+      "translation": "Arro&ws de Hielo"
+    },
+    {
+      "id": "CONTROLBAR:FireWeaponAngmarFortressSanctumFrostball",
+      "translation": "&Winter's Ira"
+    },
+    {
+      "id": "CONTROLBAR:AngmarWitchKingHotkey",
+      "translation": "El &Witch-king"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BerserkerRage_L1",
+      "translation": "El héroe obtiene un impulso moderado a Armadura y Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BerserkerRage_L1_Palantir",
+      "translation": "El héroe obtiene un impulso moderado a Armadura y Daño\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BerserkerRage_L2",
+      "translation": "El héroe obtiene un buen impulso a Armadura y Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BerserkerRage_L2_Palantir",
+      "translation": "El héroe obtiene un buen impulso a Armadura y Daño\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BerserkerRage_L3",
+      "translation": "El héroe obtiene un impulso excelente a Armadura y Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BerserkerRage_L3_Palantir",
+      "translation": "El héroe obtiene un impulso excelente a Armadura y Daño\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BerserkerRage_L4",
+      "translation": "El héroe obtiene un impulso superior a a Armadura y Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BerserkerRage_L4_Palantir",
+      "translation": "El héroe obtiene un impulso superior a a Armadura y Daño\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_HeroicCharge",
+      "translation": "El héroe y la caballería cercana obtienen +100% de Daño y +300% de Armadura\\nNinguna fuerza puede frenar esta carga"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_HeroicCharge_Palantir",
+      "translation": "El héroe y la caballería cercana obtienen +100% de daño y +300% de Armadura\\nClic en el ícono izquierdo y luego clic en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BattleRage_Level1",
+      "translation": "El héroe obtiene un impulso moderado a Armadura y Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BattleRage_Level1_Palantir",
+      "translation": "El héroe obtiene un impulso moderado a Armadura y Daño\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BattleRage_Level2",
+      "translation": "El héroe obtiene un buen impulso a Armadura y Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BattleRage_Level2_Palantir",
+      "translation": "El héroe obtiene un buen impulso a Armadura y Daño\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BattleRage_Level3",
+      "translation": "El héroe obtiene un impulso excelente a Armadura y Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BattleRage_Level3_Palantir",
+      "translation": "El héroe obtiene un impulso excelente a Armadura y Daño\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BattleRage_Level4",
+      "translation": "El héroe obtiene un impulso superior a Armadura y Daño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_BattleRage_Level4_Palantir",
+      "translation": "El héroe obtiene un impulso superior a Armadura y Daño\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_ThrowSpear_Level1",
+      "translation": "Ataque a distancia que causa daño moderado en un radio pequeño"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_ThrowSpear_Level1_Palantir",
+      "translation": "Ataque a distancia que causa daño moderado en un radio pequeño\\nClic en el ícono izquierdo y luego clic en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_ThrowSpear_Level2",
+      "translation": "Ataque a distancia que causa buen daño en un radio pequeño"
+    }
+  ]
+}

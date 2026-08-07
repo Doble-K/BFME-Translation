@@ -1,0 +1,243 @@
+{
+  "schema_version": 3,
+  "batch_id": "03012908cc554bd2a1aac05e9a947df4",
+  "worker": "rotwk-run4-1",
+  "created_at": "2026-08-05T20:05:50.050153+00:00",
+  "lease_expires_at": "2026-08-06T02:05:50.048936+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-run4-1-03012908cc55.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipRecruitTreebeard",
+      "source": "Requires Level 3 Ent Moot \\n Recruit the leader of the Ents \\n Strong vs. Structures, Swordsmen, and Archers \\n Increases Speed and Armor of nearby Ents \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 1m \\n 50/s Health Regeneration \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "5fa28fc0647d7ee76953bf7b45428795d6540bad197bae5e0bf3d2ac4c8ca2ec",
+      "entry_hash": "0acfdef2d6460014f2cfa3641275ee36d1a14520ab09a4cabceda09866bd007d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipReviveTreebeard",
+      "source": "Requires Level 3 Ent Moot \\n Revive the leader of the Ents \\n Strong vs. Structures, Swordsmen, and Archers \\n Increases Speed and Armor of nearby Ents \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n 50/s Health Regeneration \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "d1a08469dd50f660582de76f53fbfaac7883282dfd7f2d3c049e1082017fc420",
+      "entry_hash": "25d08f11d65c47a577d6b926244126fe2236bfe9bd746f49e4fee59ddcec470e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEnt",
+      "source": "Requires Level 2 Ent Moot \\n Long range offensive Ent \\n Strong vs. Structures, Swordsmen, and Archers \\n \\n Unit Type: Elite Monster \\n Recruit Time: 45s \\n Level: 2: +10% Health, +10% Damage, 40/s Health Regeneration \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "2259e4e222c47b3d2390e487befb42ff9eb221e71666f15cc9c37c4708617fde",
+      "entry_hash": "d700640cc68c0b716800ba483b0a2800d3323cce28ebcc088b72469a762e3912",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildEntAshMelee",
+      "source": "Agile melee Ent \\n Strong vs. Swordsmen and Cavalry \\n Can stealth near trees \\n \\n Unit Type: Basic Monster \\n Recruit Time: 40s \\n Level: 2: +10% Health, +10% Damage, 40/s Health Regeneration \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "930c6359be28cb7550d9c92217f1b8f23766a49bc5deafefce305fcd2f0da4ff",
+      "entry_hash": "b2f1031df6a97a3af2a83cc634e23499b3d472607b8bf1eab36fbfad99b3bee2",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSummonSpiderlings",
+      "source": "Summons a group of Spiderlings with Venom Sacs \\n Effective against Swordsmen, Cavalry, and Structures \\n Summon Duration: 1m 15s \\n Recharge Time: 6m \\n Left click icon then left click on pathable location",
+      "source_hash": "eb35563899b33ec21785120ac669f96d6dc010a10ded741ad9c5cfb86c3a89cb",
+      "entry_hash": "95b7467e0788e3f0e05a427dd3f98cc8306b2f1a517f52064abffba618966d33",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:CreateAHeroRecruit",
+      "source": "Recruit your custom Create a Hero \\n Unit Type: Custom Hero",
+      "source_hash": "80e4409eec95f37d4aea17fc84097f1208020520c57e83f914e1b7879f27fdf2",
+      "entry_hash": "0babd795eb9ffbdb49062cf1133f655490fa06b1a486b52970ef943a2569ed98",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:CreateAHeroRevive",
+      "source": "Revive your custom Create a Hero \\n Unit Type: Custom Hero",
+      "source_hash": "ce5a8b94d6a2396d7dd9da7485b5780e3087cfd5fb9f767bd6c2cb5ffa463f4a",
+      "entry_hash": "e7f5ed7b7f8e774f83ca2180486b3a9a080d973363e30afc2f0fea4eea147a69",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:CreateAHeroHotkey",
+      "source": "&CreateAHero",
+      "source_hash": "dad6a5ec673b17e3a5ea2c6b4ba4452883f4a1d1396585ff888490a2bc515e9b",
+      "entry_hash": "363d742e0f8a137dc558b78e91a2cea399638cd5b0125ae779f99a7fdf7b00bd",
+      "protected_tokens": [
+        "&C"
+      ]
+    },
+    {
+      "id": "VALUE:100X",
+      "source": "100X",
+      "source_hash": "c19247d50888eb9d06ab9226d67313295a75cf97ac860f869197cb65e748721f",
+      "entry_hash": "a31d54b0e66b4f1e83d8f9e1f5fcb3812a60d5925214fc22b5879c1c1873e470",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToggleBlackRiderDeltaFormation",
+      "source": "Delta For&mation",
+      "source_hash": "54398c43ee963ce168e97d65b6a7a22ed8f44a3e834a041347358cb12e56c096",
+      "entry_hash": "0068f7364fb2c99991ef07d8cd2a8adeb8d0785a3efaaab567105186358ddcec",
+      "protected_tokens": [
+        "&m"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleBlackRiderLineToDeltaFormation",
+      "source": "Black Riders return to their initial positions \\n No bonus",
+      "source_hash": "7a793ec4792927ad9d992a35f0f681a9eafc348ad42b340798f83bca3e1b7894",
+      "entry_hash": "1f203a9607a6c2cfbb73269b75a368b2719fd5b3757f007bafb0b7374512cea9",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleBlackRiderDeltaToLineFormation",
+      "source": "Black Riders spread out into a wide formation \\n Horde members gain +10% Damage, but suffer -10% Armor",
+      "source_hash": "35198afd1702bfbd9a2c4306a410be6c3c4142e470aa38c04352841c132e1abb",
+      "entry_hash": "2b4b711a9438c3d318cc4c6a7d4d79e76b5ed11b947bb8ab861a5f6df1aed33a",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPPelennorFields",
+      "source": "Pelennor Fields",
+      "source_hash": "1b0c468271c4cbb12f012fc0840e948acda7340daa6c072150ecafc06117f34c",
+      "entry_hash": "21e96979cad3bdabef7ffcca3d41081ce474d22b26497cbd2b572aadcccf8f7d",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPPelennorFields/Desc",
+      "source": "The Pelennor Fields is a large, open field surrounding Minas Tirith. One of the greatest battles of the War of the Ring took place here.\\n\\n Size: 500 x 500\\n Lairs: 4x Goblin Lair, 2x Barrow Wight Lair\\n Neutral Structures: 4x Outpost, 2x Signal Fire",
+      "source_hash": "71ebee86171e453ed97fdfdc2061b7f9a08af673405dcfa198cb7294e7cb8b4f",
+      "entry_hash": "99facbd7ac5a92257e0690d1fee56b45e713ec4cc867a32ecac2dc12e60f79e7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "Map:MAPMPPelennorFieldsOutskirts",
+      "source": "Pelennor Fields Outskirts",
+      "source_hash": "614631a113133d841490a05cef0a05c593563550392151d78a4c4fbe43385cce",
+      "entry_hash": "71a9af10630c79ba4ff7efa6fcbbc37166a1ff373325960d0257e1919a622e2e",
+      "protected_tokens": []
+    },
+    {
+      "id": "Map:MAPMPPelennorFieldsOutskirts/Desc",
+      "source": "The northernmost point of the Pelennor Fields where a small formation of hills can be found.\\n\\n Size: 500 x 500\\n Lairs: 4x Troll Lair, 4x Warg Lair, 2x Wight Lair, 2x Goblin Lair \\n Neutral Structures: 4x Outpost, 2x Signal Fire",
+      "source_hash": "026ff052e828ad1548476990114953b0d9726d68e0d7b126a91194c737d5b5dc",
+      "entry_hash": "136f8f4d8a16e57c11d00b50074e1a003d4f3a27f43d5852f2f332064f9e5870",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorRangerHordeForGoodIthilien",
+      "source": "Requires Level 2 Archery Range \\n Unit Type: Elite Archer \\n Strong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Longshot arrow volleys \\n Can stealth near trees",
+      "source_hash": "bb0dce2cb594e6ca8d553e538e3967566071e751d8302a2652adc9e9bec86721",
+      "entry_hash": "cf6b558f950441855933bbaed8f1895ae5b17bcc6ab768b5fe613372d04f335e",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_GondorRangerHorde",
+      "source": "Unit Type: Elite Archer\\nStrong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Longshot arrow volleys \\n Can stealth near trees\\n",
+      "source_hash": "eefbd250fa93c40ced6ebc04ae97e0e1fc758898a1ee114dd049a60db64c6e73",
+      "entry_hash": "b7dc2afbe8aed864996c20502aa9acf369b5fa2546da34504cf0f42fc3b5940b",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_GondorRangerHorde",
+      "source": "\\nUnit Type: Elite Archer\\nStrong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Longshot arrow volleys \\n Can stealth near trees",
+      "source_hash": "8645477e4d29a0914ba10d91fc660462d039362405446f025c5207cdfd31df49",
+      "entry_hash": "a845f4a54a4e77a2b2614aa76e9dc9127e9000ccb48a92335daea943b437a3c6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorRangerSummonedHorde",
+      "source": "Unit Type: Elite Archer \\n Strong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Longshot arrow volleys \\n Can stealth near trees",
+      "source_hash": "a5de8c0e38552031c769b2e66b15e32cada8e9f8c2c73e3df51403637d6d2bbd",
+      "entry_hash": "a5694da6a0f168d83abece2e140261eff9ff1e3e278c5e0df53559b2a09fdbb9",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "77fdbc6a986019e6319ef8acee239a0b377d322daa98244feac38f50f3f7a2a9"
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "batch_id": "2c296f94c0d34f09b672d53cd5da29fc",
+  "worker": "rotwk-openai1-3",
+  "translations": [
+    {
+      "id": "Map:mapmppuzzlersringwar/Desc",
+      "translation": "Solo existe un Señor del Anillo, solo uno que puede someterlo a su voluntad. Y no comparte su poder. \\n\\nModos de juego: 2-4 jugadores\\nModo extremo: Ninguno"
+    },
+    {
+      "id": "Map:mapmpbesiegeedoras",
+      "translation": "*Asedio: Edoras"
+    },
+    {
+      "id": "Map:mapmpbesiegeedoras/Desc",
+      "translation": "Expulsa a los campesinos de Edoras. Demuéstrales que eres el mejor granjero. \\n\\nModos de juego: 1-2 jugadores\\nModo extremo: Habilita Ring Heroes"
+    },
+    {
+      "id": "Map:mapmptheinvasionofsauron",
+      "translation": "*Defensa de héroes: La invasión de Sauron"
+    },
+    {
+      "id": "Map:mapmptheinvasionofsauron/Desc",
+      "translation": "Sauron quiere conquistar la Tierra Media, y solo 18 héroes se oponen a él. Ten cuidado, porque tus héroes solo tienen una vida. \\n\\nOleadas: 23\\nModos de juego: 1-4 jugadores\\nModo extremo: Habilita Ring Heroes"
+    },
+    {
+      "id": "Map:mapmpshockwavehc",
+      "translation": "*Defensa de fortaleza: Onda de choque HC"
+    },
+    {
+      "id": "Map:mapmpshockwavehc/Desc",
+      "translation": "¡Defiende tu Fortaleza! ¡Lucha y destruye poderosas oleadas!\\n\\nOleadas: 23\\nModos de juego: 1-4 jugadores\\nModo extremo: Habilita Ring Heroes"
+    },
+    {
+      "id": "Map:mapmpblackwave",
+      "translation": "*Defensa de fortaleza: Ola negra"
+    },
+    {
+      "id": "Map:mapmpblackwave/Desc",
+      "translation": "Levántate y enfrenta a los ejércitos de la Tierra Media\\n\\nOleadas: infinitas\\nModos de juego: 1-4 jugadores\\nModo extremo: Ninguno"
+    },
+    {
+      "id": "Map:mapmpheroesarena",
+      "translation": "*Defensa de héroes: Arena de héroes"
+    },
+    {
+      "id": "Map:mapmpheroesarena/Desc",
+      "translation": "Mata a tus enemigos y sobrevive para desbloquear bonificaciones\\n\\nOleadas: 35\\nModos de juego: 1-4 jugadores\\nModo extremo: Habilita Ring Heroes"
+    },
+    {
+      "id": "CONTROLBAR:CustomGaladrielHealing",
+      "translation": "Sanación"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCustomGaladrielHealing",
+      "translation": "Todos los aliados cercanos dentro de un radio de 200 son sanados (funciona durante el combate)\\nSanación de tropas: 20 PV cada 2 s\\nHéroes: 50 PV cada 2 s\\nHabilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:GaladrielRageMode",
+      "translation": "Furia de Galadriel [&R]"
+    },
+    {
+      "id": "CONTROLBAR:TooltipGaladrielRageMode",
+      "translation": "Galadriel obtiene: +100% de daño, +100% de armadura y +30% de velocidad, pero pierde la capacidad de sanar a los aliados\\nAl activarse, los enemigos dentro de un radio de 300 reciben daño y son derribados\\nDuración: 1 min\\nTiempo de recarga: 2 min\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:CustomGaladrielCharge",
+      "translation": "Purificación [&T]"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCustomGaladrielCharge",
+      "translation": "Elimina las penalizaciones pasivas y activas de todos los aliados cercanos y otorga +50% de armadura, pero Galadriel pierde -50% de armadura\\nDuración: 45 s\\nTiempo de recarga: 2 min\\nClic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:CustomSelectAbilityShop",
+      "translation": "Tienda de habilidades [&R]"
+    },
+    {
+      "id": "CONTROLBAR:CustomTacticsBuildTimeAbility",
+      "translation": "Llamado a la batalla"
+    },
+    {
+      "id": "CONTROLBAR:CustomTacticsDamageAbility",
+      "translation": "Bonificación de daño"
+    }
+  ]
+}

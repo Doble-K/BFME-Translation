@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "50bb263e6e2d48ad81f146b29c1ae585",
+  "worker": "rotwk-nemotron-all-4",
+  "translations": [
+    {
+      "id": "Map:MAPMPEregion/Desc",
+      "translation": "También conocido como Hollin, Eregion fue un reino de los Elfos Noldor en Eriador durante la Segunda Edad. Se encuentra cerca de la Puerta Oeste de Moria bajo la sombra de las Hithaeglir.\\n\\n Tamaño: 350 x 400\\n Guaridas: 2x Guarida de Huargos\\n Estructuras neutrales: 1x Fuego de señal"
+    },
+    {
+      "id": "Map:MAPMPErynLaer",
+      "translation": "Eryn Laer"
+    },
+    {
+      "id": "Map:MAPMPErynLaer/Desc",
+      "translation": "Los altos árboles de Eryn Laer, los Bosques del Canto, se alzan en lo profundo del reino de Lothlórien, el corazón de la Tierra de los Elfos en la Tierra Media.\\n\\n Tamaño: 325 x 375\\n Guaridas: 4x Guarida de Huargos, 2x Guarida de Trolls\\n Estructuras neutrales: 2x Fuego de señal"
+    },
+    {
+      "id": "Map:MAPMPEvendim",
+      "translation": "Evendim"
+    },
+    {
+      "id": "Map:MAPMPEvendim/Desc",
+      "translation": "Un lago solitario no muy lejos de la Comarca.\\n\\n Tamaño: 500 x 500\\n Guaridas: 8x Guarida de Goblins, 4x Espectro de Tumba\\n Estructuras neutrales: 4x Puesto avanzado, 1x Fuego de señal, 8x Astillero"
+    },
+    {
+      "id": "Map:MAPMPFarHarad",
+      "translation": "Lejano Harad"
+    },
+    {
+      "id": "Map:MAPMPFarHarad/Desc",
+      "translation": "En lo profundo del sur de la Tierra Media, la región de Lejano Harad es la patria de los salvajes Haradrim, fieles siervos de Sauron.\\n\\n Tamaño: 380 x 370\\n Guaridas: 2x Guarida de Arañas, 2x Guarida de Trolls\\n Estructuras neutrales: 1x Puesto avanzado, 2x Fuego de señal"
+    },
+    {
+      "id": "Map:MAPMPFordsofIsen",
+      "translation": "Vados del Isen"
+    },
+    {
+      "id": "Map:MAPMPFordsofIsen/Desc",
+      "translation": "El río Isen pasa entre Isengard y el Abismo de Helm. Muchos viajeros que van y vienen del Paso de Rohan cruzan el poderoso río en este punto poco profundo.\\n\\n Tamaño: 375 x 313\\n Guaridas: 4x Guarida de Huargos, 2x Guarida de Trolls\\n Estructuras neutrales: 2x Posada"
+    },
+    {
+      "id": "Map:MAPMPFordsofIsenII",
+      "translation": "Vados del Isen II"
+    },
+    {
+      "id": "Map:MAPMPFordsofIsenII/Desc",
+      "translation": "El río Isen pasa entre Isengard y el Abismo de Helm. Muchos viajeros que van y vienen del Paso de Rohan cruzan el poderoso río en este punto poco profundo.\\n\\n Tamaño: 550 x 313\\n Guaridas: 8x Guarida de Huargos, 2x Guarida de Trolls\\n Estructuras neutrales: 2x Posada, 2x Fuego de señal"
+    },
+    {
+      "id": "Map:MAPMPFordsOfRohan",
+      "translation": "Vados de Rohan"
+    },
+    {
+      "id": "Map:MAPMPFordsOfRohan/Desc",
+      "translation": "Un tranquilo campo de batalla situado entre las tierras de Rohan e Isengard, separado por el río Isen.\\n\\n Tamaño: 350 x 375\\n Guaridas: 2x Guarida de Huargos, 2x Guarida de Trolls\\n Estructuras neutrales: 2x Posada, 2x Fuego de señal"
+    },
+    {
+      "id": "Map:MAPMPForochel",
+      "translation": "Forochel"
+    },
+    {
+      "id": "Map:MAPMPForochel/Desc",
+      "translation": "Tierras baldías heladas en el norte de la Tierra Media. Aquí se encontraba la antigua fortaleza de Morgoth, Utumno.\\n\\n Tamaño: 500 x 400\\n Guaridas: 2x Goblin, 4x Guarida de Trolls\\n Estructuras neutrales: 3x Fuego de señal"
+    },
+    {
+      "id": "Map:MAPMPGreyMountains",
+      "translation": "Montañas Grises"
+    },
+    {
+      "id": "Map:MAPMPGreyMountains/Desc",
+      "translation": "Una cadena montañosa del norte donde Goblins y Enanos han combatido durante muchas eras.\\n\\n Tamaño: 485 x 550\\n Guaridas: 2x Guarida de Goblins, 2x Guarida de Draco de Fuego\\n Estructuras neutrales: 2x Puesto avanzado, 2x Fuego de señal"
+    },
+    {
+      "id": "Map:MAPMPHaradOasis",
+      "translation": "Oasis de Harad"
+    },
+    {
+      "id": "Map:MAPMPHaradOasis/Desc",
+      "translation": "Una región profunda en Harad donde se pueden encontrar preciosas pozas de agua.\\n\\n Tamaño: 400 x 400\\n Guaridas: 2x Guarida de Goblins, 2x Guarida de Trolls\\n Estructuras neutrales: 2x Puesto avanzado, 2x Posada, 2x Fuego de señal"
+    },
+    {
+      "id": "Map:MAPMPHarlond",
+      "translation": "Harlond"
+    },
+    {
+      "id": "Map:MAPMPHarlond/Desc",
+      "translation": "El puerto y muelles de Minas Tirith, donde Aragorn y el Ejército de los Muertos desembarcaron durante la batalla por Minas Tirith.\\n\\n Tamaño: 495 x 545\\n Guaridas: 6x Guarida de Trolls\\n Estructuras neutrales: 3x Puesto avanzado, 3x Fuego de señal"
+    },
+    {
+      "id": "Map:MAPMPHillsofEriador",
+      "translation": "Colinas de Eriador"
+    },
+    {
+      "id": "Map:MAPMPHillsOfEriador/Desc",
+      "translation": "Un antiguo campo de batalla en Eriador donde han ocurrido innumerables escaramuzas a lo largo de las eras.\\n\\n Tamaño: 500 x 500\\n Guaridas: 8x Guarida de Goblins, 4x Guarida de Espectros de Tumba\\n Estructuras neutrales: 4x Puesto avanzado, 1x Torre"
+    },
+    {
+      "id": "Map:MAPMPHobbiton",
+      "translation": "Hobbiton"
+    },
+    {
+      "id": "Map:MAPMPHobbiton/Desc",
+      "translation": "Una antigua aldea en la parte central de la Comarca. Es el hogar de muchos Hobbits ilustres.\\n\\n Tamaño: 403 x 400\\n Guaridas: 4x Guarida de Espectros de Tumba\\n Estructuras neutrales: 2x Fuego de señal"
+    }
+  ]
+}

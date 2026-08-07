@@ -1,0 +1,200 @@
+{
+  "schema_version": 3,
+  "batch_id": "e9893eb6850c46e387c3eb6d18bd279c",
+  "worker": "rotwk-laguna-all-3",
+  "created_at": "2026-08-06T08:35:41.797270+00:00",
+  "lease_expires_at": "2026-08-06T14:35:41.796025+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-laguna-all-3-e9893eb6850c.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "LW:DisplayNameMountGundabad",
+      "source": "Mount Gundabad",
+      "source_hash": "a98958b21b9eb06b5f898cc8ff71c602dbb9babf590345fe6ee1f55c08dcca5f",
+      "entry_hash": "26904a560998089273e30607fd6917195553134f23a1633e5f2ba181684b64d9",
+      "protected_tokens": []
+    },
+    {
+      "id": "LW:TerritoryNorthernWaste",
+      "source": "Forodwaith",
+      "source_hash": "88b094186ad8ccd2c421848ed6adbded9d0d59172915d84dc066c8fe7245d0da",
+      "entry_hash": "5f214d3bfc3017b7febc382a97b6b2cfa97e8cf9ea7aa46ae82cde3106e435a5",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Hero_Rogash",
+      "source": "Rogash",
+      "source_hash": "061fdf523c283d74f5640166676d60d6cb0da05a9e32659167aa09a451b61f42",
+      "entry_hash": "395bc78fc8526c2d4777fceccc6bb8470dd0c12446705b4ae1a7d20aa3f1b76c",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_Rogash",
+      "source": "Unit Type: Hero Army Leader\\n",
+      "source_hash": "0cab7ca6b720c02654233b06c3b5456ef1cb441528ea2d48e26c16a3589a2ef4",
+      "entry_hash": "9fd526a03486d0fe627d7b1ddce7236149b9146eea459582ffb0c8a1e24c257f",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_Rogash",
+      "source": "Unit Type: Hero Army Leader",
+      "source_hash": "62493e23688c5f5573a9e7b4d83dd8e860c651dbc28501b60ada4c131b59bb5a",
+      "entry_hash": "26a53c432738f210fd69d2c404e3847e1ae49fb7415654fbbb609d6b67c68ee2",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Hero_Morgramir",
+      "source": "Morgomir",
+      "source_hash": "579c98a180dd0c0ab341e73719ed92ba41b4edb559fc4ccd6c399991d5f3cff0",
+      "entry_hash": "30dc3b2057f6d92d375b7b15b48cf6b81b2d1f670be5641c5610fcbf3a8897e4",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_Morgramir",
+      "source": "Unit Type: Hero Army Leader\\n",
+      "source_hash": "dcd555f5e472fb5cee3078e74624852087631d91fd8e888aded9d98fb70f5a54",
+      "entry_hash": "0b6b50f95d7e6171148ed5b6134f7fec8897dbc32b6ec983d263d034d461d904",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_Morgramir",
+      "source": "Unit Type: Hero Army Leader",
+      "source_hash": "f622df2a9ceada16fe54dac45f49e7557d98ea4758795acbb80d88cc81d85ffa",
+      "entry_hash": "9d233223b6540e015ec0fc1e884d05af7fcd3cfa5efb1e8431b54d4b0717d0a1",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Hero_Hwaldar",
+      "source": "Hwaldar",
+      "source_hash": "2299dee947cf9bc68c092774afc3c18479cffa5772af75b012660c72582f5f7c",
+      "entry_hash": "b8926b0f18e6f15a3e9c7fe7b61e811a02608e95ca990e444cea6c58d2302b01",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_Hwaldar",
+      "source": "Unit Type: Hero Army Leader\\n",
+      "source_hash": "6bc0851a961ea9bec717fd0c365fa32ee0391a39cbc7b1bf70a5e8e33dfa171f",
+      "entry_hash": "138b67c271a4a71712ab98f42068252eab3e09736c90243f1f884ab10924735c",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_Hwaldar",
+      "source": "Unit Type: Hero Army Leader",
+      "source_hash": "08e7a9f1cdee31b188cb5e0f41e201b497f2514231d29e2658418547152149a9",
+      "entry_hash": "b43a567ae51d00e3fb2dcb906611d59cbd515b4195193671cc66905cb1d24a16",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_Hero_Karsh",
+      "source": "Karsh",
+      "source_hash": "e6912e9da4c26bf43d60ae642438add766da4921b9edb55de468699e22e454f0",
+      "entry_hash": "cae2d8877be97273576b565b97f0fc11c32299c62c1cc53a2dc19acb537cc30c",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_Karsh",
+      "source": "Unit Type: Hero\\n",
+      "source_hash": "db851c65f5415fe987d1a3092302a62f568ad17dda99ba440acdfd9758f146f4",
+      "entry_hash": "a86386ac156383861eff2c15d5380af2c8933d7540ecd05ad5ce6666360fd441",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTip_Karsh",
+      "source": "Unit Type: Hero",
+      "source_hash": "379edde68cb647fa304cdf3db12eadcf99e0e315ea2ee63c2d2ed063e1c02dc5",
+      "entry_hash": "0b7de8476fcc3713e6cc18b3b68819477b52c742dc773dbec7c5842622309998",
+      "protected_tokens": []
+    },
+    {
+      "id": "CreateAHero:SubClassName_SnowTroll",
+      "source": "Snow Troll",
+      "source_hash": "2c4b96d178d3e6f4a53071371bd39853c8945eb658ea6a1ac812978af60751b3",
+      "entry_hash": "605afee365ca3105ae4288e41b487fad39457242268c73da5bd7d289dd60364a",
+      "protected_tokens": []
+    },
+    {
+      "id": "CreateAHero:SubClassDesc_SnowTroll",
+      "source": "Fur-clad snow trolls dwell in the frozen wastelands of the North. They are smaller and faster than their southern cousins, and possess great cunning.",
+      "source_hash": "107361cb2af02581154e128392759454619436ff5988d0bea6588b40bfc4164e",
+      "entry_hash": "f1039acaa1b43f947bb18d3fa887f7c9a56d0ce37c04ed421de5549730902563",
+      "protected_tokens": []
+    },
+    {
+      "id": "CreateAHero:SubClassName_HillTroll",
+      "source": "Hill Troll",
+      "source_hash": "d7d54baaf094b5413ded1a2379a3fa57a5b5ee98bf1157761c8c7606507ce81b",
+      "entry_hash": "be79d05c1a2852685ec7194350401d52021300cedc0b544f8535b946c9f71ae1",
+      "protected_tokens": []
+    },
+    {
+      "id": "CreateAHero:SubClassDesc_HillTroll",
+      "source": "Hill trolls inhabit the frost-covered hills and fens of the North. They are a savage and headstrong people, craving battle and treasure.",
+      "source_hash": "8cc2212560bc4551b32effa6d469731d67a1cd758295abb6be8e7ce356b9c3cf",
+      "entry_hash": "0a36073ae3725f11d4fc1f6d312a252e808ea4b88460e4f2e0b6414f3338c3c9",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:HordeIsengardBerserker",
+      "source": "Uruk Deathbringers",
+      "source_hash": "f04095b1cdb0e33a4ca7cd75d138dd3325b698931f069dae5e3df6f71c6d8c6b",
+      "entry_hash": "19680ebd443a855a8a6c939167a44c5618dc43a2467c1cde5eb4ec71a47f3e32",
+      "protected_tokens": []
+    },
+    {
+      "id": "CAH:Command_CreateAHero_TrollLeap_Level1_Name",
+      "source": "Leap",
+      "source_hash": "f27ef0b22837df4597ccf38670601724c59c0f4db58fc2cb94bb82aeb2614ddb",
+      "entry_hash": "a3617d6d8b6673d270bd958d76c4d2d8dea21a41bcc760b9ba787d940f9c83db",
+      "protected_tokens": []
+    },
+    {
+      "id": "CAH:Command_CreateAHero_TrollLeap_Level2_Name",
+      "source": "Improved Leap",
+      "source_hash": "5a0beadef465ddbf7f8721c48361bd9da50f2b6f443af40e2fd673e03082df6b",
+      "entry_hash": "8c38fe7ae68728c5e4053afb43c658f16c3c660e1ce03022d8201aa07757621e",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_DominateTroll_Level1",
+      "source": "Dominate Troll",
+      "source_hash": "9105059a2b096cc92879dd5c336098b71855cb0c85f4837797b2a803115444ad",
+      "entry_hash": "840b30785410644efaf94bd733d12cbc597bcbea4472971699261d9cc5dbeb2c",
+      "protected_tokens": []
+    },
+    {
+      "id": "CONTROLBAR:CAH_DominateTroll_Level1",
+      "source": "Dominate Troll",
+      "source_hash": "74f07dcf965c1d26b4900616e50c5f20b2e5e2bc9836117db4e8513b279b6263",
+      "entry_hash": "91768b3f65e202ea3710b151d20621085d4eea99d879b17940226cb8ec45b713",
+      "protected_tokens": []
+    },
+    {
+      "id": "CAH:Command_CreateAHero_SpecialAbilityDominateTroll_Level1_Name",
+      "source": "Dominate Troll",
+      "source_hash": "77a8ce7bcd9a30fea55e6ed8244afad84ee5f0f47a5af1cbcc811defa9419840",
+      "entry_hash": "ddc494eaab87d3a1a26541367a6b59e89619020a9a741bca7146b3713caef344",
+      "protected_tokens": []
+    },
+    {
+      "id": "OBJECT:MallornSunFlare",
+      "source": "This Mallorn Tree controls the Sun Flare Power.",
+      "source_hash": "bf3235a47388580f307f926e2d338679d06cdae8dde3379f3e8c824e2d760a92",
+      "entry_hash": "bb57898f9f954381f900d15c1e7cb43d06d69d2a28a95f3956135c221abe5cc3",
+      "protected_tokens": []
+    }
+  ],
+  "manifest_hash": "e3ce22f80d9e3e024560c0acc8c8e2b88f458b93819359031c767d1284ce4b70"
+}

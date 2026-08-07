@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "c7d4c92ed9d843efb23d8bbf9e5bf833",
+  "worker": "rotwk-mimo-loop",
+  "translations": [
+    {
+      "id": "CONTROLBAR:ToolTipHawkStrike",
+      "translation": "Ataque de doble flecha que inflige daño por salpicadura \\n Daño: 600 (Héroe a distancia) \\n Radio de daño por salpicadura: 20 \\n Alcance del objetivo: 485 \\n Tiempo de recarga: 45s \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLegolasTrainArchers  ",
+      "translation": "Requiere Nivel 3 \\n Los arqueros objetivo obtienen excelente Experiencia \\n Experiencia otorgada: 120 XP \\n Radio del objetivo: 150 \\n Alcance del objetivo: 200 \\n Tiempo de recarga: 2m 30s \\n Clic izquierdo en el icono y luego clic izquierdo en los arqueros objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipArrowWind",
+      "translation": "Requiere Nivel 7 \\n Lanza una lluvia continua de flechas \\n Daño: 200 (Héroe a distancia) \\n Radio del objetivo: 200 \\n Alcance del objetivo: 450 \\n Total de flechas: 70 \\n Tiempo de recarga: 3m 30s \\n Clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipNoldorWeaponSong",
+      "translation": "Requiere Nivel 5 \\n Los Guerreros Noldor obtienen 50% de Daño y +100% de Armadura \\n Duración: 30s \\n Tiempo de recarga: 2m \\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDaleSlamArrow",
+      "translation": "Requiere Nivel 2 \\n Causa daño y retroceso a las unidades enemigas \\n Solo se puede usar con arco equipado \\n Daño: 400 (Héroe a distancia) \\n Radio de daño por salpicadura: 20 \\n Alcance del objetivo: 325 \\n Tiempo de recarga: 45s \\n Clic izquierdo en el icono y luego clic izquierdo en la unidad objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTrainArchers",
+      "translation": "Requiere Nivel 4 \\n Los arqueros objetivo obtienen experiencia moderada \\n Experiencia otorgada: 80 XP \\n Radio del objetivo: 150 \\n Alcance del objetivo: 200 \\n Tiempo de recarga: 2m 30s \\n Clic izquierdo en el icono y luego clic izquierdo en los arqueros objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDaleBeastSlayerArrow",
+      "translation": "Requiere Nivel 7 \\n Causa daño bonus a los enemigos voladores y daño severo a los monstruos \\n Daño: 1000 (Héroe) \\n Alcance del objetivo: 450 \\n Tiempo de recarga: 2m 24s \\n Solo se puede usar con arco equipado \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDwarvenGloinSlam",
+      "translation": "Ataque poderoso que causa impacto meta a todas las unidades y daño masivo a las estructuras \\n Inflige daño bonus a Héroes y Trolls \\n Daño: 500 (Aplastamiento) y 500 (Asedio) \\n Radio de daño por salpicadura: 50 \\n Alcance del objetivo: 10 \\n Tiempo de recarga: 1m \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDwarvenGloinShakeFoundation",
+      "translation": "Requiere Nivel 4\\nEl edificio enemigo objetivo recibe daño severo y es inhabilitado temporalmente \\n Abre automáticamente la puerta objetivo \\n Daño: 2000 (Asedio) \\n Duración: 20s \\n Alcance del objetivo: 15 \\n Tiempo de recarga: 3m \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGloinSmash",
+      "translation": "Requiere Nivel 10 \\n Causa un pequeño terremoto alrededor de la ubicación de Gloin y golpea a todas las unidades \\n Daño: 750 (Magia) \\n Radio: 210 \\n Tiempo de recarga: 4m \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDainStubbornPride",
+      "translation": "Requiere Nivel 2 \\n Otorga a todos los aliados cercanos resistencia al miedo y al terror \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMightyRage",
+      "translation": "Requiere Nivel 5 \\n Tipo de modificador: Hechizo y Debuff activo \\n Las unidades aliadas objetivo obtienen +25% de Daño y +25% de Armadura\\n Las unidades enemigas objetivo sufren -20% de Daño y -20% de Armadura \\nNulifica el Liderazgo enemigo \\n Se acumula con Mejoras, Liderazgo y otros Hechizos \\n No se acumula con otros Debuffs \\n Radio: 150 \\n Duración: 30s \\n Alcance del objetivo: 200 \\n Tiempo de recarga: 3m \\n Clic izquierdo en el icono y luego clic izquierdo en las unidades objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipAxeThrow",
+      "translation": "Ataque a distancia poderoso con daño de radio \\n Altamente efectivo contra Héroes y Monstruos \\n Daño: 800 (Héroe) \\n Radio de daño por salpicadura: 15 \\n Alcance del objetivo: 275 \\n Tiempo de recarga: 45s \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLeap",
+      "translation": "Requiere Nivel 2 \\n Gimli salta a una ubicación causando daño de área \\n Daño: 200 (Héroe) \\n Radio de daño por salpicadura: 40 \\n Alcance del objetivo: 200 \\n Tiempo de recarga: 1m \\n Clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBlackArrows",
+      "translation": "Requiere Nivel 2 \\n Ataque a distancia especial que inflige daño triple \\n Hace que los monstruos enemigos huyan de terror \\n Se puede disparar desde un alcance extendido \\n Daño: 225 (Perforación) \\n Duración: 10s \\n Alcance del objetivo: 480 \\n Tiempo de recarga: 45s \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipZealotAxeThrow",
+      "translation": "Requiere Nivel 2 \\n Ataque a distancia poderoso con daño de radio \\n Daño: 200 (Héroe) \\n Radio de daño por salpicadura: 15 \\n Alcance del objetivo: 350 \\n Tiempo de recarga: 45s \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityOilBarrels",
+      "translation": "Lanza barriles de aceite llameantes que explotan en el campo de batalla \\n Daño: 100 (Asedio) \\n Radio de daño por salpicadura: 25 \\n Alcance del objetivo: 150 \\n Tiempo de recarga: 1m 20s \\n Clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityCatapultOilBarrels",
+      "translation": "Lanza barriles de aceite llameantes que explotan en el campo de batalla \\n Daño: 150 (Asedio) \\n Radio de daño por salpicadura: 45 \\n Alcance del objetivo: 500 \\n Tiempo de recarga: 1m \\n Clic izquierdo en el icono y luego clic izquierdo en el área objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMorgomirDreadVisage  ",
+      "translation": "Requiere Nivel 2 \\n Tipo de modificador: Debuff pasivo \\n Las unidades enemigas cercanas sufren -20% de Daño y -20% de Armadura \\n No se acumula con otros Debuffs \\n Radio: 200 \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMorgomirMorgulBlade",
+      "translation": "Requiere Nivel 4 \\n El enemigo objetivo recibe daño venenoso con el tiempo, y se convierte en un espectral al morir \\n Inhabilita temporalmente a una unidad no Monstruo \\n El Monstruo objetivo sufre -33% de Velocidad \\n Daño: 200 (Héroe) y 10/s (Veneno) \\n Duración: 10s \\n Alcance del objetivo: 15 \\n Tiempo de recarga: 1m \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDarkGlory",
+      "translation": "Requiere Nivel 5 \\n Tipo de modificador: Hechizo \\n Morgomir y los Dunedain Oscuros cercanos obtienen +25% de Daño y +25% de Armadura \\n Se acumula con Mejoras, Liderazgo y otros Hechizos \\n Radio: 350 \\n Duración: 30s \\n Tiempo de recarga: 3m \\n Clic izquierdo en el icono para activar"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMorgramirRuin",
+      "translation": "Requiere Nivel 8\\nEl edificio enemigo objetivo recibe daño severo y es inhabilitado temporalmente \\n Abre automáticamente la puerta objetivo \\n Daño: 3000 (Asedio) \\n Duración: 30s \\n Alcance del objetivo: 75 \\n Tiempo de recarga: 3m \\n Clic izquierdo en el icono y luego clic izquierdo en el objetivo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityKarshFearlessLeadership",
+      "translation": "Requiere Nivel 4 \\n Otorga a todos los aliados cercanos resistencia al Miedo y al Terror\\n Habilidad pasiva \\n Radio: 200"
+    },
+    {
+      "id": "Controlbar:TooltipSpecialAbilityKarshBlink",
+      "translation": "Requiere Nivel 5 \\nKarsh puede teletransportarse a un área seleccionada \\n Daña a los enemigos cercanos a la ubicación objetivo \\n Daño: 100 (Aplastamiento) \\n Radio de daño por salpicadura: 55 \\n Alcance del objetivo: Global \\n Tiempo de recarga: 2m \\n Clic izquierdo en el icono y luego clic izquierdo en una ubicación transitable"
+    },
+    {
+      "id": "CONTROLBar:ToolTipRogashDominateTroll",
+      "translation": "Toma control de los Trolls enemigos objetivo \\n Duración: Permanente \\n Alcance del objetivo: 150 \\n Tiempo de recarga: 3m \\n Clic izquierdo en el icono y luego clic izquierdo en el troll objetivo"
+    }
+  ]
+}

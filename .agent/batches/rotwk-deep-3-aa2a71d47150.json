@@ -1,0 +1,385 @@
+{
+  "schema_version": 3,
+  "batch_id": "aa2a71d47150416d8334721738dd4893",
+  "worker": "rotwk-deep-3",
+  "created_at": "2026-08-06T06:30:39.461057+00:00",
+  "lease_expires_at": "2026-08-06T12:30:39.459596+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-deep-3-aa2a71d47150.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:WildGoblinKingRecruit",
+      "source": "Recruit the leader of the Goblins \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "1ef742e0ea0ded9695eb0e4a2ea92ce404af52ae8335631d27d7ac7e1ba7c4a4",
+      "entry_hash": "b4e8569ccd911b2d79c7402723cdc059f07ee108a72a63b769b98a3c971ccec3",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:WildGoblinKingRevive",
+      "source": "Revive the fallen Hero, The Goblin King \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "36c3ed41faec0d0af3db250793fc3c817ec48fd47b732550a156c8e1feac048b",
+      "entry_hash": "4e34537e0aced65972c01a2095429335b4d22a22b61f4f8c48af7b00222a3f3c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ShelobRecruit",
+      "source": "Recruit the spider from the pass of Cirith Ungol \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 50/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "3c567a50bf40adcdf50c2d23a0c16c685cf1d1420d4eea1015f6ae4a7a90af61",
+      "entry_hash": "4dc7c38fc96935d80c04dc47e939e3a3372a3d92c35a1cde21431a7db4d19a23",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ShelobRevive",
+      "source": "Revive the fallen Hero, Shelob \\n \\n Unit Type: Tier 4 Hero \\n Revive Time: 55s x 1.075 per additional level gained \\n Health Regeneration: 50/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "f446ae4cdf46ea990a112b469ba8a307baafb149dbeea85ee168e82fa9ac84a7",
+      "entry_hash": "60e10a8a2f7bfbdd233d2d628e0fc23cab0517cf7911dcaa8356f691c0d16b57",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:WildDrogothRecruit",
+      "source": "Recruit the armored Dragon of the Withered Heath \\n \\n Unit Type: Tier 5 Hero \\n Recruit Time: 55s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "373f04e2055b4f61cc2465d8f3a329818b6a8b1f6419e2a505e3883a4fd8634b",
+      "entry_hash": "a15950d1f9092ccf606857da1453f85d10599b7c95de892fc1bec1509778940d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:WildDrogothRevive",
+      "source": "Revive the fallen Hero, Drogoth \\n \\n Unit Type: Tier 5 Hero \\n Revive Time: 1m x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "6b411c9705297a5734d1c29bc42892b504348120731ac3d33783883cf9da1305",
+      "entry_hash": "25a0944e473c5ae503c7e9c9cff8dac55eb3bd2c5fbfc9d7e777db428b50be49",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorGothmogRecruit",
+      "source": "Recruit the Lieutenant of Minas Morgul \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "c27e34ae102aa619999a3fce32b026fee1213b84f209e5c3b7d750a9f0c150c7",
+      "entry_hash": "cba13299f08e3e59d634b93d809bb9ded4541ec59147c9db4a047e9817bd0f94",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorGothmogRevive",
+      "source": "Revive the fallen Hero, Gothmog \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "18d97bcf21b2c80cd9612e1f43c7b0370267ae43440346a62926c737696a5f07",
+      "entry_hash": "a43e46f2884ba9cec360ff85deabb85ae0135a6721e2df4175f23baad2ca5dcb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorMouthofSauronRecruit",
+      "source": "Recruit the messenger of the Dark Lord \\n \\n Unit Type: Tier 2 Hero \\n Recruit Time: 40s \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "0e1321a01219734b27480dd27cf6bbf532d00b7caf28a543943e98ed82d49799",
+      "entry_hash": "22a5acdf7042add596ecf20af4b3e03477fccc42454f693ca7a5bc1cbe4d2c54",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorMouthOfSauronRevive",
+      "source": "Revive the fallen Hero, Mouth of Sauron \\n \\n Unit Type: Tier 2 Hero \\n Revive Time: 45s x 1.075 per additional level gained \\n Health Regeneration: 30/s \\n Levels 2-5: +5% Health, +5% Damage \\n Levels 6-9: +5% Health, +4% Damage \\n Level 10: +5% Health, +3% Damage",
+      "source_hash": "5c1c636306a8ffdc59a0e9ba4f71039015b3445370d5c454161c8e70c8375639",
+      "entry_hash": "3ecfe3e52f3d8ea3047aa797f37dd093de9e17594cb7e28f13279f41155bf929",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorWitchKingOnFellBeastRecruit",
+      "source": "Recruit the Leader of the Nazgul \\n \\n Unit Type: Tier 5 Hero \\n Recruit Time: 55s \\n Health Regeneration: 45/s \\n Level: 2: +5% Armor, +5% Damage \\n Levels 3-5: +4% Armor, +5% Damage \\n Levels 6-9: +3% Armor, +4% Damage \\n Level 10: +2% Armor, +3% Damage",
+      "source_hash": "a14caccd01e7f3e471dbe91c5d38422f0a2d0a3e301a5ba1192b4f45d48dbe49",
+      "entry_hash": "e0ef40eef21b4f5497ae135145cf7fe4aff7b43ff41c96d279fe403f67f37841",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorWitchKingOnFellBeastRevive",
+      "source": "Revive the fallen Hero, The Witch-king \\n \\n Unit Type: Tier 5 Hero \\n Revive Time: 1m x 1.075 per additional level gained \\n Health Regeneration: 45/s \\n Level: 2: +5% Armor, +5% Damage \\n Levels 3-5: +4% Armor, +5% Damage \\n Levels 6-9: +3% Armor, +4% Damage \\n Level 10: +2% Armor, +3% Damage",
+      "source_hash": "1bc07feea0542f39007ce7490dba0061d7bbd6f7958b8bfe0b1917871dc52079",
+      "entry_hash": "fae1d9daf38ebbcc64e7fb5dbf30f6e6870781a7d48636f083f6262266256897",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorKhamulRecruit",
+      "source": "Recruit the Shadow of the East \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 45/s \\n Level: 2: +5% Armor, +5% Damage \\n Levels 3-5: +4% Armor, +5% Damage \\n Levels 6-9: +3% Armor, +4% Damage \\n Level 10: +2% Armor, +3% Damage",
+      "source_hash": "6e681cc68d907ae8aacb21a41128d89c600ba04ee7a775841f90e7c7640b2801",
+      "entry_hash": "684642b58ee8ce53c3db53202d5127cca0d8ef672fd59e1cec31f6bc50a23383",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorKhamulRevive",
+      "source": "Revive Khamul \\n \\n Unit Type: Tier 4 Hero \\n Revive Time: 55s x 1.075 per additional level gained \\n Health Regeneration: 45/s \\n Level: 2: +5% Armor, +5% Damage \\n Levels 3-5: +4% Armor, +5% Damage \\n Levels 6-9: +3% Armor, +4% Damage \\n Level 10: +2% Armor, +3% Damage",
+      "source_hash": "9fa2961464346a63c119f3bed2fa5712ac3672b1425d6caa169c6eed9f0776d6",
+      "entry_hash": "23e01c817ccf7cde37bed0ab0907f94374c4a20bfd442158d3162b63b0824a75",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorMorgomirRecruit",
+      "source": "Recruit Morgomir \\n \\n Unit Type: Tier 4 Hero \\n Recruit Time: 50s \\n Health Regeneration: 45/s \\n Level: 2: +5% Armor, +5% Damage \\n Levels 3-5: +4% Armor, +5% Damage \\n Levels 6-9: +3% Armor, +4% Damage \\n Level 10: +2% Armor, +3% Damage",
+      "source_hash": "2e7b3cdb9a63600e3a7a47744e20277a141cd7d0901e396c5f85f49b4730ee62",
+      "entry_hash": "14884e2bfc3794dbeead3381aeb8a1683cec317024a28904348016a0b95ef947",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:MordorMorgomirRevive",
+      "source": "Revive Morgomir \\n \\n Unit Type: Tier 4 Hero \\n Revive Time: 55s x 1.075 per additional level gained \\n Health Regeneration: 45/s \\n Level: 2: +5% Armor, +5% Damage \\n Levels 3-5: +4% Armor, +5% Damage \\n Levels 6-9: +3% Armor, +4% Damage \\n Level 10: +2% Armor, +3% Damage",
+      "source_hash": "a9700058c50728a06594b087e19248f052f8ae6e5615b6e2e2aadf7126dccdfe",
+      "entry_hash": "66ce651b51a9abad58062b4ec9540beacc3f4b3f1d770e78ea697968fc443fce",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorFighterHorde",
+      "source": "Strong vs. Pikemen \\n Able to switch formation for improved defensive capabilities \\n \\n Unit Type: Basic Swordsman \\n Recruit Time: 25s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "1de23e8c0a6601937d1003ba0717c48bc83df414c9235898bb3df81a9baa23fe",
+      "entry_hash": "38f567e10fa15dacae2d469e7ecbec7630832ea15277766595bead1bc9c92135",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildRohanSpearmenHorde",
+      "source": "Strong vs. Cavalry and Monsters \\n Able to switch formation to protect other units \\n \\n Unit Type: Basic Pikeman \\n Recruit Time: 20s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "0a96b419f5147ae6d4366bae1200c0784c1192b99f6e2ce813b9389a1e8c181e",
+      "entry_hash": "bb3d91146b5875568226a2979506bef9a0a87350744d6857c43b1d8101e64be6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorShieldGuardHorde",
+      "source": "Requires Level 2 Barracks \\n Strong vs. Cavalry and Monsters \\n Able to switch formation to protect other units \\n \\n Unit Type: Elite Pikeman \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "6baa5acb39814fe8372b3d777297c3dbfa77fbd370f0338914eb1ad0a74665b0",
+      "entry_hash": "2cb2506b0f98bd1affd339fcefb1e15e2aee7e5e7fe72627bdc302b3a9b6fdad",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorArcherHorde",
+      "source": "Strong vs. Swordsmen and Pikemen \\n \\n Unit Type: Basic Archer \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "12aad74dfcb875a85ac6e165146640a3c21c4b581236ae0e8e9859f246d84b15",
+      "entry_hash": "86976ab7b2a4be6e1c1e4fce2d6349f6a945263571fb9c0cc04dc84122427d7f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorRangerHorde",
+      "source": "Requires Level 2 Archery Range \\n Strong vs. Swordsmen, Pikemen, and Monsters \\n Can fire Longshot arrow volleys \\n Can stealth near trees \\n \\n Unit Type: Elite Archer \\n Recruit Time: 30s \\n Level: 2: +10% Health, +10% Damage \\n Levels 3-4: +10% Health, +9% Damage \\n Level 5: +10% Health, +8% Damage",
+      "source_hash": "9ad14846946f78bcfc95eb6e180c8efae569df8d41e6a985209d8caa0af23835",
+      "entry_hash": "7ae802db830ec7111484d4a3bb4ff8bbd5c07ad5e4af6dbe57d22c4e92526753",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorBarracksLevel2Upgrade",
+      "source": "Allows training of Tower Guards \\n +10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "cf431dadd4864fc748936b8764cfad224d4d08247cafd0ce21fbd8c993dac704",
+      "entry_hash": "09befe73d6bdca0a8dce8be8728320cd3a40514afefcf4f494766fcddcdd1f38",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorBarracksLevel3Upgrade",
+      "source": "+25% Faster Production Speed \\n Adds defensive Arrow Tower \\n \\n Upgrade Time: 30s",
+      "source_hash": "4afd38e0c5b2adec52f22d7fad1166794f04896ce482d2ba1a7ffe764ba685da",
+      "entry_hash": "021b951ecfe5ab28bf92f97031a15a9a831b988ac917bddca5251922bce7979c",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorArcheryRangeLevel2Upgrade",
+      "source": "Allows training of Ithilien Rangers \\n +10% Faster Production Speed \\n \\n Upgrade Time: 30s",
+      "source_hash": "92653192be8568cff1396e50da40b6be8233fc0c48ed7724463cd7f615f20392",
+      "entry_hash": "ecf1b43d84480658a61c839f4235d31a28a33153eaf76bce47dd0b7031bcd60d",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildGondorArcheryRangeLevel3Upgrade",
+      "source": "Allows purchase of the Fire Arrow Upgrade\\n+25% Faster Production Speed\\nAdds defensive Arrow Tower \\n \\n Upgrade Time: 50s",
+      "source_hash": "4290553e99126f7b851f3c5926f6f816997e060a72acb8238446cdf99e17a7da",
+      "entry_hash": "6431064894c60ca38899a365706ad4dd15a1e8abfacc4e5d3da2ca39769239ff",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "e12696fbe84419b1ac34c4935c16c1d3f1769570da85395fc8c6dcf5d825c242"
+}

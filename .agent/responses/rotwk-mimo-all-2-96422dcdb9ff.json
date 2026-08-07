@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "96422dcdb9ff46cda28c47a5157a4dc0",
+  "worker": "rotwk-mimo-all-2",
+  "translations": [
+    {
+      "id": "CONTROLBAR:TooltipCAH_SummonFamiliar_Level3_Palantir",
+      "translation": "El héroe invoca una bandada de aves que revelan la Niebla y detectan sigilo \\n Tipo de modificador: Perjuicio pasivo \\n Las unidades enemigas cercanas sufren -20% de Daño y -20% de Armadura \\n No se acumula con otros perjuicios"
+    },
+    {
+      "id": "CONTROLBAR:TooltipCAH_SummonFamiliar_Level3",
+      "translation": "El héroe invoca una bandada de aves que revelan la Niebla y detectan sigilo \\n Tipo de modificador: Perjuicio pasivo \\n Las unidades enemigas cercanas sufren -20% de Daño y -20% de Armadura \\n No se acumula con otros perjuicios"
+    },
+    {
+      "id": "CONTROLBAR:LieutenantsFavor    ",
+      "translation": "Disciplina de Or [&C]"
+    },
+    {
+      "id": "CONTROLBAR:ThranduilHiddenHunter",
+      "translation": "Capa élfica [&C]"
+    },
+    {
+      "id": "CONTROLBAR:MirkwoodArcherHiddenHunter",
+      "translation": "Cazador oculto [&T]"
+    },
+    {
+      "id": "OBJECT:LairFoundation",
+      "translation": "Cimiento de guarida"
+    },
+    {
+      "id": "OBJECT:DescriptionLairFoundation",
+      "translation": "Permite la construcción de diversas guaridas de criaturas"
+    },
+    {
+      "id": "CONTROLBAR:UAGoblinLair",
+      "translation": "Guarida de Goblins"
+    },
+    {
+      "id": "CONTROLBAR:UAWargLair",
+      "translation": "Guarida de Wargs"
+    },
+    {
+      "id": "CONTROLBAR:UASpiderLair",
+      "translation": "Guarida de Arañas"
+    },
+    {
+      "id": "CONTROLBAR:UAWightLair",
+      "translation": "Guarida de Espectros"
+    },
+    {
+      "id": "CONTROLBAR:UATrollLair",
+      "translation": "Guarida de Troles de cueva"
+    },
+    {
+      "id": "CONTROLBAR:UADrakeLair",
+      "translation": "Guarida de Dracos"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUAGoblinLair",
+      "translation": "Permite el entrenamiento de Guerreros Goblins y Arqueros Goblins"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUAWargLair",
+      "translation": "Permite el entrenamiento de manadas de Wargs"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUASpiderLair",
+      "translation": "Permite el entrenamiento de arañuelos"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUAWightLair",
+      "translation": "Permite la invocación de Espectros del túmulo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUATrollLair",
+      "translation": "Permite el entrenamiento de Troles de cueva"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipUADrakeLair",
+      "translation": "Permite el entrenamiento de Dracos"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseSpiderVenomSacks",
+      "translation": "Mejora esta horda con sacos de veneno \\n Cuando se equipa, aumenta ligeramente el daño de los ataques cuerpo a cuerpo \\n Permite envenenar a los enemigos, causando daño adicional con el tiempo \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenFlamingShot",
+      "translation": "Mejora esta Catapulta de Colinas de Hierro con proyectiles incendiarios \\n Cuando se equipa, aumenta significativamente el daño de la catapulta \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenSiegeHammer",
+      "translation": "Mejora este batallón con martillos de asedio \\n Aumenta ligeramente el daño a las unidades y permite daño en área \\n Aumenta significativamente el daño a las Estructuras \\n No se puede combinar con Hojas forjadas \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeDwarvenForgedBlades",
+      "translation": "Mejora este batallón con Hojas forjadas \\n Aumenta el daño de las armas cuerpo a cuerpo y las hachas arrojadizas \\n No se puede combinar con Martillos de asedio \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarSpikedCollars",
+      "translation": "Mejora esta manada de Lobos ferozes con collar de pinchos pesado \\n Cuando se equipa, reduce significativamente la cantidad de daño recibido \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPurchaseUpgradeAngmarIceShot",
+      "translation": "Mejora este Lanzapiedras con Disparo de hielo \\n Aumenta significativamente el daño causado \\n \\n Tiempo de mejora: 10s"
+    }
+  ]
+}

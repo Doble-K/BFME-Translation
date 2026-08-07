@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "ca17594cfde34347bf2d4d08418fb440",
+  "worker": "rotwk-deep-all-3",
+  "translations": [
+    {
+      "id": "CONTROLBAR:TooltipSpecialPowerRallyRangers",
+      "translation": "Requiere nivel 10 \\n Invoca varios batallones de montaraces al lado de Damrod \\n Clic izquierdo en el icono y luego clic izquierdo en una ubicación transitable"
+    },
+    {
+      "id": "CONTROLBAR:SpecialPowerDeadlySniper",
+      "translation": "Francotirador Letal [&p]"
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialPowerDeadlySniper",
+      "translation": "Requiere nivel 6\\nDamrod obtiene mayor velocidad de ataque y daño\\nClic izquierdo para activar"
+    },
+    {
+      "id": "UPGRADE:TieredUpgradeBannerCarriers",
+      "translation": "Portaestandarte de unidad"
+    },
+    {
+      "id": "UPGRADE:TieredUpgradeImprovedArrows",
+      "translation": "Mejora de flechas de la unidad"
+    },
+    {
+      "id": "Map:MAPWOREttenmoors/Desc",
+      "translation": "Estas tierras salvajes e indómitas son el dominio de los Goblins y los Trolls.\\n\\n Tamaño: 400 x 400\\n Guaridas: 4x Guarida Goblin, 2x Guarida Troll, 2x Guarida de Espectro de Túmulo\\n Estructuras neutrales: 2x Posada, 2x Torre"
+    },
+    {
+      "id": "Map:MAPWORGapOfRohan/Desc",
+      "translation": "El único paso grande y fácilmente transitable entre las Montañas Nubladas y las Montañas Blancas.\\n\\n Tamaño: 380 x 380\\n Guaridas: 2x Guarida Troll, 4x Guarida Warg\\n Estructuras neutrales: 2x Fuego de señales"
+    },
+    {
+      "id": "Map:MAPMPHollin/Desc",
+      "translation": "Hollin fue una vez el hogar de los famosos joyeros élficos de Eregion, los forjadores de los grandes anillos de poder. Pero ahora las ruinas de sus grandes ciudades permanecen en silencio entre las piedras.\\n\\n Tamaño: 350 x 300\\n Guaridas: 2x Guarida Warg, 2x Guarida Troll"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleWitchkingWeapons",
+      "translation": "Clic izquierdo para alternar entre espada y maza \\n\\n Cambia a maza para activar daño en área y mayor daño general \\n Activa Grito \\n\\n Cambia a espada para mayor velocidad de ataque y daño adicional contra Héroes \\n Activa Hoja de Morgul \\n\\n Solo se puede alternar estando desmontado"
+    },
+    {
+      "id": "Map:MAPMPSakuraForest/Desc",
+      "translation": "Un bosque sagrado al norte del Mar de Rhûn. Alberga muchos templos, construidos para cultivar y fomentar los raros árboles Sakura.\\n\\n Tamaño: 400 x 360\\n Guaridas: 4x Guarida Warg\\n Estructuras neutrales:"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Starlight",
+      "translation": "Tipo de modificador: Hechizo \\n Los aliados cercanos se curan y obtienen +25% de Daño, +25% de Armadura \\n Se acumula con Mejoras, Liderazgo y otros Hechizos \\n Aturde a las unidades enemigas"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipCAH_Starlight_Palantir",
+      "translation": "Tipo de modificador: Hechizo \\n Los aliados cercanos se curan y obtienen +25% de Daño, +25% de Armadura \\n Se acumula con Mejoras, Liderazgo y otros Hechizos \\n Aturde a las unidades enemigas\\n Clic izquierdo para activar"
+    },
+    {
+      "id": "CONTROLBAR:HTChargeAttack",
+      "translation": "Ataque de carga [&C]"
+    },
+    {
+      "id": "CONTROLBAR:KarshFearlessLeadership",
+      "translation": "Voluntad de los No Muertos"
+    },
+    {
+      "id": "ToolTip:LackMordorForgedBlades",
+      "translation": "Investiga la mejora en la Taberna para habilitar este equipo \\n Al equiparlo, aumenta el daño causado por las Armas Cuerpo a Cuerpo \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "ToolTip:LackMordorHeavyArmor",
+      "translation": "Investiga la mejora en la Taberna para habilitar este equipo \\n Al equiparlo, reduce significativamente la cantidad de daño recibido \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "TOOLTIP:LackMordorFireArrow",
+      "translation": "Investiga la mejora en la Taberna para habilitar este equipo \\n Al equiparlo, aumenta significativamente el daño causado por las Flechas \\n \\n Tiempo de mejora: 10s"
+    },
+    {
+      "id": "TOOLTIP:LackLevel3TavernFireArrows",
+      "translation": "Requiere Taberna de nivel 2"
+    },
+    {
+      "id": "TOOLTIP:LackLevel3TavernForgedBlades",
+      "translation": "Requiere Taberna de nivel 3"
+    },
+    {
+      "id": "CONTROLBAR:Bloodthirsty",
+      "translation": "Sed de sangre"
+    },
+    {
+      "id": "CONTROLBAR:DescriptionToolTipMordorHaradrimPalace",
+      "translation": "Entrena Orientales y Haradrim"
+    },
+    {
+      "id": "CONTROLBAR:SpecialAbilityCorsairPillage",
+      "translation": "Saqueo"
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCorsairPillage",
+      "translation": "Los Corsarios roban recursos siempre que infligen daño a las estructuras enemigas \\n Habilidad pasiva"
+    },
+    {
+      "id": "CONTROLBAR:VolleyCorsairBomb",
+      "translation": "Bombas incendiarias [&m]"
+    },
+    {
+      "id": "CONTROLBAR:LastStand",
+      "translation": "Última resistencia"
+    }
+  ]
+}

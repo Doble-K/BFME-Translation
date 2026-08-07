@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "4eac5067e511451da0f946093ba2c8a0",
+  "worker": "rotwk-deep-all-4",
+  "translations": [
+    {
+      "id": "CONTROLBAR:LW_Unit_MordorHaradrimLancerHordePlural",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:LW_ToolTipBuild_MordorHaradrimLancerHorde",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleHaradrimLineToSkirmishFormation",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleHaradrimSkirmishToLineFormation",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleHaradrimLineToWedgeFormation",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleHaradrimWedgeToLineFormation",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBuildSaruman",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:FrodoOneRing",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:SpecialAbilityOilBarrels",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:SummonedSpiderlingVenomSacks ",
+      "translation": ""
+    },
+    {
+      "id": "TOOLTIP:AngmarDarkIronArmor",
+      "translation": ""
+    },
+    {
+      "id": "UPGRADE:AngmarDarkIronArmor",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:PurchaseUpgradeAngmarDarkIronMail",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyAngmarDarkIronMail",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyAngmarSoulFreeze",
+      "translation": ""
+    },
+    {
+      "id": "UPGRADE:TieredUpgradeBlades",
+      "translation": ""
+    },
+    {
+      "id": "UPGRADE:TieredUpgradeArmor",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyAngmarWellOfSouls",
+      "translation": ""
+    },
+    {
+      "id": "CONTROLBAR:PurchaseTechnologyAngmarCorpseRain",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPAdornRiver",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPAdornRiver/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPAmonAmarth",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPAmonAmarth/Desc",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPAmonSulFortress",
+      "translation": ""
+    },
+    {
+      "id": "Map:MAPMPAmonSulFortress/Desc",
+      "translation": ""
+    }
+  ]
+}

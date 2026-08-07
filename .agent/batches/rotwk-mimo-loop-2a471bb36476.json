@@ -1,0 +1,347 @@
+{
+  "schema_version": 3,
+  "batch_id": "2a471bb3647647f09beca7a3c1274788",
+  "worker": "rotwk-mimo-loop",
+  "created_at": "2026-08-06T06:48:38.100840+00:00",
+  "lease_expires_at": "2026-08-06T12:48:38.099432+00:00",
+  "project": "bfme2-rotwk-2.02",
+  "language": "es-419",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "mode": "incomplete",
+  "rules_hash": "ffb21e73e99dad18bb9175921a11cd59b89ecb11a53ba440596da0a7b5d64bc1",
+  "response_file": "/home/doblek/open-bfme1/BFME-Translation/.agent/responses/rotwk-mimo-loop-2a471bb36476.json",
+  "instructions": "This batch is read-only. Fill only translation values in RESPONSE_FILE.",
+  "entries": [
+    {
+      "id": "CONTROLBAR:ToolTipThunderBolt",
+      "source": "Requires Level 6 \\n Strikes a powerful lightning bolt against targeted enemies \\n Damage: 2000 (Flame) & 850 (Magic) \\n Target Radius: 50 \\n Target Range: 240 \\n Recharge Time: 2m \\n Left click icon then left click on target",
+      "source_hash": "a824a29cd91eb68057ef4587251b7a51a9ba18fef7ee71c7ab0612d9b40f1c44",
+      "entry_hash": "a3278e66ce04970fa93ec25ba5ce4fc3b83278e3342286992eea2c9c873abbac",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipDominate",
+      "source": "Requires Level 10 \\n Permanently gain control of targeted enemies \\n Duration: Permanent \\n Target Radius: 120 \\n Recharge Time: 6m \\n Left click icon then left click on target enemies",
+      "source_hash": "647f6c0a158928e6891f357d40f99bacd522529bec26b8ab3f1678260db24066",
+      "entry_hash": "c38190e47a18c044848c32b587d694c50aaceac20660ea63dfc1bf48c98570d6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityGothmogCarnage",
+      "source": "Requires Level 3 \\n Gothmog gains +150% Damage and +50% Armor \\n Splash Damage Radius: 10 \\n Duration: 20s \\n Recharge Time: 2m \\n Left click to activate",
+      "source_hash": "1a6f4812012926e0ae45ce8af9d5dc9591174fc1d9805b149fb8c4c295a984df",
+      "entry_hash": "91f77fd950146d5847b3812ebea34b7e79397ac569fc84e28fb8bf174ffcfc98",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipLieutenantsFavor",
+      "source": "Requires Level 2 \\n Targeted Orcs and Goblins gain basic Experience \\n Experience Yield: 35 XP \\n Target Radius: 150 \\n Target Range: 200 \\n Recharge Time: 2m 30s \\n Left click icon then left click on target units",
+      "source_hash": "4487279ec450d87b130404690806c1a4bfb1ffe056657f01b49fe38881f6c1c9",
+      "entry_hash": "62267cd0a65ec5230a64006d95494a384e55035d1a985c4eec925d76c920ac63",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipGothmogIronHand",
+      "source": "Requires Level 5 \\n Allies near Gothmog gain immunity to Fear and Terror \\n Radius: 200 \\n Passive Ability",
+      "source_hash": "75fd3620274b4739993150fa1803e39e6162401338daf9a26c2830826b1da277",
+      "entry_hash": "6032d136c0a5bb455b5fe3cf52367e35fb406c9bc7eab90b1cd228d791c80ed0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMouthOfSauronDoubt",
+      "source": "Requires Level 4 \\n Modifier Type: Active Debuff \\n Targeted enemy units suffer -20% Damage and -20% Armor \\n Nullifies enemy leadership \\n Does not stack with other Debuffs \\n Target Radius: 100 \\n Duration: 30s \\n Target Range: 300 \\n Recharge Time: 1m \\n Left click icon then left click on target units",
+      "source_hash": "dd2f060f6de899fa08d2e79f7fdd62b0d87f053a60f48008270bb8cec35d2b5d",
+      "entry_hash": "c64f1f5d487a4639b6b13147a3f2e3777f2e218b3284e1b2b273dcefb4ab52c0",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMouthOfSauronDissent",
+      "source": "Requires Level 10 \\n Causes targeted units to become hostile towards each other \\n Effective when cast on stationary units \\n Target Radius: 150 \\n Duration: 45s \\n Target Range: 300 \\n Recharge Time: 4m \\n Left click icon then left click on target area",
+      "source_hash": "ccd2ba6ca595e9c883b3a3d7a3bb54344aef99ea54b710db0ddc462c8ba69a31",
+      "entry_hash": "0d4e702b2222d0de7054303828f606b1a150c49f7f4faabd2eace50424b91d02",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMordorWitchkingMorgulCorruption",
+      "source": "Requires Level 4 \\n Targeted enemy takes poison damage over time, and becomes a wight upon death \\n Temporarily cripples non-Monster unit \\n Monster suffers -33% Speed \\n Can only use when dismounted \\n Damage: 300 (Hero) & 30/s (Poison) \\n Duration: 10s \\n Target Range: 30 \\n Recharge Time: 1m \\n Left click icon then left click on target",
+      "source_hash": "9039aa0b9bfe6a1d33bcdfca0c0125c98a08cafedef5c775d731eca927f7d336",
+      "entry_hash": "dfdb43aa8e17c0ee1c6270d578ba11174ce59300abd7a02a401bc17a2f9e982a",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipWitchKingDreadVisage",
+      "source": "Requires Level 2\\nReduces enemy armor and damage \\n Radius: 200 \\n Passive ability",
+      "source_hash": "ae500a2b756c744e08d0842cb73f22ed0c03c86383a1e39f89a93e45f4285e5b",
+      "entry_hash": "58872da00a2a6a6499e666fb67428cf26563edc057b32ebdfb678b349cc103eb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipMordorWitchKingDreadWrath",
+      "source": "Requires Level 2 \\n Modifier Type: Heavy Nullifier Debuff \\n Nearby enemy units suffer -33% Damage and -33% Armor \\nNullifies enemy Leadership \\n Takes precedence over other Debuffs \\n Can only use when dismounted \\n Radius: 200 \\n Passive ability",
+      "source_hash": "43ccad1425a69bdd4a1b84e217ecfae2dd0c3a907f5293cb256d51b47d0e7f35",
+      "entry_hash": "d95e90872acf0ca8e52f507490c7202ab09e67b6f4a2cc76e35df62ce7d31d74",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBlackRiderDreadVisage",
+      "source": "Requires Level 2 \\n Modifier Type: Passive Debuff \\n Nearby enemy units suffer -20% Damage and -20% Armor \\n Does not stack with other Debuffs \\n Radius: 200 \\n Passive ability",
+      "source_hash": "78c4ab57a07bfb90d19ed103568b344e56cbeb5b4c1739655c9070a33555cb15",
+      "entry_hash": "aabbec00be0d33d9554ae9e96698d1ef4677482413b0c56226d0e2950bccfad6",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipTrollFindTastyOrc",
+      "source": "Find an Orc to eat for healing \\n Heal Amount: 40% Health \\n Target Search Range: 350 \\n Recharge Time: 30s",
+      "source_hash": "db1b1356f2fa5541a8344f603ea4c6cf34c034fc46b0e95702c95e20bb565d94",
+      "entry_hash": "fe28d353455e5ff6b1c9250174a088d6d76ef6e2242ee0ccb42127e7ff4d752f",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityChargeAttack",
+      "source": "Order Mumak to trample the enemy \\n Crush Damage: 2000 (Crush) \\n Speed: 80 \\n Charge Duration: 6s \\n Target Range: 500 \\n Recharge Time: 1m 45s \\n Left click icon then left click on target",
+      "source_hash": "60b024706f042f86957d5a69004a074f68c4fc52a2e3ed84d1ddef88e193dd7f",
+      "entry_hash": "bb6768060712d53c0edf8ed50618ceb2598b78c2a606f38931cf54830a2bdb97",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipBarbedArrows",
+      "source": "Requires level 2 \\n Special ranged attack that causes meta impact and increased damage \\n Can be fired from an extended range \\n Damage: 205 (Pierce) \\n Target Range: 450 \\n Recharge Time: 45s \\n Left click icon then left click on target",
+      "source_hash": "3830afaf02f6258f02a88654df196089b42890ab2ca7fa2e8ae466285dbd90e2",
+      "entry_hash": "8367768941155f754c2e9bbc3c20791a798eca82d3166afa6cac91d506b3b966",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:TooltipSpecialAbilityHumanHeads",
+      "source": "Use skulls as ammunition to cause Terror to enemy units \\n Damage: 100 (Siege) \\n Splash Damage Radius: 20 \\n Radius: 70 \\n Terror Duration: 5s \\n Target Range: 420 \\n Recharge Time: 1m",
+      "source_hash": "c441709c4f92d650756fd508715d0b7ea729885f60c8d76a912f122cbea497a3",
+      "entry_hash": "cfc0ece5bc68c3214f001c0813af6b425e9079771b5f366449d069f793d877b8",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipToggleTowerGuardLineToPorcupineFormation",
+      "source": "The units form a circle with pikes extended, stopping incoming enemies \\n Provides +75% Armor",
+      "source_hash": "4fd2cf8d898501323f61879120798d20af564f9592feca62a6af326179d7430b",
+      "entry_hash": "1e48f5b2630938c824c02081ff7da89d603dd78b5db3dc43e014eaa9aaf6be9a",
+      "protected_tokens": [
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityIgnite",
+      "source": "The Balrog gains +50% Damage and +50% Armor \\n Damage: 100 (Magic) \\n Radius: 50 \\n Duration: 30s \\n Recharge Time: 30s \\n Left click to activate",
+      "source_hash": "1cee99437744770586f48389d2d77f31515baee7f9e781de65fa22a87c89ca99",
+      "entry_hash": "cda36dae6a42ebeb254bb197208731b7dd540b187cc2f4a3d779ce991e00c9df",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityBalrogBreath",
+      "source": "Breathes fire to burn units and structures \\n Damage: 3000 (Flame) & 3000 (Magic) \\n Splash Damage Radius: 210 \\n Target Range: 40 \\n Recharge Time: 40s \\n Left click icon then left click on target area",
+      "source_hash": "92e11d34d10769a5807cf83ba307284a84ff5ef77346f326d0c2f96fcaa96e54",
+      "entry_hash": "d83b61a85ff704a54ff7cd12a1de3b8bcc6460bfe912541bdf91818eda085cc5",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipShadeChomp",
+      "source": "Kill target enemy infantry which restores health and temporarily grants +50% Damage and +100% Armor \\n Heal Amount: 100% Health \\n Duration: 20s \\n Target Range: 12 \\n Recharge Time: 45s \\n Left click icon then left click on target enemy",
+      "source_hash": "5d88885bd0c8665c73764de88fddde45609586070b9898c6f824e51097f95085",
+      "entry_hash": "599fc7f125bbafc4191030ee13294597c90481e42f2fb0b143275e1ac43c4a79",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityDarkLordsLament",
+      "source": "Temporarily freezes surrounding enemy units \\n Radius: 150 \\n Duration: 10s \\n Recharge Time: 2m \\n Left click icon to activate",
+      "source_hash": "0c5fca30afab569a19c3e67da6f88acb892b79d43d11971d772f71110350b8a4",
+      "entry_hash": "ea3637c611d40154bd26871476d517be9658661bdb1dcf60df9bca2f9d3e0e75",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityCallPack",
+      "source": "Calls a pack of wolves to crush the enemy \\n Damage: 4000/s (Hero) \\n Target Radius: 100 \\n Target Range: 150 \\n Recharge Time: 40s \\n Left click icon then left click on target area",
+      "source_hash": "7534092c4041889883d3e94ad113f20052f73e4d57a5791109e2e0665c00ea05",
+      "entry_hash": "ce5cc216c0ba336dd0e1e55dfac1d7aebc4d1ba559e87a0470eae18c9c655fd7",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilityWyrmReposition",
+      "source": "Move the Wyrm to a different location on the battlefield \\n Damages enemies nearby the target location \\n Damage: 100 (Crush) \\n Splash Damage Radius: 50 \\n Target Range: 750 \\n Recharge Time: 2s \\n Left click icon then left click on target area",
+      "source_hash": "f6173cdcd397cbcf46607d59d9ef813b4d1f43db9f5584b1a85a7275e704ff3b",
+      "entry_hash": "abca698491619b4449785b95c81a9a2b6b0634f07a24eecb612015188bf561c1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipSpecialAbilitySummonedDragonReposition",
+      "source": "Move the dragon to a different location on the battlefield \\n Blows back surrounding units \\n Damage: 200 (Crush) \\n Splash Damage Radius: 100 \\n Target Range: Global \\n Recharge Time: 15s \\n Left click icon then left click on target area",
+      "source_hash": "21c7f5986ce8ac1ef5922eb73c98de248a5ded3d1f1c6df52980de4fe729213c",
+      "entry_hash": "0b877505c4aea74c9c4b434bc41d715edadd63a0904194ab1b557117bf0277fb",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipPhialofGaladriel",
+      "source": "Causes enemy units to flee \\n Radius: 150 \\n Duration: 5s \\n Recharge Time: 30s \\n Left click to activate",
+      "source_hash": "709a422a5ad6f4233d207adc13f3c80227c18a08a6cd76ec1ef421ad1add6619",
+      "entry_hash": "0e979ba5022e0f647a5a83bdfe52d262137ba4712aa14b5e90730064915976d1",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    },
+    {
+      "id": "CONTROLBAR:ToolTipFrodoOneRing",
+      "source": "Frodo becomes invisible while wearing the One Ring \\n Duration: Persistent \\n Recharge Time: 10s \\n Left click to activate",
+      "source_hash": "e3c1cc5f7607f0ae2648aecd4608fb67a7ea87cd27e4c96c457c444e30ce885f",
+      "entry_hash": "599c812dd834addcb64ad938dabf0b434d4ca38202a0635880774e0a718d3e54",
+      "protected_tokens": [
+        "\\n",
+        "\\n",
+        "\\n"
+      ]
+    }
+  ],
+  "manifest_hash": "a83ee3f3613f7127eef3fdd7a9973c096bb4798f0f0c25a63b3e145258271e67"
+}

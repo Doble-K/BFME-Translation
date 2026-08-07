@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch_id": "07efc51432624760aeea976388293b32",
+  "worker": "rotwk-mimo-all-2",
+  "translations": [
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_03",
+      "translation": "¡Morgomir ha llegado con refuerzos para ayudar a defender el túnel real!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_04",
+      "translation": "Más siervos del Rey Brujo han llegado y tienen sed de batalla."
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_05",
+      "translation": "El plan del Rey Brujo ha funcionado: hemos provocado al Príncipe para que ataque. ¡Mátalo y Cardolan está acabado!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_06",
+      "translation": "REY BRUJO: He llegado. Que los tontos de Cardolan se unan a sus padres caídos."
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_07",
+      "translation": "Si perdemos el túnel real demasiado tiempo, el orgullo de Cardolan se satisfará y se negarán a arriesgarlo todo. ¡No podemos permitir eso!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_08",
+      "translation": "¡Ya no tenemos fuerzas en el túnel real! Debemos recuperarlo pronto, ¡o todo estará perdido!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_09",
+      "translation": "Hemos recuperado el túnel real. ¡Defiéndelo contra más ataques!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_10",
+      "translation": "Hemos resistido el túnel contra los primeros patéticos ataques de Cardolan. ¡Ahora enviarán más fuerzas al sacrificio, tal como planeó el Rey Brujo!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_11",
+      "translation": "¡Morgomir ha traído Hechiceros, adeptos de la Corona de Hierro imbuidos con el poder del Palantir destrozado de Amon Sul!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_12",
+      "translation": "¡Ahora tenemos el servicio de Hechiceros, adeptos de la Corona de Hierro imbuidos con el poder del Palantir destrozado de Amon Sul!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_13",
+      "translation": "Los poderes de los Hechiceros pueden curar nuestras propias unidades, descargar muerte sobre nuestros enemigos y ralentizar sus ataques con el frío de la muerte."
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_14",
+      "translation": "Difícil"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsHintText_15",
+      "translation": "¡Los exploradores de Arnor han emboscado nuestros refuerzos! ¡Elimina a los Guardabosques para que el siguiente grupo pueda llegar!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsBarrowWarning_1",
+      "translation": "¡Debemos recuperar el túnel real, o Cardolan no enviará su ejército a nuestras manos!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsBarrowWarning_2",
+      "translation": "¡Solo tenemos unos momentos para recuperar el túnel real, o Cardolan partirá y nuestro plan fallará!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsBarrowWarning_3",
+      "translation": "¡El ejército de Cardolan ha partido de los Túneles del Campo! ¡El Rey Brujo estará muy disgustado!"
+    },
+    {
+      "id": "SCRIPT:ANGBarrowDownsBarrowTimer_01",
+      "translation": "Recupera el túnel real en"
+    },
+    {
+      "id": "SCRIPT:End_Mission_Timer",
+      "translation": "Amanecer:"
+    },
+    {
+      "id": "SCRIPT:Souls_Corrupted",
+      "translation": "Almas Corrompidas:"
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_ObjectiveText_01",
+      "translation": "Corrompe 1000 almas antes del amanecer enviando a tus Hechiceros a contaminar los túneles."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_ObjectiveText_03_1",
+      "translation": "Completa el ritual antes del amanecer corrompiendo la milésima alma, que debe ser un gran espíritu del túnel real."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_ObjectiveText_02",
+      "translation": "Morgomir debe sobrevivir."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_ObjectiveText_03",
+      "translation": "Mata al Capitán Carthaen en la cúspide del túnel real antes del amanecer para completar el ritual."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Hint_ObjectiveText_01",
+      "translation": "Coloca a tus Hechiceros en la cúspide de los túneles para corromper 1000 almas."
+    },
+    {
+      "id": "SCRIPT:ANGMAR_BarrowWights_Hint_ObjectiveText_02",
+      "translation": "Morgomir debe sobrevivir."
+    }
+  ]
+}
