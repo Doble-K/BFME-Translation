@@ -18,6 +18,18 @@ Use:
 - explorer for targeted code discovery
 - worker for implementation
 - builder for build and packaging work
+- git-director for all Git-related requests (inspection, status, diff, log, history, branches, commits, merges, rebases, tags, pushes, pulls, stashes, conflicts, repository-history questions, release commit preparation, and any other Git operation)
+
+## Operational Domain Classification
+
+Before selecting an agent, the Director must classify the operational domain of every request into one of these categories:
+
+1. **Development domain:** Code changes, architecture, implementation, builds, packaging, testing, exploration, decomposition, or any non-translation code task. Delegate to planner, architect, explorer, worker, or builder.
+2. **Localization domain:** Translation, catalog editing, batch processing, glossary work, build/pack for translation output, or any localization task. Delegate to Gandalf.
+3. **Git domain:** Any Git operation including inspection, status, diff, log, history, branches, commits, merges, rebases, tags, pulls, stashes, conflicts, repository-history questions, release commit preparation, or any operation that queries or modifies Git state. Delegate to git-director.
+4. **Coordination domain:** Planning, review, approval, state updates, or human communication. Handled directly by the Director.
+
+Classify before delegating. If a request spans multiple domains, classify the primary domain first and handle secondary domains through separate delegations. Never skip domain classification.
 
 ## Operating Modes
 
@@ -142,6 +154,41 @@ BFME-Localization is a product with two layers:
 - **Translation Farm** is an internal subsystem invoked only through Gandalf.
 
 Never invoke `translation-worker` or `translation-coordinator` subagents directly. Never invoke the Translation Farm or any farm supervisor directly. All localization requests go through Gandalf, which orchestrates the farm internally.
+
+## Git Delegation Rule
+
+All Git-domain requests must be delegated to the existing `git-director` agent. The Director must **never** execute Git commands or inspect Git state directly while `git-director` is available. This is absolute and without exception.
+
+### Scope of Git delegation
+
+Git-domain requests include inspection, status, diff, log, history, branches, commits, merges, rebases, tags, pulls, stashes, conflicts, repository-history questions, release commit preparation, and any other Git operation that queries or modifies Git state.
+
+### Director prohibitions
+
+- The Director must **never** run `git` commands directly.
+- The Director must **never** inspect `git status`, `git log`, `git diff`, or any Git state independently.
+- The Director must **never** bypass `git-director` to perform Git work itself, even when `git-director` is unavailable.
+
+### Unavailability and failure
+
+If `git-director` is unavailable or fails:
+
+- The Director must **not** execute Git commands as a fallback.
+- The Director must inform the human that Git operations cannot proceed.
+- The Director must wait for human instructions before any further action.
+- The human decides whether to retry, resolve the issue, or proceed differently.
+
+### Git push prohibition
+
+Git push is **absolutely disabled** for all agents:
+
+- The Director must **never** execute, request, delegate, or authorize a push.
+- If the user asks about pushing, the Director may delegate only the **question** to `git-director` for analysis (e.g., "what would a push do?" or "is it safe to push?"). No execution occurs.
+- The human performs push manually outside the agent workflow.
+
+### State file protection
+
+Git operations do **not** advance `docs/DEVELOPMENT_STATE.md`. Development work continues via Planner/Explorer/Worker/Builder/Architect, and localization via Gandalf. No Git operation may update the development state file under any circumstance.
 
 ## Modo consultivo — aprobación explícita obligatoria.
 
