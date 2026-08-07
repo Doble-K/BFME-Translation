@@ -373,6 +373,43 @@ def create_project_config(config_path, settings, string_file):
         config_file.write("\n")
 
 
+def choose_model_cli():
+    """Interactive CLI model selector. Returns ``(model_id, tier)``."""
+    print("\nSelección de modelo de traducción:")
+    tiers = list_models_by_tier()
+    for tier in _TIER_ORDER:
+        label = tier_label(tier)
+        key = tier_menu_key(tier)
+        count = len(tiers[tier])
+        print(f"  {key}. {label} ({count} modelos)")
+    choice = ask("Selecciona un tier", "1")
+    tier_map = {str(i + 1): t for i, t in enumerate(_TIER_ORDER)}
+    tier = tier_map.get(choice)
+    if tier is None:
+        raise ValueError("Selección de tier no válida")
+
+    models = get_tier_models(tier)
+    print(f"\nModelos en tier «{tier_label(tier)}»:")
+    for index, model_id in enumerate(models, 1):
+        print(f"  {index}. {model_id}")
+    model_choice = ask("Selecciona un modelo", "1")
+    if not model_choice.isdigit() or not (1 <= int(model_choice) <= len(models)):
+        raise ValueError("Selección de modelo no válida")
+    model_id = models[int(model_choice) - 1]
+
+    if is_premium_tier(tier):
+        registry = load_allowed_models()
+        entry = registry["models"].get(model_id, {})
+        if entry.get("require_confirmation"):
+            print(f"\n⚠  El modelo {model_id} es premium y requiere confirmación explícita.")
+            confirmation = ask("¿Confirmar uso del modelo premium? (s/N)", "n")
+            if confirmation.lower() not in {"s", "si", "sí", "y", "yes"}:
+                raise ValueError("Uso del modelo premium no confirmado")
+            return select_model(tier, model_id, confirmed=True)
+
+    return select_model(tier, model_id)
+
+
 def handoff_to_translation(output_path, config_path, settings, advanced):
     print("\nSiguiente paso:")
     print("  1. Iniciar batch manual")
@@ -469,6 +506,7 @@ def wizard(
         if confirmation.lower() not in {"s", "si", "sí", "y", "yes"}:
             raise ValueError("Operacion cancelada: idiomas iguales sin confirmacion")
     encoding = ask("Encoding SAGE", "cp1252")
+    model_id, model_tier = choose_model_cli()
     slug = project["slug"]
     output_path = Path(ask(
         "Catalogo de trabajo de salida",
@@ -491,6 +529,8 @@ def wizard(
         "output_catalog": str(output_path),
         "encoding": encoding,
         "force": force,
+        "model": model_id,
+        "model_tier": model_tier,
         "same_language_review": source_language.split("-")[0].lower()
         == target_language.split("-")[0].lower(),
     }
@@ -525,6 +565,7 @@ def wizard(
     print(f"Entradas: {count}")
     print(f"Proyecto: {project['name']}")
     print(f"Idioma: {source_language} -> {target_language}")
+    print(f"Modelo: {model_id} ({tier_label(model_tier)})")
     print(f"Configuracion: {config_path}")
     handoff_to_translation(output_path, config_path, settings, advanced)
 
@@ -579,6 +620,33 @@ def farm_button_states(
         and profile_available
         else "disabled",
         "normal" if active else "disabled",
+    )
+
+
+def format_entry_header(record):
+    """Build the contextual header line for a catalog entry view.
+
+    UI-agnostic helper used by the translation/debug window: returns the
+    entry id, status, flags and, when the entry is reserved, the list of
+    workers holding the reservation.  Covered by unit tests that do not
+    require a display.
+    """
+    flags = ", ".join(record.get("flags") or []) or "sin flags"
+    header = f"{record['id']} | estado={record['status']} | {flags}"
+    reservations = record.get("reservations") or []
+    if record.get("reserved") and reservations:
+        workers = ", ".join(
+            item.get("worker") or "desconocido" for item in reservations
+        )
+        header += f" | RESERVADA por {workers}"
+    return header
+
+
+def translation_pane_labels(source_language, target_language):
+    """Return the side-by-side pane titles for the A/B translation window."""
+    return (
+        f"Idioma A - origen ({source_language})",
+        f"Idioma B - destino ({target_language})",
     )
 
 
@@ -671,6 +739,10 @@ def launch_gui():
     farm_config_var = tk.StringVar(
         value=saved_last.get("farm_config", "config/opencode_farm.json")
     )
+    tier_var = tk.StringVar(value=saved_last.get("model_tier", "free"))
+    model_var = tk.StringVar(value=saved_last.get("model", ""))
+    premium_confirmed_var = tk.BooleanVar(value=False)
+    model_status_var = tk.StringVar(value="Selecciona un tier y modelo.")
     force_var = tk.BooleanVar(value=False)
     dark_mode_var = tk.BooleanVar(value=False)
     run_mode_var = tk.StringVar(value=saved_last.get("mode", "Agente externo"))
@@ -726,6 +798,88 @@ def launch_gui():
     add_row("Catálogo de salida", catalog_var)
     add_row("Configuración de salida", config_var)
     add_row("Perfil de granja", farm_config_var)
+
+    model_frame = ttk.LabelFrame(form, text="Modelo de traducción")
+    model_frame.pack(fill="x", pady=(8, 0))
+    model_row_tier = ttk.Frame(model_frame)
+    model_row_tier.pack(fill="x", padx=8, pady=(8, 4))
+    ttk.Label(model_row_tier, text="Tier", width=22).pack(side="left")
+    tier_values = [tier_label(t) for t in _TIER_ORDER]
+    tier_combobox = ttk.Combobox(
+        model_row_tier,
+        textvariable=tier_var,
+        values=tier_values,
+        state="readonly",
+    )
+    tier_combobox.pack(side="left", fill="x", expand=True)
+    input_widgets.append(tier_combobox)
+
+    model_row_model = ttk.Frame(model_frame)
+    model_row_model.pack(fill="x", padx=8, pady=4)
+    ttk.Label(model_row_model, text="Modelo", width=22).pack(side="left")
+    model_combobox = ttk.Combobox(
+        model_row_model,
+        textvariable=model_var,
+        state="readonly",
+    )
+    model_combobox.pack(side="left", fill="x", expand=True)
+    input_widgets.append(model_combobox)
+
+    model_row_confirm = ttk.Frame(model_frame)
+    model_row_confirm.pack(fill="x", padx=8, pady=(4, 4))
+    premium_confirm_check = ttk.Checkbutton(
+        model_row_confirm,
+        text="Confirmo uso de modelo premium (requiere confirmación explícita)",
+        variable=premium_confirmed_var,
+    )
+    premium_confirm_check.pack(side="left")
+    input_widgets.append(premium_confirm_check)
+
+    model_row_status = ttk.Frame(model_frame)
+    model_row_status.pack(fill="x", padx=8, pady=(0, 8))
+    ttk.Label(model_row_status, textvariable=model_status_var, wraplength=600).pack(side="left")
+
+    def refresh_model_list(*_):
+        """Update the model combobox when the tier changes."""
+        tier_label_text = tier_var.get()
+        tier_key = None
+        for t in _TIER_ORDER:
+            if tier_label(t) == tier_label_text:
+                tier_key = t
+                break
+        if tier_key is None:
+            model_combobox.configure(values=[])
+            model_var.set("")
+            model_status_var.set("Tier no válido.")
+            return
+        models = get_tier_models(tier_key)
+        model_combobox.configure(values=models)
+        if model_var.get() not in models:
+            model_var.set(models[0] if models else "")
+        _update_model_status()
+        premium_confirm_check.configure(
+            state="normal" if is_premium_tier(tier_key) else "disabled"
+        )
+        if not is_premium_tier(tier_key):
+            premium_confirmed_var.set(False)
+
+    def _update_model_status(*_):
+        """Refresh the model status label."""
+        tier_label_text = tier_var.get()
+        tier_key = None
+        for t in _TIER_ORDER:
+            if tier_label(t) == tier_label_text:
+                tier_key = t
+                break
+        if tier_key is None or not model_var.get():
+            model_status_var.set("Selecciona un tier y modelo.")
+            return
+        model_status_var.set(format_model_status(tier_key, model_var.get()))
+
+    tier_var.trace_add("write", refresh_model_list)
+    model_var.trace_add("write", _update_model_status)
+    refresh_model_list()
+
     ttk.Checkbutton(form, text="Reemplazar archivos existentes", variable=force_var).pack(anchor="w", pady=8)
 
     run_frame = ttk.LabelFrame(frame, text="Ejecutar traducción")
@@ -773,6 +927,8 @@ def launch_gui():
     debug_view = None
     completed_ids = []
     completed_records = {}
+    translation_view_window = None
+    translation_view_widgets = []
 
     def apply_theme(*_):
         dark = dark_mode_var.get()
@@ -813,7 +969,10 @@ def launch_gui():
             arrowcolor=colors["accent"],
         )
         style.map("TCombobox", fieldbackground=[("readonly", colors["surface"])])
-        for text_widget in (source_view, target_view, debug_view):
+        for text_widget in (
+            (source_view, target_view, debug_view)
+            + tuple(translation_view_widgets)
+        ):
             if text_widget is not None:
                 text_widget.configure(
                     background=colors["surface"],
@@ -854,6 +1013,8 @@ def launch_gui():
                     "catalog": catalog_var.get(),
                     "config": config_var.get(),
                     "farm_config": farm_config_var.get(),
+                    "model_tier": tier_var.get(),
+                    "model": model_var.get(),
                     "mode": run_mode_var.get(),
                     "count": run_count_var.get(),
                 },
@@ -972,6 +1133,25 @@ def launch_gui():
             "same_language_review": source_language == target_language,
         }
 
+        tier_label_text = tier_var.get()
+        tier_key = None
+        for t in _TIER_ORDER:
+            if tier_label(t) == tier_label_text:
+                tier_key = t
+                break
+        if tier_key is None or not model_var.get():
+            messagebox.showerror("Modelo no seleccionado", "Selecciona un tier y modelo de traducción.")
+            return
+        try:
+            model_id, model_tier = select_model(
+                tier_key, model_var.get(), confirmed=premium_confirmed_var.get()
+            )
+        except ValueError as error:
+            messagebox.showerror("Modelo inválido", str(error))
+            return
+        settings["model"] = model_id
+        settings["model_tier"] = model_tier
+
         def worker():
             try:
                 if not settings["force"] and (output_path.exists() or config_path.exists()):
@@ -1049,6 +1229,21 @@ def launch_gui():
                 raise ValueError
         except ValueError as error:
             messagebox.showerror("Valores inválidos", "Entradas debe estar entre 1 y 100.")
+            return
+
+        tier_label_text = tier_var.get()
+        tier_key = None
+        for t in _TIER_ORDER:
+            if tier_label(t) == tier_label_text:
+                tier_key = t
+                break
+        if tier_key is None or not model_var.get():
+            messagebox.showerror("Modelo no seleccionado", "Selecciona un tier y modelo de traducción.")
+            return
+        try:
+            select_model(tier_key, model_var.get(), confirmed=premium_confirmed_var.get())
+        except ValueError as error:
+            messagebox.showerror("Modelo inválido", str(error))
             return
 
         config_path = Path(config_var.get()).expanduser()
@@ -1393,6 +1588,248 @@ def launch_gui():
         refresh_entries()
         query_entry.focus_set()
 
+    def open_translation_view():
+        """Open the independent A/B translation and debug window.
+
+        The window shows the source text (language A) and its translation
+        (language B) side by side with contextual headers.  It reuses the
+        existing catalog loading and editing flow (search_entries and
+        commit_entry) and never modifies data automatically.  If the window
+        is already open it is raised and focused instead of duplicated.
+        """
+        nonlocal translation_view_window
+        if (
+            translation_view_window is not None
+            and translation_view_window.winfo_exists()
+        ):
+            translation_view_window.deiconify()
+            translation_view_window.lift()
+            translation_view_window.focus_set()
+            return
+
+        config_path = Path(config_var.get()).expanduser()
+        if not config_path.exists():
+            messagebox.showerror(
+                "Proyecto no encontrado",
+                "Prepara el proyecto o indica una configuración existente.",
+            )
+            return
+
+        window = tk.Toplevel(root)
+        window.title("Gandalf - Traducción A/B")
+        window.geometry("1060x640")
+        window.minsize(840, 520)
+        translation_view_window = window
+
+        container = ttk.Frame(window, padding=12)
+        container.pack(fill="both", expand=True)
+
+        info_var = tk.StringVar(value="Selecciona una entrada.")
+        ttk.Label(container, textvariable=info_var, wraplength=980).pack(
+            anchor="w", fill="x", pady=(0, 8)
+        )
+
+        search_frame = ttk.Frame(container)
+        search_frame.pack(fill="x", pady=(0, 8))
+        query_var = tk.StringVar()
+        filter_var = tk.StringVar(value="Todas")
+        window_status_var = tk.StringVar(value="Cargando entradas...")
+        ttk.Label(search_frame, text="Buscar").pack(side="left")
+        query_entry = ttk.Entry(search_frame, textvariable=query_var)
+        query_entry.pack(side="left", fill="x", expand=True, padx=(6, 8))
+        ttk.Combobox(
+            search_frame,
+            textvariable=filter_var,
+            values=(
+                "Todas",
+                "Pendientes",
+                "Traducidas",
+                "Por revisar",
+                "Revisadas",
+                "Preservadas",
+            ),
+            state="readonly",
+            width=14,
+        ).pack(side="left")
+
+        content = ttk.Panedwindow(container, orient="horizontal")
+        content.pack(fill="both", expand=True)
+        results_frame = ttk.LabelFrame(content, text="Entradas")
+        details_frame = ttk.Frame(content)
+        content.add(results_frame, weight=2)
+        content.add(details_frame, weight=3)
+
+        result_list = tk.Listbox(results_frame, exportselection=False)
+        result_scroll = ttk.Scrollbar(
+            results_frame, orient="vertical", command=result_list.yview
+        )
+        result_list.configure(yscrollcommand=result_scroll.set)
+        result_list.pack(side="left", fill="both", expand=True, padx=(6, 0), pady=6)
+        result_scroll.pack(side="right", fill="y", padx=(0, 6), pady=6)
+
+        source_title, target_title = translation_pane_labels(
+            source_language_var.get(), target_language_var.get()
+        )
+        panes = ttk.Frame(details_frame)
+        panes.pack(fill="both", expand=True)
+        source_frame = ttk.LabelFrame(panes, text=source_title)
+        source_frame.pack(side="left", fill="both", expand=True, padx=(0, 4))
+        target_frame = ttk.LabelFrame(panes, text=target_title)
+        target_frame.pack(side="left", fill="both", expand=True, padx=(4, 0))
+        source_editor = tk.Text(source_frame, height=10, wrap="word", state="disabled")
+        source_editor.pack(fill="both", expand=True, padx=6, pady=6)
+        translation_editor = tk.Text(target_frame, height=10, wrap="word")
+        translation_editor.pack(fill="both", expand=True, padx=6, pady=6)
+        translation_view_widgets.extend((source_editor, translation_editor))
+
+        action_frame = ttk.Frame(container)
+        action_frame.pack(fill="x", pady=(8, 0))
+        records = []
+        selected = {"record": None}
+        edit_buttons = []
+
+        def set_editor_text(widget, value, editable):
+            widget.configure(state="normal")
+            widget.delete("1.0", "end")
+            widget.insert("1.0", value)
+            widget.configure(state="normal" if editable else "disabled")
+
+        def show_record(_event=None):
+            selection = result_list.curselection()
+            if not selection:
+                selected["record"] = None
+                return
+            record = records[selection[0]]
+            selected["record"] = record
+            info_var.set(format_entry_header(record))
+            set_editor_text(source_editor, record["source"], False)
+            set_editor_text(
+                translation_editor,
+                record["translation"],
+                not record["reserved"],
+            )
+            state = "disabled" if record["reserved"] else "normal"
+            for button in edit_buttons:
+                button.configure(state=state)
+
+        def refresh_entries(select_id=None):
+            nonlocal records
+            status_map = {
+                "Pendientes": {"pending"},
+                "Traducidas": {"translated"},
+                "Revisadas": {"reviewed"},
+                "Preservadas": {"preserved"},
+            }
+            try:
+                records = search_entries(
+                    project_path=config_path,
+                    query=query_var.get(),
+                    statuses=status_map.get(filter_var.get()),
+                    limit=500,
+                )
+                if filter_var.get() == "Por revisar":
+                    records = [
+                        record for record in records
+                        if "needs_review" in record["flags"]
+                    ]
+            except (CatalogEditError, OSError, ValueError, json.JSONDecodeError) as error:
+                messagebox.showerror(
+                    "No se pudo cargar el catálogo", str(error), parent=window
+                )
+                return
+
+            result_list.delete(0, "end")
+            selected_index = None
+            for index, record in enumerate(records):
+                marker = "[RESERVADA] " if record["reserved"] else ""
+                result_list.insert(
+                    "end", f"{marker}{record['id']} | {record['status']}"
+                )
+                if record["id"] == select_id:
+                    selected_index = index
+            window_status_var.set(f"Entradas mostradas: {len(records)}")
+            if records:
+                index = selected_index if selected_index is not None else 0
+                result_list.selection_set(index)
+                result_list.see(index)
+                show_record()
+            else:
+                selected["record"] = None
+                info_var.set("No hay entradas para este filtro.")
+                set_editor_text(source_editor, "", False)
+                set_editor_text(translation_editor, "", False)
+                for button in edit_buttons:
+                    button.configure(state="disabled")
+
+        def select_relative(offset):
+            if not records:
+                return
+            selection = result_list.curselection()
+            index = selection[0] if selection else 0
+            index = max(0, min(len(records) - 1, index + offset))
+            result_list.selection_clear(0, "end")
+            result_list.selection_set(index)
+            result_list.see(index)
+            show_record()
+
+        def save_translation(mark_reviewed=False):
+            record = selected["record"]
+            if record is None:
+                return
+            translation = translation_editor.get("1.0", "end-1c")
+            try:
+                updated = commit_entry(
+                    record["id"],
+                    record["entry_revision"],
+                    "save",
+                    project_path=config_path,
+                    translation=translation,
+                    mark_reviewed=mark_reviewed,
+                )
+            except (CatalogEditError, OSError, ValueError, json.JSONDecodeError) as error:
+                messagebox.showerror("No se pudo guardar", str(error), parent=window)
+                refresh_entries(record["id"])
+                return
+            window_status_var.set(f"Guardado: {updated['id']}")
+            refresh_entries(updated["id"])
+
+        def close_translation_view():
+            nonlocal translation_view_window
+            translation_view_window = None
+            translation_view_widgets.clear()
+            window.destroy()
+
+        search_button = ttk.Button(
+            search_frame, text="Buscar", command=lambda: refresh_entries()
+        )
+        search_button.pack(side="left", padx=(8, 0))
+        query_entry.bind("<Return>", lambda _event: refresh_entries())
+        result_list.bind("<<ListboxSelect>>", show_record)
+
+        for text, command in (
+            ("Guardar", lambda: save_translation(False)),
+            ("Guardar y revisar", lambda: save_translation(True)),
+            ("Anterior", lambda: select_relative(-1)),
+            ("Siguiente", lambda: select_relative(1)),
+        ):
+            button = ttk.Button(action_frame, text=text, command=command)
+            button.pack(side="left", padx=(0, 6))
+            edit_buttons.append(button)
+        ttk.Button(
+            action_frame, text="Actualizar", command=lambda: refresh_entries()
+        ).pack(side="left", padx=(8, 0))
+        ttk.Button(action_frame, text="Cerrar", command=close_translation_view).pack(
+            side="right"
+        )
+        ttk.Label(container, textvariable=window_status_var).pack(
+            anchor="w", pady=(6, 0)
+        )
+
+        window.protocol("WM_DELETE_WINDOW", close_translation_view)
+        apply_theme()
+        refresh_entries()
+        query_entry.focus_set()
+
     def selected_farm_config():
         profile_path = resolve_workspace_path(farm_config_var.get())
         profile = load_farm_config_with_runtime_fallback(profile_path)
@@ -1713,6 +2150,10 @@ def launch_gui():
         buttons, text="Corregir entradas", command=open_catalog_editor
     )
     correct_button.pack(side="left", padx=(8, 0))
+    translation_button = ttk.Button(
+        buttons, text="Vista A/B", command=open_translation_view
+    )
+    translation_button.pack(side="left", padx=(8, 0))
     pause_button = ttk.Button(buttons, text="Pausar", command=pause_run, state="disabled")
     pause_button.pack(side="left", padx=(8, 0))
     ttk.Button(buttons, text="Abrir Debug", command=open_debug_window).pack(side="left", padx=(8, 0))
@@ -1729,6 +2170,10 @@ def launch_gui():
     add_tooltip(
         correct_button,
         "Busca y corrige entradas no reservadas sin detener workers activos.",
+    )
+    add_tooltip(
+        translation_button,
+        "Abre una ventana independiente con origen (A) y traducción (B) lado a lado.",
     )
     add_tooltip(pause_button, "Pausa o reanuda el proceso de construcción.")
     add_tooltip(save_button, "Guarda la configuración local de Gandalf.")
@@ -1777,7 +2222,7 @@ def launch_gui():
 
 WORKER_MIN = 4
 WORKER_MAX = 8
-BATCH_SIZE_MIN = 20
+BATCH_SIZE_MIN = 1
 BATCH_SIZE_MAX = 100
 
 ALLOWED_MODELS_PATH = ROOT / "config" / "allowed_models.json"
@@ -1789,12 +2234,58 @@ def load_allowed_models():
         return json.load(registry_file)
 
 
-def validate_model(model):
+# Canonical tier ordering for deterministic iteration.
+_TIER_ORDER = ("free", "economic", "premium")
+
+
+def list_models_by_tier():
+    """Return a dict mapping each tier to its sorted list of model IDs.
+
+    Tiers are emitted in canonical order (free, economic, premium).  Model
+    IDs within each tier are sorted lexicographically for deterministic
+    output regardless of insertion order in the JSON file.
+    """
+    registry = load_allowed_models()
+    grouped = {tier: [] for tier in _TIER_ORDER}
+    for model_id, meta in registry["models"].items():
+        tier = meta.get("tier", "unknown")
+        if tier not in grouped:
+            grouped[tier] = []
+        grouped[tier].append(model_id)
+    for tier in grouped:
+        grouped[tier].sort()
+    return grouped
+
+
+def get_tier_models(tier):
+    """Return the sorted list of model IDs for *tier*.
+
+    Raises ``ValueError`` when *tier* is not one of the canonical tier
+    names (``free``, ``economic``, ``premium``).
+    """
+    if tier not in _TIER_ORDER:
+        raise ValueError(
+            f"tier no válido: {tier}; opciones válidas: {', '.join(_TIER_ORDER)}"
+        )
+    grouped = list_models_by_tier()
+    return grouped[tier]
+
+
+def validate_model(model, *, confirmed=False):
     """Validate that *model* is in the allowed registry.
 
     Returns ``(model, tier)`` on success.  Raises ``ValueError`` when the
     model is unknown or is a premium model that requires explicit
-    confirmation and none was given.
+    confirmation and *confirmed* is ``False``.
+
+    Parameters
+    ----------
+    model : str
+        Model identifier to validate.
+    confirmed : bool, optional
+        When ``True``, premium models that require confirmation are
+        accepted.  When ``False`` (the default), they are rejected.
+        Free and economic models are always accepted without confirmation.
     """
     if not isinstance(model, str) or not model:
         raise ValueError("modelo no permitido")
@@ -1803,11 +2294,91 @@ def validate_model(model):
     if entry is None:
         raise ValueError(f"modelo no permitido: {model}")
     tier = entry.get("tier", "unknown")
-    if tier == "premium" and not entry.get("require_confirmation"):
+    if tier == "premium" and entry.get("require_confirmation") and not confirmed:
         raise ValueError(
             f"el modelo {model} requiere confirmación explícita"
         )
     return model, tier
+
+
+_TIER_LABELS = {
+    "free": "Free (sin costo)",
+    "economic": "Económico (bajo costo)",
+    "premium": "Premium (alto costo, requiere confirmación)",
+}
+
+_TIER_ORDER_LABELS = {
+    "free": "1",
+    "economic": "2",
+    "premium": "3",
+}
+
+
+def tier_label(tier):
+    """Return a human-readable label for *tier*."""
+    return _TIER_LABELS.get(tier, tier)
+
+
+def tier_menu_key(tier):
+    """Return the menu shortcut key for *tier*."""
+    return _TIER_ORDER_LABELS.get(tier, "?")
+
+
+def is_premium_tier(tier):
+    """Return True when *tier* requires explicit user confirmation."""
+    return tier == "premium"
+
+
+def get_models_for_tier(tier):
+    """Return the sorted list of model IDs for *tier*.
+
+    Raises ``ValueError`` when *tier* is not one of the canonical tier
+    names.
+    """
+    return get_tier_models(tier)
+
+
+def select_model(tier, model_id, *, confirmed=False):
+    """Validate and return ``(model_id, tier)`` for a UI selection.
+
+    Parameters
+    ----------
+    tier : str
+        Tier chosen by the user (``free``, ``economic``, or ``premium``).
+    model_id : str
+        Model identifier chosen by the user from the tier's list.
+    confirmed : bool, optional
+        Must be ``True`` for premium models that require confirmation.
+
+    Returns
+    -------
+    tuple[str, str]
+        ``(model_id, tier)`` on success.
+
+    Raises
+    ------
+    ValueError
+        When *tier* is invalid, *model_id* is not in the tier's list,
+        or premium confirmation is missing.
+    """
+    if tier not in _TIER_ORDER:
+        raise ValueError(
+            f"tier no válido: {tier}; opciones válidas: {', '.join(_TIER_ORDER)}"
+        )
+    models = get_tier_models(tier)
+    if model_id not in models:
+        raise ValueError(
+            f"el modelo {model_id} no pertenece al tier {tier}"
+        )
+    return validate_model(model_id, confirmed=confirmed)
+
+
+def format_model_status(tier, model_id):
+    """Return a short display string describing the current selection."""
+    label = tier_label(tier)
+    if model_id:
+        return f"{label} — {model_id}"
+    return f"{label} — (sin modelo seleccionado)"
 
 
 def validate_workers(count):
@@ -1826,6 +2397,79 @@ def validate_batch_size(count):
             f"per-worker-count debe estar entre {BATCH_SIZE_MIN} y {BATCH_SIZE_MAX}"
         )
     return count
+
+
+def validate_total_entries(count):
+    """Validate total requested entries is within the allowed range (20-100)."""
+    if not isinstance(count, int) or not BATCH_SIZE_MIN <= count <= BATCH_SIZE_MAX:
+        raise ValueError(
+            f"total-entries debe estar entre {BATCH_SIZE_MIN} y {BATCH_SIZE_MAX}"
+        )
+    return count
+
+
+def resolve_quantity(*, workers, per_worker_count=None, total_entries=None,
+                     full_catalog=False, catalog_path=None):
+    """Resolve the quantity configuration for a translation plan.
+
+    Exactly one of *per_worker_count*, *total_entries*, or *full_catalog*
+    must be active.
+
+    Returns a dict with keys: ``total_entries``, ``per_worker_count``,
+    ``requested_total``, ``full_catalog``.
+    """
+    modes = sum([
+        per_worker_count is not None,
+        total_entries is not None,
+        full_catalog,
+    ])
+    if modes != 1:
+        raise ValueError(
+            "indique exactamente uno de: per-worker-count, total-entries, o full-catalog"
+        )
+
+    if per_worker_count is not None:
+        validate_batch_size(per_worker_count)
+        return {
+            "total_entries": workers * per_worker_count,
+            "per_worker_count": per_worker_count,
+            "requested_total": None,
+            "full_catalog": False,
+        }
+
+    if total_entries is not None:
+        validate_total_entries(total_entries)
+        per_worker = (total_entries + workers - 1) // workers
+        return {
+            "total_entries": total_entries,
+            "per_worker_count": per_worker,
+            "requested_total": total_entries,
+            "full_catalog": False,
+        }
+
+    # full_catalog mode
+    if catalog_path is None:
+        raise ValueError("full-catalog requiere la ruta del catálogo")
+    try:
+        with Path(catalog_path).open(encoding="utf-8") as catalog_file:
+            data = json.load(catalog_file)
+    except (OSError, json.JSONDecodeError) as error:
+        raise ValueError(
+            f"no se pudo leer el catálogo para full-catalog: {error}"
+        )
+    entries = data.get("entries", [])
+    pending = sum(1 for entry in entries if entry.get("status") == "pending")
+    if pending == 0:
+        raise ValueError(
+            "el catálogo no contiene entradas pendientes para full-catalog"
+        )
+    per_worker = (pending + workers - 1) // workers
+    return {
+        "total_entries": pending,
+        "per_worker_count": per_worker,
+        "requested_total": None,
+        "full_catalog": True,
+    }
 
 
 def derive_bulk_profile(real_profile, temp_dir, run_id, model, workers, count):
@@ -1855,21 +2499,38 @@ def create_temp_farm_profile(real_profile, temp_dir, prefix, model, workers, cou
     return derive_bulk_profile(real_profile, temp_dir, prefix, model, workers, count)
 
 
-def build_translate_plan(project_file, farm_file, model, workers, count):
+def build_translate_plan(project_file, farm_file, model, workers, count=None,
+                         *, total_entries=None, full_catalog=False):
     """Build an explicit execution plan for bulk translation.
 
     The plan is mode-independent: it contains every field needed by any
     execution mode (dry-run, no-save, yes).  The plan derives a single
     coordinator with the requested *model* and ignores the original profile's
     coordinators.
+
+    Supports three quantity modes:
+    - Legacy: specify *count* (per-worker-count), total = workers * count
+    - Total entries: specify *total_entries*, per_worker_count derived
+    - Full catalog: specify *full_catalog=True*, reads pending count from catalog
+
+    The plan exposes ``requested_total`` (what the user asked for, or ``None``
+    for legacy/full-catalog) separately from ``total_entries`` (the actual
+    resolved total) and ``per_worker_count`` (the per-worker distribution).
     """
-    model, tier = validate_model(model)
+    model, tier = validate_model(model, confirmed=True)
     workers = validate_workers(workers)
-    count = validate_batch_size(count)
 
     project_path = Path(project_file).resolve()
     project = load_project(project_path)
     catalog_path = resolve_project_path(project, "catalog")
+
+    quantity = resolve_quantity(
+        workers=workers,
+        per_worker_count=count,
+        total_entries=total_entries,
+        full_catalog=full_catalog,
+        catalog_path=catalog_path,
+    )
 
     farm_data = json.loads(Path(farm_file).read_text(encoding="utf-8"))
 
@@ -1881,8 +2542,10 @@ def build_translate_plan(project_file, farm_file, model, workers, count):
         "model": model,
         "tier": tier,
         "workers": workers,
-        "per_worker_count": count,
-        "total_entries": workers * count,
+        "per_worker_count": quantity["per_worker_count"],
+        "total_entries": quantity["total_entries"],
+        "requested_total": quantity["requested_total"],
+        "full_catalog": quantity["full_catalog"],
         "coordinators": [{"prefix": "bulk-run", "model": model}],
         "farm_file": Path(farm_file).resolve(),
         "farm_data": farm_data,
@@ -1922,18 +2585,27 @@ def cleanup_temp_farm_runtime(temp_dir, prefix):
 # ── Mode execution policies ─────────────────────────────────────────────
 
 
-def execute_translate_dry_run(project_file, farm_file, model, workers, count):
+def execute_translate_dry_run(project_file, farm_file, model, workers,
+                               count=None, *, total_entries=None,
+                               full_catalog=False):
     """Dry-run: validate inputs, build plan, show effective plan.
 
     No files are created, no workers started, no models called.
     """
-    plan = build_translate_plan(project_file, farm_file, model, workers, count)
+    plan = build_translate_plan(
+        project_file, farm_file, model, workers, count,
+        total_entries=total_entries, full_catalog=full_catalog,
+    )
 
     print(f"[dry-run] Perfil bulk derivado")
     print(f"  Proyecto: {plan['project_name']}")
     print(f"  Idioma: {plan['language']}")
     print(f"  Modelo: {plan['model']} (tier: {plan['tier']})")
     print(f"  Workers: {plan['workers']}")
+    if plan["requested_total"] is not None:
+        print(f"  Entradas solicitadas: {plan['requested_total']}")
+    if plan["full_catalog"]:
+        print(f"  Modo: full-catalog (todas las pendientes)")
     print(f"  Entradas por worker: {plan['per_worker_count']}")
     print(f"  Capacidad total: {plan['total_entries']}")
     print(f"  Coordinadores derivados:")
@@ -1943,7 +2615,9 @@ def execute_translate_dry_run(project_file, farm_file, model, workers, count):
     return 0
 
 
-def execute_translate_no_save(project_file, farm_file, model, workers, count):
+def execute_translate_no_save(project_file, farm_file, model, workers,
+                               count=None, *, total_entries=None,
+                               full_catalog=False):
     """No-save: isolated lifecycle with artifacts preserved.
 
     Creates a persistent isolated directory (never a TemporaryDirectory that
@@ -1951,7 +2625,10 @@ def execute_translate_no_save(project_file, farm_file, model, workers, count):
     detached), validates the clone, then cleans up only runtime/lease files.
     The catalog clone, logs, and results remain on disk for review.
     """
-    plan = build_translate_plan(project_file, farm_file, model, workers, count)
+    plan = build_translate_plan(
+        project_file, farm_file, model, workers, count,
+        total_entries=total_entries, full_catalog=full_catalog,
+    )
 
     # Persistent isolated directory – NOT a TemporaryDirectory
     run_id = f"nosave-{uuid.uuid4().hex[:8]}"
@@ -1976,7 +2653,7 @@ def execute_translate_no_save(project_file, farm_file, model, workers, count):
         # 3. Derive farm profile pointing to isolated project
         derived_profile = derive_bulk_profile(
             plan["farm_data"], isolated_base, run_id,
-            plan["model"], workers, count,
+            plan["model"], plan["workers"], plan["per_worker_count"],
         )
         derived_data = json.loads(
             derived_profile.read_text(encoding="utf-8")
@@ -2018,7 +2695,9 @@ def execute_translate_no_save(project_file, farm_file, model, workers, count):
         raise
 
 
-def execute_translate_yes(project_file, farm_file, model, workers, count):
+def execute_translate_yes(project_file, farm_file, model, workers,
+                           count=None, *, total_entries=None,
+                           full_catalog=False):
     """Yes: use derived profile on real catalog, normal persistence.
 
     Runs the farm synchronously on the real catalog.  The derived profile
@@ -2026,7 +2705,10 @@ def execute_translate_yes(project_file, farm_file, model, workers, count):
     project remain the originals.  Results persist through the normal farm
     flow.
     """
-    plan = build_translate_plan(project_file, farm_file, model, workers, count)
+    plan = build_translate_plan(
+        project_file, farm_file, model, workers, count,
+        total_entries=total_entries, full_catalog=full_catalog,
+    )
 
     run_id = f"yes-{uuid.uuid4().hex[:8]}"
     runtime_dir = ROOT / ".agent"
@@ -2035,7 +2717,7 @@ def execute_translate_yes(project_file, farm_file, model, workers, count):
     # Derive farm profile with exactly one coordinator and the requested model
     derived_profile = derive_bulk_profile(
         plan["farm_data"], runtime_dir, run_id,
-        plan["model"], workers, count,
+        plan["model"], plan["workers"], plan["per_worker_count"],
     )
 
     # Run farm synchronously (NOT detached)
@@ -2069,6 +2751,28 @@ def run_bulk_translate(args):
         print("Error: modelo requerido", file=sys.stderr)
         return 1
 
+    # Validate mutual exclusivity of quantity options
+    quantity_options = sum([
+        args.per_worker_count is not None,
+        args.total_entries is not None,
+        args.full_catalog,
+    ])
+    if quantity_options > 1:
+        print(
+            "Error: solo puede indicar uno de: --per-worker-count, "
+            "--total-entries, o --full-catalog",
+            file=sys.stderr,
+        )
+        return 1
+
+    quantity_kwargs = {}
+    if args.total_entries is not None:
+        quantity_kwargs["total_entries"] = args.total_entries
+    elif args.full_catalog:
+        quantity_kwargs["full_catalog"] = True
+    elif args.per_worker_count is not None:
+        quantity_kwargs["count"] = args.per_worker_count
+
     try:
         if args.dry_run:
             return execute_translate_dry_run(
@@ -2076,7 +2780,7 @@ def run_bulk_translate(args):
                 args.farm_profile,
                 args.model,
                 args.workers,
-                args.per_worker_count,
+                **quantity_kwargs,
             )
         if args.no_save:
             return execute_translate_no_save(
@@ -2084,7 +2788,7 @@ def run_bulk_translate(args):
                 args.farm_profile,
                 args.model,
                 args.workers,
-                args.per_worker_count,
+                **quantity_kwargs,
             )
         if args.yes:
             return execute_translate_yes(
@@ -2092,7 +2796,7 @@ def run_bulk_translate(args):
                 args.farm_profile,
                 args.model,
                 args.workers,
-                args.per_worker_count,
+                **quantity_kwargs,
             )
     except (
         OSError,
@@ -2134,7 +2838,9 @@ def main():
     parser.add_argument("--farm-profile", help="Farm profile JSON for --translate")
     parser.add_argument("--model", help="Model for translation (required for --translate)")
     parser.add_argument("--workers", type=int, help="Number of workers (4-8)")
-    parser.add_argument("--per-worker-count", type=int, help="Entries per worker (20-100)")
+    parser.add_argument("--per-worker-count", type=int, help="Entries per worker (1-100)")
+    parser.add_argument("--total-entries", type=int, help="Total entries to translate (1-100)")
+    parser.add_argument("--full-catalog", action="store_true", help="Translate all pending entries in the catalog")
     parser.add_argument("--dry-run", action="store_true", help="Show plan without side effects")
     parser.add_argument("--no-save", action="store_true", help="Isolated run, preserve artifacts")
     parser.add_argument("--yes", action="store_true", help="Execute on real catalog")

@@ -26,11 +26,15 @@ from gandalf import (
     execute_translate_dry_run,
     execute_translate_no_save,
     execute_translate_yes,
+    get_tier_models,
+    list_models_by_tier,
     load_allowed_models,
+    resolve_quantity,
     run_bulk_translate,
     validate_batch_size,
     validate_isolated_catalog,
     validate_model,
+    validate_total_entries,
     validate_workers,
 )
 
@@ -157,11 +161,34 @@ class GandalfModelValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "modelo no permitido"):
             validate_model("")
 
-    def test_validate_model_sol_accepted_when_explicit(self):
-        """Sol is accepted when user explicitly passes --model (human confirmation)."""
-        model, tier = validate_model("opencode/sol-ultra")
+    def test_validate_model_rejects_none(self):
+        with self.assertRaisesRegex(ValueError, "modelo no permitido"):
+            validate_model(None)
+
+    def test_validate_model_sol_rejected_without_confirmed(self):
+        """Premium model with require_confirmation is rejected by default."""
+        with self.assertRaisesRegex(ValueError, "requiere confirmación"):
+            validate_model("opencode/sol-ultra")
+
+    def test_validate_model_sol_accepted_with_confirmed(self):
+        """Sol is accepted when confirmed=True (explicit user confirmation)."""
+        model, tier = validate_model("opencode/sol-ultra", confirmed=True)
         self.assertEqual(model, "opencode/sol-ultra")
         self.assertEqual(tier, "premium")
+
+    def test_validate_model_free_ignores_confirmed_flag(self):
+        """Free models are accepted regardless of confirmed flag."""
+        model1, tier1 = validate_model("opencode/mimo-v2.5-free", confirmed=False)
+        model2, tier2 = validate_model("opencode/mimo-v2.5-free", confirmed=True)
+        self.assertEqual((model1, tier1), ("opencode/mimo-v2.5-free", "free"))
+        self.assertEqual((model2, tier2), ("opencode/mimo-v2.5-free", "free"))
+
+    def test_validate_model_economic_ignores_confirmed_flag(self):
+        """Economic models are accepted regardless of confirmed flag."""
+        model1, tier1 = validate_model("opencode/deepseek-v4-flash", confirmed=False)
+        model2, tier2 = validate_model("opencode/deepseek-v4-flash", confirmed=True)
+        self.assertEqual((model1, tier1), ("opencode/deepseek-v4-flash", "economic"))
+        self.assertEqual((model2, tier2), ("opencode/deepseek-v4-flash", "economic"))
 
     def test_validate_model_rejects_premium_without_confirmation(self):
         registry = load_allowed_models()
@@ -169,10 +196,105 @@ class GandalfModelValidationTests(unittest.TestCase):
             k for k, v in registry["models"].items()
             if v.get("tier") == "premium"
         ]
+        self.assertGreater(len(premium_models), 0, "registry must have premium models")
         for model in premium_models:
-            if not registry["models"][model].get("require_confirmation"):
-                with self.assertRaisesRegex(ValueError, "requiere confirmación"):
-                    validate_model(model)
+            with self.assertRaisesRegex(ValueError, "requiere confirmación"):
+                validate_model(model)
+
+    def test_validate_model_accepts_premium_with_confirmed(self):
+        """All premium models are accepted when confirmed=True."""
+        registry = load_allowed_models()
+        premium_models = [
+            k for k, v in registry["models"].items()
+            if v.get("tier") == "premium"
+        ]
+        for model in premium_models:
+            result_model, result_tier = validate_model(model, confirmed=True)
+            self.assertEqual(result_model, model)
+            self.assertEqual(result_tier, "premium")
+
+
+class GandalfTierQueryTests(unittest.TestCase):
+    """Tests for deterministic tier-based model querying."""
+
+    def test_list_models_by_tier_returns_all_tiers(self):
+        grouped = list_models_by_tier()
+        self.assertIn("free", grouped)
+        self.assertIn("economic", grouped)
+        self.assertIn("premium", grouped)
+
+    def test_list_models_by_tier_tiers_are_sorted_lists(self):
+        grouped = list_models_by_tier()
+        for tier, models in grouped.items():
+            self.assertIsInstance(models, list)
+            self.assertEqual(models, sorted(models), f"tier {tier} not sorted")
+
+    def test_list_models_by_tier_deterministic_order(self):
+        """Calling twice returns the same structure."""
+        first = list_models_by_tier()
+        second = list_models_by_tier()
+        self.assertEqual(first, second)
+
+    def test_list_models_by_tier_free_tier_has_models(self):
+        grouped = list_models_by_tier()
+        self.assertGreater(len(grouped["free"]), 0)
+
+    def test_list_models_by_tier_economic_tier_has_models(self):
+        grouped = list_models_by_tier()
+        self.assertGreater(len(grouped["economic"]), 0)
+
+    def test_list_models_by_tier_premium_tier_has_models(self):
+        grouped = list_models_by_tier()
+        self.assertGreater(len(grouped["premium"]), 0)
+
+    def test_list_models_by_tier_all_registry_models_appear(self):
+        registry = load_allowed_models()
+        grouped = list_models_by_tier()
+        all_grouped = set()
+        for models in grouped.values():
+            all_grouped.update(models)
+        all_registry = set(registry["models"].keys())
+        self.assertEqual(all_grouped, all_registry)
+
+    def test_list_models_by_tier_sol_in_premium(self):
+        grouped = list_models_by_tier()
+        self.assertIn("opencode/sol-ultra", grouped["premium"])
+
+    def test_list_models_by_tier_mimo_free_in_free(self):
+        grouped = list_models_by_tier()
+        self.assertIn("opencode/mimo-v2.5-free", grouped["free"])
+
+    def test_get_tier_models_returns_free(self):
+        models = get_tier_models("free")
+        self.assertIsInstance(models, list)
+        self.assertIn("opencode/mimo-v2.5-free", models)
+        self.assertEqual(models, sorted(models))
+
+    def test_get_tier_models_returns_economic(self):
+        models = get_tier_models("economic")
+        self.assertIsInstance(models, list)
+        self.assertIn("opencode/deepseek-v4-flash", models)
+        self.assertEqual(models, sorted(models))
+
+    def test_get_tier_models_returns_premium(self):
+        models = get_tier_models("premium")
+        self.assertIsInstance(models, list)
+        self.assertIn("opencode/sol-ultra", models)
+        self.assertEqual(models, sorted(models))
+
+    def test_get_tier_models_rejects_unknown_tier(self):
+        with self.assertRaisesRegex(ValueError, "tier no válido"):
+            get_tier_models("unknown")
+
+    def test_get_tier_models_rejects_empty_string(self):
+        with self.assertRaisesRegex(ValueError, "tier no válido"):
+            get_tier_models("")
+
+    def test_get_tier_models_matches_list_models_by_tier(self):
+        """get_tier_models(tier) returns the same list as list_models_by_tier()[tier]."""
+        grouped = list_models_by_tier()
+        for tier in ("free", "economic", "premium"):
+            self.assertEqual(get_tier_models(tier), grouped[tier])
 
 
 class GandalfWorkerLimitsTests(unittest.TestCase):
@@ -202,7 +324,7 @@ class GandalfBatchSizeLimitsTests(unittest.TestCase):
 
     def test_validate_batch_size_rejects_below_minimum(self):
         with self.assertRaisesRegex(ValueError, "per-worker-count debe estar entre"):
-            validate_batch_size(19)
+            validate_batch_size(0)
 
     def test_validate_batch_size_rejects_above_maximum(self):
         with self.assertRaisesRegex(ValueError, "per-worker-count debe estar entre"):
@@ -418,7 +540,7 @@ class GandalfDryRunTests(unittest.TestCase):
                 "--farm-profile", str(farm_file),
                 "--model", "opencode/mimo-v2.5-free",
                 "--workers", "4",
-                "--per-worker-count", "10",
+                "--per-worker-count", "0",
                 "--dry-run",
             )
 
@@ -627,7 +749,7 @@ class GandalfCLIModeTests(unittest.TestCase):
                 "--farm-profile", str(farm_file),
                 "--model", "opencode/mimo-v2.5-free",
                 "--workers", "4",
-                "--per-worker-count", "10",
+                "--per-worker-count", "0",
                 "--dry-run",
             )
 
@@ -1010,7 +1132,7 @@ class GandalfYesTests(unittest.TestCase):
 
             with self.assertRaisesRegex(ValueError, "per-worker-count debe estar entre"):
                 execute_translate_yes(
-                    project_file, farm_file, "opencode/mimo-v2.5-free", 4, 10
+                    project_file, farm_file, "opencode/mimo-v2.5-free", 4, 0
                 )
 
     def test_yes_uses_derived_profile_not_original(self):
@@ -1141,6 +1263,746 @@ class GandalfIntegrationTests(unittest.TestCase):
             )
 
             self.assertNotEqual(result.returncode, 0)
+
+
+class GandalfTotalEntriesValidationTests(unittest.TestCase):
+    """Tests for validate_total_entries."""
+
+    def test_validate_total_entries_accepts_minimum(self):
+        self.assertEqual(validate_total_entries(BATCH_SIZE_MIN), BATCH_SIZE_MIN)
+
+    def test_validate_total_entries_accepts_maximum(self):
+        self.assertEqual(validate_total_entries(BATCH_SIZE_MAX), BATCH_SIZE_MAX)
+
+    def test_validate_total_entries_accepts_midrange(self):
+        self.assertEqual(validate_total_entries(50), 50)
+
+    def test_validate_total_entries_rejects_below_minimum(self):
+        with self.assertRaisesRegex(ValueError, "total-entries debe estar entre"):
+            validate_total_entries(0)
+
+    def test_validate_total_entries_rejects_above_maximum(self):
+        with self.assertRaisesRegex(ValueError, "total-entries debe estar entre"):
+            validate_total_entries(101)
+
+    def test_validate_total_entries_rejects_non_integer(self):
+        with self.assertRaisesRegex(ValueError, "total-entries debe estar entre"):
+            validate_total_entries("50")
+
+    def test_validate_total_entries_rejects_zero(self):
+        with self.assertRaisesRegex(ValueError, "total-entries debe estar entre"):
+            validate_total_entries(0)
+
+    def test_validate_total_entries_rejects_negative(self):
+        with self.assertRaisesRegex(ValueError, "total-entries debe estar entre"):
+            validate_total_entries(-10)
+
+
+class GandalfResolveQuantityTests(unittest.TestCase):
+    """Tests for resolve_quantity function."""
+
+    def test_resolve_quantity_per_worker_count_mode(self):
+        result = resolve_quantity(workers=4, per_worker_count=20)
+        self.assertEqual(result["total_entries"], 80)
+        self.assertEqual(result["per_worker_count"], 20)
+        self.assertIsNone(result["requested_total"])
+        self.assertFalse(result["full_catalog"])
+
+    def test_resolve_quantity_total_entries_mode(self):
+        result = resolve_quantity(workers=4, total_entries=50)
+        self.assertEqual(result["total_entries"], 50)
+        self.assertEqual(result["per_worker_count"], 13)  # ceil(50/4) = 13
+        self.assertEqual(result["requested_total"], 50)
+        self.assertFalse(result["full_catalog"])
+
+    def test_resolve_quantity_total_entries_exact_division(self):
+        result = resolve_quantity(workers=4, total_entries=80)
+        self.assertEqual(result["total_entries"], 80)
+        self.assertEqual(result["per_worker_count"], 20)
+
+    def test_resolve_quantity_total_entries_minimum(self):
+        result = resolve_quantity(workers=4, total_entries=20)
+        self.assertEqual(result["total_entries"], 20)
+        self.assertEqual(result["per_worker_count"], 5)
+
+    def test_resolve_quantity_total_entries_maximum(self):
+        result = resolve_quantity(workers=8, total_entries=100)
+        self.assertEqual(result["total_entries"], 100)
+        self.assertEqual(result["per_worker_count"], 13)
+
+    def test_resolve_quantity_rejects_no_mode(self):
+        with self.assertRaisesRegex(ValueError, "indique exactamente uno"):
+            resolve_quantity(workers=4)
+
+    def test_resolve_quantity_rejects_multiple_modes(self):
+        with self.assertRaisesRegex(ValueError, "indique exactamente uno"):
+            resolve_quantity(workers=4, per_worker_count=20, total_entries=50)
+
+    def test_resolve_quantity_rejects_per_worker_and_full_catalog(self):
+        with self.assertRaisesRegex(ValueError, "indique exactamente uno"):
+            resolve_quantity(workers=4, per_worker_count=20, full_catalog=True)
+
+    def test_resolve_quantity_full_catalog_requires_path(self):
+        with self.assertRaisesRegex(ValueError, "full-catalog requiere la ruta"):
+            resolve_quantity(workers=4, full_catalog=True)
+
+    def test_resolve_quantity_full_catalog_reads_pending(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog_path = Path(directory) / "catalog.json"
+            catalog_path.write_text(json.dumps({
+                "entries": [
+                    {"id": "A", "status": "pending"},
+                    {"id": "B", "status": "translated"},
+                    {"id": "C", "status": "pending"},
+                    {"id": "D", "status": "preserved"},
+                    {"id": "E", "status": "pending"},
+                ]
+            }), encoding="utf-8")
+
+            result = resolve_quantity(
+                workers=4, full_catalog=True, catalog_path=catalog_path,
+            )
+            self.assertEqual(result["total_entries"], 3)  # 3 pending
+            self.assertEqual(result["per_worker_count"], 1)  # ceil(3/4) = 1
+            self.assertTrue(result["full_catalog"])
+            self.assertIsNone(result["requested_total"])
+
+    def test_resolve_quantity_full_catalog_no_pending_raises(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog_path = Path(directory) / "catalog.json"
+            catalog_path.write_text(json.dumps({
+                "entries": [
+                    {"id": "A", "status": "translated"},
+                    {"id": "B", "status": "preserved"},
+                ]
+            }), encoding="utf-8")
+
+            with self.assertRaisesRegex(ValueError, "no contiene entradas pendientes"):
+                resolve_quantity(
+                    workers=4, full_catalog=True, catalog_path=catalog_path,
+                )
+
+    def test_resolve_quantity_full_catalog_unreadable_raises(self):
+        with self.assertRaisesRegex(ValueError, "no se pudo leer el catálogo"):
+            resolve_quantity(
+                workers=4, full_catalog=True,
+                catalog_path=Path("/nonexistent/catalog.json"),
+            )
+
+    def test_resolve_quantity_total_entries_invalid_rejects(self):
+        with self.assertRaisesRegex(ValueError, "total-entries debe estar entre"):
+            resolve_quantity(workers=4, total_entries=0)
+
+
+class GandalfQuantityPlannerPlanTests(unittest.TestCase):
+    """Tests for plan structure with new quantity modes."""
+
+    def test_plan_with_total_entries_has_requested_total(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            plan = build_translate_plan(
+                project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                total_entries=50,
+            )
+
+            self.assertEqual(plan["requested_total"], 50)
+            self.assertEqual(plan["total_entries"], 50)
+            self.assertEqual(plan["per_worker_count"], 13)
+            self.assertFalse(plan["full_catalog"])
+
+    def test_plan_with_full_catalog_has_full_catalog_flag(self):
+        with tempfile.TemporaryDirectory() as directory:
+            entries = [
+                {"id": f"TEST:Entry{i}", "source": f"Source{i}",
+                 "translation": "", "status": "pending"}
+                for i in range(10)
+            ]
+            project_file, _catalog = create_project_fixture(directory, entries)
+
+            farm_file = create_farm_profile(directory, project_file)
+
+            plan = build_translate_plan(
+                project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                full_catalog=True,
+            )
+
+            self.assertTrue(plan["full_catalog"])
+            self.assertEqual(plan["total_entries"], 10)
+            self.assertEqual(plan["per_worker_count"], 3)  # ceil(10/4) = 3
+            self.assertIsNone(plan["requested_total"])
+
+    def test_plan_legacy_mode_has_no_requested_total(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            plan = build_translate_plan(
+                project_file, farm_file, "opencode/mimo-v2.5-free", 4, 20,
+            )
+
+            self.assertIsNone(plan["requested_total"])
+            self.assertFalse(plan["full_catalog"])
+            self.assertEqual(plan["total_entries"], 80)
+            self.assertEqual(plan["per_worker_count"], 20)
+
+    def test_plan_separates_total_from_distribution(self):
+        """Verify total_entries and per_worker_count are clearly distinct."""
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            plan = build_translate_plan(
+                project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                total_entries=30,
+            )
+
+            # total_entries is what was requested
+            self.assertEqual(plan["total_entries"], 30)
+            # per_worker_count is the distribution (ceil(30/4) = 8)
+            self.assertEqual(plan["per_worker_count"], 8)
+            # requested_total tracks the original request
+            self.assertEqual(plan["requested_total"], 30)
+            # They are different values
+            self.assertNotEqual(plan["total_entries"], plan["per_worker_count"])
+
+    def test_plan_total_entries_boundary_20(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            plan = build_translate_plan(
+                project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                total_entries=20,
+            )
+
+            self.assertEqual(plan["total_entries"], 20)
+            self.assertEqual(plan["per_worker_count"], 5)
+
+    def test_plan_total_entries_boundary_100(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            plan = build_translate_plan(
+                project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                total_entries=100,
+            )
+
+            self.assertEqual(plan["total_entries"], 100)
+            self.assertEqual(plan["per_worker_count"], 25)
+
+    def test_plan_total_entries_rejects_0(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            with self.assertRaisesRegex(ValueError, "total-entries debe estar entre"):
+                build_translate_plan(
+                    project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                    total_entries=0,
+                )
+
+    def test_plan_total_entries_rejects_101(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            with self.assertRaisesRegex(ValueError, "total-entries debe estar entre"):
+                build_translate_plan(
+                    project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                    total_entries=101,
+                )
+
+    def test_plan_rejects_multiple_quantity_modes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            with self.assertRaisesRegex(ValueError, "indique exactamente uno"):
+                build_translate_plan(
+                    project_file, farm_file, "opencode/mimo-v2.5-free", 4, 20,
+                    total_entries=50,
+                )
+
+
+class GandalfQuantityPlannerCLITests(unittest.TestCase):
+    """CLI tests for --total-entries and --full-catalog options."""
+
+    def test_help_exposes_new_options(self):
+        result = run_gandalf("--help")
+        self.assertEqual(result.returncode, 0)
+        self.assertIn("--total-entries", result.stdout)
+        self.assertIn("--full-catalog", result.stdout)
+
+    def test_dry_run_with_total_entries(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            result = run_gandalf(
+                "--translate",
+                "--project", str(project_file),
+                "--farm-profile", str(farm_file),
+                "--model", "opencode/mimo-v2.5-free",
+                "--workers", "4",
+                "--total-entries", "50",
+                "--dry-run",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertIn("Entradas solicitadas: 50", result.stdout)
+            self.assertIn("Capacidad total: 50", result.stdout)
+
+    def test_dry_run_with_full_catalog(self):
+        with tempfile.TemporaryDirectory() as directory:
+            entries = [
+                {"id": f"TEST:Entry{i}", "source": f"Source{i}",
+                 "translation": "", "status": "pending"}
+                for i in range(8)
+            ]
+            project_file, _catalog = create_project_fixture(directory, entries)
+            farm_file = create_farm_profile(directory, project_file)
+
+            result = run_gandalf(
+                "--translate",
+                "--project", str(project_file),
+                "--farm-profile", str(farm_file),
+                "--model", "opencode/mimo-v2.5-free",
+                "--workers", "4",
+                "--full-catalog",
+                "--dry-run",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertIn("full-catalog", result.stdout)
+            self.assertIn("Capacidad total: 8", result.stdout)
+
+    def test_rejects_multiple_quantity_options(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            result = run_gandalf(
+                "--translate",
+                "--project", str(project_file),
+                "--farm-profile", str(farm_file),
+                "--model", "opencode/mimo-v2.5-free",
+                "--workers", "4",
+                "--per-worker-count", "20",
+                "--total-entries", "50",
+                "--dry-run",
+            )
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("solo puede indicar uno de", result.stderr)
+
+    def test_total_entries_invalid_below_minimum(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            result = run_gandalf(
+                "--translate",
+                "--project", str(project_file),
+                "--farm-profile", str(farm_file),
+                "--model", "opencode/mimo-v2.5-free",
+                "--workers", "4",
+                "--total-entries", "0",
+                "--dry-run",
+            )
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("total-entries debe estar entre", result.stderr)
+
+    def test_total_entries_invalid_above_maximum(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            result = run_gandalf(
+                "--translate",
+                "--project", str(project_file),
+                "--farm-profile", str(farm_file),
+                "--model", "opencode/mimo-v2.5-free",
+                "--workers", "4",
+                "--total-entries", "150",
+                "--dry-run",
+            )
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("total-entries debe estar entre", result.stderr)
+
+    def test_full_catalog_no_pending_entries(self):
+        with tempfile.TemporaryDirectory() as directory:
+            entries = [
+                {"id": "TEST:One", "source": "One",
+                 "translation": "Uno", "status": "translated"},
+            ]
+            project_file, _catalog = create_project_fixture(directory, entries)
+            farm_file = create_farm_profile(directory, project_file)
+
+            result = run_gandalf(
+                "--translate",
+                "--project", str(project_file),
+                "--farm-profile", str(farm_file),
+                "--model", "opencode/mimo-v2.5-free",
+                "--workers", "4",
+                "--full-catalog",
+                "--dry-run",
+            )
+
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("no contiene entradas pendientes", result.stderr)
+
+
+class GandalfSmallQuantityTests(unittest.TestCase):
+    """Tests for small quantity handling (1 to BATCH_SIZE_MIN-1)."""
+
+    def test_validate_batch_size_accepts_one(self):
+        self.assertEqual(validate_batch_size(1), 1)
+
+    def test_validate_batch_size_accepts_small_values(self):
+        for count in (1, 5, 10, 15, 19):
+            self.assertEqual(validate_batch_size(count), count)
+
+    def test_validate_total_entries_accepts_one(self):
+        self.assertEqual(validate_total_entries(1), 1)
+
+    def test_validate_total_entries_accepts_small_values(self):
+        for count in (1, 5, 10, 15, 19):
+            self.assertEqual(validate_total_entries(count), count)
+
+    def test_resolve_quantity_per_worker_count_one(self):
+        result = resolve_quantity(workers=4, per_worker_count=1)
+        self.assertEqual(result["total_entries"], 4)
+        self.assertEqual(result["per_worker_count"], 1)
+        self.assertIsNone(result["requested_total"])
+        self.assertFalse(result["full_catalog"])
+
+    def test_resolve_quantity_total_entries_one(self):
+        result = resolve_quantity(workers=4, total_entries=1)
+        self.assertEqual(result["total_entries"], 1)
+        self.assertEqual(result["per_worker_count"], 1)  # ceil(1/4) = 1
+        self.assertEqual(result["requested_total"], 1)
+        self.assertFalse(result["full_catalog"])
+
+    def test_resolve_quantity_total_entries_small(self):
+        result = resolve_quantity(workers=4, total_entries=5)
+        self.assertEqual(result["total_entries"], 5)
+        self.assertEqual(result["per_worker_count"], 2)  # ceil(5/4) = 2
+        self.assertEqual(result["requested_total"], 5)
+
+    def test_resolve_quantity_total_entries_less_than_workers(self):
+        result = resolve_quantity(workers=8, total_entries=3)
+        self.assertEqual(result["total_entries"], 3)
+        self.assertEqual(result["per_worker_count"], 1)  # ceil(3/8) = 1
+        self.assertEqual(result["requested_total"], 3)
+
+    def test_resolve_quantity_full_catalog_single_pending(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog_path = Path(directory) / "catalog.json"
+            catalog_path.write_text(json.dumps({
+                "entries": [
+                    {"id": "A", "status": "pending"},
+                    {"id": "B", "status": "translated"},
+                ]
+            }), encoding="utf-8")
+
+            result = resolve_quantity(
+                workers=4, full_catalog=True, catalog_path=catalog_path,
+            )
+            self.assertEqual(result["total_entries"], 1)
+            self.assertEqual(result["per_worker_count"], 1)  # ceil(1/4) = 1
+            self.assertTrue(result["full_catalog"])
+
+    def test_plan_with_per_worker_count_one(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            plan = build_translate_plan(
+                project_file, farm_file, "opencode/mimo-v2.5-free", 4, 1,
+            )
+
+            self.assertEqual(plan["total_entries"], 4)
+            self.assertEqual(plan["per_worker_count"], 1)
+            self.assertIsNone(plan["requested_total"])
+            self.assertFalse(plan["full_catalog"])
+
+    def test_plan_with_total_entries_one(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            plan = build_translate_plan(
+                project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                total_entries=1,
+            )
+
+            self.assertEqual(plan["total_entries"], 1)
+            self.assertEqual(plan["per_worker_count"], 1)
+            self.assertEqual(plan["requested_total"], 1)
+            self.assertFalse(plan["full_catalog"])
+
+    def test_plan_with_full_catalog_single_pending(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [
+                {"id": "TEST:One", "source": "One", "translation": "", "status": "pending"},
+                {"id": "TEST:Two", "source": "Two", "translation": "Dos", "status": "translated"},
+            ])
+            farm_file = create_farm_profile(directory, project_file)
+
+            plan = build_translate_plan(
+                project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                full_catalog=True,
+            )
+
+            self.assertTrue(plan["full_catalog"])
+            self.assertEqual(plan["total_entries"], 1)
+            self.assertEqual(plan["per_worker_count"], 1)
+            self.assertIsNone(plan["requested_total"])
+
+    def test_dry_run_with_per_worker_count_one(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            result = run_gandalf(
+                "--translate",
+                "--project", str(project_file),
+                "--farm-profile", str(farm_file),
+                "--model", "opencode/mimo-v2.5-free",
+                "--workers", "4",
+                "--per-worker-count", "1",
+                "--dry-run",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertIn("Entradas por worker: 1", result.stdout)
+            self.assertIn("Capacidad total: 4", result.stdout)
+
+    def test_dry_run_with_total_entries_one(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            result = run_gandalf(
+                "--translate",
+                "--project", str(project_file),
+                "--farm-profile", str(farm_file),
+                "--model", "opencode/mimo-v2.5-free",
+                "--workers", "4",
+                "--total-entries", "1",
+                "--dry-run",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertIn("Entradas solicitadas: 1", result.stdout)
+            self.assertIn("Entradas por worker: 1", result.stdout)
+            self.assertIn("Capacidad total: 1", result.stdout)
+
+    def test_dry_run_with_full_catalog_single_pending(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [
+                {"id": "TEST:One", "source": "One", "translation": "", "status": "pending"},
+                {"id": "TEST:Two", "source": "Two", "translation": "Dos", "status": "translated"},
+            ])
+            farm_file = create_farm_profile(directory, project_file)
+
+            result = run_gandalf(
+                "--translate",
+                "--project", str(project_file),
+                "--farm-profile", str(farm_file),
+                "--model", "opencode/mimo-v2.5-free",
+                "--workers", "4",
+                "--full-catalog",
+                "--dry-run",
+            )
+
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            self.assertIn("full-catalog", result.stdout)
+            self.assertIn("Capacidad total: 1", result.stdout)
+
+    def test_derive_bulk_profile_small_count(self):
+        with tempfile.TemporaryDirectory() as directory:
+            temp_dir = Path(directory)
+            real_profile = {"coordinators": [{"prefix": "real", "model": "real-model"}]}
+            profile_path = derive_bulk_profile(
+                real_profile, temp_dir, "run-small",
+                "opencode/mimo-v2.5-free", 4, 1
+            )
+
+            data = json.loads(profile_path.read_text(encoding="utf-8"))
+            self.assertEqual(data["workers"], 4)
+            self.assertEqual(data["count"], 1)
+
+    def test_derive_bulk_profile_zero_rejected_by_farm(self):
+        """count=0 would be rejected by farm validation, but gandalf accepts count=1."""
+        with tempfile.TemporaryDirectory() as directory:
+            temp_dir = Path(directory)
+            real_profile = {"coordinators": [{"prefix": "real", "model": "real-model"}]}
+            profile_path = derive_bulk_profile(
+                real_profile, temp_dir, "run-ok",
+                "opencode/mimo-v2.5-free", 4, 1
+            )
+            data = json.loads(profile_path.read_text(encoding="utf-8"))
+            self.assertEqual(data["count"], 1)
+
+    def test_no_save_with_small_quantity(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            with patch("gandalf.subprocess.run") as mock_run:
+                mock_run.return_value = Mock(returncode=0, stdout="", stderr="")
+                exit_code = execute_translate_no_save(
+                    project_file, farm_file, "opencode/mimo-v2.5-free", 4, 1
+                )
+
+            self.assertEqual(exit_code, 0)
+
+    def test_yes_with_small_quantity(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            with patch("gandalf.subprocess.run") as mock_run:
+                mock_run.return_value = Mock(returncode=0, stdout="", stderr="")
+                exit_code = execute_translate_yes(
+                    project_file, farm_file, "opencode/mimo-v2.5-free", 4, 1
+                )
+
+            self.assertEqual(exit_code, 0)
+
+    def test_no_save_with_total_entries_one(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            with patch("gandalf.subprocess.run") as mock_run:
+                mock_run.return_value = Mock(returncode=0, stdout="", stderr="")
+                exit_code = execute_translate_no_save(
+                    project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                    total_entries=1,
+                )
+
+            self.assertEqual(exit_code, 0)
+
+    def test_yes_with_total_entries_one(self):
+        with tempfile.TemporaryDirectory() as directory:
+            project_file, _catalog = create_project_fixture(directory, [{
+                "id": "TEST:One", "source": "One", "translation": "", "status": "pending",
+            }])
+            farm_file = create_farm_profile(directory, project_file)
+
+            with patch("gandalf.subprocess.run") as mock_run:
+                mock_run.return_value = Mock(returncode=0, stdout="", stderr="")
+                exit_code = execute_translate_yes(
+                    project_file, farm_file, "opencode/mimo-v2.5-free", 4,
+                    total_entries=1,
+                )
+
+            self.assertEqual(exit_code, 0)
+
+    def test_multiple_workers_small_total_entries(self):
+        """total_entries < workers should give per_worker=1 for each."""
+        result = resolve_quantity(workers=8, total_entries=3)
+        self.assertEqual(result["total_entries"], 3)
+        self.assertEqual(result["per_worker_count"], 1)
+        self.assertEqual(result["requested_total"], 3)
+
+    def test_multiple_workers_exact_division_small(self):
+        result = resolve_quantity(workers=4, total_entries=4)
+        self.assertEqual(result["total_entries"], 4)
+        self.assertEqual(result["per_worker_count"], 1)
+        self.assertEqual(result["requested_total"], 4)
+
+    def test_boundary_per_worker_count_100(self):
+        self.assertEqual(validate_batch_size(100), 100)
+
+    def test_boundary_total_entries_100(self):
+        self.assertEqual(validate_total_entries(100), 100)
+
+    def test_boundary_total_entries_1(self):
+        self.assertEqual(validate_total_entries(1), 1)
+
+    def test_boundary_batch_size_1(self):
+        self.assertEqual(validate_batch_size(1), 1)
+
+    def test_full_catalog_small_catalog_varied_statuses(self):
+        with tempfile.TemporaryDirectory() as directory:
+            catalog_path = Path(directory) / "catalog.json"
+            catalog_path.write_text(json.dumps({
+                "entries": [
+                    {"id": "A", "status": "pending"},
+                    {"id": "B", "status": "translated"},
+                    {"id": "C", "status": "preserved"},
+                    {"id": "D", "status": "pending"},
+                ]
+            }), encoding="utf-8")
+
+            result = resolve_quantity(
+                workers=4, full_catalog=True, catalog_path=catalog_path,
+            )
+            self.assertEqual(result["total_entries"], 2)
+            self.assertEqual(result["per_worker_count"], 1)  # ceil(2/4) = 1
+            self.assertTrue(result["full_catalog"])
+
+    def test_full_catalog_many_pending_large_workers(self):
+        with tempfile.TemporaryDirectory() as directory:
+            entries = [
+                {"id": f"E{i}", "status": "pending"}
+                for i in range(5)
+            ]
+            catalog_path = Path(directory) / "catalog.json"
+            catalog_path.write_text(json.dumps({"entries": entries}), encoding="utf-8")
+
+            result = resolve_quantity(
+                workers=8, full_catalog=True, catalog_path=catalog_path,
+            )
+            self.assertEqual(result["total_entries"], 5)
+            self.assertEqual(result["per_worker_count"], 1)  # ceil(5/8) = 1
+            self.assertTrue(result["full_catalog"])
 
 
 if __name__ == "__main__":
