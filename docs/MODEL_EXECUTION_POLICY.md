@@ -22,42 +22,53 @@ Before reading source code, agents should consult documentation in this order:
 6. Specific documentation for the task
 7. Source code, only when necessary and permitted
 
-## Model Hierarchy
+## Worker Hierarchy
 
-### Architect Small
+The Director selects workers by capability class. Each worker is a registered
+subagent with a fixed model configuration.
 
-The default architect. Use it for local architectural decisions,
-documentation updates, and clarification of existing architecture.
+### Worker Small
 
-### Architect Medium
+- **Model:** `opencode-go/mimo-v2.5`
+- **Agent file:** `.opencode/agent/worker-small.md`
+- **Use for:** Bounded implementation tasks, straightforward code changes,
+  validation, exploration, routine orchestration.
 
-Use it for cross-module architectural work, design refinements, feature
-decomposition, and documentation consolidation.
+### Worker Medium
 
-### Architect Large
+- **Model:** `opencode-go/deepseek-v4-flash`
+- **Agent file:** `.opencode/agent/worker-medium.md`
+- **Use for:** Complex implementation requiring deeper reasoning, cross-file
+  analysis, multi-step validation, architect-level work.
 
-Reserve it for exceptional architectural work, repository-wide redesigns,
-major migrations, and deep architectural reviews. Architect Large is never
-selected automatically. Only the repository owner may explicitly authorize it.
+### Worker Large (Luna)
+
+- **Model:** `opencode-go/gpt-5.6-luna`
+- **Agent file:** `.opencode/agent/worker-large.md`
+- **Use for:** Exceptional tasks requiring maximum capability: repository-wide
+  redesigns, major migrations, deep architectural reviews.
+- **Authorization:** Never selected automatically. Only the repository owner
+  may explicitly authorize it for a specific task.
 
 ## Escalation Policy
 
-Always attempt the smallest capable model first:
+Always attempt the smallest capable worker first:
 
 ```text
-Small
-  -> Medium
-  -> Stop
+worker-small
+  -> worker-medium
+  -> Stop (escalate to human)
 ```
 
-Models must not automatically escalate to a larger model. When blocked, the
-current model must explain:
+Workers must not automatically escalate to a larger model. When blocked, the
+current worker must explain:
 
 - why it is blocked;
 - what information is missing; and
 - what decision cannot be made.
 
-The user decides whether escalation is necessary.
+The user decides whether escalation is necessary. Worker Large requires
+explicit human authorization before activation.
 
 ## Context Budget
 
@@ -80,7 +91,7 @@ Director
   -> Planner
   -> Architect
   -> Explorer
-  -> Worker
+  -> Worker (small/medium/large)
   -> Reviewer
 ```
 

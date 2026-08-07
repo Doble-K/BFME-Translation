@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "models": {
+    "opencode/ling-3.0-flash-free": {"tier": "free"},
+    "opencode/deepseek-v4-flash-free": {"tier": "free"},
+    "opencode/mimo-v2.5-free": {"tier": "free"},
+    "opencode/nemotron-3-ultra-free": {"tier": "free"},
+    "opencode/laguna-s-2.1-free": {"tier": "free"},
+    "opencode/deepseek-v4-flash": {"tier": "economic"},
+    "opencode/mimo-v2.5": {"tier": "economic"},
+    "opencode/nemotron-3-ultra": {"tier": "economic"},
+    "opencode/ling-3.0-flash": {"tier": "economic"},
+    "opencode/sol-ultra": {"tier": "premium", "default_policy": "no-auto-select", "require_confirmation": true}
+  },
+  "policies": {
+    "premium_requires_confirmation": true,
+    "default_model": null
+  }
+}

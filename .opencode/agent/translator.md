@@ -91,8 +91,7 @@ Spanish.
    text.
 5. Apply `BATCH_FILE` with its `RESPONSE_FILE` through `agent_batch.py apply`,
    using actor equal to the worker label and
-   the actual provider/model identifier when available. Use
-   `opencode-selected-model` only when the runtime identifier is unavailable.
+   the actual provider/model identifier when available.
 6. Run both project validators after every successful application.
 7. Continue only when both validators report zero errors. Existing duplicate-ID
    warnings may remain visible.

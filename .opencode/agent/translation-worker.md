@@ -51,8 +51,7 @@ spaces:
 3. Use the native `Edit` tool only on `RESPONSE_FILE`, filling its `translation`
    values while preserving IDs and metadata. Never create a helper script.
 4. Apply `BATCH_FILE` with `RESPONSE_FILE` through PROJECT, using actor equal to
-   the worker label and the actual provider/model identifier when available. Use
-   `opencode-selected-model` only as fallback.
+   the worker label and the actual provider/model identifier when available.
 5. Run both validators with PROJECT and finish only with zero errors.
 
 Run each validator as a separate shell call. Never combine them with `;`,

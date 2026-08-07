@@ -23,7 +23,10 @@ documentation coexist with the product implementation.
 | Planner | Task sequencing and dependency management |
 | Architect | System design and interface definition |
 | Explorer | Codebase analysis and context gathering |
-| Worker | Execution of bounded work units within a product domain |
+| Worker Small | Bounded implementation tasks (model: mimo-v2.5) |
+| Worker Medium | Complex implementation tasks (model: deepseek-v4-flash) |
+| Worker Large | Exceptional implementation tasks (model: gpt-5.6-luna) |
+| Worker | Legacy alias for Worker Small |
 | Builder | Compilation and packaging of artifacts for distribution |
 | Git Director | Commit, staging, and synchronization operations |
 
@@ -32,11 +35,17 @@ instructions. None are purely generic yet.
 
 ## Model Strategy
 
-Default: Small model for routine orchestration and execution tasks.
-Medium: Used only when task complexity justifies it (e.g., multi-step
-validation, cross-file analysis). Large (Luna): Requires explicit human
-authorization before activation. Model selection is independent of
-product domain.
+Worker-based model selection. The Director routes tasks to the appropriate
+worker by capability class:
+
+- **Worker Small** (`opencode-go/mimo-v2.5`): Default for bounded implementation,
+  routine tasks, validation, exploration.
+- **Worker Medium** (`opencode-go/deepseek-v4-flash`): Used when task complexity
+  justifies deeper reasoning (multi-step validation, cross-file analysis).
+- **Worker Large** (`opencode-go/gpt-5.6-luna`): Requires explicit human
+  authorization. Reserved for exceptional tasks exceeding Small/Medium capability.
+
+Model selection is independent of product domain. No automatic escalation.
 
 ## Approval Policy
 
@@ -79,12 +88,12 @@ without formal boundaries.
 2. **Batch identity coupling.** The batch tool embeds product-specific
    logic (encoding rules, token rules) inside a nominally reusable
    tool. Extraction into a product adapter would resolve this.
-3. **No model-aware routing.** All agents use the same model regardless
-   of task complexity. A generic framework would support task-type
-   → model mapping independent of product.
-4. **Documentation entanglement.** `docs/DEVELOPMENT_STATE.md` is
+3. **Documentation entanglement.** `docs/DEVELOPMENT_STATE.md` is
    product-state documentation. It does not contain framework state.
    Separation is pending at the framework level.
+4. **Agent product knowledge.** All agents currently carry
+   product-specific knowledge embedded in their instructions. None are
+   purely generic yet. Extraction into a product adapter would resolve this.
 
 ## Current Framework Objective
 
@@ -106,6 +115,7 @@ performed yet.
 | Generic agents identified | Yes |
 | Product adapter boundary documented | In progress (this file set) |
 | Product adapter contract defined | In progress |
+| Model-aware routing implemented | Yes (worker-small/medium/large) |
 | Framework code extracted | No |
 | Product-specific code isolated | No |
 | Dual-layer tests exist | No |
