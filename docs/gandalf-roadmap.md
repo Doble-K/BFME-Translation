@@ -4,12 +4,15 @@ This roadmap divides the agreed Gandalf expansion into independently testable
 pieces. The existing ROTWK catalog remains compatible and is not migrated or
 rewritten as part of this work.
 
+Checkboxes record roadmap status, not fresh verification evidence. Current
+documentation gaps are tracked in [`STATUS.md`](STATUS.md).
+
 ## Progress
 
 - [x] Baseline checkpoint: `b96d5fa`.
 - [x] Piece 1: project-bound farm.
 - [x] Piece 2: safe manual editing.
-- [ ] Piece 3: farm controls in Gandalf.
+- [x] Piece 3: farm controls in Gandalf.
 - [ ] Piece 4: snapshot DEBUG packages.
 - [ ] Piece 5: DEBUG installation.
 - [ ] Piece 6: new multi-resource projects.
@@ -54,6 +57,13 @@ immediate stop with lease release, resume, status, and logs. Farm processes stay
 detached when Gandalf closes. Runtime model profiles remain local and separate
 from portable project translation settings.
 
+Implemented with a detached supervisor, atomic `drain`/`resume` control file,
+structured status snapshots, automatic GUI reconnection, queue and coordinator
+status, and direct access to per-coordinator logs. Immediate stop terminates the
+verified process groups before releasing only the exact configured worker
+leases. Runtime paths are anchored to the canonical profile under `.agent`, so
+profile edits cannot bypass lifecycle locking or strand a running supervisor.
+
 ## Piece 4: Snapshot DEBUG Packages
 
 Copy a coherent catalog snapshot while holding the shared lock briefly, then
@@ -80,8 +90,10 @@ single-resource adapter without catalog migration.
 
 ## Piece 7: Source Version Updates
 
-Stage and parse a new source archive before modifying live data. Require a
-drained farm and zero leases to apply an update. Preserve unchanged
+This piece extends the documented basic single-resource `update.py` behavior
+into the full Gandalf lifecycle. Stage and parse a new source archive before
+modifying live data. Require a drained farm and zero leases to apply an update.
+Preserve unchanged
 translations, return changed sources to pending while retaining old text in
 history, add new entries, retire removed entries, and restore reappearing
 entries. Bind the update plan to the catalog and source hashes to reject stale
@@ -109,3 +121,11 @@ later correction.
 - Source updates preserve unchanged manual corrections and are idempotent.
 - RELEASE accepts translated entries carrying `needs_review`.
 - DEBUG installation backup and restore reproduce the original bytes.
+
+## See Also
+
+- [Project Status](STATUS.md) for current capability maturity and open issues.
+- [Architecture](ARCHITECTURE.md) for established boundaries.
+- [Components](COMPONENTS.md) for established and planned components.
+- [Dependencies](DEPENDENCIES.md) for runtime and build requirements.
+- [Workflow](workflow.md) for current operational procedures.

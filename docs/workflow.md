@@ -99,11 +99,15 @@ python3 tools/localization/opencode_farm.py start \
   --config config/opencode_farm.json --detach
 ```
 
-Comprobar el estado, detener la granja o limpiar leases huerfanos de sus
-prefixes configurados:
+Comprobar el estado, drenar la ronda activa, reanudar, detener inmediatamente o
+limpiar leases huerfanos de sus prefixes configurados:
 
 ```bash
 python3 tools/localization/opencode_farm.py status \
+  --config config/opencode_farm.json
+python3 tools/localization/opencode_farm.py drain \
+  --config config/opencode_farm.json
+python3 tools/localization/opencode_farm.py resume \
   --config config/opencode_farm.json
 python3 tools/localization/opencode_farm.py stop \
   --config config/opencode_farm.json
@@ -112,8 +116,16 @@ python3 tools/localization/opencode_farm.py clean \
 ```
 
 Cada coordinador ejecuta una ronda acotada de `/translate-parallel`; el
-supervisor crea una sesion nueva para la siguiente ronda. `stop` termina los
-procesos antes de liberar leases y `clean` rechaza una granja todavia activa.
+supervisor crea una sesion nueva para la siguiente ronda. `drain` permite
+terminar los procesos activos sin iniciar otra ronda y luego apaga el supervisor.
+`resume` cancela el drenado pendiente o crea un supervisor detached nuevo si ya
+termino. `stop` termina los procesos antes de liberar leases y `clean` rechaza
+una granja todavia activa. Gandalf consulta el mismo estado, se reconecta a un
+supervisor existente y ofrece estos controles sin ligar su vida a la ventana.
+Las rutas de estado, control, acuse y logs deben permanecer bajo `.agent`. El
+supervisor las ancla al path canonico del perfil mientras esta activo; por eso
+una edicion posterior del perfil no permite iniciar una segunda granja ni impide
+consultar o detener la existente.
 La granja usa el agente `translation-coordinator`, que no tiene permiso para
 exportar ni aplicar batches. Ademas, `agent_batch.py` acepta solamente los
 labels exactos `PREFIX-1` a `PREFIX-WORKERS` dentro de cada proceso supervisado.
@@ -313,3 +325,12 @@ aprobacion antes de:
 Una herramienta urgente no debe incorporarse como logica especifica de un solo
 catalogo. Debe aceptar `--project` cuando corresponda y servir para otros juegos
 o mods SAGE, incluido un proceso inicial masivo como Age of the Ring.
+
+## Ver tambien
+
+- [Arquitectura](ARCHITECTURE.md) para limites y flujo de datos.
+- [Componentes](COMPONENTS.md) para responsabilidades e interfaces.
+- [Dependencias](DEPENDENCIES.md) para herramientas externas y supuestos de
+  ejecucion y build.
+- [Convenciones](CONVENTIONS.md) para reglas obligatorias del repositorio.
+- [Estado del proyecto](STATUS.md) para capacidades y temas no resueltos.
