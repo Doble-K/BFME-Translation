@@ -13,7 +13,7 @@
     },
     {
       "prefix": "rotwk-deep-all",
-      "model": "opencode/deepseek-v4-flash-free"
+      "model": "opencode-go/deepseek-v4-flash"
     },
     {
       "prefix": "rotwk-mimo-all",

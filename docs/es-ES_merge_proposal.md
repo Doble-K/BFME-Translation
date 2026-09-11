@@ -1,156 +1,191 @@
-# AI Prompt: Reconcile Local Glossary with the Upstream BFME-Translation Project
+# es-ES & es-419: Dual-Locale Configuration
 
-## Purpose
+## Overview
 
-This document is a self-contained prompt for an AI assistant. It describes every
-known difference between two glossaries for the same game (*The Lord of the
-Rings: The Battle for Middle-earth II: The Rise of the Witch-king*, ROTWK 2.02):
+The project now supports two independent Spanish locales for *The Lord of the
+Rings: The Battle for Middle-earth II: The Rise of the Witch-king* (ROTWK 2.02):
 
-- **Local project** — `lotr-spanish-translation` (this repository). Authoritative
-  terminology lives in `.kiro/agents/game-tooltip-translator.md`; a mirror is in
-  `docs/GLOSSARY.md`. Target variety: **European Spanish (Spain)**, Editorial
-  Minotauro canonical Tolkien names. Large, already-refined glossary (100+ terms).
-- **Upstream project** — [Doble-K/BFME-Translation](https://github.com/Doble-K/BFME-Translation).
-  Target variety: **Latin American Spanish**. Early-stage glossary (~13 RTS terms,
-  many marked `pending`).
+| Locale | Variety | Glossary | Project Config | Catalog |
+|--------|---------|----------|----------------|---------|
+| **es-ES** | European Spanish (Spain) | `glossaries/es-ES.glossary.md` | `config/project.json` (active) | `catalogs/spanish_es-ES_work.json` |
+| **es-419** | Latin American Spanish | `GLOSSARY.md` (root) | `config/project_es-419.json` | `catalogs/spanish_9770_work.json` |
 
-## Task for the AI
-
-Read both glossaries and produce a reconciliation plan (a merge proposal /
-issue / PR description) that:
-
-1. Confirms the terms where both projects already agree.
-2. Resolves each conflict listed below with a clear recommendation and rationale.
-3. Flags every decision that requires a human choice (especially Spanish variety).
-4. Preserves all protected tokens, engine tags and formatting conventions.
-5. Never invents terminology; when unsure, mark the term `needs_review`.
-
-Respond in **English** (project documentation standard), using the upstream
-`GLOSSARY.md` table structure (`| English | Spanish | Status | Context |`).
+These are **not** mutually exclusive. They are independent locale configurations
+sharing the same engine tooling, protected-token rules, and formatting
+conventions.
 
 ---
 
-## Background Difference (most important)
+## es-ES: Active Initial Locale
 
-The core divergence is **not** term-by-term. It is:
+The es-ES locale is the project's **active initial translation target**. It
+follows the European Spanish variety with Editorial Minotauro canonical Tolkien
+names and a large, already-refined glossary (100+ terms).
 
-1. **Spanish variety.** Upstream = Latin American Spanish. Local = European
-   Spanish (Spain) with Editorial Minotauro names. This is a foundational
-   decision that must be made **before** merging any terms. Every term below is
-   only valid for the local project if the Spain + Minotauro variety is accepted.
-2. **Maturity.** Upstream leaves most lore terms `pending` and defers to
-   community review. Local has already decided them.
-3. **State tracking mechanism.** Upstream uses catalog statuses
-   (`pending / translated / preserved / needs_review`). Local comments the
-   English source with `//` directly above the active Spanish line inside the
-   `.str` file. Same goal (traceability), different mechanism.
-4. **Encoding.** Local `.str` files are strictly **Windows-1252 (latin1)**;
-   upstream assumes UTF-8/JSON. Markdown glossaries are UTF-8 in both, so the
-   glossary merge itself is safe, but any pipeline crossing must convert encoding.
+To work on es-ES:
+
+```bash
+python3 tools/localization/agent_batch.py export \
+  --project config/project_es-ES.json \
+  --count 20 \
+  --mode incomplete \
+  --worker WORKER_NAME
+```
+
+Key configuration in `config/project_es-ES.json`:
+
+- `language`: `"es-ES"`
+- `glossary`: `"glossaries/es-ES.glossary.md"`
+- `catalog`: `"catalogs/spanish_es-ES_work.json"`
+- `output_package`: `"releases/spanishpatch202_es-ES.big"`
+- Encoding: Windows-1252 (latin1) for `.str` output
 
 ---
 
-## 1. Terms Where Both Projects Agree
+## es-419: Independent Preserved Locale
 
-No conflict. Adopt as-is.
+The es-419 locale is an **independent, preserved configuration** for Latin
+American Spanish. It remains fully functional and backward-compatible with
+all existing tooling, the OpenCode farm, and the root `GLOSSARY.md`.
+
+To work on es-419:
+
+```bash
+python3 tools/localization/agent_batch.py export \
+  --project config/project_es-419.json \
+  --count 20 \
+  --mode incomplete \
+  --worker WORKER_NAME
+```
+
+Key configuration in `config/project_es-419.json`:
+
+- `language`: `"es-419"`
+- `glossary`: `"GLOSSARY.md"` (root Latin American glossary)
+- `catalog`: `"catalogs/spanish_9770_work.json"`
+- `output_package`: `"releases/spanishpatch202.big"`
+
+The `config/opencode_farm.json` references `config/project.json`
+(es-ES) as the default farm target.
+
+---
+
+## Terminology Differences
+
+The two locales diverge on Spanish variety and Tolkien proper-name policy.
+The core differences are:
+
+### Agreed Terms (no conflict)
 
 | English | Spanish |
-|---------|----------|
+|---------|---------|
 | Summon | Invocar |
 | Recruit | Reclutar |
 | Upgrade | Mejora |
-| Build Time | Tiempo de construcción |
+| Build Time | Tiempo de construccion |
 | Command Points | Puntos de mando |
 | Structure | Estructura |
-| Damage | Daño |
+| Damage | Dano |
 | Armor | Armadura |
 | Health | Salud |
-| Hero | Héroe |
+| Hero | Heroe |
+| Power | Poder |
+| Spell | Hechizo |
+| Horde | Horda |
+
+### Resolved Conflicts
+
+| English | es-419 (LatAm) | es-ES (Spain) | Note |
+|---------|----------------|---------------|------|
+| Rally Point | Punto de reunion | Punto de reunion | Same term. |
+| Debuff / Buff | (pending) | Kept in English | es-ES explicit decision. |
+| Troll | (pending) | Trol (pl. Troles) | Castilianized form. |
+| Goblins | (pending) | Trasgos | Editorial Minotauro. |
+| Wargs | (pending) | Huargos | Editorial Minotauro. |
+| Orcs | (pending) | Orcos | Editorial Minotauro. |
+| Treebeard | (pending) | Barbol | Editorial Minotauro. |
+| Witch-king | (pending) | Rey Brujo | Needs explicit decision if merging upstream. |
+
+### es-ES Exclusive Additions
+
+The es-ES glossary contributes terms the upstream lacks:
+
+- Damage types: Slash -> Cortante, Pierce -> Perforante.
+- Mod-specific units: 60+ entries (see `glossaries/es-ES.glossary.md`).
+- Conditional rules: Blades -> Espadas/Hachas, PurchaseTechnology entries.
+- Title Case rules for unit/building names.
+- Command style: infinitive verbs for all buttons.
 
 ---
 
-## 2. Direct Terminology Conflicts (same English, different or undecided Spanish)
+## Shared Conventions
 
-| English | Upstream | Local | Recommendation / Note |
-|---------|----------|-------|-----------------------|
-| Power | Poder (`pending`) | Poder | Same term. Local can promote it from `pending` to approved. |
-| Spell | Undecided ("Power vs Spell vs Ability" pending) | Hechizo | Local already resolved. Propose **Hechizo**. |
-| Horde | Horda (`pending`) | Horda + rule: `OBJECT:Horde*` uses the plural unit name only, never "Horda de..." | Adopt **Horda** and add the local `OBJECT:Horde*` rule (more precise). |
-| Rally Point | Punto de reunión | (not listed locally) | Adopt upstream term into local glossary. |
-| Troll | (not defined in main glossary) | **Trol** (pl. Troles) | CONFLICT: local castilianizes to "Trol". Also note local `CONTEXT` file has an outdated "Trolls → Trolls" line that should be cleaned up. |
+Both locales share:
 
----
-
-## 3. Proper Noun / Race Conflicts (biggest divergence)
-
-Upstream leaves these `pending`; local has canonical decisions.
-
-| English | Upstream | Local | Note |
-|---------|----------|-------|------|
-| Goblin/Goblins | `pending` | Trasgo/Trasgos | Local follows Minotauro. |
-| Warg/Wargs | `pending` | Huargo/Huargos | Local follows Minotauro. |
-| Orc | `pending` | Orco | Local follows Minotauro. |
-| Uruk | `pending` | Uruk-hai (kept) | Not translated. |
-| Witch-king | Not defined; upstream policy preserves Tolkien names | **Rey Brujo** | HARD CONFLICT: upstream would keep "Witch-king"; local translates to "Rey Brujo". Needs explicit decision. |
-| Treebeard | (not listed) | Bárbol | Local has the canonical form. |
-| Half-Troll | (not listed) | Semitrol/Semitroles | Local only. |
+- **Protected tokens**: `%1`, `%2`, `%d`, `%s`, `%PLAYER%`, `<TOKEN>`, etc.
+- **SAGE hotkeys**: `&Aragorn` -> `Aragorn [&A]` (letter preserved).
+- **Engine tags**: `CONTROLBAR:`, `OBJECT:`, `SCIENCE:`, etc.
+- **Encoding**: Windows-1252 (latin1) for `.str` files; UTF-8 for markdown.
+- **State tracking**: Catalog statuses (`pending`, `translated`, `preserved`, etc.).
+- **Command style**: Infinitive verbs (Construir, Reclutar, Mejorar).
 
 ---
 
-## 4. Terms That Exist Only Locally (net additions to upstream)
+## Future Extensibility
 
-The local glossary contributes a large layer upstream lacks: damage types,
-mod-specific units, and conditional rules.
+The dual-locale architecture is designed for extension:
 
-- Damage types: `Slash → Cortante`, `Pierce → Perforante`.
-- Do-not-translate gaming terms: `Debuff/Buff` (kept in English — see conflict 5).
-- Ammo/upgrades/units: `Bolts → Virotes`, `Oathbreakers → Rompejuramentos`,
-  `Signal Fire → Almenara`, `Outpost → Enclave`, `Mumak → Mûmak/Mûmakil`, and
-  dozens of mod unit names (see `docs/GLOSSARY.md`, "Mod-Specific" section).
-- Conditional rules upstream does not have:
-  - **Blades → Espadas**, except in a Dwarven context (Dwarf/Dwarven/Axe/Axes)
-    → **Hachas**.
-  - **PurchaseTechnology** entries → "Investigar [Name]" / "Comprar" with the
-    Angmar exceptions.
-  - **Title Case** rules for unit/building names, with the lowercase exception
-    list (`de, del, la, las, los, el, a, con, en, por, para, y, e, o, al, un,
-    una, sin`).
+1. **New Spanish varieties**: Add a `config/project_XX.json` with its own
+   `language`, `glossary`, `catalog`, and `output_package` paths. The
+   tooling resolves all paths from the project file.
 
-Recommendation: these can be adopted upstream with **no conflict**, provided the
-Spanish variety decision is settled. They only strengthen the shared glossary.
+2. **New games or mods**: Each game/mod gets its own project configuration
+   and catalog. The glossary can be shared or overridden per locale.
+
+3. **New languages**: Add a new `config/project_LL.json` with the target
+   language code, a dedicated glossary, and isolated output paths. No
+   changes to existing configurations are required.
+
+4. **Glossary inheritance**: The `project.glossary` field resolves relative
+   to the repository root. If omitted, the tool falls back to the root
+   `GLOSSARY.md`. Locale-specific glossaries override only the terms they
+   define.
 
 ---
 
-## 5. Convention Conflicts (not term-level)
+## Glossary Merge Notes
 
-| Topic | Upstream | Local | Note |
-|-------|----------|-------|------|
-| Debuff / Buff | General rule would flag as `needs_review` / never invent | Explicit decision: **do not translate** (keep "Debuff"/"Buff") | Propose adding an explicit "Do Not Translate" section upstream. |
-| Hotkey convention | `&Aragorn` → `Aragorn [&A]` | `[&X]` / `&X` preserved exactly | Compatible. Local matches the upstream v1 standard. |
-| State tracking | Catalog statuses | Commented `//` English line in `.str` | Different mechanism; document both, do not force one. |
-| Encoding | UTF-8 / JSON | Windows-1252 (latin1) for `.str` | Glossary merge safe; flag for any pipeline integration. |
+This section documents the reconciliation between the upstream Latin American
+glossary and the local European Spanish glossary.
 
----
+### Conflicts Requiring Human Decision
 
-## Summary of Decisions the Human Must Make
+1. **Spanish variety**: The project supports both independently. No forced
+   merge is needed.
+2. **Witch-king**: es-ES uses "Rey Brujo"; upstream preserves "Witch-king".
+   Each locale follows its own convention.
+3. **Troll**: es-ES castilianizes to "Trol/Troles"; es-419 leaves undefined.
+4. **Debuff/Buff**: es-ES keeps in English; es-419 follows its own review
+   process.
+5. **Promoted pending terms**: es-ES resolves Goblin -> Trasgos, Warg ->
+   Huargos, Orc -> Orco using Editorial Minotauro. es-419 retains its
+   own pending review.
 
-1. **Spanish variety**: Latin American (upstream) vs. Spain + Minotauro (local).
-   This gates everything else.
-2. **Witch-king**: preserve the Tolkien name (upstream policy) vs. "Rey Brujo"
-   (local).
-3. **Troll**: castilianize to "Trol/Troles" (local) vs. leave undefined
-   (upstream). Clean up the contradictory legacy "Trolls → Trolls" line in the
-   local `CONTEXT` file either way.
-4. **Debuff/Buff**: keep in English (local) vs. flag for review (upstream).
-5. **Promote upstream `pending` terms** (Goblin, Warg, Orc, Horde, Power) using
-   the local decisions — valid only if the Spain + Minotauro variety is accepted.
+### Convention Differences
 
-## Deliverable Format
+| Topic | es-419 | es-ES |
+|-------|--------|-------|
+| Glossary scope | ~13 RTS terms (early stage) | 100+ terms (refined) |
+| State tracking | Catalog statuses | Catalog statuses (shared) |
+| Encoding | UTF-8/JSON catalogs; cp1252 .str | Same |
+| Hotkey convention | `[&X]` preserved | `[&X]` preserved |
 
-Produce a single Markdown document containing:
+### Action Items
 
-- A short "Decisions required" section listing items 1–5 above with a
-  recommended default and a one-line rationale each.
-- A merged term table in upstream `| English | Spanish | Status | Context |`
-  format, with a `Status` of `pending` for any term still blocked by decision 1.
-- A "No conflict" appendix listing the agreed and net-new terms ready to adopt.
+- [ ] Resolve the "Witch-king" / "Rey Brujo" decision for each locale.
+- [ ] Create `catalogs/spanish_es-ES_work.json` and import es-ES source
+  entries (separate Gandalf operation).
+- [ ] Promote es-419 pending terms (Goblin, Warg, Orc, Horde, Power) using
+  community review.
+- [ ] Consider adopting es-ES mod-specific units and conditional rules
+  upstream for es-419.

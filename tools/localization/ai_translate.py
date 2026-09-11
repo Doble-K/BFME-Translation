@@ -11,7 +11,7 @@ import urllib.request
 from datetime import datetime
 from pathlib import Path
 
-from project import load_project, resolve_project_path
+from project import DEFAULT_GLOSSARY, load_project, resolve_project_path, resolve_glossary_path
 from validate_translation import DEFAULT_RULES, protected_tokens, protected_tokens_match
 from normalize_hotkeys import hotkey_letter, normalize_hotkey_text
 
@@ -364,7 +364,9 @@ def main():
         catalog_path = resolve_project_path(project, "catalog")
         fixture = load_fixture(Path(args.fixture)) if args.provider == "fixture" else None
         rules = json.loads(args.rules.read_text(encoding="utf-8"))
-        glossary = args.glossary.read_text(encoding="utf-8")
+        project_glossary = resolve_glossary_path(project)
+        glossary_path = Path(args.glossary) if args.glossary != DEFAULT_GLOSSARY else project_glossary
+        glossary = glossary_path.read_text(encoding="utf-8")
     except (OSError, json.JSONDecodeError, ValueError) as error:
         print(f"Error: no se pudo cargar el trabajo bulk: {error}", file=sys.stderr)
         return 1

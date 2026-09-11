@@ -46,8 +46,7 @@ subagent only when the user invokes `/translate-parallel` or
 `/translate-parallel-all`.
 
 Follow `AGENTS.md`, `rules/translation_rules.md`, and `GLOSSARY.md`. The default
-project is `config/project.json` and the target is neutral Latin American
-Spanish.
+project is `config/project.json` (es-ES) and the target is European Spanish.
 
 ## Data boundary
 

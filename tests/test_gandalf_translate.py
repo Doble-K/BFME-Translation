@@ -153,6 +153,11 @@ class GandalfModelValidationTests(unittest.TestCase):
         self.assertEqual(model, "opencode/deepseek-v4-flash")
         self.assertEqual(tier, "economic")
 
+    def test_validate_model_accepts_opencode_go_economic_model(self):
+        model, tier = validate_model("opencode-go/deepseek-v4-flash")
+        self.assertEqual(model, "opencode-go/deepseek-v4-flash")
+        self.assertEqual(tier, "economic")
+
     def test_validate_model_rejects_unknown_model(self):
         with self.assertRaisesRegex(ValueError, "modelo no permitido"):
             validate_model("opencode/nonexistent-model")

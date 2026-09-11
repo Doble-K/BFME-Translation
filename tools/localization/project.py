@@ -7,6 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_GLOSSARY = ROOT / "GLOSSARY.md"
 PROJECT_SCOPE_PATH_ENV = "SAGE_LOCALIZATION_PROJECT"
 PROJECT_SCOPE_REVISION_ENV = "SAGE_LOCALIZATION_PROJECT_REVISION"
 REQUIRED_FIELDS = {
@@ -73,8 +74,24 @@ def load_project(path):
         raise ValueError("debug_ids debe ser una lista de cadenas")
     if "debug_marker" in project and not isinstance(project["debug_marker"], str):
         raise ValueError("debug_marker debe ser una cadena")
+    if "glossary" in project and not isinstance(project["glossary"], str):
+        raise ValueError("glossary debe ser una cadena")
     return project
 
 
 def resolve_project_path(project, field):
     return ROOT / project[field]
+
+
+def resolve_glossary_path(project):
+    """Resolve the glossary path for a project.
+
+    If the project contains a ``glossary`` field, resolve it relative to the
+    project root.  Otherwise fall back to the default root-level GLOSSARY.md.
+    """
+    glossary_rel = project.get("glossary")
+    if glossary_rel:
+        candidate = ROOT / glossary_rel
+        if candidate.is_file():
+            return candidate
+    return DEFAULT_GLOSSARY

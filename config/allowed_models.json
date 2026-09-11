@@ -7,6 +7,7 @@
     "opencode/nemotron-3-ultra-free": {"tier": "free"},
     "opencode/laguna-s-2.1-free": {"tier": "free"},
     "opencode/deepseek-v4-flash": {"tier": "economic"},
+    "opencode-go/deepseek-v4-flash": {"tier": "economic"},
     "opencode/mimo-v2.5": {"tier": "economic"},
     "opencode/nemotron-3-ultra": {"tier": "economic"},
     "opencode/ling-3.0-flash": {"tier": "economic"},

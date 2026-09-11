@@ -115,6 +115,20 @@ class LocalizationToolTests(unittest.TestCase):
         self.assertEqual(project["encoding"], "cp1252")
         self.assertEqual(project["string_header"], "// String file for Lord of the Rings")
         self.assertEqual(project["debug_marker"], "DEBUGING")
+        self.assertEqual(project["language"], "es-ES")
+        self.assertEqual(
+            resolve_project_path(project, "output_package"),
+            ROOT / "releases" / "spanishpatch202_es-ES.big",
+        )
+
+    def test_rotwk_project_es419_configuration(self):
+        project_es419 = ROOT / "config" / "project_es-419.json"
+        if not project_es419.exists():
+            self.skipTest("es-419 project config not present")
+        project = load_project(project_es419)
+        self.assertEqual(project["name"], "bfme2-rotwk-2.02")
+        self.assertEqual(project["encoding"], "cp1252")
+        self.assertEqual(project["language"], "es-419")
         self.assertEqual(
             resolve_project_path(project, "output_package"),
             ROOT / "releases" / "spanishpatch202.big",
@@ -1334,7 +1348,7 @@ class LocalizationToolTests(unittest.TestCase):
             [item["model"] for item in config["coordinators"]],
             [
                 "opencode/ling-3.0-flash-free",
-                "opencode/deepseek-v4-flash-free",
+                "opencode-go/deepseek-v4-flash",
                 "opencode/mimo-v2.5-free",
                 "opencode/nemotron-3-ultra-free",
                 "opencode/laguna-s-2.1-free",

@@ -1,15 +1,15 @@
 {
   "name": "bfme2-rotwk-2.02",
   "source_archive": "sources/englishpatch202_v9.7.7.big",
-  "string_directory": "translations/spanish_es-ES",
+  "string_directory": "translations/spanish",
   "string_files": [
     "data/lotr.str"
   ],
-  "catalog": "catalogs/spanish_es-ES_work.json",
-  "output_string_file": "translations/spanish_es-ES/data/lotr.str",
-  "output_package": "releases/spanishpatch202_es-ES.big",
-  "language": "es-ES",
-  "glossary": "glossaries/es-ES.glossary.md",
+  "catalog": "catalogs/spanish_9770_work.json",
+  "output_string_file": "translations/spanish/data/lotr.str",
+  "output_package": "releases/spanishpatch202.big",
+  "language": "es-419",
+  "glossary": "GLOSSARY.md",
   "encoding": "cp1252",
   "string_header": "// String file for Lord of the Rings",
   "debug_ids": [

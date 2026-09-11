@@ -134,16 +134,17 @@ def ask(prompt, default=None):
 
 def choose_language(label, default):
     languages = {
-        "1": ("es", "Español"),
-        "2": ("en", "English"),
-        "3": ("pr", "Português"),
-        "4": ("fr", "Français"),
-        "5": ("ge", "Deutsch"),
+        "1": ("es-419", "Español (Latinoamérica)"),
+        "2": ("es-ES", "Español (Castellano)"),
+        "3": ("en", "English"),
+        "4": ("pr", "Português"),
+        "5": ("fr", "Français"),
+        "6": ("ge", "Deutsch"),
     }
     print(f"Idioma {label}:")
     for number, (code, name) in languages.items():
         print(f"  {number}. {code} - {name}")
-    choice = ask("Selecciona una opcion", "1" if default == "es" else "2")
+    choice = ask("Selecciona una opcion", "1" if default == "es" else "3")
     if choice in languages:
         return languages[choice][0]
     raise ValueError("Idioma no disponible en modo basico; usa --advanced para un codigo personalizado")
@@ -233,7 +234,8 @@ def inspect_big_file(big_file):
 def detect_language(big_file):
     name = big_file.name.lower()
     hints = (
-        (("spanish", "espanol", "español"), "es"),
+        (("spanish", "espanol", "español"), "es-419"),
+        (("castilian", "castellano"), "es-ES"),
         (("english", "ingles", "inglés"), "en"),
         (("portuguese", "portugues", "português"), "pr"),
         (("french", "frances", "français"), "fr"),
@@ -492,7 +494,7 @@ def wizard(
     elif advanced:
         target_language = ask("Idioma de destino", "es-419")
     else:
-        target_language = choose_language("de destino", "es")
+        target_language = choose_language("de destino", "es-419")
     if (
         not allow_same_language
         and source_language.split("-")[0].lower()
@@ -725,14 +727,21 @@ def launch_gui():
             "version": None,
         },
     }
-    languages = {"Español": "es", "English": "en", "Português": "pr", "Français": "fr", "Deutsch": "ge"}
+    languages = {
+        "Español (Latinoamérica)": "es-419",
+        "Español (Castellano)": "es-ES",
+        "English": "en",
+        "Português": "pr",
+        "Français": "fr",
+        "Deutsch": "ge",
+    }
     candidates = find_big_files()
     saved_config = load_gandalf_config()
     saved_last = saved_config.get("last", {}) if isinstance(saved_config.get("last", {}), dict) else {}
     project_var = tk.StringVar(value=saved_last.get("project", "BFME2 ROTWK 2.02"))
     source_var = tk.StringVar(value=saved_last.get("source", str(candidates[0] if candidates else ROOT / "sources/englishpatch202.big")))
     source_language_var = tk.StringVar(value=saved_last.get("source_language", "English"))
-    target_language_var = tk.StringVar(value=saved_last.get("target_language", "Español"))
+    target_language_var = tk.StringVar(value=saved_last.get("target_language", "Español (Latinoamérica)"))
     encoding_var = tk.StringVar(value=saved_last.get("encoding", "cp1252"))
     catalog_var = tk.StringVar(value=saved_last.get("catalog", "catalogs/bfme2-rotwk-2.02_es_work.json"))
     config_var = tk.StringVar(value=saved_last.get("config", "config/bfme2-rotwk-2.02_es.json"))

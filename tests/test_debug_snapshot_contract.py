@@ -301,7 +301,7 @@ class TestStableDebugOutputPath(unittest.TestCase):
         project = load_project(ROOT / "config" / "project.json")
         release_path = resolve_project_path(project, "output_package")
         self.assertTrue(release_path.name.endswith(".big"))
-        self.assertEqual(release_path.name, "spanishpatch202.big")
+        self.assertEqual(release_path.name, "spanishpatch202_es-ES.big")
 
     def test_debug_output_must_not_equal_release_output(self):
         """If a DEBUG snapshot defines its own output path, it must differ
